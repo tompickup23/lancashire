@@ -1,0 +1,527 @@
+{
+  "last_updated": "2026-06-23",
+  "council_id": "kent_cc",
+  "_provenance": "Structure-complete cabinet_portfolios. Administration, Cabinet roster, directorate budgets, senior officers AND the 2026/27 MTFS headline + savings figures are VERIFIED against primary sources (roster via KentOnline / ITV Meridian / ShepwayVox / gov.uk / Wikipedia / news.kent.gov.uk; finances via the 12 Feb 2026 County Council budget pack, ModernGov s134609 / s134613 / s134615; see aidoge-directorate councils/kent INTEL_BRIEF VERIFICATION block + budget_pack_2026_27.json). Per-portfolio savings_levers are left empty pending a careful read of Appendix F (s134615, line-item savings by Cabinet Member; PDF obtained), never fabricated. Statutory duties are the generic statutory framework per service.",
+  "administration": {
+    "party": "Reform UK",
+    "control_since": "2025-05-01",
+    "constituted": "2025-05-22",
+    "leader": "Linden Kemkaran",
+    "deputy_leader_finance": "Brian Collins",
+    "next_elections": "2029-05",
+    "composition_note": "Reform UK majority (~47 of 81). 7 councillors defected to Restore Britain 17 Feb 2026 (3rd-largest group); Greens gained Cliftonville 10 Apr 2026 (Green 6); Lib Dem 12 (Antony Hook = Leader of Opposition); Conservative 6; Labour 2; Independent 2; Better Way Of 1. Per-group totals do not cleanly reconcile to 81 across open sources; reconcile at democracy.kent.gov.uk before publishing a seat table.",
+    "mtfs": {
+      "financial_year": "2026/27",
+      "total_net_budget": 1648100000,
+      "council_tax_increase_pct": 3.99,
+      "funding": {
+        "council_tax_incl_collection_fund": 1048500000,
+        "government_settlement": 595400000
+      },
+      "spending_growth_funded_26_27": 178000000,
+      "asc_growth_26_27": 89800000,
+      "savings_programme_26_27": {
+        "gross": 87600000,
+        "net_new_ex_rollforward": 47600000,
+        "by_directorate": {
+          "asc": 30000000,
+          "childrens": 18000000,
+          "other": 27600000
+        },
+        "_caveat": "VERIFIED against the 12 Feb 2026 County Council budget pack (main report s134609 Section 6.6 + Appendix D s134613). Gross £87.6m for delivery in year / £47.6m net new core; directorate split ASC £30m, Children's £18m, other £27.6m."
+      },
+      "mtfp_unidentified_gaps": {
+        "2027_28": 54200000,
+        "2028_29": 42100000,
+        "_caveat": "VERIFIED from the 12 Feb 2026 budget pack (s134609 Section 2 + Appendix D Unresolved Balance): 27/28 £54.2m, 28/29 £42.1m. The £54.2m supersedes the £52.6m secondary-source draft figure."
+      },
+      "reserves_note": "General reserves at ~5% floor ('edge of acceptable minimum'); £29.8m drawdown to balance 2026/27; £25m one-offs (£9m capital receipts + £16m earmarked reserves). Risk register exposure ~£410m (up ~60% YoY).",
+      "dsg_send": {
+        "accumulated_deficit_end_25_26": 136500000,
+        "in_year_deficit_25_26": 67800000,
+        "statutory_override_expires": "2028-03",
+        "safety_valve_note": "£140m DfE + £82m KCC General Fund over ~5 years"
+      }
+    }
+  },
+  "directorates": [
+    {
+      "id": "asch",
+      "name": "Adult Social Care & Health",
+      "corporate_director": "Sarah Hammond (Interim CD ASC & Health); Dr Anjan Ghosh (DPH)",
+      "net_budget_26_27": 787500000,
+      "pct_of_net": 47.8,
+      "portfolio_ids": [
+        "adult_social_care"
+      ]
+    },
+    {
+      "id": "cype",
+      "name": "Children, Young People & Education",
+      "corporate_director": "Christine McInnes (Interim CD CYPE)",
+      "net_budget_26_27": 423000000,
+      "pct_of_net": 25.7,
+      "portfolio_ids": [
+        "integrated_childrens_services",
+        "education_skills"
+      ]
+    },
+    {
+      "id": "get",
+      "name": "Growth, Environment & Transport",
+      "corporate_director": "Simon Jones (CD GET); Rebecca Spore (Dir Infrastructure)",
+      "net_budget_26_27": 215500000,
+      "pct_of_net": 13.1,
+      "portfolio_ids": [
+        "highways_transport",
+        "environment_coastal_ph",
+        "economic_development"
+      ]
+    },
+    {
+      "id": "ce",
+      "name": "Chief Executive & Deputy CE Departments",
+      "corporate_director": "David Whittle (Dir Strategy/Policy/Assurance); Lisa Gannon (Dir Technology)",
+      "net_budget_26_27": 112700000,
+      "pct_of_net": 6.8,
+      "portfolio_ids": [
+        "leader",
+        "finance",
+        "community_regulatory",
+        "lg_efficiency"
+      ]
+    },
+    {
+      "id": "corporate",
+      "name": "Non-attributable / corporately held",
+      "corporate_director": null,
+      "net_budget_26_27": 109500000,
+      "pct_of_net": 6.6,
+      "portfolio_ids": []
+    }
+  ],
+  "portfolios": [
+    {
+      "id": "leader",
+      "title": "Leader",
+      "short_title": "Leader",
+      "cabinet_member": {
+        "name": "Linden Kemkaran",
+        "party": "Reform UK",
+        "_verified_23jun2026": true,
+        "_note": ""
+      },
+      "directorate_id": "ce",
+      "executive_director": "David Whittle (Director of Strategy, Policy, Relationships and Corporate Assurance)",
+      "budget_latest": {
+        "directorate": "Chief Executive & Deputy CE Departments",
+        "directorate_net_26_27": 112700000
+      },
+      "statutory_duties": [],
+      "key_services": [
+        "Corporate strategy",
+        "Local Government Reorganisation / devolution",
+        "Policy and assurance"
+      ],
+      "known_pressures": [
+        "LGR / devolution programme for Kent & Medway (abolition + reorganisation timetable)."
+      ],
+      "savings_levers": [],
+      "_depth": {
+        "_pending_budget_book": true,
+        "_note": "Lever-level savings pending a careful read of budget-pack Appendix F (s134615, line-item savings by Cabinet Member; PDF + ModernGov ids obtained, see the directorate repo's budget_pack_2026_27.json). The headline + per-directorate savings are VERIFIED; only the per-portfolio lever breakdown remains to author."
+      }
+    },
+    {
+      "id": "finance",
+      "title": "Deputy Leader & Finance",
+      "short_title": "Finance",
+      "cabinet_member": {
+        "name": "Brian Collins",
+        "party": "Reform UK",
+        "_verified_23jun2026": true,
+        "_note": "Deputy Leader; presented the 2026/27 budget."
+      },
+      "directorate_id": "ce",
+      "executive_director": "Dave Shipton (Acting S151 / chief finance officer)",
+      "budget_latest": {
+        "directorate": "Chief Executive & Deputy CE Departments",
+        "directorate_net_26_27": 112700000
+      },
+      "statutory_duties": [
+        {
+          "act": "Local Government Act 1972 (s.151)",
+          "summary": "Proper administration of financial affairs; balanced budget.",
+          "risk_level": "red"
+        }
+      ],
+      "key_services": [
+        "Corporate finance and MTFP",
+        "Treasury management",
+        "Corporate resources"
+      ],
+      "known_pressures": [
+        "MTFP unidentified gaps £52.6m (2027/28), £42.1m (2028/29).",
+        "General reserves at ~5% floor; £29.8m drawdown to balance 2026/27; risk register exposure ~£410m.",
+        "S114 is a conditional risk in the S25 statement (no notice issued)."
+      ],
+      "savings_levers": [],
+      "_depth": {
+        "_pending_budget_book": true,
+        "_note": "Lever-level savings pending a careful read of budget-pack Appendix F (s134615, line-item savings by Cabinet Member; PDF + ModernGov ids obtained, see the directorate repo's budget_pack_2026_27.json). The headline + per-directorate savings are VERIFIED; only the per-portfolio lever breakdown remains to author."
+      }
+    },
+    {
+      "id": "adult_social_care",
+      "title": "Adult Social Care",
+      "short_title": "ASC",
+      "cabinet_member": {
+        "name": "Georgia Foster",
+        "party": "Reform UK",
+        "_verified_23jun2026": true,
+        "_note": "Replaced Cllr Diane Morton, who resigned 23 May 2026. Tom Pickup's KCC ASC mentoring counterpart (same may_2025 cohort as LCC)."
+      },
+      "directorate_id": "asch",
+      "executive_director": "Sarah Hammond (Interim Corporate Director, ASC & Health)",
+      "budget_latest": {
+        "directorate": "Adult Social Care & Health",
+        "directorate_net_26_27": 787500000,
+        "pct_of_net": 47.8,
+        "note": "Largest ASC share in the focus set. Directorate incl. Public Health (DPH Dr Anjan Ghosh); the Cabinet-portfolio split of Public Health vs Henderson's portfolio is to verify at the live Cabinet page."
+      },
+      "statutory_duties": [
+        {
+          "act": "Care Act 2014 (s.18-20)",
+          "summary": "Duty to assess and meet eligible adult care needs; wellbeing + prevention duties.",
+          "risk_level": "red"
+        },
+        {
+          "act": "Mental Capacity Act 2005 / DoLS / LPS",
+          "summary": "Best-interests decisions and deprivation-of-liberty safeguards.",
+          "risk_level": "amber"
+        }
+      ],
+      "key_services": [
+        "Older people residential, nursing and home care",
+        "Working-age adults (LD, MH, physical disability) supported living and day services",
+        "Reablement and hospital discharge",
+        "Direct payments",
+        "Adult safeguarding"
+      ],
+      "known_pressures": [
+        "ASC overspend ~£45m in 2024/25, ~£50.9m at 2025/26 mid-year.",
+        "ASC growth funded 2026/27 £89.8m.",
+        "ASC = 47.8% of net revenue budget, the dominant financial pressure."
+      ],
+      "savings_levers": [],
+      "_depth": {
+        "_pending_budget_book": true,
+        "_note": "Lever-level savings pending a careful read of budget-pack Appendix F (s134615, line-item savings by Cabinet Member; PDF + ModernGov ids obtained, see the directorate repo's budget_pack_2026_27.json). The headline + per-directorate savings are VERIFIED; only the per-portfolio lever breakdown remains to author."
+      },
+      "_ai_doge_corpus_savings_opportunities": "AI-DOGE peer-method ASC levers for a county of this scale: homecare re-procurement and rate benchmarking, technology-enabled care, reablement expansion, and direct-payments growth (method-derived estimates, not the council's own booked plan). NHS Continuing Healthcare is NOT a recovery or saving lever here. NHS England CHC-FNC data (2025/26 Q4) puts NHS Kent and Medway ICB at 54.5 CHC-eligible per 50,000 population aged 18+, rank 10 of 42 ICBs and above the England median of 45.5, so Kent's CHC funding share is a cost-shift exposure to DEFEND if the ICB tightens eligibility, never an under-claiming gap to recover (see directorate_analysis.json asc_chc_position). Kent and Medway is a single ICB footprint that also covers Medway unitary, with no Medway-separable sub-ICB, so Kent-CC-only exposure sizing needs a district-level package base."
+    },
+    {
+      "id": "integrated_childrens_services",
+      "title": "Integrated Children's Services",
+      "short_title": "Children's",
+      "cabinet_member": {
+        "name": "Paul Webb",
+        "party": "Reform UK",
+        "_verified_23jun2026": true,
+        "_note": "Moved here from Community & Regulatory Services in the April 2026 reshuffle."
+      },
+      "directorate_id": "cype",
+      "executive_director": "Christine McInnes (Interim Corporate Director, CYPE)",
+      "budget_latest": {
+        "directorate": "Children, Young People & Education",
+        "directorate_net_26_27": 423000000,
+        "pct_of_net": 25.7,
+        "note": "Shared directorate with Education & Skills."
+      },
+      "statutory_duties": [
+        {
+          "act": "Children Act 1989 / 2004",
+          "summary": "Duty to safeguard and promote welfare of children in need and looked-after children.",
+          "risk_level": "red"
+        },
+        {
+          "act": "Children and Social Work Act 2017",
+          "summary": "Corporate parenting principles; care leaver support to 25.",
+          "risk_level": "amber"
+        }
+      ],
+      "key_services": [
+        "Children's social care",
+        "Looked-after children and placements",
+        "Care leavers",
+        "Safeguarding and early help"
+      ],
+      "known_pressures": [
+        "CYPE directorate +8.2% / +£32.0m growth 2026/27.",
+        "£18.0m Children's savings target 2026/27 (verified, budget pack s134609 Section 6.6)."
+      ],
+      "savings_levers": [],
+      "_depth": {
+        "_pending_budget_book": true,
+        "_note": "Lever-level savings pending a careful read of budget-pack Appendix F (s134615, line-item savings by Cabinet Member; PDF + ModernGov ids obtained, see the directorate repo's budget_pack_2026_27.json). The headline + per-directorate savings are VERIFIED; only the per-portfolio lever breakdown remains to author."
+      }
+    },
+    {
+      "id": "education_skills",
+      "title": "Education and Skills",
+      "short_title": "Education",
+      "cabinet_member": {
+        "name": "Beverley Fordham",
+        "party": "Reform UK",
+        "_verified_23jun2026": true,
+        "_note": ""
+      },
+      "directorate_id": "cype",
+      "executive_director": "Christine McInnes (Interim Corporate Director, CYPE)",
+      "budget_latest": {
+        "directorate": "Children, Young People & Education",
+        "directorate_net_26_27": 423000000,
+        "pct_of_net": 25.7,
+        "note": "Shared directorate with Integrated Children's Services."
+      },
+      "statutory_duties": [
+        {
+          "act": "Children and Families Act 2014 (Part 3)",
+          "summary": "EHC needs assessments and plans; SEND duties (the High Needs Block / DSG deficit driver).",
+          "risk_level": "red"
+        },
+        {
+          "act": "Education Act 1996 / s.508B",
+          "summary": "Sufficient school places + home-to-school transport for eligible children.",
+          "risk_level": "amber"
+        }
+      ],
+      "key_services": [
+        "School place planning",
+        "SEND / EHC plans",
+        "Home-to-school transport",
+        "Skills and post-16"
+      ],
+      "known_pressures": [
+        "DSG (SEND) accumulated deficit ~£136m at end 2025/26; in-year deficit £67.8m.",
+        "DSG statutory override expires March 2028 (a near-term cliff edge if not extended).",
+        "Safety Valve: £140m DfE + £82m KCC General Fund over ~5 years.",
+        "Home-to-school/SEN transport savings target ~£4.3m."
+      ],
+      "savings_levers": [],
+      "_depth": {
+        "_pending_budget_book": true,
+        "_note": "Lever-level savings pending a careful read of budget-pack Appendix F (s134615, line-item savings by Cabinet Member; PDF + ModernGov ids obtained, see the directorate repo's budget_pack_2026_27.json). The headline + per-directorate savings are VERIFIED; only the per-portfolio lever breakdown remains to author."
+      }
+    },
+    {
+      "id": "community_regulatory",
+      "title": "Community and Regulatory Services",
+      "short_title": "Community",
+      "cabinet_member": {
+        "name": "Richard Palmer",
+        "party": "Reform UK",
+        "_verified_23jun2026": true,
+        "_note": "Distinct person from Christine ('Chris') Palmer, who moved to Deputy Cabinet Member for ASC. Richard Palmer is also the Chairman."
+      },
+      "directorate_id": "ce",
+      "executive_director": "David Whittle (Director of Strategy, Policy, Relationships and Corporate Assurance)",
+      "budget_latest": {
+        "directorate": "Chief Executive & Deputy CE Departments",
+        "directorate_net_26_27": 112700000
+      },
+      "statutory_duties": [
+        {
+          "act": "Public Libraries and Museums Act 1964",
+          "summary": "Duty to provide a comprehensive and efficient library service.",
+          "risk_level": "amber"
+        }
+      ],
+      "key_services": [
+        "Libraries, Registration and Archives",
+        "Coroner service",
+        "Regulatory services / trading standards",
+        "Community safety"
+      ],
+      "known_pressures": [],
+      "savings_levers": [],
+      "_depth": {
+        "_pending_budget_book": true,
+        "_note": "Lever-level savings pending a careful read of budget-pack Appendix F (s134615, line-item savings by Cabinet Member; PDF + ModernGov ids obtained, see the directorate repo's budget_pack_2026_27.json). The headline + per-directorate savings are VERIFIED; only the per-portfolio lever breakdown remains to author."
+      }
+    },
+    {
+      "id": "lg_efficiency",
+      "title": "Local Government Efficiency & Reorganisation",
+      "short_title": "Efficiency",
+      "cabinet_member": {
+        "name": "Chris Hespe",
+        "party": "Reform UK",
+        "_verified_23jun2026": true,
+        "_note": "Replaced Matthew Fraser-Moat (Feb 2026); LGR folded into the portfolio."
+      },
+      "directorate_id": "ce",
+      "executive_director": "David Whittle (Director of Strategy, Policy, Relationships and Corporate Assurance)",
+      "budget_latest": {
+        "directorate": "Chief Executive & Deputy CE Departments",
+        "directorate_net_26_27": 112700000
+      },
+      "statutory_duties": [],
+      "key_services": [
+        "Council-wide efficiency programme",
+        "Local Government Reorganisation delivery",
+        "Transformation"
+      ],
+      "known_pressures": [
+        "Owns the council-wide efficiency / savings programme (gross £87.6m 2026/27, verified; directorate split ASC £30m / Children's £18m / other £27.6m), the cross-cutting analogue to the LCC Resources/Efficiency portfolio."
+      ],
+      "savings_levers": [],
+      "_depth": {
+        "_pending_budget_book": true,
+        "_note": "Lever-level savings pending a careful read of budget-pack Appendix F (s134615, line-item savings by Cabinet Member; PDF + ModernGov ids obtained, see the directorate repo's budget_pack_2026_27.json). The headline + per-directorate savings are VERIFIED; only the per-portfolio lever breakdown remains to author."
+      }
+    },
+    {
+      "id": "highways_transport",
+      "title": "Highways and Transport",
+      "short_title": "Highways",
+      "cabinet_member": {
+        "name": "Peter Osborne",
+        "party": "Reform UK",
+        "_verified_23jun2026": true,
+        "_note": ""
+      },
+      "directorate_id": "get",
+      "executive_director": "Simon Jones (Corporate Director, Growth, Environment & Transport)",
+      "budget_latest": {
+        "directorate": "Growth, Environment & Transport",
+        "directorate_net_26_27": 215500000,
+        "pct_of_net": 13.1,
+        "note": "Shared GET directorate with Environment and Economic Development."
+      },
+      "statutory_duties": [
+        {
+          "act": "Highways Act 1980 (s.41)",
+          "summary": "Duty to maintain the adopted highway network; actionable-defect liability.",
+          "risk_level": "amber"
+        }
+      ],
+      "key_services": [
+        "Highway maintenance",
+        "Transport and concessionary travel",
+        "Streetworks and network management"
+      ],
+      "known_pressures": [],
+      "savings_levers": [],
+      "_depth": {
+        "_pending_budget_book": true,
+        "_note": "Lever-level savings pending a careful read of budget-pack Appendix F (s134615, line-item savings by Cabinet Member; PDF + ModernGov ids obtained, see the directorate repo's budget_pack_2026_27.json). The headline + per-directorate savings are VERIFIED; only the per-portfolio lever breakdown remains to author."
+      }
+    },
+    {
+      "id": "environment_coastal_ph",
+      "title": "Environment, Coastal Regeneration & Public Health",
+      "short_title": "Environment",
+      "cabinet_member": {
+        "name": "Jamie Henderson",
+        "party": "Reform UK",
+        "_verified_23jun2026": true,
+        "_note": "Replaced Cllr Paul King, who was removed from Cabinet in the April 2026 reshuffle. Public Health appears to sit with this portfolio; verify the ASC-vs-Environment PH split at the live Cabinet page."
+      },
+      "directorate_id": "get",
+      "executive_director": "Simon Jones (Corporate Director, Growth, Environment & Transport)",
+      "budget_latest": {
+        "directorate": "Growth, Environment & Transport",
+        "directorate_net_26_27": 215500000,
+        "pct_of_net": 13.1,
+        "note": "Shared GET directorate; Public Health is operationally within ASCH (DPH Dr Anjan Ghosh)."
+      },
+      "statutory_duties": [
+        {
+          "act": "Environmental Protection Act 1990",
+          "summary": "Waste disposal authority duties; landfill diversion.",
+          "risk_level": "amber"
+        },
+        {
+          "act": "Health and Social Care Act 2012",
+          "summary": "Public health functions transferred to upper-tier authorities; ring-fenced grant.",
+          "risk_level": "amber"
+        }
+      ],
+      "key_services": [
+        "Waste disposal",
+        "Environment and climate",
+        "Coastal regeneration",
+        "Public health (portfolio split to confirm)"
+      ],
+      "known_pressures": [],
+      "savings_levers": [],
+      "_depth": {
+        "_pending_budget_book": true,
+        "_note": "Lever-level savings pending a careful read of budget-pack Appendix F (s134615, line-item savings by Cabinet Member; PDF + ModernGov ids obtained, see the directorate repo's budget_pack_2026_27.json). The headline + per-directorate savings are VERIFIED; only the per-portfolio lever breakdown remains to author."
+      }
+    },
+    {
+      "id": "economic_development",
+      "title": "Economic Development & Special Projects",
+      "short_title": "Economy",
+      "cabinet_member": {
+        "name": "David Wimble",
+        "party": "Reform UK",
+        "_verified_23jun2026": true,
+        "_note": ""
+      },
+      "directorate_id": "get",
+      "executive_director": "Simon Jones (Corporate Director, Growth, Environment & Transport)",
+      "budget_latest": {
+        "directorate": "Growth, Environment & Transport",
+        "directorate_net_26_27": 215500000,
+        "pct_of_net": 13.1,
+        "note": "Shared GET directorate with Highways and Environment."
+      },
+      "statutory_duties": [],
+      "key_services": [
+        "Economic development and growth",
+        "Inward investment",
+        "Special projects"
+      ],
+      "known_pressures": [],
+      "savings_levers": [],
+      "_depth": {
+        "_pending_budget_book": true,
+        "_note": "Lever-level savings pending a careful read of budget-pack Appendix F (s134615, line-item savings by Cabinet Member; PDF + ModernGov ids obtained, see the directorate repo's budget_pack_2026_27.json). The headline + per-directorate savings are VERIFIED; only the per-portfolio lever breakdown remains to author."
+      }
+    }
+  ],
+  "senior_officers": {
+    "chief_executive": {
+      "name": "Amanda Beer",
+      "title": "Chief Executive",
+      "statutory": true,
+      "remuneration_package": 269000,
+      "permanent": true,
+      "note": "Permanent; staying until LGR abolition."
+    },
+    "s151_officer": {
+      "name": "David (Dave) Shipton",
+      "title": "Acting Section 151 Officer",
+      "statutory": true,
+      "permanent": false,
+      "note": "Acting; authored + signed the S25 statement on the 12 Feb 2026 budget. Timeline Zena Cooke -> John Betts (interim, retired late 2025) -> Shipton. No permanent CFO confirmed as of Jun 2026. A 'Brendan Arnold' attribution is WRONG; he is at Boston BC."
+    },
+    "director_public_health": {
+      "name": "Dr Anjan Ghosh",
+      "title": "Director of Public Health"
+    }
+  },
+  "governance": {
+    "intervention_status": "None confirmed. No MHCLG / Best Value intervention; no S114 notice issued or formally threatened; no Exceptional Financial Support applied for 2026/27. S114 is a conditional risk in the S151's S25 statement only.",
+    "lgr_status": "Kent & Medway in the government's Local Government Reorganisation programme; KCC pursuing devolution / reorganisation (Cllr Chris Hespe portfolio)."
+  },
+  "_directorate_platform_link": {
+    "platform": "AI DOGE Directorate Edition",
+    "council_dir": "councils/kent/",
+    "status": "scaffolded 23 Jun 2026 (config + verified intel brief + this structure). The savings engine (per-portfolio savings plans -> lever_ev etc.) is pending the KCC 2026/27 Budget Book.",
+    "_note": "Kent directorate-edition work is at councils/kent/ in the aidoge-directorate repo. M4-bis (complete 23 Jun) means the analyser engine re-runs --council kent once plans land."
+  }
+}

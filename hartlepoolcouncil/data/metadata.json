@@ -1,0 +1,167 @@
+{
+  "council": "Hartlepool",
+  "council_id": "E06000001",
+  "council_type": "unitary",
+  "spending_threshold": 500,
+  "total_records": 100317,
+  "financial_years": [
+    "2022/23",
+    "2023/24",
+    "2024/25",
+    "2025/26"
+  ],
+  "data_types": [
+    "purchase_cards",
+    "spend"
+  ],
+  "filters": {
+    "departments": [
+      {
+        "name": "Adult & Community Based Services",
+        "spend": 240560754.52,
+        "count": 22128,
+        "suppliers": 1855
+      },
+      {
+        "name": "Children & Joint Commissioning",
+        "spend": 164779753.12,
+        "count": 34776,
+        "suppliers": 2933
+      },
+      {
+        "name": "Development, Neighbourhoods & Regulatory Services",
+        "spend": 69139674.93,
+        "count": 14358,
+        "suppliers": 1040
+      },
+      {
+        "name": "Corporate",
+        "spend": 43915726.91,
+        "count": 1862,
+        "suppliers": 230
+      },
+      {
+        "name": "Neighbourhoods & Regulatory Services",
+        "spend": 37553875.92,
+        "count": 16153,
+        "suppliers": 977
+      },
+      {
+        "name": "Adult Services & Public Health",
+        "spend": 35622843.55,
+        "count": 2228,
+        "suppliers": 215
+      },
+      {
+        "name": "Children's Services",
+        "spend": 18606865.59,
+        "count": 2247,
+        "suppliers": 319
+      },
+      {
+        "name": "Childrens Services",
+        "spend": 18486313.46,
+        "count": 2280,
+        "suppliers": 277
+      },
+      {
+        "name": "Resources & Development",
+        "spend": 8002356.66,
+        "count": 1049,
+        "suppliers": 236
+      },
+      {
+        "name": "Housing, Growth and Communities",
+        "spend": 5317764.77,
+        "count": 463,
+        "suppliers": 183
+      },
+      {
+        "name": "Finance, IT and Digital",
+        "spend": 3574660.07,
+        "count": 1190,
+        "suppliers": 128
+      },
+      {
+        "name": "Housing, Growth & Communities",
+        "spend": 3015171.05,
+        "count": 447,
+        "suppliers": 195
+      },
+      {
+        "name": "Legal",
+        "spend": 1359154.27,
+        "count": 880,
+        "suppliers": 140
+      },
+      {
+        "name": "Housing Revenue Account (HRA)",
+        "spend": 161247.41,
+        "count": 157,
+        "suppliers": 43
+      },
+      {
+        "name": "Legal, Governance and Human Resources",
+        "spend": 105715.82,
+        "count": 43,
+        "suppliers": 15
+      },
+      {
+        "name": "Office of the Chief Exec",
+        "spend": 99623.72,
+        "count": 53,
+        "suppliers": 16
+      },
+      {
+        "name": "Dev, Neighbourhoods & Reg Sv",
+        "spend": 1965.96,
+        "count": 3,
+        "suppliers": 1
+      }
+    ],
+    "department_raws": [
+      "Adult & Community Based Services",
+      "Adult Services & Public Health",
+      "Children & Joint Commissioning",
+      "Children's Services",
+      "Childrens Services",
+      "Corporate",
+      "Dev, Neighbourhoods & Reg Sv",
+      "Development, Neighbourhoods & Regulatory Services",
+      "Finance, IT and Digital",
+      "Housing Revenue Account (HRA)",
+      "Housing, Growth & Communities",
+      "Housing, Growth and Communities",
+      "Legal",
+      "Legal, Governance and Human Resources",
+      "Neighbourhoods & Regulatory Services",
+      "Office of the Chief Exec",
+      "Resources & Development"
+    ]
+  },
+  "total_spend": 650303467.73,
+  "total_spend_paid": 650303467.73,
+  "total_spend_committed": 0,
+  "total_spend_all_types_legacy": 650303467.73,
+  "record_count_paid": 100317,
+  "record_count_committed": 0,
+  "record_class_breakdown": {
+    "procurement_paid": {
+      "count": 100317,
+      "sum": 650303467.73
+    }
+  },
+  "spend_triangulation": {
+    "transparency_gross": 650303467.73,
+    "transparency_paid": 650303467.73,
+    "procurement_only": 650303467.73,
+    "non_procurement": 0.0
+  },
+  "dedup_rule": "total_spend = spend + purchase_cards; contracts excluded (77% pair with matching spend within 90d \u2014 see .claude/rules/lessons.md)",
+  "dedup_applied": "enforced at ETL (council_etl.py)",
+  "unique_suppliers": 6170,
+  "date_range": {
+    "min": "2022-04-01",
+    "max": "2026-03-31"
+  }
+}

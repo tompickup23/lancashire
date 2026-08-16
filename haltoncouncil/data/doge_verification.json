@@ -1,0 +1,48 @@
+{
+  "checks": [
+    {
+      "label": "Data completeness",
+      "status": "pass",
+      "detail": "Dates: 100.0%, Suppliers: 100.0%, Amounts: 100.0%, Departments: 100.0%, Descriptions: 100.0%",
+      "metrics": {
+        "date_pct": 100.0,
+        "supplier_pct": 100.0,
+        "amount_pct": 100.0,
+        "dept_pct": 100.0,
+        "desc_pct": 100.0
+      }
+    },
+    {
+      "label": "Duplicate payment verification",
+      "status": "pass",
+      "detail": "1174 high-confidence groups (\u00a34.0M). Duplicate ratio: 0.3%. Filtered out: 1596 batch payments, 11713 CSV overlaps."
+    },
+    {
+      "label": "Split payment analysis",
+      "status": "pass",
+      "detail": "151 suspect instances (\u00a313.9M, 1.4% of spend). Threshold: 5+ payments to same supplier in same week, 80%+ of approval limit."
+    },
+    {
+      "label": "Year-end spike verification",
+      "status": "warning",
+      "detail": "Highest spike: 6.2x in Children & Family Services. Year-end spikes are common in public sector (capital programmes, grants). Only extreme spikes (>3x) warrant concern."
+    },
+    {
+      "label": "CH breach temporal verification",
+      "status": "pass",
+      "detail": "1 suppliers with \u00a3700 confirmed during active breach periods. Enrichment errors excluded. Only dated violations with confirmed overlap flagged."
+    },
+    {
+      "label": "Benford's Law forensic screening",
+      "status": "warning",
+      "detail": "Significant deviation from Benford's Law (p < 0.001). \u03c7\u00b2=16436.64 on 247129 amounts >\u00a3100. Largest deviation: digit 2 (6.3% off expected)."
+    }
+  ],
+  "warnings": [
+    "Benford's Law analysis shows significant deviation (\u03c7\u00b2=16436.64). Digit 2 deviates 6.3% from expected. This warrants investigation but can also occur with legitimate round-number grants or threshold-based payments."
+  ],
+  "score": 67,
+  "total_checks": 6,
+  "passed": 4,
+  "generated": "2026-05-27T13:09:35.025158"
+}

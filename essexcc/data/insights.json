@@ -1,0 +1,2382 @@
+{
+  "summary": {
+    "total_spend": 16338867779.88,
+    "transaction_count": 3382439,
+    "unique_suppliers": 46380,
+    "avg_transaction": 4830.5,
+    "median_transaction": 340.0,
+    "date_range": {
+      "min": "2019-04-01",
+      "max": "2026-03-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "RINGWAY JACOBS LTD",
+        "total": 1011844938.11,
+        "transactions": 10141,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "RUNWOOD HOMES LTD",
+        "total": 249384942.1,
+        "transactions": 5992,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MITIE LTD",
+        "total": 234301654.46,
+        "transactions": 4584,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PROVIDE COMMUNITY INTEREST COMPANY",
+        "total": 214625337.41,
+        "transactions": 1586,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NETWORK RAIL",
+        "total": 212683972.47,
+        "transactions": 90,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HCRG CARE SERVICES LTD",
+        "total": 172399987.22,
+        "transactions": 149,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ENOVERT SOUTH LTD",
+        "total": 161383047.08,
+        "transactions": 1426,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FIRST ESSEX BUSES LTD",
+        "total": 112128294.49,
+        "transactions": 553,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COUNTYROUTE (A130) PLC",
+        "total": 106597206.47,
+        "transactions": 131,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "VIRGIN CARE SERVICES LTD",
+        "total": 102516470.85,
+        "transactions": 59,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORTH EAST LONDON NHS FOUNDATION TRUST",
+        "total": 90344226.39,
+        "transactions": 209,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MATRIX SCM LTD",
+        "total": 89809089.88,
+        "transactions": 111766,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "24 X 7 LTD",
+        "total": 87937039.48,
+        "transactions": 3933,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ONE OFF NON INVOICE",
+        "total": 87282451.66,
+        "transactions": 10366,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EAST SUFFOLK & NORTH ESSEX NHS FT",
+        "total": 86212218.77,
+        "transactions": 362,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ESSEX SCHOOLS LTD",
+        "total": 85234985.98,
+        "transactions": 241,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PEABODY SOUTH EAST",
+        "total": 84599920.89,
+        "transactions": 14831,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LEE VALLEY REGIONAL PARK AUTHORITY",
+        "total": 75389679.95,
+        "transactions": 88,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MORGAN SINDALL CONSTRUCTION & INFRA LTD",
+        "total": 75166218.24,
+        "transactions": 230,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LAMBERT SMITH HAMPTON",
+        "total": 74441647.9,
+        "transactions": 359,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.255,
+    "total_unique_suppliers": 46380,
+    "single_transaction_suppliers": 26262
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 264124,
+      "potential_value": 790580201.62,
+      "items": [
+        {
+          "supplier": "PROVIDE COMMUNITY INTEREST COMPANY",
+          "amount": 1316471.42,
+          "date": "2023-12-05",
+          "occurrences": 4,
+          "potential_overpayment": 3949414.26
+        },
+        {
+          "supplier": "ENVIRONMENT AGENCY",
+          "amount": 1760785.84,
+          "date": "2021-05-26",
+          "occurrences": 3,
+          "potential_overpayment": 3521571.68
+        },
+        {
+          "supplier": "VIRGIN CARE SERVICES LTD",
+          "amount": 2871599.88,
+          "date": "2021-02-16",
+          "occurrences": 2,
+          "potential_overpayment": 2871599.88
+        },
+        {
+          "supplier": "PROVIDE COMMUNITY INTEREST COMPANY",
+          "amount": 808017.67,
+          "date": "2024-08-13",
+          "occurrences": 4,
+          "potential_overpayment": 2424053.01
+        },
+        {
+          "supplier": "PROVIDE COMMUNITY INTEREST COMPANY",
+          "amount": 1157371.0,
+          "date": "2021-07-21",
+          "occurrences": 3,
+          "potential_overpayment": 2314742.0
+        },
+        {
+          "supplier": "ENVIRONMENT AGENCY",
+          "amount": 1810451.18,
+          "date": "2022-07-06",
+          "occurrences": 2,
+          "potential_overpayment": 1810451.18
+        },
+        {
+          "supplier": "ESSEX CARES LTD",
+          "amount": 899332.0,
+          "date": "2021-05-11",
+          "occurrences": 3,
+          "potential_overpayment": 1798664.0
+        },
+        {
+          "supplier": "OCTAVIUS INFRASTRUCTURE LTD",
+          "amount": 1624036.8,
+          "date": "2025-05-27",
+          "occurrences": 2,
+          "potential_overpayment": 1624036.8
+        },
+        {
+          "supplier": "ESSEX CARES LTD",
+          "amount": 1527500.0,
+          "date": "2022-04-28",
+          "occurrences": 2,
+          "potential_overpayment": 1527500.0
+        },
+        {
+          "supplier": "EAST SUFFOLK & NORTH ESSEX NHS FT",
+          "amount": 1500567.03,
+          "date": "2025-01-09",
+          "occurrences": 2,
+          "potential_overpayment": 1500567.03
+        },
+        {
+          "supplier": "EAST SUFFOLK & NORTH ESSEX NHS FT",
+          "amount": 1500567.03,
+          "date": "2025-03-17",
+          "occurrences": 2,
+          "potential_overpayment": 1500567.03
+        },
+        {
+          "supplier": "PROVIDE COMMUNITY INTEREST COMPANY",
+          "amount": 736833.33,
+          "date": "2023-07-17",
+          "occurrences": 3,
+          "potential_overpayment": 1473666.66
+        },
+        {
+          "supplier": "EAST SUFFOLK & NORTH ESSEX NHS FT",
+          "amount": 1420184.58,
+          "date": "2024-01-25",
+          "occurrences": 2,
+          "potential_overpayment": 1420184.58
+        },
+        {
+          "supplier": "EAST SUFFOLK & NORTH ESSEX NHS FT",
+          "amount": 1420184.58,
+          "date": "2024-04-03",
+          "occurrences": 2,
+          "potential_overpayment": 1420184.58
+        },
+        {
+          "supplier": "HCRG CARE SERVICES LTD",
+          "amount": 1394579.29,
+          "date": "2022-07-01",
+          "occurrences": 2,
+          "potential_overpayment": 1394579.29
+        },
+        {
+          "supplier": "ESSEX PARTNERSHIP UNIVERSITY NHS FOUNDATION TRUST",
+          "amount": 1348594.0,
+          "date": "2023-02-03",
+          "occurrences": 2,
+          "potential_overpayment": 1348594.0
+        },
+        {
+          "supplier": "ESSEX PARTNERSHIP UNIVERSITY NHS FOUNDATION TRUST",
+          "amount": 1348594.0,
+          "date": "2024-09-23",
+          "occurrences": 2,
+          "potential_overpayment": 1348594.0
+        },
+        {
+          "supplier": "PROVIDE COMMUNITY INTEREST COMPANY",
+          "amount": 1316471.42,
+          "date": "2023-11-10",
+          "occurrences": 2,
+          "potential_overpayment": 1316471.42
+        },
+        {
+          "supplier": "ANGLIAN COMMUNITY ENTERPRISE CIC",
+          "amount": 1268033.75,
+          "date": "2020-05-06",
+          "occurrences": 2,
+          "potential_overpayment": 1268033.75
+        },
+        {
+          "supplier": "PROVIDE COMMUNITY INTEREST COMPANY",
+          "amount": 1221229.67,
+          "date": "2022-06-21",
+          "occurrences": 2,
+          "potential_overpayment": 1221229.67
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 11904,
+      "total_value": 379548000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under £500",
+      "count": 4235
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "ADULT SOCIAL CARE",
+      "spend": 4742914495.95,
+      "count": 1367048
+    },
+    {
+      "department": "EDUCATION - DSG",
+      "spend": 3271124252.21,
+      "count": 146650
+    },
+    {
+      "department": "CENTRAL & OTH OPERATING COSTS",
+      "spend": 1977422391.14,
+      "count": 23766
+    },
+    {
+      "department": "NDR POOL E2",
+      "spend": 1212331488.8,
+      "count": 219
+    },
+    {
+      "department": "CHILDREN & FAMILIES NON-DSG",
+      "spend": 1192912401.07,
+      "count": 1106004
+    },
+    {
+      "department": "CLIMATE ENV & CUST SERV",
+      "spend": 1040856373.95,
+      "count": 160602
+    },
+    {
+      "department": "PLACE & PUBLIC HEALTH NON DSG",
+      "spend": 882201879.91,
+      "count": 122295
+    },
+    {
+      "department": "BETTER CARE FUND",
+      "spend": 394624570.04,
+      "count": 646
+    },
+    {
+      "department": "EDUCATION - NON DSG",
+      "spend": 276758941.31,
+      "count": 62217
+    },
+    {
+      "department": "ECONOMY INVEST & PH NDSG",
+      "spend": 273150565.14,
+      "count": 51643
+    },
+    {
+      "department": "CHILDREN & FAMILIES DSG",
+      "spend": 245955360.79,
+      "count": 3714
+    },
+    {
+      "department": "POLICY PEOPLE ECONOMY & PH NDSG",
+      "spend": 238954958.29,
+      "count": 46440
+    },
+    {
+      "department": "CORPORATE SERVICES",
+      "spend": 162535512.93,
+      "count": 47615
+    },
+    {
+      "department": "POOLED BUDGET",
+      "spend": 105810259.44,
+      "count": 166
+    },
+    {
+      "department": "ORGANISATION DEVELOPMENT & PEOPLE",
+      "spend": 80634384.2,
+      "count": 25618
+    },
+    {
+      "department": "SAFER ESSEX ROADS PARTNERSHIP E2",
+      "spend": 46335799.41,
+      "count": 8236
+    },
+    {
+      "department": "CORPORATE & CUSTOMER SERVICES",
+      "spend": 43609897.14,
+      "count": 44704
+    },
+    {
+      "department": "FINANCE AND TECHNOLOGY",
+      "spend": 41154163.98,
+      "count": 8041
+    },
+    {
+      "department": "TRANSFORMING CARE POOLED BUDG",
+      "spend": 18320845.41,
+      "count": 295
+    },
+    {
+      "department": "WRITTLE LIBRARY TRUST A/C E2",
+      "spend": 13212557.0,
+      "count": 1
+    },
+    {
+      "department": "SOUTH EAST LEP PARTNERSHIP E2",
+      "spend": 8130879.81,
+      "count": 441
+    },
+    {
+      "department": "ECONOMY INVEST & PH DSG",
+      "spend": 7758497.03,
+      "count": 273
+    },
+    {
+      "department": "TRADED - SOCIAL CARE & EDUCATION",
+      "spend": 6369257.8,
+      "count": 6478
+    },
+    {
+      "department": "TRADED - CORPORATE DEVELOPMENT",
+      "spend": 6279958.54,
+      "count": 10441
+    },
+    {
+      "department": "CORPORATE DEVELOPMENT",
+      "spend": 5402686.91,
+      "count": 2113
+    },
+    {
+      "department": "CHIEF EXECUTIVES OFFICE",
+      "spend": 5316516.89,
+      "count": 2705
+    },
+    {
+      "department": "HAVEN GATEWAY PARTNERSHIP E2",
+      "spend": 5305964.2,
+      "count": 2371
+    },
+    {
+      "department": "TRADED - CORPORATE & CUSTOMER",
+      "spend": 4953527.55,
+      "count": 990
+    },
+    {
+      "department": "POLICY PEOPLE ECONOMY & PH DSG",
+      "spend": 4790366.32,
+      "count": 181
+    },
+    {
+      "department": "FUNDING T2",
+      "spend": 4462906.54,
+      "count": 5076
+    },
+    {
+      "department": "CHILDRENS SERVICES NON DSG",
+      "spend": 3884247.55,
+      "count": 68251
+    },
+    {
+      "department": "ORGDEV PPL&SERV TRANSFORMATION",
+      "spend": 2452169.2,
+      "count": 1231
+    },
+    {
+      "department": "PEOPLE AND TRANSFORMATION",
+      "spend": 2165819.24,
+      "count": 1086
+    },
+    {
+      "department": "PLACE & PUBLIC HEALTH DSG",
+      "spend": 1245719.9,
+      "count": 122
+    },
+    {
+      "department": "ESSEX COUNTY TRAVELLER UNIT E2",
+      "spend": 1234719.41,
+      "count": 696
+    },
+    {
+      "department": "EXTERNAL BODIES",
+      "spend": 1082224.2,
+      "count": 2
+    },
+    {
+      "department": "ACTIVE ESSEX E2",
+      "spend": 774861.1,
+      "count": 974
+    },
+    {
+      "department": "DEVOL, ART HERIT AND CULTURE",
+      "spend": 739107.23,
+      "count": 6414
+    },
+    {
+      "department": "COMM, EQUAL, PARTNER AND PERF",
+      "spend": 723431.99,
+      "count": 13879
+    },
+    {
+      "department": "ADEPT TREASURER E2",
+      "spend": 666704.01,
+      "count": 17
+    },
+    {
+      "department": "HEALTH AND ADULT SOCIAL CARE",
+      "spend": 641010.78,
+      "count": 8165
+    },
+    {
+      "department": "OLD PARENT CODES",
+      "spend": 539743.62,
+      "count": 172
+    },
+    {
+      "department": "FIN, RES AND CORP AFF RSSS",
+      "spend": 520651.42,
+      "count": 2283
+    },
+    {
+      "department": "EDU EXCEL, SKILLS AND TRAIN NON DSG",
+      "spend": 504460.89,
+      "count": 6678
+    },
+    {
+      "department": "EASTERN HIGHWAYS ALLIANCE",
+      "spend": 454491.49,
+      "count": 29
+    },
+    {
+      "department": "FINANCE COMMERCIAL & TRADED",
+      "spend": 196424.28,
+      "count": 1306
+    },
+    {
+      "department": "HWAYS MAINT AND SUSTAIN TRANS",
+      "spend": 180671.11,
+      "count": 2495
+    },
+    {
+      "department": "SAFF WALDEN LIBRARY TRUST A/C E2",
+      "spend": 137872.91,
+      "count": 452
+    },
+    {
+      "department": "WASTE REDUCTION AND RECYCLING",
+      "spend": 133904.19,
+      "count": 786
+    },
+    {
+      "department": "ECON RENEW, INFRASTR AND PLAN",
+      "spend": 57483.88,
+      "count": 306
+    },
+    {
+      "department": "COMM, EQUAL, PARTNER PERF RSSS",
+      "spend": 45988.64,
+      "count": 284
+    },
+    {
+      "department": "CHILDREN & FAMILIES NON-DSG - NORTH",
+      "spend": 38249.49,
+      "count": 494
+    },
+    {
+      "department": "EDUCATION & SKILLS DSG",
+      "spend": 32917.57,
+      "count": 180
+    },
+    {
+      "department": "CHILDREN & FAMILIES NON-DSG - WEST",
+      "spend": 31850.9,
+      "count": 353
+    },
+    {
+      "department": "PLAC3000",
+      "spend": 26290.12,
+      "count": 17
+    },
+    {
+      "department": "LEADER RSSS",
+      "spend": 26284.78,
+      "count": 153
+    },
+    {
+      "department": "CHILDREN & FAMILIES NON-DSG - MID",
+      "spend": 23358.0,
+      "count": 288
+    },
+    {
+      "department": "PLAC2000",
+      "spend": 22708.76,
+      "count": 12
+    },
+    {
+      "department": "SAFER ESSEX ROADS PARTNERSHIP A3",
+      "spend": 21840.85,
+      "count": 171
+    },
+    {
+      "department": "PLAC0000",
+      "spend": 20981.16,
+      "count": 23
+    },
+    {
+      "department": "LEADER",
+      "spend": 19149.47,
+      "count": 96
+    },
+    {
+      "department": "CUSTOMER",
+      "spend": 18663.09,
+      "count": 328
+    },
+    {
+      "department": "ECONOMIC GROWTH & LOCALITIES",
+      "spend": 15399.04,
+      "count": 194
+    },
+    {
+      "department": "SAFEGUARDING & QA",
+      "spend": 14639.39,
+      "count": 176
+    },
+    {
+      "department": "LEGAL SERVICES",
+      "spend": 14379.08,
+      "count": 29
+    },
+    {
+      "department": "ASYLUM SEEKER ADULTS 18 PLUS",
+      "spend": 14374.37,
+      "count": 98
+    },
+    {
+      "department": "DELETED CODES ECC",
+      "spend": 14299.34,
+      "count": 10
+    },
+    {
+      "department": "LOCAL DELIVERY - MID STAFF",
+      "spend": 13918.09,
+      "count": 142
+    },
+    {
+      "department": "ECON RENEW, INFRA PLAN RSSS",
+      "spend": 13757.6,
+      "count": 50
+    },
+    {
+      "department": "CHILDREN & FAMILIES NON-DSG - SOUTH",
+      "spend": 13713.24,
+      "count": 199
+    },
+    {
+      "department": "HIGHWAYS & TRANSPORTATION",
+      "spend": 13410.76,
+      "count": 138
+    },
+    {
+      "department": "LOCAL DELIVERY - NORTH STAFF",
+      "spend": 10946.24,
+      "count": 156
+    },
+    {
+      "department": "FIN, RESOURCE AND CORP AFFAIRS",
+      "spend": 10856.83,
+      "count": 86
+    },
+    {
+      "department": "SAFF WALDEN LIBRARY TRUST A/C A3",
+      "spend": 10779.29,
+      "count": 307
+    },
+    {
+      "department": "CIC ADDITIONAL SUPPORT SOUTH",
+      "spend": 10710.51,
+      "count": 86
+    },
+    {
+      "department": "ACCE - ASSOCIATION OF COUNTY CHIEF EXECUTIVES E2",
+      "spend": 10000.0,
+      "count": 1
+    },
+    {
+      "department": "COUNTRY PARKS EDUCATION",
+      "spend": 8817.64,
+      "count": 92
+    },
+    {
+      "department": "LVNG & AFTERCARE WEST OVER 16",
+      "spend": 8118.74,
+      "count": 88
+    },
+    {
+      "department": "YOUTH SERVICE COMMISSIONING",
+      "spend": 8109.75,
+      "count": 214
+    },
+    {
+      "department": "LOCAL DELIVERY - SOUTH STAFF",
+      "spend": 7589.27,
+      "count": 110
+    },
+    {
+      "department": "LVNG & AFTERCARE NORTH OVER 16",
+      "spend": 7412.23,
+      "count": 66
+    },
+    {
+      "department": "LEGAL & ASSURANCE",
+      "spend": 6718.83,
+      "count": 54
+    },
+    {
+      "department": "L&AC ADDITIONAL SUPPORT SOUTH",
+      "spend": 6700.58,
+      "count": 89
+    },
+    {
+      "department": "LOCAL DELIVERY - WEST STAFF",
+      "spend": 6610.16,
+      "count": 105
+    },
+    {
+      "department": "PLAC5000",
+      "spend": 6408.95,
+      "count": 2
+    },
+    {
+      "department": "ASC MENTAL HEALTH",
+      "spend": 6192.02,
+      "count": 60
+    },
+    {
+      "department": "AS VL BA",
+      "spend": 6181.42,
+      "count": 8
+    },
+    {
+      "department": "MAGDALEN CLOSE",
+      "spend": 6164.93,
+      "count": 91
+    },
+    {
+      "department": "ESSEX HOUSING",
+      "spend": 6077.32,
+      "count": 39
+    },
+    {
+      "department": "PARTNERS IN PRACTICE (PIP)",
+      "spend": 5512.71,
+      "count": 93
+    },
+    {
+      "department": "UASC 16 TO 18 LAC",
+      "spend": 5402.7,
+      "count": 103
+    },
+    {
+      "department": "DANBURY OUTDOORS",
+      "spend": 5387.26,
+      "count": 25
+    },
+    {
+      "department": "A&I S17 PURCHASED SUPPORT NTH",
+      "spend": 5316.01,
+      "count": 44
+    },
+    {
+      "department": "LVNG & AFTERCARE MID OVER 18",
+      "spend": 5291.61,
+      "count": 67
+    },
+    {
+      "department": "TRANSITIONS",
+      "spend": 5257.89,
+      "count": 81
+    },
+    {
+      "department": "PLAC4000",
+      "spend": 5250.0,
+      "count": 1
+    },
+    {
+      "department": "L&AC ADDITIONAL SUPPORT WEST",
+      "spend": 5139.25,
+      "count": 66
+    },
+    {
+      "department": "CAPITAL DELIVERY",
+      "spend": 4871.08,
+      "count": 37
+    },
+    {
+      "department": "INTERNATIONAL TRADE",
+      "spend": 4855.92,
+      "count": 28
+    },
+    {
+      "department": "PLACE AND CORPORATE",
+      "spend": 4776.35,
+      "count": 16
+    },
+    {
+      "department": "LVNG & AFTERCARE SOUTH OVER 16",
+      "spend": 4687.07,
+      "count": 84
+    },
+    {
+      "department": "BOOKFUND PURCHASING ACCOUNT",
+      "spend": 4583.47,
+      "count": 111
+    },
+    {
+      "department": "TRADED DEVELOPMENT TRADED T3",
+      "spend": 4458.17,
+      "count": 55
+    },
+    {
+      "department": "WEALD COUNTRY PARK",
+      "spend": 4436.39,
+      "count": 20
+    },
+    {
+      "department": "COMMUNITY & INVOLVEMENT",
+      "spend": 4396.79,
+      "count": 167
+    },
+    {
+      "department": "BRIDGEMARSH",
+      "spend": 4367.5,
+      "count": 43
+    },
+    {
+      "department": "ACL NORTH & EAST (INC SW)",
+      "spend": 4249.06,
+      "count": 53
+    },
+    {
+      "department": "THE MAPLES",
+      "spend": 3925.46,
+      "count": 81
+    },
+    {
+      "department": "A&I S17 PURCHASED SUPPORT STH",
+      "spend": 3795.66,
+      "count": 93
+    },
+    {
+      "department": "A&I S17 PURCHASED SUPPORT MID",
+      "spend": 3737.17,
+      "count": 36
+    },
+    {
+      "department": "LEAVING CARE SOUTH",
+      "spend": 3667.39,
+      "count": 99
+    },
+    {
+      "department": "SPORTS DEVELOPMENT CORE",
+      "spend": 3591.31,
+      "count": 16
+    },
+    {
+      "department": "MUSIC SERVICE CENTRAL",
+      "spend": 3582.98,
+      "count": 5
+    },
+    {
+      "department": "PEOPLE",
+      "spend": 3507.34,
+      "count": 26
+    },
+    {
+      "department": "ESSEX COUNTY TRAVELLER UNIT E3",
+      "spend": 3498.15,
+      "count": 8
+    },
+    {
+      "department": "YOUNG CARERS - SLAS",
+      "spend": 3483.75,
+      "count": 103
+    },
+    {
+      "department": "CIC & FSP ADDITIONAL SUPPORT W",
+      "spend": 3258.35,
+      "count": 84
+    },
+    {
+      "department": "SHORT BREAKS SERVICE",
+      "spend": 3229.98,
+      "count": 64
+    },
+    {
+      "department": "LEAVING CARE NORTH",
+      "spend": 3171.76,
+      "count": 26
+    },
+    {
+      "department": "BD SALES, MARKET & GROWTH",
+      "spend": 3044.89,
+      "count": 10
+    },
+    {
+      "department": "WELLBEING PH & COMMUNITIES",
+      "spend": 3025.29,
+      "count": 57
+    },
+    {
+      "department": "CIC NORTH COLCHESTER",
+      "spend": 2932.6,
+      "count": 56
+    },
+    {
+      "department": "QUALIFIED & UNQUALIFIED",
+      "spend": 2844.02,
+      "count": 20
+    },
+    {
+      "department": "L&AC ADDITIONAL SUPPORT MID",
+      "spend": 2810.02,
+      "count": 37
+    },
+    {
+      "department": "STRATEGIC COMMISSIONING & POLICY (ASC)",
+      "spend": 2755.4,
+      "count": 23
+    },
+    {
+      "department": "PENSIONS",
+      "spend": 2753.98,
+      "count": 17
+    },
+    {
+      "department": "MERSEA OUTDOORS",
+      "spend": 2715.86,
+      "count": 25
+    },
+    {
+      "department": "CIC COLCHESTER ADDITIONAL SUPP",
+      "spend": 2689.08,
+      "count": 128
+    },
+    {
+      "department": "WASTE & ENVIRONMENT",
+      "spend": 2684.31,
+      "count": 26
+    },
+    {
+      "department": "FINANCE & PROCUREMENT",
+      "spend": 2673.17,
+      "count": 46
+    },
+    {
+      "department": "CRESSING TEMPLE BARNS",
+      "spend": 2663.45,
+      "count": 25
+    },
+    {
+      "department": "CIC WEST",
+      "spend": 2610.75,
+      "count": 112
+    },
+    {
+      "department": "SUPPLIER & SERVICE ASSURANCE",
+      "spend": 2609.37,
+      "count": 14
+    },
+    {
+      "department": "PLAC1000",
+      "spend": 2567.04,
+      "count": 4
+    },
+    {
+      "department": "TARGETED YOUTH TEAM",
+      "spend": 2493.46,
+      "count": 41
+    },
+    {
+      "department": "ORGANISATIONAL EFFECTIVENESS",
+      "spend": 2380.45,
+      "count": 12
+    },
+    {
+      "department": "LAVENDER HOUSE",
+      "spend": 2360.58,
+      "count": 34
+    },
+    {
+      "department": "CIC CLACTON ADDITIONAL SUPPORT",
+      "spend": 2275.93,
+      "count": 51
+    },
+    {
+      "department": "ADULT COMMUNITY LEARNING",
+      "spend": 2241.36,
+      "count": 16
+    },
+    {
+      "department": "COMMUNICATIONS - GENERAL",
+      "spend": 2181.52,
+      "count": 14
+    },
+    {
+      "department": "YJB ISS & GW PROGRAMME",
+      "spend": 2160.31,
+      "count": 74
+    },
+    {
+      "department": "ECONOMY LOCALITIES & PH NON DSG",
+      "spend": 2152.96,
+      "count": 11
+    },
+    {
+      "department": "COLCHESTER MUSCIC SCHOOL",
+      "spend": 2123.49,
+      "count": 9
+    },
+    {
+      "department": "HEADS OF SERVICE",
+      "spend": 2097.12,
+      "count": 27
+    },
+    {
+      "department": "NORTH FOSTERING TEAM",
+      "spend": 2073.09,
+      "count": 55
+    },
+    {
+      "department": "NATURAL ENVIRONMENT",
+      "spend": 2046.0,
+      "count": 12
+    },
+    {
+      "department": "YOUTH ENSEMBLES",
+      "spend": 2032.82,
+      "count": 12
+    },
+    {
+      "department": "SENCAN MANAGEMENT",
+      "spend": 2024.62,
+      "count": 7
+    },
+    {
+      "department": "FAMILY SUPPORT NORTH",
+      "spend": 2012.82,
+      "count": 15
+    },
+    {
+      "department": "CIC ADDITIONAL SUPPORT MID",
+      "spend": 1994.5,
+      "count": 49
+    },
+    {
+      "department": "INTEGRATION & PARTNERSHIPS",
+      "spend": 1915.85,
+      "count": 21
+    },
+    {
+      "department": "BRADWELL OUTDOORS",
+      "spend": 1909.2,
+      "count": 19
+    },
+    {
+      "department": "NO RECOURSE TO PUBLIC FUNDS",
+      "spend": 1898.6,
+      "count": 15
+    },
+    {
+      "department": "HAVEN GATEWAY PARTNERSHIP",
+      "spend": 1874.56,
+      "count": 23
+    },
+    {
+      "department": "MARTINS FARM",
+      "spend": 1871.71,
+      "count": 8
+    },
+    {
+      "department": "TOURISM",
+      "spend": 1841.22,
+      "count": 9
+    },
+    {
+      "department": "WORK FORCE DEVELOPMENT",
+      "spend": 1773.72,
+      "count": 18
+    },
+    {
+      "department": "AS LDD COMMUNITY LEARNING",
+      "spend": 1750.29,
+      "count": 37
+    },
+    {
+      "department": "MANAGEMENT TEAM",
+      "spend": 1727.33,
+      "count": 11
+    },
+    {
+      "department": "#N/A",
+      "spend": 1712.55,
+      "count": 31
+    },
+    {
+      "department": "LEP SECRETARIAT",
+      "spend": 1694.2,
+      "count": 9
+    },
+    {
+      "department": "RESOURCE STRATEGY & SERVICE CENTRE",
+      "spend": 1687.41,
+      "count": 2
+    },
+    {
+      "department": "FAMILY SUPPORT MID",
+      "spend": 1674.89,
+      "count": 17
+    },
+    {
+      "department": "SOUTH EAST LEP PARTNERSHIP A3",
+      "spend": 1665.99,
+      "count": 7
+    },
+    {
+      "department": "FLOOD & SURFACE WATER - STAFF",
+      "spend": 1665.12,
+      "count": 13
+    },
+    {
+      "department": "C PARKS CENTRAL BUDGET",
+      "spend": 1636.01,
+      "count": 18
+    },
+    {
+      "department": "LEAVING CARE WEST",
+      "spend": 1629.13,
+      "count": 79
+    },
+    {
+      "department": "YOUTH DOFE",
+      "spend": 1567.56,
+      "count": 15
+    },
+    {
+      "department": "L&AC ADDITIONAL SUPPORT NTH",
+      "spend": 1540.7,
+      "count": 19
+    },
+    {
+      "department": "ESSEX RECORD OFFICE",
+      "spend": 1518.63,
+      "count": 29
+    },
+    {
+      "department": "CIC NORTH CLACTON",
+      "spend": 1463.17,
+      "count": 33
+    },
+    {
+      "department": "AS ARTS & CULTURE",
+      "spend": 1439.89,
+      "count": 28
+    },
+    {
+      "department": "BUSINESS SUPPORT NORTH",
+      "spend": 1423.63,
+      "count": 18
+    },
+    {
+      "department": "ASSESSMENT NORTH",
+      "spend": 1407.49,
+      "count": 11
+    },
+    {
+      "department": "AS VL CARE",
+      "spend": 1400.0,
+      "count": 4
+    },
+    {
+      "department": "RISK",
+      "spend": 1384.68,
+      "count": 8
+    },
+    {
+      "department": "THORNDON COUNTRY PARK GENERAL",
+      "spend": 1348.35,
+      "count": 14
+    },
+    {
+      "department": "CYCLE TRAINING GRANT",
+      "spend": 1316.52,
+      "count": 5
+    },
+    {
+      "department": "ESMEE FAIRBAIRN COLL TRUST",
+      "spend": 1292.4,
+      "count": 10
+    },
+    {
+      "department": "FS&P S17 PURCHASED SUPPORT WST",
+      "spend": 1277.38,
+      "count": 27
+    },
+    {
+      "department": "MARSH FARM COUNTRY PARK",
+      "spend": 1272.82,
+      "count": 21
+    },
+    {
+      "department": "CUDMORE GROVE CTRY PK GENERAL",
+      "spend": 1248.49,
+      "count": 18
+    },
+    {
+      "department": "AS HEALTH, BEAUTY & THERAPIES",
+      "spend": 1238.24,
+      "count": 28
+    },
+    {
+      "department": "CYP EARLY INTERVENTION",
+      "spend": 1215.89,
+      "count": 8
+    },
+    {
+      "department": "NOTLEY HIGH ROPES",
+      "spend": 1202.16,
+      "count": 9
+    },
+    {
+      "department": "TECHNOLOGY SERVICES",
+      "spend": 1197.3,
+      "count": 7
+    },
+    {
+      "department": "NDORS COURSES",
+      "spend": 1179.73,
+      "count": 12
+    },
+    {
+      "department": "LD STRAT COMMISSIONING",
+      "spend": 1168.32,
+      "count": 1
+    },
+    {
+      "department": "FAMILY SUPPORT SOUTH",
+      "spend": 1132.52,
+      "count": 86
+    },
+    {
+      "department": "FOSTERING SERVICE MANAGER",
+      "spend": 1116.12,
+      "count": 6
+    },
+    {
+      "department": "CLACTON FAMILY CENTRE",
+      "spend": 1102.46,
+      "count": 32
+    },
+    {
+      "department": "MID MANAGERS",
+      "spend": 1068.3,
+      "count": 6
+    },
+    {
+      "department": "LEADERSHIP & TALENT MANAGEMENT",
+      "spend": 1047.31,
+      "count": 7
+    },
+    {
+      "department": "INTELLIGENT INFORMATION",
+      "spend": 1026.0,
+      "count": 1
+    },
+    {
+      "department": "SPONGE 2020",
+      "spend": 1012.84,
+      "count": 2
+    },
+    {
+      "department": "HOVEFIELDS",
+      "spend": 1001.26,
+      "count": 3
+    },
+    {
+      "department": "FAMILY SOLUTIONS",
+      "spend": 990.03,
+      "count": 51
+    },
+    {
+      "department": "ACTIVE ESSEX E3",
+      "spend": 980.95,
+      "count": 18
+    },
+    {
+      "department": "HADLEIGH COUNTRY PARK",
+      "spend": 979.21,
+      "count": 11
+    },
+    {
+      "department": "DISCRETIONARY LEARNING SUPPORT",
+      "spend": 942.0,
+      "count": 1
+    },
+    {
+      "department": "ACL MANAGEMENT",
+      "spend": 917.6,
+      "count": 16
+    },
+    {
+      "department": "CARE TECHNOLOGY TRANSFORMATION",
+      "spend": 917.0,
+      "count": 1
+    },
+    {
+      "department": "DBIT PROJECT",
+      "spend": 907.85,
+      "count": 25
+    },
+    {
+      "department": "RAINBOW CENTRE",
+      "spend": 879.81,
+      "count": 56
+    },
+    {
+      "department": "COMMUNITY RAIL P SHIP BUDGET",
+      "spend": 871.61,
+      "count": 48
+    },
+    {
+      "department": "SERVICE PLACEMENT TEAM",
+      "spend": 864.24,
+      "count": 3
+    },
+    {
+      "department": "UASC 0 TO 18 CIC",
+      "spend": 834.08,
+      "count": 44
+    },
+    {
+      "department": "EDUCATION - TRADED",
+      "spend": 834.06,
+      "count": 14
+    },
+    {
+      "department": "DIGITAL PROGRAMME PROJECT COSTS",
+      "spend": 831.18,
+      "count": 2
+    },
+    {
+      "department": "ACL SOUTH",
+      "spend": 823.09,
+      "count": 12
+    },
+    {
+      "department": "SOUTH FOSTERING TEAM",
+      "spend": 801.04,
+      "count": 13
+    },
+    {
+      "department": "DEPUTY EXECUTIVE DIRECTOR",
+      "spend": 796.95,
+      "count": 2
+    },
+    {
+      "department": "FLEET OPS COMM LINK GENERAL",
+      "spend": 789.79,
+      "count": 15
+    },
+    {
+      "department": "PUBLIC HEALTH",
+      "spend": 780.8,
+      "count": 2
+    },
+    {
+      "department": "BUSINESS SUPPORT SOUTH/WEST",
+      "spend": 771.06,
+      "count": 29
+    },
+    {
+      "department": "CWD SOUTH",
+      "spend": 768.34,
+      "count": 65
+    },
+    {
+      "department": "HISTORIC ENVIRONMENT",
+      "spend": 764.31,
+      "count": 22
+    },
+    {
+      "department": "RECYCLING PROMOTIONS",
+      "spend": 757.84,
+      "count": 9
+    },
+    {
+      "department": "ACCESS SUPPORT UNIT",
+      "spend": 757.0,
+      "count": 4
+    },
+    {
+      "department": "FINANCE",
+      "spend": 750.0,
+      "count": 1
+    },
+    {
+      "department": "HAVEN GATEWAY PARTNERSHIP E3",
+      "spend": 739.65,
+      "count": 7
+    },
+    {
+      "department": "MULBERRY TREE FAMILY CTRE",
+      "spend": 721.29,
+      "count": 16
+    },
+    {
+      "department": "STRATEGY INSIGHT & ENGAGEMENT",
+      "spend": 716.15,
+      "count": 13
+    },
+    {
+      "department": "OUTDOOR ED DEVELOPMENT",
+      "spend": 712.8,
+      "count": 1
+    },
+    {
+      "department": "SAFF WALDEN LIBRARY TRUST A/C",
+      "spend": 676.91,
+      "count": 16
+    },
+    {
+      "department": "ASSESSMENT SOUTH",
+      "spend": 676.25,
+      "count": 54
+    },
+    {
+      "department": "VEHICLE LEASE MANAGEMENT",
+      "spend": 668.5,
+      "count": 2
+    },
+    {
+      "department": "CWD UTTLESFORD/HARLOW/EPPING",
+      "spend": 664.64,
+      "count": 7
+    },
+    {
+      "department": "COMMUNITY BUDGETING",
+      "spend": 661.18,
+      "count": 3
+    },
+    {
+      "department": "HARLOW CLIMBING WALL AND SHOP",
+      "spend": 658.31,
+      "count": 5
+    },
+    {
+      "department": "BI QUALITY & WORKFORCE DEVELMT",
+      "spend": 648.8,
+      "count": 5
+    },
+    {
+      "department": "HEAD OF LIBRARIES",
+      "spend": 644.18,
+      "count": 21
+    },
+    {
+      "department": "LOCAL DELIVERY - MID",
+      "spend": 631.65,
+      "count": 10
+    },
+    {
+      "department": "RESTORATIVE JUSTICE",
+      "spend": 591.35,
+      "count": 17
+    },
+    {
+      "department": "BASILDON & CASTLE POINT LIBR",
+      "spend": 589.74,
+      "count": 12
+    },
+    {
+      "department": "CWD S17 PURCHASED SUPPORT NTH",
+      "spend": 586.85,
+      "count": 2
+    },
+    {
+      "department": "SPECIALIST TEACHER NORTH DSG",
+      "spend": 585.0,
+      "count": 1
+    },
+    {
+      "department": "AS EMPLOYABILITY & ENTERPRISE",
+      "spend": 569.8,
+      "count": 2
+    },
+    {
+      "department": "EARLY YEARS CORE COSTS",
+      "spend": 568.77,
+      "count": 2
+    },
+    {
+      "department": "HARLOW OUTDOORS",
+      "spend": 563.47,
+      "count": 19
+    },
+    {
+      "department": "STRAT COMM & POLICY C3NS T3",
+      "spend": 558.2,
+      "count": 11
+    },
+    {
+      "department": "MID ESSEX FAMILY CENTRE",
+      "spend": 555.24,
+      "count": 29
+    },
+    {
+      "department": "EMPLOYMENT PRACTICE & EQUAL",
+      "spend": 554.4,
+      "count": 1
+    },
+    {
+      "department": "GREAT NOTLEY COUNTRY PARK",
+      "spend": 550.21,
+      "count": 9
+    },
+    {
+      "department": "ACL CENTRAL (INC HARLOW)",
+      "spend": 543.59,
+      "count": 4
+    },
+    {
+      "department": "ASSESSMENT MID",
+      "spend": 525.49,
+      "count": 42
+    },
+    {
+      "department": "INSTRUMENT HIRE",
+      "spend": 516.5,
+      "count": 28
+    },
+    {
+      "department": "IBCF COUNTYWIDE CARE MARKET QUALITY INITIATIVES",
+      "spend": 511.64,
+      "count": 6
+    },
+    {
+      "department": "EMERGENCY PLANNING UNIT",
+      "spend": 510.9,
+      "count": 3
+    },
+    {
+      "department": "BUSINESS SUPPORT MID",
+      "spend": 509.03,
+      "count": 5
+    },
+    {
+      "department": "FOSTERING RECRUITMENT",
+      "spend": 496.72,
+      "count": 15
+    },
+    {
+      "department": "LIBRARIES-ICE RESOURCE CENTRE",
+      "spend": 493.51,
+      "count": 4
+    },
+    {
+      "department": "DEMOCRATIC REPRESENTATION",
+      "spend": 492.2,
+      "count": 2
+    },
+    {
+      "department": "INDEPENDENT REVIEWING OFFICERS",
+      "spend": 491.5,
+      "count": 6
+    },
+    {
+      "department": "WOODLANDS WEST ESSEX FAM CTR",
+      "spend": 488.29,
+      "count": 25
+    },
+    {
+      "department": "MID FOSTERING TEAM",
+      "spend": 484.07,
+      "count": 7
+    },
+    {
+      "department": "DELIVERY & ASSURANCE",
+      "spend": 481.05,
+      "count": 2
+    },
+    {
+      "department": "CUSTOMER CONTACT CENTRE",
+      "spend": 476.56,
+      "count": 6
+    },
+    {
+      "department": "DANBURY COUNTRY PARK GENERAL",
+      "spend": 474.01,
+      "count": 6
+    },
+    {
+      "department": "SERV MGT, INC & PAYROLL PROC",
+      "spend": 470.3,
+      "count": 9
+    },
+    {
+      "department": "CWD NORTH",
+      "spend": 460.0,
+      "count": 1
+    },
+    {
+      "department": "CULTURE & COMMUNITY",
+      "spend": 459.8,
+      "count": 19
+    },
+    {
+      "department": "QUALITY IMPROVEMENT TEAM",
+      "spend": 453.74,
+      "count": 3
+    },
+    {
+      "department": "RESEARCH AND CITIZEN INSIGHT",
+      "spend": 444.8,
+      "count": 2
+    },
+    {
+      "department": "YOUTH NCS",
+      "spend": 442.59,
+      "count": 13
+    },
+    {
+      "department": "SUPERFAST BROADBAND",
+      "spend": 424.46,
+      "count": 6
+    },
+    {
+      "department": "HGP - CORE",
+      "spend": 417.1,
+      "count": 10
+    },
+    {
+      "department": "MALDON & ROCHFORD LIBRARIES",
+      "spend": 411.6,
+      "count": 1
+    },
+    {
+      "department": "LADY GROVE",
+      "spend": 409.36,
+      "count": 4
+    },
+    {
+      "department": "ESSEX SCHOOLS ITT",
+      "spend": 404.55,
+      "count": 2
+    },
+    {
+      "department": "SOUTH EAST LEP PARTNERSHIP E3",
+      "spend": 403.19,
+      "count": 11
+    },
+    {
+      "department": "STP WORKS & SERVICES",
+      "spend": 403.02,
+      "count": 3
+    },
+    {
+      "department": "PAYROLL",
+      "spend": 399.0,
+      "count": 2
+    },
+    {
+      "department": "OTHER HIRED SERVICES",
+      "spend": 394.04,
+      "count": 13
+    },
+    {
+      "department": "YJB YOS OVERHEADS",
+      "spend": 389.97,
+      "count": 3
+    },
+    {
+      "department": "OPTIMISATION PLANNING REPORT",
+      "spend": 377.9,
+      "count": 1
+    },
+    {
+      "department": "AS ENGLISH",
+      "spend": 376.35,
+      "count": 3
+    },
+    {
+      "department": "EQUALITY & PARTNERSHIP",
+      "spend": 375.9,
+      "count": 1
+    },
+    {
+      "department": "FOOD & DRINK - EXT SUPPLIERS",
+      "spend": 370.73,
+      "count": 3
+    },
+    {
+      "department": "EDU & IND STEM PROG PHASE 4",
+      "spend": 366.7,
+      "count": 1
+    },
+    {
+      "department": "DOMESTIC ABUSE",
+      "spend": 365.0,
+      "count": 2
+    },
+    {
+      "department": "SUPERVISED CONTACT WEST FCW",
+      "spend": 363.1,
+      "count": 15
+    },
+    {
+      "department": "EES TRADED",
+      "spend": 359.95,
+      "count": 5
+    },
+    {
+      "department": "LEADERSHIIP & TALENT TEAM",
+      "spend": 333.4,
+      "count": 1
+    },
+    {
+      "department": "BELHUS WOODS CTRY PARK GENERAL",
+      "spend": 325.28,
+      "count": 6
+    },
+    {
+      "department": "Government Service",
+      "spend": 320.0,
+      "count": 9
+    },
+    {
+      "department": "STRATEGIC COMMISSIONING & POLICY (C&F) - NON DSG",
+      "spend": 313.0,
+      "count": 5
+    },
+    {
+      "department": "ACTIVITIES & CLUBS",
+      "spend": 309.96,
+      "count": 1
+    },
+    {
+      "department": "RIDGEWELL",
+      "spend": 307.6,
+      "count": 2
+    },
+    {
+      "department": "GENERAL",
+      "spend": 303.0,
+      "count": 2
+    },
+    {
+      "department": "AS ESOL",
+      "spend": 301.53,
+      "count": 4
+    },
+    {
+      "department": "ADOPTION WEST",
+      "spend": 295.2,
+      "count": 1
+    },
+    {
+      "department": "SOUTH MANAGERS",
+      "spend": 286.8,
+      "count": 1
+    },
+    {
+      "department": "SCF LEARNING AND DEVELOPMENT",
+      "spend": 286.5,
+      "count": 8
+    },
+    {
+      "department": "SUPPORT D P - SLA WITH ILA",
+      "spend": 284.89,
+      "count": 3
+    },
+    {
+      "department": "ALL SITES (REALLOCATED)",
+      "spend": 265.0,
+      "count": 1
+    },
+    {
+      "department": "LEAVING CARE MID",
+      "spend": 255.78,
+      "count": 16
+    },
+    {
+      "department": "ADOPTION SERVICE MANAGER",
+      "spend": 252.87,
+      "count": 17
+    },
+    {
+      "department": "SKILLS UNIT",
+      "spend": 250.9,
+      "count": 1
+    },
+    {
+      "department": "HOP GARDENS",
+      "spend": 233.13,
+      "count": 2
+    },
+    {
+      "department": "BUILT ENVIRONMENT",
+      "spend": 223.93,
+      "count": 6
+    },
+    {
+      "department": "FAMILY SUPPORT WEST",
+      "spend": 216.2,
+      "count": 8
+    },
+    {
+      "department": "EARLY INTERVENTION TEAM - SOUTHEND HOSPITAL",
+      "spend": 214.4,
+      "count": 1
+    },
+    {
+      "department": "TRADING STANDARDS GENERAL",
+      "spend": 214.23,
+      "count": 7
+    },
+    {
+      "department": "SPECIALIST TEACHER SOUTH DSG",
+      "spend": 209.0,
+      "count": 3
+    },
+    {
+      "department": "CHELMSFORD PRISON LIBRARY",
+      "spend": 204.57,
+      "count": 9
+    },
+    {
+      "department": "ECC - PUBLIC RIGHTS OF WAY",
+      "spend": 204.0,
+      "count": 1
+    },
+    {
+      "department": "ORGANISATION DEVELOPMENT & PEOPLE - MANAGEMENT",
+      "spend": 190.0,
+      "count": 1
+    },
+    {
+      "department": "ESSEX PENSION FUND",
+      "spend": 185.9,
+      "count": 2
+    },
+    {
+      "department": "CHAUFFEURING SERVICE",
+      "spend": 181.97,
+      "count": 1
+    },
+    {
+      "department": "CIC SOUTH",
+      "spend": 178.73,
+      "count": 14
+    },
+    {
+      "department": "SERVICE DESIGN",
+      "spend": 177.01,
+      "count": 3
+    },
+    {
+      "department": "BELLHOUSE",
+      "spend": 176.34,
+      "count": 3
+    },
+    {
+      "department": "TRAVEL TRAINING TEAM",
+      "spend": 172.34,
+      "count": 7
+    },
+    {
+      "department": "PLATFORM",
+      "spend": 171.7,
+      "count": 1
+    },
+    {
+      "department": "AS VL EMPLOYABILITY SKILLS&ICT",
+      "spend": 168.6,
+      "count": 4
+    },
+    {
+      "department": "INDEPENDENT VISITOR SERVICE",
+      "spend": 167.15,
+      "count": 11
+    },
+    {
+      "department": "WEST FOSTERING TEAM",
+      "spend": 166.51,
+      "count": 17
+    },
+    {
+      "department": "PEOPLE BUSINESS PARTNERS & EMPLOYMENT PRACTICE",
+      "spend": 163.0,
+      "count": 1
+    },
+    {
+      "department": "ADULT SOCIAL CARE MANAGEMENT",
+      "spend": 148.0,
+      "count": 2
+    },
+    {
+      "department": "EDUCATIONAL PSYCH SOUTH NDSG",
+      "spend": 144.77,
+      "count": 3
+    },
+    {
+      "department": "FAMILY GROUP CONFERENCES",
+      "spend": 142.19,
+      "count": 20
+    },
+    {
+      "department": "ESSEX SAFEGUARDING ADULTS BRD",
+      "spend": 141.6,
+      "count": 2
+    },
+    {
+      "department": "HARLOW YJC",
+      "spend": 139.97,
+      "count": 2
+    },
+    {
+      "department": "EGS LOCATIONS FOR GROWTH",
+      "spend": 139.7,
+      "count": 1
+    },
+    {
+      "department": "LIBS BILLERICAY BRENTWOOD GRP",
+      "spend": 134.27,
+      "count": 5
+    },
+    {
+      "department": "PROFESSIONAL STDS & AUDIT",
+      "spend": 133.1,
+      "count": 8
+    },
+    {
+      "department": "ACCESS & SOCIAL INCLUSION",
+      "spend": 132.8,
+      "count": 4
+    },
+    {
+      "department": "MID D OF E",
+      "spend": 127.16,
+      "count": 4
+    },
+    {
+      "department": "DBIT REUNIFICATION TEAM",
+      "spend": 123.4,
+      "count": 17
+    },
+    {
+      "department": "REG OF BD & M GENERAL",
+      "spend": 122.62,
+      "count": 4
+    },
+    {
+      "department": "HGP TRALE",
+      "spend": 113.7,
+      "count": 8
+    },
+    {
+      "department": "AECC0212",
+      "spend": 111.8,
+      "count": 1
+    },
+    {
+      "department": "DELIVERY AND ASSURANCE",
+      "spend": 109.57,
+      "count": 3
+    },
+    {
+      "department": "THERAPEUTIC FOSTERING",
+      "spend": 108.99,
+      "count": 1
+    },
+    {
+      "department": "LIBS HARLOW UTTTLESFORD GROUP",
+      "spend": 107.0,
+      "count": 1
+    },
+    {
+      "department": "AS FAMILY LEARNING",
+      "spend": 105.11,
+      "count": 2
+    },
+    {
+      "department": "ADOPTION NORTH",
+      "spend": 104.67,
+      "count": 5
+    },
+    {
+      "department": "EMERGENCY DUTY TEAM",
+      "spend": 104.5,
+      "count": 1
+    },
+    {
+      "department": "ELIZABETH WAY",
+      "spend": 102.73,
+      "count": 2
+    },
+    {
+      "department": "YOUTH SERVICE MANAGEMENT",
+      "spend": 101.1,
+      "count": 4
+    },
+    {
+      "department": "ACWA5010",
+      "spend": 100.0,
+      "count": 1
+    },
+    {
+      "department": "SEVERALLS LANE",
+      "spend": 98.99,
+      "count": 1
+    },
+    {
+      "department": "PROPERTY, FACILITIES &CONTRACT",
+      "spend": 93.6,
+      "count": 1
+    },
+    {
+      "department": "AS FOUNDATION LEARNING",
+      "spend": 90.0,
+      "count": 3
+    },
+    {
+      "department": "SEC20 CWD MID/SENSORY",
+      "spend": 88.5,
+      "count": 3
+    },
+    {
+      "department": "NRTPF MID",
+      "spend": 87.9,
+      "count": 1
+    },
+    {
+      "department": "CIC MID",
+      "spend": 85.5,
+      "count": 3
+    },
+    {
+      "department": "YOTS SOUTH ESSEX",
+      "spend": 84.0,
+      "count": 2
+    },
+    {
+      "department": "CUSTOMER EXCELLENCE",
+      "spend": 82.5,
+      "count": 1
+    },
+    {
+      "department": "SGO SUPPORT",
+      "spend": 79.72,
+      "count": 6
+    },
+    {
+      "department": "PURCHASE TO PAY",
+      "spend": 79.0,
+      "count": 1
+    },
+    {
+      "department": "DIRECTOR-LOCAL DELIVERY WEST",
+      "spend": 76.5,
+      "count": 1
+    },
+    {
+      "department": "DATA & ANALYTICS",
+      "spend": 74.95,
+      "count": 2
+    },
+    {
+      "department": "CYP PLACEMENT TEAM",
+      "spend": 71.56,
+      "count": 2
+    },
+    {
+      "department": "BUSINESS SUPPORT CENTRAL",
+      "spend": 70.0,
+      "count": 2
+    },
+    {
+      "department": "FAMILY OPERATIONS HUB",
+      "spend": 68.83,
+      "count": 1
+    },
+    {
+      "department": "SUPERVISED CONTACT SOUTH FCW",
+      "spend": 68.54,
+      "count": 6
+    },
+    {
+      "department": "GYPSY SITES SUPERVISION",
+      "spend": 67.29,
+      "count": 2
+    },
+    {
+      "department": "CUSTOMER STRATEGY & REVENUE",
+      "spend": 60.0,
+      "count": 1
+    },
+    {
+      "department": "HGP - FUTUREPROOF",
+      "spend": 59.7,
+      "count": 2
+    },
+    {
+      "department": "POST ADOPTION TEAM",
+      "spend": 57.56,
+      "count": 10
+    },
+    {
+      "department": "INFRASTRUCT DELIV GEN - STAFF",
+      "spend": 54.51,
+      "count": 1
+    },
+    {
+      "department": "CULTURE & GS BUSINESS DEV",
+      "spend": 51.66,
+      "count": 1
+    },
+    {
+      "department": "PEOPLE OPERATIONS",
+      "spend": 51.1,
+      "count": 2
+    },
+    {
+      "department": "SGO ASSESSMENT",
+      "spend": 45.0,
+      "count": 1
+    },
+    {
+      "department": "CWD MID",
+      "spend": 44.85,
+      "count": 1
+    },
+    {
+      "department": "EMPOWER 2.0",
+      "spend": 43.62,
+      "count": 3
+    },
+    {
+      "department": "PLACE MANAGEMENT TEAM",
+      "spend": 41.54,
+      "count": 2
+    },
+    {
+      "department": "WILLOWBROOK",
+      "spend": 40.0,
+      "count": 1
+    },
+    {
+      "department": "SCH EDU EXCLUDED PUPILS",
+      "spend": 37.86,
+      "count": 2
+    },
+    {
+      "department": "ESSEX LSCB - GENERAL",
+      "spend": 37.73,
+      "count": 3
+    },
+    {
+      "department": "TRADED DEVELOPMENT",
+      "spend": 36.5,
+      "count": 3
+    },
+    {
+      "department": "DIRECTOR-LOCAL DELIVERY MID",
+      "spend": 32.7,
+      "count": 3
+    },
+    {
+      "department": "ADOPTION RECRUITMT & TRAINING",
+      "spend": 32.29,
+      "count": 4
+    },
+    {
+      "department": "CWD WEST",
+      "spend": 31.52,
+      "count": 2
+    },
+    {
+      "department": "YOTS MID ESSEX",
+      "spend": 30.19,
+      "count": 3
+    },
+    {
+      "department": "CORPORATE STRATEGY",
+      "spend": 30.0,
+      "count": 2
+    },
+    {
+      "department": "DIRECTOR-LOCAL DELIVERY SOUTH",
+      "spend": 27.04,
+      "count": 1
+    },
+    {
+      "department": "CENTRAL SYSTEMS AND PROJECTS",
+      "spend": 25.0,
+      "count": 1
+    },
+    {
+      "department": "ASSESSMENT WEST",
+      "spend": 24.77,
+      "count": 2
+    },
+    {
+      "department": "THURROCK EXPENDITURE",
+      "spend": 22.98,
+      "count": 1
+    },
+    {
+      "department": "SDEV0000",
+      "spend": 21.51,
+      "count": 2
+    },
+    {
+      "department": "42",
+      "spend": 21.25,
+      "count": 1
+    },
+    {
+      "department": "CHILDREN & FAMILIES DSG - MID",
+      "spend": 20.7,
+      "count": 1
+    },
+    {
+      "department": "VISITS/ACTIVITIES/SPEC EVENTS",
+      "spend": 19.81,
+      "count": 2
+    },
+    {
+      "department": "HGP - I CONSTRUCT",
+      "spend": 19.3,
+      "count": 1
+    },
+    {
+      "department": "COLCHESTER YJC",
+      "spend": 17.25,
+      "count": 2
+    },
+    {
+      "department": "DEMOCRATIC SERVICES",
+      "spend": 16.95,
+      "count": 1
+    },
+    {
+      "department": "BI DIGITECH, ELEARN&BUSPROCESS",
+      "spend": 16.25,
+      "count": 1
+    },
+    {
+      "department": "FERNHILL LANE",
+      "spend": 16.0,
+      "count": 1
+    },
+    {
+      "department": "HAVEN GATEWAY PARTNERSHIP A3",
+      "spend": 15.1,
+      "count": 1
+    },
+    {
+      "department": "LEADERSHIP & TALENT",
+      "spend": 15.0,
+      "count": 1
+    },
+    {
+      "department": "LIBRARY RESOURCES - STAFF",
+      "spend": 15.0,
+      "count": 1
+    },
+    {
+      "department": "ADOPTION SUPPORT FUND",
+      "spend": 14.97,
+      "count": 1
+    },
+    {
+      "department": "ADULTS & COMMUNITY LEARNING",
+      "spend": 13.59,
+      "count": 2
+    },
+    {
+      "department": "AS GENERAL INT, H & S WELFARE",
+      "spend": 12.99,
+      "count": 1
+    },
+    {
+      "department": "NRTPF NORTH",
+      "spend": 11.7,
+      "count": 3
+    },
+    {
+      "department": "PRINTING & STATIONERY",
+      "spend": 11.42,
+      "count": 1
+    },
+    {
+      "department": "LIBS TENDRING GROUP",
+      "spend": 11.05,
+      "count": 13
+    },
+    {
+      "department": "MBT PLANT - COMMISSIONING",
+      "spend": 11.0,
+      "count": 1
+    },
+    {
+      "department": "COLCHESTER GROUP LIBRARIES",
+      "spend": 9.99,
+      "count": 1
+    },
+    {
+      "department": "AFTER PLACEMENT SUPPORT PLANS",
+      "spend": 9.57,
+      "count": 1
+    },
+    {
+      "department": "ADOPTION SOUTH",
+      "spend": 8.5,
+      "count": 1
+    },
+    {
+      "department": "CHILDRENS & FAMILIES NON-DSG MANAGEMENT",
+      "spend": 8.2,
+      "count": 1
+    },
+    {
+      "department": "MH CAT TEAM",
+      "spend": 3.4,
+      "count": 3
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2019/20": 1663221382.02,
+      "2020/21": 1708568003.89,
+      "2021/22": 1842491650.42,
+      "2022/23": 2334773794.8,
+      "2023/24": 2712000159.13,
+      "2024/25": 2967221980.56,
+      "2025/26": 3110590809.02
+    },
+    "transactions_by_year": {
+      "2019/20": 458324,
+      "2020/21": 409424,
+      "2021/22": 424287,
+      "2022/23": 499956,
+      "2023/24": 534200,
+      "2024/25": 528294,
+      "2025/26": 527954
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 3382439
+  }
+}

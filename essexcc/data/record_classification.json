@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "council_id": "essex_cc",
+  "updated": "2026-05-04",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Declarative classification rules for Essex County Council spending rows. Source: quarterly XLSX 'day-to-day spending' published by Essex CC at /about-council/spending-and-council-tax/finance-and-spending-breakdowns. Coverage Apr 2019 – Mar 2026 (28 quarters, ~3.7M rows). Invoice-only feed (no parallel PO/contracts feed → no Burnley-style PO+invoice double-count). Header columns: Date, Name, Value, Function, Source, Spend Description, Merchant Group, Merchant Category. Per recon agent: 0 REDACTED rows in Q1 2026 sample (single false-positive 'REDACTIVE EVENTS LTD'). Modelled on warwickshire_cc shape.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"
+      },
+      "reason": "Defensive REDACTED rule (none observed in 2026 Q1 sample). Matches LCC / Kent / Doncaster patterns. Will not match REDACTIVE EVENTS LTD."
+    },
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(FOSTER CARE PAYMENT|FOSTER CARE PAYMENTS|DIRECT PAYMENT|DIRECT PAYMENTS|PAYMENT TO INDIVIDUAL|PAYMENT TO INDIVIDIUAL|TRAINING BURSARY|NON EMPLOYEE EXPENSE|ECC EMPLOYEE|ESSEX CC CARD PAYMENT|EMPLOYEE EXPENSE|EXPENSES PAYMENT|SGO PAYMENT|ADOPTION PAYMENT|RESIDENCE ORDER PAYMENT)$"
+      },
+      "reason": "1.32M rows / £830M. Essex publishes category-as-supplier strings instead of REDACTED for direct payments to individuals: FOSTER CARE PAYMENT (691K rows / £169M, foster carer allowances), DIRECT PAYMENT (272K / £446M, Care Act 2014 s.31 ASC direct payments), ECC EMPLOYEE (281K / £22M, employee expense reimbursements), PAYMENT TO INDIVIDUAL (29K / £111M), NON EMPLOYEE EXPENSE (24K / £39M, panel-member fees etc.), TRAINING BURSARY (18K / £44M, student bursaries). All lawfully unnamed transfers to individuals — not third-party procurement. Without this rule the supplier league lists FOSTER CARE PAYMENT as Essex's #1 supplier, which is meaningless."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^(ESSEX (COUNTY COUNCIL )?PENSION FUND|ESSEX CARES LTD|ESSEX COUNTY FIRE & RESCUE SERVICE|ESSEX PFCC FRA)$"
+      },
+      "reason": "ECC group entities. ESSEX PENSION FUND = LGPS employer contribution. ESSEX CARES LTD (4,388 rows / £306M) = wholly-owned ASC subsidiary spun out 2009. ESSEX PFCC FRA (144 rows / £544M) = Police Fire Crime Commissioner Fire & Rescue Authority precept transfer. ESSEX COUNTY FIRE & RESCUE = statutory precept. Money moving inside the council family; not external procurement."
+    },
+    {
+      "class": "statutory_pass_through",
+      "match": {
+        "supplier_regex": "^(SOUTHEND ON SEA (CITY |BOROUGH )?COUNCIL|THURROCK (BOROUGH )?COUNCIL|BASILDON (BOROUGH |DISTRICT )?COUNCIL|BRAINTREE (DISTRICT )?COUNCIL|BRENTWOOD (BOROUGH |DISTRICT )?COUNCIL|CASTLE POINT (BOROUGH )?COUNCIL|CHELMSFORD (CITY |DISTRICT )?COUNCIL|COLCHESTER (CITY |BOROUGH |DISTRICT )?COUNCIL|EPPING FOREST (DISTRICT )?COUNCIL|HARLOW (DISTRICT )?COUNCIL|MALDON (DISTRICT )?COUNCIL|ROCHFORD (DISTRICT )?COUNCIL|TENDRING (DISTRICT )?COUNCIL|UTTLESFORD (DISTRICT )?COUNCIL|MID ESSEX HOSPITAL SERVICES NHS TRUST|MID AND SOUTH ESSEX NHS FOUNDATION TRUST|EAST OF ENGLAND AMBULANCE SERVICE NHS TRUST|ESSEX PARTNERSHIP UNIVERSITY NHS FOUNDATION TRUST|NHS MID AND SOUTH ESSEX ICB|NHS HERTS AND WEST ESSEX ICB|NHS SUFFOLK AND NORTH EAST ESSEX ICB)$"
+      },
+      "reason": "County→district + county→NHS pass-throughs. SOUTHEND (£490M, 436 txns) = unitary, but ECC pays it concessionary travel + BCF. THURROCK same. The 12 Essex districts (Basildon through Uttlesford) get DFG allocations (HGCR Act 1996 s.23) + concessionary travel reimbursements (Transport Act 2000 s.149) + BCF s.75 transfers. NHS trusts + ICBs get pooled-budget transfers under NHS Act 2006 s.75. No procurement discretion; formula-driven statutory passes."
+    },
+    {
+      "class": "settlement_noise",
+      "match": {
+        "supplier_regex": "^(EFT SYSTEMS LTD|BACS PAYMENT SCHEMES LTD)$"
+      },
+      "reason": "Defensive rule for BACS/EFT settlement-system rows of the kind that polluted LCC's supplier league (75K rows of EFT SYSTEMS for £616K total avg £8). Verify in audit."
+    }
+  ],
+  "supplier_aliases": []
+}

@@ -1,0 +1,630 @@
+{
+  "summary": {
+    "total_spend": 5029518540.74,
+    "transaction_count": 660946,
+    "unique_suppliers": 15799,
+    "avg_transaction": 7609.58,
+    "median_transaction": 1552.16,
+    "date_range": {
+      "min": "2020-04-01",
+      "max": "2026-03-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "MILESTONE INFRASTRUCTURE LTD",
+        "total": 210607168.81,
+        "transactions": 9848,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SUEZ RECYCLING & RECOVERY UK LTD",
+        "total": 75992567.61,
+        "transactions": 556,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "M GROUP HIGHWAYS LTD",
+        "total": 66437922.92,
+        "transactions": 2433,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SKANSKA CONSTRUCTION UK LTD",
+        "total": 64522169.06,
+        "transactions": 3907,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MODERN SCHOOLS(EXETER)LTD",
+        "total": 62581121.28,
+        "transactions": 409,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "KENT COUNTY COUNCIL",
+        "total": 50290527.06,
+        "transactions": 12956,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED UNDER DP ACT",
+        "total": 47089355.75,
+        "transactions": 37112,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "GRIFFITHS ALUN(CONTRACTORS) LTD",
+        "total": 45998635.56,
+        "transactions": 93,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LIBRARIES UNLIMITED SOUTH WEST",
+        "total": 44731106.75,
+        "transactions": 463,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "GEOMETRIC RESULTS INTERNATIONAL",
+        "total": 43065205.82,
+        "transactions": 747,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORTHERN DEVON HEALTHCARE TRUST",
+        "total": 42313245.14,
+        "transactions": 706,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "KIELY BROS LTD",
+        "total": 40592838.29,
+        "transactions": 130,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PLYMOUTH CITY COUNCIL(RADIUS A/C",
+        "total": 38768363.82,
+        "transactions": 232,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "STAGECOACH DEVON LTD",
+        "total": 38194380.37,
+        "transactions": 168,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NHS DEVON ICB",
+        "total": 36215906.53,
+        "transactions": 112,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COMENSURA LTD",
+        "total": 31765763.16,
+        "transactions": 92,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WSP UK LTD",
+        "total": 31518556.45,
+        "transactions": 7176,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ACTION FOR CHILDREN",
+        "total": 29749040.5,
+        "transactions": 328,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BABCOCK LEARNING & DEVELOPMENT",
+        "total": 28917971.97,
+        "transactions": 1260,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ON TRACK EDUCATION(BURSARY PMTS)",
+        "total": 27104048.55,
+        "transactions": 261,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.2101,
+    "total_unique_suppliers": 15799,
+    "single_transaction_suppliers": 5157
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 34607,
+      "potential_value": 150360744.18,
+      "items": [
+        {
+          "supplier": "NHS DEVON ICB",
+          "amount": 5000000.0,
+          "date": "2024-01-19",
+          "occurrences": 2,
+          "potential_overpayment": 5000000.0
+        },
+        {
+          "supplier": "VIRIDOR EXETER WASTE SERVICES LT",
+          "amount": 772250.0,
+          "date": "2023-10-06",
+          "occurrences": 6,
+          "potential_overpayment": 3861250.0
+        },
+        {
+          "supplier": "VIRIDOR EXETER WASTE SERVICES LT",
+          "amount": 772250.0,
+          "date": "2023-10-05",
+          "occurrences": 5,
+          "potential_overpayment": 3089000.0
+        },
+        {
+          "supplier": "ACTION FOR CHILDREN",
+          "amount": 1380500.0,
+          "date": "2023-09-29",
+          "occurrences": 2,
+          "potential_overpayment": 1380500.0
+        },
+        {
+          "supplier": "VIRIDOR EXETER WASTE SERVICES LTD",
+          "amount": 918900.0,
+          "date": "2025-05-21",
+          "occurrences": 2,
+          "potential_overpayment": 918900.0
+        },
+        {
+          "supplier": "SPAGHETTI BRIDGE LTD",
+          "amount": 20852.02,
+          "date": "2024-08-13",
+          "occurrences": 44,
+          "potential_overpayment": 896636.86
+        },
+        {
+          "supplier": "SPAGHETTI BRIDGE LTD",
+          "amount": 22530.76,
+          "date": "2024-08-13",
+          "occurrences": 32,
+          "potential_overpayment": 698453.56
+        },
+        {
+          "supplier": "OUTDOORS GROUP LTD THE ****5033",
+          "amount": 18339.46,
+          "date": "2024-12-02",
+          "occurrences": 38,
+          "potential_overpayment": 678560.02
+        },
+        {
+          "supplier": "OUTDOORS GROUP LTD THE ****5033",
+          "amount": 17805.3,
+          "date": "2023-02-13",
+          "occurrences": 38,
+          "potential_overpayment": 658796.1
+        },
+        {
+          "supplier": "OUTDOORS GROUP LTD THE ****5033",
+          "amount": 17805.3,
+          "date": "2023-11-15",
+          "occurrences": 36,
+          "potential_overpayment": 623185.5
+        },
+        {
+          "supplier": "OUTDOORS GROUP LTD THE ****5033",
+          "amount": 17805.3,
+          "date": "2023-07-03",
+          "occurrences": 35,
+          "potential_overpayment": 605380.2
+        },
+        {
+          "supplier": "OUTDOORS GROUP LTD THE ****5033",
+          "amount": 18339.46,
+          "date": "2024-03-19",
+          "occurrences": 34,
+          "potential_overpayment": 605202.18
+        },
+        {
+          "supplier": "STAGECOACH DEVON LTD",
+          "amount": 525000.0,
+          "date": "2024-11-06",
+          "occurrences": 2,
+          "potential_overpayment": 525000.0
+        },
+        {
+          "supplier": "SANCTUARY HOUSING ASSOCIATION",
+          "amount": 68614.75,
+          "date": "2020-11-09",
+          "occurrences": 8,
+          "potential_overpayment": 480303.25
+        },
+        {
+          "supplier": "NORTHERN DEVON HEALTHCARE TRUST",
+          "amount": 443786.42,
+          "date": "2023-05-09",
+          "occurrences": 2,
+          "potential_overpayment": 443786.42
+        },
+        {
+          "supplier": "SPAGHETTI BRIDGE LTD",
+          "amount": 17702.74,
+          "date": "2024-12-18",
+          "occurrences": 26,
+          "potential_overpayment": 442568.5
+        },
+        {
+          "supplier": "NORTHERN DEVON HEALTHCARE TRUST",
+          "amount": 435833.34,
+          "date": "2021-02-04",
+          "occurrences": 2,
+          "potential_overpayment": 435833.34
+        },
+        {
+          "supplier": "SPAGHETTI BRIDGE LTD",
+          "amount": 20244.7,
+          "date": "2023-07-26",
+          "occurrences": 22,
+          "potential_overpayment": 425138.7
+        },
+        {
+          "supplier": "SANCTUARY HOUSING ASSOCIATION",
+          "amount": 68614.75,
+          "date": "2022-10-07",
+          "occurrences": 7,
+          "potential_overpayment": 411688.5
+        },
+        {
+          "supplier": "SPAGHETTI BRIDGE LTD",
+          "amount": 16383.73,
+          "date": "2024-12-18",
+          "occurrences": 26,
+          "potential_overpayment": 409593.25
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 7251,
+      "total_value": 170123000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 269
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Adult Care & Health",
+      "spend": 1647157751.74,
+      "count": 307670
+    },
+    {
+      "department": "Children's Services",
+      "spend": 1272432371.35,
+      "count": 225991
+    },
+    {
+      "department": "Capital Spending",
+      "spend": 611149294.2,
+      "count": 29048
+    },
+    {
+      "department": "Corporate Services",
+      "spend": 267850751.08,
+      "count": 18645
+    },
+    {
+      "department": "Climate Change, Environment & Transport",
+      "spend": 248661825.49,
+      "count": 12521
+    },
+    {
+      "department": "Highways & CDWM",
+      "spend": 248551263.26,
+      "count": 14977
+    },
+    {
+      "department": "Community, Health, Environment and Prosperity",
+      "spend": 223232976.61,
+      "count": 15404
+    },
+    {
+      "department": "Non Service Ledger",
+      "spend": 147989756.7,
+      "count": 12724
+    },
+    {
+      "department": "Capital - Climate Change, Environment & Transport",
+      "spend": 78166531.19,
+      "count": 2176
+    },
+    {
+      "department": "Dedicated Schools Grant",
+      "spend": 45785184.0,
+      "count": 3540
+    },
+    {
+      "department": "Capital - Highways",
+      "spend": 40572282.83,
+      "count": 1423
+    },
+    {
+      "department": "Children & Young People's Futures",
+      "spend": 34821107.68,
+      "count": 4087
+    },
+    {
+      "department": "P-Ledger - Separate Legal Entity",
+      "spend": 25040674.17,
+      "count": 1617
+    },
+    {
+      "department": "Transport Operations, Environment and Waste",
+      "spend": 19547536.85,
+      "count": 600
+    },
+    {
+      "department": "Highways & Infrastructure Development",
+      "spend": 17952108.68,
+      "count": 1400
+    },
+    {
+      "department": "Capital - Planning, Transportation and Environment",
+      "spend": 17551687.68,
+      "count": 360
+    },
+    {
+      "department": "Transformation & Business Services",
+      "spend": 10734100.11,
+      "count": 1005
+    },
+    {
+      "department": "Performance and Partnership",
+      "spend": 6830740.47,
+      "count": 1342
+    },
+    {
+      "department": "Children's Social Care",
+      "spend": 6122200.39,
+      "count": 1124
+    },
+    {
+      "department": "Public Health and Communities",
+      "spend": 5623652.28,
+      "count": 182
+    },
+    {
+      "department": "Public Health, Communities & Prosperity",
+      "spend": 4649738.44,
+      "count": 179
+    },
+    {
+      "department": "Communities",
+      "spend": 4190888.4,
+      "count": 153
+    },
+    {
+      "department": "Integrated Adult Social Care",
+      "spend": 4114292.39,
+      "count": 350
+    },
+    {
+      "department": "Chief Exec, Legal & Democratic services",
+      "spend": 3838315.86,
+      "count": 1531
+    },
+    {
+      "department": "Capital - Children & Schools Expansions",
+      "spend": 3778160.76,
+      "count": 36
+    },
+    {
+      "department": "Operations",
+      "spend": 2937471.49,
+      "count": 282
+    },
+    {
+      "department": "Capital - SEND Schools",
+      "spend": 2851872.16,
+      "count": 30
+    },
+    {
+      "department": "Commissioning",
+      "spend": 2736345.52,
+      "count": 79
+    },
+    {
+      "department": "Economy, Enterprise and Skills",
+      "spend": 2527913.53,
+      "count": 454
+    },
+    {
+      "department": "Capital - Schools Maintenance & Improvements",
+      "spend": 2455488.29,
+      "count": 98
+    },
+    {
+      "department": "Non-Services",
+      "spend": 2446846.36,
+      "count": 57
+    },
+    {
+      "department": "TRAMS Suspense",
+      "spend": 2338104.68,
+      "count": 46
+    },
+    {
+      "department": "People and Culture",
+      "spend": 2278561.42,
+      "count": 345
+    },
+    {
+      "department": "Finance & Public Value",
+      "spend": 2226863.23,
+      "count": 237
+    },
+    {
+      "department": "Public Health",
+      "spend": 1378560.09,
+      "count": 132
+    },
+    {
+      "department": "Capital ICT - Digital Technology & Business Services",
+      "spend": 1267191.42,
+      "count": 32
+    },
+    {
+      "department": "Capital - Transformation & Business Services",
+      "spend": 1226713.98,
+      "count": 89
+    },
+    {
+      "department": "Inclusion & Learning",
+      "spend": 1165266.82,
+      "count": 145
+    },
+    {
+      "department": "Performance & Partnerships",
+      "spend": 1002522.99,
+      "count": 232
+    },
+    {
+      "department": "Capital other - Digital Technology & Business Services",
+      "spend": 921621.04,
+      "count": 105
+    },
+    {
+      "department": "Planning",
+      "spend": 521069.83,
+      "count": 117
+    },
+    {
+      "department": "Below the line",
+      "spend": 442373.91,
+      "count": 17
+    },
+    {
+      "department": "Capital - Performance & Partnerships",
+      "spend": 441697.31,
+      "count": 13
+    },
+    {
+      "department": "Capital - Early Years",
+      "spend": 439788.52,
+      "count": 2
+    },
+    {
+      "department": "Public Health Nursing",
+      "spend": 390164.68,
+      "count": 71
+    },
+    {
+      "department": "Capital - Children & Young People's Futures",
+      "spend": 283812.24,
+      "count": 34
+    },
+    {
+      "department": "Capital - Economy, Enterprise & Skills",
+      "spend": 171203.85,
+      "count": 19
+    },
+    {
+      "department": "Other PH Services",
+      "spend": 141308.08,
+      "count": 50
+    },
+    {
+      "department": "Mental Health",
+      "spend": 131452.08,
+      "count": 32
+    },
+    {
+      "department": "Central Accounting",
+      "spend": 104882.83,
+      "count": 26
+    },
+    {
+      "department": "",
+      "spend": 104157.83,
+      "count": 36
+    },
+    {
+      "department": "Capital - Devon Music Hub",
+      "spend": 94703.73,
+      "count": 29
+    },
+    {
+      "department": "Performance, Partnership & Policy",
+      "spend": 85139.92,
+      "count": 11
+    },
+    {
+      "department": "Balance Sheet",
+      "spend": 54501.3,
+      "count": 36
+    },
+    {
+      "department": "2024/25 Children's Social Care",
+      "spend": 3755.0,
+      "count": 4
+    },
+    {
+      "department": "24/25 Education and Learning",
+      "spend": 1994.0,
+      "count": 1
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2020/21": 789655273.63,
+      "2021/22": 847870120.37,
+      "2022/23": 927363228.64,
+      "2023/24": 974552454.28,
+      "2024/25": 1093508562.2,
+      "2025/26": 396568901.62
+    },
+    "transactions_by_year": {
+      "2020/21": 111316,
+      "2021/22": 124667,
+      "2022/23": 128442,
+      "2023/24": 132238,
+      "2024/25": 139558,
+      "2025/26": 24725
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 660946
+  }
+}

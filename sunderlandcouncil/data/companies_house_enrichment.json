@@ -1,0 +1,948 @@
+{
+  "version": "1.0",
+  "council_id": "sunderland",
+  "generated_at": "2026-05-13T09:45:27.855915Z",
+  "top_n_queried": 50,
+  "queried": 45,
+  "matched": 44,
+  "skipped_council_owned": 0,
+  "skipped_non_company": 5,
+  "compliance_flags": {
+    "accounts_overdue_count": 3,
+    "accounts_overdue_spend_m": 110.2,
+    "confirmation_statement_overdue_count": 3,
+    "dissolved_count": 1,
+    "dissolved_spend_m": 9.2,
+    "insolvency_history_count": 3,
+    "insolvency_history_spend_m": 111.2
+  },
+  "accounts_overdue_suppliers": [
+    {
+      "supplier": "NORTH EAST COMBINED AUTHORITY",
+      "company_number": "01332535",
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/01332535",
+      "total_spend_m": 93.71
+    },
+    {
+      "supplier": "QUALIA CARE LTD T/A WASHINGTON LODGE",
+      "company_number": "10060267",
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/10060267",
+      "total_spend_m": 8.25
+    },
+    {
+      "supplier": "LANSBURY COURT",
+      "company_number": "12177922",
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/12177922",
+      "total_spend_m": 8.24
+    }
+  ],
+  "dissolved_suppliers": [
+    {
+      "supplier": "THORNBURY CARE CENTRE",
+      "company_number": "03473127",
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/03473127",
+      "total_spend_m": 9.21
+    }
+  ],
+  "insolvency_history_suppliers": [
+    {
+      "supplier": "NORTH EAST COMBINED AUTHORITY",
+      "company_number": "01332535",
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/01332535",
+      "total_spend_m": 93.71
+    },
+    {
+      "supplier": "THORNBURY CARE CENTRE",
+      "company_number": "03473127",
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/03473127",
+      "total_spend_m": 9.21
+    },
+    {
+      "supplier": "QUALIA CARE LTD T/A WASHINGTON LODGE",
+      "company_number": "10060267",
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/10060267",
+      "total_spend_m": 8.25
+    }
+  ],
+  "no_match_suppliers": [
+    {
+      "supplier": "NORTHVIEW LODGE N/H",
+      "total_spend_m": 10.26,
+      "reason": "no_strong_match"
+    }
+  ],
+  "all_results": [
+    {
+      "supplier": "KIER CONSTRUCTION LTD",
+      "total_spend": 111727119.57,
+      "transactions": 101,
+      "match_status": "matched",
+      "company_number": "02099533",
+      "company_name": "KIER CONSTRUCTION LIMITED",
+      "company_status": "active",
+      "incorporation_date": "1987-02-12",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/02099533",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "41201",
+        "42130",
+        "42990"
+      ]
+    },
+    {
+      "supplier": "NORTH EAST COMBINED AUTHORITY",
+      "total_spend": 93712938.97,
+      "transactions": 80,
+      "match_status": "matched",
+      "company_number": "01332535",
+      "company_name": "COMBINED INDEPENDENTS NORTH LIMITED",
+      "company_status": "liquidation",
+      "incorporation_date": "1977-10-04",
+      "accounts_overdue": true,
+      "in_insolvency": true,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/01332535",
+      "match_score": null,
+      "confirmation_statement_overdue": true,
+      "company_type": "private-limited-guarant-nsc",
+      "sic_codes": [
+        "46439"
+      ]
+    },
+    {
+      "supplier": "ESH CONSTRUCTION LTD",
+      "total_spend": 67277944.73,
+      "transactions": 231,
+      "match_status": "matched",
+      "company_number": "02529939",
+      "company_name": "ESH CONSTRUCTION LIMITED",
+      "company_status": "active",
+      "incorporation_date": "1990-08-10",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/02529939",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "41201"
+      ]
+    },
+    {
+      "supplier": "EDF ENERGY CUSTOMERS PLC",
+      "total_spend": 40487862.82,
+      "transactions": 64,
+      "match_status": "matched",
+      "company_number": "02228297",
+      "company_name": "EDF ENERGY CUSTOMERS LIMITED",
+      "company_status": "active",
+      "incorporation_date": "1988-03-08",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/02228297",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "35130",
+        "35220"
+      ]
+    },
+    {
+      "supplier": "SIGLION DEVELOPMENTS LLP",
+      "total_spend": 36915615.69,
+      "transactions": 55,
+      "match_status": "matched",
+      "company_number": "OC394705",
+      "company_name": "SIGLION DEVELOPMENTS LLP",
+      "company_status": "active",
+      "incorporation_date": "2014-08-07",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/OC394705",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "llp",
+      "sic_codes": []
+    },
+    {
+      "supplier": "HARROGATE AND DISTRICT NHSFT",
+      "total_spend": 36375112.42,
+      "transactions": 87,
+      "match_status": "matched",
+      "company_number": "10111586",
+      "company_name": "HARROGATE AND DISTRICT BUS COMPANY LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2016-04-07",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/10111586",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "49390"
+      ]
+    },
+    {
+      "supplier": "CONNECT ROADS SUNDERLAND HOLDINGS LTD",
+      "total_spend": 33705378.51,
+      "transactions": 63,
+      "match_status": "matched",
+      "company_number": "04698779",
+      "company_name": "CONNECT ROADS SUNDERLAND HOLDINGS LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2003-03-14",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/04698779",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "70100"
+      ]
+    },
+    {
+      "supplier": "VOLKERSTEVIN INFRASTRUCTURE LTD",
+      "total_spend": 22440408.79,
+      "transactions": 25,
+      "match_status": "matched",
+      "company_number": "07877543",
+      "company_name": "VOLKERSTEVIN INFRASTRUCTURE LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2011-12-09",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/07877543",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "42990"
+      ]
+    },
+    {
+      "supplier": "BRIMS CONSTRUCTION LTD",
+      "total_spend": 21400210.22,
+      "transactions": 71,
+      "match_status": "matched",
+      "company_number": "03288664",
+      "company_name": "BRIMS CONSTRUCTION LIMITED",
+      "company_status": "active",
+      "incorporation_date": "1996-12-06",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/03288664",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "41201"
+      ]
+    },
+    {
+      "supplier": "CHANGE GROW LIVE SERVICES LTD",
+      "total_spend": 20171625.2,
+      "transactions": 95,
+      "match_status": "matched",
+      "company_number": "06228752",
+      "company_name": "CHANGE, GROW, LIVE SERVICES LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2007-04-27",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/06228752",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "88990"
+      ]
+    },
+    {
+      "supplier": "VOLKERSTEVIN LTD",
+      "total_spend": 17530676.77,
+      "transactions": 24,
+      "match_status": "matched",
+      "company_number": "00288392",
+      "company_name": "VOLKERSTEVIN LIMITED",
+      "company_status": "active",
+      "incorporation_date": "1934-05-24",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/00288392",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "42990"
+      ]
+    },
+    {
+      "supplier": "GEOMETRIC RESULTS INTERNATIONAL LTD",
+      "total_spend": 17509645.32,
+      "transactions": 185,
+      "match_status": "matched",
+      "company_number": "04272893",
+      "company_name": "GEOMETRIC RESULTS FINANCE LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2001-08-17",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/04272893",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "70229"
+      ]
+    },
+    {
+      "supplier": "SLW LIMITED - SYCAMORE LODGE",
+      "total_spend": 17398295.79,
+      "transactions": 335,
+      "match_status": "matched",
+      "company_number": "12241603",
+      "company_name": "SYCAMORE LODGE BRADFORD LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2019-10-03",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/12241603",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "87900"
+      ]
+    },
+    {
+      "supplier": "EDF ENERGY CUSTOMERS LTD",
+      "total_spend": 15651328.5,
+      "transactions": 39,
+      "match_status": "matched",
+      "company_number": "02228297",
+      "company_name": "EDF ENERGY CUSTOMERS LIMITED",
+      "company_status": "active",
+      "incorporation_date": "1988-03-08",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/02228297",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "35130",
+        "35220"
+      ]
+    },
+    {
+      "supplier": "SIR ROBERT MCALPINE",
+      "total_spend": 15115891.86,
+      "transactions": 38,
+      "match_status": "matched",
+      "company_number": "00566823",
+      "company_name": "SIR ROBERT MCALPINE LIMITED",
+      "company_status": "active",
+      "incorporation_date": "1956-05-31",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/00566823",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "41201",
+        "42110",
+        "42120",
+        "42130"
+      ]
+    },
+    {
+      "supplier": "CORONA ENERGY RETAIL 2 LTD",
+      "total_spend": 15110017.22,
+      "transactions": 75,
+      "match_status": "matched",
+      "company_number": "SC138299",
+      "company_name": "CORONA ENERGY RETAIL 2 LIMITED",
+      "company_status": "active",
+      "incorporation_date": "1992-05-13",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/SC138299",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "35230"
+      ]
+    },
+    {
+      "supplier": "HENRY BOOT DEVELOPMENTS LTD",
+      "total_spend": 14689088.2,
+      "transactions": 13,
+      "match_status": "matched",
+      "company_number": "01390361",
+      "company_name": "HENRY BOOT DEVELOPMENTS LIMITED",
+      "company_status": "active",
+      "incorporation_date": "1978-09-21",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/01390361",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "41100"
+      ]
+    },
+    {
+      "supplier": "BOWMER AND KIRKLAND LTD",
+      "total_spend": 14223397.09,
+      "transactions": 24,
+      "match_status": "matched",
+      "company_number": "00701982",
+      "company_name": "BOWMER AND KIRKLAND LIMITED",
+      "company_status": "active",
+      "incorporation_date": "1961-08-30",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/00701982",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "41201"
+      ]
+    },
+    {
+      "supplier": "COMMUNITY INTERGRATED CARE",
+      "total_spend": 13890752.74,
+      "transactions": 7790,
+      "match_status": "matched",
+      "company_number": "11286408",
+      "company_name": "ASPECT INTERGRATED CARE LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2018-04-03",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/11286408",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "84120",
+        "86900",
+        "87900"
+      ]
+    },
+    {
+      "supplier": "ESPA LTD",
+      "total_spend": 13296916.72,
+      "transactions": 1799,
+      "match_status": "matched",
+      "company_number": "05496046",
+      "company_name": "ESPA LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2005-06-30",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/05496046",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "82990"
+      ]
+    },
+    {
+      "supplier": "ARM PIPETEK LTD",
+      "total_spend": 12684742.61,
+      "transactions": 693,
+      "match_status": "matched",
+      "company_number": "08506274",
+      "company_name": "ARM PIPETEK LTD",
+      "company_status": "active",
+      "incorporation_date": "2013-04-26",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/08506274",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "42990"
+      ]
+    },
+    {
+      "supplier": "MALHOTRA CARE HOMES LTD",
+      "total_spend": 12302759.07,
+      "transactions": 256,
+      "match_status": "matched",
+      "company_number": "06902590",
+      "company_name": "MALHOTRA CARE HOMES LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2009-05-12",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/06902590",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "87100",
+        "87300"
+      ]
+    },
+    {
+      "supplier": "ROBERTSON CONSTRUCTION GROUP LTD",
+      "total_spend": 11920145.68,
+      "transactions": 46,
+      "match_status": "matched",
+      "company_number": "SC347921",
+      "company_name": "ROBERTSON CONSTRUCTION GROUP LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2008-09-01",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/SC347921",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "41201"
+      ]
+    },
+    {
+      "supplier": "NORTHUMBRIA HEALTHCARE",
+      "total_spend": 11612819.13,
+      "transactions": 1597,
+      "match_status": "matched",
+      "company_number": "07913048",
+      "company_name": "NORTHUMBRIA HEALTHCARE FACILITIES MANAGEMENT LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2012-01-17",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/07913048",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "32990",
+        "41100",
+        "52103",
+        "81100"
+      ]
+    },
+    {
+      "supplier": "WASHINGTON MANOR",
+      "total_spend": 10651690.42,
+      "transactions": 322,
+      "match_status": "matched",
+      "company_number": "16388498",
+      "company_name": "AG WASHINGTON LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2025-04-15",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/16388498",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "55100"
+      ]
+    },
+    {
+      "supplier": "DONWELL HOUSE CARE HOME",
+      "total_spend": 10609982.67,
+      "transactions": 168,
+      "match_status": "matched",
+      "company_number": "12325863",
+      "company_name": "AADAMSON HOUSE CARE HOME LTD",
+      "company_status": "active",
+      "incorporation_date": "2019-11-20",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/12325863",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "87100"
+      ]
+    },
+    {
+      "supplier": "NATIONAL GRID ELECTRICITY TRANSMISSION PLC",
+      "total_spend": 10404457.95,
+      "transactions": 2,
+      "match_status": "matched",
+      "company_number": "02366977",
+      "company_name": "NATIONAL GRID ELECTRICITY TRANSMISSION PLC",
+      "company_status": "active",
+      "incorporation_date": "1989-04-01",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/02366977",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "plc",
+      "sic_codes": [
+        "35120"
+      ]
+    },
+    {
+      "supplier": "NORTHVIEW LODGE N/H",
+      "total_spend": 10264577.74,
+      "transactions": 273,
+      "match_status": "no_strong_match",
+      "company_number": null,
+      "company_name": null,
+      "company_status": null,
+      "incorporation_date": null,
+      "accounts_overdue": null,
+      "in_insolvency": null,
+      "company_url": null,
+      "match_score": null
+    },
+    {
+      "supplier": "GEORGE VARDY LTD",
+      "total_spend": 9737057.65,
+      "transactions": 4762,
+      "match_status": "matched",
+      "company_number": "01533840",
+      "company_name": "GEORGE VARDY LIMITED",
+      "company_status": "active",
+      "incorporation_date": "1980-12-10",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/01533840",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "43999"
+      ]
+    },
+    {
+      "supplier": "NORTH EAST AUTISM SOCIETY",
+      "total_spend": 9486735.58,
+      "transactions": 1276,
+      "match_status": "matched",
+      "company_number": "02859620",
+      "company_name": "NORTH EAST AUTISM SOCIETY",
+      "company_status": "active",
+      "incorporation_date": "1993-10-06",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/02859620",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "private-limited-guarant-nsc-limited-exemption",
+      "sic_codes": [
+        "85200",
+        "85310",
+        "85320",
+        "87200"
+      ]
+    },
+    {
+      "supplier": "HIGHCLIFFE CARE CENTRE",
+      "total_spend": 9427735.7,
+      "transactions": 320,
+      "match_status": "matched",
+      "company_number": "05905521",
+      "company_name": "HIGHCLIFFE CARE CENTRE LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2006-08-14",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/05905521",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "87300"
+      ]
+    },
+    {
+      "supplier": "MEMORY LANE CARE HOMES LTD",
+      "total_spend": 9328006.790000001,
+      "transactions": 168,
+      "match_status": "matched",
+      "company_number": "04023398",
+      "company_name": "MEMORY LANE CARE HOMES LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2000-06-29",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/04023398",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "87100",
+        "87300"
+      ]
+    },
+    {
+      "supplier": "MACE LTD",
+      "total_spend": 9238743.85,
+      "transactions": 16,
+      "match_status": "matched",
+      "company_number": "02410626",
+      "company_name": "MACE LIMITED",
+      "company_status": "active",
+      "incorporation_date": "1989-08-02",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/02410626",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "41100",
+        "41201",
+        "64203",
+        "70229"
+      ]
+    },
+    {
+      "supplier": "THORNBURY CARE CENTRE",
+      "total_spend": 9208083.97,
+      "transactions": 322,
+      "match_status": "matched",
+      "company_number": "03473127",
+      "company_name": "THE THORNBURY CENTRE",
+      "company_status": "dissolved",
+      "incorporation_date": "1997-11-28",
+      "accounts_overdue": false,
+      "in_insolvency": true,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/03473127",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "private-limited-guarant-nsc-limited-exemption",
+      "sic_codes": [
+        "88990"
+      ]
+    },
+    {
+      "supplier": "SUNDERLAND LIFESTYLE PARTNERSHIP",
+      "total_spend": 9166162.07,
+      "transactions": 48,
+      "match_status": "matched",
+      "company_number": "09612517",
+      "company_name": "SUNDERLAND LIFESTYLE PARTNERSHIP LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2015-05-28",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/09612517",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "93110"
+      ]
+    },
+    {
+      "supplier": "CONNECT ROADS SUNDERLAND HOLDINGS L",
+      "total_spend": 9125407.82,
+      "transactions": 22,
+      "match_status": "matched",
+      "company_number": "07372682",
+      "company_name": "CONNECT ROADS CAMBRIDGESHIRE HOLDINGS LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2010-09-10",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/07372682",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "70100"
+      ]
+    },
+    {
+      "supplier": "ASHLEA LODGE CARE HOME",
+      "total_spend": 8624491.79,
+      "transactions": 309,
+      "match_status": "matched",
+      "company_number": "14842717",
+      "company_name": "ASHLEA COURT CARE HOME LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2023-05-03",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/14842717",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "87900"
+      ]
+    },
+    {
+      "supplier": "QUALIA CARE LTD T/A WASHINGTON LODGE",
+      "total_spend": 8254238.15,
+      "transactions": 256,
+      "match_status": "matched",
+      "company_number": "10060267",
+      "company_name": "QUALIA CARE LIMITED",
+      "company_status": "administration",
+      "incorporation_date": "2016-03-14",
+      "accounts_overdue": true,
+      "in_insolvency": true,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/10060267",
+      "match_score": null,
+      "confirmation_statement_overdue": true,
+      "company_type": "ltd",
+      "sic_codes": [
+        "87100"
+      ]
+    },
+    {
+      "supplier": "ARCHERS COURT",
+      "total_spend": 8250580.92,
+      "transactions": 299,
+      "match_status": "matched",
+      "company_number": "04399312",
+      "company_name": "ARCHERS COURT (FREEHOLD) LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2002-03-20",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/04399312",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "68320"
+      ]
+    },
+    {
+      "supplier": "LANSBURY COURT",
+      "total_spend": 8240844.75,
+      "transactions": 292,
+      "match_status": "matched",
+      "company_number": "12177922",
+      "company_name": "ALEXANDER LANSBURY LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2019-08-28",
+      "accounts_overdue": true,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/12177922",
+      "match_score": null,
+      "confirmation_statement_overdue": true,
+      "company_type": "ltd",
+      "sic_codes": [
+        "71111"
+      ]
+    },
+    {
+      "supplier": "JONES LANG LASALLE LTD",
+      "total_spend": 7638423.95,
+      "transactions": 22,
+      "match_status": "matched",
+      "company_number": "01188567",
+      "company_name": "JONES LANG LASALLE LIMITED",
+      "company_status": "active",
+      "incorporation_date": "1974-10-25",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/01188567",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "68310",
+        "68320"
+      ]
+    },
+    {
+      "supplier": "ASHWOOD COURT",
+      "total_spend": 7621595.83,
+      "transactions": 312,
+      "match_status": "matched",
+      "company_number": "04817644",
+      "company_name": "ASHWOOD COURT LIMITED",
+      "company_status": "active",
+      "incorporation_date": "2003-07-02",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/04817644",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "private-limited-guarant-nsc",
+      "sic_codes": [
+        "98000"
+      ]
+    },
+    {
+      "supplier": "SSG SUPPORT SERVICES GROUP LTD",
+      "total_spend": 7619939.18,
+      "transactions": 236,
+      "match_status": "matched",
+      "company_number": "09675743",
+      "company_name": "SSG SUPPORT SERVICES GROUP LTD",
+      "company_status": "active",
+      "incorporation_date": "2015-07-08",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/09675743",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "80100"
+      ]
+    },
+    {
+      "supplier": "PERCY HEDLEY FOUNDATION",
+      "total_spend": 7409536.59,
+      "transactions": 570,
+      "match_status": "matched",
+      "company_number": "07723208",
+      "company_name": "JAMES PERCY FOUNDATION",
+      "company_status": "active",
+      "incorporation_date": "2011-07-29",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/07723208",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "private-limited-guarant-nsc-limited-exemption",
+      "sic_codes": [
+        "85590",
+        "86900",
+        "88990",
+        "94990"
+      ]
+    },
+    {
+      "supplier": "DURHAM CARELINE LTD",
+      "total_spend": 7355365.54,
+      "transactions": 803,
+      "match_status": "matched",
+      "company_number": "11156289",
+      "company_name": "AGAPE CARELINE LTD",
+      "company_status": "active",
+      "incorporation_date": "2018-01-18",
+      "accounts_overdue": false,
+      "in_insolvency": false,
+      "company_url": "https://find-and-update.company-information.service.gov.uk/company/11156289",
+      "match_score": null,
+      "confirmation_statement_overdue": false,
+      "company_type": "ltd",
+      "sic_codes": [
+        "88100"
+      ]
+    }
+  ]
+}

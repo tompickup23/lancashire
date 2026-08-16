@@ -1,0 +1,119 @@
+{
+  "council": "NE Lincs",
+  "council_id": "E06000012",
+  "council_type": "unitary",
+  "spending_threshold": 500,
+  "total_records": 189664,
+  "financial_years": [
+    "2020/21",
+    "2021/22",
+    "2022/23",
+    "2023/24",
+    "2024/25",
+    "2025/26",
+    "2026/27"
+  ],
+  "data_types": [
+    "spend"
+  ],
+  "filters": {
+    "departments": [
+      {
+        "name": "",
+        "spend": 364562982.97,
+        "count": 61846,
+        "suppliers": 2614
+      },
+      {
+        "name": "Childrens Services",
+        "spend": 334124866.84,
+        "count": 72462,
+        "suppliers": 1692
+      },
+      {
+        "name": "Economy And Growth",
+        "spend": 249182741.25,
+        "count": 24603,
+        "suppliers": 1317
+      },
+      {
+        "name": "Resources",
+        "spend": 76273990.39,
+        "count": 17216,
+        "suppliers": 1034
+      },
+      {
+        "name": "Environment",
+        "spend": 30266122.83,
+        "count": 7211,
+        "suppliers": 505
+      },
+      {
+        "name": "Public Health",
+        "spend": 26495166.06,
+        "count": 2204,
+        "suppliers": 295
+      },
+      {
+        "name": "Adult Services",
+        "spend": 12257040.85,
+        "count": 3947,
+        "suppliers": 290
+      },
+      {
+        "name": "Funding",
+        "spend": 6612652.0,
+        "count": 29,
+        "suppliers": 5
+      },
+      {
+        "name": "Other Corporate Budgets",
+        "spend": 512422.0,
+        "count": 111,
+        "suppliers": 12
+      },
+      {
+        "name": "Asc - Care Trust Plus",
+        "spend": 46531.5,
+        "count": 35,
+        "suppliers": 1
+      }
+    ],
+    "department_raws": [
+      "Adult Services",
+      "Asc - Care Trust Plus",
+      "Childrens Services",
+      "Economy And Growth",
+      "Environment",
+      "Funding",
+      "Other Corporate Budgets",
+      "Public Health",
+      "Resources"
+    ]
+  },
+  "total_spend": 1100334516.69,
+  "total_spend_paid": 1100334516.69,
+  "total_spend_committed": 0,
+  "total_spend_all_types_legacy": 1100334516.69,
+  "record_count_paid": 189664,
+  "record_count_committed": 0,
+  "record_class_breakdown": {
+    "procurement_paid": {
+      "count": 189664,
+      "sum": 1100334516.69
+    }
+  },
+  "spend_triangulation": {
+    "transparency_gross": 1100334516.69,
+    "transparency_paid": 1100334516.69,
+    "procurement_only": 1100334516.69,
+    "non_procurement": 0.0
+  },
+  "dedup_rule": "total_spend = spend + purchase_cards; contracts excluded (77% pair with matching spend within 90d \u2014 see .claude/rules/lessons.md)",
+  "dedup_applied": "enforced at ETL (council_etl.py)",
+  "unique_suppliers": 5385,
+  "date_range": {
+    "min": "2020-04-01",
+    "max": "2026-06-01"
+  }
+}

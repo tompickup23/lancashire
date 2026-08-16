@@ -1,0 +1,435 @@
+{
+  "version": "2.0",
+  "council_id": "newcastle_under_lyme",
+  "council_name": "Newcastle-under-Lyme Borough Council",
+  "generated_at": "2026-05-13T11:07:38.705772Z",
+  "data_sources": [
+    "spending.sqlite (council_etl.py + classify_council.py)",
+    "doge_findings.json (35-technique forensic)",
+    "cross_council.json (32-council peer benchmark)",
+    "budgets_summary.json (MHCLG Revenue Outturn)",
+    "revenue_trends.json (8-yr MHCLG time series)",
+    "source_audit.json (record_class breakdown)",
+    "supplier_donor_crossmatch.json (Electoral Commission CSV API)"
+  ],
+  "financial_summary": {
+    "annual_revenue_budget": 28910000,
+    "council_tax_requirement": 9243000,
+    "service_breakdown": {
+      "Highways and transport services": -264000,
+      "Housing services (GFRA only)": 4216000,
+      "Cultural and related services": 2380000,
+      "Environmental and regulatory services": 8685000,
+      "Planning and development services": 10682000,
+      "Central services": 3211000
+    },
+    "procurement_footprint_total": 58338050.72,
+    "procurement_footprint_annual": 29169025.36,
+    "transactions_total": 8045,
+    "transactions_annual": 4022,
+    "unique_suppliers": 951,
+    "data_period": {
+      "min": "2023-04-30",
+      "max": "2026-03-31"
+    },
+    "financial_years_covered": 2,
+    "per_capita_spend": 223.69,
+    "population": 130400,
+    "net_revenue_expenditure": 16718000,
+    "budget_year": "2024-25"
+  },
+  "reserves_position": {
+    "total": 5517000,
+    "months_of_revenue": 4.0,
+    "adequacy": "Low",
+    "direction": "improving",
+    "trajectory": [
+      {
+        "year": "2021-22",
+        "earmarked": 10899000,
+        "unallocated": 2159000,
+        "total": 13058000
+      },
+      {
+        "year": "2022-23",
+        "earmarked": 3422000,
+        "unallocated": 2159000,
+        "total": 5581000
+      },
+      {
+        "year": "2023-24",
+        "earmarked": 3053000,
+        "unallocated": 2157000,
+        "total": 5210000
+      },
+      {
+        "year": "2024-25",
+        "earmarked": 3360000,
+        "unallocated": 2157000,
+        "total": 5517000
+      }
+    ],
+    "projected": [
+      {
+        "year": "2025-26",
+        "total": 1593000,
+        "projected": true
+      },
+      {
+        "year": "2026-27",
+        "total": 0,
+        "projected": true
+      }
+    ]
+  },
+  "forensic_signals": {
+    "duplicate_value": 5400,
+    "duplicate_count": 8,
+    "split_payments_value": null,
+    "weak_competition": null,
+    "anomaly_count": 6,
+    "total_flagged_value": 1810300,
+    "severity_breakdown": {
+      "high": 0,
+      "medium": 5,
+      "low": 1
+    },
+    "overall_hhi": 218.8,
+    "service_hhi_high": [],
+    "top10_supplier_pct": 0.5564,
+    "doge_key_findings": [
+      {
+        "title": "7 suppliers with clock-like payment regularity",
+        "severity": "info",
+        "confidence": "high"
+      },
+      {
+        "title": "OPUS PEOPLE SOLUTIONS: 354 transactions totalling \u00a3377.9K",
+        "severity": "info",
+        "confidence": "high"
+      }
+    ]
+  },
+  "peer_benchmarks": {
+    "per_capita_spend": {
+      "metric": "per_capita_spend",
+      "this_value": 223.69,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "top10_supplier_pct": {
+      "metric": "top10_supplier_pct",
+      "this_value": 0.5564,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "reserves_months": {
+      "metric": "reserves_months",
+      "this_value": 4.0,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "overall_hhi": {
+      "metric": "overall_hhi",
+      "this_value": 218.8,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "duplicate_value": {
+      "metric": "duplicate_value",
+      "this_value": 5400,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    }
+  },
+  "audit_research": {
+    "version": "1.0",
+    "council_id": "newcastle_under_lyme",
+    "researched_at": "2026-05-13",
+    "method": "Web research via WebFetch + WebSearch (subagent), all citations primary",
+    "external_audit": {
+      "auditor": "KPMG LLP",
+      "appointment_period": "from 2023/24 (new appointment per 2023/24 EMT report)",
+      "year_ended": "2025-03-31",
+      "opinion": "UNQUALIFIED",
+      "opinion_severity": "low",
+      "key_concerns": [
+        "Auditor's Annual Report 2024-25 issued unqualified opinion on financial statements \u2014 true and fair view per CIPFA/LASAAC Code 2024/25",
+        "Material 2024/25 variances noted: income shortfalls from sales/fees/charges of \u00a30.541m + pay award \u00a31,290 per employee above budget",
+        "Business rates 2024/25 outturn surplus \u00a31.823m versus December 2024 forecast surplus \u00a34.114m (\u00a32.3m adverse swing in last quarter)",
+        "Funding pressures of \u00a31.777m in 2026/27 and \u00a33.069m cumulative over 5-year MTFS \u2014 small district scale but tight cover"
+      ],
+      "report_date": "2025 (KPMG Auditor's Annual Report 2024-25 \u2014 Audit & Standards Committee)",
+      "presented_to": "Audit and Standards Committee \u2014 public reports pack 10 November 2025",
+      "url": "https://moderngov.newcastle-staffs.gov.uk/documents/s45661/Appendix%202%20-%20Auditors%20Annual%20Report%20-%20KPMG.pdf",
+      "external_audit_plan_url": "https://moderngov.newcastle-staffs.gov.uk/documents/s42374/KPMG+External+Audit+Plan+23-24.pdf",
+      "appointment_url": "https://moderngov.newcastle-staffs.gov.uk/documents/s37058/Appointment%20of%20External%20Auditor%20from%202023-24.pdf",
+      "statement_of_accounts_landing_url": "https://www.newcastle-staffs.gov.uk/finance/statement-accounts",
+      "draft_soa_2024_25_url": "https://moderngov.newcastle-staffs.gov.uk/documents/s44858/Draft+Statement+of+Accounts+2024-25+Covering+Report.pdf"
+    },
+    "internal_audit": {
+      "year": "2024/25",
+      "overall_opinion": "not located in indexed snippets",
+      "annual_plan_status": "2024-25 Strategic Internal Audit Plan approved (risk-based, focus areas include social services and cybersecurity)",
+      "follow_up_required": "Pull Audit & Standards Committee 10 November 2025 + 3 February 2025 packs for Internal Audit Annual Report 2024/25",
+      "internal_audit_tor_url": "https://moderngov.newcastle-staffs.gov.uk/documents/s6554/Appendix%20B%20-%20Internal%20Audit%20Terms%20of%20Reference.pdf",
+      "feb_2025_pack_url": "https://moderngov.newcastle-staffs.gov.uk/documents/g4064/Public+reports+pack+03rd-Feb-2025+19.00+Audit+and+Standards+Committee.pdf?T=10",
+      "nov_2025_pack_url": "https://moderngov.newcastle-staffs.gov.uk/documents/g4069/Public+reports+pack+10th-Nov-2025+19.00+Audit+and+Standards+Committee.pdf?T=10"
+    },
+    "mtfs_2026_31": {
+      "total_net_revenue_budget_2026_27_m": "not located in indexed snippets (small district scale \u2014 ~\u00a317m General Fund Revenue Account)",
+      "savings_target_2026_27_m": 1.777,
+      "cumulative_savings_5yr_m": 3.069,
+      "forecast_budget_gaps_m": {
+        "2026_27": 1.777,
+        "2027_28_to_2030_31_cumulative": 3.069
+      },
+      "savings_identified": "Combination of below-inflation 1.99% council tax + savings proposals + income-generation",
+      "unidentified_gap": "not located in indexed snippets",
+      "budget_approval_date": "2026-02-11 (MTFS approval); subsequent Council approval of 2026/27 Budget Feb 2026",
+      "council_tax_increase_2026_27_pct": 1.99,
+      "key_budget_pressures": [
+        "\u00a3396,000 pay awards 2026/27",
+        "\u00a3400,000 one-off cost relating to local government re-organisation"
+      ],
+      "url": "https://moderngov.newcastle-staffs.gov.uk/documents/s46132/Revenue%20and%20Capital%20Budgets%20and%20Strategies%202026-27%20FEBRUARY%202026.pdf",
+      "council_version_url": "https://moderngov.newcastle-staffs.gov.uk/documents/s46172/Revenue%20and%20Capital%20Budgets%20and%20Strategies%202026-27%20FEBRUARY%202026%20-%20Council.pdf",
+      "mtfs_decision_url": "https://moderngov.newcastle-staffs.gov.uk/ieDecisionDetails.aspx?Id=1444",
+      "spending_plans_landing_url": "https://www.newcastle-staffs.gov.uk/finance/spending-plans"
+    },
+    "strategic_risks": {
+      "register_status": "Corporate Risk Register monitored by Audit and Standards Committee \u2014 most recent published update shows 4 risk-level increases + 2 new risks added",
+      "inferred_top_risks": [
+        "Local government reorganisation transition costs / disestablishment risk (\u00a3400k one-off 2026/27)",
+        "Income shortfall \u2014 fees, charges, business rates volatility",
+        "Cybersecurity (named focus area of 2024/25 Internal Audit Plan)",
+        "Pay award inflation above budget (\u00a3396k 2026/27)",
+        "Reserves headroom (\u00a32.007m General Fund Balance only)"
+      ],
+      "follow_up_required": "Pull Audit and Standards Committee November 2025 pack for top 5-10 risks with net ratings",
+      "feb_2025_pack_url": "https://moderngov.newcastle-staffs.gov.uk/documents/g4064/Public+reports+pack+03rd-Feb-2025+19.00+Audit+and+Standards+Committee.pdf?T=10",
+      "nov_2025_pack_url": "https://moderngov.newcastle-staffs.gov.uk/documents/g4069/Public+reports+pack+10th-Nov-2025+19.00+Audit+and+Standards+Committee.pdf?T=10"
+    },
+    "dsg_send": {
+      "applicability": "Not directly applicable \u2014 Newcastle-under-Lyme is a Staffordshire district borough council (lower tier), NOT an education or social care authority. DSG and SEND statutory responsibilities sit with Staffordshire County Council.",
+      "scc_dsg_impact": "Staffordshire CC's DSG / High Needs position affects the upper-tier county council, not the district borough",
+      "statutory_override_expiry": "2026-03-31 (national \u2014 relevant to SCC, not the borough)",
+      "follow_up_required": "DSG/SEND financial exposure is a Staffordshire CC matter \u2014 see Staffordshire CC audit_research.json (when authored)"
+    },
+    "asc_market_sustainability": {
+      "applicability": "Not applicable \u2014 adult social care is a Staffordshire County Council statutory responsibility, not the district borough",
+      "borough_role": "Lower-tier district responsibilities: housing, planning, waste collection, leisure, environmental health, licensing, parks, elections, council tax billing for the lower-tier element",
+      "follow_up_required": "ASC market sustainability sits with Staffordshire CC \u2014 see Staffordshire CC audit_research.json"
+    },
+    "lgr": {
+      "status": "LIVE statutory consultation \u2014 MHCLG consultation 5 February 2026 to 23:59 on 26 March 2026 (7-week window)",
+      "scope": "Staffordshire + Stoke-on-Trent \u2014 5 competing proposals submitted by councils on 28 November 2025",
+      "proposals_submitted": [
+        "Cannock Chase + East Staffordshire + Stafford + Stoke-on-Trent: 2 unitaries (North Staffordshire including Newcastle-under-Lyme + Stoke-on-Trent + Staffordshire Moorlands; plus South Staffordshire)",
+        "Staffordshire County Council: 2 unitaries (East Staffordshire + West Staffordshire including Newcastle-under-Lyme)",
+        "Staffordshire Moorlands: 2 unitaries with split district boundaries \u2014 North Staffordshire covering Newcastle-under-Lyme + Stoke-on-Trent + Staffordshire Moorlands",
+        "Lichfield + South Staffordshire + Tamworth: 3 unitaries",
+        "Newcastle-under-Lyme Borough Council: 4 unitaries"
+      ],
+      "borough_position": "Council argues Government plans are 'unjustified, unwelcome and unwanted' \u2014 but if reorganisation is forced, prefers a unitary on existing borough boundaries",
+      "newcastle_proposal_url": "https://moderngov.newcastle-staffs.gov.uk/documents/s46129/3.2.26%20FINAL%20Cabinet%20LGR.pdf",
+      "council_message_to_govt_url": "https://www.newcastle-staffs.gov.uk/news/article/467/council-sends-its-reorganisation-message-to-government",
+      "mhclg_consultation_url": "https://www.gov.uk/government/consultations/local-government-reorganisation-in-staffordshire-and-stoke-on-trent/proposals-for-local-government-reorganisation-in-staffordshire-and-stoke-on-trent",
+      "citizen_space_url": "https://consult.communities.gov.uk/local-government-reorganisation/staffordshire-and-stoke-on-trent/",
+      "staffs_stoke_lgr_hub_url": "https://staffordshirestokelgr.org.uk/proposals/",
+      "savings_implication": "LGR outcome (likely vesting day 2027 or 2028 depending on Secretary of State decision) will dissolve the borough council \u2014 savings/cost trajectory beyond 2026/27 is overshadowed by transition; the \u00a3400k one-off LGR cost in 2026/27 is the first line of disestablishment costs"
+    },
+    "property_strategy": {
+      "name": "Asset Management Strategy",
+      "policy_landing_url": "https://www.newcastle-staffs.gov.uk/policies-1/asset-management-strategy/5",
+      "capital_funding_requirement_3yr_m": 14.5,
+      "stated_purpose": "Asset disposal process is required to fund the capital programme",
+      "named_disposals": [
+        "The Square, High Street, Newcastle \u2014 terms agreed for disposal; capital receipt to contribute to capital programme",
+        "First and second floor offices at Hassell Street + Brunswick Street, Newcastle \u2014 vacant + require refurbishment; ground floor retail premises included; disposal in progress"
+      ],
+      "commercial_portfolio": {
+        "scope": "Includes market \u2014 generated gross income c. \u00a31.2m in 2013-14 (figure dated)",
+        "tenants_supported": "200+ small to medium-sized businesses"
+      },
+      "newcastle_capital_investment_url": "https://moderngov.newcastle-staffs.gov.uk/mgIssueHistoryHome.aspx?IId=7783"
+    },
+    "financial_position_2024_25": {
+      "general_fund_revenue_account_outturn_m": 17.026,
+      "general_fund_balance_31_mar_2025_m": 2.007,
+      "balance_role": "Working balance to cover unforeseen adverse events affecting the budget",
+      "adverse_variances": {
+        "sales_fees_charges_shortfall_m": 0.541,
+        "pay_award_above_budget_per_employee_gbp": 1290
+      },
+      "business_rates_2024_25_outturn_surplus_m": 1.823,
+      "business_rates_dec_2024_forecast_surplus_m": 4.114,
+      "business_rates_adverse_swing_m": 2.291,
+      "trajectory_concern": "General Fund Balance of \u00a32.007m is low relative to even small-scale risk; reliance on business rates surplus that swung adversely \u00a32.3m in Q4",
+      "source_url": "https://moderngov.newcastle-staffs.gov.uk/documents/s44858/Draft+Statement+of+Accounts+2024-25+Covering+Report.pdf"
+    },
+    "actionable_savings_levers_summary": [
+      "LGR is the dominant strategic event \u2014 \u00a3400k one-off cost in 2026/27 is just the prelude; ~\u00a33.069m cumulative 5-year gap may be moot if borough is dissolved before 2031",
+      "Unqualified KPMG audit opinion 2024/25 is a defendable position \u2014 preserve clean opinion through LGR transition",
+      "General Fund Balance \u00a32.007m is the thinnest fiscal buffer of the 12 new Reform councils \u2014 protect reserves above all else",
+      "Business rates Q4 adverse swing \u00a32.3m \u2014 improve forecasting accuracy + appeals provisioning to reduce volatility",
+      "Asset disposal programme (The Square + Hassell/Brunswick Street) \u2014 execute capital receipts on time to fund the \u00a314.5m 3-year capital requirement without further borrowing",
+      "Pay award \u00a3396k 2026/27 above budget \u2014 productivity / vacancy management to absorb",
+      "Cybersecurity (named Internal Audit focus 2024/25) \u2014 pre-LGR exposure mitigation",
+      "Position the borough's 4-unitary proposal robustly in MHCLG consultation (deadline 26 March 2026) \u2014 outcome shapes baseline for any successor authority"
+    ],
+    "source_urls": [
+      "https://www.newcastle-staffs.gov.uk/finance/statement-accounts",
+      "https://www.newcastle-staffs.gov.uk/finance/spending-plans",
+      "https://moderngov.newcastle-staffs.gov.uk/documents/s45661/Appendix%202%20-%20Auditors%20Annual%20Report%20-%20KPMG.pdf",
+      "https://moderngov.newcastle-staffs.gov.uk/documents/s42374/KPMG+External+Audit+Plan+23-24.pdf",
+      "https://moderngov.newcastle-staffs.gov.uk/documents/s37058/Appointment%20of%20External%20Auditor%20from%202023-24.pdf",
+      "https://moderngov.newcastle-staffs.gov.uk/documents/s44858/Draft+Statement+of+Accounts+2024-25+Covering+Report.pdf",
+      "https://moderngov.newcastle-staffs.gov.uk/documents/s46132/Revenue%20and%20Capital%20Budgets%20and%20Strategies%202026-27%20FEBRUARY%202026.pdf",
+      "https://moderngov.newcastle-staffs.gov.uk/documents/s46172/Revenue%20and%20Capital%20Budgets%20and%20Strategies%202026-27%20FEBRUARY%202026%20-%20Council.pdf",
+      "https://moderngov.newcastle-staffs.gov.uk/ieDecisionDetails.aspx?Id=1444",
+      "https://moderngov.newcastle-staffs.gov.uk/documents/s6554/Appendix%20B%20-%20Internal%20Audit%20Terms%20of%20Reference.pdf",
+      "https://moderngov.newcastle-staffs.gov.uk/documents/g4064/Public+reports+pack+03rd-Feb-2025+19.00+Audit+and+Standards+Committee.pdf?T=10",
+      "https://moderngov.newcastle-staffs.gov.uk/documents/g4069/Public+reports+pack+10th-Nov-2025+19.00+Audit+and+Standards+Committee.pdf?T=10",
+      "https://www.newcastle-staffs.gov.uk/policies-1/asset-management-strategy/5",
+      "https://moderngov.newcastle-staffs.gov.uk/mgIssueHistoryHome.aspx?IId=7783",
+      "https://moderngov.newcastle-staffs.gov.uk/documents/s46129/3.2.26%20FINAL%20Cabinet%20LGR.pdf",
+      "https://www.gov.uk/government/consultations/local-government-reorganisation-in-staffordshire-and-stoke-on-trent/proposals-for-local-government-reorganisation-in-staffordshire-and-stoke-on-trent",
+      "https://consult.communities.gov.uk/local-government-reorganisation/staffordshire-and-stoke-on-trent/",
+      "https://staffordshirestokelgr.org.uk/proposals/",
+      "https://www.newcastle-staffs.gov.uk/news/article/467/council-sends-its-reorganisation-message-to-government"
+    ],
+    "coverage_gaps": [
+      "Total General Fund net revenue budget 2026/27 (\u00a3m headline)",
+      "Internal Audit Annual Report 2024/25 \u2014 overall opinion + limited-assurance subject list",
+      "Full Strategic Risk Register top 5-10 with net ratings \u2014 only summary (4 risk increases + 2 new risks) located",
+      "Earmarked reserves balance + 5-year reserves trajectory \u00a3m",
+      "Capital programme detail beyond \u00a314.5m 3-year requirement headline",
+      "Specific KPMG VfM 'significant weaknesses' if any \u2014 unqualified opinion confirmed but VfM detail not extracted",
+      "CIPFA Resilience Index council-specific scores (paywalled)",
+      "DSG/SEND/ASC commentary correctly excluded as upper-tier (SCC) responsibilities \u2014 to be authored in Staffordshire CC pack"
+    ]
+  },
+  "donor_links": null,
+  "strategic_themes": [
+    {
+      "id": "audit_opinion_qualification",
+      "title": "Lift qualified audit opinion (KPMG LLP)",
+      "rationale": "External auditor issued a qualified opinion on 2024/25 statements. Direct: PSAA scale fee normalisation. Indirect: lifting governance flag reduces borrowing-cost premium. Manual read of audit report needed to itemise qualification reason \u2014 once known, target single-cycle remediation.",
+      "estimated_savings_low_m": 0.1,
+      "estimated_savings_high_m": 0.5,
+      "savings_type": "one-off + recurring",
+      "delivery_horizon": "12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Section 151 Officer",
+      "evidence": [
+        "https://moderngov.newcastle-staffs.gov.uk/documents/s45661/Appendix%202%20-%20Auditors%20Annual%20Report%20-%20KPMG.pdf"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "energy_procurement_optimisation",
+      "title": "Energy procurement via CCS / LASER / NEPO frameworks (\u00a31M baseline)",
+      "rationale": "\u00a31M utility spend across 1 suppliers. Top: EDF ENERGY 1 LTD (\u00a31M). Crown Commercial RM6306 + LASER / NEPO consortium flex purchase typically saves 4-8% vs direct supplier contracts on a 3-yr horizon. Plus solar PV self-generation on council estate (7-9 yr payback) + DESNZ Public Sector Decarbonisation Scheme grants up to 100% capex on heat pump conversion.",
+      "estimated_savings_low_m": 0.0,
+      "estimated_savings_high_m": 0.1,
+      "savings_type": "recurring + capital grant",
+      "delivery_horizon": "12-36 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Property + Sustainability Lead + S151 Officer",
+      "evidence": [
+        "Crown Commercial RM6306",
+        "DESNZ PSDS scheme",
+        "LASER / NEPO frameworks"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "procurement_data_review",
+      "title": "Contracts Finder portfolio review (84 notices; 0 contracts at \u00a310M+ ceiling)",
+      "rationale": "Contracts Finder data: 84 notices (45 awarded, \u00a313M aggregate ADVERTISED CEILING value, 0% SME). IMPORTANT: advertised contract value is a CEILING set to avoid retender risk under PCR 2015 Reg.72 / Procurement Act 2023 s.31 \u2014 actual spend through the awardee is typically 30-70% of ceiling, with some off-contract ledger spend permitted within the 50%/50% modification limits. 0 contracts at \u00a310M+ ceiling totalling \u00a30M (ceiling, NOT spend) \u2014 top 3: . Matched against ledger: GB-Lyme: TPPL Newcastle-under-Lyme Borough Council \u2014 ceiling \u00a30.0M, actual ledger spend with awardee \u00a30.2M; GB-Lyme: TPPL Newcastle-Under-Lyme Borough Council \u2014 ceiling \u00a32.7M, actual ledger spend with awardee \u00a32.8M; GB-Lyme: TPPL Newcastle-Under-Lyme Borough Council \u2014 ceiling \u00a30.7M, actual ledger spend with awardee \u00a32.8M. Aggregate identified actual spend \u00a335M. SME-awarded share 0% is below the Procurement Reform 2023 / PPN 03/24 ambition (33% SME share by value). Standard procurement-data savings levers (% of ACTUAL ledger spend, not ceiling): (a) modification-history scrutiny under PCR 2015 Reg.72, (b) Procurement Act 2023 s.31 contract change notice review, (c) re-tender benchmark vs CCS framework rates on next renewal. 2-8% on actual spend through major contracts is a defensible upper bound.",
+      "estimated_savings_low_m": 0.7,
+      "estimated_savings_high_m": 2.8,
+      "savings_type": "recurring (post next contract renewal)",
+      "delivery_horizon": "12-36 months (contract-renewal cycle)",
+      "implementation_complexity": "high",
+      "decision_owner": "Head of Procurement + Cabinet Member + Section 151 Officer",
+      "evidence": [
+        "procurement.json (Contracts Finder API): 84 notices",
+        "ledger-matched actual spend: \u00a334.6M",
+        "PCR 2015 Reg.72; Procurement Act 2023 s.31"
+      ],
+      "savings_basis": "Ledger-matched actual spend through awardees",
+      "advertised_ceiling_total_m": 0.0,
+      "ledger_matched_actual_spend_m": 34.6,
+      "severity": "medium"
+    },
+    {
+      "id": "reserves_rebuild",
+      "title": "Rebuild general reserves to \u22654 months (Low \u2192 Adequate)",
+      "rationale": "Reserves at 4.0 months (Low per CIPFA Resilience benchmark). Direction: improving. A 4-month minimum is the CIPFA / S151 prudence floor; below this triggers external auditor VFM concern and elevates s.114 risk.",
+      "estimated_target_m": 0.0,
+      "delivery_horizon": "3-5 years",
+      "implementation_complexity": "high",
+      "decision_owner": "Section 151 Officer + Cabinet",
+      "evidence": [
+        "cross_council.reserves_months",
+        "cross_council.reserves_adequacy"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "duplicate_recovery",
+      "title": "Audit + recover \u00a30M in flagged duplicate-payment patterns",
+      "rationale": "DOGE forensic flagged \u00a30M across 8 groups of likely duplicates. Industry recovery norm 5-15% via duplicate-detection software (AP Forensics, FISCAL, Oracle Concur). Lloyds Bank Commercial Card analysis typical for spot-check sample of 100 highest-confidence matches.",
+      "estimated_savings_low_m": 0.0,
+      "estimated_savings_high_m": 0.0,
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Finance + Internal Audit",
+      "evidence": [
+        "doge_findings.duplicate_count",
+        "doge_findings.duplicate_value"
+      ],
+      "severity": "medium"
+    }
+  ],
+  "supplier_recommendations": [],
+  "supplier_summary_flags": {},
+  "recommendation_counts": {}
+}

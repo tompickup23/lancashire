@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "updated": "2026-04-19",
+  "description": "Shared supplier-alias table for the 12 Lancashire districts. JV and arms-length entities carry different ledger names across districts (e.g. Barnfield Construction vs Barnfield Investment Properties vs Pearl 2) — this file is the canonical cross-reference so each district's record_classification.json + DOGE cross-council analyses treat them as a single legal entity. Each group lists the canonical name, known aliases across councils, and a reason note.",
+  "groups": [
+    {
+      "canonical": "BARNFIELD CONSTRUCTION LTD",
+      "aliases": [
+        "BARNFIELD CONSTRUCTION",
+        "BARNFIELD CONSTRUCTION LTD",
+        "BARNFIELD CONSTRUCTION LIMITED",
+        "BARNFIELD INVESTMENT PROPERTIES",
+        "BARNFIELD INVESTMENT PROPERTIES LTD",
+        "PEARL 2",
+        "PEARL 2 LTD",
+        "PEARL 2 LIMITED"
+      ],
+      "companies_house": "02015015",
+      "reason": "Barnfield group operating entity. Appears in Burnley as BARNFIELD INVESTMENT PROPERTIES (JV shell), in Pendle as PEARL 2, in Blackburn as BARNFIELD CONSTRUCTION. Cross-council analysis must merge these — the real trading entity is Barnfield Construction Ltd."
+    },
+    {
+      "canonical": "MAPLE GROVE DEVELOPMENTS LTD",
+      "aliases": [
+        "MAPLE GROVE",
+        "MAPLE GROVE DEVELOPMENTS",
+        "MAPLE GROVE DEVELOPMENTS LTD",
+        "MAPLE GROVE DEVELOPMENTS LIMITED",
+        "ERIC WRIGHT PARTNERSHIPS",
+        "ERIC WRIGHT PARTNERSHIPS LTD"
+      ],
+      "companies_house": "03204537",
+      "reason": "Development-manager subsidiary of Eric Wright Group. Pioneer Place + Charter Walk + council-property forward-funding. FRS 102 s33.1A exemption means inter-company flows from Maple Grove to Eric Wright Construction are invisible at Companies House; cross-reference via group accounts instead."
+    },
+    {
+      "canonical": "ERIC WRIGHT CONSTRUCTION LTD",
+      "aliases": [
+        "ERIC WRIGHT",
+        "ERIC WRIGHT CONSTRUCTION",
+        "ERIC WRIGHT CONSTRUCTION LTD",
+        "ERIC WRIGHT CONSTRUCTION LIMITED",
+        "EWC"
+      ],
+      "companies_house": "00825443",
+      "reason": "Operating construction arm of Eric Wright Group. Wholly-owned subsidiary of Eric Wright Group Ltd. Files full 41-page accounts (unlike the JV shells which file total exemption)."
+    },
+    {
+      "canonical": "GROWTH LANCASHIRE LTD",
+      "aliases": [
+        "GROWTH LANCASHIRE",
+        "GROWTH LANCASHIRE LTD",
+        "GROWTH LANCASHIRE LIMITED",
+        "REGENERATE PENNINE LANCASHIRE"
+      ],
+      "companies_house": "06932953",
+      "reason": "Sub-regional economic-development body chaired by Tim Webber. Oversees procurement frameworks for Pennine Lancashire districts. Councillors from 4 Barnfield-JV councils (Burnley, Blackburn, Pendle, Hyndburn) sit on its board — structural conflict to track."
+    },
+    {
+      "canonical": "CALICO HOMES LTD",
+      "aliases": [
+        "CALICO HOMES",
+        "CALICO HOMES LTD",
+        "CALICO HOMES LIMITED",
+        "CALICO HOUSING",
+        "CALICO HOUSING LTD",
+        "CALICO ENTERPRISE",
+        "CALICO ENTERPRISE LTD",
+        "CALICO FOOD BANK",
+        "CALICO HOMES LIMITED-ELECTIONS"
+      ],
+      "companies_house": "IP29369R",
+      "reason": "Housing association + social enterprise group. Runs Burnley Together (£70K/yr council contract). NOT wholly council-owned — it's a Registered Provider under Housing and Regeneration Act 2008. The '-ELECTIONS' suffix is a finance-system ledger code, not an electoral link (see lessons.md 18 Apr 2026)."
+    },
+    {
+      "canonical": "BURNLEY LEISURE TRUST",
+      "aliases": [
+        "BURNLEY LEISURE",
+        "BURNLEY LEISURE TRUST",
+        "BURNLEY LEISURE TRUST LTD"
+      ],
+      "companies_house": "IP29937R",
+      "reason": "Charitable leisure trust commissioned by Burnley BC to run leisure services. Legally separate from the council — an arms-length management contract, not an internal transfer. £12.9M across 335 transactions reflects fees, not a wholly-owned-subsidiary transfer."
+    }
+  ],
+  "usage": "Any Lancashire district's record_classification.json may reference this file at aliases.shared_file = '../shared/lancashire_district_aliases.json'. The ETL-level canonicaliser (supplier_canonical.py) does not yet dispatch on these groups — downstream analyses (cross_council, supplier-profile merging) should join on the canonical name via this table until ETL-level alias-merge is wired in."
+}

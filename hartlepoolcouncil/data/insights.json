@@ -1,0 +1,431 @@
+{
+  "summary": {
+    "total_spend": 656469926.63,
+    "transaction_count": 98477,
+    "unique_suppliers": 6144,
+    "avg_transaction": 6666.23,
+    "median_transaction": 1012.0,
+    "date_range": {
+      "min": "2022-04-01",
+      "max": "2026-03-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "WATES CONSTRUCTION LTD",
+        "total": 31435784.91,
+        "transactions": 30,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DALECARE LTD",
+        "total": 15095945.77,
+        "transactions": 541,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CATCOTE ACADEMY",
+        "total": 13627233.98,
+        "transactions": 160,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NEC SOFTWARE SOLUTIONS UK LTD",
+        "total": 12529645.21,
+        "transactions": 662,
+        "company_number": "00968498",
+        "company_url": "https://find-and-update.company-information.service.gov.uk/company/00968498"
+      },
+      {
+        "supplier": "EDF ENERGY",
+        "total": 12111397.84,
+        "transactions": 115,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WEST VIEW LODGE CARE HOME",
+        "total": 11261653.42,
+        "transactions": 435,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SUEZ RECYCLING AND RECOVERY UK LTD",
+        "total": 11220942.36,
+        "transactions": 146,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SHERATON COURT",
+        "total": 10936578.79,
+        "transactions": 267,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EXTOL ACADEMY TRUST",
+        "total": 10663182.91,
+        "transactions": 627,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LINDISFARNE CARE HOME",
+        "total": 8895053.89,
+        "transactions": 447,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HILL CARE SERVICES LTD",
+        "total": 8548512.12,
+        "transactions": 319,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MERLIN MANOR",
+        "total": 8311445.87,
+        "transactions": 343,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "UKROED LTD",
+        "total": 8279518.0,
+        "transactions": 49,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CARE UK",
+        "total": 8160134.0,
+        "transactions": 253,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REAL LIFE OPTIONS LTD",
+        "total": 7929340.76,
+        "transactions": 205,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MIDDLESBROUGH COUNCIL",
+        "total": 7664410.15,
+        "transactions": 269,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TEES VALLEY COMBINED AUTHORITY",
+        "total": 7449562.7,
+        "transactions": 37,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MILBURY CARE SERVICE",
+        "total": 7413823.22,
+        "transactions": 200,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DIMENSIONS (UK) LTD",
+        "total": 7384396.83,
+        "transactions": 104,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CHARLOTTE GRANGE",
+        "total": 6888935.14,
+        "transactions": 281,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.3287,
+    "total_unique_suppliers": 6144,
+    "single_transaction_suppliers": 2932
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 3676,
+      "potential_value": 21903244.78,
+      "items": [
+        {
+          "supplier": "GUEST MOTORS LTD",
+          "amount": 131170.0,
+          "date": "2025-11-28",
+          "occurrences": 3,
+          "potential_overpayment": 262340.0
+        },
+        {
+          "supplier": "PENTAGON CORPORATE FLEET",
+          "amount": 25274.0,
+          "date": "2024-01-23",
+          "occurrences": 10,
+          "potential_overpayment": 227466.0
+        },
+        {
+          "supplier": "FARID HILLEND ENGINEERING LTD",
+          "amount": 211059.0,
+          "date": "2024-04-24",
+          "occurrences": 2,
+          "potential_overpayment": 211059.0
+        },
+        {
+          "supplier": "CATCOTE ACADEMY",
+          "amount": 199453.0,
+          "date": "2024-10-22",
+          "occurrences": 2,
+          "potential_overpayment": 199453.0
+        },
+        {
+          "supplier": "DAWSONGROUP BUS & COACH LTD",
+          "amount": 182500.0,
+          "date": "2022-11-01",
+          "occurrences": 2,
+          "potential_overpayment": 182500.0
+        },
+        {
+          "supplier": "SUEZ RECYCLING AND RECOVERY UK LTD",
+          "amount": 159747.0,
+          "date": "2023-06-07",
+          "occurrences": 2,
+          "potential_overpayment": 159747.0
+        },
+        {
+          "supplier": "MOTUS GROUP (UK) LTD T/A PENTAGON DERBY",
+          "amount": 25372.35,
+          "date": "2024-04-10",
+          "occurrences": 7,
+          "potential_overpayment": 152234.1
+        },
+        {
+          "supplier": "EXTOL ACADEMY TRUST",
+          "amount": 148975.8,
+          "date": "2025-05-02",
+          "occurrences": 2,
+          "potential_overpayment": 148975.8
+        },
+        {
+          "supplier": "HCRG CARE SERVICES LTD",
+          "amount": 48264.98,
+          "date": "2022-05-20",
+          "occurrences": 4,
+          "potential_overpayment": 144794.94
+        },
+        {
+          "supplier": "MELLOR BUS LTD",
+          "amount": 126648.0,
+          "date": "2025-08-01",
+          "occurrences": 2,
+          "potential_overpayment": 126648.0
+        },
+        {
+          "supplier": "MELLOR BUS LTD",
+          "amount": 126648.0,
+          "date": "2025-07-29",
+          "occurrences": 2,
+          "potential_overpayment": 126648.0
+        },
+        {
+          "supplier": "WITHERSLACK GROUP LTD",
+          "amount": 40617.03,
+          "date": "2026-02-10",
+          "occurrences": 4,
+          "potential_overpayment": 121851.09
+        },
+        {
+          "supplier": "NEC SOFTWARE SOLUTIONS UK LTD",
+          "amount": 120443.96,
+          "date": "2024-03-25",
+          "occurrences": 2,
+          "potential_overpayment": 120443.96
+        },
+        {
+          "supplier": "JOSH'S PLACE LIMITED T/A AR CURAM",
+          "amount": 19707.01,
+          "date": "2026-02-20",
+          "occurrences": 7,
+          "potential_overpayment": 118242.06
+        },
+        {
+          "supplier": "CATCOTE ACADEMY",
+          "amount": 114804.38,
+          "date": "2023-05-30",
+          "occurrences": 2,
+          "potential_overpayment": 114804.38
+        },
+        {
+          "supplier": "CATCOTE ACADEMY",
+          "amount": 114804.38,
+          "date": "2023-07-25",
+          "occurrences": 2,
+          "potential_overpayment": 114804.38
+        },
+        {
+          "supplier": "JOSH'S PLACE LIMITED T/A AR CURAM",
+          "amount": 19071.3,
+          "date": "2025-10-22",
+          "occurrences": 7,
+          "potential_overpayment": 114427.8
+        },
+        {
+          "supplier": "JOSH'S PLACE LIMITED T/A AR CURAM",
+          "amount": 19071.3,
+          "date": "2025-12-19",
+          "occurrences": 7,
+          "potential_overpayment": 114427.8
+        },
+        {
+          "supplier": "CATCOTE ACADEMY",
+          "amount": 110388.83,
+          "date": "2022-07-26",
+          "occurrences": 2,
+          "potential_overpayment": 110388.83
+        },
+        {
+          "supplier": "CATCOTE ACADEMY",
+          "amount": 110388.83,
+          "date": "2023-03-17",
+          "occurrences": 2,
+          "potential_overpayment": 110388.83
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 1094,
+      "total_value": 23473000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 208
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Adult & Community Based Services",
+      "spend": 242461165.45,
+      "count": 21802
+    },
+    {
+      "department": "Children & Joint Commissioning",
+      "spend": 166860802.52,
+      "count": 34135
+    },
+    {
+      "department": "Development, Neighbourhoods & Regulatory Services",
+      "spend": 69538258.23,
+      "count": 14181
+    },
+    {
+      "department": "Corporate",
+      "spend": 44550134.3,
+      "count": 1803
+    },
+    {
+      "department": "Neighbourhoods & Regulatory Services",
+      "spend": 37853199.78,
+      "count": 15639
+    },
+    {
+      "department": "Adult Services & Public Health",
+      "spend": 35832674.84,
+      "count": 2190
+    },
+    {
+      "department": "Childrens Services",
+      "spend": 18934943.88,
+      "count": 2263
+    },
+    {
+      "department": "Children's Services",
+      "spend": 18737424.25,
+      "count": 2214
+    },
+    {
+      "department": "Resources & Development",
+      "spend": 8006433.0,
+      "count": 1038
+    },
+    {
+      "department": "Housing, Growth and Communities",
+      "spend": 5320164.77,
+      "count": 462
+    },
+    {
+      "department": "Finance, IT and Digital",
+      "spend": 3612630.97,
+      "count": 1182
+    },
+    {
+      "department": "Housing, Growth & Communities",
+      "spend": 3029004.45,
+      "count": 443
+    },
+    {
+      "department": "Legal",
+      "spend": 1364480.08,
+      "count": 872
+    },
+    {
+      "department": "Housing Revenue Account (HRA)",
+      "spend": 161304.61,
+      "count": 154
+    },
+    {
+      "department": "Legal, Governance and Human Resources",
+      "spend": 105715.82,
+      "count": 43
+    },
+    {
+      "department": "Office of the Chief Exec",
+      "spend": 99623.72,
+      "count": 53
+    },
+    {
+      "department": "Dev, Neighbourhoods & Reg Sv",
+      "spend": 1965.96,
+      "count": 3
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2022/23": 131225053.08,
+      "2023/24": 155099392.14,
+      "2024/25": 171030635.53,
+      "2025/26": 199114845.88
+    },
+    "transactions_by_year": {
+      "2022/23": 37060,
+      "2023/24": 25156,
+      "2024/25": 17034,
+      "2025/26": 19227
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 98477
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "council_id": "calderdale",
+  "updated": "2026-05-10",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Calderdale MBC has a large 'REDACTED PERSONAL DATA' bucket — sample March 2026 month showed 2,092 of 6,112 rows (34%) with this supplier name. These are direct-payment-individual rows (Care Act direct payments, fostering, SGO allowances). Without this rule, doge_findings HHI / duplicate-detection / split-payment will be poisoned by a 34%-share single-supplier bucket. Pattern matches LCC and Doncaster lessons (see lessons.md 'REDACTED regex must be suffix-tolerant').",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"
+      },
+      "reason": "REDACTED PERSONAL DATA — direct payment to a service-user / foster carer / SGO recipient. 2,092/6,112 rows (34%) in March 2026 sample. Lawfully unnamed under Care Act 2014 + UK GDPR."
+    }
+  ],
+  "supplier_aliases": []
+}

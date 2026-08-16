@@ -1,0 +1,455 @@
+{
+  "summary": {
+    "total_spend": 9505809314.97,
+    "transaction_count": 2066367,
+    "unique_suppliers": 14754,
+    "avg_transaction": 4600.25,
+    "median_transaction": 1247.92,
+    "date_range": {
+      "min": "2021-04-01",
+      "max": "2026-06-30"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "REDACTED - PERSONAL PAYMENT",
+        "total": 406531186.18,
+        "transactions": 278049,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "KENT ENVIROPOWER LTD",
+        "total": 230773654.71,
+        "transactions": 193,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "KENT COMMUNITY HEALTH NHS FOUNDATION TRUST",
+        "total": 222678292.76,
+        "transactions": 2368,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "GW HIGHWAYS LTD",
+        "total": 127543297.66,
+        "transactions": 82,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COMMERCIAL SERVICES KENT LTD",
+        "total": 120168013.11,
+        "transactions": 45808,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "KENT PENSION FUND",
+        "total": 116601976.89,
+        "transactions": 130,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "STAGECOACH SERVICES LTD",
+        "total": 92858480.76,
+        "transactions": 548,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CANTIUM BUSINESS SOLUTIONS LTD",
+        "total": 87107638.91,
+        "transactions": 5012,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EDSECO LTD T/A THE EDUCATION PEOPLE",
+        "total": 83411479.87,
+        "transactions": 1135,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FCC RECYCLING (UK) LTD",
+        "total": 83268728.36,
+        "transactions": 1605,
+        "company_number": "02674166",
+        "company_url": "https://find-and-update.company-information.service.gov.uk/company/02674166"
+      },
+      {
+        "supplier": "KENT EDUCATION PARTNERSHIP LTD",
+        "total": 82652955.52,
+        "transactions": 160,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ENTERPRISE AOL LTD",
+        "total": 76548135.97,
+        "transactions": 62,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "W W MARTIN LTD",
+        "total": 73687120.33,
+        "transactions": 363,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LDC CARE COMPANY LTD",
+        "total": 73360540.79,
+        "transactions": 11103,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SKANSKA CONSTRUCTION UK LTD T/A FACILITIES",
+        "total": 66150893.64,
+        "transactions": 23365,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "KENT PFI COMPANY 1 LTD",
+        "total": 61998923.47,
+        "transactions": 149,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INVICTA LAW LTD",
+        "total": 55669878.93,
+        "transactions": 4160,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CARETECH COMMUNITY SERVICES LTD",
+        "total": 55296134.62,
+        "transactions": 13307,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "JACKSON CIVILS LTD",
+        "total": 52154456.96,
+        "transactions": 92,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "THE AVENUES TRUST GROUP",
+        "total": 51018310.87,
+        "transactions": 5133,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.2335,
+    "total_unique_suppliers": 14754,
+    "single_transaction_suppliers": 4395
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 205325,
+      "potential_value": 1209558128.5,
+      "items": [
+        {
+          "supplier": "NHS KENT AND MEDWAY CCG",
+          "amount": 866961.5,
+          "date": "2022-03-11",
+          "occurrences": 6,
+          "potential_overpayment": 4334807.5
+        },
+        {
+          "supplier": "NHS PROPERTY SERVICES LTD",
+          "amount": 377219.52,
+          "date": "2024-04-03",
+          "occurrences": 11,
+          "potential_overpayment": 3772195.2
+        },
+        {
+          "supplier": "NHS KENT AND MEDWAY CCG",
+          "amount": 866961.5,
+          "date": "2021-11-24",
+          "occurrences": 4,
+          "potential_overpayment": 2600884.5
+        },
+        {
+          "supplier": "NHS PROPERTY SERVICES LTD",
+          "amount": 323485.55,
+          "date": "2023-06-07",
+          "occurrences": 9,
+          "potential_overpayment": 2587884.4
+        },
+        {
+          "supplier": "KENT COMMUNITY HEALTH NHS FOUNDATION TRUST",
+          "amount": 1947065.0,
+          "date": "2024-04-10",
+          "occurrences": 2,
+          "potential_overpayment": 1947065.0
+        },
+        {
+          "supplier": "NHS PROPERTY SERVICES LTD",
+          "amount": 323950.24,
+          "date": "2024-11-21",
+          "occurrences": 6,
+          "potential_overpayment": 1619751.2
+        },
+        {
+          "supplier": "CANTIUM BUSINESS SOLUTIONS LTD",
+          "amount": 1050000.0,
+          "date": "2026-02-26",
+          "occurrences": 2,
+          "potential_overpayment": 1050000.0
+        },
+        {
+          "supplier": "KENT PFI COMPANY 1 LTD",
+          "amount": 997766.1,
+          "date": "2025-10-09",
+          "occurrences": 2,
+          "potential_overpayment": 997766.1
+        },
+        {
+          "supplier": "NHS PROPERTY SERVICES LTD",
+          "amount": 323950.24,
+          "date": "2025-08-19",
+          "occurrences": 4,
+          "potential_overpayment": 971850.72
+        },
+        {
+          "supplier": "NHS KENT AND MEDWAY CCG",
+          "amount": 866961.5,
+          "date": "2022-03-09",
+          "occurrences": 2,
+          "potential_overpayment": 866961.5
+        },
+        {
+          "supplier": "STAGECOACH SERVICES LTD",
+          "amount": 786900.0,
+          "date": "2025-07-30",
+          "occurrences": 2,
+          "potential_overpayment": 786900.0
+        },
+        {
+          "supplier": "SERENITY SCHOOL MAIDSTONE LTD",
+          "amount": 19666.0,
+          "date": "2026-04-01",
+          "occurrences": 40,
+          "potential_overpayment": 766974.0
+        },
+        {
+          "supplier": "WEST HEATH 2000 LTD",
+          "amount": 21403.33,
+          "date": "2026-05-27",
+          "occurrences": 35,
+          "potential_overpayment": 727713.22
+        },
+        {
+          "supplier": "SERENITY SCHOOL MAIDSTONE LTD",
+          "amount": 19667.0,
+          "date": "2025-12-18",
+          "occurrences": 38,
+          "potential_overpayment": 727679.0
+        },
+        {
+          "supplier": "WEST HEATH 2000 LTD",
+          "amount": 21403.33,
+          "date": "2026-01-30",
+          "occurrences": 34,
+          "potential_overpayment": 706309.89
+        },
+        {
+          "supplier": "LIFE SKILLS MANOR LTD",
+          "amount": 18000.0,
+          "date": "2026-04-10",
+          "occurrences": 37,
+          "potential_overpayment": 648000.0
+        },
+        {
+          "supplier": "BARNARDO SERVICES LTD",
+          "amount": 15834.0,
+          "date": "2021-05-24",
+          "occurrences": 41,
+          "potential_overpayment": 633360.0
+        },
+        {
+          "supplier": "LIFE SKILLS MANOR LTD",
+          "amount": 18000.0,
+          "date": "2026-01-05",
+          "occurrences": 36,
+          "potential_overpayment": 630000.0
+        },
+        {
+          "supplier": "FCC RECYCLING (UK) LTD",
+          "amount": 207923.8,
+          "date": "2023-07-26",
+          "occurrences": 4,
+          "potential_overpayment": 623771.4
+        },
+        {
+          "supplier": "CHANGE GROW LIVE SERVICES LTD",
+          "amount": 309875.84,
+          "date": "2025-07-24",
+          "occurrences": 3,
+          "potential_overpayment": 619751.68
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 21009,
+      "total_value": 346753000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 1922
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Adult Social Care & Health",
+      "spend": 3251458758.62,
+      "count": 1065025
+    },
+    {
+      "department": "Children, Young People & Education",
+      "spend": 2465137662.9,
+      "count": 426216
+    },
+    {
+      "department": "Growth, Environment & Transport",
+      "spend": 1292560888.64,
+      "count": 78214
+    },
+    {
+      "department": "Adult Social Care and Health",
+      "spend": 781418722.89,
+      "count": 250876
+    },
+    {
+      "department": "Children, Young People and Education",
+      "spend": 523233749.13,
+      "count": 91176
+    },
+    {
+      "department": "Deputy Chief Executive's Department",
+      "spend": 249464832.58,
+      "count": 33945
+    },
+    {
+      "department": "Growth, Environment and Transport",
+      "spend": 179830833.67,
+      "count": 13938
+    },
+    {
+      "department": "Strategic & Corporate Services",
+      "spend": 172804305.43,
+      "count": 25569
+    },
+    {
+      "department": "Deputy Chief Executive's Department (DCED)",
+      "spend": 150900220.81,
+      "count": 28908
+    },
+    {
+      "department": "Chief Executive's Department",
+      "spend": 104201386.76,
+      "count": 24446
+    },
+    {
+      "department": "",
+      "spend": 97703560.29,
+      "count": 1516
+    },
+    {
+      "department": "Total Orphan Cost Centre Values",
+      "spend": 48902002.8,
+      "count": 1064
+    },
+    {
+      "department": "Non Attributable Costs",
+      "spend": 41832760.45,
+      "count": 252
+    },
+    {
+      "department": "Financing Items & Unallocated",
+      "spend": 39708411.75,
+      "count": 4024
+    },
+    {
+      "department": "Capital Cost Centres",
+      "spend": 33463643.89,
+      "count": 964
+    },
+    {
+      "department": "Insurance",
+      "spend": 32827598.25,
+      "count": 923
+    },
+    {
+      "department": "Chief Executive's Department (CED)",
+      "spend": 30624127.22,
+      "count": 19195
+    },
+    {
+      "department": "Unknown",
+      "spend": 8634782.66,
+      "count": 99
+    },
+    {
+      "department": "#N/A",
+      "spend": 882520.75,
+      "count": 11
+    },
+    {
+      "department": "Corporately Held Budgets",
+      "spend": 215340.48,
+      "count": 4
+    },
+    {
+      "department": "Children, Young people & Education",
+      "spend": 3205.0,
+      "count": 2
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2021/22": 1218637059.36,
+      "2022/23": 1630223644.38,
+      "2023/24": 1817554255.41,
+      "2024/25": 2074434846.97,
+      "2025/26": 2140793974.52,
+      "2026/27": 624165534.33
+    },
+    "transactions_by_year": {
+      "2021/22": 235198,
+      "2022/23": 369640,
+      "2023/24": 414860,
+      "2024/25": 463529,
+      "2025/26": 460494,
+      "2026/27": 122646
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 99.9,
+    "total_records": 2066367
+  }
+}

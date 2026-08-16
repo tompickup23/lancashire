@@ -1,0 +1,173 @@
+{
+  "council_id": "preston",
+  "council_name": "Preston",
+  "council_full_name": "Preston City Council",
+  "council_type": "district",
+  "council_tier": "district",
+  "ons_code": "E07000123",
+  "official_website": "https://www.preston.gov.uk",
+  "moderngov_url": "https://preston.moderngov.co.uk",
+  "spending_threshold": 500,
+  "data_sources": {
+    "spending": true,
+    "budgets": true,
+    "budgets_govuk": true,
+    "crime_stats": true,
+    "budget_trends": true,
+    "politics": true,
+    "meetings": true,
+    "news": true,
+    "my_area": true,
+    "foi": true,
+    "doge_investigation": true,
+    "pay_comparison": false,
+    "procurement": true,
+    "demographics": true,
+    "lgr_tracker": true,
+    "integrity": true,
+    "elections": true,
+    "supplier_index": true,
+    "constituencies": true,
+    "polling": true,
+    "collection_rates": true,
+    "councillor_profiles": true,
+    "foi_templates": true,
+    "ward_boundaries": true,
+    "supplier_profiles": false,
+    "hmo": true,
+    "housing": true,
+    "health": true,
+    "economy": true,
+    "planning": false,
+    "council_documents": true,
+    "voting_records": true,
+    "borough_savings": true,
+    "register_of_interests": true,
+    "political_history": true,
+    "council_directives": true,
+    "cross_council": true
+  },
+  "spending_data_period": "April 2019 \u2013 March 2026",
+  "hero_subtitle": "Explore how Preston City Council spends public money. With 46,700+ transactions totalling \u00a3205 million tracked since 2019, this dashboard gives residents transparency on spending across Preston, Fulwood, and surrounding communities \u2014 the administrative capital of Lancashire.",
+  "disclaimer_entity": "Preston City Council",
+  "publisher": "Tom Pickup",
+  "publisher_bio": "This website was created by Tom Pickup, Reform UK county councillor for Padiham and Burnley West and Cabinet Member for Adult Social Care at Lancashire County Council. He is also parish councillor for Clowbridge with Dunnockshaw. Tom builds transparency tools that make public spending data easier to check.",
+  "publisher_titles": [
+    "County Councillor for Padiham and Burnley West",
+    "Cabinet Member for Adult Social Care, Lancashire County Council",
+    "Parish Councillor for Clowbridge with Dunnockshaw"
+  ],
+  "publisher_photo": "/images/tom-pickup.jpg",
+  "publisher_quote": "It's your money. The more people understand where it goes, the better.",
+  "publisher_social": [
+    {
+      "platform": "x",
+      "url": "https://x.com/tompickup",
+      "label": "@tompickup"
+    },
+    {
+      "platform": "facebook",
+      "url": "https://facebook.com/tompickupburnley",
+      "label": "Facebook"
+    },
+    {
+      "platform": "instagram",
+      "url": "https://instagram.com/tompickupburnley",
+      "label": "Instagram"
+    },
+    {
+      "platform": "tiktok",
+      "url": "https://tiktok.com/@tompickupburnley",
+      "label": "TikTok"
+    },
+    {
+      "platform": "email",
+      "url": "mailto:tom.pickup@lancashire.gov.uk",
+      "label": "Email"
+    }
+  ],
+  "foi_url": "https://www.preston.gov.uk/article/1113/Freedom-of-information",
+  "theme_accent": "#d4213d",
+  "doge_context": {
+    "total_spend": "\u00a3205M",
+    "transactions": 46711,
+    "suppliers": 2517,
+    "data_period": "April 2019 \u2013 March 2026",
+    "annual_net_revenue_budget": "\u00a317M",
+    "political_control": "Labour majority.",
+    "key_suppliers": [
+      {
+        "name": "Maple Grove Developments",
+        "spend": "\u00a331.5M",
+        "note": "Major housing/regeneration project"
+      },
+      {
+        "name": "Lancashire County Council",
+        "spend": "\u00a328.0M",
+        "note": "County-level service payments \u2014 450 transactions"
+      },
+      {
+        "name": "Conlon Construction Ltd",
+        "spend": "\u00a310.6M",
+        "note": "Construction \u2014 110 transactions"
+      }
+    ],
+    "doge_findings": {
+      "likely_duplicates": "\u00a3515.8K across 477 high-confidence duplicate groups",
+      "ch_red_flags": "\u00a3556.1K to 13 suppliers with Companies House compliance issues",
+      "split_payments": "\u00a341.8K suspected across 1 instance",
+      "year_end_spike": "Rev Customer Services spent 10.6x monthly average in March",
+      "round_numbers": "\u00a310.1M across 459 round-number payments over \u00a35K",
+      "benfords_law": "6.0% max digit deviation \u2014 above 5% warning threshold",
+      "weak_competition": "23 contracts with limited competition indicators"
+    },
+    "notable_suppliers": [
+      {
+        "name": "Matrix SCM Ltd",
+        "transactions": 5445,
+        "spend": "\u00a34.6M",
+        "note": "Agency staffing \u2014 highest volume supplier"
+      },
+      {
+        "name": "Preston Youth Zone Ltd",
+        "spend": "\u00a33.6M",
+        "note": "Single large transaction"
+      },
+      {
+        "name": "Maple Grove Developments",
+        "spend": "\u00a331.5M",
+        "note": "Major housing/regeneration project \u2014 92 transactions"
+      }
+    ],
+    "spend_triangulation": {
+      "transparency_gross": "\u00a3205.1M",
+      "transparency_paid": "\u00a3205.1M",
+      "procurement_only": "\u00a3204.1M",
+      "non_procurement": "\u00a31.0M",
+      "note": "Transparency gross = \u00a3205.1M across every class in the published corpus. Procurement-paid (discretionary third-party payments) = \u00a3204.1M. Non-procurement rows: Care-Act redacted direct payments to individuals (\u00a31.0M) \u2014 all excluded from third-party-supplier forensic analyses. Net revenue budget figures (where published) are smaller again because they net capital, grants received, and reserves movements \u2014 transparency totals include all of these."
+    },
+    "record_classification": {
+      "procurement_paid": {
+        "count": 45497,
+        "sum": "\u00a3204.1M",
+        "note": "Discretionary third-party supplier payments \u2014 the real procurement footprint."
+      },
+      "direct_payment_individual": {
+        "count": 1214,
+        "sum": "\u00a31.0M",
+        "note": "Care Act 2014 + UK GDPR redactions \u2014 foster carers, SGO recipients, ASC service-user direct-payment holders. Lawfully unnamed."
+      }
+    },
+    "record_classification_updated": "2026-04-19"
+  },
+  "political_control": {
+    "reform_run": false,
+    "tenure_tier": "presence_lancs",
+    "tier_a": false,
+    "tier_b": true,
+    "is_council_intel_focus": true,
+    "tenure_note": null,
+    "as_of": "2026-05-16",
+    "source": "council-intel/platform-bundle.json"
+  }
+}

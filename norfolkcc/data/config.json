@@ -1,0 +1,97 @@
+{
+  "council_id": "norfolk_cc",
+  "council_name": "Norfolk",
+  "council_full_name": "Norfolk County Council",
+  "council_type": "county",
+  "council_tier": "county",
+  "ons_code": "E10000020",
+  "official_website": "https://www.norfolk.gov.uk",
+  "moderngov_url": "https://norfolkcc.cmis.uk.com",
+  "spending_threshold": 500,
+  "data_sources": {
+    "spending": true,
+    "budgets": true,
+    "budgets_govuk": true,
+    "budget_trends": true,
+    "news": false,
+    "doge_investigation": true,
+    "borough_savings": false,
+    "lgr_tracker": false,
+    "procurement": true,
+    "politics": true,
+    "integrity": false,
+    "housing": false,
+    "health": false,
+    "economy": false,
+    "ward_boundaries": false,
+    "spending_db": true,
+    "council_directives": false,
+    "cross_council": true
+  },
+  "spending_data_period": "January 2023 – March 2026",
+  "hero_subtitle": "Explore how Norfolk County Council manages public money.",
+  "disclaimer_entity": "Norfolk County Council",
+  "publisher": "Tom Pickup",
+  "publisher_bio": "This website was created by Tom Pickup, Reform UK county councillor for Padiham and Burnley West and Cabinet Member for Adult Social Care at Lancashire County Council. He is also parish councillor for Clowbridge with Dunnockshaw. Tom builds transparency tools that make public spending data easier to check.",
+  "publisher_titles": [
+    "County Councillor for Padiham and Burnley West",
+    "Cabinet Member for Adult Social Care, Lancashire County Council",
+    "Parish Councillor for Clowbridge with Dunnockshaw"
+  ],
+  "publisher_photo": "/images/tom-pickup.jpg",
+  "publisher_quote": "It's your money. The more people understand where it goes, the better.",
+  "publisher_social": [
+    {
+      "platform": "x",
+      "url": "https://x.com/tompickup",
+      "label": "@tompickup"
+    }
+  ],
+  "theme_accent": "#0a84ff",
+  "doge_context": {
+    "political_control": "TBD post 7 May 2026 (Reform majority forecast).",
+    "total_spend": "£3.77B (procurement_paid)",
+    "total_spend_gross": "£4.13B",
+    "transactions": 692426,
+    "suppliers": 9877,
+    "data_period": "January 2023 – March 2026 (3 years 3 months)",
+    "spend_triangulation": {
+      "transparency_gross": "£4.13B",
+      "procurement_only": "£3.77B",
+      "non_procurement": "£363M",
+      "note": "Quarterly CSV (2023) + monthly XLSX (2024+) feed via Cloudflare-protected /article/39418/Payments-to-suppliers (ingested via Chrome MCP browser automation 4 May 2026). Norfolk includes Pension Fund + P-card transactions in the same feed. After classification: £91M statutory pass-through (7 Norfolk districts + NHS trusts + ICB), £253M internal transfer (Norse Care Ltd LATCo + NCC self-payments), £19M direct payment to individuals (REDACTED + foster/care payments). Pre-2023 corpus pending (live page only links Apr 2023+; older years on archive page behind separate Cloudflare challenge — re-run Chrome MCP fetch with archive page next iteration)."
+    },
+    "record_classification": {
+      "procurement_paid": {
+        "count": 663325,
+        "sum": "£3.77B",
+        "note": "Discretionary third-party supplier payments — real procurement footprint."
+      },
+      "internal_transfer": {
+        "count": 11230,
+        "sum": "£253M",
+        "note": "NCC group entities: Norse Care Ltd LATCo (5,967 txns / £130M), NCC self-payments, Norfolk Pension Fund."
+      },
+      "statutory_pass_through": {
+        "count": 1715,
+        "sum": "£91M",
+        "note": "7 Norfolk districts (Norwich, Great Yarmouth, King's Lynn, etc.) + 5 NHS trusts + ICB."
+      },
+      "direct_payment_individual": {
+        "count": 16156,
+        "sum": "£19M",
+        "note": "REDACTED + Care Act 2014 s.31 ASC direct payments."
+      }
+    }
+  },
+  "political_control": {
+    "reform_run": false,
+    "tenure_tier": "reform_largest_opposition",
+    "tier_a": true,
+    "tier_b": false,
+    "is_council_intel_focus": true,
+    "tenure_note": "May 7 2026 result: Reform UK is the single largest party with 40 of 84 seats (47%, 3 short of majority). Council sits in NOC — 2nd party Lib Dems. Pre-2026: Conservative-led NOC.",
+    "as_of": "2026-05-20",
+    "source": "ukelections/data/results/may-2026/council-control.json"
+  }
+}

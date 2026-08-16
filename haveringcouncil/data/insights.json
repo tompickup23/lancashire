@@ -1,0 +1,523 @@
+{
+  "summary": {
+    "total_spend": 918642832.56,
+    "transaction_count": 248055,
+    "unique_suppliers": 3153,
+    "avg_transaction": 3703.38,
+    "median_transaction": 1473.84,
+    "date_range": {
+      "min": "2023-04-01",
+      "max": "2026-01-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "MATRIX SCM LTD",
+        "total": 66929299.62,
+        "transactions": 47354,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EAST LONDON WASTE AUTHORITY",
+        "total": 34396244.77,
+        "transactions": 34,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MEARS LTD",
+        "total": 28948825.93,
+        "transactions": 1755,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "GREATER LONDON AUTHORITY",
+        "total": 27309961.0,
+        "transactions": 16,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PERSONAL INFORMATION - REDACTED",
+        "total": 22060769.61,
+        "transactions": 17960,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "URBASER LTD",
+        "total": 18053699.79,
+        "transactions": 138,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WOODFORD CHILDREN'S HOME LTD",
+        "total": 12545578.33,
+        "transactions": 1237,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ADECCO UK LTD",
+        "total": 10803701.85,
+        "transactions": 8317,
+        "company_number": "00593232",
+        "company_url": "https://find-and-update.company-information.service.gov.uk/company/00593232"
+      },
+      {
+        "supplier": "FCC WASTE MANAGEMENT LTD",
+        "total": 10249020.4,
+        "transactions": 67,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LODGE LANE CARE HOME LTD",
+        "total": 9994796.38,
+        "transactions": 2678,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TRANSPORT TRADING LTD",
+        "total": 9488096.0,
+        "transactions": 6,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LODGE GROUP CARE UK LTD",
+        "total": 8669305.49,
+        "transactions": 5443,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ONE TREE ESTATES LTD T/A ASHBROOK NURSING HOME",
+        "total": 7267589.37,
+        "transactions": 1361,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "RANC CARE HOMES LTD - ROMFORD CARE CENTRE",
+        "total": 7114501.51,
+        "transactions": 1471,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MARLBOROUGH SURFACING LTD",
+        "total": 6985145.39,
+        "transactions": 249,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "OAK HOUSE CHILDRENS HOME LTD",
+        "total": 6807582.63,
+        "transactions": 329,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "THOMAS RIDLEY & SONS LTD",
+        "total": 6716700.43,
+        "transactions": 1894,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORTH EAST LONDON NHS FOUNDATION TRUST_A",
+        "total": 6211183.42,
+        "transactions": 91,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HOME SUPPORT SERVICES (HAVERING & ESSEX) LTD",
+        "total": 6051690.67,
+        "transactions": 4205,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BARLEYCROFT CARE HOME LTD",
+        "total": 5511029.49,
+        "transactions": 1490,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.3398,
+    "total_unique_suppliers": 3153,
+    "single_transaction_suppliers": 780
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 24778,
+      "potential_value": 185553511.95,
+      "items": [
+        {
+          "supplier": "WOODFORD CHILDREN'S HOME LTD",
+          "amount": 8000.0,
+          "date": "2024-01-18",
+          "occurrences": 79,
+          "potential_overpayment": 624000.0
+        },
+        {
+          "supplier": "MEARS LTD",
+          "amount": 309627.89,
+          "date": "2024-06-14",
+          "occurrences": 3,
+          "potential_overpayment": 619255.78
+        },
+        {
+          "supplier": "ORACLE CORPORATION UK LTD",
+          "amount": 100926.62,
+          "date": "2023-05-29",
+          "occurrences": 7,
+          "potential_overpayment": 605559.72
+        },
+        {
+          "supplier": "WOODFORD CHILDREN'S HOME LTD",
+          "amount": 7883.48,
+          "date": "2024-01-18",
+          "occurrences": 75,
+          "potential_overpayment": 583377.52
+        },
+        {
+          "supplier": "WOODFORD CHILDREN'S HOME LTD",
+          "amount": 24842.64,
+          "date": "2025-10-14",
+          "occurrences": 23,
+          "potential_overpayment": 546538.08
+        },
+        {
+          "supplier": "FCC WASTE MANAGEMENT LTD",
+          "amount": 491986.08,
+          "date": "2025-06-13",
+          "occurrences": 2,
+          "potential_overpayment": 491986.08
+        },
+        {
+          "supplier": "LODGE LANE CARE HOME LTD",
+          "amount": 3440.0,
+          "date": "2024-07-26",
+          "occurrences": 118,
+          "potential_overpayment": 402480.0
+        },
+        {
+          "supplier": "THE BELSTEADS SCHOOL LTD",
+          "amount": 22835.52,
+          "date": "2025-11-17",
+          "occurrences": 15,
+          "potential_overpayment": 319697.28
+        },
+        {
+          "supplier": "MEARS LTD",
+          "amount": 314891.56,
+          "date": "2025-12-10",
+          "occurrences": 2,
+          "potential_overpayment": 314891.56
+        },
+        {
+          "supplier": "MEARS LTD",
+          "amount": 314891.56,
+          "date": "2025-06-17",
+          "occurrences": 2,
+          "potential_overpayment": 314891.56
+        },
+        {
+          "supplier": "MEARS LTD",
+          "amount": 309627.89,
+          "date": "2024-12-09",
+          "occurrences": 2,
+          "potential_overpayment": 309627.89
+        },
+        {
+          "supplier": "LODGE LANE CARE HOME LTD",
+          "amount": 3085.8,
+          "date": "2023-05-04",
+          "occurrences": 99,
+          "potential_overpayment": 302408.4
+        },
+        {
+          "supplier": "THE BELSTEADS SCHOOL LTD",
+          "amount": 22835.52,
+          "date": "2025-07-23",
+          "occurrences": 14,
+          "potential_overpayment": 296861.76
+        },
+        {
+          "supplier": "LODGE LANE CARE HOME LTD",
+          "amount": 4968.0,
+          "date": "2024-07-26",
+          "occurrences": 60,
+          "potential_overpayment": 293112.0
+        },
+        {
+          "supplier": "FCC WASTE MANAGEMENT LTD",
+          "amount": 290714.46,
+          "date": "2025-06-13",
+          "occurrences": 2,
+          "potential_overpayment": 290714.46
+        },
+        {
+          "supplier": "MEARS LTD",
+          "amount": 290403.2,
+          "date": "2023-12-11",
+          "occurrences": 2,
+          "potential_overpayment": 290403.2
+        },
+        {
+          "supplier": "MEARS LTD",
+          "amount": 290403.2,
+          "date": "2024-03-01",
+          "occurrences": 2,
+          "potential_overpayment": 290403.2
+        },
+        {
+          "supplier": "MEARS LTD",
+          "amount": 290403.2,
+          "date": "2023-05-30",
+          "occurrences": 2,
+          "potential_overpayment": 290403.2
+        },
+        {
+          "supplier": "LONDON BOROUGH OF REDBRIDGE",
+          "amount": 276428.0,
+          "date": "2026-01-20",
+          "occurrences": 2,
+          "potential_overpayment": 276428.0
+        },
+        {
+          "supplier": "OAK HOUSE CHILDRENS HOME LTD",
+          "amount": 44640.0,
+          "date": "2025-02-20",
+          "occurrences": 7,
+          "potential_overpayment": 267840.0
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 3523,
+      "total_value": 28734000.0
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "People - Ageing Well",
+      "spend": 201233462.26,
+      "count": 74446
+    },
+    {
+      "department": "People - Starting Well - DSG",
+      "spend": 124543555.44,
+      "count": 22198
+    },
+    {
+      "department": "People - Living Well",
+      "spend": 122920369.42,
+      "count": 45050
+    },
+    {
+      "department": "People - Starting Well",
+      "spend": 121920812.1,
+      "count": 38387
+    },
+    {
+      "department": "Place - Environment",
+      "spend": 57785644.04,
+      "count": 13028
+    },
+    {
+      "department": "Corporate Budgets",
+      "spend": 48845854.24,
+      "count": 198
+    },
+    {
+      "department": "Place - Housing & Property HRA",
+      "spend": 43098154.29,
+      "count": 5781
+    },
+    {
+      "department": "Adults",
+      "spend": 38711203.35,
+      "count": 13449
+    },
+    {
+      "department": "Collection Fund Dir",
+      "spend": 27000886.0,
+      "count": 10
+    },
+    {
+      "department": "Childrens",
+      "spend": 20634784.28,
+      "count": 5801
+    },
+    {
+      "department": "Place - Housing & Property",
+      "spend": 18701096.28,
+      "count": 6007
+    },
+    {
+      "department": "oneSource Shared",
+      "spend": 18300715.81,
+      "count": 4107
+    },
+    {
+      "department": "Place - Planning & Public Protection",
+      "spend": 10890683.96,
+      "count": 2678
+    },
+    {
+      "department": "Resources - Public Health",
+      "spend": 8810967.65,
+      "count": 379
+    },
+    {
+      "department": "Housing",
+      "spend": 8754201.86,
+      "count": 4169
+    },
+    {
+      "department": "oneSource Non-Shared LBH",
+      "spend": 7891475.47,
+      "count": 1501
+    },
+    {
+      "department": "Neighbourhoods",
+      "spend": 6963481.95,
+      "count": 2570
+    },
+    {
+      "department": "Resources Non-Shared LBH",
+      "spend": 4736982.83,
+      "count": 238
+    },
+    {
+      "department": "Resources - Partnership Impact and Delivery",
+      "spend": 3882563.58,
+      "count": 1341
+    },
+    {
+      "department": "Resources - Customer Services Transformation & IT",
+      "spend": 3355286.42,
+      "count": 936
+    },
+    {
+      "department": "Resources - Finance",
+      "spend": 2824708.48,
+      "count": 990
+    },
+    {
+      "department": "People - Living Well - HRA",
+      "spend": 2612532.55,
+      "count": 788
+    },
+    {
+      "department": "Section 151",
+      "spend": 2144103.73,
+      "count": 84
+    },
+    {
+      "department": "Chief Operating Officer",
+      "spend": 2015349.18,
+      "count": 921
+    },
+    {
+      "department": "Resources - Communication",
+      "spend": 1797340.71,
+      "count": 373
+    },
+    {
+      "department": "Resources - HR & OD",
+      "spend": 1693611.63,
+      "count": 462
+    },
+    {
+      "department": "Resources - Customer Services",
+      "spend": 1467286.36,
+      "count": 1058
+    },
+    {
+      "department": "Regeneration Programme Delivery",
+      "spend": 1072719.23,
+      "count": 112
+    },
+    {
+      "department": "Public Health",
+      "spend": 1035147.44,
+      "count": 75
+    },
+    {
+      "department": "Resources - Partnerships",
+      "spend": 815156.06,
+      "count": 422
+    },
+    {
+      "department": "Resources - Public Health - Non Grant",
+      "spend": 813928.72,
+      "count": 242
+    },
+    {
+      "department": "Resources - Customer Services Transformation & IT HRA",
+      "spend": 539438.21,
+      "count": 62
+    },
+    {
+      "department": "Resources - Public Health - HRA",
+      "spend": 395158.96,
+      "count": 55
+    },
+    {
+      "department": "Resources - Havering Place Based Partnership",
+      "spend": 257658.22,
+      "count": 126
+    },
+    {
+      "department": "Holding Hierarchy (Level B)",
+      "spend": 133987.65,
+      "count": 1
+    },
+    {
+      "department": "Pension Fund",
+      "spend": 24468.25,
+      "count": 1
+    },
+    {
+      "department": "Resources \u2013 Communication - HRA",
+      "spend": 18055.95,
+      "count": 9
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2023/24": 262658908.87,
+      "2024/25": 341424204.18,
+      "2025/26": 314559719.51
+    },
+    "transactions_by_year": {
+      "2023/24": 85019,
+      "2024/25": 91093,
+      "2025/26": 71943
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 248055
+  }
+}

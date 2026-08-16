@@ -1,0 +1,190 @@
+{
+  "council": "Derbyshire CC",
+  "council_id": "E10000007",
+  "council_type": "county",
+  "spending_threshold": 500,
+  "total_records": 626115,
+  "financial_years": [
+    "2023/24",
+    "2024/25",
+    "2025/26",
+    "2026/27"
+  ],
+  "data_types": [
+    "spend"
+  ],
+  "filters": {
+    "departments": [
+      {
+        "name": "Adult Social Care and Health",
+        "spend": 742565570.98,
+        "count": 299499,
+        "suppliers": 1425
+      },
+      {
+        "name": "Children's Services",
+        "spend": 720419861.84,
+        "count": 124571,
+        "suppliers": 3158
+      },
+      {
+        "name": "Balance Sheet",
+        "spend": 711176421.57,
+        "count": 5528,
+        "suppliers": 257
+      },
+      {
+        "name": "Place",
+        "spend": 305877301.65,
+        "count": 25100,
+        "suppliers": 1074
+      },
+      {
+        "name": "Adult Social Health Care",
+        "spend": 302830424.65,
+        "count": 133463,
+        "suppliers": 1172
+      },
+      {
+        "name": "Pension Fund",
+        "spend": 232849267.51,
+        "count": 668,
+        "suppliers": 33
+      },
+      {
+        "name": "Corporate Services and Transformation",
+        "spend": 163254499.83,
+        "count": 13193,
+        "suppliers": 1074
+      },
+      {
+        "name": "Economic Transport & Communities",
+        "spend": 113933668.36,
+        "count": 13138,
+        "suppliers": 643
+      },
+      {
+        "name": "Capital",
+        "spend": 54909613.88,
+        "count": 2499,
+        "suppliers": 227
+      },
+      {
+        "name": "Commissioning Community and Policy",
+        "spend": 40754204.13,
+        "count": 4943,
+        "suppliers": 475
+      },
+      {
+        "name": "Corporate",
+        "spend": 27974189.38,
+        "count": 1264,
+        "suppliers": 285
+      },
+      {
+        "name": "Community Services",
+        "spend": 4554240.8,
+        "count": 2115,
+        "suppliers": 88
+      },
+      {
+        "name": "Chief Executives",
+        "spend": 652135.18,
+        "count": 134,
+        "suppliers": 114
+      }
+    ],
+    "department_raws": [
+      "Adult Social Care and Health",
+      "Adult Social Health Care",
+      "Balance Sheet",
+      "Capital",
+      "Chief Executives",
+      "Children's Services",
+      "Commissioning Community and Policy",
+      "Community Services",
+      "Corporate",
+      "Corporate Services and Transformation",
+      "Economic Transport & Communities",
+      "Pension Fund",
+      "Place"
+    ]
+  },
+  "total_spend": 3421751399.76,
+  "total_spend_paid": 3421751399.76,
+  "total_spend_committed": 0,
+  "total_spend_all_types_legacy": 3421751399.76,
+  "record_count_paid": 626115,
+  "record_count_committed": 0,
+  "record_class_breakdown": {
+    "procurement_paid": {
+      "count": 626115,
+      "sum": 3421751399.76
+    }
+  },
+  "spend_triangulation": {
+    "transparency_gross": 3421751399.76,
+    "transparency_paid": 3421751399.76,
+    "procurement_only": 3421751399.76,
+    "non_procurement": 0.0
+  },
+  "dedup_rule": "total_spend = spend + purchase_cards; contracts excluded (77% pair with matching spend within 90d \u2014 see .claude/rules/lessons.md)",
+  "dedup_applied": "enforced at ETL (council_etl.py)",
+  "unique_suppliers": 6958,
+  "coverage": {
+    "months_present": [
+      "2024-01",
+      "2024-02",
+      "2024-03",
+      "2024-04",
+      "2024-05",
+      "2024-06",
+      "2024-07",
+      "2024-08",
+      "2024-10",
+      "2024-11",
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06",
+      "2025-07",
+      "2025-08",
+      "2025-09",
+      "2025-10",
+      "2025-11",
+      "2025-12",
+      "2026-01",
+      "2026-02",
+      "2026-04",
+      "2026-05",
+      "2026-06"
+    ],
+    "month_count": 27,
+    "first_month": "2024-01",
+    "last_month": "2026-06",
+    "gap_months": [
+      "2024-09",
+      "2024-12",
+      "2026-03"
+    ],
+    "thin_months": [],
+    "months_per_financial_year": {
+      "2023/24": 3,
+      "2024/25": 10,
+      "2025/26": 11,
+      "2026/27": 3
+    },
+    "affected_financial_years": [
+      "2024/25",
+      "2025/26"
+    ],
+    "annual_totals_safe": false,
+    "caveat": "Coverage is incomplete: 3 month(s) missing from the published source data. Financial year totals for 2024/25, 2025/26 understate actual spending and are not comparable year-on-year."
+  },
+  "date_range": {
+    "min": "2024-01-02",
+    "max": "2026-06-30"
+  }
+}

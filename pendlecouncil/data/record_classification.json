@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "council_id": "pendle",
+  "updated": "2026-04-19",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Pendle Borough Council is a Lancashire district authority publishing a single paid-invoice feed. No contracts/PO feed, small number of REDACTED personal-data rows bucket to direct_payment_individual. no accrual ledger exposure at district scale \u2014 every record is procurement_paid by default.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions \u2014 direct payments to individuals (foster carers, SGO recipients, ASC service-user direct payments, CYP direct payments, Staying Put arrangements). Lawfully unnamed. Pattern covers REDACTED, REDACT, [REDACTED], and REDACTED-suffix variants (e.g. 'REDACT - PERSONAL DATA', 'REDACTED PERSONAL DATA', 'REDACTED PERSONAL INFORMATION')."
+    }
+  ],
+  "supplier_aliases": "../shared/lancashire_district_aliases.json"
+}

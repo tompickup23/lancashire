@@ -1,0 +1,96 @@
+{
+  "council_id": "kirklees",
+  "council_name": "Kirklees",
+  "council_full_name": "Kirklees Metropolitan Borough Council",
+  "council_type": "metropolitan_borough",
+  "council_tier": "unitary",
+  "ons_code": "E08000034",
+  "official_website": "https://www.kirklees.gov.uk",
+  "moderngov_url": "https://democracy.kirklees.gov.uk",
+  "spending_threshold": 250,
+  "data_sources": {
+    "spending": true,
+    "budgets": false,
+    "budgets_govuk": false,
+    "budget_trends": false,
+    "news": false,
+    "doge_investigation": false,
+    "borough_savings": false,
+    "lgr_tracker": false,
+    "procurement": false,
+    "politics": true,
+    "integrity": false,
+    "housing": true,
+    "health": true,
+    "economy": true,
+    "ward_boundaries": false,
+    "spending_db": false,
+    "council_directives": false,
+    "property_assets": true,
+    "cross_council": true
+  },
+  "spending_data_period": "not yet ingested",
+  "hero_subtitle": "Explore how Kirklees Metropolitan Borough Council manages public money. Reform UK is the largest party (29/69 seats, 42%) after the 7 May 2026 election but the council sits in NOC. Full transparency data coming soon.",
+  "disclaimer_entity": "Kirklees Metropolitan Borough Council",
+  "publisher": "Tom Pickup",
+  "publisher_bio": "This website was created by Tom Pickup, Reform UK county councillor for Padiham and Burnley West and Cabinet Member for Adult Social Care at Lancashire County Council. He is also parish councillor for Clowbridge with Dunnockshaw. Tom builds transparency tools that make public spending data easier to check.",
+  "publisher_titles": [
+    "County Councillor for Padiham and Burnley West",
+    "Cabinet Member for Adult Social Care, Lancashire County Council",
+    "Parish Councillor for Clowbridge with Dunnockshaw"
+  ],
+  "publisher_photo": "/images/tom-pickup.jpg",
+  "publisher_quote": "It's your money. The more people understand where it goes, the better.",
+  "publisher_social": [
+    {
+      "platform": "x",
+      "url": "https://x.com/tompickup",
+      "label": "@tompickup"
+    }
+  ],
+  "theme_accent": "#12B6CF",
+  "political_control": {
+    "reform_run": false,
+    "tenure_tier": "reform_largest_opposition",
+    "tier_a": true,
+    "tier_b": false,
+    "is_council_intel_focus": true,
+    "tenure_note": "7 May 2026 result: Reform UK is the largest party with 29 of 69 seats (42%, up from zero); Green 12, Conservative 9, Kirklees Independent Group 9, Lib Dem 5, Valley Independent Group 3, Independent 2. The council is in no overall control and leaderless: two leadership votes failed (20 and 28 May 2026, the Conservatives declining to back either the Reform or the Green candidate), so the Chief Executive runs the council on interim powers and further votes are expected. Reform group leader Cllr Sarah Wood. Pre-2026 control: Labour majority (now zero seats).",
+    "as_of": "2026-06-24",
+    "source": "ukelections/data/results/may-2026/council-control.json + primary-source verification 24 Jun 2026 (democracy.kirklees.gov.uk party index; Yorkshire Post / LGC / Examiner Live leadership coverage)"
+  },
+  "doge_context": {
+    "political_control": "Reform UK is the largest group (29 of 69 seats, 42%) after the 7 May 2026 election but has not formed an administration. The council is in no overall control and leaderless: two leadership votes failed (20 and 28 May 2026) and officers run the council on interim powers. Previous control: Labour majority (now zero seats).",
+    "intervention_status": "None active (no S114, Exceptional Financial Support or Best Value Notice). Forward risk: the ring-fenced DSG High Needs deficit (GBP 81.3m at Q3 2025/26) and the statutory override ending 31 March 2028.",
+    "spend_triangulation": {
+      "transparency_gross": "£4.66B",
+      "transparency_paid": "£4.66B",
+      "procurement_only": "£3.20B",
+      "non_procurement": "£1.46B",
+      "note": "Transparency gross = £4.66B across every class in the published corpus. Procurement-paid (discretionary third-party payments) = £3.20B. Non-procurement rows: Care-Act redacted direct payments to individuals (£1.38B), statutory pass-throughs (£1.5M), internal transfers to pension fund / in-house provider / wholly-owned subsidiary (£80.9M) — all excluded from third-party-supplier forensic analyses. Net revenue budget figures (where published) are smaller again because they net capital, grants received, and reserves movements — transparency totals include all of these."
+    },
+    "record_classification": {
+      "procurement_paid": {
+        "count": 322009,
+        "sum": "£3.20B",
+        "note": "Discretionary third-party supplier payments — the real procurement footprint."
+      },
+      "direct_payment_individual": {
+        "count": 171862,
+        "sum": "£1.38B",
+        "note": "Care Act 2014 + UK GDPR redactions — foster carers, SGO recipients, ASC service-user direct-payment holders. Lawfully unnamed."
+      },
+      "internal_transfer": {
+        "count": 3547,
+        "sum": "£80.9M",
+        "note": "Council's own pension fund, in-house provider arm, or wholly-owned subsidiary. Money from commissioner to provider within the authority boundary."
+      },
+      "statutory_pass_through": {
+        "count": 29,
+        "sum": "£1.5M",
+        "note": "DSG to schools, BCF to NHS ICB, PFI unitary charges, DFG to districts, concessionary travel. Authority has no procurement discretion."
+      }
+    },
+    "record_classification_updated": "2026-04-19"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "council_id": "staffordshire_cc",
+  "updated": "2026-04-19",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Staffordshire County Council is an upper-tier authority (county council). Default is procurement_paid. Pension fund transfers bucket to internal_transfer. REDACTED / accrual rules added if the raw CSV feed exposes them — not all counties do.",
+  "rules": [
+    {
+      "class": "settlement_noise",
+      "match": {
+        "supplier_regex": "^SCC SUNDRY BACS[\\s\\dA-Z]*COMPANY$"
+      },
+      "reason": "Staffordshire's finance-system BACS settlement label. 3,310 rows / £25.9M across the corpus. Not a real supplier — settlement sweep from the internal clearing ledger."
+    }
+  ],
+  "supplier_aliases": []
+}

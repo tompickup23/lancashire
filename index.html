@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>AI DOGE — Council Intelligence Platform</title>
+  <meta name="description" content="Spending analysis, opposition research, and electoral strategy across 68 UK councils — 22M+ transactions, £120B+ tracked.">
+  <meta property="og:title" content="AI DOGE — Council Intelligence">
+  <meta property="og:description" content="Spending analysis, opposition research, electoral strategy. 68 councils, 22M+ transactions, £120B+ tracked.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://aidoge.co.uk/">
+  <meta property="og:site_name" content="AI DOGE">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AI DOGE — Council Intelligence">
+  <meta name="twitter:description" content="Spending analysis, opposition research, electoral strategy. 68 councils, £120B+ tracked.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0%25' stop-color='%2312B6CF'/><stop offset='100%25' stop-color='%23087d8f'/></linearGradient></defs><rect width='100' height='100' rx='20' fill='url(%23g)'/><text x='50' y='68' text-anchor='middle' font-size='60' font-weight='900' fill='white'>◆</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- SPA routing handled by Cloudflare Pages _redirects file -->
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #000; color: #fafafa; line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh; min-height: 100dvh;
+    }
+
+    .landing {
+      display: flex; flex-direction: column; align-items: center;
+      min-height: 100vh; min-height: 100dvh;
+      position: relative; overflow-x: hidden;
+    }
+
+    /* UK silhouette — background watermark */
+    .uk-bg {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -52%);
+      width: 40vh; max-width: 300px;
+      opacity: 0;
+      animation: uk-reveal 2s ease-out 0.5s forwards;
+    }
+    .uk-bg path {
+      fill: none;
+      stroke: rgba(18, 182, 207, 0.08);
+      stroke-width: 2;
+      stroke-dasharray: 3000;
+      stroke-dashoffset: 3000;
+      animation: uk-draw 3s ease-out 0.6s forwards;
+    }
+    .uk-fill {
+      fill: rgba(18, 182, 207, 0.02);
+      stroke: none;
+      opacity: 0;
+      animation: uk-fill-in 1.5s ease-out 2.5s forwards;
+    }
+    @keyframes uk-draw { to { stroke-dashoffset: 0; } }
+    @keyframes uk-reveal { to { opacity: 1; } }
+    @keyframes uk-fill-in { to { opacity: 1; } }
+
+    /* Ambient orbs */
+    .orb { position: absolute; border-radius: 50%; filter: blur(120px); pointer-events: none; }
+    .orb-1 { width: 600px; height: 600px; top: -200px; right: -150px; background: rgba(18,182,207,0.05); animation: orb-drift 14s ease-in-out infinite alternate; }
+    .orb-2 { width: 400px; height: 400px; bottom: -100px; left: -100px; background: rgba(18,182,207,0.03); animation: orb-drift 18s ease-in-out infinite alternate-reverse; }
+    @keyframes orb-drift { from { transform: translate(0,0); } to { transform: translate(40px,-30px); } }
+
+    /* Eye logo */
+    .eye-wrap { opacity: 0; transform: scale(0.3); animation: eye-appear 0.8s cubic-bezier(0.34,1.56,0.64,1) 0.3s forwards; z-index: 2; margin-top: 12vh; }
+    @keyframes eye-appear { to { opacity: 1; transform: scale(1); } }
+    .eye-svg { filter: drop-shadow(0 0 30px rgba(18,182,207,0.5)); animation: eye-glow 3s ease-in-out infinite; }
+    .eye-pupil { animation: pupil-pulse 3s ease-in-out infinite; }
+    @keyframes eye-glow { 0%,100% { filter: drop-shadow(0 0 30px rgba(18,182,207,0.5)); } 50% { filter: drop-shadow(0 0 50px rgba(18,182,207,0.8)) drop-shadow(0 0 100px rgba(18,182,207,0.2)); } }
+    @keyframes pupil-pulse { 0%,100% { fill: #12B6CF; } 50% { fill: #5ee0f5; } }
+
+    /* Title */
+    .title { font-size: 4rem; font-weight: 900; letter-spacing: 0.15em; margin-top: 24px; z-index: 2; text-shadow: 0 0 40px rgba(18,182,207,0.3); opacity: 0; transform: translateY(20px); animation: fade-up 0.6s ease-out 1s forwards; }
+    .tagline { font-size: 1.15rem; font-weight: 300; letter-spacing: 0.4em; text-transform: uppercase; color: rgba(18,182,207,0.85); margin-top: 8px; z-index: 2; opacity: 0; transform: translateY(10px) scaleX(0.8); animation: tagline-in 0.6s ease-out 1.8s forwards; }
+    @keyframes tagline-in { to { opacity: 1; transform: translateY(0) scaleX(1); } }
+    .subtitle { color: rgba(255,255,255,0.4); font-size: 0.9rem; margin-top: 6px; z-index: 2; opacity: 0; animation: fade-up 0.5s ease-out 2.4s forwards; }
+    @keyframes fade-up { to { opacity: 1; transform: translateY(0); } }
+
+    /* Sweep line */
+    .sweep { position: absolute; top: 46%; left: 0; right: 0; height: 1px; z-index: 1; background: linear-gradient(90deg, transparent, #12B6CF 20%, #12B6CF 80%, transparent); transform: scaleX(0); transform-origin: center; animation: sweep-anim 0.8s cubic-bezier(0.4,0,0.2,1) 0.4s forwards; }
+    @keyframes sweep-anim { 0% { opacity: 0.8; transform: scaleX(0); } 40% { opacity: 1; transform: scaleX(1); } 100% { opacity: 0; transform: scaleX(1.2); } }
+
+    /* CTA section */
+    .cta-wrap { margin-top: 40px; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 12px; opacity: 0; transform: translateY(20px); animation: fade-up 0.5s ease-out 3s forwards; }
+    .cta-btn { display: inline-flex; align-items: center; gap: 8px; padding: 16px 48px; background: linear-gradient(135deg, #12B6CF 0%, #0a8fa3 100%); color: #fff; font-size: 1.1rem; font-weight: 600; font-family: inherit; border: none; border-radius: 12px; cursor: pointer; letter-spacing: 0.05em; transition: opacity 0.2s, box-shadow 0.2s, transform 0.15s; text-decoration: none; }
+    .cta-btn:hover { opacity: 0.9; transform: translateY(-1px); box-shadow: 0 8px 32px rgba(18,182,207,0.35); }
+    .cta-btn:active { transform: translateY(0); }
+    .cta-row { display: flex; align-items: center; gap: 12px; margin-top: 4px; }
+    .cta-link { color: rgba(18,182,207,0.7); font-size: 0.9rem; text-decoration: none; transition: color 0.2s; font-weight: 500; }
+    .cta-link:hover { color: #12B6CF; }
+    .cta-dot { color: rgba(255,255,255,0.2); }
+
+    /* Council picker */
+    .council-section { z-index: 2; margin-top: 32px; width: 100%; max-width: 700px; padding: 24px 20px 0; opacity: 0; animation: fade-up 0.5s ease-out 3.2s forwards; scroll-margin-top: 20px; }
+    .council-section h2 { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(255,255,255,0.3); text-align: center; margin-bottom: 12px; }
+    .council-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 10px; }
+    .council-grid a { color: rgba(255,255,255,0.45); font-size: 0.8rem; text-decoration: none; transition: color 0.2s; font-weight: 400; padding: 4px 8px; border-radius: 6px; }
+    .council-grid a:hover { color: #12B6CF; background: rgba(18,182,207,0.08); }
+    .region-label { color: rgba(18,182,207,0.5); font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; width: 100%; text-align: center; margin-top: 10px; margin-bottom: 2px; }
+
+    /* Bottom section */
+    .bottom-section { margin-top: auto; padding: 24px 0 16px; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 12px; opacity: 0; animation: fade-up 0.5s ease-out 3.5s forwards; }
+    .stats { display: flex; justify-content: center; gap: 40px; }
+    .stat { text-align: center; }
+    .stat-value { font-size: 1.4rem; font-weight: 800; color: #12B6CF; letter-spacing: -0.02em; }
+    .stat-label { font-size: 0.65rem; font-weight: 500; color: rgba(255,255,255,0.3); text-transform: uppercase; letter-spacing: 0.15em; }
+    .disclaimer { text-align: center; }
+    .disclaimer span { font-size: 0.6rem; color: rgba(255,255,255,0.12); }
+
+    /* Mobile */
+    @media (max-width: 600px) {
+      .title { font-size: 2.8rem; letter-spacing: 0.1em; }
+      .tagline { font-size: 0.85rem; letter-spacing: 0.25em; }
+      .eye-wrap { margin-top: 8vh; }
+      .eye-svg { width: 100px; height: 67px; }
+      .cta-btn { padding: 14px 36px; font-size: 1rem; }
+      .stats { gap: 24px; }
+      .stat-value { font-size: 1.1rem; }
+      .orb { display: none; }
+      .uk-bg { width: 30vh; }
+      .council-grid a { font-size: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="landing">
+    <!-- Ambient -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="sweep"></div>
+
+    <!-- UK silhouette (simplified outline of Great Britain + NI) -->
+    <svg class="uk-bg" viewBox="0 0 400 600" xmlns="http://www.w3.org/2000/svg">
+      <!-- Great Britain mainland -->
+      <path d="M220,20 L235,25 L250,35 L248,55 L255,70 L240,85 L245,100 L260,105 L270,120 L265,140 L275,155 L290,160 L295,180 L285,195 L290,210 L310,215 L320,230 L315,250 L325,265 L330,285 L320,300 L325,315 L310,330 L300,350 L290,355 L285,370 L275,380 L265,375 L255,385 L248,400 L240,410 L250,420 L255,435 L245,445 L235,450 L240,460 L250,470 L260,480 L255,490 L240,495 L225,490 L215,500 L205,510 L195,505 L185,510 L175,520 L165,525 L155,520 L145,525 L135,535 L125,540 L120,550 L110,555 L100,548 L95,535 L100,520 L110,510 L105,495 L95,485 L100,470 L110,460 L115,445 L108,435 L100,425 L95,410 L100,395 L110,385 L105,370 L95,360 L90,345 L95,330 L105,320 L110,305 L105,290 L95,280 L90,265 L100,250 L110,240 L115,225 L120,210 L115,195 L105,185 L100,170 L110,155 L120,145 L115,130 L120,115 L130,105 L140,95 L145,80 L155,70 L165,60 L170,45 L180,35 L195,28 L210,22 Z" />
+      <path class="uk-fill" d="M220,20 L235,25 L250,35 L248,55 L255,70 L240,85 L245,100 L260,105 L270,120 L265,140 L275,155 L290,160 L295,180 L285,195 L290,210 L310,215 L320,230 L315,250 L325,265 L330,285 L320,300 L325,315 L310,330 L300,350 L290,355 L285,370 L275,380 L265,375 L255,385 L248,400 L240,410 L250,420 L255,435 L245,445 L235,450 L240,460 L250,470 L260,480 L255,490 L240,495 L225,490 L215,500 L205,510 L195,505 L185,510 L175,520 L165,525 L155,520 L145,525 L135,535 L125,540 L120,550 L110,555 L100,548 L95,535 L100,520 L110,510 L105,495 L95,485 L100,470 L110,460 L115,445 L108,435 L100,425 L95,410 L100,395 L110,385 L105,370 L95,360 L90,345 L95,330 L105,320 L110,305 L105,290 L95,280 L90,265 L100,250 L110,240 L115,225 L120,210 L115,195 L105,185 L100,170 L110,155 L120,145 L115,130 L120,115 L130,105 L140,95 L145,80 L155,70 L165,60 L170,45 L180,35 L195,28 L210,22 Z" />
+      <!-- Northern Ireland -->
+      <path d="M55,280 L70,275 L85,278 L90,290 L85,305 L70,310 L55,305 L50,290 Z" />
+      <path class="uk-fill" d="M55,280 L70,275 L85,278 L90,290 L85,305 L70,310 L55,305 L50,290 Z" />
+    </svg>
+
+    <!-- Eye ident -->
+    <div class="eye-wrap">
+      <svg class="eye-svg" viewBox="0 0 120 80" width="140" height="94">
+        <path d="M60 10 C25 10, 2 40, 2 40 C2 40, 25 70, 60 70 C95 70, 118 40, 118 40 C118 40, 95 10, 60 10 Z" fill="none" stroke="#12B6CF" stroke-width="2.5" />
+        <circle cx="60" cy="40" r="16" fill="none" stroke="#12B6CF" stroke-width="2" />
+        <circle class="eye-pupil" cx="60" cy="40" r="7" fill="#12B6CF" />
+      </svg>
+    </div>
+
+    <!-- Text -->
+    <h1 class="title">AI DOGE</h1>
+    <p class="tagline">Leave No Stone Unturned</p>
+    <p class="subtitle">Spending analysis · Opposition research · Electoral strategy</p>
+
+    <!-- CTA -->
+    <div class="cta-wrap">
+      <a href="#councils" class="cta-btn">Choose Your Council →</a>
+      <div class="cta-row">
+        <a href="/lancashirecc/chat" class="cta-link">AI Briefing Assistant</a>
+        <span class="cta-dot">·</span>
+        <a href="/lancashirecc/" class="cta-link">Sign In</a>
+      </div>
+    </div>
+
+    <!-- Council Picker -->
+    <div class="council-section" id="councils">
+      <h2>Select a Council</h2>
+
+      <p class="region-label">Lancashire</p>
+      <div class="council-grid">
+        <a href="/lancashirecc/">Lancashire CC</a>
+        <a href="/burnleycouncil/">Burnley</a>
+        <a href="/hyndburncouncil/">Hyndburn</a>
+        <a href="/pendlecouncil/">Pendle</a>
+        <a href="/rossendalecouncil/">Rossendale</a>
+        <a href="/lancastercouncil/">Lancaster</a>
+        <a href="/ribblevalleycouncil/">Ribble Valley</a>
+        <a href="/chorleycouncil/">Chorley</a>
+        <a href="/southribblecouncil/">South Ribble</a>
+        <a href="/prestoncouncil/">Preston</a>
+        <a href="/westlancashirecouncil/">West Lancs</a>
+        <a href="/wyrecouncil/">Wyre</a>
+        <a href="/fyldecouncil/">Fylde</a>
+        <a href="/blackpoolcouncil/">Blackpool</a>
+        <a href="/blackburncouncil/">Blackburn</a>
+        <a href="/lancashirefire/">Lancs Fire</a>
+        <a href="/lancashirepcc/">Lancs PCC</a>
+      </div>
+
+      <p class="region-label">Reform UK Councils</p>
+      <div class="council-grid">
+        <a href="/kentcc/">Kent CC</a>
+        <a href="/durhamcouncil/">Durham</a>
+        <a href="/doncastercouncil/">Doncaster</a>
+        <a href="/derbyshirecc/">Derbyshire CC</a>
+        <a href="/staffordshirecc/">Staffordshire CC</a>
+        <a href="/lincolnshirecc/">Lincolnshire CC</a>
+        <a href="/nottinghamshirecc/">Notts CC</a>
+        <a href="/northnorthants/">N. Northants</a>
+        <a href="/westnorthants/">W. Northants</a>
+        <a href="/warwickshirecc/">Warwickshire CC</a>
+        <a href="/worcestershirecc/">Worcs CC</a>
+        <a href="/leicestershirecc/">Leics CC</a>
+      </div>
+
+      <p class="region-label">Reform UK — Won May 2026</p>
+      <div class="council-grid">
+        <a href="/essexcc/">Essex CC</a>
+        <a href="/suffolkcc/">Suffolk CC</a>
+        <a href="/barnsleycouncil/">Barnsley</a>
+        <a href="/calderdalecouncil/">Calderdale</a>
+        <a href="/gatesheadcouncil/">Gateshead</a>
+        <a href="/haveringcouncil/">Havering</a>
+        <a href="/newcastleunderlyme/">Newcastle-u-Lyme</a>
+        <a href="/sandwellcouncil/">Sandwell</a>
+        <a href="/southtynesidecouncil/">S. Tyneside</a>
+        <a href="/sthelenscouncil/">St Helens</a>
+        <a href="/sunderlandcouncil/">Sunderland</a>
+        <a href="/thurrockcouncil/">Thurrock</a>
+        <a href="/wakefieldcouncil/">Wakefield</a>
+        <a href="/walsallcouncil/">Walsall</a>
+        <a href="/bradfordcouncil/">Bradford</a>
+      </div>
+
+      <p class="region-label">Reform UK — Largest in NOC</p>
+      <div class="council-grid">
+        <a href="/norfolkcc/">Norfolk CC</a>
+        <a href="/isleofwight/">Isle of Wight</a>
+        <a href="/kirkleescouncil/">Kirklees</a>
+        <a href="/nuneatonbedworth/">Nuneaton &amp; Bedworth</a>
+        <a href="/northeastlincs/">North East Lincs</a>
+        <a href="/rochfordcouncil/">Rochford</a>
+        <a href="/havantcouncil/">Havant</a>
+      </div>
+
+      <p class="region-label">Reform UK — Breakthrough</p>
+      <div class="council-grid">
+        <a href="/hartlepoolcouncil/">Hartlepool</a>
+        <a href="/cannockchase/">Cannock Chase</a>
+        <a href="/tamesidecouncil/">Tameside</a>
+        <a href="/tamworthcouncil/">Tamworth</a>
+        <a href="/hampshirecc/">Hampshire CC</a>
+        <a href="/haltoncouncil/">Halton</a>
+        <a href="/plymouthcouncil/">Plymouth</a>
+        <a href="/rochdalecouncil/">Rochdale</a>
+      </div>
+
+      <p class="region-label">Comparison Councils</p>
+      <div class="council-grid">
+        <a href="/cornwallcouncil/">Cornwall</a>
+        <a href="/devoncc/">Devon CC</a>
+        <a href="/eastsussexcc/">E. Sussex CC</a>
+        <a href="/westsussexcc/">W. Sussex CC</a>
+        <a href="/coventrycouncil/">Coventry</a>
+        <a href="/dudleycouncil/">Dudley</a>
+        <a href="/newcastleuponttyne/">Newcastle upon Tyne</a>
+        <a href="/solihullcouncil/">Solihull</a>
+        <a href="/wigancouncil/">Wigan</a>
+      </div>
+    </div>
+
+    <!-- Stats + Disclaimer -->
+    <div class="bottom-section">
+      <div class="stats">
+        <div class="stat"><div class="stat-value">68</div><div class="stat-label">Councils</div></div>
+        <div class="stat"><div class="stat-value">22M+</div><div class="stat-label">Transactions</div></div>
+        <div class="stat"><div class="stat-value">£120B+</div><div class="stat-label">Analysed</div></div>
+        <div class="stat"><div class="stat-value">1,500+</div><div class="stat-label">Councillors</div></div>
+      </div>
+      <div class="disclaimer">
+        <span>aidoge.co.uk · Independent council intelligence tool</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

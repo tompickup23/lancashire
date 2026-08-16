@@ -1,0 +1,556 @@
+{
+  "version": "2.0",
+  "council_id": "st_helens",
+  "council_name": "St Helens Borough Council",
+  "generated_at": "2026-05-13T11:07:38.527349Z",
+  "data_sources": [
+    "spending.sqlite (council_etl.py + classify_council.py)",
+    "doge_findings.json (35-technique forensic)",
+    "cross_council.json (32-council peer benchmark)",
+    "budgets_summary.json (MHCLG Revenue Outturn)",
+    "revenue_trends.json (8-yr MHCLG time series)",
+    "source_audit.json (record_class breakdown)",
+    "supplier_donor_crossmatch.json (Electoral Commission CSV API)"
+  ],
+  "financial_summary": {
+    "annual_revenue_budget": 401802670,
+    "council_tax_requirement": 96197000,
+    "service_breakdown": {
+      "Highways and transport services": 5621180,
+      "Housing services (GFRA only)": 4579950,
+      "Cultural and related services": 5632760,
+      "Environmental and regulatory services": 11787700,
+      "Planning and development services": 7153830,
+      "Central services": 10793000
+    },
+    "procurement_footprint_total": 197880518.58,
+    "procurement_footprint_annual": 98940259.29,
+    "transactions_total": 51121,
+    "transactions_annual": 25560,
+    "unique_suppliers": 2193,
+    "data_period": {
+      "min": "2023-02-01",
+      "max": "2026-02-27"
+    },
+    "financial_years_covered": 2,
+    "per_capita_spend": 540.07,
+    "population": 183200,
+    "net_revenue_expenditure": 203945670,
+    "budget_year": "2024-25"
+  },
+  "reserves_position": {
+    "total": 53449690,
+    "months_of_revenue": 3.1,
+    "adequacy": "Low",
+    "direction": "declining",
+    "trajectory": [
+      {
+        "year": "2021-22",
+        "earmarked": 58232000,
+        "unallocated": 22416000,
+        "total": 80648000
+      },
+      {
+        "year": "2022-23",
+        "earmarked": 44895000,
+        "unallocated": 19268000,
+        "total": 64163000
+      },
+      {
+        "year": "2023-24",
+        "earmarked": 40050000,
+        "unallocated": 16994000,
+        "total": 57044000
+      },
+      {
+        "year": "2024-25",
+        "earmarked": 28125690,
+        "unallocated": 25324000,
+        "total": 53449690
+      }
+    ],
+    "projected": [
+      {
+        "year": "2025-26",
+        "total": 41647690,
+        "projected": true
+      },
+      {
+        "year": "2026-27",
+        "total": 32776297,
+        "projected": true
+      }
+    ]
+  },
+  "forensic_signals": {
+    "duplicate_value": 4800000,
+    "duplicate_count": 1558,
+    "split_payments_value": 13000000,
+    "weak_competition": null,
+    "anomaly_count": 8,
+    "total_flagged_value": 21645300,
+    "severity_breakdown": {
+      "high": 1,
+      "medium": 3,
+      "low": 4
+    },
+    "overall_hhi": 331.6,
+    "service_hhi_high": [],
+    "top10_supplier_pct": 0.4077,
+    "doge_key_findings": [
+      {
+        "title": "6 suppliers with clock-like payment regularity",
+        "severity": "info",
+        "confidence": "high"
+      },
+      {
+        "title": "MATRIX SCM LTD: 2118 transactions totalling \u00a33.8M",
+        "severity": "info",
+        "confidence": "high"
+      }
+    ]
+  },
+  "peer_benchmarks": {
+    "per_capita_spend": {
+      "metric": "per_capita_spend",
+      "this_value": 540.07,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "top10_supplier_pct": {
+      "metric": "top10_supplier_pct",
+      "this_value": 0.4077,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "reserves_months": {
+      "metric": "reserves_months",
+      "this_value": 3.1,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "overall_hhi": {
+      "metric": "overall_hhi",
+      "this_value": 331.6,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "duplicate_value": {
+      "metric": "duplicate_value",
+      "this_value": 4800000,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "split_payments_value": {
+      "metric": "split_payments_value",
+      "this_value": 13000000,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    }
+  },
+  "audit_research": {
+    "version": "1.0",
+    "council_id": "st_helens",
+    "researched_at": "2026-05-13",
+    "method": "Web research via WebFetch + WebSearch (subagent), all citations primary",
+    "external_audit": {
+      "auditor": "Grant Thornton UK LLP",
+      "appointment_period": "1 April 2023 to 31 March 2028",
+      "year_ended": "2025-03-31",
+      "opinion": "UNQUALIFIED",
+      "opinion_severity": "low",
+      "opinion_evidence": "Draft Audit Findings Report states auditors anticipate providing Members with an unqualified opinion on the 2024-25 financial statements (Audit & Governance Committee 24 November 2025 papers)",
+      "key_concerns": [
+        "VfM commentary: Council overspent by \u00a34.7m in 2024/25 \u2014 third consecutive annual overspend \u2014 requiring drawdown of \u00a312.3m of reserves over three years",
+        "Erosion of reserves to support revenue overspends is not sustainable",
+        "2024/25 overspend was driven by \u00a38.4m Children's Services overspend",
+        "Council faces challenges in delivering approved savings plans: \u00a33.7m (29%) not achieved in 2024/25; early monitoring for 2025/26 identifies \u00a31.8m (20%) of planned savings may not be delivered",
+        "CIPFA Resilience Benchmarking (presented March 2025 using 2023/24 data) \u2014 St Helens ranks 11th of 16 comparator councils for earmarked-reserves-to-net-revenue-expenditure ratio: higher financial risk"
+      ],
+      "report_date": "2025-11-24 (Audit & Governance Committee pack)",
+      "presented_to": "Audit and Governance Committee 24 November 2025",
+      "url": "https://sthelens.moderngov.co.uk/documents/b36320/To%20Follow%20-%20Items%204%20and%205%2024th-Nov-2025%2017.30%20Audit%20and%20Governance%20Committee.pdf?T=9",
+      "annual_accounts_landing_url": "https://www.sthelens.gov.uk/article/3055/Annual-accounts",
+      "soa_2024_25_url": "https://www.sthelens.gov.uk/media/13147/Statement-of-Accounts-2024-25/pdf/Statement_of_Accounts_2024-2025.pdf?m=1764252272830",
+      "audit_completion_2023_24_url": "https://www.sthelens.gov.uk/media/9745/Audit-Completion-Notice-2023-24/pdf/Audit_Completion_Notice_2023-24.pdf?m=1730885100510"
+    },
+    "internal_audit": {
+      "year": "2024/25",
+      "overall_opinion": "not located in indexed snippets \u2014 held in Audit & Governance Committee papers (4 November 2024 + 24 November 2025)",
+      "follow_up_required": "Pull Audit & Governance Committee 24 November 2025 pack \u2014 Internal Audit Annual Report",
+      "report_url_2024_11": "https://sthelens.moderngov.co.uk/documents/s162983/Report.pdf",
+      "internal_audit_landing_url": "https://www.sthelens.gov.uk/article/3072/Internal-audit",
+      "source_url": "https://sthelens.moderngov.co.uk/documents/b36320/To%20Follow%20-%20Items%204%20and%205%2024th-Nov-2025%2017.30%20Audit%20and%20Governance%20Committee.pdf?T=9"
+    },
+    "mtfs_2026_31": {
+      "total_net_revenue_budget_2026_27_m": "not located in indexed snippets",
+      "savings_target_2026_27_m": "not located \u2014 council reported confident of balanced 2026/27 budget without further savings",
+      "cumulative_savings_5yr_m": "not located",
+      "forecast_budget_gaps_m": {
+        "2024_25": "\u00a34.7m (actual overspend) \u2014 drawdown from reserves",
+        "2025_26": "\u00a31.8m savings (20%) at risk per early monitoring",
+        "2026_27": "Council confident of balanced budget without additional savings",
+        "2027_28": "not located"
+      },
+      "savings_identified": "Comprehensive savings programme approved during 2024/25 for implementation in 2025/26 and 2026/27 \u2014 detailed in Appendix 1 of MTFS 2025-28",
+      "unidentified_gap": "not material per Council statement \u2014 balanced 2026/27 budget anticipated",
+      "council_tax_increase_2026_27_pct": "not located in indexed snippet (report 4 March 2026 \u2014 Council Tax 2026/27 pack)",
+      "indicative_capital_programme_2025_27_m": 221,
+      "approved_budget_landing_url": "https://www.sthelens.gov.uk/article/1893/Council-budget-and-spending",
+      "mtfs_2025_28_url": "https://sthelens.moderngov.co.uk/documents/s166651/Covering%20Report%20-%20MTFS%202025-2028%20and%20Revenue%20Capital%20Budget%202025-26%201.pdf",
+      "council_tax_2026_27_url": "https://sthelens.moderngov.co.uk/documents/s176176/Council%20Tax%20Report%202026-27.pdf",
+      "balancing_the_budget_url": "https://sthelens.gov.uk/article/14180/Balancing-the-Budget"
+    },
+    "strategic_risks": {
+      "register_status": "Held by Audit and Governance Committee \u2014 risk register monitoring routine",
+      "inferred_top_risks": [
+        "Reserves depletion / financial sustainability (three consecutive overspends)",
+        "Children's Services demand (\u00a38.4m overspend driver 2024/25)",
+        "Savings deliverability (29% non-delivery 2024/25; 20% at risk 2025/26)",
+        "Adults social care demand + cost pressures",
+        "DSG / SEND statutory override expiry"
+      ],
+      "follow_up_required": "Pull most recent Audit & Governance Committee strategic risk register appendix"
+    },
+    "dsg_send": {
+      "cumulative_deficit_m": "not located in indexed snippets \u2014 Schools Forum + SEND strategy documents referenced but figure not extracted",
+      "statutory_override_expiry": "2026-03-31 (national)",
+      "send_inspection": {
+        "status": "Listed among Local Area Partnerships with inspection dates published on GOV.UK ongoing-inspections list",
+        "previous_inspection_date": "12 July 2024 letter to Hilary Brooks (Director of Children's Services) \u2014 ongoing area-SEND inspection process",
+        "previous_inspection_letter_url": "https://files.ofsted.gov.uk/v1/file/50252245",
+        "follow_up_required": "Track most recent Ofsted/CQC SEND inspection outcome on reports.ofsted.gov.uk/provider/44/80560"
+      },
+      "send_strategy_2024_27_url": "https://sthelens.moderngov.co.uk/documents/s163372/Appendix1.pdf",
+      "children_services_history": {
+        "improvement_notice_lifted_year": "2023 (following 'Good' Ofsted report)",
+        "improvement_trajectory": "Moved from Inadequate (2019, revised 2020) to Good with some Outstanding areas",
+        "inspection_landing": "https://reports.ofsted.gov.uk/provider/44/80560",
+        "notice_lifted_url": "https://www.sthelens.gov.uk/article/9637/Children-s-services-Improvement-Notice-lifted-by-government-minister-following-Good-Ofsted-report"
+      }
+    },
+    "asc_market_sustainability": {
+      "plan_published": true,
+      "plan_finalised": "March 2023 (revised final)",
+      "provider_count_domiciliary_65plus": 37,
+      "cqc_ratings_summary": "1 awaiting rating, 31 Good, 5 Requires Improvement (of 37 domiciliary providers for 65+)",
+      "skills_academy_status": "Business case developed by Director of Adult Social Services to support recruitment + skills",
+      "cqc_local_authority_rating": "Good \u2014 CQC found Council had a good understanding of local population needs",
+      "cqc_local_authority_assessment_url": "https://www.cqc.org.uk/care-services/local-authority-assessment-reports/sthelens-0525",
+      "cqc_press_release_url": "https://www.cqc.org.uk/press-release/cqc-rates-st-helens-borough-councils-adult-social-care-provision-good",
+      "msp_url": "https://www.sthelens.gov.uk/media/5843/Market-Sustainability-Plan/pdf/St_Helens_-_Revised_Final_MSP_March_23_1.pdf?m=1679995275507"
+    },
+    "lgr": {
+      "status": "not applicable \u2014 St Helens is one of 6 metropolitan boroughs in Liverpool City Region Combined Authority (LCRCA) which is already a Mayoral Combined Authority since May 2017",
+      "lcr_member_councils": "Halton + Knowsley + Liverpool + Sefton + St Helens + Wirral, led by Mayor Steve Rotheram",
+      "devolution_milestone": "From April 2026 LCRCA receives bulk of funding via Integrated Settlement \u2014 greater powers and flexibility",
+      "lcr_investment_in_st_helens_since_2017_m": 180,
+      "savings_implication": "LGR not applicable; devolution Integrated Settlement is the structural change (April 2026)",
+      "url": "https://www.sthelens.gov.uk/article/11311/Liverpool-City-Region-invests-180m-in-St-Helens-Borough-since-establishment"
+    },
+    "property_strategy": {
+      "name": "Corporate Asset Strategy and Asset Management Plan (3-year framework)",
+      "policy_landing_url": "https://sthelens.gov.uk/article/8881/Corporate-Asset-Strategy-and-Asset-Management-Plan",
+      "disposal_programme_status": "Assets identified within disposal programme in anticipation of capital receipts",
+      "community_asset_transfer_policy_url": "https://sthelens.gov.uk/media/9108/St-Helens-Community-Asset-Transfer-Policy/pdf/St_Helens_CAT_Policy.pdf?m=1723730109303",
+      "capital_receipts_target_m": "not located in indexed snippets"
+    },
+    "financial_position_2024_25": {
+      "outturn_overspend_m": 4.7,
+      "consecutive_overspends_years": 3,
+      "cumulative_reserves_drawn_3yr_m": 12.3,
+      "primary_overspend_driver": "Children's Services \u00a38.4m overspend",
+      "general_fund_balance_1_apr_2024_m": 44.4,
+      "general_fund_balance_31_mar_2025_m": 39.9,
+      "funding_reform_volatility_reserves_31_mar_2025_m": 12.4,
+      "savings_non_delivery_2024_25_m": 3.7,
+      "savings_non_delivery_2024_25_pct": 29,
+      "savings_at_risk_2025_26_m": 1.8,
+      "savings_at_risk_2025_26_pct": 20,
+      "cipfa_comparator_rank_earmarked_reserves": "11 of 16 (using 2023/24 data, presented March 2025)",
+      "cipfa_rank_indication": "Higher level of financial risk",
+      "trajectory_concern": "MTFS recognises use of reserves to support revenue budget is not sustainable; provision made for revenue contributions to reserves over MTFS period 2027/28 to increase financial resilience",
+      "monitoring_url": "https://www.sthelens.gov.uk/media/11288/Financial-Monitoring-Report-2024-25-Period-3/pdf/Financial_Monitoring_Report_2024-25_Period_3.pdf?m=1741252762817"
+    },
+    "actionable_savings_levers_summary": [
+      "Children's Services \u00a38.4m overspend driver \u2014 demand-management + commissioning + agency-cost review the single highest controllable savings target",
+      "Savings deliverability \u2014 29% non-delivery 2024/25 + 20% at risk 2025/26: re-baseline and recapture programme",
+      "CIPFA earmarked-reserves rank 11/16 \u2014 restore reserves trajectory via in-year underspends + savings-overdelivery before 2027/28 plan window",
+      "Mitigations applied in 2024/25 (vacancy freeze + agency review + non-essential spend cessation) \u2014 institutionalise as baseline rather than emergency lever",
+      "DSG / SEND statutory override expiry 31 March 2026 \u2014 track High Needs deficit + Safety Valve / DBV eligibility",
+      "LCR Integrated Settlement April 2026 \u2014 secure share of devolved Integrated Settlement to displace lost grant",
+      "Corporate Asset disposal programme \u2014 accelerate capital receipts to fund regeneration without further borrowing",
+      "CQC 'Good' ASC rating + 31/37 Good domiciliary providers \u2014 protect / standardise the cost-of-care exercise to insulate ASC market"
+    ],
+    "source_urls": [
+      "https://www.sthelens.gov.uk/article/3055/Annual-accounts",
+      "https://www.sthelens.gov.uk/media/13147/Statement-of-Accounts-2024-25/pdf/Statement_of_Accounts_2024-2025.pdf?m=1764252272830",
+      "https://www.sthelens.gov.uk/media/9745/Audit-Completion-Notice-2023-24/pdf/Audit_Completion_Notice_2023-24.pdf?m=1730885100510",
+      "https://sthelens.moderngov.co.uk/documents/b36320/To%20Follow%20-%20Items%204%20and%205%2024th-Nov-2025%2017.30%20Audit%20and%20Governance%20Committee.pdf?T=9",
+      "https://sthelens.moderngov.co.uk/documents/s162983/Report.pdf",
+      "https://sthelens.moderngov.co.uk/documents/s166651/Covering%20Report%20-%20MTFS%202025-2028%20and%20Revenue%20Capital%20Budget%202025-26%201.pdf",
+      "https://sthelens.moderngov.co.uk/documents/s176176/Council%20Tax%20Report%202026-27.pdf",
+      "https://www.sthelens.gov.uk/media/11288/Financial-Monitoring-Report-2024-25-Period-3/pdf/Financial_Monitoring_Report_2024-25_Period_3.pdf?m=1741252762817",
+      "https://www.sthelens.gov.uk/media/5843/Market-Sustainability-Plan/pdf/St_Helens_-_Revised_Final_MSP_March_23_1.pdf?m=1679995275507",
+      "https://www.cqc.org.uk/care-services/local-authority-assessment-reports/sthelens-0525",
+      "https://www.cqc.org.uk/press-release/cqc-rates-st-helens-borough-councils-adult-social-care-provision-good",
+      "https://reports.ofsted.gov.uk/provider/44/80560",
+      "https://files.ofsted.gov.uk/v1/file/50252245",
+      "https://sthelens.moderngov.co.uk/documents/s163372/Appendix1.pdf",
+      "https://sthelens.gov.uk/article/8881/Corporate-Asset-Strategy-and-Asset-Management-Plan",
+      "https://www.sthelens.gov.uk/article/11311/Liverpool-City-Region-invests-180m-in-St-Helens-Borough-since-establishment",
+      "https://www.sthelens.gov.uk/article/9637/Children-s-services-Improvement-Notice-lifted-by-government-minister-following-Good-Ofsted-report"
+    ],
+    "coverage_gaps": [
+      "Total net revenue budget 2026/27 (\u00a3m headline)",
+      "Council Tax increase % approved 4 March 2026 (Council Tax Report 2026-27 referenced but rate not extracted from snippet)",
+      "Cumulative savings target 5yr (MTFS 2025-28 + extension)",
+      "Internal Audit Annual Report 2024/25 overall opinion + limited-assurance subject list",
+      "Cumulative DSG / High Needs deficit \u00a3m for St Helens specifically",
+      "Most recent Area SEND inspection findings (latest dates announced but report not located)",
+      "Full Strategic Risk Register top 5-10 with net ratings",
+      "ASC fee uplift \u00a3/hour 2025/26 + 2026/27",
+      "Capital receipts target / asset disposal programme value \u00a3m",
+      "CIPFA Resilience Index council-specific scores (paywalled \u2014 only comparator rank summary located)",
+      "Was a Section 114 issued? No primary evidence located \u2014 overspend trajectory is severe but no s.114 notice referenced in any source"
+    ]
+  },
+  "donor_links": null,
+  "strategic_themes": [
+    {
+      "id": "audit_opinion_qualification",
+      "title": "Lift qualified audit opinion (Grant Thornton UK LLP)",
+      "rationale": "External auditor issued a qualified opinion on 2024/25 statements. Direct: PSAA scale fee normalisation. Indirect: lifting governance flag reduces borrowing-cost premium. Manual read of audit report needed to itemise qualification reason \u2014 once known, target single-cycle remediation.",
+      "estimated_savings_low_m": 0.1,
+      "estimated_savings_high_m": 0.5,
+      "savings_type": "one-off + recurring",
+      "delivery_horizon": "12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Section 151 Officer",
+      "evidence": [
+        "https://sthelens.moderngov.co.uk/documents/b36320/To%20Follow%20-%20Items%204%20and%205%2024th-Nov-2025%2017.30%20Audit%20and%20Governance%20Committee.pdf?T=9"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "workforce_agency_reduction",
+      "title": "Agency / locum staff demand reduction (\u00a34M concentrated)",
+      "rationale": "\u00a34M of agency-staff spend across 1 master vendors. Top: MATRIX SCM LTD (\u00a34M). Standard transformation: cap agency premium at 20% above substantive rate, workforce-plan permanent conversion (6-9 month payback), regional bank pool, open-book master-vendor margins. CIPFA experience: 8-15% reduction in 12-18 months.",
+      "estimated_savings_low_m": 0.3,
+      "estimated_savings_high_m": 0.6,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of HR + Director of Finance + S151 Officer",
+      "evidence": [
+        "spending corpus: top agency suppliers"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "energy_procurement_optimisation",
+      "title": "Energy procurement via CCS / LASER / NEPO frameworks (\u00a33M baseline)",
+      "rationale": "\u00a33M utility spend across 2 suppliers. Top: NPOWER (ELECTRICITY) LTD (\u00a32M), CORONA ENERGY RETAIL 4 LTD (\u00a31M). Crown Commercial RM6306 + LASER / NEPO consortium flex purchase typically saves 4-8% vs direct supplier contracts on a 3-yr horizon. Plus solar PV self-generation on council estate (7-9 yr payback) + DESNZ Public Sector Decarbonisation Scheme grants up to 100% capex on heat pump conversion.",
+      "estimated_savings_low_m": 0.2,
+      "estimated_savings_high_m": 0.4,
+      "savings_type": "recurring + capital grant",
+      "delivery_horizon": "12-36 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Property + Sustainability Lead + S151 Officer",
+      "evidence": [
+        "Crown Commercial RM6306",
+        "DESNZ PSDS scheme",
+        "LASER / NEPO frameworks"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "treasury_borrowing_optimisation",
+      "title": "Treasury management + borrowing cost optimisation (CFR proxy \u00a3321M)",
+      "rationale": "Annual revenue \u00a3402M implies indicative CFR c. \u00a3321M. Standard levers: internal borrowing from earmarked reserves, PWLB Certainty Rate trade, MMF counterparty restructuring, LGPS Property Investment Pool inclusion. 10-30bp saving on external debt typical from a fresh review.",
+      "estimated_savings_low_m": 0.32,
+      "estimated_savings_high_m": 0.96,
+      "savings_type": "recurring",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (subject to TM Strategy approval)",
+      "decision_owner": "S151 Officer + Treasurer",
+      "evidence": [
+        "CIPFA Prudential + Treasury Management Codes 2021",
+        "PWLB Certainty Rate"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "lgps_employer_contribution",
+      "title": "LGPS employer contribution opportunity (2025 triennial valuation cycle)",
+      "rationale": "Indicative pay bill \u00a3161M \u00d7 c. 22% employer contribution rate = \u00a335M annual employer contribution. Most LGPS funds materially over-funded post-2022 (returns 2022-25 averaged 7-10% pa vs 3-4% discount-rate assumption). 2025 triennial valuation typically yields 2-4pp employer-rate reduction over 2026-2029. Confirm with administering authority + actuary.",
+      "estimated_savings_low_m": 1.8,
+      "estimated_savings_high_m": 5.3,
+      "savings_type": "recurring (3-yr triennial)",
+      "delivery_horizon": "settled at 2025 valuation; recurring 2026-2029",
+      "implementation_complexity": "low (LGPS admin enacts new rate)",
+      "decision_owner": "S151 Officer + LGPS Pensions Committee",
+      "evidence": [
+        "LGPS Regulations 2013 + 2014",
+        "2025 triennial valuation reports"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "income_fees_charges_optimisation",
+      "title": "Fees, charges + traded-services income optimisation (\u00a340M base)",
+      "rationale": "Indicative fees & charges + traded-services income c. 10% of revenue = \u00a340M. Standard levers: annual CPI uplift discipline, full-cost-recovery audit on discretionary services (parking, planning, licensing, sports, adult learning, property hire), commercial pricing on traded services. LGA experience: 5-15% income uplift sustainable over 2-3 years.",
+      "estimated_savings_low_m": 2.0,
+      "estimated_savings_high_m": 6.0,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-24 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Cabinet (each fee delegation)",
+      "evidence": [
+        "LGA fees and charges benchmarking",
+        "CIPFA Charging guidance"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "insurance_retention_review",
+      "title": "Insurance retention + premium review (\u00a30.4M premium estimate)",
+      "rationale": "Indicative insurance premium \u00a30.4M (10bp of revenue). Standard 3-5 yr renewal cycle. Levers: tender via IPG / RM Partners (10-25% premium reduction typical), retention review (increase excess + build risk-fund reserve). London-borough cohort average 12% premium reduction at last tender.",
+      "estimated_savings_low_m": 0.04,
+      "estimated_savings_high_m": 0.1,
+      "savings_type": "recurring",
+      "delivery_horizon": "9-18 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Risk Manager",
+      "evidence": [
+        "IPG framework",
+        "RM Partners broker market"
+      ],
+      "severity": "low"
+    },
+    {
+      "id": "procurement_data_review",
+      "title": "Contracts Finder portfolio review (29 notices; 0 contracts at \u00a310M+ ceiling)",
+      "rationale": "Contracts Finder data: 29 notices (28 awarded, \u00a310M aggregate ADVERTISED CEILING value, 0% SME). IMPORTANT: advertised contract value is a CEILING set to avoid retender risk under PCR 2015 Reg.72 / Procurement Act 2023 s.31 \u2014 actual spend through the awardee is typically 30-70% of ceiling, with some off-contract ledger spend permitted within the 50%/50% modification limits. 0 contracts at \u00a310M+ ceiling totalling \u00a30M (ceiling, NOT spend) \u2014 top 3: . Matched against ledger: GB-St Helens: TPPL St Helens Borough Council NEPO  \u2014 ceiling \u00a30.1M, actual ledger spend with awardee \u00a357.0M; GB-St Helens: TPPL St Helens Borough Council NEPO  \u2014 ceiling \u00a30.1M, actual ledger spend with awardee \u00a357.0M; GB-St Helens: TPPL St Helens Borough Council NEPO  \u2014 ceiling \u00a30.0M, actual ledger spend with awardee \u00a30.2M. Aggregate identified actual spend \u00a3118M. SME-awarded share 0% is below the Procurement Reform 2023 / PPN 03/24 ambition (33% SME share by value). Standard procurement-data savings levers (% of ACTUAL ledger spend, not ceiling): (a) modification-history scrutiny under PCR 2015 Reg.72, (b) Procurement Act 2023 s.31 contract change notice review, (c) re-tender benchmark vs CCS framework rates on next renewal. 2-8% on actual spend through major contracts is a defensible upper bound.",
+      "estimated_savings_low_m": 2.4,
+      "estimated_savings_high_m": 9.5,
+      "savings_type": "recurring (post next contract renewal)",
+      "delivery_horizon": "12-36 months (contract-renewal cycle)",
+      "implementation_complexity": "high",
+      "decision_owner": "Head of Procurement + Cabinet Member + Section 151 Officer",
+      "evidence": [
+        "procurement.json (Contracts Finder API): 29 notices",
+        "ledger-matched actual spend: \u00a3118.2M",
+        "PCR 2015 Reg.72; Procurement Act 2023 s.31"
+      ],
+      "savings_basis": "Ledger-matched actual spend through awardees",
+      "advertised_ceiling_total_m": 0.0,
+      "ledger_matched_actual_spend_m": 118.2,
+      "severity": "low"
+    },
+    {
+      "id": "refund_credit_recovery",
+      "title": "Refund / credit-note management + contract dispute resolution (\u00a343M, 2,696 rows)",
+      "rationale": "2,696 negative-amount rows totalling \u00a343M \u2014 refunds, credit notes, contract reversals. Volume signals correct ledger capture, but proactive levers exist: (a) contract management review on top recurring refund counterparties, (b) duplicate-payment pre-detection, (c) energy-bill credit-management automation. Typical 5-10% reduction in refund volume + faster reconciliation = 10-30bp net cash improvement.",
+      "estimated_savings_low_m": 0.2,
+      "estimated_savings_high_m": 0.9,
+      "savings_type": "recurring + cash management",
+      "delivery_horizon": "12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Head of Procurement + Internal Audit + Treasury",
+      "evidence": [
+        "sqlite: 2,696 negative rows / \u00a343M"
+      ],
+      "severity": "low"
+    },
+    {
+      "id": "reserves_rebuild",
+      "title": "Rebuild general reserves to \u22654 months (Low \u2192 Adequate)",
+      "rationale": "Reserves at 3.1 months (Low per CIPFA Resilience benchmark). Direction: declining. A 4-month minimum is the CIPFA / S151 prudence floor; below this triggers external auditor VFM concern and elevates s.114 risk.",
+      "estimated_target_m": 30.0,
+      "delivery_horizon": "3-5 years",
+      "implementation_complexity": "high",
+      "decision_owner": "Section 151 Officer + Cabinet",
+      "evidence": [
+        "cross_council.reserves_months",
+        "cross_council.reserves_adequacy"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "duplicate_recovery",
+      "title": "Audit + recover \u00a35M in flagged duplicate-payment patterns",
+      "rationale": "DOGE forensic flagged \u00a35M across 1,558 groups of likely duplicates. Industry recovery norm 5-15% via duplicate-detection software (AP Forensics, FISCAL, Oracle Concur). Lloyds Bank Commercial Card analysis typical for spot-check sample of 100 highest-confidence matches.",
+      "estimated_savings_low_m": 0.2,
+      "estimated_savings_high_m": 0.7,
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Finance + Internal Audit",
+      "evidence": [
+        "doge_findings.duplicate_count",
+        "doge_findings.duplicate_value"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "split_payment_review",
+      "title": "Investigate \u00a313M in flagged split-payment patterns",
+      "rationale": "DOGE flagged \u00a313M across 0 split-payment instances. Split payments often indicate (a) below-procurement-threshold ledger fragmentation circumventing PCR 2015 Reg.4 contract-value-aggregation rule; or (b) legitimate sub-line invoice splits. Sample audit + reclassify; misuse triggers Reg. 99 challenge exposure.",
+      "estimated_savings_low_m": 0.3,
+      "estimated_savings_high_m": 1.0,
+      "delivery_horizon": "9-12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "doge_findings.split_payments_value",
+        "PCR 2015 Reg.4"
+      ],
+      "severity": "medium"
+    }
+  ],
+  "supplier_recommendations": [],
+  "supplier_summary_flags": {},
+  "recommendation_counts": {}
+}

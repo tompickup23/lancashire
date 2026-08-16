@@ -1,0 +1,682 @@
+{
+  "summary": {
+    "total_spend": 2421878785.58,
+    "transaction_count": 412224,
+    "unique_suppliers": 7602,
+    "avg_transaction": 5875.15,
+    "median_transaction": 452.79,
+    "date_range": {
+      "min": "2019-04-01",
+      "max": "2026-03-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "CALDERDALE SCHOOLS LTD",
+        "total": 71852630.84,
+        "transactions": 1426,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TEMPORARY - COVID-19 GOVERNMENT FUNDING GRANTS",
+        "total": 62030000.0,
+        "transactions": 139,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED PERSONAL DATA",
+        "total": 46775671.32,
+        "transactions": 142100,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CALDER HIGH SCHOOL",
+        "total": 41728620.0,
+        "transactions": 148,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SUEZ RECYCLING AND RECOVERY UK LTD",
+        "total": 38989513.98,
+        "transactions": 278,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "AWM LTD",
+        "total": 35808665.2,
+        "transactions": 587,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "RAVENSCLIFFE HIGH SCHOOL & SPORTS COLLEGE",
+        "total": 34419658.34,
+        "transactions": 152,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LOCALA COMMUNITY PARTNERSHIPS CIC",
+        "total": 32897803.44,
+        "transactions": 401,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TODMORDEN HIGH SCHOOL",
+        "total": 30719371.15,
+        "transactions": 117,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "JOHN SISK & SON (HOLDINGS) LTD",
+        "total": 24519126.86,
+        "transactions": 37,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SITA UK LTD",
+        "total": 23140627.87,
+        "transactions": 140,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COMMUNITY SUPPORT SERVICES",
+        "total": 22714502.37,
+        "transactions": 6179,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TEMPORARY - COVID-19 L RESTRICTION GRANTS (CLOSED)",
+        "total": 21106791.0,
+        "transactions": 7,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LIFEWAYS COMM CARE LTD",
+        "total": 19167509.33,
+        "transactions": 4845,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HUMANKIND",
+        "total": 18818671.73,
+        "transactions": 146,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WOOD BANK SCHOOL",
+        "total": 18244863.2,
+        "transactions": 174,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PARKINSON LANE PRIMARY SCHOOL",
+        "total": 18208852.63,
+        "transactions": 128,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORTH HALIFAX PARTNERSHIP LTD",
+        "total": 17917092.92,
+        "transactions": 203,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HIGHBURY SCHOOL",
+        "total": 17549771.6,
+        "transactions": 115,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HALIFAX OPPORTUNITIES TRUST",
+        "total": 17522298.06,
+        "transactions": 312,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.2536,
+    "total_unique_suppliers": 7602,
+    "single_transaction_suppliers": 2438
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 29358,
+      "potential_value": 145623843.91,
+      "items": [
+        {
+          "supplier": "HUMANKIND SUPPORT SERVICES LTD",
+          "amount": 257179.58,
+          "date": "2024-11-21",
+          "occurrences": 5,
+          "potential_overpayment": 1028718.32
+        },
+        {
+          "supplier": "TEMPORARY - COVID-19 GOVERNMENT FUNDING GRANTS",
+          "amount": 725000.0,
+          "date": "2020-04-21",
+          "occurrences": 2,
+          "potential_overpayment": 725000.0
+        },
+        {
+          "supplier": "TIMEOUT CHILDREN'S HOMES LTD",
+          "amount": 21460.0,
+          "date": "2024-09-05",
+          "occurrences": 31,
+          "potential_overpayment": 643800.0
+        },
+        {
+          "supplier": "TIMEOUT CHILDREN'S HOMES LTD",
+          "amount": 21460.0,
+          "date": "2025-01-23",
+          "occurrences": 31,
+          "potential_overpayment": 643800.0
+        },
+        {
+          "supplier": "TIMEOUT CHILDREN'S HOMES LTD",
+          "amount": 21460.0,
+          "date": "2025-05-16",
+          "occurrences": 31,
+          "potential_overpayment": 643800.0
+        },
+        {
+          "supplier": "TIMEOUT CHILDREN'S HOMES LTD",
+          "amount": 23159.33,
+          "date": "2025-12-12",
+          "occurrences": 28,
+          "potential_overpayment": 625301.91
+        },
+        {
+          "supplier": "TIMEOUT CHILDREN'S HOMES LTD",
+          "amount": 23159.33,
+          "date": "2025-09-15",
+          "occurrences": 25,
+          "potential_overpayment": 555823.92
+        },
+        {
+          "supplier": "CALDERDALE & HUDDERSFIELD NHS FOUNDATION TRUST",
+          "amount": 110087.0,
+          "date": "2022-09-20",
+          "occurrences": 6,
+          "potential_overpayment": 550435.0
+        },
+        {
+          "supplier": "WILLIAM HENRY SMITH SCHOOL",
+          "amount": 43547.9,
+          "date": "2025-06-09",
+          "occurrences": 13,
+          "potential_overpayment": 522574.8
+        },
+        {
+          "supplier": "WILLIAM HENRY SMITH SCHOOL",
+          "amount": 40947.4,
+          "date": "2024-05-21",
+          "occurrences": 13,
+          "potential_overpayment": 491368.8
+        },
+        {
+          "supplier": "TIMEOUT CHILDREN'S HOMES LTD",
+          "amount": 20000.0,
+          "date": "2024-05-07",
+          "occurrences": 24,
+          "potential_overpayment": 460000.0
+        },
+        {
+          "supplier": "TIMEOUT CHILDREN'S HOMES LTD",
+          "amount": 20000.0,
+          "date": "2023-08-29",
+          "occurrences": 23,
+          "potential_overpayment": 440000.0
+        },
+        {
+          "supplier": "TIMEOUT CHILDREN'S HOMES LTD",
+          "amount": 20000.0,
+          "date": "2023-12-21",
+          "occurrences": 23,
+          "potential_overpayment": 440000.0
+        },
+        {
+          "supplier": "WILLIAM HENRY SMITH SCHOOL",
+          "amount": 34838.32,
+          "date": "2024-10-01",
+          "occurrences": 13,
+          "potential_overpayment": 418059.84
+        },
+        {
+          "supplier": "WILLIAM HENRY SMITH FOUNDATION",
+          "amount": 26987.6,
+          "date": "2026-01-28",
+          "occurrences": 16,
+          "potential_overpayment": 404814.0
+        },
+        {
+          "supplier": "HALIFAX OPPORTUNITIES TRUST",
+          "amount": 199169.0,
+          "date": "2024-06-05",
+          "occurrences": 3,
+          "potential_overpayment": 398338.0
+        },
+        {
+          "supplier": "WILLIAM HENRY SMITH SCHOOL",
+          "amount": 22773.0,
+          "date": "2023-09-15",
+          "occurrences": 17,
+          "potential_overpayment": 364368.0
+        },
+        {
+          "supplier": "WEST YORKSHIRE JOINT SERVICES",
+          "amount": 359205.0,
+          "date": "2024-06-27",
+          "occurrences": 2,
+          "potential_overpayment": 359205.0
+        },
+        {
+          "supplier": "J MCCANN & CO (NOTTM) LTD",
+          "amount": 343903.09,
+          "date": "2020-11-16",
+          "occurrences": 2,
+          "potential_overpayment": 343903.09
+        },
+        {
+          "supplier": "LOCALA COMMUNITY PARTNERSHIPS CIC",
+          "amount": 326633.42,
+          "date": "2024-07-11",
+          "occurrences": 2,
+          "potential_overpayment": 326633.42
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 3470,
+      "total_value": 118277000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 661
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Adult Services and Wellbeing-Adult Health & Social Care",
+      "spend": 674810553.15,
+      "count": 85228
+    },
+    {
+      "department": "Children and Young People's Services-Education",
+      "spend": 477579464.24,
+      "count": 4857
+    },
+    {
+      "department": "Chief Executive's Office (obsolete)-Other Services",
+      "spend": 149915439.34,
+      "count": 683
+    },
+    {
+      "department": "Children and Young People's Services-Childrens Care Services",
+      "spend": 144167072.8,
+      "count": 158651
+    },
+    {
+      "department": "Economy and Environment (obsolete)-Highways & Engineering Services - Capital",
+      "spend": 123571917.58,
+      "count": 5649
+    },
+    {
+      "department": "Children and Young People's Services-Children and Young People's Serv - Central Depts.",
+      "spend": 109164257.75,
+      "count": 12493
+    },
+    {
+      "department": "Chief Executive's Office (obsolete)-Public Health",
+      "spend": 89773500.12,
+      "count": 3042
+    },
+    {
+      "department": "Economy and Environment (obsolete)-Environmental Services",
+      "spend": 69454767.43,
+      "count": 1340
+    },
+    {
+      "department": "Economy and Environment (obsolete)-Regeneration - Capital",
+      "spend": 68305415.4,
+      "count": 2783
+    },
+    {
+      "department": "Children and Young People's Services-Schools and Children's Services - Non-School",
+      "spend": 61776080.96,
+      "count": 6518
+    },
+    {
+      "department": "Regeneration & Strategy-Highways & Engineering Services - Capital",
+      "spend": 42894208.61,
+      "count": 1911
+    },
+    {
+      "department": "Adult Services and Wellbeing-Integrated commissioning - children's",
+      "spend": 38151207.72,
+      "count": 3103
+    },
+    {
+      "department": "Economy and Environment (obsolete)-Highways and Engineering Services",
+      "spend": 29535075.16,
+      "count": 6097
+    },
+    {
+      "department": "Regeneration & Strategy-Environmental Services",
+      "spend": 29416170.62,
+      "count": 427
+    },
+    {
+      "department": "Economy and Environment (obsolete)-Economy and Investment",
+      "spend": 20475426.92,
+      "count": 2838
+    },
+    {
+      "department": "Economy and Environment (obsolete)-Housing Services - Capital",
+      "spend": 18830719.93,
+      "count": 492
+    },
+    {
+      "department": "Economy and Environment (obsolete)-Transport Services",
+      "spend": 18268001.29,
+      "count": 7051
+    },
+    {
+      "department": "Adults, Health and Social Care (obsolete)-Adult Health & Social Care - Capital",
+      "spend": 16283632.69,
+      "count": 7422
+    },
+    {
+      "department": "Children and Young People (obsolete)-Education - Capital",
+      "spend": 15929927.67,
+      "count": 602
+    },
+    {
+      "department": "Regeneration & Strategy-Regeneration - Capital",
+      "spend": 15569005.71,
+      "count": 792
+    },
+    {
+      "department": "Children and Young People's Services-Childrens Services Unit",
+      "spend": 13780747.57,
+      "count": 7605
+    },
+    {
+      "department": "Communities & Service Support (obsolete)-Museums & Arts",
+      "spend": 12900090.74,
+      "count": 6025
+    },
+    {
+      "department": "Economy and Environment (obsolete)-Housing Services",
+      "spend": 12207973.41,
+      "count": 7008
+    },
+    {
+      "department": "Regeneration & Strategy-Strategic Infrastructure",
+      "spend": 11767453.87,
+      "count": 2598
+    },
+    {
+      "department": "Communities & Service Support (obsolete)-Green Space and Street Scene",
+      "spend": 11010840.19,
+      "count": 8889
+    },
+    {
+      "department": "Chief Executive's Office (obsolete)-Law & Administration Service",
+      "spend": 10467931.87,
+      "count": 4446
+    },
+    {
+      "department": "Deputy Chief Executive (obsolete)-ICT Services",
+      "spend": 9952240.47,
+      "count": 1547
+    },
+    {
+      "department": "-",
+      "spend": 9588107.0,
+      "count": 363
+    },
+    {
+      "department": "Deputy Chief Executive (obsolete)-Human Resources",
+      "spend": 9212588.36,
+      "count": 2321
+    },
+    {
+      "department": "Regeneration & Strategy-Transport Services",
+      "spend": 7362555.32,
+      "count": 2228
+    },
+    {
+      "department": "Economy and Environment (obsolete)-Corporate Asset and Facilities Management",
+      "spend": 7334182.73,
+      "count": 5945
+    },
+    {
+      "department": "Public Services-Green Space and Street Scene",
+      "spend": 7293505.51,
+      "count": 3890
+    },
+    {
+      "department": "Chief Executive's Office (obsolete)-ICT Services",
+      "spend": 6946292.26,
+      "count": 816
+    },
+    {
+      "department": "Adult Services and Wellbeing-Adult Health & Social Care - Capital",
+      "spend": 6459013.2,
+      "count": 2625
+    },
+    {
+      "department": "Communities & Service Support (obsolete)-Community Safety & Support",
+      "spend": 5789326.59,
+      "count": 3156
+    },
+    {
+      "department": "Regeneration & Strategy-Economy and Investment",
+      "spend": 5735983.48,
+      "count": 736
+    },
+    {
+      "department": "Public Services-Museums & Arts",
+      "spend": 5351284.7,
+      "count": 2381
+    },
+    {
+      "department": "Communities & Service Support (obsolete)-Sport & Leisure Management DSO",
+      "spend": 5133783.82,
+      "count": 6250
+    },
+    {
+      "department": "Regeneration & Strategy-Housing & Green Economy",
+      "spend": 4885054.6,
+      "count": 3061
+    },
+    {
+      "department": "Economy and Environment (obsolete)-Planning & Building Control",
+      "spend": 4414535.59,
+      "count": 1379
+    },
+    {
+      "department": "Communities & Service Support (obsolete)-Safer Cleaner Greener",
+      "spend": 3996783.53,
+      "count": 3438
+    },
+    {
+      "department": "Chief Executive's Office (obsolete)-Finance Service",
+      "spend": 2987977.24,
+      "count": 1561
+    },
+    {
+      "department": "Communities & Service Support (obsolete)-Customer Services and Communications",
+      "spend": 2974530.25,
+      "count": 1741
+    },
+    {
+      "department": "Communities & Service Support (obsolete)-Libraries Info & Tourism",
+      "spend": 2857569.8,
+      "count": 4177
+    },
+    {
+      "department": "Public Services-Service Development - Client Services",
+      "spend": 2788131.86,
+      "count": 258
+    },
+    {
+      "department": "Children and Young People's Services-Education - Capital",
+      "spend": 2507877.63,
+      "count": 204
+    },
+    {
+      "department": "Public Services-Community Safety & Support",
+      "spend": 2420942.59,
+      "count": 621
+    },
+    {
+      "department": "Economy and Environment (obsolete)-Transport - Capital",
+      "spend": 2322968.32,
+      "count": 118
+    },
+    {
+      "department": "Communities & Service Support (obsolete)-Recreation & Support",
+      "spend": 2254011.0,
+      "count": 2957
+    },
+    {
+      "department": "Regeneration & Strategy-Corporate Asset and Facilities Management",
+      "spend": 2155141.2,
+      "count": 2142
+    },
+    {
+      "department": "Deputy Chief Executive (obsolete)-Executives Management",
+      "spend": 1878379.96,
+      "count": 1638
+    },
+    {
+      "department": "Public Services-Sport & Leisure Management DSO",
+      "spend": 1686320.03,
+      "count": 1848
+    },
+    {
+      "department": "Regeneration & Strategy-Housing Services - Capital",
+      "spend": 1628568.9,
+      "count": 130
+    },
+    {
+      "department": "Economy and Environment (obsolete)-Markets",
+      "spend": 1581573.65,
+      "count": 2138
+    },
+    {
+      "department": "Communities & Service Support (obsolete)-Service Development - Client Services",
+      "spend": 1349864.45,
+      "count": 229
+    },
+    {
+      "department": "Regeneration & Strategy-Planning & Building Control",
+      "spend": 1016659.64,
+      "count": 358
+    },
+    {
+      "department": "Public Services-Customer Services and Communications",
+      "spend": 917171.27,
+      "count": 577
+    },
+    {
+      "department": "Public Services-Libraries Info & Tourism",
+      "spend": 870836.98,
+      "count": 1191
+    },
+    {
+      "department": "Public Services-Recreation & Support",
+      "spend": 818272.07,
+      "count": 874
+    },
+    {
+      "department": "Regeneration & Strategy-Transport - Capital",
+      "spend": 523552.68,
+      "count": 12
+    },
+    {
+      "department": "Regeneration & Strategy-Markets",
+      "spend": 494610.51,
+      "count": 742
+    },
+    {
+      "department": "Resources and Transformation-Resources & Transformation Capital Schemes",
+      "spend": 371170.22,
+      "count": 13
+    },
+    {
+      "department": "Economy and Environment (obsolete)-Other Catering DSO",
+      "spend": 5210.0,
+      "count": 2
+    },
+    {
+      "department": "Communities & Service Support (obsolete)-Sport & Countryside",
+      "spend": 4747.77,
+      "count": 5
+    },
+    {
+      "department": "Children and Young People's Services-Special Schools from 2018/19",
+      "spend": 531.29,
+      "count": 1
+    },
+    {
+      "department": "Communities & Service Support (obsolete)-Community Services - Community Engagemt & Cohesion",
+      "spend": 46.37,
+      "count": 1
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2019/20": 269536604.01,
+      "2020/21": 362061810.67,
+      "2021/22": 325001007.89,
+      "2022/23": 341849513.03,
+      "2023/24": 348392439.72,
+      "2024/25": 379193819.32,
+      "2025/26": 395843590.94
+    },
+    "transactions_by_year": {
+      "2019/20": 52688,
+      "2020/21": 46423,
+      "2021/22": 53817,
+      "2022/23": 60366,
+      "2023/24": 65153,
+      "2024/25": 69202,
+      "2025/26": 64575
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 412224
+  }
+}

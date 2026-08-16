@@ -1,0 +1,99 @@
+{
+  "council_id": "warwickshire_cc",
+  "council_name": "Warwickshire",
+  "council_full_name": "Warwickshire County Council",
+  "council_type": "county",
+  "council_tier": "county",
+  "ons_code": "E10000031",
+  "official_website": "https://www.warwickshire.gov.uk",
+  "moderngov_url": "https://democracy.warwickshire.gov.uk",
+  "spending_threshold": 500,
+  "data_sources": {
+    "spending": true,
+    "budgets": true,
+    "budgets_govuk": true,
+    "budget_trends": true,
+    "news": false,
+    "doge_investigation": true,
+    "borough_savings": true,
+    "lgr_tracker": true,
+    "procurement": true,
+    "politics": true,
+    "integrity": true,
+    "housing": true,
+    "health": true,
+    "economy": true,
+    "ward_boundaries": true,
+    "spending_db": true,
+    "council_directives": true,
+    "property_assets": true,
+    "cross_council": true
+  },
+  "spending_data_period": "",
+  "hero_subtitle": "Explore how Warwickshire County Council manages public money. Budget analysis powered by GOV.UK MHCLG data.",
+  "disclaimer_entity": "Warwickshire County Council",
+  "publisher": "Tom Pickup",
+  "publisher_bio": "This website was created by Tom Pickup, Reform UK county councillor for Padiham and Burnley West and Cabinet Member for Adult Social Care at Lancashire County Council. He is also parish councillor for Clowbridge with Dunnockshaw. Tom builds transparency tools that make public spending data easier to check.",
+  "publisher_titles": [
+    "County Councillor for Padiham and Burnley West",
+    "Cabinet Member for Adult Social Care, Lancashire County Council",
+    "Parish Councillor for Clowbridge with Dunnockshaw"
+  ],
+  "publisher_photo": "/images/tom-pickup.jpg",
+  "publisher_quote": "It's your money. The more people understand where it goes, the better.",
+  "publisher_social": [
+    {
+      "platform": "x",
+      "url": "https://x.com/tompickup",
+      "label": "@tompickup"
+    }
+  ],
+  "theme_accent": "#0a84ff",
+  "doge_context": {
+    "political_control": "Reform UK largest party (May 2025). NOC - coalition required.",
+    "total_spend": "£6.43B (procurement_paid)",
+    "total_spend_gross": "£6.99B",
+    "total_spend_procurement": "£6.43B",
+    "transactions": 1149212,
+    "suppliers": 23553,
+    "data_period": "April 2011 – March 2026",
+    "spend_triangulation": {
+      "transparency_gross": "£6.99B",
+      "procurement_only": "£6.43B",
+      "non_procurement": "£0.43B",
+      "note": "Three views of the same ledger across April 2011 – March 2026 (15 financial years). Transparency gross = every row the council publishes under LG Transparency Code 2015 (£6.99B / 1,149,212 rows). Procurement = gross minus lawful Care Act direct payments to individuals (£57M, REDACTED), statutory pass-throughs to NHS trusts + district councils (£335M, BCF / DFG / concessionary travel), and WCC Pension Fund internal transfers (£36M). Warwickshire publishes raw Oracle Fusion GL codes (R5806, C1030 etc.) rather than human category names — the LCC-style R12 accrual journal cannot be isolated from this feed alone, so the £6.43B procurement figure may include a modest accrual component pending a GL-dictionary FOI."
+    },
+    "record_classification": {
+      "procurement_paid": {
+        "count": 1108080,
+        "sum": "£6.43B",
+        "note": "Discretionary third-party supplier payments — the real procurement footprint. May include an unisolated accrual journal component (see spend_triangulation note)"
+      },
+      "statutory_pass_through": {
+        "count": 7604,
+        "sum": "£335M",
+        "note": "County→district DFG + concessionary travel + BCF s.75 pooled transfers to NHS trusts (Coventry & Warwickshire Partnership, South Warwickshire NHS FT) and district councils (Nuneaton & Bedworth, Warwick, Stratford, Rugby). No procurement discretion — formula-driven statutory passes"
+      },
+      "direct_payment_individual": {
+        "count": 33034,
+        "sum": "£57M",
+        "note": "REDACTED / REDACT — Care Act 2014 + UK GDPR redactions on ASC Direct Payments, foster carer / SGO allowances, CYP Direct Payments. Lawfully unnamed"
+      },
+      "internal_transfer": {
+        "count": 494,
+        "sum": "£36M",
+        "note": "WCC Pension Fund — employer contribution to LGPS administered by the council itself. Internal trading, not external procurement"
+      }
+    }
+  },
+  "political_control": {
+    "reform_run": true,
+    "tenure_tier": "may_2025_established",
+    "tier_a": true,
+    "tier_b": false,
+    "is_council_intel_focus": true,
+    "tenure_note": "Reform UK has run a minority administration as the largest party since the 1 May 2025 election (won 23 of 57; 17 by July 2026 after defections including a four-councillor Restore Britain split). Leader Cllr George Finch (Reform) since 22 July 2025 survived a no-confidence vote 27-26 on 17 March 2026 and the 14 May 2026 AGM; the 2026/27 Cabinet (all Reform) was announced 22 May 2026. Same may_2025 cohort as Kent, LCC, Durham, Derbyshire, Staffordshire, Nottinghamshire, Leicestershire and Lincolnshire (previously mis-tagged may_2026_new).",
+    "as_of": "2026-07-06",
+    "source": "warwickshire.gov.uk + democracy.warwickshire.gov.uk; primary-source verified 24 Jun 2026"
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "council": "Cornwall",
+  "council_id": "E06000052",
+  "council_type": "unitary",
+  "spending_threshold": 500,
+  "total_records": 732970,
+  "financial_years": [
+    "2022/23",
+    "2023/24",
+    "2024/25",
+    "2025/26"
+  ],
+  "data_types": [
+    "spend"
+  ],
+  "filters": {
+    "departments": [
+      {
+        "name": "Care and Wellbeing Directorate",
+        "spend": 547025319.82,
+        "count": 198872,
+        "suppliers": 1429
+      },
+      {
+        "name": "Together for Families Directorate",
+        "spend": 366947509.86,
+        "count": 78740,
+        "suppliers": 1889
+      },
+      {
+        "name": "Sustainable Growth & Development",
+        "spend": 354497977.33,
+        "count": 113410,
+        "suppliers": 1488
+      },
+      {
+        "name": "Safe and Caring Communities Directorate",
+        "spend": 319379589.65,
+        "count": 118189,
+        "suppliers": 1103
+      },
+      {
+        "name": "Sustainable Growth and Place Directorate",
+        "spend": 236653442.34,
+        "count": 56679,
+        "suppliers": 1065
+      },
+      {
+        "name": "Neighbourhoods Directorate",
+        "spend": 201591702.14,
+        "count": 23625,
+        "suppliers": 1183
+      },
+      {
+        "name": "Together for Families Directorate.",
+        "spend": 177297392.28,
+        "count": 46773,
+        "suppliers": 1438
+      },
+      {
+        "name": "Community Wellbeing Directorate",
+        "spend": 123671570.46,
+        "count": 20968,
+        "suppliers": 825
+      },
+      {
+        "name": "Customer and Support Services Directorate",
+        "spend": 116446274.81,
+        "count": 13908,
+        "suppliers": 722
+      },
+      {
+        "name": "Sustainable Growth & Development Directorate",
+        "spend": 81611999.83,
+        "count": 34267,
+        "suppliers": 1106
+      },
+      {
+        "name": "Customer and Corporate Services Directorate",
+        "spend": 76545520.86,
+        "count": 8382,
+        "suppliers": 412
+      },
+      {
+        "name": "Neighbourhoods Directorate.",
+        "spend": 43536253.41,
+        "count": 4770,
+        "suppliers": 470
+      },
+      {
+        "name": "Customer and Support Services Directorate.",
+        "spend": 33376231.96,
+        "count": 3831,
+        "suppliers": 375
+      },
+      {
+        "name": "Adult Social Care Directorate",
+        "spend": 13686610.25,
+        "count": 5989,
+        "suppliers": 131
+      },
+      {
+        "name": "Economic Growth and Development Directorate",
+        "spend": 7774014.97,
+        "count": 2813,
+        "suppliers": 52
+      },
+      {
+        "name": "Corporate Items Directorate",
+        "spend": 6205412.35,
+        "count": 1078,
+        "suppliers": 63
+      },
+      {
+        "name": "Corporate Items",
+        "spend": 577613.41,
+        "count": 211,
+        "suppliers": 23
+      },
+      {
+        "name": "Corporate Items Directorate.",
+        "spend": 518644.13,
+        "count": 247,
+        "suppliers": 68
+      },
+      {
+        "name": "Capital Financing and Interest Receipts",
+        "spend": 512396.67,
+        "count": 206,
+        "suppliers": 9
+      },
+      {
+        "name": "Capital Financing and Interest Receipts (L1).",
+        "spend": 127849.02,
+        "count": 11,
+        "suppliers": 7
+      },
+      {
+        "name": "redac",
+        "spend": 25.0,
+        "count": 1,
+        "suppliers": 1
+      }
+    ],
+    "department_raws": [
+      "Adult Social Care Directorate",
+      "Capital Financing and Interest Receipts",
+      "Capital Financing and Interest Receipts (L1).",
+      "Care and Wellbeing Directorate",
+      "Community Wellbeing Directorate",
+      "Corporate Items",
+      "Corporate Items Directorate",
+      "Corporate Items Directorate.",
+      "Customer and Corporate Services Directorate",
+      "Customer and Support Services Directorate",
+      "Customer and Support Services Directorate.",
+      "Economic Growth and Development Directorate",
+      "Neighbourhoods Directorate",
+      "Neighbourhoods Directorate.",
+      "Safe and Caring Communities Directorate",
+      "Sustainable Growth & Development",
+      "Sustainable Growth & Development Directorate",
+      "Sustainable Growth and Place Directorate",
+      "Together for Families Directorate",
+      "Together for Families Directorate.",
+      "redac"
+    ]
+  },
+  "total_spend": 2707983350.55,
+  "total_spend_paid": 2707983350.55,
+  "total_spend_committed": 0,
+  "total_spend_all_types_legacy": 2707983350.55,
+  "record_count_paid": 732970,
+  "record_count_committed": 0,
+  "record_class_breakdown": {
+    "procurement_paid": {
+      "count": 592723,
+      "sum": 2529674243.51
+    },
+    "direct_payment_individual": {
+      "count": 140205,
+      "sum": 177674597.26
+    },
+    "internal_transfer": {
+      "count": 42,
+      "sum": 634509.78
+    }
+  },
+  "spend_triangulation": {
+    "transparency_gross": 2707983350.55,
+    "transparency_paid": 2707983350.55,
+    "procurement_only": 2529674243.51,
+    "non_procurement": 178309107.04
+  },
+  "dedup_rule": "total_spend = spend + purchase_cards; contracts excluded (77% pair with matching spend within 90d \u2014 see .claude/rules/lessons.md)",
+  "dedup_applied": "enforced at ETL (council_etl.py)",
+  "unique_suppliers": 7151,
+  "date_range": {
+    "min": "2022-09-01",
+    "max": "2026-02-27"
+  }
+}

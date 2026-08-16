@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "council_id": "newcastle_upon_tyne",
+  "updated": "2026-05-17",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Newcastle City Council (metropolitan, £250 threshold). Default is procurement_paid. Care Act Personal Data redactions appear as 'Redacted Personal Data' supplier name → bucket to direct_payment_individual. Tyne and Wear Pension Fund → internal_transfer.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions — Newcastle uses 'Redacted Personal Data' as the canonical supplier name for direct payments to individuals."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^.*TYNE AND WEAR PENSION FUND.*$"
+      },
+      "reason": "Newcastle LGPS contributions to the Tyne and Wear Pension Fund (administered by South Tyneside MBC) are internal-transfer."
+    }
+  ],
+  "supplier_aliases": []
+}

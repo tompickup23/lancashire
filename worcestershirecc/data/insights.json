@@ -1,0 +1,541 @@
+{
+  "summary": {
+    "total_spend": 5030177134.89,
+    "transaction_count": 405453,
+    "unique_suppliers": 8167,
+    "avg_transaction": 12406.31,
+    "median_transaction": 2736.0,
+    "date_range": {
+      "min": "2019-04-02",
+      "max": "2026-01-30"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "WORCESTERSHIRE CHILDREN FIRST",
+        "total": 594486136.35,
+        "transactions": 380,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "RINGWAY INFRASTRUCTURE SERVICES",
+        "total": 353443007.19,
+        "transactions": 12806,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MERCIA WASTE",
+        "total": 340208092.23,
+        "transactions": 426,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ALUN GRIFFITHS (CONTRACTORS) LTD",
+        "total": 115956079.65,
+        "transactions": 850,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BROMSGROVE SCHOOLS SPV LTD",
+        "total": 73677364.6,
+        "transactions": 1015,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HRFDS & WORCS HEALTH & CARE NHS TRUST",
+        "total": 69342896.76,
+        "transactions": 441,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MATRIX SCM LTD",
+        "total": 52603399.12,
+        "transactions": 590,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WORCS HEALTH & CARE NHS TRUST",
+        "total": 48782492.28,
+        "transactions": 266,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HALCROW GROUP LTD",
+        "total": 44884118.34,
+        "transactions": 146,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SANCTUARY CARE PROPERTY (1) LTD",
+        "total": 43640129.27,
+        "transactions": 3572,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WLHC PROJECTCO LTD",
+        "total": 38055254.39,
+        "transactions": 80,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DIMENSIONS PERSONALISED SUPPORT",
+        "total": 36202084.94,
+        "transactions": 1692,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DIAMOND BUS LTD",
+        "total": 30964646.18,
+        "transactions": 1416,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PRYSMIAN CABLES & SYSTEMS LTD",
+        "total": 30902938.64,
+        "transactions": 675,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ACORN CARE & EDUCATION LTD",
+        "total": 28941421.52,
+        "transactions": 1563,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INCLUSION CARE LTD",
+        "total": 27388257.28,
+        "transactions": 1603,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FIRST MIDLAND RED BUSES LTD",
+        "total": 24722633.2,
+        "transactions": 603,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CRANSTOUN SERVICES LTD",
+        "total": 24674974.74,
+        "transactions": 204,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WORCESTER CITY COUNCIL",
+        "total": 24194539.87,
+        "transactions": 497,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LIFEWAYS COMMUNITY CARE LTD",
+        "total": 23221670.6,
+        "transactions": 4928,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.4028,
+    "total_unique_suppliers": 8167,
+    "single_transaction_suppliers": 2376
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 13324,
+      "potential_value": 110811195.41,
+      "items": [
+        {
+          "supplier": "NHS HEREFORDSHIRE AND WORCESTERSHIRE ICB",
+          "amount": 525000.0,
+          "date": "2023-09-19",
+          "occurrences": 5,
+          "potential_overpayment": 2100000.0
+        },
+        {
+          "supplier": "HRFDS & WORCS HEALTH & CARE NHS TRUST",
+          "amount": 1232314.92,
+          "date": "2022-10-18",
+          "occurrences": 2,
+          "potential_overpayment": 1232314.92
+        },
+        {
+          "supplier": "NHS HEREFORDSHIRE AND WORCESTERSHIRE ICB",
+          "amount": 1000000.0,
+          "date": "2023-09-19",
+          "occurrences": 2,
+          "potential_overpayment": 1000000.0
+        },
+        {
+          "supplier": "ACORN CARE & EDUCATION LTD",
+          "amount": 21682.33,
+          "date": "2025-04-23",
+          "occurrences": 34,
+          "potential_overpayment": 715516.89
+        },
+        {
+          "supplier": "ACORN CARE & EDUCATION LTD",
+          "amount": 21682.34,
+          "date": "2024-11-15",
+          "occurrences": 33,
+          "potential_overpayment": 693834.88
+        },
+        {
+          "supplier": "ACORN CARE & EDUCATION LTD",
+          "amount": 21682.33,
+          "date": "2024-12-24",
+          "occurrences": 33,
+          "potential_overpayment": 693834.56
+        },
+        {
+          "supplier": "WIDER AMBITION LTD (LOKRUM FIELDS)",
+          "amount": 40002.08,
+          "date": "2024-09-03",
+          "occurrences": 18,
+          "potential_overpayment": 680035.36
+        },
+        {
+          "supplier": "ACORN CARE & EDUCATION LTD",
+          "amount": 16333.33,
+          "date": "2025-04-11",
+          "occurrences": 37,
+          "potential_overpayment": 587999.88
+        },
+        {
+          "supplier": "WIDER AMBITION LTD (LOKRUM FIELDS)",
+          "amount": 38097.22,
+          "date": "2024-04-16",
+          "occurrences": 14,
+          "potential_overpayment": 495263.86
+        },
+        {
+          "supplier": "WIDER AMBITION LTD (LOKRUM FIELDS)",
+          "amount": 38097.22,
+          "date": "2023-09-08",
+          "occurrences": 14,
+          "potential_overpayment": 495263.86
+        },
+        {
+          "supplier": "BEECHKEYS LIMITED T/A AURORA GROUP",
+          "amount": 27507.6,
+          "date": "2024-11-01",
+          "occurrences": 19,
+          "potential_overpayment": 495136.8
+        },
+        {
+          "supplier": "BEECHKEYS LIMITED T/A AURORA GROUP",
+          "amount": 27507.6,
+          "date": "2025-02-25",
+          "occurrences": 18,
+          "potential_overpayment": 467629.2
+        },
+        {
+          "supplier": "BEECHKEYS LIMITED T/A AURORA GROUP",
+          "amount": 27507.6,
+          "date": "2024-06-25",
+          "occurrences": 17,
+          "potential_overpayment": 440121.6
+        },
+        {
+          "supplier": "WIDER AMBITION LTD (LOKRUM FIELDS)",
+          "amount": 38097.22,
+          "date": "2023-08-16",
+          "occurrences": 12,
+          "potential_overpayment": 419069.42
+        },
+        {
+          "supplier": "BEECHKEYS LIMITED T/A AURORA GROUP",
+          "amount": 27507.6,
+          "date": "2025-12-01",
+          "occurrences": 16,
+          "potential_overpayment": 412614.0
+        },
+        {
+          "supplier": "WIDER AMBITION LTD (LOKRUM FIELDS)",
+          "amount": 31166.67,
+          "date": "2023-06-27",
+          "occurrences": 13,
+          "potential_overpayment": 374000.04
+        },
+        {
+          "supplier": "BEECHKEYS LIMITED T/A AURORA GROUP",
+          "amount": 18665.0,
+          "date": "2025-02-25",
+          "occurrences": 21,
+          "potential_overpayment": 373300.0
+        },
+        {
+          "supplier": "BEECHKEYS LIMITED T/A AURORA GROUP",
+          "amount": 18665.0,
+          "date": "2025-07-25",
+          "occurrences": 21,
+          "potential_overpayment": 373300.0
+        },
+        {
+          "supplier": "BEECHKEYS LIMITED T/A AURORA GROUP",
+          "amount": 18665.0,
+          "date": "2024-11-01",
+          "occurrences": 21,
+          "potential_overpayment": 373300.0
+        },
+        {
+          "supplier": "ACORN CARE & EDUCATION LTD",
+          "amount": 16333.34,
+          "date": "2025-09-04",
+          "occurrences": 23,
+          "potential_overpayment": 359333.48
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 4659,
+      "total_value": 139513000.0
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "People - Adults",
+      "spend": 787854943.3,
+      "count": 87023
+    },
+    {
+      "department": "E&I",
+      "spend": 736579568.13,
+      "count": 26812
+    },
+    {
+      "department": "People - Children",
+      "spend": 707354395.81,
+      "count": 31100
+    },
+    {
+      "department": "People",
+      "spend": 474099267.61,
+      "count": 33684
+    },
+    {
+      "department": "Adults & Communities",
+      "spend": 436255868.35,
+      "count": 45948
+    },
+    {
+      "department": "Economy & Infrastructure",
+      "spend": 433360364.32,
+      "count": 29852
+    },
+    {
+      "department": "WCF",
+      "spend": 319545343.68,
+      "count": 43512
+    },
+    {
+      "department": "Childrens Services",
+      "spend": 310893163.06,
+      "count": 18485
+    },
+    {
+      "department": "DAS",
+      "spend": 170261459.92,
+      "count": 39441
+    },
+    {
+      "department": "ChS",
+      "spend": 169132692.13,
+      "count": 18111
+    },
+    {
+      "department": "Whole Council Costs",
+      "spend": 126062131.71,
+      "count": 5227
+    },
+    {
+      "department": "People - Public Health",
+      "spend": 58843732.27,
+      "count": 2099
+    },
+    {
+      "department": "People - Communities",
+      "spend": 52020617.51,
+      "count": 2242
+    },
+    {
+      "department": "COaCH",
+      "spend": 46288005.06,
+      "count": 6932
+    },
+    {
+      "department": "CF&CE",
+      "spend": 27004950.99,
+      "count": 3361
+    },
+    {
+      "department": "CF&C",
+      "spend": 26104722.93,
+      "count": 3840
+    },
+    {
+      "department": "Chief Exec",
+      "spend": 21803245.68,
+      "count": 943
+    },
+    {
+      "department": "",
+      "spend": 18760065.92,
+      "count": 1452
+    },
+    {
+      "department": "HR Digital & Comms",
+      "spend": 17951733.08,
+      "count": 719
+    },
+    {
+      "department": "Whole Council costs",
+      "spend": 15694747.9,
+      "count": 679
+    },
+    {
+      "department": "Finance",
+      "spend": 14941314.0,
+      "count": 374
+    },
+    {
+      "department": "Coach Directorate",
+      "spend": 14589533.84,
+      "count": 807
+    },
+    {
+      "department": "PH",
+      "spend": 12646262.89,
+      "count": 281
+    },
+    {
+      "department": "Public Health",
+      "spend": 12308612.12,
+      "count": 497
+    },
+    {
+      "department": "Chief Executive",
+      "spend": 6757237.79,
+      "count": 265
+    },
+    {
+      "department": "Other Organisations",
+      "spend": 3846756.71,
+      "count": 165
+    },
+    {
+      "department": "OTHER",
+      "spend": 3003990.15,
+      "count": 386
+    },
+    {
+      "department": "Health codes",
+      "spend": 1262540.28,
+      "count": 107
+    },
+    {
+      "department": "People- Childrens",
+      "spend": 1056537.3,
+      "count": 207
+    },
+    {
+      "department": "Legal, Demo & Governance",
+      "spend": 1019868.15,
+      "count": 576
+    },
+    {
+      "department": "Finance, Commercial & Performance",
+      "spend": 1018527.77,
+      "count": 157
+    },
+    {
+      "department": "Balance Sheet",
+      "spend": 869595.82,
+      "count": 63
+    },
+    {
+      "department": "WCC",
+      "spend": 715673.06,
+      "count": 3
+    },
+    {
+      "department": "Schools",
+      "spend": 147793.46,
+      "count": 48
+    },
+    {
+      "department": "Council - Balance Sheet",
+      "spend": 75926.24,
+      "count": 47
+    },
+    {
+      "department": "HEALTH",
+      "spend": 32071.0,
+      "count": 2
+    },
+    {
+      "department": "Trusts",
+      "spend": 7530.95,
+      "count": 1
+    },
+    {
+      "department": "People - Childrens",
+      "spend": 3844.0,
+      "count": 4
+    },
+    {
+      "department": "TRUSTS",
+      "spend": 2500.0,
+      "count": 1
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2019/20": 598345248.5,
+      "2020/21": 617355057.08,
+      "2021/22": 765275427.06,
+      "2022/23": 802602715.59,
+      "2023/24": 873126620.64,
+      "2024/25": 711368427.46,
+      "2025/26": 662103638.56
+    },
+    "transactions_by_year": {
+      "2019/20": 74992,
+      "2020/21": 40936,
+      "2021/22": 56243,
+      "2022/23": 57120,
+      "2023/24": 60492,
+      "2024/25": 62085,
+      "2025/26": 53585
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 99.6,
+    "total_records": 405453
+  }
+}

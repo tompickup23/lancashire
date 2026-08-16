@@ -1,0 +1,483 @@
+{
+  "summary": {
+    "total_spend": 912630988.61,
+    "transaction_count": 68588,
+    "unique_suppliers": 3134,
+    "avg_transaction": 13305.99,
+    "median_transaction": 2680.0,
+    "date_range": {
+      "min": "2020-07-01",
+      "max": "2026-03-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "REDACTED SUPPLIER",
+        "total": 92666661.58,
+        "transactions": 9444,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "GREATER MANCHESTER COMBINED AUTHORITY",
+        "total": 92562195.27,
+        "transactions": 149,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TAMESIDE AND GLOSSOP INTEGRATED CARE NHS FOUNDATION TRUST",
+        "total": 57081745.27,
+        "transactions": 195,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "AD HOC CHAPS PAYMENT",
+        "total": 53497836.9,
+        "transactions": 360,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INSPIREDSPACES TAMESIDE LTD",
+        "total": 52047907.26,
+        "transactions": 1610,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INSPIREDSPACES TAMESIDE (PROJECTCO2) LTD",
+        "total": 36414096.48,
+        "transactions": 266,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CAPITA - NNDR REFUNDS",
+        "total": 25126244.4,
+        "transactions": 505,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INSPIRED SPACES (PROJECTCO1) LTD",
+        "total": 22500957.7,
+        "transactions": 172,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CREATIVE SUPPORT LTD",
+        "total": 14155207.55,
+        "transactions": 314,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CAPITA - BENEFIT PAYMENTS",
+        "total": 11438145.68,
+        "transactions": 24,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED",
+        "total": 9260074.5,
+        "transactions": 1387,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TAMESIDE SPORTS TRUST",
+        "total": 8632231.39,
+        "transactions": 614,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CGL SERVICES",
+        "total": 8133645.95,
+        "transactions": 56,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ACORN CARE & EDUCATION LTD (SALES)",
+        "total": 7965531.15,
+        "transactions": 433,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "STOCKPORT MBC",
+        "total": 7208648.05,
+        "transactions": 103,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HYDE ACCESSIBLE TRANSPORT LTD",
+        "total": 6670792.5,
+        "transactions": 2032,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NPOWER LTD",
+        "total": 6292251.32,
+        "transactions": 88,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COMMUNITY INTEGRATED CARE",
+        "total": 5834950.04,
+        "transactions": 115,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NEW CHARTER HOUSING TRUST GROUP",
+        "total": 4898711.67,
+        "transactions": 175,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CHANGE GROW LIVE",
+        "total": 4719398.0,
+        "transactions": 29,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.5776,
+    "total_unique_suppliers": 3134,
+    "single_transaction_suppliers": 927
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 4992,
+      "potential_value": 49221143.69,
+      "items": [
+        {
+          "supplier": "TAMESIDE AND GLOSSOP INTEGRATED CARE NHS FOUNDATION TRUST",
+          "amount": 2612689.05,
+          "date": "2021-05-21",
+          "occurrences": 2,
+          "potential_overpayment": 2612689.05
+        },
+        {
+          "supplier": "TAMESIDE AND GLOSSOP INTEGRATED CARE NHS FOUNDATION TRUST",
+          "amount": 470236.1,
+          "date": "2025-01-23",
+          "occurrences": 3,
+          "potential_overpayment": 940472.2
+        },
+        {
+          "supplier": "CREATIVE SUPPORT LTD",
+          "amount": 177066.3,
+          "date": "2020-09-11",
+          "occurrences": 6,
+          "potential_overpayment": 885331.5
+        },
+        {
+          "supplier": "CHANGE GROW LIVE",
+          "amount": 272416.67,
+          "date": "2020-09-01",
+          "occurrences": 4,
+          "potential_overpayment": 817250.01
+        },
+        {
+          "supplier": "CREATIVE SUPPORT LTD",
+          "amount": 156528.5,
+          "date": "2020-09-11",
+          "occurrences": 6,
+          "potential_overpayment": 782642.5
+        },
+        {
+          "supplier": "CREATIVE SUPPORT LTD",
+          "amount": 180926.35,
+          "date": "2022-01-14",
+          "occurrences": 4,
+          "potential_overpayment": 542779.05
+        },
+        {
+          "supplier": "TURNING POINT SERVICES LTD",
+          "amount": 167897.0,
+          "date": "2020-09-28",
+          "occurrences": 4,
+          "potential_overpayment": 503691.0
+        },
+        {
+          "supplier": "CREATIVE SUPPORT LTD",
+          "amount": 159940.84,
+          "date": "2022-01-14",
+          "occurrences": 3,
+          "potential_overpayment": 319881.68
+        },
+        {
+          "supplier": "TAMESIDE AND GLOSSOP INTEGRATED CARE NHS FOUNDATION TRUST",
+          "amount": 316696.84,
+          "date": "2021-12-10",
+          "occurrences": 2,
+          "potential_overpayment": 316696.84
+        },
+        {
+          "supplier": "CHANGE GROW LIVE",
+          "amount": 272416.0,
+          "date": "2021-07-14",
+          "occurrences": 2,
+          "potential_overpayment": 272416.0
+        },
+        {
+          "supplier": "PENNINE CARE NHS TRUST",
+          "amount": 87632.0,
+          "date": "2020-09-09",
+          "occurrences": 4,
+          "potential_overpayment": 262896.0
+        },
+        {
+          "supplier": "ACORN CARE & EDUCATION LTD (SALES)",
+          "amount": 25833.33,
+          "date": "2025-04-11",
+          "occurrences": 11,
+          "potential_overpayment": 258333.3
+        },
+        {
+          "supplier": "REDACTED SUPPLIER",
+          "amount": 25833.33,
+          "date": "2025-08-27",
+          "occurrences": 11,
+          "potential_overpayment": 258333.3
+        },
+        {
+          "supplier": "CGL SERVICES",
+          "amount": 255750.0,
+          "date": "2022-03-30",
+          "occurrences": 2,
+          "potential_overpayment": 255750.0
+        },
+        {
+          "supplier": "TAMESIDE COLLEGE",
+          "amount": 243037.0,
+          "date": "2026-02-03",
+          "occurrences": 2,
+          "potential_overpayment": 243037.0
+        },
+        {
+          "supplier": "ACORN CARE & EDUCATION LTD (SALES)",
+          "amount": 25833.34,
+          "date": "2026-02-13",
+          "occurrences": 10,
+          "potential_overpayment": 232500.06
+        },
+        {
+          "supplier": "ACORN CARE & EDUCATION LTD (SALES)",
+          "amount": 25833.33,
+          "date": "2026-03-13",
+          "occurrences": 10,
+          "potential_overpayment": 232499.97
+        },
+        {
+          "supplier": "CREATIVE SUPPORT LTD",
+          "amount": 203279.92,
+          "date": "2023-06-06",
+          "occurrences": 2,
+          "potential_overpayment": 203279.92
+        },
+        {
+          "supplier": "CREATIVE SUPPORT LTD",
+          "amount": 94971.58,
+          "date": "2023-06-13",
+          "occurrences": 3,
+          "potential_overpayment": 189943.16
+        },
+        {
+          "supplier": "TURNING POINT SERVICES LTD",
+          "amount": 180406.26,
+          "date": "2021-06-24",
+          "occurrences": 2,
+          "potential_overpayment": 180406.26
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 1655,
+      "total_value": 99817000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 29
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Children's Services",
+      "spend": 205553157.44,
+      "count": 30547
+    },
+    {
+      "department": "Adults",
+      "spend": 127655201.33,
+      "count": 9075
+    },
+    {
+      "department": "Operations and Neighbourhoods",
+      "spend": 81206525.46,
+      "count": 5336
+    },
+    {
+      "department": "Place",
+      "spend": 73035989.64,
+      "count": 5314
+    },
+    {
+      "department": "",
+      "spend": 69097005.7,
+      "count": 6491
+    },
+    {
+      "department": "(blank)",
+      "spend": 58804249.38,
+      "count": 1950
+    },
+    {
+      "department": "Growth",
+      "spend": 58120424.76,
+      "count": 1782
+    },
+    {
+      "department": "Hosted Services",
+      "spend": 53837171.78,
+      "count": 512
+    },
+    {
+      "department": "Resources",
+      "spend": 52026093.25,
+      "count": 943
+    },
+    {
+      "department": "Multiple Strategic Directorates",
+      "spend": 34242712.59,
+      "count": 451
+    },
+    {
+      "department": "Contingency",
+      "spend": 26187069.98,
+      "count": 993
+    },
+    {
+      "department": "Public Health",
+      "spend": 18100641.14,
+      "count": 490
+    },
+    {
+      "department": "Population Health",
+      "spend": 16743782.53,
+      "count": 481
+    },
+    {
+      "department": "Finance & IT",
+      "spend": 10605286.36,
+      "count": 765
+    },
+    {
+      "department": "Director of Place",
+      "spend": 9197206.56,
+      "count": 1540
+    },
+    {
+      "department": "Corporate Costs",
+      "spend": 4013737.34,
+      "count": 65
+    },
+    {
+      "department": "Community,Environmental,Adult and Health Services",
+      "spend": 3753032.12,
+      "count": 59
+    },
+    {
+      "department": "Governance",
+      "spend": 3574200.15,
+      "count": 801
+    },
+    {
+      "department": "Chief Executive's Office",
+      "spend": 2475613.07,
+      "count": 527
+    },
+    {
+      "department": "GMPF",
+      "spend": 1677441.95,
+      "count": 57
+    },
+    {
+      "department": "Corporate Services",
+      "spend": 1121840.35,
+      "count": 12
+    },
+    {
+      "department": "Strategic Growth",
+      "spend": 810875.04,
+      "count": 150
+    },
+    {
+      "department": "Housing, Environment & Estates",
+      "spend": 350811.62,
+      "count": 124
+    },
+    {
+      "department": "GMPF (FX)",
+      "spend": 332830.39,
+      "count": 94
+    },
+    {
+      "department": "Childrens Services",
+      "spend": 68976.18,
+      "count": 7
+    },
+    {
+      "department": "Quality and Safeguarding",
+      "spend": 30017.5,
+      "count": 20
+    },
+    {
+      "department": "Environment",
+      "spend": 9095.0,
+      "count": 2
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2020/21": 178605998.62,
+      "2021/22": 314940510.8,
+      "2023/24": 73735358.4,
+      "2024/25": 68874774.04,
+      "2025/26": 276474346.75
+    },
+    "transactions_by_year": {
+      "2020/21": 10300,
+      "2021/22": 22295,
+      "2023/24": 5550,
+      "2024/25": 7395,
+      "2025/26": 23048
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 90.5,
+    "total_records": 68588
+  }
+}

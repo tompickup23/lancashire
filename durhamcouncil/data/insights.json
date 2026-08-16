@@ -1,0 +1,392 @@
+{
+  "summary": {
+    "total_spend": 1662235991.84,
+    "transaction_count": 137324,
+    "unique_suppliers": 5979,
+    "avg_transaction": 12104.48,
+    "median_transaction": 2275.0,
+    "date_range": {
+      "min": "2022-09-01",
+      "max": "2026-05-29"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "KIER CONSTRUCTION LTD - SCOTLAND",
+        "total": 58872551.82,
+        "transactions": 53,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED - PAYMENT TO INDIVIDUAL",
+        "total": 37064521.77,
+        "transactions": 13865,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HARROGATE & DISTRICT NHS FOUNDATION TRUST.",
+        "total": 30443566.59,
+        "transactions": 114,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ESH CONSTRUCTION LTD FORMERLY LUMSDEN & CARROLL CONSTRUCTION LTD",
+        "total": 22608660.26,
+        "transactions": 103,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COUNTY DURHAM & DARLINGTON NHS FOUNDATION TRUST (CDDFT).",
+        "total": 22142185.3,
+        "transactions": 227,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NHS NORTH EAST & NORTH CUMBRIA ICB.",
+        "total": 22088236.55,
+        "transactions": 51,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BAM NUTTALL LTD",
+        "total": 18946394.85,
+        "transactions": 64,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "GAINFORD CARE HOMES LTD",
+        "total": 17977233.73,
+        "transactions": 242,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INSPIREDSPACES DURHAM (PROJECTCO1) LTD",
+        "total": 17924770.56,
+        "transactions": 32,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WILLMOTT DIXON CONSTRUCTION LTD",
+        "total": 16829831.67,
+        "transactions": 32,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HC-ONE LTD",
+        "total": 16081760.78,
+        "transactions": 270,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EMBRACING CARE.",
+        "total": 15116670.28,
+        "transactions": 227,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "RAINTON CONSTRUCTION LTD",
+        "total": 14861674.5,
+        "transactions": 132,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HW MARTIN HOLDINGS LTD",
+        "total": 14635756.51,
+        "transactions": 27,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BLOOM PROCUREMENT SERVICES LTD (FORMERLY NEPRO LTD).",
+        "total": 14585506.72,
+        "transactions": 480,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HC-ONE BEAMISH LTD",
+        "total": 14556390.75,
+        "transactions": 200,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SANCTUARY CARE (ENGLAND) LTD",
+        "total": 13747704.09,
+        "transactions": 169,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORTH EAST AUTISM SOCIETY T/A NEAS.",
+        "total": 12902467.3,
+        "transactions": 476,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DALE CARE LTD",
+        "total": 12704984.63,
+        "transactions": 54,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BONDCARE WILLINGTON LTD",
+        "total": 11934729.68,
+        "transactions": 258,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.2443,
+    "total_unique_suppliers": 5979,
+    "single_transaction_suppliers": 1866
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 4868,
+      "potential_value": 30446162.05,
+      "items": [
+        {
+          "supplier": "HARROGATE & DISTRICT NHS FOUNDATION TRUST.",
+          "amount": 977398.0,
+          "date": "2026-04-02",
+          "occurrences": 3,
+          "potential_overpayment": 1954796.0
+        },
+        {
+          "supplier": "COUNTY DURHAM & DARLINGTON NHS FOUNDATION TRUST (CDDFT).",
+          "amount": 436645.25,
+          "date": "2025-03-18",
+          "occurrences": 5,
+          "potential_overpayment": 1746581.0
+        },
+        {
+          "supplier": "NHS NORTH OF ENGLAND CSU.",
+          "amount": 986488.0,
+          "date": "2025-12-03",
+          "occurrences": 2,
+          "potential_overpayment": 986488.0
+        },
+        {
+          "supplier": "WAYTHROUGH FORMERLEY HUMANKIND CHARITY.",
+          "amount": 384793.91,
+          "date": "2025-07-24",
+          "occurrences": 3,
+          "potential_overpayment": 769587.82
+        },
+        {
+          "supplier": "WAYTHROUGH FORMERLEY HUMANKIND CHARITY.",
+          "amount": 385441.48,
+          "date": "2026-02-04",
+          "occurrences": 2,
+          "potential_overpayment": 385441.48
+        },
+        {
+          "supplier": "COUNTY DURHAM & DARLINGTON NHS FOUNDATION TRUST (CDDFT).",
+          "amount": 384362.0,
+          "date": "2024-03-08",
+          "occurrences": 2,
+          "potential_overpayment": 384362.0
+        },
+        {
+          "supplier": "HUMANKIND CHARITY.",
+          "amount": 374752.0,
+          "date": "2024-03-01",
+          "occurrences": 2,
+          "potential_overpayment": 374752.0
+        },
+        {
+          "supplier": "IPL PLASTICS (UK) LTD T/A IPL HULL.",
+          "amount": 26611.2,
+          "date": "2026-05-27",
+          "occurrences": 10,
+          "potential_overpayment": 239500.8
+        },
+        {
+          "supplier": "THE CYRENIANS LTD T/A CHANGING LIVES.",
+          "amount": 29025.0,
+          "date": "2026-02-12",
+          "occurrences": 9,
+          "potential_overpayment": 232200.0
+        },
+        {
+          "supplier": "COUNTY DURHAM & DARLINGTON NHS FOUNDATION TRUST (CDDFT).",
+          "amount": 185682.17,
+          "date": "2025-05-16",
+          "occurrences": 2,
+          "potential_overpayment": 185682.17
+        },
+        {
+          "supplier": "COUNTY DURHAM & DARLINGTON NHS FOUNDATION TRUST (CDDFT).",
+          "amount": 185672.67,
+          "date": "2025-05-16",
+          "occurrences": 2,
+          "potential_overpayment": 185672.67
+        },
+        {
+          "supplier": "DELL COMPUTER CORPORATION LTD",
+          "amount": 42750.0,
+          "date": "2024-09-09",
+          "occurrences": 4,
+          "potential_overpayment": 128250.0
+        },
+        {
+          "supplier": "EDUCATION & SERVICES FOR PEOPLE WITH AUTISM LTD (ESPA).",
+          "amount": 9135.64,
+          "date": "2026-01-20",
+          "occurrences": 13,
+          "potential_overpayment": 109627.68
+        },
+        {
+          "supplier": "FOREVER CARE LTD",
+          "amount": 35984.0,
+          "date": "2026-03-11",
+          "occurrences": 4,
+          "potential_overpayment": 107952.0
+        },
+        {
+          "supplier": "FOREVER CARE LTD",
+          "amount": 35984.0,
+          "date": "2026-04-10",
+          "occurrences": 4,
+          "potential_overpayment": 107952.0
+        },
+        {
+          "supplier": "CYGNET OE LTD",
+          "amount": 17766.12,
+          "date": "2025-05-13",
+          "occurrences": 7,
+          "potential_overpayment": 106596.72
+        },
+        {
+          "supplier": "ADVANCE LEARNING PARTNERSHIP.",
+          "amount": 600.0,
+          "date": "2026-02-05",
+          "occurrences": 158,
+          "potential_overpayment": 94200.0
+        },
+        {
+          "supplier": "DIMENSIONS PERSONALISED SUPPORT LTD",
+          "amount": 11510.24,
+          "date": "2024-03-13",
+          "occurrences": 9,
+          "potential_overpayment": 92081.92
+        },
+        {
+          "supplier": "PINKNEY BUILDING CONTRACTORS LTD",
+          "amount": 10818.8,
+          "date": "2024-11-18",
+          "occurrences": 9,
+          "potential_overpayment": 86550.4
+        },
+        {
+          "supplier": "CHIPTECH INTERNATIONAL LTD",
+          "amount": 86000.0,
+          "date": "2025-10-23",
+          "occurrences": 2,
+          "potential_overpayment": 86000.0
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 2411,
+      "total_value": 57862000.0
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Adult and Health Services",
+      "spend": 649559265.24,
+      "count": 24782
+    },
+    {
+      "department": "Children and Young Peoples Services",
+      "spend": 336067339.0,
+      "count": 42833
+    },
+    {
+      "department": "Regeneration Economy and Growth",
+      "spend": 195981288.1,
+      "count": 14417
+    },
+    {
+      "department": "Dedicated Schools Grant BG0015",
+      "spend": 167774894.65,
+      "count": 19853
+    },
+    {
+      "department": "Neighbourhoods and Climate Change",
+      "spend": 112168952.7,
+      "count": 13991
+    },
+    {
+      "department": "Neighbourhoods and Environment",
+      "spend": 105312600.56,
+      "count": 11394
+    },
+    {
+      "department": "Resources BK0010",
+      "spend": 74980095.85,
+      "count": 7335
+    },
+    {
+      "department": "Chief Executives Office",
+      "spend": 10204699.85,
+      "count": 2440
+    },
+    {
+      "department": "Resources - C A C",
+      "spend": 5998209.75,
+      "count": 216
+    },
+    {
+      "department": "Non-Service Specific",
+      "spend": 4188646.14,
+      "count": 63
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2022/23": 70834723.27,
+      "2023/24": 301118756.91,
+      "2024/25": 366615711.89,
+      "2025/26": 784235415.89,
+      "2026/27": 139431383.88
+    },
+    "transactions_by_year": {
+      "2022/23": 4514,
+      "2023/24": 27927,
+      "2024/25": 28043,
+      "2025/26": 65104,
+      "2026/27": 11736
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 137324
+  }
+}

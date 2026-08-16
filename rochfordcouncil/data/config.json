@@ -1,0 +1,98 @@
+{
+  "council_id": "rochford",
+  "council_name": "Rochford",
+  "council_full_name": "Rochford District Council",
+  "council_type": "district",
+  "council_tier": "district",
+  "ons_code": "E07000075",
+  "official_website": "https://www.rochford.gov.uk",
+  "moderngov_url": "https://rochford.cmis.uk.com",
+  "spending_threshold": 500,
+  "data_sources": {
+    "spending": true,
+    "budgets": false,
+    "budgets_govuk": false,
+    "budget_trends": false,
+    "news": false,
+    "doge_investigation": false,
+    "borough_savings": false,
+    "lgr_tracker": false,
+    "procurement": false,
+    "politics": true,
+    "integrity": false,
+    "housing": false,
+    "health": false,
+    "economy": false,
+    "ward_boundaries": false,
+    "spending_db": false,
+    "council_directives": false,
+    "cross_council": true
+  },
+  "spending_data_period": "not yet ingested",
+  "hero_subtitle": "Explore how Rochford District Council manages public money. Reform UK is the largest party (13/39 seats, 33%) after the 7 May 2026 election but the council sits in NOC. Full transparency data coming soon.",
+  "disclaimer_entity": "Rochford District Council",
+  "publisher": "Tom Pickup",
+  "publisher_bio": "This website was created by Tom Pickup, Reform UK county councillor for Padiham and Burnley West and Cabinet Member for Adult Social Care at Lancashire County Council. He is also parish councillor for Clowbridge with Dunnockshaw. Tom builds transparency tools that make public spending data easier to check.",
+  "publisher_titles": [
+    "County Councillor for Padiham and Burnley West",
+    "Cabinet Member for Adult Social Care, Lancashire County Council",
+    "Parish Councillor for Clowbridge with Dunnockshaw"
+  ],
+  "publisher_photo": "/images/tom-pickup.jpg",
+  "publisher_quote": "It's your money. The more people understand where it goes, the better.",
+  "publisher_social": [
+    {
+      "platform": "x",
+      "url": "https://x.com/tompickup",
+      "label": "@tompickup"
+    }
+  ],
+  "theme_accent": "#12B6CF",
+  "political_control": {
+    "reform_run": true,
+    "tenure_tier": "may_2026_new",
+    "tier_a": true,
+    "tier_b": false,
+    "is_council_intel_focus": true,
+    "tenure_note": "Reform UK minority administration since Annual Council 19 May 2026. Cllr Adi Malviya (Reform) Leader, Cllr Neil Hookway (Reform) Deputy. NOC: Reform 12/39 (largest), Conservative 8, Lib Dem and Independents 8, Rochford and Foulness Wakering Independents 4, Associated Independents 3, Rochford District Residents 3, Independent 1; 20 needed. Essex district; already in the OneTeam shared-services partnership with Brentwood. Greater Essex unitary reorganisation may abolish the council within the MTFS window.",
+    "as_of": "2026-07-01",
+    "source": "rochford.gov.uk ModernGov member index + Rochford DC budget and MTFS 2026-29 (Full Council 17 Feb 2026); verified 1 July 2026.",
+    "controlling_party": "Reform UK",
+    "plurality_party": "Reform UK",
+    "plurality_seats": 12,
+    "total_seats": 39
+  },
+  "doge_context": {
+    "political_control": "Reform UK largest party \u2014 13/39 seats (33%) at the 7 May 2026 election. NOC.",
+    "intervention_status": "None active.",
+    "spend_triangulation": {
+      "transparency_gross": "\u00a3108.2M",
+      "transparency_paid": "\u00a3108.0M",
+      "procurement_only": "\u00a3106.9M",
+      "non_procurement": "\u00a31.3M",
+      "note": "Transparency gross = \u00a3108.2M across every class in the published corpus. Procurement-paid (discretionary third-party payments) = \u00a3106.9M. Non-procurement rows: Care-Act redacted direct payments to individuals (\u00a31.1M), settlement noise (\u00a3250.2K) \u2014 all excluded from third-party-supplier forensic analyses. Net revenue budget figures (where published) are smaller again because they net capital, grants received, and reserves movements \u2014 transparency totals include all of these."
+    },
+    "record_classification": {
+      "settlement_noise": {
+        "count": 2680,
+        "sum": "\u00a3250.2K",
+        "note": "BACS / EFT settlement micro-journals. Not a supplier."
+      },
+      "procurement_paid": {
+        "count": 24795,
+        "sum": "\u00a3106.9M",
+        "note": "Discretionary third-party supplier payments \u2014 the real procurement footprint."
+      },
+      "direct_payment_individual": {
+        "count": 614,
+        "sum": "\u00a31.1M",
+        "note": "Care Act 2014 + UK GDPR redactions \u2014 foster carers, SGO recipients, ASC service-user direct-payment holders. Lawfully unnamed."
+      }
+    },
+    "record_classification_updated": "2026-04-19",
+    "total_spend": "\u00a3108M",
+    "transactions": 28089,
+    "suppliers": 1398,
+    "data_period": "April 2019 \u2013 February 2026"
+  }
+}

@@ -1,0 +1,900 @@
+{
+  "version": "2.0",
+  "council_id": "suffolk_cc",
+  "council_name": "Suffolk Cc",
+  "generated_at": "2026-05-13T11:07:38.833210Z",
+  "data_sources": [
+    "spending.sqlite (council_etl.py + classify_council.py)",
+    "doge_findings.json (35-technique forensic)",
+    "cross_council.json (32-council peer benchmark)",
+    "budgets_summary.json (MHCLG Revenue Outturn)",
+    "revenue_trends.json (8-yr MHCLG time series)",
+    "source_audit.json (record_class breakdown)",
+    "supplier_donor_crossmatch.json (Electoral Commission CSV API)"
+  ],
+  "financial_summary": {
+    "annual_revenue_budget": 1099602200,
+    "council_tax_requirement": 418307000,
+    "service_breakdown": {
+      "Education services": 439748240,
+      "Highways and transport services": 38099000,
+      "Children Social Care": 145848850,
+      "Adult Social Care": 363450000,
+      "Public Health": 39163060,
+      "Cultural and related services": 12216000,
+      "Environmental and regulatory services": 16306000,
+      "Planning and development services": -16178000,
+      "Fire and rescue services": 35504620,
+      "Central services": 21825430
+    },
+    "procurement_footprint_total": 1265012993.97,
+    "procurement_footprint_annual": 1265012993.97,
+    "transactions_total": 349569,
+    "transactions_annual": 349569,
+    "unique_suppliers": 4898,
+    "data_period": {
+      "min": "2025-04-01",
+      "max": "2026-03-31"
+    },
+    "financial_years_covered": 1,
+    "per_capita_spend": 1641.87,
+    "population": 770473,
+    "net_revenue_expenditure": 578047610,
+    "budget_year": "2024-25"
+  },
+  "reserves_position": {
+    "total": 160504000,
+    "months_of_revenue": 3.3,
+    "adequacy": "Low",
+    "direction": "improving",
+    "trajectory": [
+      {
+        "year": "2021-22",
+        "earmarked": 75410000,
+        "unallocated": 91530000,
+        "total": 166940000
+      },
+      {
+        "year": "2022-23",
+        "earmarked": 82875000,
+        "unallocated": 74814000,
+        "total": 157689000
+      },
+      {
+        "year": "2023-24",
+        "earmarked": 122633000,
+        "unallocated": 22344000,
+        "total": 144977000
+      },
+      {
+        "year": "2024-25",
+        "earmarked": 135941000,
+        "unallocated": 24563000,
+        "total": 160504000
+      }
+    ],
+    "projected": [
+      {
+        "year": "2025-26",
+        "total": 149522500,
+        "projected": true
+      },
+      {
+        "year": "2026-27",
+        "total": 146320500,
+        "projected": true
+      }
+    ]
+  },
+  "forensic_signals": {
+    "duplicate_value": 140200000,
+    "duplicate_count": 25865,
+    "split_payments_value": 221600000,
+    "weak_competition": null,
+    "anomaly_count": 8,
+    "total_flagged_value": 394000250,
+    "severity_breakdown": {
+      "high": 0,
+      "medium": 5,
+      "low": 3
+    },
+    "overall_hhi": 96.8,
+    "service_hhi_high": [],
+    "top10_supplier_pct": 0.2878,
+    "doge_key_findings": [
+      {
+        "title": "10 suppliers with clock-like payment regularity",
+        "severity": "info",
+        "confidence": "high"
+      },
+      {
+        "title": "ORWELL HOUSING ASSOCIATION: 8491 transactions totalling \u00a310.1M",
+        "severity": "info",
+        "confidence": "high"
+      }
+    ]
+  },
+  "peer_benchmarks": {
+    "per_capita_spend": {
+      "metric": "per_capita_spend",
+      "this_value": 1641.87,
+      "peer_n": 11,
+      "peer_median": 1037.97,
+      "peer_min": 495.68,
+      "peer_max": 1551.63,
+      "rank": {
+        "rank": 10,
+        "of": 12,
+        "percentile": 83.0
+      }
+    },
+    "top10_supplier_pct": {
+      "metric": "top10_supplier_pct",
+      "this_value": 0.2878,
+      "peer_n": 11,
+      "peer_median": 0.2696,
+      "peer_min": 0.1862,
+      "peer_max": 0.4358,
+      "rank": {
+        "rank": 10,
+        "of": 12,
+        "percentile": 83.0
+      }
+    },
+    "reserves_months": {
+      "metric": "reserves_months",
+      "this_value": 3.3,
+      "peer_n": 11,
+      "peer_median": 3.9,
+      "peer_min": 2.4,
+      "peer_max": 7.5,
+      "rank": {
+        "rank": 3,
+        "of": 12,
+        "percentile": 25.0
+      }
+    },
+    "overall_hhi": {
+      "metric": "overall_hhi",
+      "this_value": 96.8,
+      "peer_n": 11,
+      "peer_median": 52.9,
+      "peer_min": 32.4,
+      "peer_max": 85.6,
+      "rank": {
+        "rank": 5,
+        "of": 6,
+        "percentile": 83.0
+      }
+    },
+    "duplicate_value": {
+      "metric": "duplicate_value",
+      "this_value": 140200000,
+      "peer_n": 11,
+      "peer_median": 0,
+      "peer_min": 0,
+      "peer_max": 424700000,
+      "rank": {
+        "rank": 10,
+        "of": 12,
+        "percentile": 83.0
+      }
+    },
+    "split_payments_value": {
+      "metric": "split_payments_value",
+      "this_value": 221600000,
+      "peer_n": 11,
+      "peer_median": 673500000,
+      "peer_min": 100300000,
+      "peer_max": 1490700000,
+      "rank": {
+        "rank": 5,
+        "of": 6,
+        "percentile": 83.0
+      }
+    }
+  },
+  "audit_research": {
+    "version": "1.0",
+    "council_id": "suffolk_cc",
+    "researched_at": "2026-05-04",
+    "method": "Web research via WebFetch + WebSearch (subagent), all citations primary",
+    "external_audit": {
+      "auditor": "Ernst & Young LLP",
+      "year_ended": "2025-03-31",
+      "opinion": "QUALIFIED",
+      "opinion_severity": "moderate",
+      "audit_date": "2026-01-23",
+      "vfm_commentary": "Council had proper arrangements in 2024/25 to make informed decisions and properly manage its risks (no significant weakness flagged in published narrative)",
+      "external_debt_2024_m": 711.3,
+      "url": "https://www.suffolk.gov.uk/asset-library/Auditors-Annual-Report-24-25.pdf",
+      "follow_up_required": "Manual read of 449KB PDF for specific qualification reason and recommendations text"
+    },
+    "internal_audit": {
+      "year": "2024/25",
+      "audit_assignments": 52,
+      "findings_total": 166,
+      "findings_high_or_medium_pct": 55,
+      "actions_in_progress": 47,
+      "actions_past_implementation_date": 0,
+      "limited_assurance_subjects": [
+        "Adult & Community Services \u2014 Direct Payment Financial Reviews",
+        "Suffolk Fire and Rescue Service \u2014 Risk-Based Inspection Programme"
+      ],
+      "follow_up_required": "Read June/July 2025 Audit Committee papers to identify procurement / contract management / ASC commissioning / payroll / IT verdicts",
+      "findings_breakdown": {
+        "high": 7,
+        "medium": 84,
+        "low": 75
+      },
+      "overall_opinion": "reasonable assurance",
+      "no_assurance_subjects": [],
+      "source": "EY Auditor's Annual Report 2024/25 (citing Head of Internal Audit's report)",
+      "source_url": "https://www.suffolk.gov.uk/asset-library/Auditors-Annual-Report-24-25.pdf"
+    },
+    "mtfs_2026_31": {
+      "total_net_revenue_budget_2026_27_m": 850,
+      "savings_target_2026_27_m": 46.5,
+      "savings_identification_status": "fully identified \u2014 no unidentified gap stated",
+      "demand_pressures_2026_27_m": 32.2,
+      "council_tax_increase_pct": 4.99,
+      "council_tax_components": {
+        "general": 2.99,
+        "asc_precept": 2.0
+      },
+      "council_tax_band_d_weekly_gbp": 33.3,
+      "council_tax_yield_m": 27.4,
+      "capital_programme_3yr_m": 292.2,
+      "capital_2026_27_m": 131.1,
+      "capital_horizon_note": "Programme deliberately shortened from 4 to 3 years ahead of LGR in 2028",
+      "transformation_programme_target_4yr_m": 60,
+      "url": "https://www.suffolk.gov.uk/council-and-democracy/council-news/council-budget-protects-frontline-services-amid-rising-costs-and-demand"
+    },
+    "strategic_risks": {
+      "register_status": "NAMED via EY VFM commentary; net ratings still not located",
+      "inferred_top_risks": [
+        "Adult Social Care demand growth",
+        "Children's Social Care demand + Improvement Notice (May 2024)",
+        "DSG / SEND deficit + Safety Valve uncertainty",
+        "Local Government Reorganisation transition cost (LGR 2028)",
+        "Statutory override expiry March 2026",
+        "Suffolk Highways concentration (M Group / Milestone, 20-yr \u00a3800m-\u00a31bn contract)"
+      ],
+      "follow_up_required": "Read most recent Audit Committee June 2025 + November 2025 agendas",
+      "register_authority": "Held in JCAD Core enterprise risk system (not on public asset-library)",
+      "principal_risks_named_in_vfm": [
+        "Special Educational Needs and Disabilities (SEND) provision (DSG reserve deficit, Ofsted/CQC concerns, DfE improvement notice)",
+        "Suffolk Fire and Rescue Service (HMICFRS Sep 2024 inspection \u2014 significant weaknesses; \u00a31.6M from 2025/26 transformation fund)",
+        "Adult & Community Services demand pressure",
+        "Children & Young People services scrutiny",
+        "Dedicated Schools Grant deficit",
+        "Financial sustainability over MTFP"
+      ]
+    },
+    "dsg_send": {
+      "cumulative_deficit_forecast_m": 161,
+      "alt_figure_m": 166,
+      "trajectory_2028_m": 250,
+      "ehcps_march_2025": 10625,
+      "ehcps_yoy_increase": 2289,
+      "safety_valve_status": "NOT signed (not on DfE published Safety Valve LA list)",
+      "delivering_better_value_status": "unclear \u2014 not surfaced",
+      "statutory_override_expiry": "2026-03-31",
+      "fiscal_cliff_severity": "high"
+    },
+    "send_inspection": {
+      "last_inspection_date": "2023-11",
+      "verdict": "widespread and/or systemic failings (across LA Partnership: SCC + Suffolk & North-East Essex ICB + Norfolk & Waveney ICB)",
+      "priority_action_plan_submitted": "2024-03-07",
+      "monitoring_inspection_date": "summer 2025 (verdict not located)",
+      "full_reinspection_due": "approximately 3 years post-2023 (i.e. 2026)",
+      "url": "https://www.suffolklocaloffer.org.uk/news-and-developments/improving-send-in-suffolk/inspections-and-evaluations"
+    },
+    "childrens_services_intervention": {
+      "improvement_notice_issued": "2024-05",
+      "issuer": "Department for Education / MHCLG",
+      "ofsted_ilacs_2024": "Requires improvement to be good (down from Outstanding 2019)",
+      "url": "https://www.gov.uk/government/publications/improvement-notice-issued-to-suffolk-county-council-may-2024"
+    },
+    "asc_market_sustainability": {
+      "strategy": "Care Market Strategy 2025-2030 + Annual Market Position Statement",
+      "msif_used_2025_26": true,
+      "asc_precept_used_2025_26_pct": 2,
+      "fee_uplift_per_category": "not in published news summary \u2014 requires Cost of Care exercise PDF",
+      "url": "https://www.suffolk.gov.uk/care-and-support-for-adults/work-with-adult-social-care/suffolk-care-market"
+    },
+    "vertas_group": {
+      "primary_company_number": "07728211",
+      "primary_company_name": "Vertas Group Limited",
+      "incorporated_as": "Eastern Facilities Management Solutions Ltd",
+      "incorporation_date": "2011-08-03",
+      "renamed_year": 2015,
+      "registered_office": "2 Friars Bridge Road, Ipswich",
+      "sic": "combined facilities support",
+      "latest_accounts_year_end": "2025-03-31",
+      "next_accounts_due": "2026-12-31",
+      "ownership_status": "AMBIGUOUS \u2014 Suffolk Chamber says wholly-owned by SCC; trade press references JV with Essex CC; PSC register read pending",
+      "subsidiary_company": "Vertas (Ipswich) Ltd CRN 10040474",
+      "audit_committee_vfm_review": "not located",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/07728211"
+    },
+    "highways_procurement": {
+      "current_contractor": "Milestone Infrastructure (M Group Services)",
+      "contract_start": "2023-10-01",
+      "contract_term_years": 20,
+      "contract_value_m": "800-1000",
+      "predecessor": "Kier Highways (took over from May Gurney 2013)",
+      "post_award_review_published": false,
+      "concentration_risk": "Single largest concentration risk on SCC supplier base \u2014 20-yr term + \u00a31bn ceiling",
+      "url": "https://www.suffolk.gov.uk/council-and-democracy/council-news/new-highways-services-arriving-in-suffolk-as-multi-million-pound-contract-awarded"
+    },
+    "lgr": {
+      "name": "One Suffolk LGR plan",
+      "published": "2025-09-08",
+      "annual_savings_year_5_m": 39.4,
+      "cumulative_5yr_savings_m": 78.2,
+      "components": [
+        "16 locality teams",
+        "property rationalisation",
+        "digital innovation",
+        "planning consolidation",
+        "highways restructuring"
+      ],
+      "url": "https://www.suffolk.gov.uk/council-and-democracy/council-news/saving-suffolk-39.4-million-a-year-and-enhancing-local-services-one-suffolk-plan-revealed"
+    },
+    "actionable_savings_levers_summary": [
+      "Children's services Improvement Notice (May 2024) + SEND systemic failings = unplanned cost runway; Priority Action Plan execution material to budget",
+      "DSG \u00a3161-166m deficit + statutory override expiry March 2026 + Suffolk NOT in Safety Valve = potential s.114 trigger",
+      "20-year \u00a3800m-\u00a31bn Milestone highways contract just started (Oct 2023) = early-contract performance benchmarking window open",
+      "Vertas Group ownership + VfM under-scrutinised \u2014 full accounts y/e Mar 2025 due Dec 2026; no Audit Committee VfM review located",
+      "One Suffolk LGR plan: \u00a339.4m year-5 / \u00a378.2m 5-yr cumulative savings target",
+      "\u00a360m 4-year transformation programme target (existing)",
+      "Cost of Care fee uplift % per category sit in unpublished Cost of Care PDF \u2014 opportunity to renegotiate post-LGR"
+    ],
+    "source_urls": [
+      "https://www.suffolk.gov.uk/asset-library/Auditors-Annual-Report-24-25.pdf",
+      "https://www.suffolk.gov.uk/asset-library/2024-25-Statement-of-Accounts-audit-report.pdf",
+      "https://www.suffolk.gov.uk/asset-library/statement-of-accounts-signed-with-audit-reports-2023-2024-signed.pdf",
+      "https://www.suffolk.gov.uk/council-and-democracy/council-news/council-budget-protects-frontline-services-amid-rising-costs-and-demand",
+      "https://www.suffolk.gov.uk/council-and-democracy/council-news/council-sets-out-plans-for-202627-budget",
+      "https://www.suffolk.gov.uk/council-and-democracy/council-news/saving-suffolk-39.4-million-a-year-and-enhancing-local-services-one-suffolk-plan-revealed",
+      "https://www.gov.uk/government/publications/improvement-notice-issued-to-suffolk-county-council-may-2024",
+      "https://find-and-update.company-information.service.gov.uk/company/07728211",
+      "https://find-and-update.company-information.service.gov.uk/company/10040474",
+      "https://www.constructionenquirer.com/2023/02/21/milestone-wins-1bn-suffolk-highways-contract/"
+    ],
+    "coverage_gaps": [
+      "EY 2024/25 specific qualification reason text (manual PDF read needed)",
+      "Strategic Risk Register top 5-10 with net ratings",
+      "Internal Audit limited-assurance subject list",
+      "MTFS by-directorate savings split + reserves trajectory + prudential borrowing split",
+      "ASC fee uplift % per care category 2025/26 + 2026/27",
+      "Vertas Group turnover, profit, council pass-through margin",
+      "Property rationalisation explicit \u00a3-savings target",
+      "Confirmation Suffolk is NOT in DfE Safety Valve / DBV"
+    ]
+  },
+  "donor_links": null,
+  "strategic_themes": [
+    {
+      "id": "audit_opinion_qualification",
+      "title": "Lift qualified audit opinion (Ernst & Young LLP)",
+      "rationale": "External auditor issued a qualified opinion on 2024/25 statements. Direct: PSAA scale fee normalisation. Indirect: lifting governance flag reduces borrowing-cost premium. Manual read of audit report needed to itemise qualification reason \u2014 once known, target single-cycle remediation.",
+      "estimated_savings_low_m": 0.1,
+      "estimated_savings_high_m": 0.5,
+      "savings_type": "one-off + recurring",
+      "delivery_horizon": "12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Section 151 Officer",
+      "evidence": [
+        "https://www.suffolk.gov.uk/asset-library/Auditors-Annual-Report-24-25.pdf"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "hnsg_reform_plan_delivery",
+      "title": "HNSG Reform Plan submission \u2014 secures \u00a3144.9M DSG write-off (90% of \u00a3161.0M)",
+      "rationale": "DSG cumulative high-needs deficit \u00a3161.0M. Under the new High Needs Stability Grant (HNSG) announced 9 Feb 2026, government will write off 90% (~\u00a3144.9M) of every council's DSG deficit at 31 March 2026 via Section 31 grant paid Autumn 2026 \u2014 CONDITIONAL on the council submitting an approved Local SEND Reform Plan to DfE by 19 June 2026. The \u00a316.1M residual remains on council books. Safety Valve programme closed 1 April 2026 and is folded into HNSG. Statutory override extended to 31 March 2028; gov has committed to absorb all DSG deficits from 1 April 2028 onwards. The savings range below covers (a) plan-submission cost avoidance + (b) residual 10% in-year demand management.",
+      "estimated_savings_low_m": 1.6,
+      "estimated_savings_high_m": 8.1,
+      "savings_type": "cost-avoidance (residual 10% management) + plan-conditional write-off",
+      "delivery_horizon": "19 June 2026 plan submission deadline; Autumn 2026 grant payment",
+      "implementation_complexity": "medium \u2014 plan submission is procedural, not discretionary",
+      "decision_owner": "Director of Children's Services + S151 Officer + Cabinet Lead SEND",
+      "evidence": [
+        "GOV.UK Explanatory note on DSG deficits (9 Feb 2026)",
+        "Final Local Government Finance Settlement 2026/27 to 2028/29 (HCWS1315)",
+        "AI DOGE shared/dsg_status_2026_27.json"
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "highways_contract_benchmarking",
+      "title": "Highways term-maintenance contract benchmarking (\u00a31000M)",
+      "rationale": "Highways term-maintenance contract: Milestone Infrastructure (M Group Services). . Open-book pricing review, JCT-style PPM benchmarking, social-value measurement and rate-card comparison vs Crown Commercial Service framework rates standard. 3-7% saving on labour/materials/overhead lines typical from open-book in early-contract period.",
+      "estimated_savings_low_m": 2.1,
+      "estimated_savings_high_m": 5.0,
+      "delivery_horizon": "12-24 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Highways + S151 Officer",
+      "evidence": [
+        "https://www.suffolk.gov.uk/council-and-democracy/council-news/new-highways-services-arriving-in-suffolk-as-multi-million-pound-contract-awarded"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "lgr_savings_delivery",
+      "title": "LGR / One Suffolk LGR plan: \u00a339.4M annual saving from year 5",
+      "rationale": "Council has published LGR business case targeting \u00a339.4M/yr by year 5 / \u00a378.2M cumulative. Components: 16 locality teams, property rationalisation, digital innovation, planning consolidation, highways restructuring. Delivery risk is the standard LGR pattern: stand-up costs front-loaded, savings back-loaded; year-1-2 net cost typical.",
+      "estimated_savings_low_m": 27.58,
+      "estimated_savings_high_m": 39.4,
+      "delivery_horizon": "5 years (peak year 5)",
+      "implementation_complexity": "high",
+      "decision_owner": "Cabinet + LGR programme team",
+      "evidence": [
+        "https://www.suffolk.gov.uk/council-and-democracy/council-news/saving-suffolk-39.4-million-a-year-and-enhancing-local-services-one-suffolk-plan-revealed"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "treasury_borrowing_optimisation",
+      "title": "Treasury management + borrowing cost optimisation (CFR proxy \u00a3880M)",
+      "rationale": "Annual revenue \u00a31100M implies indicative CFR c. \u00a3880M. Standard levers: internal borrowing from earmarked reserves, PWLB Certainty Rate trade, MMF counterparty restructuring, LGPS Property Investment Pool inclusion. 10-30bp saving on external debt typical from a fresh review.",
+      "estimated_savings_low_m": 0.88,
+      "estimated_savings_high_m": 2.64,
+      "savings_type": "recurring",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (subject to TM Strategy approval)",
+      "decision_owner": "S151 Officer + Treasurer",
+      "evidence": [
+        "CIPFA Prudential + Treasury Management Codes 2021",
+        "PWLB Certainty Rate"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "lgps_employer_contribution",
+      "title": "LGPS employer contribution opportunity (2025 triennial valuation cycle)",
+      "rationale": "Indicative pay bill \u00a3440M \u00d7 c. 22% employer contribution rate = \u00a397M annual employer contribution. Most LGPS funds materially over-funded post-2022 (returns 2022-25 averaged 7-10% pa vs 3-4% discount-rate assumption). 2025 triennial valuation typically yields 2-4pp employer-rate reduction over 2026-2029. Confirm with administering authority + actuary.",
+      "estimated_savings_low_m": 4.8,
+      "estimated_savings_high_m": 14.5,
+      "savings_type": "recurring (3-yr triennial)",
+      "delivery_horizon": "settled at 2025 valuation; recurring 2026-2029",
+      "implementation_complexity": "low (LGPS admin enacts new rate)",
+      "decision_owner": "S151 Officer + LGPS Pensions Committee",
+      "evidence": [
+        "LGPS Regulations 2013 + 2014",
+        "2025 triennial valuation reports"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "capital_programme_review",
+      "title": "Capital programme phasing + Treasury impact review (\u00a3292.2M)",
+      "rationale": "Capital programme \u00a3292.2M. Standard pattern in s.114-watch councils: TM impact per scheme, defer / cancel non-mandatory + non-invest-to-save schemes, prioritise borrowing capacity. Capital costs c. 4-6% annually (MRP + interest). Deferring 10-20% of programme by 12 months saves 0.5-1.2% of total programme value as MRP+interest avoidance \u2014 recurring once delivered.",
+      "estimated_savings_low_m": 1.5,
+      "estimated_savings_high_m": 3.5,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "S151 Officer + Capital Strategy Board",
+      "evidence": [
+        "audit_research.mtfs_2026_31"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "income_fees_charges_optimisation",
+      "title": "Fees, charges + traded-services income optimisation (\u00a3110M base)",
+      "rationale": "Indicative fees & charges + traded-services income c. 10% of revenue = \u00a3110M. Standard levers: annual CPI uplift discipline, full-cost-recovery audit on discretionary services (parking, planning, licensing, sports, adult learning, property hire), commercial pricing on traded services. LGA experience: 5-15% income uplift sustainable over 2-3 years.",
+      "estimated_savings_low_m": 5.5,
+      "estimated_savings_high_m": 16.5,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-24 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Cabinet (each fee delegation)",
+      "evidence": [
+        "LGA fees and charges benchmarking",
+        "CIPFA Charging guidance"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "insurance_retention_review",
+      "title": "Insurance retention + premium review (\u00a31.1M premium estimate)",
+      "rationale": "Indicative insurance premium \u00a31.1M (10bp of revenue). Standard 3-5 yr renewal cycle. Levers: tender via IPG / RM Partners (10-25% premium reduction typical), retention review (increase excess + build risk-fund reserve). London-borough cohort average 12% premium reduction at last tender.",
+      "estimated_savings_low_m": 0.11,
+      "estimated_savings_high_m": 0.27,
+      "savings_type": "recurring",
+      "delivery_horizon": "9-18 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Risk Manager",
+      "evidence": [
+        "IPG framework",
+        "RM Partners broker market"
+      ],
+      "severity": "low"
+    },
+    {
+      "id": "procurement_data_review",
+      "title": "Contracts Finder portfolio review (84 notices; 2 contracts at \u00a310M+ ceiling)",
+      "rationale": "Contracts Finder data: 84 notices (72 awarded, \u00a38M aggregate ADVERTISED CEILING value, 0% SME). IMPORTANT: advertised contract value is a CEILING set to avoid retender risk under PCR 2015 Reg.72 / Procurement Act 2023 s.31 \u2014 actual spend through the awardee is typically 30-70% of ceiling, with some off-contract ledger spend permitted within the 50%/50% modification limits. 2 contracts at \u00a310M+ ceiling totalling \u00a350M (ceiling, NOT spend) \u2014 top 3: Suffolk Energy Action Framework - AWARD (ceiling \u00a325M); Suffolk Energy Action Framework (ceiling \u00a325M). SME-awarded share 0% is below the Procurement Reform 2023 / PPN 03/24 ambition (33% SME share by value). Standard procurement-data savings levers (% of ACTUAL ledger spend, not ceiling): (a) modification-history scrutiny under PCR 2015 Reg.72, (b) Procurement Act 2023 s.31 contract change notice review, (c) re-tender benchmark vs CCS framework rates on next renewal. 2-8% on actual spend through major contracts is a defensible upper bound.",
+      "estimated_savings_low_m": 0.1,
+      "estimated_savings_high_m": 0.4,
+      "savings_type": "recurring (post next contract renewal)",
+      "delivery_horizon": "12-36 months (contract-renewal cycle)",
+      "implementation_complexity": "high",
+      "decision_owner": "Head of Procurement + Cabinet Member + Section 151 Officer",
+      "evidence": [
+        "procurement.json (Contracts Finder API): 84 notices",
+        "ledger-matched actual spend: \u00a30.0M",
+        "PCR 2015 Reg.72; Procurement Act 2023 s.31"
+      ],
+      "savings_basis": "Conservative 10% of advertised ceiling",
+      "advertised_ceiling_total_m": 50.0,
+      "ledger_matched_actual_spend_m": 0,
+      "severity": "medium"
+    },
+    {
+      "id": "companies_house_compliance",
+      "title": "Companies House compliance follow-up (\u00a37M flagged \u2014 1 overdue, 1 dissolved, 0 insolvency-history)",
+      "rationale": "Companies House lookup on top-50 suppliers identified \u00a37M of spend with statutory-compliance flags: \u00a34M to suppliers with overdue accounts (1), \u00a34M to dissolved-status companies (1), \u00a30M to companies with insolvency history (0). NOTE: Some matches are CH fuzzy-search false positives (e.g. school, government-body name collisions) and need human verification. After verification, real flags = (a) credit-risk review on overdue accounts, (b) contract-cleanup on dissolved entities (records still on ledger but supplier extinct \u2014 risk of duplicate-payment leakage), (c) PCR 2015 Reg.57 discretionary exclusion review on insolvency-history suppliers in active contracts.",
+      "estimated_savings_low_m": 0.0,
+      "estimated_savings_high_m": 0.1,
+      "savings_type": "one-off cleanup + recurring risk reduction",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (CH already enriched)",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "companies_house_enrichment.json"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "reserves_rebuild",
+      "title": "Rebuild general reserves to \u22654 months (Low \u2192 Adequate)",
+      "rationale": "Reserves at 3.3 months (Low per CIPFA Resilience benchmark). Direction: improving. A 4-month minimum is the CIPFA / S151 prudence floor; below this triggers external auditor VFM concern and elevates s.114 risk.",
+      "estimated_target_m": 64.0,
+      "delivery_horizon": "3-5 years",
+      "implementation_complexity": "high",
+      "decision_owner": "Section 151 Officer + Cabinet",
+      "evidence": [
+        "cross_council.reserves_months",
+        "cross_council.reserves_adequacy"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "duplicate_recovery",
+      "title": "Audit + recover \u00a3140M in flagged duplicate-payment patterns",
+      "rationale": "DOGE forensic flagged \u00a3140M across 25,865 groups of likely duplicates. Industry recovery norm 5-15% via duplicate-detection software (AP Forensics, FISCAL, Oracle Concur). Lloyds Bank Commercial Card analysis typical for spot-check sample of 100 highest-confidence matches.",
+      "estimated_savings_low_m": 7.0,
+      "estimated_savings_high_m": 21.0,
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Finance + Internal Audit",
+      "evidence": [
+        "doge_findings.duplicate_count",
+        "doge_findings.duplicate_value"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "split_payment_review",
+      "title": "Investigate \u00a3222M in flagged split-payment patterns",
+      "rationale": "DOGE flagged \u00a3222M across 0 split-payment instances. Split payments often indicate (a) below-procurement-threshold ledger fragmentation circumventing PCR 2015 Reg.4 contract-value-aggregation rule; or (b) legitimate sub-line invoice splits. Sample audit + reclassify; misuse triggers Reg. 99 challenge exposure.",
+      "estimated_savings_low_m": 4.4,
+      "estimated_savings_high_m": 17.7,
+      "delivery_horizon": "9-12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "doge_findings.split_payments_value",
+        "PCR 2015 Reg.4"
+      ],
+      "severity": "medium"
+    }
+  ],
+  "supplier_recommendations": [
+    {
+      "rank": 1,
+      "supplier": "M GROUP HIGHWAYS LTD",
+      "total_spend": 66628487.09,
+      "transactions": 18,
+      "pct_of_council_procurement": 4.96,
+      "avg_transaction": 3701582.62,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "concentration_moderate",
+          "severity": "moderate",
+          "detail": "5.0% of council procurement spend",
+          "evidence": "insights.json supplier_analysis.top_20_suppliers"
+        },
+        {
+          "type": "large_avg_txn",
+          "severity": "moderate",
+          "detail": "average transaction \u00a33,702K across 18 payments \u2014 consistent with large infrastructure / capital contract",
+          "evidence": "insights.json supplier_analysis (transactions, total)"
+        }
+      ],
+      "council_id": "suffolk_cc"
+    },
+    {
+      "rank": 2,
+      "supplier": "INLAND REVENUE",
+      "total_spend": 65820311.84,
+      "transactions": 112,
+      "pct_of_council_procurement": 4.9,
+      "avg_transaction": 587681.36,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "concentration_moderate",
+          "severity": "moderate",
+          "detail": "4.9% of council procurement spend",
+          "evidence": "insights.json supplier_analysis.top_20_suppliers"
+        },
+        {
+          "type": "large_avg_txn",
+          "severity": "moderate",
+          "detail": "average transaction \u00a3588K across 112 payments \u2014 consistent with large infrastructure / capital contract",
+          "evidence": "insights.json supplier_analysis (transactions, total)"
+        }
+      ],
+      "council_id": "suffolk_cc"
+    },
+    {
+      "rank": 3,
+      "supplier": "ACCESS UK LTD",
+      "total_spend": 60983282.19,
+      "transactions": 54,
+      "pct_of_council_procurement": 4.54,
+      "avg_transaction": 1129320.04,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "concentration_moderate",
+          "severity": "moderate",
+          "detail": "4.5% of council procurement spend",
+          "evidence": "insights.json supplier_analysis.top_20_suppliers"
+        },
+        {
+          "type": "large_avg_txn",
+          "severity": "moderate",
+          "detail": "average transaction \u00a31,129K across 54 payments \u2014 consistent with large infrastructure / capital contract",
+          "evidence": "insights.json supplier_analysis (transactions, total)"
+        }
+      ],
+      "council_id": "suffolk_cc"
+    },
+    {
+      "rank": 4,
+      "supplier": "SUFFOLK COUNTY COUNCIL",
+      "total_spend": 43093006.74,
+      "transactions": 54,
+      "pct_of_council_procurement": 3.21,
+      "avg_transaction": 798018.64,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "concentration_moderate",
+          "severity": "moderate",
+          "detail": "3.2% of council procurement spend",
+          "evidence": "insights.json supplier_analysis.top_20_suppliers"
+        },
+        {
+          "type": "large_avg_txn",
+          "severity": "moderate",
+          "detail": "average transaction \u00a3798K across 54 payments \u2014 consistent with large infrastructure / capital contract",
+          "evidence": "insights.json supplier_analysis (transactions, total)"
+        }
+      ],
+      "council_id": "suffolk_cc"
+    },
+    {
+      "rank": 5,
+      "supplier": "CARE UK",
+      "total_spend": 28648642.02,
+      "transactions": 6692,
+      "pct_of_council_procurement": 2.13,
+      "avg_transaction": 4281.03,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "concentration_moderate",
+          "severity": "moderate",
+          "detail": "2.1% of council procurement spend",
+          "evidence": "insights.json supplier_analysis.top_20_suppliers"
+        }
+      ],
+      "council_id": "suffolk_cc"
+    },
+    {
+      "rank": 6,
+      "supplier": "SUEZ",
+      "total_spend": 20159910.31,
+      "transactions": 14,
+      "pct_of_council_procurement": 1.5,
+      "avg_transaction": 1439993.59,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "concentration_moderate",
+          "severity": "moderate",
+          "detail": "1.5% of council procurement spend",
+          "evidence": "insights.json supplier_analysis.top_20_suppliers"
+        },
+        {
+          "type": "large_avg_txn",
+          "severity": "moderate",
+          "detail": "average transaction \u00a31,440K across 14 payments \u2014 consistent with large infrastructure / capital contract",
+          "evidence": "insights.json supplier_analysis (transactions, total)"
+        }
+      ],
+      "council_id": "suffolk_cc"
+    },
+    {
+      "rank": 7,
+      "supplier": "UNITY SCHOOLS PARTNERSHIP",
+      "total_spend": 18683726.1,
+      "transactions": 424,
+      "pct_of_council_procurement": 1.39,
+      "avg_transaction": 44065.39,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "suffolk_cc"
+    },
+    {
+      "rank": 8,
+      "supplier": "ACORN CARE & EDUCATION LTD (SALES)",
+      "total_spend": 16771086.16,
+      "transactions": 961,
+      "pct_of_council_procurement": 1.25,
+      "avg_transaction": 17451.7,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "suffolk_cc"
+    },
+    {
+      "rank": 9,
+      "supplier": "VERTAS IPSWICH LTD",
+      "total_spend": 16631737.84,
+      "transactions": 1200,
+      "pct_of_council_procurement": 1.24,
+      "avg_transaction": 13859.78,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "suffolk_cc"
+    },
+    {
+      "rank": 10,
+      "supplier": "NORF CO OF DIS PEOPLE SUFF CL/MONIE",
+      "total_spend": 13045340.1,
+      "transactions": 7764,
+      "pct_of_council_procurement": 0.97,
+      "avg_transaction": 1680.23,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "suffolk_cc"
+    },
+    {
+      "rank": 11,
+      "supplier": "FCC ENVIRONMENT",
+      "total_spend": 11804404.5,
+      "transactions": 310,
+      "pct_of_council_procurement": 0.88,
+      "avg_transaction": 38078.72,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "suffolk_cc"
+    },
+    {
+      "rank": 12,
+      "supplier": "MENCAP",
+      "total_spend": 11373575.73,
+      "transactions": 6272,
+      "pct_of_council_procurement": 0.85,
+      "avg_transaction": 1813.39,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "suffolk_cc"
+    },
+    {
+      "rank": 13,
+      "supplier": "EAST SUFFOLK COUNCIL",
+      "total_spend": 11372979.13,
+      "transactions": 208,
+      "pct_of_council_procurement": 0.85,
+      "avg_transaction": 54677.78,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "suffolk_cc"
+    },
+    {
+      "rank": 14,
+      "supplier": "LEADING LIVES",
+      "total_spend": 11091997.45,
+      "transactions": 7502,
+      "pct_of_council_procurement": 0.83,
+      "avg_transaction": 1478.54,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "suffolk_cc"
+    },
+    {
+      "rank": 15,
+      "supplier": "ORWELL HOUSING ASSOCIATION",
+      "total_spend": 10126014.66,
+      "transactions": 8491,
+      "pct_of_council_procurement": 0.75,
+      "avg_transaction": 1192.56,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "suffolk_cc"
+    },
+    {
+      "rank": 16,
+      "supplier": "CONCERTUS SUFFOLK",
+      "total_spend": 9336400.67,
+      "transactions": 1004,
+      "pct_of_council_procurement": 0.7,
+      "avg_transaction": 9299.2,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "suffolk_cc"
+    },
+    {
+      "rank": 17,
+      "supplier": "CONSORTIUM TRUST",
+      "total_spend": 8842853.28,
+      "transactions": 201,
+      "pct_of_council_procurement": 0.66,
+      "avg_transaction": 43994.29,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "suffolk_cc"
+    },
+    {
+      "rank": 18,
+      "supplier": "TURNING POINT SERVICES LTD",
+      "total_spend": 7874075.67,
+      "transactions": 21,
+      "pct_of_council_procurement": 0.59,
+      "avg_transaction": 374955.98,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "suffolk_cc"
+    },
+    {
+      "rank": 19,
+      "supplier": "OPUS PEOPLE SOLUTIONS GROUP LTD",
+      "total_spend": 7342228.63,
+      "transactions": 52,
+      "pct_of_council_procurement": 0.55,
+      "avg_transaction": 141196.7,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "suffolk_cc"
+    },
+    {
+      "rank": 20,
+      "supplier": "SENDAT",
+      "total_spend": 7105919.31,
+      "transactions": 68,
+      "pct_of_council_procurement": 0.53,
+      "avg_transaction": 104498.81,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "suffolk_cc"
+    }
+  ],
+  "supplier_summary_flags": [],
+  "recommendation_counts": {
+    "rebid_candidate": 0,
+    "joint_procurement": 0,
+    "due_diligence": 0,
+    "monitor": 20,
+    "total": 20
+  }
+}

@@ -1,0 +1,495 @@
+{
+  "version": "2.0",
+  "council_id": "thurrock",
+  "council_name": "Thurrock Council",
+  "generated_at": "2026-05-13T11:06:31.644816Z",
+  "data_sources": [
+    "spending.sqlite (council_etl.py + classify_council.py)",
+    "doge_findings.json (35-technique forensic)",
+    "cross_council.json (32-council peer benchmark)",
+    "budgets_summary.json (MHCLG Revenue Outturn)",
+    "revenue_trends.json (8-yr MHCLG time series)",
+    "source_audit.json (record_class breakdown)",
+    "supplier_donor_crossmatch.json (Electoral Commission CSV API)"
+  ],
+  "financial_summary": {
+    "annual_revenue_budget": 201739850,
+    "council_tax_requirement": 91267000,
+    "service_breakdown": {
+      "Education services": 64440000,
+      "Highways and transport services": 5188050,
+      "Children Social Care": 51273020,
+      "Adult Social Care": 34144000,
+      "Public Health": 10553000,
+      "Housing services (GFRA only)": 6437000,
+      "Cultural and related services": 4186110,
+      "Environmental and regulatory services": 17490570,
+      "Planning and development services": -2110480,
+      "Central services": 4914130,
+      "Other services": 5224450
+    },
+    "procurement_footprint_total": 3660811393.28,
+    "procurement_footprint_annual": 1220270464.43,
+    "transactions_total": 81718,
+    "transactions_annual": 27239,
+    "unique_suppliers": 4790,
+    "data_period": {
+      "min": "2023-04-01",
+      "max": "2026-03-01"
+    },
+    "financial_years_covered": 3,
+    "per_capita_spend": 6937.3,
+    "population": 175900,
+    "net_revenue_expenditure": 90958460,
+    "budget_year": "2024-25"
+  },
+  "reserves_position": {
+    "total": 75537000,
+    "months_of_revenue": 10.0,
+    "adequacy": "Adequate",
+    "direction": "improving",
+    "trajectory": [
+      {
+        "year": "2021-22",
+        "earmarked": 0,
+        "unallocated": 0,
+        "total": 0
+      },
+      {
+        "year": "2022-23",
+        "earmarked": 37896000,
+        "unallocated": 11000000,
+        "total": 48896000
+      },
+      {
+        "year": "2023-24",
+        "earmarked": 57870000,
+        "unallocated": 11000000,
+        "total": 68870000
+      },
+      {
+        "year": "2024-25",
+        "earmarked": 64537000,
+        "unallocated": 11000000,
+        "total": 75537000
+      }
+    ],
+    "projected": [
+      {
+        "year": "2025-26",
+        "total": 109972000,
+        "projected": true
+      },
+      {
+        "year": "2026-27",
+        "total": 134630500,
+        "projected": true
+      }
+    ]
+  },
+  "forensic_signals": {
+    "duplicate_value": 139637700,
+    "duplicate_count": 1689,
+    "split_payments_value": null,
+    "weak_competition": null,
+    "anomaly_count": 8,
+    "total_flagged_value": 2542845000,
+    "severity_breakdown": {
+      "high": 0,
+      "medium": 4,
+      "low": 4
+    },
+    "overall_hhi": 3676.0,
+    "service_hhi_high": [],
+    "top10_supplier_pct": 0.8419,
+    "doge_key_findings": [
+      {
+        "title": "10 suppliers with clock-like payment regularity",
+        "severity": "info",
+        "confidence": "high"
+      },
+      {
+        "title": "H M LAND REGISTRY: 1922 transactions totalling \u00a32.7M",
+        "severity": "info",
+        "confidence": "high"
+      }
+    ]
+  },
+  "peer_benchmarks": {
+    "per_capita_spend": {
+      "metric": "per_capita_spend",
+      "this_value": 6937.3,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "top10_supplier_pct": {
+      "metric": "top10_supplier_pct",
+      "this_value": 0.8419,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "reserves_months": {
+      "metric": "reserves_months",
+      "this_value": 10.0,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "overall_hhi": {
+      "metric": "overall_hhi",
+      "this_value": 3676.0,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "duplicate_value": {
+      "metric": "duplicate_value",
+      "this_value": 139637700,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    }
+  },
+  "audit_research": {
+    "version": "1.0",
+    "council_id": "thurrock",
+    "researched_at": "2026-05-13",
+    "method": "Web research via WebFetch + WebSearch (subagent), all citations primary",
+    "external_audit": {
+      "auditor": "BDO LLP",
+      "year_ended": "2020-03-31",
+      "opinion": "DISCLAIMED",
+      "opinion_severity": "critical",
+      "key_concerns": [
+        "Multi-year audit backlog spanning 2020/21 through 2023/24; council pushing BDO to complete 2020/21 with a disclaimed opinion (3-year delay)",
+        "2024/25 draft Statement of Accounts were not available for public inspection by the statutory deadline of 30 June 2025 - audit process still in progress",
+        "Section 114 notice issued 19 December 2022 reporting an in-year funding gap of \u00a3470m and structural deficit in 2023/24 of \u00a3184m",
+        "Commercial investment portfolio (debt-for-yield strategy approved Oct 2017) reached >\u00a31bn (more than 6x annual budget) before losing more than a quarter of its value; total borrowing reached \u00a31.5bn at peak",
+        "FRC sanctioned Sean Robert Clark in May 2025 in relation to historic Thurrock audit failures"
+      ],
+      "report_date": "audit ongoing - multiple years unsigned",
+      "presented_to": "Standards and Audit Committee (papers via democracy.thurrock.gov.uk)",
+      "url": "https://www.thurrock.gov.uk/our-accounts-and-funds/statement-of-accounts",
+      "note": "Thurrock is one of the most acute local-government audit failures in England this decade. Best Value Inspection report 19 May 2023 found 'dereliction in political and managerial leadership' and inadequate governance. Statutory intervention in force since 2 September 2022."
+    },
+    "internal_audit": {
+      "latest_year_located": "not located in public reports",
+      "current_year_status": "subject to Commissioner oversight",
+      "follow_up_required": "Read Standards and Audit Committee papers on democracy.thurrock.gov.uk for current Internal Audit Annual Report",
+      "year": "2024/25",
+      "overall_opinion": "not located",
+      "source": "Commissioners' sixth report 27 January 2026 references 'transformation roadmap' and improved governance but specific internal audit opinion not publicly extracted",
+      "source_url": "https://www.gov.uk/government/publications/thurrock-council-commissioners-sixth-report"
+    },
+    "mtfs_2026_31": {
+      "total_net_revenue_budget_2025_26_m": 240.7,
+      "operating_budget_2025_26_m": 176.4,
+      "treasury_costs_2025_26_m": 64.3,
+      "savings_target_2026_27_m": 13.65,
+      "savings_proposals_identified_2026_27_m": 13.9,
+      "three_year_savings_target_m": 41,
+      "additional_cuts_planned_m": 26,
+      "capitalisation_direction_current_m": 638,
+      "capitalisation_direction_previous_m": 691,
+      "capitalisation_direction_reduction_m": 53,
+      "exceptional_financial_support_status": "Request submitted 23 February 2026 for 2026-27 EFS; prior years 2022-23 through 2025-26 all required EFS",
+      "url": "https://democracy.thurrock.gov.uk/mgAi.aspx?ID=22159"
+    },
+    "strategic_risks": {
+      "register_status": "Under Commissioner oversight per Direction 17 July 2025 (extending intervention until 30 April 2028)",
+      "inferred_top_risks_2025_26": [
+        "Debt servicing and interest-rate exposure (PWLB refinancing windows in 2025 at higher rates of 4.9-5.19%)",
+        "Failure to achieve asset disposal capital receipts of \u00a329.6m assumed in 2025/26",
+        "Exceptional Financial Support sustainability - reliant on annual EFS renewals",
+        "Local Government Reorganisation transition (council abolished April 2028; merging into South West Essex unitary)",
+        "Commissioner-led transformation programme delivery risk"
+      ],
+      "url": "https://www.gov.uk/government/collections/intervention-at-thurrock-council"
+    },
+    "dsg_send": {
+      "cumulative_deficit_forecast_2028_29_m": 21.6,
+      "statutory_override_expiry": "2028-03-31",
+      "send_inspection": "Council participated in Delivering Better Value (DBV) SEND programme in 2023/24 receiving DfE additional funding for DSG management",
+      "high_needs_demand_pressure": "Banded special school capacity exceeded; primary schools handling high-need children without commensurate funding; commissioned places to rise to 904 (+81) for 2025/26",
+      "safety_valve_participant": false,
+      "fiscal_cliff_severity": "moderate - deficit relatively small in absolute terms vs other councils but compounding pressure on already-distressed general fund",
+      "follow_up_required": "Verify whether Thurrock has agreed a DSG management plan with DfE for High Needs Stability Grant eligibility (90% deficit cover for plans approved by end-2025/26)",
+      "url": "https://www.thurrock.gov.uk/sites/default/files/assets/documents/thurrock_schools_forum_-_agenda_and_reports_16_january_2025_final.pdf"
+    },
+    "asc_market_sustainability": {
+      "plan_published": "not located explicitly - expected under statutory MSP/Fair Cost of Care requirement of 2023",
+      "follow_up_required": "Check thurrock.gov.uk and Forward Plan for current MSP and fair cost of care exercise outputs",
+      "url": "not located"
+    },
+    "lgr": {
+      "status": "confirmed - abolition of Thurrock Council from April 2028",
+      "scope": "Thurrock + Basildon \u2192 new 'South West Essex Council' unitary as one of five new Greater Essex unitaries",
+      "consultation_publisher": "MHCLG",
+      "government_decision_date": "2026-03-25",
+      "consultation_period": "19 November 2025 to 11 January 2026",
+      "url": "https://www.gov.uk/government/consultations/local-government-reorganisation-in-essex-southend-on-sea-and-thurrock/proposals-for-local-government-reorganisation-in-essex-southend-on-sea-and-thurrock",
+      "debt_relief_announcement": "Government confirmed 25 March 2026 - \u00a3200m of Thurrock debt will be repaid in-principle in 2026/27 as first tranche of debt-relief support",
+      "savings_implication": "LGR will absorb Thurrock balance sheet into new South West Essex unitary; debt-relief grant materially reduces successor authority inheritance",
+      "commissioners": [
+        "Gavin Jones CBE (Lead Commissioner, appointed 17 July 2025)",
+        "Denise Murray (Finance Commissioner, appointed 17 July 2025)",
+        "Dr Dave Smith (Managing Director Commissioner, appointed 17 July 2025)"
+      ],
+      "intervention_end_date": "2028-04-30"
+    },
+    "property_strategy": {
+      "name": "Asset Management Delivery Plan (under Commissioner oversight)",
+      "capital_receipts_2025_26_m": 29.6,
+      "active_programme": "\u00a330m of council-owned land and buildings (incl. two enterprise centres) approved for disposal Cabinet March 2026 to reduce borrowing and debt-servicing costs; non-operational assets held in general fund",
+      "url": "https://democracy.thurrock.gov.uk/ieDecisionDetails.aspx?AIId=1216"
+    },
+    "borrowing_and_debt": {
+      "peak_total_debt_b": 1.5,
+      "pwlb_outstanding_jan_2024_m": 1415.889,
+      "debt_per_resident_jan_2024": 8049,
+      "pwlb_refinancing_july_2025_m": 215,
+      "pwlb_refinancing_2025_at_higher_rates_m": 275,
+      "higher_refinancing_rate_range_pct": "4.9-5.19",
+      "low_rate_pwlb_average_pct": 2.65,
+      "october_2022_emergency_pwlb_m": 836,
+      "funding_recovered_from_failed_investments_m_through_2026": 660,
+      "url": "https://www.thurrock.gov.uk/news/council-recoups-significant-amounts-of-public-money-from-past-investments"
+    },
+    "actionable_savings_levers_summary": [
+      "\u00a3200m HMG debt relief announced March 2026 = unprecedented intervention; will reduce treasury costs (currently \u00a364.3m of \u00a3240.7m revenue budget = 27%) and re-base future MTFS",
+      "\u00a3638m capitalisation direction reduced from \u00a3691m = trajectory of reducing reliance on Exceptional Financial Support, but still 5x higher than any other English council",
+      "\u00a3660m already recovered from failed investments (solar farms etc.) - ongoing legal recoveries remain a lever",
+      "\u00a329.6m asset disposal programme 2025/26 + further \u00a330m approved March 2026 = capital receipts to reduce PWLB debt and interest cost",
+      "LGR abolition April 2028 = window of remaining lever opportunity is 2 years; successor South West Essex unitary will inherit reformed balance sheet",
+      "Commissioner-led transformation roadmap (sixth report Jan 2026) targeting \u00a341m three-year savings = governance + transactional efficiency runway",
+      "DSG deficit \u00a321.6m by 2028-29 is small vs other councils; DBV participation = pathway to High Needs Stability Grant"
+    ],
+    "source_urls": [
+      "https://www.thurrock.gov.uk/sites/default/files/assets/documents/section114-notice.pdf",
+      "https://www.gov.uk/government/publications/thurrock-council-best-value-inspection-report",
+      "https://assets.publishing.service.gov.uk/media/6489dc31b32b9e0012a967e7/Thurrock_Best_Value_Inspection_report_19_May_2023.pdf",
+      "https://www.gov.uk/government/collections/intervention-at-thurrock-council",
+      "https://www.gov.uk/government/publications/thurrock-council-commissioners-sixth-report",
+      "https://www.gov.uk/government/publications/thurrock-council-ministerial-response-to-commissioners-sixth-report",
+      "https://www.gov.uk/government/publications/thurrock-council-exceptional-financial-support-request-2026-27",
+      "https://www.gov.uk/government/consultations/local-government-reorganisation-in-essex-southend-on-sea-and-thurrock/proposals-for-local-government-reorganisation-in-essex-southend-on-sea-and-thurrock",
+      "https://questions-statements.parliament.uk/written-statements/detail/2026-03-25/hcws1455",
+      "https://www.thurrock.gov.uk/improvement/intervention-and-inspection",
+      "https://www.thurrock.gov.uk/news/council-tax/thurrock-council-budget-approved-for-202627",
+      "https://www.thurrock.gov.uk/news/council-recoups-significant-amounts-of-public-money-from-past-investments",
+      "https://democracy.thurrock.gov.uk/ieDecisionDetails.aspx?AIId=1216",
+      "https://www.frc.org.uk/news-and-events/news/2025/05/sanctions-in-relation-to-the-operations-and-investment-activities-of-thurrock-council/",
+      "https://www.room151.co.uk/treasury/thurrock-to-refinance-215m-in-low-rate-pwlb-loans-amid-market-volatility/",
+      "https://www.room151.co.uk/funding/government-to-repay-200m-of-thurrocks-debt-as-four-lgr-decisions-are-made/"
+    ],
+    "coverage_gaps": [
+      "Specific external audit opinion text for 2020/21 onward (audit still in progress; multi-year backlog)",
+      "Internal Audit Annual Report opinion 2024/25",
+      "Live Strategic Risk Register top-5 with net ratings",
+      "MTFS year-by-year reserves trajectory + general fund balance",
+      "Total PWLB outstanding as at 31 March 2025 (peak \u00a31.4bn was January 2024 figure)",
+      "Formal Adult Social Care Market Sustainability Plan / Fair Cost of Care publications",
+      "DSG management plan agreement status with DfE for High Needs Stability Grant",
+      "CIPFA Resilience Index council-specific scores (paywalled)"
+    ]
+  },
+  "donor_links": null,
+  "strategic_themes": [
+    {
+      "id": "audit_opinion_remediation",
+      "title": "Remediate disclaimed audit opinion (BDO LLP, year ended 2020-03-31)",
+      "rationale": "External auditor issued a DISCLAIMED opinion on financial statements. Concerns: Multi-year audit backlog spanning 2020/21 through 2023/24; council pushing BDO to complete 2020/21 with a disclaimed opinion (3-year delay); 2024/25 draft Statement of Accounts were not available for public inspection by the statutory deadline of 30 June 2025 - audit process still in progress; Section 114 notice issued 19 December 2022 reporting an in-year funding gap of \u00a3470m and structural deficit in 2023/24 of \u00a3184m. Direct savings: PSAA scale fee normalisation (current scale fee \u00a3250K + disclaimer surcharge). Indirect: lifting MHCLG governance flag reduces borrowing-cost premium (typically 5-15bp on new external debt) + opens \u00a3M of grant programmes that require unmodified opinions. Foundation requirement before ANY other transformation saving is credible to auditor or DLUHC.",
+      "estimated_savings_low_m": 0.3,
+      "estimated_savings_high_m": 1.2,
+      "savings_type": "one-off + recurring",
+      "delivery_horizon": "12-24 months (next two audit cycles)",
+      "implementation_complexity": "high",
+      "decision_owner": "Section 151 Officer + Monitoring Officer + Audit Committee",
+      "evidence": [
+        "https://www.thurrock.gov.uk/our-accounts-and-funds/statement-of-accounts"
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "workforce_agency_reduction",
+      "title": "Agency / locum staff demand reduction (\u00a339M concentrated)",
+      "rationale": "\u00a339M of agency-staff spend across 1 master vendors. Top: MATRIX SCM LTD (\u00a339M). Standard transformation: cap agency premium at 20% above substantive rate, workforce-plan permanent conversion (6-9 month payback), regional bank pool, open-book master-vendor margins. CIPFA experience: 8-15% reduction in 12-18 months.",
+      "estimated_savings_low_m": 3.1,
+      "estimated_savings_high_m": 5.9,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of HR + Director of Finance + S151 Officer",
+      "evidence": [
+        "spending corpus: top agency suppliers"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "energy_procurement_optimisation",
+      "title": "Energy procurement via CCS / LASER / NEPO frameworks (\u00a38M baseline)",
+      "rationale": "\u00a38M utility spend across 2 suppliers. Top: EDF ENERGY (\u00a37M), TOTALENERGIES (\u00a31M). Crown Commercial RM6306 + LASER / NEPO consortium flex purchase typically saves 4-8% vs direct supplier contracts on a 3-yr horizon. Plus solar PV self-generation on council estate (7-9 yr payback) + DESNZ Public Sector Decarbonisation Scheme grants up to 100% capex on heat pump conversion.",
+      "estimated_savings_low_m": 0.4,
+      "estimated_savings_high_m": 1.0,
+      "savings_type": "recurring + capital grant",
+      "delivery_horizon": "12-36 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Property + Sustainability Lead + S151 Officer",
+      "evidence": [
+        "Crown Commercial RM6306",
+        "DESNZ PSDS scheme",
+        "LASER / NEPO frameworks"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "treasury_borrowing_optimisation",
+      "title": "Treasury management + borrowing cost optimisation (CFR proxy \u00a3161M)",
+      "rationale": "Annual revenue \u00a3202M implies indicative CFR c. \u00a3161M. Standard levers: internal borrowing from earmarked reserves, PWLB Certainty Rate trade, MMF counterparty restructuring, LGPS Property Investment Pool inclusion. 10-30bp saving on external debt typical from a fresh review.",
+      "estimated_savings_low_m": 0.16,
+      "estimated_savings_high_m": 0.48,
+      "savings_type": "recurring",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (subject to TM Strategy approval)",
+      "decision_owner": "S151 Officer + Treasurer",
+      "evidence": [
+        "CIPFA Prudential + Treasury Management Codes 2021",
+        "PWLB Certainty Rate"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "lgps_employer_contribution",
+      "title": "LGPS employer contribution opportunity (2025 triennial valuation cycle)",
+      "rationale": "Indicative pay bill \u00a381M \u00d7 c. 22% employer contribution rate = \u00a318M annual employer contribution. Most LGPS funds materially over-funded post-2022 (returns 2022-25 averaged 7-10% pa vs 3-4% discount-rate assumption). 2025 triennial valuation typically yields 2-4pp employer-rate reduction over 2026-2029. Confirm with administering authority + actuary.",
+      "estimated_savings_low_m": 0.9,
+      "estimated_savings_high_m": 2.7,
+      "savings_type": "recurring (3-yr triennial)",
+      "delivery_horizon": "settled at 2025 valuation; recurring 2026-2029",
+      "implementation_complexity": "low (LGPS admin enacts new rate)",
+      "decision_owner": "S151 Officer + LGPS Pensions Committee",
+      "evidence": [
+        "LGPS Regulations 2013 + 2014",
+        "2025 triennial valuation reports"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "income_fees_charges_optimisation",
+      "title": "Fees, charges + traded-services income optimisation (\u00a320M base)",
+      "rationale": "Indicative fees & charges + traded-services income c. 10% of revenue = \u00a320M. Standard levers: annual CPI uplift discipline, full-cost-recovery audit on discretionary services (parking, planning, licensing, sports, adult learning, property hire), commercial pricing on traded services. LGA experience: 5-15% income uplift sustainable over 2-3 years.",
+      "estimated_savings_low_m": 1.0,
+      "estimated_savings_high_m": 3.0,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-24 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Cabinet (each fee delegation)",
+      "evidence": [
+        "LGA fees and charges benchmarking",
+        "CIPFA Charging guidance"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "insurance_retention_review",
+      "title": "Insurance retention + premium review (\u00a30.2M premium estimate)",
+      "rationale": "Indicative insurance premium \u00a30.2M (10bp of revenue). Standard 3-5 yr renewal cycle. Levers: tender via IPG / RM Partners (10-25% premium reduction typical), retention review (increase excess + build risk-fund reserve). London-borough cohort average 12% premium reduction at last tender.",
+      "estimated_savings_low_m": 0.02,
+      "estimated_savings_high_m": 0.05,
+      "savings_type": "recurring",
+      "delivery_horizon": "9-18 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Risk Manager",
+      "evidence": [
+        "IPG framework",
+        "RM Partners broker market"
+      ],
+      "severity": "low"
+    },
+    {
+      "id": "procurement_data_review",
+      "title": "Contracts Finder portfolio review (159 notices; 2 contracts at \u00a310M+ ceiling)",
+      "rationale": "Contracts Finder data: 159 notices (83 awarded, \u00a3107M aggregate ADVERTISED CEILING value, 0% SME). IMPORTANT: advertised contract value is a CEILING set to avoid retender risk under PCR 2015 Reg.72 / Procurement Act 2023 s.31 \u2014 actual spend through the awardee is typically 30-70% of ceiling, with some off-contract ledger spend permitted within the 50%/50% modification limits. 2 contracts at \u00a310M+ ceiling totalling \u00a352M (ceiling, NOT spend) \u2014 top 3: Temporary Agency Worker Resources (ceiling \u00a342M); Decarbonisation Retrofit (ceiling \u00a310M). Matched against ledger: ICT Hardware \u2014 ceiling \u00a31.7M, actual ledger spend with awardee \u00a30.2M; Oracle Support \u2014 ceiling \u00a30.3M, actual ledger spend with awardee \u00a30.3M; Traffic Enforcement Cameras \u2014 ceiling \u00a30.2M, actual ledger spend with awardee \u00a30.5M. Aggregate identified actual spend \u00a36624M. SME-awarded share 0% is below the Procurement Reform 2023 / PPN 03/24 ambition (33% SME share by value). Standard procurement-data savings levers (% of ACTUAL ledger spend, not ceiling): (a) modification-history scrutiny under PCR 2015 Reg.72, (b) Procurement Act 2023 s.31 contract change notice review, (c) re-tender benchmark vs CCS framework rates on next renewal. 2-8% on actual spend through major contracts is a defensible upper bound.",
+      "estimated_savings_low_m": 132.5,
+      "estimated_savings_high_m": 529.9,
+      "savings_type": "recurring (post next contract renewal)",
+      "delivery_horizon": "12-36 months (contract-renewal cycle)",
+      "implementation_complexity": "high",
+      "decision_owner": "Head of Procurement + Cabinet Member + Section 151 Officer",
+      "evidence": [
+        "procurement.json (Contracts Finder API): 159 notices",
+        "ledger-matched actual spend: \u00a36623.7M",
+        "PCR 2015 Reg.72; Procurement Act 2023 s.31"
+      ],
+      "savings_basis": "Ledger-matched actual spend through awardees",
+      "advertised_ceiling_total_m": 51.9,
+      "ledger_matched_actual_spend_m": 6623.7,
+      "severity": "medium"
+    },
+    {
+      "id": "refund_credit_recovery",
+      "title": "Refund / credit-note management + contract dispute resolution (\u00a375M, 1,731 rows)",
+      "rationale": "1,731 negative-amount rows totalling \u00a375M \u2014 refunds, credit notes, contract reversals. Volume signals correct ledger capture, but proactive levers exist: (a) contract management review on top recurring refund counterparties, (b) duplicate-payment pre-detection, (c) energy-bill credit-management automation. Typical 5-10% reduction in refund volume + faster reconciliation = 10-30bp net cash improvement.",
+      "estimated_savings_low_m": 0.4,
+      "estimated_savings_high_m": 1.5,
+      "savings_type": "recurring + cash management",
+      "delivery_horizon": "12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Head of Procurement + Internal Audit + Treasury",
+      "evidence": [
+        "sqlite: 1,731 negative rows / \u00a375M"
+      ],
+      "severity": "low"
+    },
+    {
+      "id": "duplicate_recovery",
+      "title": "Audit + recover \u00a3140M in flagged duplicate-payment patterns",
+      "rationale": "DOGE forensic flagged \u00a3140M across 1,689 groups of likely duplicates. Industry recovery norm 5-15% via duplicate-detection software (AP Forensics, FISCAL, Oracle Concur). Lloyds Bank Commercial Card analysis typical for spot-check sample of 100 highest-confidence matches.",
+      "estimated_savings_low_m": 7.0,
+      "estimated_savings_high_m": 20.9,
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Finance + Internal Audit",
+      "evidence": [
+        "doge_findings.duplicate_count",
+        "doge_findings.duplicate_value"
+      ],
+      "severity": "medium"
+    }
+  ],
+  "supplier_recommendations": [],
+  "supplier_summary_flags": {},
+  "recommendation_counts": {}
+}

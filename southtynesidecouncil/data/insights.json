@@ -1,0 +1,792 @@
+{
+  "summary": {
+    "total_spend": 2069872971.39,
+    "transaction_count": 252208,
+    "unique_suppliers": 10541,
+    "avg_transaction": 8207.01,
+    "median_transaction": 981.44,
+    "date_range": {
+      "min": "2019-04-01",
+      "max": "2025-06-06"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "SOUTH TYNESIDE HOMES LTD",
+        "total": 170038555.0,
+        "transactions": 330,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SOUTH TYNESIDE HOMES",
+        "total": 100426861.05,
+        "transactions": 137,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "GATESHEAD MBC",
+        "total": 66210869.34,
+        "transactions": 147,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NEWCASTLE CITY COUNCIL",
+        "total": 55222438.56,
+        "transactions": 299,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED - PERSONAL INFO",
+        "total": 39461759.59,
+        "transactions": 22293,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "JOHN F HUNT REGENERATION LTD",
+        "total": 33990405.87,
+        "transactions": 38,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CONNECT ROADS SOUTH TYNESIDE LTD",
+        "total": 33747799.78,
+        "transactions": 100,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED - PERSONAL DATA",
+        "total": 32845812.08,
+        "transactions": 20680,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SOUTH TYNESIDE & SUNDERLAND NHS FOUNDATION TRUST",
+        "total": 29653904.68,
+        "transactions": 327,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MORTIMER COMMUNITY COLLEGE",
+        "total": 28500557.29,
+        "transactions": 124,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INSPIREDSPACES STAG (PROJECTCO2) LTD",
+        "total": 28333123.06,
+        "transactions": 91,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EDF ENERGY CUSTOMERS PLC",
+        "total": 28015485.45,
+        "transactions": 479,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CITY OF SUNDERLAND",
+        "total": 25927985.92,
+        "transactions": 76,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "GATESHEAD COUNCIL",
+        "total": 23471248.21,
+        "transactions": 329,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INSPIREDSPACES STAG (PROJECTC01) LTD",
+        "total": 23067090.96,
+        "transactions": 73,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "STFT HOLDINGS LTD",
+        "total": 20529002.84,
+        "transactions": 218,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BOLDON SCHOOL LIMITED (PFI)",
+        "total": 19296775.86,
+        "transactions": 82,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORTHUMBRIAN ROADS LTD",
+        "total": 19018468.85,
+        "transactions": 1386,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORTHUMBRIAN WATER",
+        "total": 18630302.94,
+        "transactions": 12,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PERCY HEDLEY FOUNDATION",
+        "total": 16976591.54,
+        "transactions": 972,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.393,
+    "total_unique_suppliers": 10541,
+    "single_transaction_suppliers": 5710
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 19010,
+      "potential_value": 144563179.12,
+      "items": [
+        {
+          "supplier": "SOUTH TYNESIDE HOMES LTD",
+          "amount": 2765034.68,
+          "date": "2024-09-27",
+          "occurrences": 2,
+          "potential_overpayment": 2765034.68
+        },
+        {
+          "supplier": "SOUTH TYNESIDE HOMES",
+          "amount": 2510551.75,
+          "date": "2021-11-25",
+          "occurrences": 2,
+          "potential_overpayment": 2510551.75
+        },
+        {
+          "supplier": "SOUTH TYNESIDE HOMES",
+          "amount": 1212040.0,
+          "date": "2019-12-23",
+          "occurrences": 3,
+          "potential_overpayment": 2424080.0
+        },
+        {
+          "supplier": "SOUTH TYNESIDE HOMES",
+          "amount": 1212040.0,
+          "date": "2019-09-17",
+          "occurrences": 3,
+          "potential_overpayment": 2424080.0
+        },
+        {
+          "supplier": "SOUTH TYNESIDE HOMES LTD",
+          "amount": 1565759.0,
+          "date": "2024-09-04",
+          "occurrences": 2,
+          "potential_overpayment": 1565759.0
+        },
+        {
+          "supplier": "SOUTH TYNESIDE HOMES LTD",
+          "amount": 1242524.0,
+          "date": "2021-11-08",
+          "occurrences": 2,
+          "potential_overpayment": 1242524.0
+        },
+        {
+          "supplier": "SOUTH TYNESIDE HOMES",
+          "amount": 1224167.0,
+          "date": "2020-06-12",
+          "occurrences": 2,
+          "potential_overpayment": 1224167.0
+        },
+        {
+          "supplier": "SOUTH TYNESIDE HOMES LTD",
+          "amount": 1224167.0,
+          "date": "2021-03-11",
+          "occurrences": 2,
+          "potential_overpayment": 1224167.0
+        },
+        {
+          "supplier": "SOUTH TYNESIDE HOMES",
+          "amount": 1212040.0,
+          "date": "2019-05-28",
+          "occurrences": 2,
+          "potential_overpayment": 1212040.0
+        },
+        {
+          "supplier": "SOUTH TYNESIDE HOMES",
+          "amount": 1212040.0,
+          "date": "2019-11-06",
+          "occurrences": 2,
+          "potential_overpayment": 1212040.0
+        },
+        {
+          "supplier": "SOUTH TYNESIDE HOMES LTD",
+          "amount": 1210261.44,
+          "date": "2021-11-25",
+          "occurrences": 2,
+          "potential_overpayment": 1210261.44
+        },
+        {
+          "supplier": "SOUTH TYNESIDE & SUNDERLAND NHS FOUNDATION TRUST",
+          "amount": 1108940.0,
+          "date": "2024-09-05",
+          "occurrences": 2,
+          "potential_overpayment": 1108940.0
+        },
+        {
+          "supplier": "SOUTH TYNESIDE HOMES LTD",
+          "amount": 1106860.0,
+          "date": "2021-11-18",
+          "occurrences": 2,
+          "potential_overpayment": 1106860.0
+        },
+        {
+          "supplier": "PORT OF TYNE AUTHORITY",
+          "amount": 813525.23,
+          "date": "2021-11-09",
+          "occurrences": 2,
+          "potential_overpayment": 813525.23
+        },
+        {
+          "supplier": "MORTIMER COMMUNITY COLLEGE",
+          "amount": 774690.0,
+          "date": "2024-09-30",
+          "occurrences": 2,
+          "potential_overpayment": 774690.0
+        },
+        {
+          "supplier": "SOUTH TYNESIDE HOMES",
+          "amount": 752523.0,
+          "date": "2021-11-25",
+          "occurrences": 2,
+          "potential_overpayment": 752523.0
+        },
+        {
+          "supplier": "JOHN F HUNT REGENERATION LTD",
+          "amount": 710802.22,
+          "date": "2024-09-05",
+          "occurrences": 2,
+          "potential_overpayment": 710802.22
+        },
+        {
+          "supplier": "NEWCASTLE CITY COUNCIL",
+          "amount": 673448.0,
+          "date": "2021-11-29",
+          "occurrences": 2,
+          "potential_overpayment": 673448.0
+        },
+        {
+          "supplier": "GATESHEAD COUNCIL",
+          "amount": 648599.9,
+          "date": "2024-09-16",
+          "occurrences": 2,
+          "potential_overpayment": 648599.9
+        },
+        {
+          "supplier": "GATESHEAD MBC",
+          "amount": 635737.21,
+          "date": "2021-06-17",
+          "occurrences": 2,
+          "potential_overpayment": 635737.21
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 2531,
+      "total_value": 61307000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 245
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Childrens, Adults & Families Group",
+      "spend": 603322568.93,
+      "count": 113985
+    },
+    {
+      "department": "Business & Resources Group",
+      "spend": 333466449.94,
+      "count": 24447
+    },
+    {
+      "department": "Balance Sheet",
+      "spend": 166942632.26,
+      "count": 2230
+    },
+    {
+      "department": "Children's, Adults & Families Group",
+      "spend": 153444767.7,
+      "count": 20334
+    },
+    {
+      "department": "Children, Adults and Health",
+      "spend": 114119494.32,
+      "count": 20736
+    },
+    {
+      "department": "Economic Regeneration Capital",
+      "spend": 97673631.17,
+      "count": 4122
+    },
+    {
+      "department": "Housing Revenue Account",
+      "spend": 94952564.31,
+      "count": 2853
+    },
+    {
+      "department": "Economic Regeneration Group",
+      "spend": 90229745.51,
+      "count": 11776
+    },
+    {
+      "department": "Business and Resources",
+      "spend": 89549663.07,
+      "count": 12674
+    },
+    {
+      "department": "Business and Resources Capital",
+      "spend": 42560458.25,
+      "count": 1949
+    },
+    {
+      "department": "Children, Adults and Families",
+      "spend": 31050094.34,
+      "count": 6724
+    },
+    {
+      "department": "Childrens Adults and Health",
+      "spend": 29112615.83,
+      "count": 3343
+    },
+    {
+      "department": "Regeneration & Environment Capital",
+      "spend": 28161657.07,
+      "count": 1512
+    },
+    {
+      "department": "Economic Regeneration",
+      "spend": 26510286.12,
+      "count": 1627
+    },
+    {
+      "department": "Business & Resources",
+      "spend": 24739113.13,
+      "count": 2034
+    },
+    {
+      "department": "Regeneration and Environment Capital",
+      "spend": 17536993.98,
+      "count": 603
+    },
+    {
+      "department": "Children, Adults & Families",
+      "spend": 15729068.92,
+      "count": 2540
+    },
+    {
+      "department": "Housing Capital",
+      "spend": 14120974.65,
+      "count": 667
+    },
+    {
+      "department": "Community Operations",
+      "spend": 12780890.04,
+      "count": 2100
+    },
+    {
+      "department": "Regeneration and Environment",
+      "spend": 12206989.32,
+      "count": 1690
+    },
+    {
+      "department": "Childrens, Adults & Families",
+      "spend": 11136186.37,
+      "count": 2053
+    },
+    {
+      "department": "Schools Delegated Budgets",
+      "spend": 9345165.34,
+      "count": 4962
+    },
+    {
+      "department": "Children's, Adults & Families",
+      "spend": 8953102.52,
+      "count": 1321
+    },
+    {
+      "department": "Adults and Children's Capital",
+      "spend": 7405764.66,
+      "count": 1836
+    },
+    {
+      "department": "Childrens Adults & Health Capital",
+      "spend": 6956642.1,
+      "count": 312
+    },
+    {
+      "department": "Business and Area Management Group",
+      "spend": 5772105.41,
+      "count": 680
+    },
+    {
+      "department": "Regeneration & Environment",
+      "spend": 5730257.84,
+      "count": 522
+    },
+    {
+      "department": "Regeneration and Environmental Capital",
+      "spend": 4508574.27,
+      "count": 9
+    },
+    {
+      "department": "Children's Social Care, Learning and Early Help",
+      "spend": 2191184.94,
+      "count": 173
+    },
+    {
+      "department": "Children, Adults and Health Capital",
+      "spend": 1203993.61,
+      "count": 269
+    },
+    {
+      "department": "Business and Area Management",
+      "spend": 1201268.18,
+      "count": 126
+    },
+    {
+      "department": "Place and Communities",
+      "spend": 821928.43,
+      "count": 60
+    },
+    {
+      "department": "Childrens, Adults, & Health Capital",
+      "spend": 760309.02,
+      "count": 41
+    },
+    {
+      "department": "Childrens, Adults, and Health Capital",
+      "spend": 712004.22,
+      "count": 13
+    },
+    {
+      "department": "Business & Resources Capital",
+      "spend": 652396.13,
+      "count": 190
+    },
+    {
+      "department": "Regeretion & Environment Capital",
+      "spend": 650450.0,
+      "count": 2
+    },
+    {
+      "department": "Childrens, Adults, & Families Group",
+      "spend": 501996.88,
+      "count": 149
+    },
+    {
+      "department": "Public Health",
+      "spend": 394678.12,
+      "count": 30
+    },
+    {
+      "department": "Governance and Corporate Affairs",
+      "spend": 316493.51,
+      "count": 59
+    },
+    {
+      "department": "Place Strategy",
+      "spend": 284249.84,
+      "count": 52
+    },
+    {
+      "department": "Strategy and Performance",
+      "spend": 239292.93,
+      "count": 60
+    },
+    {
+      "department": "Children's, Adults, & Families Group",
+      "spend": 235316.06,
+      "count": 38
+    },
+    {
+      "department": "Chief Executive",
+      "spend": 215734.45,
+      "count": 58
+    },
+    {
+      "department": "Childrens, Adults. & Families Group",
+      "spend": 124970.4,
+      "count": 71
+    },
+    {
+      "department": "Business & Area Management",
+      "spend": 116699.64,
+      "count": 51
+    },
+    {
+      "department": "Economic and Regeneration",
+      "spend": 107207.2,
+      "count": 1
+    },
+    {
+      "department": "Corporate Finance",
+      "spend": 103499.6,
+      "count": 21
+    },
+    {
+      "department": "Adults & Children's Capital",
+      "spend": 97371.31,
+      "count": 28
+    },
+    {
+      "department": "Children's, Adults and Families Group",
+      "spend": 91319.29,
+      "count": 29
+    },
+    {
+      "department": "Children, Adults and Families Capital",
+      "spend": 81527.92,
+      "count": 30
+    },
+    {
+      "department": "Childrens, Social Care, Learning and Early Help",
+      "spend": 75810.76,
+      "count": 6
+    },
+    {
+      "department": "Partners in Practice",
+      "spend": 74412.5,
+      "count": 2
+    },
+    {
+      "department": "Pensions",
+      "spend": 73774.76,
+      "count": 864
+    },
+    {
+      "department": "Asset Management and Design",
+      "spend": 69205.21,
+      "count": 11
+    },
+    {
+      "department": "Childrens, Adults and Health",
+      "spend": 65817.2,
+      "count": 33
+    },
+    {
+      "department": "#REF!",
+      "spend": 63410.05,
+      "count": 1
+    },
+    {
+      "department": "Development Services",
+      "spend": 54122.4,
+      "count": 2
+    },
+    {
+      "department": "Adults with Disabilties",
+      "spend": 37268.74,
+      "count": 3
+    },
+    {
+      "department": "Childrens, Adults, and Health",
+      "spend": 35465.5,
+      "count": 14
+    },
+    {
+      "department": "Building Schools for the Future",
+      "spend": 32844.38,
+      "count": 2
+    },
+    {
+      "department": "Children and Families Social Care",
+      "spend": 27042.0,
+      "count": 2
+    },
+    {
+      "department": "Environment",
+      "spend": 18561.04,
+      "count": 12
+    },
+    {
+      "department": "Adult Social Care & Commissioning",
+      "spend": 18380.4,
+      "count": 8
+    },
+    {
+      "department": "BT South Tyneside Ltd",
+      "spend": 13478.11,
+      "count": 5
+    },
+    {
+      "department": "Assistive Technology",
+      "spend": 13075.39,
+      "count": 2
+    },
+    {
+      "department": "Children's, Adults & Families Capital",
+      "spend": 10512.8,
+      "count": 2
+    },
+    {
+      "department": "Children, Adults & Health",
+      "spend": 10131.67,
+      "count": 5
+    },
+    {
+      "department": "Chilren's, Adults and Families Group",
+      "spend": 7377.93,
+      "count": 7
+    },
+    {
+      "department": "Children's and Adults Capital",
+      "spend": 6324.97,
+      "count": 2
+    },
+    {
+      "department": "Economic Regeration Capital",
+      "spend": 4703.0,
+      "count": 1
+    },
+    {
+      "department": "Economic Regeneration Group Capital",
+      "spend": 4485.25,
+      "count": 6
+    },
+    {
+      "department": "Strategic Partnership",
+      "spend": 3900.0,
+      "count": 1
+    },
+    {
+      "department": "Housing",
+      "spend": 3419.74,
+      "count": 2
+    },
+    {
+      "department": "Children's' Adults & Families",
+      "spend": 3410.63,
+      "count": 1
+    },
+    {
+      "department": "Children's, Adults. & Families Group",
+      "spend": 3295.8,
+      "count": 5
+    },
+    {
+      "department": "Business Area and Management Group",
+      "spend": 2625.0,
+      "count": 1
+    },
+    {
+      "department": "Decent Homes",
+      "spend": 2575.33,
+      "count": 1
+    },
+    {
+      "department": "Children & Families",
+      "spend": 2114.0,
+      "count": 1
+    },
+    {
+      "department": "Business and Resource",
+      "spend": 2108.06,
+      "count": 1
+    },
+    {
+      "department": "Childrens and Social Care",
+      "spend": 2000.0,
+      "count": 1
+    },
+    {
+      "department": "Chilldrens, Adults, & Family Group",
+      "spend": 1968.51,
+      "count": 2
+    },
+    {
+      "department": "Learning Disabilities",
+      "spend": 1685.21,
+      "count": 2
+    },
+    {
+      "department": "#N/A",
+      "spend": 1264.99,
+      "count": 1
+    },
+    {
+      "department": "Government and Corporate Affair",
+      "spend": 1027.3,
+      "count": 3
+    },
+    {
+      "department": "Housing Strategy",
+      "spend": 1000.0,
+      "count": 1
+    },
+    {
+      "department": "Children, Adults and Families Group",
+      "spend": 995.0,
+      "count": 1
+    },
+    {
+      "department": "Change Management",
+      "spend": 950.0,
+      "count": 1
+    },
+    {
+      "department": "STH Asset Management",
+      "spend": 78.71,
+      "count": 1
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2019/20": 249190556.25,
+      "2020/21": 270611348.83,
+      "2021/22": 299173637.92,
+      "2022/23": 372582066.0,
+      "2023/24": 395766829.51,
+      "2024/25": 411429769.89,
+      "2025/26": 71118762.99
+    },
+    "transactions_by_year": {
+      "2019/20": 24466,
+      "2020/21": 34841,
+      "2021/22": 38295,
+      "2022/23": 45362,
+      "2023/24": 47356,
+      "2024/25": 52324,
+      "2025/26": 9564
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 252208
+  }
+}

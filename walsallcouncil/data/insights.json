@@ -1,0 +1,423 @@
+{
+  "summary": {
+    "total_spend": 2092005550.24,
+    "transaction_count": 488499,
+    "unique_suppliers": 5241,
+    "avg_transaction": 4282.52,
+    "median_transaction": 1008.0,
+    "date_range": {
+      "min": "2021-04-01",
+      "max": "2026-02-27"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "REDACTED",
+        "total": 100813969.52,
+        "transactions": 71768,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TARMAC TRADING LTD",
+        "total": 62549514.37,
+        "transactions": 1904,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HOUSING 21",
+        "total": 56878221.02,
+        "transactions": 105,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WALSALL HEALTHCARE NHS TRUST 001",
+        "total": 56324659.83,
+        "transactions": 565,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "STAFFORDSHIRE COUNTY COUNCIL 001",
+        "total": 54710711.57,
+        "transactions": 239,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HENRY BOOT DEVELOPMENTS LTD T/A HBD",
+        "total": 35640422.98,
+        "transactions": 50,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MORGAN SINDALL CONSTRUCTION & INFRASTRUCTURE LTD",
+        "total": 31495892.31,
+        "transactions": 30,
+        "company_number": "04273754",
+        "company_url": "https://find-and-update.company-information.service.gov.uk/company/04273754"
+      },
+      {
+        "supplier": "OPUS PEOPLE SOLUTIONS LTD",
+        "total": 29220707.42,
+        "transactions": 27832,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "STARTING POINT RECRUITMENT LTD",
+        "total": 29099239.1,
+        "transactions": 29152,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WALSALL PUBLIC LIGHTING LTD",
+        "total": 27926564.77,
+        "transactions": 135,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PWLB",
+        "total": 22163404.6,
+        "transactions": 92,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "UPWARD CARE LTD",
+        "total": 21236605.89,
+        "transactions": 2754,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WOLVERHAMPTON CITY COUNCIL",
+        "total": 21093178.6,
+        "transactions": 284,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CARING CARE LTD",
+        "total": 20291900.27,
+        "transactions": 25039,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CHANGE GROW LIVE (CGL)",
+        "total": 19548664.9,
+        "transactions": 119,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FREETHS LLP",
+        "total": 18891394.79,
+        "transactions": 547,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DUDLEY MBC",
+        "total": 18890156.96,
+        "transactions": 132,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NHS BLACK COUNTRY & WEST BIRMINGHAM CCG (YO8)",
+        "total": 18544349.33,
+        "transactions": 80,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SPELLER METCALFE MALVERN LTD",
+        "total": 16958357.93,
+        "transactions": 59,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ACORN CARE & EDUCATION LTD (SALES)",
+        "total": 15777748.54,
+        "transactions": 1158,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.3241,
+    "total_unique_suppliers": 5241,
+    "single_transaction_suppliers": 1233
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 57173,
+      "potential_value": 233211226.97,
+      "items": [
+        {
+          "supplier": "STAFFORDSHIRE COUNTY COUNCIL 001",
+          "amount": 1989579.08,
+          "date": "2024-12-17",
+          "occurrences": 2,
+          "potential_overpayment": 1989579.08
+        },
+        {
+          "supplier": "NHS BLACK COUNTRY & WEST BIRMINGHAM CCG (YO8)",
+          "amount": 800984.58,
+          "date": "2022-06-29",
+          "occurrences": 3,
+          "potential_overpayment": 1601969.16
+        },
+        {
+          "supplier": "NHS BLACK COUNTRY & WEST BIRMINGHAM CCG (YO8)",
+          "amount": 800984.58,
+          "date": "2021-10-08",
+          "occurrences": 3,
+          "potential_overpayment": 1601969.16
+        },
+        {
+          "supplier": "CHANGE GROW LIVE (CGL)",
+          "amount": 703756.3,
+          "date": "2022-11-08",
+          "occurrences": 3,
+          "potential_overpayment": 1407512.6
+        },
+        {
+          "supplier": "STAFFORDSHIRE COUNTY COUNCIL 001",
+          "amount": 432203.54,
+          "date": "2022-12-21",
+          "occurrences": 4,
+          "potential_overpayment": 1296610.62
+        },
+        {
+          "supplier": "STAFFORDSHIRE COUNTY COUNCIL 001",
+          "amount": 432203.54,
+          "date": "2022-07-21",
+          "occurrences": 4,
+          "potential_overpayment": 1296610.62
+        },
+        {
+          "supplier": "STAFFORDSHIRE COUNTY COUNCIL 001",
+          "amount": 482825.77,
+          "date": "2024-02-06",
+          "occurrences": 3,
+          "potential_overpayment": 965651.54
+        },
+        {
+          "supplier": "STAFFORDSHIRE COUNTY COUNCIL 001",
+          "amount": 482825.77,
+          "date": "2023-11-24",
+          "occurrences": 3,
+          "potential_overpayment": 965651.54
+        },
+        {
+          "supplier": "DENNIS EAGLE LTD",
+          "amount": 251016.0,
+          "date": "2024-09-03",
+          "occurrences": 4,
+          "potential_overpayment": 753048.0
+        },
+        {
+          "supplier": "DENNIS EAGLE LTD",
+          "amount": 251016.0,
+          "date": "2024-09-10",
+          "occurrences": 4,
+          "potential_overpayment": 753048.0
+        },
+        {
+          "supplier": "DENNIS EAGLE LTD",
+          "amount": 251016.0,
+          "date": "2024-09-17",
+          "occurrences": 4,
+          "potential_overpayment": 753048.0
+        },
+        {
+          "supplier": "STAFFORDSHIRE COUNTY COUNCIL 001",
+          "amount": 482825.77,
+          "date": "2023-07-11",
+          "occurrences": 2,
+          "potential_overpayment": 482825.77
+        },
+        {
+          "supplier": "STAFFORDSHIRE COUNTY COUNCIL 001",
+          "amount": 422074.35,
+          "date": "2021-09-03",
+          "occurrences": 2,
+          "potential_overpayment": 422074.35
+        },
+        {
+          "supplier": "STAFFORDSHIRE COUNTY COUNCIL 001",
+          "amount": 422074.35,
+          "date": "2021-06-08",
+          "occurrences": 2,
+          "potential_overpayment": 422074.35
+        },
+        {
+          "supplier": "PEAK ACTIVITY SERVICES LTD",
+          "amount": 21535.0,
+          "date": "2021-08-19",
+          "occurrences": 18,
+          "potential_overpayment": 366095.0
+        },
+        {
+          "supplier": "PEAK ACTIVITY SERVICES LTD",
+          "amount": 17110.0,
+          "date": "2022-03-11",
+          "occurrences": 22,
+          "potential_overpayment": 359310.0
+        },
+        {
+          "supplier": "KEYS PCE LIMITED/PEAK ACTIVITY SERVICES LTD",
+          "amount": 29750.0,
+          "date": "2024-04-02",
+          "occurrences": 13,
+          "potential_overpayment": 357000.0
+        },
+        {
+          "supplier": "WV2 EDUCATION LTD",
+          "amount": 13666.67,
+          "date": "2025-12-30",
+          "occurrences": 27,
+          "potential_overpayment": 355333.42
+        },
+        {
+          "supplier": "PEAK ACTIVITY SERVICES LTD",
+          "amount": 18880.0,
+          "date": "2021-12-06",
+          "occurrences": 18,
+          "potential_overpayment": 320960.0
+        },
+        {
+          "supplier": "HOPEDALE CHILDREN & FAMILY SERVICES LTD T/A CHERRY TREE SCHOOL",
+          "amount": 21057.76,
+          "date": "2025-05-09",
+          "occurrences": 16,
+          "potential_overpayment": 315866.4
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 4646,
+      "total_value": 94312000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 474
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "",
+      "spend": 868087085.65,
+      "count": 214839
+    },
+    {
+      "department": "CHILDRENS",
+      "spend": 342843972.87,
+      "count": 74889
+    },
+    {
+      "department": "ADULT SOCIAL CARE",
+      "spend": 318300177.79,
+      "count": 117534
+    },
+    {
+      "department": "ECONOMY & ENVIRONMENT CAPITAL",
+      "spend": 135819159.95,
+      "count": 4448
+    },
+    {
+      "department": "ECONOMY, ENVIRONMENT & COMMUNITIES",
+      "spend": 120163482.8,
+      "count": 23159
+    },
+    {
+      "department": "ADULT SOCIAL CARE & HEALTH",
+      "spend": 88418185.92,
+      "count": 23590
+    },
+    {
+      "department": "RESOURCES AND TRANSFORMATION",
+      "spend": 61466698.79,
+      "count": 15599
+    },
+    {
+      "department": "RESOURCES AND TRANSFORMATION CAPITAL",
+      "spend": 38155104.35,
+      "count": 3227
+    },
+    {
+      "department": "CHILDRENS CAPITAL",
+      "spend": 36073873.49,
+      "count": 2134
+    },
+    {
+      "department": "CAPITAL FINANCING",
+      "spend": 34728026.52,
+      "count": 304
+    },
+    {
+      "department": "ENVIRONMENT, HOUSING & GROWTH",
+      "spend": 29267380.48,
+      "count": 7084
+    },
+    {
+      "department": "CENTRALLY HELD",
+      "spend": 8395501.77,
+      "count": 178
+    },
+    {
+      "department": "RESOURCES",
+      "spend": 5032237.83,
+      "count": 1146
+    },
+    {
+      "department": "HOLDING ACCOUNTS",
+      "spend": 4129593.73,
+      "count": 327
+    },
+    {
+      "department": "CAPITAL LEASING",
+      "spend": 1125068.3,
+      "count": 41
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2021/22": 388107899.66,
+      "2022/23": 324190545.59,
+      "2023/24": 394362211.19,
+      "2024/25": 503774886.21,
+      "2025/26": 481570007.59
+    },
+    "transactions_by_year": {
+      "2021/22": 95193,
+      "2022/23": 77403,
+      "2023/24": 104947,
+      "2024/25": 114472,
+      "2025/26": 96484
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 56.0,
+    "total_records": 488499
+  }
+}

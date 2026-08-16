@@ -1,0 +1,69 @@
+{
+  "council_id": "lancashire_cc",
+  "updated": "2026-04-18",
+  "status": "hand_compiled",
+  "description": "Outturn + budget reference for LCC to triangulate transparency-sum against official published figures. Sources listed inline. Refresh this file when LCC publishes 2024/25 Statement of Accounts (expected Nov-Dec 2025; as of April 2026 not yet known to be published).",
+  "figures": {
+    "net_revenue_budget_2024_25": {
+      "value_gbp_m": 1329,
+      "source": "Cabinet Budget Book 2024/25, Appendix A",
+      "source_url": "https://council.lancashire.gov.uk/documents/s228011/Appendix%20A.pdf",
+      "notes": "Cabinet-approved net revenue budget for 2024/25. Represents after-grant / after-reserves net call on council tax + RSG. Not directly comparable with transparency-sum \u2014 transparency data is gross payments across all funds (including schools DSG, capital, grants passed through)."
+    },
+    "transparency_sum_gross_2024_04_to_2026_02": {
+      "value_gbp_m": 3834,
+      "source": "This repository (LCC transparency CSV aggregator)",
+      "source_file": "burnley-council/data/lancashire_cc/metadata.json#total_spend_all_types_legacy",
+      "notes": "Gross sum of every row in 23 monthly CSVs (Apr 2024 \u2013 Feb 2026, complete). Includes \u00a3140M month-end accrual journal entries (R12) that reverse when invoices clear."
+    },
+    "transparency_sum_paid_2024_04_to_2026_02": {
+      "value_gbp_m": 3694,
+      "source": "This repository",
+      "source_file": "burnley-council/data/lancashire_cc/metadata.json#spend_triangulation.transparency_paid",
+      "notes": "Transparency gross minus accrual journal class. Closest single-figure to 'money that actually cleared the bank' over the 23-month data window."
+    },
+    "procurement_sum_2024_04_to_2026_02": {
+      "value_gbp_m": 2723,
+      "source": "This repository",
+      "source_file": "burnley-council/data/lancashire_cc/metadata.json#spend_triangulation.procurement_only",
+      "notes": "Third-party supplier procurement only \u2014 excludes direct payments to individuals (\u00a3277M), statutory pass-throughs (\u00a3638M), in-house ASC provider transfers (\u00a356M), accrual journals (\u00a3140M), BACS settlement noise (\u00a30.6M)."
+    }
+  },
+  "source_portal": {
+    "base_url": "https://transparency.lancashire.gov.uk/",
+    "download_pattern": "/index.asp?Period=MMYYYY&Version=1 (HTML page with CSV-export form; POST action=exportCSV + field list to receive CSV)",
+    "available_as_of_2026_04_19": {
+      "2024": "Jul \u2013 Dec",
+      "2025": "Jan \u2013 Dec",
+      "2026": "Jan, Feb"
+    },
+    "notes": [
+      "Mar-2024 file was amended and Version=2 republished 16 July 2025.",
+      "Portal lists 2024 from July onwards as of Apr 2026; this repo's corpus has Apr-Dec 2024 from an older fetch (earlier months may have been withdrawn or rotated out of visible history).",
+      "Aug-2024 source CSV was missing from this repo's corpus (misnamed duplicate of Aug-2025 quarantined 2026-04-18). Re-fetched 2026-04-19 via fetch_lcc_spending.py (URL pattern Period=082024&Version=1).",
+      "Jan + Feb 2026 months fetched same session. Corpus now complete Apr 2024 \u2013 Feb 2026 (23 months).",
+      "Mar 2026 not yet published (LCC typically publishes FY year-end in late April or May)."
+    ],
+    "fetcher_script": "burnley-council/scripts/fetch_lcc_spending.py \u2014 run --missing to backfill; --month MM.YYYY for single month; --version N for amended files"
+  },
+  "pending": [
+    {
+      "figure": "outturn_2024_25",
+      "expected_source": "Lancashire County Council Statement of Accounts 2024/25",
+      "expected_source_url": "https://www.lancashire.gov.uk/council/finance/statement-of-accounts/",
+      "expected_publication": "Nov-Dec 2025 (typical). As of 2026-04-18 not yet verified on council site \u2014 recheck and populate when published."
+    },
+    {
+      "figure": "ra_return_2024_25",
+      "expected_source": "DLUHC Local Authority Revenue Expenditure and Financing England 2024/25 (RA return, individual authority data CSV)",
+      "expected_source_url": "https://www.gov.uk/government/collections/local-authority-revenue-expenditure-and-financing",
+      "expected_publication": "Dec 2025 provisional / Oct 2026 final"
+    },
+    {
+      "figure": "q4_financial_monitoring_2024_25",
+      "expected_source": "LCC Cabinet Q4 Financial Monitoring Report 2024/25",
+      "expected_source_url": "https://council.lancashire.gov.uk/mgIssueHistoryHome.aspx?IId=132362",
+      "expected_publication": "Jun-Jul 2025"
+    }
+  ]
+}

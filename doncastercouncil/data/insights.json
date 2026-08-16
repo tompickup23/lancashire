@@ -1,0 +1,486 @@
+{
+  "summary": {
+    "total_spend": 1667341966.17,
+    "transaction_count": 443560,
+    "unique_suppliers": 5538,
+    "avg_transaction": 3759.0,
+    "median_transaction": 541.8,
+    "date_range": {
+      "min": "2023-04-01",
+      "max": "2026-06-30"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "ST LEGER HOMES OF DONCASTER LTD",
+        "total": 203034843.27,
+        "transactions": 329,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ROTHERHAM DONCASTER & SOUTH HUMBER NHS",
+        "total": 70115993.53,
+        "transactions": 435,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SUEZ RECYCLING AND RECOVERY UK LTD",
+        "total": 42989169.55,
+        "transactions": 562,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WILLMOTT DIXON CONSTRUCTION LTD",
+        "total": 41788620.9,
+        "transactions": 154,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NPOWER LTD",
+        "total": 40805757.72,
+        "transactions": 3770,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DONCASTER CULTURE & LEISURE TRUST",
+        "total": 38132548.68,
+        "transactions": 258,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LIVING AMBITIONS LTD",
+        "total": 31178296.7,
+        "transactions": 39065,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DONCASTER SCHOOL SOLUTIONS LTD",
+        "total": 30260884.7,
+        "transactions": 59,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CREATIVE SUPPORT",
+        "total": 22227750.32,
+        "transactions": 25302,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WATES PROPERTY SERVICES LTD",
+        "total": 20865891.78,
+        "transactions": 128,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NHS SOUTH YORKSHIRE ICB",
+        "total": 20437897.95,
+        "transactions": 89,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NRS HEALTHCARE",
+        "total": 19036205.4,
+        "transactions": 274,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DONCASTER DEAF TRUST",
+        "total": 18708722.26,
+        "transactions": 80,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MENCAP",
+        "total": 16271721.05,
+        "transactions": 19198,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WALSINGHAM SUPPORT",
+        "total": 11949541.94,
+        "transactions": 12977,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WITHERSLACK HALL SCHOOL",
+        "total": 10132115.92,
+        "transactions": 1284,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LIFEWAYS COMMUNITY CARE",
+        "total": 9612369.33,
+        "transactions": 14646,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "KEYS PCE LTD",
+        "total": 9035448.57,
+        "transactions": 730,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REED SPECIALIST RECRUITMENT LTD",
+        "total": 8797562.57,
+        "transactions": 3498,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EUROVIA INFRASTRUCTURE LTD",
+        "total": 8699304.14,
+        "transactions": 22,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.4043,
+    "total_unique_suppliers": 5538,
+    "single_transaction_suppliers": 1673
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 50229,
+      "potential_value": 289682718.09,
+      "items": [
+        {
+          "supplier": "ST LEGER HOMES OF DONCASTER LTD",
+          "amount": 3500000.0,
+          "date": "2026-02-03",
+          "occurrences": 2,
+          "potential_overpayment": 3500000.0
+        },
+        {
+          "supplier": "ROTHERHAM DONCASTER & SOUTH HUMBER NHS",
+          "amount": 573307.59,
+          "date": "2025-07-15",
+          "occurrences": 3,
+          "potential_overpayment": 1146615.18
+        },
+        {
+          "supplier": "ROTHERHAM DONCASTER & SOUTH HUMBER NHS",
+          "amount": 531955.29,
+          "date": "2024-06-07",
+          "occurrences": 3,
+          "potential_overpayment": 1063910.58
+        },
+        {
+          "supplier": "ROTHERHAM DONCASTER & SOUTH HUMBER NHS",
+          "amount": 527789.0,
+          "date": "2024-06-12",
+          "occurrences": 3,
+          "potential_overpayment": 1055578.0
+        },
+        {
+          "supplier": "HSG CHILDRENS BACS SUNDRY 2023",
+          "amount": 300.0,
+          "date": "2025-07-10",
+          "occurrences": 2612,
+          "potential_overpayment": 783300.0
+        },
+        {
+          "supplier": "ST LEGER HOMES OF DONCASTER LTD",
+          "amount": 692666.85,
+          "date": "2025-01-21",
+          "occurrences": 2,
+          "potential_overpayment": 692666.85
+        },
+        {
+          "supplier": "WALSINGHAM SUPPORT",
+          "amount": 43138.31,
+          "date": "2026-03-04",
+          "occurrences": 16,
+          "potential_overpayment": 647074.65
+        },
+        {
+          "supplier": "ROTHERHAM DONCASTER & SOUTH HUMBER NHS",
+          "amount": 579440.59,
+          "date": "2026-05-01",
+          "occurrences": 2,
+          "potential_overpayment": 579440.59
+        },
+        {
+          "supplier": "ROTHERHAM DONCASTER & SOUTH HUMBER NHS",
+          "amount": 577474.25,
+          "date": "2025-06-12",
+          "occurrences": 2,
+          "potential_overpayment": 577474.25
+        },
+        {
+          "supplier": "ROTHERHAM DONCASTER & SOUTH HUMBER NHS",
+          "amount": 545488.33,
+          "date": "2024-05-03",
+          "occurrences": 2,
+          "potential_overpayment": 545488.33
+        },
+        {
+          "supplier": "ROTHERHAM DONCASTER & SOUTH HUMBER NHS",
+          "amount": 541321.67,
+          "date": "2023-06-01",
+          "occurrences": 2,
+          "potential_overpayment": 541321.67
+        },
+        {
+          "supplier": "ST LEGER HOMES OF DONCASTER LTD",
+          "amount": 498645.19,
+          "date": "2025-01-21",
+          "occurrences": 2,
+          "potential_overpayment": 498645.19
+        },
+        {
+          "supplier": "ROTHERHAM DONCASTER & SOUTH HUMBER NHS",
+          "amount": 492583.92,
+          "date": "2024-05-03",
+          "occurrences": 2,
+          "potential_overpayment": 492583.92
+        },
+        {
+          "supplier": "ROTHERHAM DONCASTER & SOUTH HUMBER NHS",
+          "amount": 464098.12,
+          "date": "2026-05-01",
+          "occurrences": 2,
+          "potential_overpayment": 464098.12
+        },
+        {
+          "supplier": "ROTHERHAM DONCASTER & SOUTH HUMBER NHS",
+          "amount": 464098.08,
+          "date": "2023-06-01",
+          "occurrences": 2,
+          "potential_overpayment": 464098.08
+        },
+        {
+          "supplier": "ROTHERHAM DONCASTER & SOUTH HUMBER NHS",
+          "amount": 458296.85,
+          "date": "2023-06-02",
+          "occurrences": 2,
+          "potential_overpayment": 458296.85
+        },
+        {
+          "supplier": "ROTHERHAM DONCASTER & SOUTH HUMBER NHS",
+          "amount": 456655.58,
+          "date": "2024-07-02",
+          "occurrences": 2,
+          "potential_overpayment": 456655.58
+        },
+        {
+          "supplier": "ROTHERHAM DONCASTER & SOUTH HUMBER NHS",
+          "amount": 456655.58,
+          "date": "2024-05-20",
+          "occurrences": 2,
+          "potential_overpayment": 456655.58
+        },
+        {
+          "supplier": "HSG CHILDRENS BACS SUNDRY 2023",
+          "amount": 270.0,
+          "date": "2023-07-24",
+          "occurrences": 1453,
+          "potential_overpayment": 392040.0
+        },
+        {
+          "supplier": "MOTUS COMMERCIALS",
+          "amount": 178370.03,
+          "date": "2024-02-01",
+          "occurrences": 3,
+          "potential_overpayment": 356740.06
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 2322,
+      "total_value": 211926000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 543
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "PLACE",
+      "spend": 483266208.3,
+      "count": 70068
+    },
+    {
+      "department": "ADULTS, WELLBEING AND CULTURE",
+      "spend": 449318946.6,
+      "count": 293678
+    },
+    {
+      "department": "CHILDREN,YOUNG PEOPLE&FAMILIES",
+      "spend": 343834839.92,
+      "count": 53709
+    },
+    {
+      "department": "CHIEF EXECUTIVE",
+      "spend": 148599071.9,
+      "count": 7452
+    },
+    {
+      "department": "HOUSING REVENUE ACCOUNT",
+      "spend": 142757324.15,
+      "count": 662
+    },
+    {
+      "department": "CORPORATE RESOURCES",
+      "spend": 56603996.31,
+      "count": 14100
+    },
+    {
+      "department": "ECONOMY & ENVIRONMENT",
+      "spend": 12566490.57,
+      "count": 1547
+    },
+    {
+      "department": "ADULTS HEALTH & WELLBEING",
+      "spend": 10584260.01,
+      "count": 1596
+    },
+    {
+      "department": "COUNCIL WIDE BUDGET",
+      "spend": 10355082.83,
+      "count": 258
+    },
+    {
+      "department": "PUBLIC HEALTH",
+      "spend": 3095735.63,
+      "count": 97
+    },
+    {
+      "department": "LEISURE SERVICES",
+      "spend": 1894268.71,
+      "count": 3
+    },
+    {
+      "department": "STRATEGIC HOUSING",
+      "spend": 1504673.05,
+      "count": 56
+    },
+    {
+      "department": "TRADING SERVICES",
+      "spend": 838992.64,
+      "count": 29
+    },
+    {
+      "department": "SEND VULNERABLE CHILDREN",
+      "spend": 706146.0,
+      "count": 4
+    },
+    {
+      "department": "STRATEGIC INFRASTRUCTURE",
+      "spend": 483727.69,
+      "count": 11
+    },
+    {
+      "department": "Place",
+      "spend": 324094.33,
+      "count": 217
+    },
+    {
+      "department": "ADAPTATIONS",
+      "spend": 232622.16,
+      "count": 36
+    },
+    {
+      "department": "HIGHWAYS ASSET MANAGEMENT",
+      "spend": 132942.25,
+      "count": 11
+    },
+    {
+      "department": "STRATEGIC ASSET MANAGEMENT",
+      "spend": 83150.0,
+      "count": 5
+    },
+    {
+      "department": "",
+      "spend": 63590.99,
+      "count": 4
+    },
+    {
+      "department": "STREETSCENE",
+      "spend": 24710.82,
+      "count": 3
+    },
+    {
+      "department": "COMMUNITIES - SAFER STRONGER",
+      "spend": 21700.0,
+      "count": 2
+    },
+    {
+      "department": "NETWORKS & PROW",
+      "spend": 14299.31,
+      "count": 1
+    },
+    {
+      "department": "COUNCIL WIDE SYSTEMS",
+      "spend": 12300.0,
+      "count": 2
+    },
+    {
+      "department": "LEARNING OPP, SKILLS & CULTURE",
+      "spend": 10371.0,
+      "count": 3
+    },
+    {
+      "department": "COMPLETED CAPITAL SCHEMES",
+      "spend": 7547.33,
+      "count": 4
+    },
+    {
+      "department": "STREETLIGHTING",
+      "spend": 2500.0,
+      "count": 1
+    },
+    {
+      "department": "OTHER AHWC SCHEMES",
+      "spend": 2373.67,
+      "count": 1
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2023/24": 503614412.44,
+      "2024/25": 560536638.07,
+      "2025/26": 442798467.24,
+      "2026/27": 160392448.42
+    },
+    "transactions_by_year": {
+      "2023/24": 125861,
+      "2024/25": 148581,
+      "2025/26": 126943,
+      "2026/27": 42175
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 443560
+  }
+}

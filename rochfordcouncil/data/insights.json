@@ -1,0 +1,447 @@
+{
+  "summary": {
+    "total_spend": 108267741.04,
+    "transaction_count": 28020,
+    "unique_suppliers": 1397,
+    "avg_transaction": 3863.95,
+    "median_transaction": 383.01,
+    "date_range": {
+      "min": "2019-04-01",
+      "max": "2026-02-26"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "ROCHFORD NORSE LTD",
+        "total": 18376254.62,
+        "transactions": 121,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SUEZ LTD",
+        "total": 9783017.89,
+        "transactions": 194,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LLOYDS TSB BANK",
+        "total": 5480756.0,
+        "transactions": 8,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FEDERATED PRIME - BANK OF NEW YORK",
+        "total": 5000000.0,
+        "transactions": 3,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MINISTRY OF HOUSING COMMUNTIES & L.G.",
+        "total": 4585352.0,
+        "transactions": 5,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BEIS",
+        "total": 2155087.52,
+        "transactions": 9,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "RAYLEIGH TOWN COUNCIL",
+        "total": 1693483.28,
+        "transactions": 14,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BYTES SOFTWARE SERVICES",
+        "total": 1601161.24,
+        "transactions": 256,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DCLG",
+        "total": 1570747.0,
+        "transactions": 6,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ESSEX COUNTY COUNCIL",
+        "total": 1525818.42,
+        "transactions": 453,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ACL GP LTD",
+        "total": 1428418.97,
+        "transactions": 2137,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "VIRIDOR WASTE",
+        "total": 1297089.72,
+        "transactions": 35,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HOCKLEY PARISH COUNCIL",
+        "total": 1276268.0,
+        "transactions": 9,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FUSION LIFESTYLE",
+        "total": 1251584.54,
+        "transactions": 136,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HADLEIGH SALVAGE",
+        "total": 1184374.29,
+        "transactions": 280,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CAPITA BUSINESS SERVICES LTD",
+        "total": 1168037.97,
+        "transactions": 169,
+        "company_number": "02299747",
+        "company_url": "https://find-and-update.company-information.service.gov.uk/company/02299747"
+      },
+      {
+        "supplier": "GREEN GATEWAY TRADING (GM) LTD",
+        "total": 1162485.96,
+        "transactions": 65,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BRENTWOOD BOROUGH COUNCIL",
+        "total": 1142128.33,
+        "transactions": 28,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "N & P CRAYFORD MRF LTD",
+        "total": 1129503.61,
+        "transactions": 48,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BIRKETTS LLP",
+        "total": 1040047.47,
+        "transactions": 182,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.5898,
+    "total_unique_suppliers": 1397,
+    "single_transaction_suppliers": 489
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 1978,
+      "potential_value": 8257277.67,
+      "items": [
+        {
+          "supplier": "ROCHFORD NORSE LTD",
+          "amount": 195975.0,
+          "date": "2022-11-25",
+          "occurrences": 10,
+          "potential_overpayment": 1763775.0
+        },
+        {
+          "supplier": "ROCHFORD NORSE LTD",
+          "amount": 346860.0,
+          "date": "2025-11-13",
+          "occurrences": 3,
+          "potential_overpayment": 693720.0
+        },
+        {
+          "supplier": "SUEZ LTD",
+          "amount": 174072.36,
+          "date": "2022-02-25",
+          "occurrences": 3,
+          "potential_overpayment": 348144.72
+        },
+        {
+          "supplier": "SUEZ LTD",
+          "amount": 174072.36,
+          "date": "2022-08-19",
+          "occurrences": 3,
+          "potential_overpayment": 348144.72
+        },
+        {
+          "supplier": "ROCHFORD NORSE LTD",
+          "amount": 346860.0,
+          "date": "2025-05-09",
+          "occurrences": 2,
+          "potential_overpayment": 346860.0
+        },
+        {
+          "supplier": "ROCHFORD NORSE LTD",
+          "amount": 317607.5,
+          "date": "2023-06-09",
+          "occurrences": 2,
+          "potential_overpayment": 317607.5
+        },
+        {
+          "supplier": "ROCHFORD NORSE LTD",
+          "amount": 300888.89,
+          "date": "2022-07-22",
+          "occurrences": 2,
+          "potential_overpayment": 300888.89
+        },
+        {
+          "supplier": "SUEZ LTD",
+          "amount": 174072.36,
+          "date": "2021-08-27",
+          "occurrences": 2,
+          "potential_overpayment": 174072.36
+        },
+        {
+          "supplier": "SUEZ LTD",
+          "amount": 174072.36,
+          "date": "2021-11-05",
+          "occurrences": 2,
+          "potential_overpayment": 174072.36
+        },
+        {
+          "supplier": "SUEZ LTD",
+          "amount": 174072.36,
+          "date": "2022-04-29",
+          "occurrences": 2,
+          "potential_overpayment": 174072.36
+        },
+        {
+          "supplier": "SUEZ LTD",
+          "amount": 171499.86,
+          "date": "2021-05-28",
+          "occurrences": 2,
+          "potential_overpayment": 171499.86
+        },
+        {
+          "supplier": "SUEZ LTD",
+          "amount": 170138.76,
+          "date": "2020-01-24",
+          "occurrences": 2,
+          "potential_overpayment": 170138.76
+        },
+        {
+          "supplier": "SUEZ LTD",
+          "amount": 59732.48,
+          "date": "2022-02-25",
+          "occurrences": 3,
+          "potential_overpayment": 119464.96
+        },
+        {
+          "supplier": "SUEZ LTD",
+          "amount": 59732.48,
+          "date": "2022-08-19",
+          "occurrences": 3,
+          "potential_overpayment": 119464.96
+        },
+        {
+          "supplier": "ROCHFORD NORSE LTD",
+          "amount": 26139.96,
+          "date": "2025-02-28",
+          "occurrences": 4,
+          "potential_overpayment": 78419.88
+        },
+        {
+          "supplier": "GREEN GATEWAY TRADING (GM) LTD",
+          "amount": 35101.45,
+          "date": "2021-06-11",
+          "occurrences": 3,
+          "potential_overpayment": 70202.9
+        },
+        {
+          "supplier": "GREEN GATEWAY TRADING (GM) LTD",
+          "amount": 35013.92,
+          "date": "2021-02-26",
+          "occurrences": 3,
+          "potential_overpayment": 70027.84
+        },
+        {
+          "supplier": "ROCHFORD NORSE LTD",
+          "amount": 60980.64,
+          "date": "2023-07-14",
+          "occurrences": 2,
+          "potential_overpayment": 60980.64
+        },
+        {
+          "supplier": "SUEZ LTD",
+          "amount": 59732.48,
+          "date": "2021-08-27",
+          "occurrences": 2,
+          "potential_overpayment": 59732.48
+        },
+        {
+          "supplier": "SUEZ LTD",
+          "amount": 59732.48,
+          "date": "2021-11-05",
+          "occurrences": 2,
+          "potential_overpayment": 59732.48
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 346,
+      "total_value": 10749000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 154
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Environment Services",
+      "spend": 30143236.85,
+      "count": 3379
+    },
+    {
+      "department": "Capital 2016",
+      "spend": 12225690.18,
+      "count": 1418
+    },
+    {
+      "department": "Apportioned Overheads",
+      "spend": 11116878.97,
+      "count": 7104
+    },
+    {
+      "department": "Loans Pool",
+      "spend": 7035214.19,
+      "count": 6
+    },
+    {
+      "department": "Collection Fund",
+      "spend": 6533709.52,
+      "count": 14
+    },
+    {
+      "department": "Precepts",
+      "spend": 6226414.22,
+      "count": 83
+    },
+    {
+      "department": "Planning and Development",
+      "spend": 5715873.47,
+      "count": 1876
+    },
+    {
+      "department": "Cultural and Related Services",
+      "spend": 5233210.77,
+      "count": 6703
+    },
+    {
+      "department": "Non Distributed Costs",
+      "spend": 4899437.15,
+      "count": 9
+    },
+    {
+      "department": "Housing Services",
+      "spend": 4158613.31,
+      "count": 2454
+    },
+    {
+      "department": "Central Services to the Public",
+      "spend": 3833939.95,
+      "count": 1415
+    },
+    {
+      "department": "Capital - Housing",
+      "spend": 3326063.2,
+      "count": 476
+    },
+    {
+      "department": "Other Operating Income and Expenditure",
+      "spend": 2429907.03,
+      "count": 430
+    },
+    {
+      "department": "Corporate and Democratic Core",
+      "spend": 2417837.35,
+      "count": 1251
+    },
+    {
+      "department": "Personal Accounts",
+      "spend": 1787513.39,
+      "count": 108
+    },
+    {
+      "department": "Highways, Roads and Transport",
+      "spend": 976151.61,
+      "count": 1284
+    },
+    {
+      "department": "Reserves",
+      "spend": 204125.0,
+      "count": 1
+    },
+    {
+      "department": "Capital",
+      "spend": 2329.66,
+      "count": 1
+    },
+    {
+      "department": "HRA",
+      "spend": 1595.22,
+      "count": 8
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2019/20": 8116965.95,
+      "2020/21": 8580196.53,
+      "2021/22": 14737682.18,
+      "2022/23": 14214189.14,
+      "2023/24": 14671377.65,
+      "2024/25": 17485714.55,
+      "2025/26": 30461615.04
+    },
+    "transactions_by_year": {
+      "2019/20": 3152,
+      "2020/21": 2740,
+      "2021/22": 3260,
+      "2022/23": 4165,
+      "2023/24": 4540,
+      "2024/25": 5319,
+      "2025/26": 4844
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 28020
+  }
+}

@@ -1,0 +1,1427 @@
+{
+  "summary": {
+    "total_spend": 2397587951.0,
+    "transaction_count": 538614,
+    "unique_suppliers": 8315,
+    "avg_transaction": 4451.4,
+    "median_transaction": 1075.01,
+    "date_range": {
+      "min": "2020-01-24",
+      "max": "2026-12-09"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "BALFOUR BEATTY - LIVING PLACES LTD",
+        "total": 176910005.46,
+        "transactions": 39,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED - SPECIFIC VENDOR",
+        "total": 81944947.11,
+        "transactions": 42050,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "202502",
+        "total": 75186505.79,
+        "transactions": 16491,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "202412",
+        "total": 72781240.08,
+        "transactions": 17921,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED - SPECIFIC ACCOUNT",
+        "total": 67646784.34,
+        "transactions": 6915,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "202501",
+        "total": 66738276.7,
+        "transactions": 18225,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LINCOLNSHIRE PARTNERSHIP NHS FOUNDATION TRUST",
+        "total": 49326473.27,
+        "transactions": 116,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WILLMOTT DIXON CONSTRUCTION LTD",
+        "total": 28766388.2,
+        "transactions": 50,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "GALLIFORD TRY INFRASTRUCTURE LTD",
+        "total": 28101717.35,
+        "transactions": 46,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EUROVIA INFRASTRUCTURE LTD",
+        "total": 25988483.31,
+        "transactions": 24,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SERCO (LINCOLN CONTRACT)",
+        "total": 25189971.7,
+        "transactions": 32,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FCC ENVIRONMENT (LINCOLNSHIRE) LTD",
+        "total": 22457570.8,
+        "transactions": 34,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "VINCI FACILITIES PARTNERSHIPS LTD",
+        "total": 21852608.05,
+        "transactions": 20,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ALDERSON LTD (LIBERTAS)",
+        "total": 20361087.12,
+        "transactions": 343,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NOTTINGHAM REHAB LTD T/A NRS HEALTHCARE",
+        "total": 17047792.33,
+        "transactions": 90,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "QUEEN ELIZABETH'S HIGH SCHOOL",
+        "total": 16049752.61,
+        "transactions": 28,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TOTALENERGIES GAS & POWER LTD",
+        "total": 14744699.23,
+        "transactions": 455,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LINCS COMMUNITY HEALTH SERVICES NHST",
+        "total": 13596239.32,
+        "transactions": 95,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED - SOCIAL CARE PAYEES",
+        "total": 13025367.31,
+        "transactions": 5714,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "STAGECOACH SERVICES LTD",
+        "total": 12849150.45,
+        "transactions": 6363,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.3548,
+    "total_unique_suppliers": 8315,
+    "single_transaction_suppliers": 2055
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 47684,
+      "potential_value": 345169513.64,
+      "items": [
+        {
+          "supplier": "202502",
+          "amount": 3056.0,
+          "date": "2024-05-31",
+          "occurrences": 965,
+          "potential_overpayment": 2945984.0
+        },
+        {
+          "supplier": "202502",
+          "amount": 2772.0,
+          "date": "2024-05-31",
+          "occurrences": 867,
+          "potential_overpayment": 2400552.0
+        },
+        {
+          "supplier": "202501",
+          "amount": 3056.0,
+          "date": "2024-04-30",
+          "occurrences": 702,
+          "potential_overpayment": 2142256.0
+        },
+        {
+          "supplier": "FCC ENVIRONMENT (LINCOLNSHIRE) LTD",
+          "amount": 591515.63,
+          "date": "2023-03-31",
+          "occurrences": 4,
+          "potential_overpayment": 1774546.89
+        },
+        {
+          "supplier": "202501",
+          "amount": 2772.0,
+          "date": "2024-04-30",
+          "occurrences": 624,
+          "potential_overpayment": 1726956.0
+        },
+        {
+          "supplier": "LINCOLNSHIRE PARTNERSHIP NHS FOUNDATION TRUST",
+          "amount": 1666882.83,
+          "date": "2024-09-30",
+          "occurrences": 2,
+          "potential_overpayment": 1666882.83
+        },
+        {
+          "supplier": "LINCOLNSHIRE PARTNERSHIP NHS FOUNDATION TRUST",
+          "amount": 1547887.5,
+          "date": "2023-06-30",
+          "occurrences": 2,
+          "potential_overpayment": 1547887.5
+        },
+        {
+          "supplier": "LINCOLNSHIRE PARTNERSHIP NHS FOUNDATION TRUST",
+          "amount": 1547887.5,
+          "date": "2024-01-31",
+          "occurrences": 2,
+          "potential_overpayment": 1547887.5
+        },
+        {
+          "supplier": "202412",
+          "amount": 2136.0,
+          "date": "2024-03-31",
+          "occurrences": 659,
+          "potential_overpayment": 1405488.0
+        },
+        {
+          "supplier": "QUEEN ELIZABETH'S HIGH SCHOOL",
+          "amount": 698491.9,
+          "date": "2023-05-31",
+          "occurrences": 3,
+          "potential_overpayment": 1396983.8
+        },
+        {
+          "supplier": "FCC ENVIRONMENT (LINCOLNSHIRE) LTD",
+          "amount": 648862.5,
+          "date": "2023-07-31",
+          "occurrences": 3,
+          "potential_overpayment": 1297725.0
+        },
+        {
+          "supplier": "AEBI SCHMIDT UK LTD",
+          "amount": 143481.0,
+          "date": "2023-10-31",
+          "occurrences": 10,
+          "potential_overpayment": 1291329.0
+        },
+        {
+          "supplier": "202412",
+          "amount": 1938.0,
+          "date": "2024-03-31",
+          "occurrences": 599,
+          "potential_overpayment": 1158924.0
+        },
+        {
+          "supplier": "202502",
+          "amount": 3060.0,
+          "date": "2024-05-31",
+          "occurrences": 332,
+          "potential_overpayment": 1012860.0
+        },
+        {
+          "supplier": "REDACTED - SPECIFIC ACCOUNT",
+          "amount": 16666.66,
+          "date": "2023-01-31",
+          "occurrences": 49,
+          "potential_overpayment": 799999.68
+        },
+        {
+          "supplier": "REDACTED - SPECIFIC ACCOUNT",
+          "amount": 26847.2,
+          "date": "2026-01-11",
+          "occurrences": 29,
+          "potential_overpayment": 751721.6
+        },
+        {
+          "supplier": "202501",
+          "amount": 3060.0,
+          "date": "2024-04-30",
+          "occurrences": 234,
+          "potential_overpayment": 712980.0
+        },
+        {
+          "supplier": "STAGECOACH SERVICES LTD",
+          "amount": 340000.0,
+          "date": "2023-08-31",
+          "occurrences": 3,
+          "potential_overpayment": 680000.0
+        },
+        {
+          "supplier": "LINCS COMMUNITY HEALTH SERVICES NHST",
+          "amount": 339628.0,
+          "date": "2025-06-25",
+          "occurrences": 3,
+          "potential_overpayment": 679256.0
+        },
+        {
+          "supplier": "FCC ENVIRONMENT (LINCOLNSHIRE) LTD",
+          "amount": 669741.91,
+          "date": "2024-07-31",
+          "occurrences": 2,
+          "potential_overpayment": 669741.91
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 2356,
+      "total_value": 47974000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 1254
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Commissioning Manager AF & LTC",
+      "spend": 363283530.33,
+      "count": 115734
+    },
+    {
+      "department": "Learning Disabilities",
+      "spend": 244738898.77,
+      "count": 52696
+    },
+    {
+      "department": "Head of Highways Services",
+      "spend": 179210945.31,
+      "count": 982
+    },
+    {
+      "department": "High Needs Block - Central (DSB)",
+      "spend": 130517892.59,
+      "count": 14199
+    },
+    {
+      "department": "Schools Block - Delegated (DSB)",
+      "spend": 110761149.48,
+      "count": 41506
+    },
+    {
+      "department": "Home to School/College Transport",
+      "spend": 106611377.95,
+      "count": 79205
+    },
+    {
+      "department": "Early Years Block - Central (DSB)",
+      "spend": 97553321.11,
+      "count": 32139
+    },
+    {
+      "department": "Private Contractors",
+      "spend": 87575282.58,
+      "count": 19190
+    },
+    {
+      "department": "Mental Health",
+      "spend": 60371233.46,
+      "count": 14267
+    },
+    {
+      "department": "Public Health Contracts, Programmes and Projects",
+      "spend": 53121581.54,
+      "count": 1573
+    },
+    {
+      "department": "Head of Waste",
+      "spend": 51104996.2,
+      "count": 27104
+    },
+    {
+      "department": "Residential Homes & Placements",
+      "spend": 47976808.77,
+      "count": 2904
+    },
+    {
+      "department": "Property",
+      "spend": 46405114.14,
+      "count": 1853
+    },
+    {
+      "department": "0 - 19 Health Services",
+      "spend": 41232544.4,
+      "count": 237
+    },
+    {
+      "department": "Specialist Proj & Hosp Services",
+      "spend": 36997260.35,
+      "count": 2728
+    },
+    {
+      "department": "High Needs Block - Delegated (DSB)",
+      "spend": 36374562.51,
+      "count": 2532
+    },
+    {
+      "department": "Adult Frailty & Long Term Conditions",
+      "spend": 35978074.78,
+      "count": 23121
+    },
+    {
+      "department": "Capital - Highways Asset Protection",
+      "spend": 29894266.99,
+      "count": 270
+    },
+    {
+      "department": "Group Manager - Transport",
+      "spend": 28856501.51,
+      "count": 4030
+    },
+    {
+      "department": "Capital - Grantham Southern Relief Road",
+      "spend": 27707099.54,
+      "count": 188
+    },
+    {
+      "department": "Capital - SEND Provision Capital funding for Pupils with EHC Plans",
+      "spend": 27077953.86,
+      "count": 136
+    },
+    {
+      "department": "Capital - Spalding Relief Road",
+      "spend": 26607654.15,
+      "count": 107
+    },
+    {
+      "department": "Information & Technology",
+      "spend": 25491965.09,
+      "count": 1291
+    },
+    {
+      "department": "Commissioning Performance & Assurance",
+      "spend": 25196847.45,
+      "count": 36
+    },
+    {
+      "department": "Education Support Services",
+      "spend": 23604142.36,
+      "count": 2345
+    },
+    {
+      "department": "Capital",
+      "spend": 22466946.14,
+      "count": 386
+    },
+    {
+      "department": "Fostering and Adoption",
+      "spend": 16672759.69,
+      "count": 9104
+    },
+    {
+      "department": "Capital - North Hykeham Relief Road",
+      "spend": 16154755.86,
+      "count": 185
+    },
+    {
+      "department": "Contract Hire and Operating Leases",
+      "spend": 13705867.71,
+      "count": 11106
+    },
+    {
+      "department": "Head of Culture",
+      "spend": 13605066.49,
+      "count": 3390
+    },
+    {
+      "department": "Social Services",
+      "spend": 12464276.65,
+      "count": 4470
+    },
+    {
+      "department": "Ignore for Reporting Purposes",
+      "spend": 12284770.78,
+      "count": 315
+    },
+    {
+      "department": "Grants and Subscriptions",
+      "spend": 12168029.63,
+      "count": 1724
+    },
+    {
+      "department": "Capital - A16 Levelling Up Fund (LUF)",
+      "spend": 12099835.52,
+      "count": 85
+    },
+    {
+      "department": "Miscellaneous and Initiative Expenses",
+      "spend": 12052207.78,
+      "count": 858
+    },
+    {
+      "department": "Head of Client and Contractural Management Services",
+      "spend": 11949373.58,
+      "count": 131
+    },
+    {
+      "department": "Voluntary Associations",
+      "spend": 11565275.84,
+      "count": 3448
+    },
+    {
+      "department": "Economic Development",
+      "spend": 11060007.19,
+      "count": 1763
+    },
+    {
+      "department": "Family Assessment and Support Teams",
+      "spend": 10334470.36,
+      "count": 8121
+    },
+    {
+      "department": "Group Manager - Design Services",
+      "spend": 9487629.77,
+      "count": 695
+    },
+    {
+      "department": "Services",
+      "spend": 9328155.21,
+      "count": 2173
+    },
+    {
+      "department": "Leaving Care & Supported Accommodation",
+      "spend": 8981238.4,
+      "count": 1561
+    },
+    {
+      "department": "DSB Central School Services Block - Central (DSB Funded)",
+      "spend": 8047119.43,
+      "count": 118
+    },
+    {
+      "department": "GL LEP",
+      "spend": 7635636.95,
+      "count": 526
+    },
+    {
+      "department": "HA's",
+      "spend": 7178659.71,
+      "count": 125
+    },
+    {
+      "department": "Capital - Provision of School Places",
+      "spend": 6990281.61,
+      "count": 118
+    },
+    {
+      "department": "Capital - School Modernisation/Condition",
+      "spend": 6442629.21,
+      "count": 331
+    },
+    {
+      "department": "Other Grant Funding (Other)",
+      "spend": 6026557.73,
+      "count": 1319
+    },
+    {
+      "department": "Early Help Services",
+      "spend": 5975284.61,
+      "count": 1255
+    },
+    {
+      "department": "Legal Lincolnshire",
+      "spend": 5817790.97,
+      "count": 3197
+    },
+    {
+      "department": "Safer Communities",
+      "spend": 5771946.37,
+      "count": 613
+    },
+    {
+      "department": "Safeguarding",
+      "spend": 5771366.27,
+      "count": 619
+    },
+    {
+      "department": "Special Educational Needs and Disabilities",
+      "spend": 5716214.96,
+      "count": 2782
+    },
+    {
+      "department": "Rates",
+      "spend": 5646121.32,
+      "count": 304
+    },
+    {
+      "department": "",
+      "spend": 5598538.53,
+      "count": 74
+    },
+    {
+      "department": "Other Budgets - Expenditure",
+      "spend": 5511011.35,
+      "count": 91
+    },
+    {
+      "department": "Other Budgets - Insurance",
+      "spend": 4953593.42,
+      "count": 770
+    },
+    {
+      "department": "Head of Environment",
+      "spend": 4823035.32,
+      "count": 843
+    },
+    {
+      "department": "Capital - Infrastructure and Refresh Programme",
+      "spend": 4800447.49,
+      "count": 324
+    },
+    {
+      "department": "Public Health Contracts  Programmes and Projects",
+      "spend": 4785426.09,
+      "count": 79
+    },
+    {
+      "department": "Highways Asset Manager",
+      "spend": 4677094.75,
+      "count": 1476
+    },
+    {
+      "department": "Other Agencies",
+      "spend": 4028897.63,
+      "count": 265
+    },
+    {
+      "department": "Holding",
+      "spend": 3881239.21,
+      "count": 2837
+    },
+    {
+      "department": "Other Budgets - Ignore - Dave Simpson",
+      "spend": 3857882.78,
+      "count": 11
+    },
+    {
+      "department": "Business Systems",
+      "spend": 3660050.07,
+      "count": 108
+    },
+    {
+      "department": "Capital - Network Resilience",
+      "spend": 3633146.67,
+      "count": 25
+    },
+    {
+      "department": "Adult Care Directors Costs",
+      "spend": 3547703.21,
+      "count": 221
+    },
+    {
+      "department": "Universal Infant Free School Meals (Other)",
+      "spend": 3521502.88,
+      "count": 4727
+    },
+    {
+      "department": "Capital - Property Maintenance",
+      "spend": 3324809.29,
+      "count": 203
+    },
+    {
+      "department": "Capital - Fire Fleet Vehicles and Associated Equipment",
+      "spend": 3231695.89,
+      "count": 381
+    },
+    {
+      "department": "Pupil Premium (Other)",
+      "spend": 3197288.95,
+      "count": 4042
+    },
+    {
+      "department": "PE & Sports Grant",
+      "spend": 3143389.15,
+      "count": 2406
+    },
+    {
+      "department": "Communications and Computing",
+      "spend": 3059215.18,
+      "count": 821
+    },
+    {
+      "department": "Business Support",
+      "spend": 2971177.08,
+      "count": 1323
+    },
+    {
+      "department": "Orchard House B",
+      "spend": 2789432.01,
+      "count": 32
+    },
+    {
+      "department": "Coroners, Celebratory & Registration",
+      "spend": 2724072.01,
+      "count": 810
+    },
+    {
+      "department": "Head of Highways Design",
+      "spend": 2682544.05,
+      "count": 148
+    },
+    {
+      "department": "Energy Costs",
+      "spend": 2379625.33,
+      "count": 102
+    },
+    {
+      "department": "Corporate Support",
+      "spend": 2124388.43,
+      "count": 1117
+    },
+    {
+      "department": "Capital - Local Flood Defence Schemes",
+      "spend": 1948123.98,
+      "count": 223
+    },
+    {
+      "department": "Capital - Children's Services - Children's Homes",
+      "spend": 1915225.37,
+      "count": 34
+    },
+    {
+      "department": "Organisational Support",
+      "spend": 1905629.55,
+      "count": 1016
+    },
+    {
+      "department": "Human Resources & Organisational Support",
+      "spend": 1890252.0,
+      "count": 172
+    },
+    {
+      "department": "Capital - Devolved Capital",
+      "spend": 1845986.1,
+      "count": 529
+    },
+    {
+      "department": "Economic Infrastructure",
+      "spend": 1789589.34,
+      "count": 786
+    },
+    {
+      "department": "Capital - Other Highways",
+      "spend": 1740272.24,
+      "count": 25
+    },
+    {
+      "department": "Apprenticeship Levy",
+      "spend": 1637306.0,
+      "count": 15
+    },
+    {
+      "department": "Capital - C543 Old Roman Bank Coast Road",
+      "spend": 1612274.6,
+      "count": 8
+    },
+    {
+      "department": "Better Care Fund - Adult Frailty",
+      "spend": 1594452.17,
+      "count": 18
+    },
+    {
+      "department": "Capital - Fire & Rescue and Emergency Planning",
+      "spend": 1504284.38,
+      "count": 53
+    },
+    {
+      "department": "Strategic Communications",
+      "spend": 1497324.0,
+      "count": 146
+    },
+    {
+      "department": "Financial Services",
+      "spend": 1492113.93,
+      "count": 246
+    },
+    {
+      "department": "Capital - Flood & Water Risk Management",
+      "spend": 1429684.83,
+      "count": 55
+    },
+    {
+      "department": "Capital - Other Transportation",
+      "spend": 1419095.23,
+      "count": 21
+    },
+    {
+      "department": "Capital - Waste - Separated Paper and Card Scheme",
+      "spend": 1376369.12,
+      "count": 57
+    },
+    {
+      "department": "Capital - Property",
+      "spend": 1309102.56,
+      "count": 128
+    },
+    {
+      "department": "Assistant Director Growth",
+      "spend": 1245377.76,
+      "count": 53
+    },
+    {
+      "department": "Capital - Lincoln Eastern Bypass",
+      "spend": 1244876.7,
+      "count": 73
+    },
+    {
+      "department": "Capital - Property Rationalisation Programme",
+      "spend": 1203426.81,
+      "count": 10
+    },
+    {
+      "department": "Response",
+      "spend": 1106427.24,
+      "count": 43
+    },
+    {
+      "department": "County Farms",
+      "spend": 1082219.63,
+      "count": 96
+    },
+    {
+      "department": "Capital - Other Highways and Transportation",
+      "spend": 1064385.98,
+      "count": 161
+    },
+    {
+      "department": "Capital - Waste - (was other Protecting & Sustaining the Environment)",
+      "spend": 1061373.69,
+      "count": 19
+    },
+    {
+      "department": "Schools Block - Other (DSB)",
+      "spend": 1024330.44,
+      "count": 28
+    },
+    {
+      "department": "Prevention and Protection",
+      "spend": 993181.97,
+      "count": 168
+    },
+    {
+      "department": "Capital - Welton - Extra Care Housing",
+      "spend": 960000.0,
+      "count": 1
+    },
+    {
+      "department": "Better Care Fund",
+      "spend": 907341.92,
+      "count": 4
+    },
+    {
+      "department": "Migration Service",
+      "spend": 864768.6,
+      "count": 548
+    },
+    {
+      "department": "Capital - Drainage Investigation and Flood Repairs",
+      "spend": 841311.49,
+      "count": 20
+    },
+    {
+      "department": "Targeted Support for Young People",
+      "spend": 802338.6,
+      "count": 271
+    },
+    {
+      "department": "Schools Block - Central (DSB)",
+      "spend": 768743.91,
+      "count": 30
+    },
+    {
+      "department": "Tools, Equipment, Furniture & Materials",
+      "spend": 766175.64,
+      "count": 1733
+    },
+    {
+      "department": "Capital - Economic Development - Horncastle Industrial Estate Extension",
+      "spend": 747999.9,
+      "count": 15
+    },
+    {
+      "department": "Perf Quality & Workforce Dev",
+      "spend": 720641.49,
+      "count": 34
+    },
+    {
+      "department": "Repair & Maintenance of Buildings",
+      "spend": 715930.22,
+      "count": 298
+    },
+    {
+      "department": "Planning",
+      "spend": 694166.6,
+      "count": 186
+    },
+    {
+      "department": "Head of Asset and Local Management Services",
+      "spend": 677323.44,
+      "count": 277
+    },
+    {
+      "department": "Statutory/Regulatory Duties",
+      "spend": 661758.49,
+      "count": 118
+    },
+    {
+      "department": "Firefighters Pension Fund Income and Expenditure",
+      "spend": 641339.87,
+      "count": 12
+    },
+    {
+      "department": "Transformation, Systems and Performance",
+      "spend": 625072.61,
+      "count": 58
+    },
+    {
+      "department": "Transformation Services",
+      "spend": 600678.2,
+      "count": 74
+    },
+    {
+      "department": "Infrastructure Investment",
+      "spend": 594547.2,
+      "count": 112
+    },
+    {
+      "department": "Capital - Adult Care",
+      "spend": 568847.39,
+      "count": 27
+    },
+    {
+      "department": "Capital - Waste - Fire Suppression at Waste Transfer Stations",
+      "spend": 563531.72,
+      "count": 16
+    },
+    {
+      "department": "Rents",
+      "spend": 554915.22,
+      "count": 128
+    },
+    {
+      "department": "Quality and Information",
+      "spend": 551326.91,
+      "count": 58
+    },
+    {
+      "department": "Catering",
+      "spend": 550555.89,
+      "count": 799
+    },
+    {
+      "department": "Capital - A631 Louth to Middle Rasen Safer Road Fund",
+      "spend": 539964.03,
+      "count": 4
+    },
+    {
+      "department": "Capital - Heritage/archives",
+      "spend": 538840.65,
+      "count": 62
+    },
+    {
+      "department": "Capital - Other Education and SEND Services",
+      "spend": 485929.24,
+      "count": 112
+    },
+    {
+      "department": "Capital - Integrated Transport",
+      "spend": 478794.34,
+      "count": 26
+    },
+    {
+      "department": "Early Years Block - Delegated (DSB)",
+      "spend": 472217.78,
+      "count": 1026
+    },
+    {
+      "department": "Carers",
+      "spend": 429971.04,
+      "count": 512
+    },
+    {
+      "department": "Capital - Grange Farm Market Rasen",
+      "spend": 400000.0,
+      "count": 1
+    },
+    {
+      "department": "Contrib to Transport Provision",
+      "spend": 390879.81,
+      "count": 158
+    },
+    {
+      "department": "Capital - A52 Skegness Roman Bank Reconstruction",
+      "spend": 342039.91,
+      "count": 4
+    },
+    {
+      "department": "Development Management",
+      "spend": 333625.01,
+      "count": 54
+    },
+    {
+      "department": "School Improvement",
+      "spend": 324923.13,
+      "count": 134
+    },
+    {
+      "department": "Head of Highways Infrastructure",
+      "spend": 308456.91,
+      "count": 24
+    },
+    {
+      "department": "Cleaning & Domestic Supplies",
+      "spend": 299876.3,
+      "count": 665
+    },
+    {
+      "department": "Brigade Manager General",
+      "spend": 298275.78,
+      "count": 64
+    },
+    {
+      "department": "Grounds Maintenance",
+      "spend": 297731.9,
+      "count": 124
+    },
+    {
+      "department": "Head of Communities",
+      "spend": 292995.06,
+      "count": 9
+    },
+    {
+      "department": "Youth Offending",
+      "spend": 283014.42,
+      "count": 149
+    },
+    {
+      "department": "Other LA's",
+      "spend": 280330.34,
+      "count": 15
+    },
+    {
+      "department": "Capital - A631 Middle Rasen to Bishops Bridge Safer Roads Fund",
+      "spend": 271460.46,
+      "count": 3
+    },
+    {
+      "department": "Corporate Audit & Risk Management",
+      "spend": 264465.5,
+      "count": 42
+    },
+    {
+      "department": "Capital - Children?s Services - Children?s Homes",
+      "spend": 262689.34,
+      "count": 6
+    },
+    {
+      "department": "Capital - Safeguarding",
+      "spend": 262513.1,
+      "count": 10
+    },
+    {
+      "department": "Capital - Improvement Transformation",
+      "spend": 255299.15,
+      "count": 21
+    },
+    {
+      "department": "Capital - Children\u00b4s Services - Children\u00b4s Homes",
+      "spend": 251133.05,
+      "count": 8
+    },
+    {
+      "department": "Castle Walls",
+      "spend": 246899.86,
+      "count": 6
+    },
+    {
+      "department": "Strategic Commissioning",
+      "spend": 238587.02,
+      "count": 62
+    },
+    {
+      "department": "Emergency Planning",
+      "spend": 235854.78,
+      "count": 71
+    },
+    {
+      "department": "Performance",
+      "spend": 223572.77,
+      "count": 56
+    },
+    {
+      "department": "Head of Highways infrastructure and Laboratory Services",
+      "spend": 217792.3,
+      "count": 68
+    },
+    {
+      "department": "Chief Executive",
+      "spend": 214956.24,
+      "count": 34
+    },
+    {
+      "department": "Customer Service Centre",
+      "spend": 213166.57,
+      "count": 16
+    },
+    {
+      "department": "Professional Development",
+      "spend": 199877.58,
+      "count": 199
+    },
+    {
+      "department": "Printing, Stationery & General Office Expenses",
+      "spend": 188410.89,
+      "count": 282
+    },
+    {
+      "department": "Public Health Central Office Costs",
+      "spend": 177307.17,
+      "count": 81
+    },
+    {
+      "department": "Democratic Services",
+      "spend": 173453.21,
+      "count": 83
+    },
+    {
+      "department": "Direct Transport Costs",
+      "spend": 172800.11,
+      "count": 111
+    },
+    {
+      "department": "Capital - Equipment & Vehicles at Waste Transfer Stations",
+      "spend": 168218.0,
+      "count": 7
+    },
+    {
+      "department": "Capital - Property Improvement Programme",
+      "spend": 167409.0,
+      "count": 5
+    },
+    {
+      "department": "Capital - Countryside Rights of Way",
+      "spend": 166253.95,
+      "count": 50
+    },
+    {
+      "department": "Coroners  Celebratory & Registration",
+      "spend": 164225.97,
+      "count": 53
+    },
+    {
+      "department": "Car Allowances",
+      "spend": 144162.33,
+      "count": 31
+    },
+    {
+      "department": "Emergency Planning (Fire & Rescue)",
+      "spend": 129458.54,
+      "count": 24
+    },
+    {
+      "department": "Contrib to Premises Provisions",
+      "spend": 128317.33,
+      "count": 105
+    },
+    {
+      "department": "Severance Payments",
+      "spend": 127638.0,
+      "count": 6
+    },
+    {
+      "department": "Water Services",
+      "spend": 127384.22,
+      "count": 74
+    },
+    {
+      "department": "Capital - Leverton Fire Station",
+      "spend": 111364.62,
+      "count": 5
+    },
+    {
+      "department": "Capital - Other Environment & Planning (was other Protecting & Sustaining the Environment)",
+      "spend": 96201.79,
+      "count": 7
+    },
+    {
+      "department": "Head of Public Health Staffing",
+      "spend": 87031.43,
+      "count": 13
+    },
+    {
+      "department": "Capital - Early Help Services",
+      "spend": 84927.48,
+      "count": 12
+    },
+    {
+      "department": "Capital - Replacement ERP Finance System",
+      "spend": 81203.37,
+      "count": 21
+    },
+    {
+      "department": "Capital - Usher Gallery Works",
+      "spend": 73211.1,
+      "count": 4
+    },
+    {
+      "department": "Capital - Holdingham Roundabout",
+      "spend": 70314.38,
+      "count": 1
+    },
+    {
+      "department": "Clothing, Uniforms & Laundry",
+      "spend": 66467.43,
+      "count": 155
+    },
+    {
+      "department": "Schools",
+      "spend": 66271.93,
+      "count": 39
+    },
+    {
+      "department": "Information Analysis and Mosaic",
+      "spend": 66174.94,
+      "count": 21
+    },
+    {
+      "department": "Capital - A46 Welton Roundabouts (Integrated Transport/NPIF)",
+      "spend": 64253.03,
+      "count": 1
+    },
+    {
+      "department": "Executive Director Place",
+      "spend": 52976.66,
+      "count": 10
+    },
+    {
+      "department": "Capital - A46 Roundabouts",
+      "spend": 50174.6,
+      "count": 12
+    },
+    {
+      "department": "Capital - Boston Development Schemes",
+      "spend": 47721.68,
+      "count": 2
+    },
+    {
+      "department": "Capital - Economic Development- Business Unit Development",
+      "spend": 45696.56,
+      "count": 16
+    },
+    {
+      "department": "Capital - Libraries",
+      "spend": 43997.96,
+      "count": 4
+    },
+    {
+      "department": "Capital - Head of Economic Infrastructure",
+      "spend": 41601.44,
+      "count": 6
+    },
+    {
+      "department": "Health Protection and Emergency Planning",
+      "spend": 37583.24,
+      "count": 23
+    },
+    {
+      "department": "Fire Staffing",
+      "spend": 36419.37,
+      "count": 7
+    },
+    {
+      "department": "Assistant Director Highways",
+      "spend": 34395.78,
+      "count": 16
+    },
+    {
+      "department": "Capital - South Lincolnshire Food Enterprise Zone",
+      "spend": 33983.66,
+      "count": 3
+    },
+    {
+      "department": "Capital - A1084 Safer Road Fund",
+      "spend": 29598.67,
+      "count": 1
+    },
+    {
+      "department": "Capital - Integrated Transport (Communities)",
+      "spend": 23857.3,
+      "count": 3
+    },
+    {
+      "department": "Devolution",
+      "spend": 19334.26,
+      "count": 3
+    },
+    {
+      "department": "Contrib to Employee Provisions",
+      "spend": 18681.26,
+      "count": 2
+    },
+    {
+      "department": "Lincolnshire Archives",
+      "spend": 18000.79,
+      "count": 6
+    },
+    {
+      "department": "Information Assurance",
+      "spend": 17613.0,
+      "count": 14
+    },
+    {
+      "department": "IT Security Capital",
+      "spend": 16068.56,
+      "count": 6
+    },
+    {
+      "department": "Boston Dolphin Lane",
+      "spend": 15248.0,
+      "count": 7
+    },
+    {
+      "department": "Health and Safety",
+      "spend": 13732.48,
+      "count": 3
+    },
+    {
+      "department": "Director of Public Health & PH Management Team Staffing",
+      "spend": 11703.0,
+      "count": 5
+    },
+    {
+      "department": "16-19 Bursary Fund",
+      "spend": 10197.85,
+      "count": 16
+    },
+    {
+      "department": "Joint Authorities",
+      "spend": 6660.59,
+      "count": 2
+    },
+    {
+      "department": "Premises Insurances",
+      "spend": 6096.98,
+      "count": 2
+    },
+    {
+      "department": "Expenses",
+      "spend": 6077.76,
+      "count": 6
+    },
+    {
+      "department": "Customer and client receipts - Fees & Charges",
+      "spend": 4765.42,
+      "count": 5
+    },
+    {
+      "department": "Recharges to Vehicles Hired from Central Pool",
+      "spend": 4764.65,
+      "count": 40
+    },
+    {
+      "department": "A16/A1073 Spalding to Eye Road Improvement",
+      "spend": 3318.0,
+      "count": 1
+    },
+    {
+      "department": "Capital - HWRC Tattershall",
+      "spend": 2755.0,
+      "count": 1
+    },
+    {
+      "department": "Head of Corp Services",
+      "spend": 1995.0,
+      "count": 1
+    },
+    {
+      "department": "Fixtures and Fittings",
+      "spend": 1490.77,
+      "count": 3
+    },
+    {
+      "department": "Public Transport",
+      "spend": 1191.79,
+      "count": 18
+    },
+    {
+      "department": "General Public Health - Non Target Codes",
+      "spend": 1166.67,
+      "count": 1
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2019/20": 1536.0,
+      "2020/21": 19000.0,
+      "2022/23": 252040932.94,
+      "2023/24": 984368991.99,
+      "2024/25": 645012439.21,
+      "2025/26": 516025404.35,
+      "2026/27": 119646.51
+    },
+    "transactions_by_year": {
+      "2019/20": 2,
+      "2020/21": 1,
+      "2022/23": 57210,
+      "2023/24": 227524,
+      "2024/25": 142767,
+      "2025/26": 111108,
+      "2026/27": 2
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 538614
+  }
+}

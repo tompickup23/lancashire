@@ -1,0 +1,106 @@
+{
+  "council_id": "essex_cc",
+  "council_name": "Essex",
+  "council_full_name": "Essex County Council",
+  "council_type": "county",
+  "council_tier": "county",
+  "ons_code": "E10000012",
+  "official_website": "https://www.essex.gov.uk",
+  "moderngov_url": "https://cmis.essex.gov.uk",
+  "spending_threshold": 500,
+  "data_sources": {
+    "spending": true,
+    "budgets": true,
+    "budgets_govuk": true,
+    "budget_trends": true,
+    "news": false,
+    "doge_investigation": true,
+    "borough_savings": false,
+    "lgr_tracker": false,
+    "procurement": true,
+    "politics": true,
+    "integrity": false,
+    "housing": true,
+    "health": true,
+    "economy": true,
+    "ward_boundaries": false,
+    "spending_db": true,
+    "council_directives": false,
+    "property_assets": true,
+    "cross_council": true
+  },
+  "spending_data_period": "April 2019 – March 2026",
+  "hero_subtitle": "Explore how Essex County Council manages public money.",
+  "disclaimer_entity": "Essex County Council",
+  "publisher": "Tom Pickup",
+  "publisher_bio": "This website was created by Tom Pickup, Reform UK county councillor for Padiham and Burnley West and Cabinet Member for Adult Social Care at Lancashire County Council. He is also parish councillor for Clowbridge with Dunnockshaw. Tom builds transparency tools that make public spending data easier to check.",
+  "publisher_titles": [
+    "County Councillor for Padiham and Burnley West",
+    "Cabinet Member for Adult Social Care, Lancashire County Council",
+    "Parish Councillor for Clowbridge with Dunnockshaw"
+  ],
+  "publisher_photo": "/images/tom-pickup.jpg",
+  "publisher_quote": "It's your money. The more people understand where it goes, the better.",
+  "publisher_social": [
+    {
+      "platform": "x",
+      "url": "https://x.com/tompickup",
+      "label": "@tompickup"
+    }
+  ],
+  "theme_accent": "#0a84ff",
+  "doge_context": {
+    "political_control": "Reform UK majority — 53/75 seats (+15 over majority threshold) at the 7 May 2026 election. Previous: Conservative.",
+    "total_spend": "£13.03B (procurement_paid)",
+    "total_spend_gross": "£15.92B",
+    "total_spend_procurement": "£13.03B",
+    "transactions": 3478460,
+    "suppliers": 46410,
+    "data_period": "April 2019 – March 2026 (7 financial years)",
+    "spend_triangulation": {
+      "transparency_gross": "£15.92B",
+      "procurement_only": "£13.03B",
+      "non_procurement": "£2.89B",
+      "note": "Quarterly XLSX feed Apr 2019 – Mar 2026 (28 quarters), invoice-only. After audit: £830M direct-payment-to-individual (foster care, ASC Care Act direct payments, employee expenses, training bursaries — Essex publishes these as category-as-supplier strings rather than REDACTED), £1.21B statutory pass-through (12 Essex districts + Southend + NHS trusts: BCF / DFG / concessionary travel), £843M internal transfer (Essex Pension Fund LGPS + Essex Cares Ltd subsidiary + PFCC Fire & Rescue precept). Procurement footprint £13.03B."
+    },
+    "record_classification": {
+      "procurement_paid": {
+        "count": 2139793,
+        "sum": "£13.03B",
+        "note": "Discretionary third-party supplier payments — real procurement footprint."
+      },
+      "statutory_pass_through": {
+        "count": 19299,
+        "sum": "£1.21B",
+        "note": "12 Essex districts + Southend + NHS trusts: DFG (HGCR Act 1996 s.23), concessionary travel (Transport Act 2000 s.149), BCF s.75 transfers (NHS Act 2006 s.75)."
+      },
+      "internal_transfer": {
+        "count": 4878,
+        "sum": "£843M",
+        "note": "ECC group entities: Pension Fund LGPS, Essex Cares Ltd (wholly-owned ASC subsidiary), PFCC Fire & Rescue precept."
+      },
+      "direct_payment_individual": {
+        "count": 1314484,
+        "sum": "£830M",
+        "note": "FOSTER CARE PAYMENT, DIRECT PAYMENT, ECC EMPLOYEE, PAYMENT TO INDIVIDUAL, NON EMPLOYEE EXPENSE, TRAINING BURSARY — category-as-supplier convention used by Essex instead of REDACTED."
+      },
+      "settlement_noise": {
+        "count": 6,
+        "sum": "£11K",
+        "note": "Trace settlement-system rows."
+      }
+    },
+    "political_control_updated_at": "2026-05-10"
+  },
+  "reform_run": true,
+  "political_control": {
+    "reform_run": true,
+    "tenure_tier": "may_2026_new",
+    "tier_a": true,
+    "tier_b": false,
+    "is_council_intel_focus": true,
+    "tenure_note": null,
+    "as_of": "2026-05-16",
+    "source": "council-intel/platform-bundle.json"
+  }
+}

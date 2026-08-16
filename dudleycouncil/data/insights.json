@@ -1,0 +1,544 @@
+{
+  "summary": {
+    "total_spend": 1045462459.34,
+    "transaction_count": 136547,
+    "unique_suppliers": 4933,
+    "avg_transaction": 7656.43,
+    "median_transaction": 1249.72,
+    "date_range": {
+      "min": "2023-04-03",
+      "max": "2025-07-29"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "REDACTED PERSONAL DATA",
+        "total": 71710475.62,
+        "transactions": 49271,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WEST MIDLANDS POLICE",
+        "total": 41824024.77,
+        "transactions": 41,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DUDLEY & KENT COMMERCIAL SERVICES LTD",
+        "total": 31198228.08,
+        "transactions": 14,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WEST MIDLANDS COMBINED AUTHORITY",
+        "total": 29556106.95,
+        "transactions": 39,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COMPLESSO LTD",
+        "total": 17298602.93,
+        "transactions": 1291,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WEST MIDLANDS FIRE SERVICE",
+        "total": 16511069.0,
+        "transactions": 68,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ENGIE REGENERATION (FHM) LTD",
+        "total": 16438556.93,
+        "transactions": 97,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ACORN CARE & EDUCATION LTD",
+        "total": 13196485.94,
+        "transactions": 920,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "OLDSWINFORD HOSPITAL EDUCATION ACCOUNT",
+        "total": 12670878.06,
+        "transactions": 104,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "URBASER ENVIRONMENTAL LTD",
+        "total": 11801678.48,
+        "transactions": 97,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NEWMOUNT LTD",
+        "total": 11628107.48,
+        "transactions": 69,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INSHORE SUPPORT LTD",
+        "total": 10591861.14,
+        "transactions": 461,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "JOHN A BATES (CONTRACTORS) LTD",
+        "total": 10431838.62,
+        "transactions": 359,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ABSOLUTE HEALTHCARE WEST LTD T/A THE VILLAGE NURSING HOME",
+        "total": 8645122.93,
+        "transactions": 152,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EQUANS REGENERATION LTD",
+        "total": 8370179.04,
+        "transactions": 74,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INTERCLASS PLC",
+        "total": 8094391.71,
+        "transactions": 12,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CHANGE GROW LIVE SERVICES LTD",
+        "total": 8056452.3,
+        "transactions": 37,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "GREENWICH LEISURE LTD",
+        "total": 7814602.78,
+        "transactions": 33,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "E PLAN ENERGY LTD",
+        "total": 7510616.29,
+        "transactions": 27,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SHROPSHIRE COMMUNITY HEALTH NHST",
+        "total": 7387915.0,
+        "transactions": 12,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.3355,
+    "total_unique_suppliers": 4933,
+    "single_transaction_suppliers": 1811
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 8914,
+      "potential_value": 44198699.42,
+      "items": [
+        {
+          "supplier": "FCC RECYCLING (UK) LTD",
+          "amount": 210440.26,
+          "date": "2025-04-17",
+          "occurrences": 3,
+          "potential_overpayment": 420880.52
+        },
+        {
+          "supplier": "GREENWICH LEISURE LTD",
+          "amount": 328321.81,
+          "date": "2024-05-30",
+          "occurrences": 2,
+          "potential_overpayment": 328321.81
+        },
+        {
+          "supplier": "GREENWICH LEISURE LTD",
+          "amount": 315694.05,
+          "date": "2023-06-29",
+          "occurrences": 2,
+          "potential_overpayment": 315694.05
+        },
+        {
+          "supplier": "GREENWICH LEISURE LTD",
+          "amount": 315694.05,
+          "date": "2024-04-30",
+          "occurrences": 2,
+          "potential_overpayment": 315694.05
+        },
+        {
+          "supplier": "PRIORY PARK COMMUNITY SCHOOL CIC",
+          "amount": 16900.0,
+          "date": "2025-04-16",
+          "occurrences": 14,
+          "potential_overpayment": 219700.0
+        },
+        {
+          "supplier": "FCC RECYCLING (UK) LTD",
+          "amount": 210440.26,
+          "date": "2025-03-18",
+          "occurrences": 2,
+          "potential_overpayment": 210440.26
+        },
+        {
+          "supplier": "PRIORY PARK COMMUNITY SCHOOL CIC",
+          "amount": 13000.0,
+          "date": "2023-12-19",
+          "occurrences": 14,
+          "potential_overpayment": 169000.0
+        },
+        {
+          "supplier": "PRIORY PARK COMMUNITY SCHOOL CIC",
+          "amount": 13000.0,
+          "date": "2023-09-13",
+          "occurrences": 13,
+          "potential_overpayment": 156000.0
+        },
+        {
+          "supplier": "PRIORY PARK COMMUNITY SCHOOL CIC",
+          "amount": 13000.0,
+          "date": "2024-04-05",
+          "occurrences": 13,
+          "potential_overpayment": 156000.0
+        },
+        {
+          "supplier": "SUNFIELD CHILDRENS HOMES LTD",
+          "amount": 37235.1,
+          "date": "2023-04-21",
+          "occurrences": 5,
+          "potential_overpayment": 148940.4
+        },
+        {
+          "supplier": "SUNFIELD CHILDRENS HOMES LTD",
+          "amount": 37235.1,
+          "date": "2023-12-11",
+          "occurrences": 5,
+          "potential_overpayment": 148940.4
+        },
+        {
+          "supplier": "STARK BUILDING MATERIALS UK LTD",
+          "amount": 143721.69,
+          "date": "2023-05-18",
+          "occurrences": 2,
+          "potential_overpayment": 143721.69
+        },
+        {
+          "supplier": "STARK BUILDING MATERIALS UK LTD",
+          "amount": 143721.69,
+          "date": "2023-10-23",
+          "occurrences": 2,
+          "potential_overpayment": 143721.69
+        },
+        {
+          "supplier": "STARK BUILDING MATERIALS UK LTD",
+          "amount": 143591.25,
+          "date": "2023-12-05",
+          "occurrences": 2,
+          "potential_overpayment": 143591.25
+        },
+        {
+          "supplier": "STARK BUILDING MATERIALS UK LTD",
+          "amount": 143591.25,
+          "date": "2024-01-22",
+          "occurrences": 2,
+          "potential_overpayment": 143591.25
+        },
+        {
+          "supplier": "STARK BUILDING MATERIALS UK LTD",
+          "amount": 143591.25,
+          "date": "2024-05-03",
+          "occurrences": 2,
+          "potential_overpayment": 143591.25
+        },
+        {
+          "supplier": "SEASHELL TRUST",
+          "amount": 67077.09,
+          "date": "2023-06-30",
+          "occurrences": 3,
+          "potential_overpayment": 134154.18
+        },
+        {
+          "supplier": "STARK BUILDING MATERIALS UK LTD",
+          "amount": 132176.89,
+          "date": "2024-11-25",
+          "occurrences": 2,
+          "potential_overpayment": 132176.89
+        },
+        {
+          "supplier": "NHS BLACK COUNTRY ICB",
+          "amount": 131340.0,
+          "date": "2025-02-28",
+          "occurrences": 2,
+          "potential_overpayment": 131340.0
+        },
+        {
+          "supplier": "ACORN CARE & EDUCATION LTD",
+          "amount": 17302.0,
+          "date": "2023-04-21",
+          "occurrences": 8,
+          "potential_overpayment": 121114.0
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 1604,
+      "total_value": 36043000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 111
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Adult Social Care",
+      "spend": 331235351.26,
+      "count": 40143
+    },
+    {
+      "department": "Childrens Services Special Education",
+      "spend": 105492500.17,
+      "count": 13608
+    },
+    {
+      "department": "Childrens Services",
+      "spend": 95926139.44,
+      "count": 40126
+    },
+    {
+      "department": "Finance and Legal",
+      "spend": 95250261.44,
+      "count": 5527
+    },
+    {
+      "department": "Housing Revenue Account",
+      "spend": 60587341.08,
+      "count": 8257
+    },
+    {
+      "department": "Regeneration & Enterprise",
+      "spend": 54016639.38,
+      "count": 8927
+    },
+    {
+      "department": "Environment",
+      "spend": 41773496.64,
+      "count": 5502
+    },
+    {
+      "department": "Corporate & Treasury",
+      "spend": 39480644.82,
+      "count": 131
+    },
+    {
+      "department": "Health and Wellbeing",
+      "spend": 37776356.53,
+      "count": 1571
+    },
+    {
+      "department": "Chief Executive",
+      "spend": 34893391.46,
+      "count": 1002
+    },
+    {
+      "department": "Public Sector Housing",
+      "spend": 33183047.91,
+      "count": 645
+    },
+    {
+      "department": "Digital, Commercial and Customer Services",
+      "spend": 18670454.37,
+      "count": 1343
+    },
+    {
+      "department": "Transport",
+      "spend": 17375229.82,
+      "count": 760
+    },
+    {
+      "department": "Schools",
+      "spend": 16274766.09,
+      "count": 216
+    },
+    {
+      "department": "Commissioning, Governance and Support",
+      "spend": 15682476.96,
+      "count": 2243
+    },
+    {
+      "department": "Private Sector Housing",
+      "spend": 14717750.69,
+      "count": 994
+    },
+    {
+      "department": "Public Realm",
+      "spend": 8339992.03,
+      "count": 1633
+    },
+    {
+      "department": "Commercial and Customer Services",
+      "spend": 8177556.42,
+      "count": 348
+    },
+    {
+      "department": "Housing",
+      "spend": 3660569.7,
+      "count": 1303
+    },
+    {
+      "department": "Public Health",
+      "spend": 3332357.32,
+      "count": 818
+    },
+    {
+      "department": "Place",
+      "spend": 2868021.45,
+      "count": 256
+    },
+    {
+      "department": "Cultural",
+      "spend": 1718915.56,
+      "count": 72
+    },
+    {
+      "department": "CHILDRENS SERVICES SPECIAL EDUCATION",
+      "spend": 1679819.56,
+      "count": 59
+    },
+    {
+      "department": "ADULT SOCIAL CARE",
+      "spend": 1236741.48,
+      "count": 109
+    },
+    {
+      "department": "CHILDRENS SERVICES",
+      "spend": 795944.39,
+      "count": 687
+    },
+    {
+      "department": "FINANCE AND LEGAL",
+      "spend": 580855.03,
+      "count": 34
+    },
+    {
+      "department": "REGENERATION & ENTERPRISE",
+      "spend": 224599.96,
+      "count": 39
+    },
+    {
+      "department": "PRIVATE SECTOR HOUSING",
+      "spend": 98848.23,
+      "count": 3
+    },
+    {
+      "department": "ENVIRONMENT",
+      "spend": 83339.69,
+      "count": 33
+    },
+    {
+      "department": "HOUSING REVENUE ACCOUNT",
+      "spend": 82136.03,
+      "count": 53
+    },
+    {
+      "department": "COMMISSIONING, GOVERNANCE AND SUPPORT",
+      "spend": 70345.64,
+      "count": 28
+    },
+    {
+      "department": "DIGITAL, COMMERCIAL AND CUSTOMER SERVICES",
+      "spend": 40053.59,
+      "count": 31
+    },
+    {
+      "department": "Mayor's Charities",
+      "spend": 35172.04,
+      "count": 4
+    },
+    {
+      "department": "PUBLIC SECTOR HOUSING",
+      "spend": 30722.56,
+      "count": 3
+    },
+    {
+      "department": "HOUSING",
+      "spend": 19877.83,
+      "count": 21
+    },
+    {
+      "department": "CHIEF EXECUTIVE",
+      "spend": 15182.8,
+      "count": 6
+    },
+    {
+      "department": "CORPORATE & TREASURY",
+      "spend": 14847.18,
+      "count": 1
+    },
+    {
+      "department": "New Heritage Regeneration",
+      "spend": 14047.5,
+      "count": 8
+    },
+    {
+      "department": "CULTURAL",
+      "spend": 5715.29,
+      "count": 2
+    },
+    {
+      "department": "TRANSPORT",
+      "spend": 950.0,
+      "count": 1
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2023/24": 484179969.46,
+      "2024/25": 508576533.51,
+      "2025/26": 52705956.37
+    },
+    "transactions_by_year": {
+      "2023/24": 66045,
+      "2024/25": 64036,
+      "2025/26": 6466
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 136547
+  }
+}

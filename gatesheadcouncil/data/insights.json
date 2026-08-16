@@ -1,0 +1,522 @@
+{
+  "summary": {
+    "total_spend": 2320415827.34,
+    "transaction_count": 1399021,
+    "unique_suppliers": 6405,
+    "avg_transaction": 1658.6,
+    "median_transaction": 69.83,
+    "date_range": {
+      "min": "2019-04-01",
+      "max": "2026-03-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "SOUTH TYNE & WEAR ENERGY RECOVERY LTD",
+        "total": 181018263.74,
+        "transactions": 103,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SAINT-GOBAIN BUILDING DISTRIBUTION LTD T/A JEWSON",
+        "total": 107873411.27,
+        "transactions": 42346,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PINNACLE SCHOOLS (GATESHEAD) LTD",
+        "total": 59823669.71,
+        "transactions": 138,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SAINT-GOBAIN BUILDING DISTRIBUTION LTD T/A GRAHAM",
+        "total": 51242624.27,
+        "transactions": 8499,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "AKARI CARE LTD",
+        "total": 49620846.15,
+        "transactions": 13365,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED - PERSONAL INFORMATION",
+        "total": 40020852.64,
+        "transactions": 87494,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COMMUNITY INTEGRATED CARE",
+        "total": 37747229.08,
+        "transactions": 2967,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HARROGATE AND DISTRICT NHS FOUNDATION TRUST",
+        "total": 32071766.93,
+        "transactions": 147,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WILLMOTT DIXON CONSTRUCTION LTD",
+        "total": 32071126.93,
+        "transactions": 57,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "GAINFORD CARE HOMES LTD",
+        "total": 31829708.91,
+        "transactions": 7648,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EDF ENERGY",
+        "total": 30357387.94,
+        "transactions": 1303,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "UK PLUMBING SUPPLIES LIMITED T/A GRAHAM",
+        "total": 30258205.12,
+        "transactions": 38894,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CARE UK LTD",
+        "total": 28220376.56,
+        "transactions": 7264,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CHANGE GROW LIVE (CGL)",
+        "total": 21379926.81,
+        "transactions": 263,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ASHDOWN CARE HOMES LTD",
+        "total": 20510398.73,
+        "transactions": 1189,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FELLINGATE CARE CENTRE LTD",
+        "total": 20015830.39,
+        "transactions": 4800,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MENCAP",
+        "total": 18802288.81,
+        "transactions": 647,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ST ANNES COMMUNITY SERVICES",
+        "total": 18643413.79,
+        "transactions": 1193,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SOUTH TYNESIDE MBC",
+        "total": 18161955.92,
+        "transactions": 158,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ROSEWOOD HR SERVICES LTD",
+        "total": 17427082.48,
+        "transactions": 4525,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.3651,
+    "total_unique_suppliers": 6405,
+    "single_transaction_suppliers": 1687
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 120286,
+      "potential_value": 314319247.55,
+      "items": [
+        {
+          "supplier": "DEPARTMENT FOR ENERGY SECURITY & NET ZERO",
+          "amount": 149971.38,
+          "date": "2026-01-02",
+          "occurrences": 8,
+          "potential_overpayment": 1049799.66
+        },
+        {
+          "supplier": "GATESHEAD ENERGY COMPANY LTD",
+          "amount": 138976.0,
+          "date": "2024-03-27",
+          "occurrences": 8,
+          "potential_overpayment": 972832.0
+        },
+        {
+          "supplier": "HARROGATE AND DISTRICT NHS FOUNDATION TRUST",
+          "amount": 398492.08,
+          "date": "2025-01-29",
+          "occurrences": 3,
+          "potential_overpayment": 796984.16
+        },
+        {
+          "supplier": "ENHANCED ELDERLY CARE LTD",
+          "amount": 34092.0,
+          "date": "2024-12-30",
+          "occurrences": 24,
+          "potential_overpayment": 784116.0
+        },
+        {
+          "supplier": "HARROGATE AND DISTRICT NHS FOUNDATION TRUST",
+          "amount": 367901.5,
+          "date": "2020-09-15",
+          "occurrences": 3,
+          "potential_overpayment": 735803.0
+        },
+        {
+          "supplier": "HARROGATE AND DISTRICT NHS FOUNDATION TRUST",
+          "amount": 367901.5,
+          "date": "2020-10-29",
+          "occurrences": 3,
+          "potential_overpayment": 735803.0
+        },
+        {
+          "supplier": "HARROGATE AND DISTRICT NHS FOUNDATION TRUST",
+          "amount": 367901.5,
+          "date": "2021-02-11",
+          "occurrences": 3,
+          "potential_overpayment": 735803.0
+        },
+        {
+          "supplier": "HARROGATE AND DISTRICT NHS FOUNDATION TRUST",
+          "amount": 355333.33,
+          "date": "2019-07-11",
+          "occurrences": 3,
+          "potential_overpayment": 710666.66
+        },
+        {
+          "supplier": "REDACTED - PERSONAL INFORMATION",
+          "amount": 239.0,
+          "date": "2025-11-13",
+          "occurrences": 2875,
+          "potential_overpayment": 686886.0
+        },
+        {
+          "supplier": "AKARI CARE LTD",
+          "amount": 27679.59,
+          "date": "2025-10-08",
+          "occurrences": 25,
+          "potential_overpayment": 664310.16
+        },
+        {
+          "supplier": "ASPIRE HEALTHCARE LTD",
+          "amount": 2043.63,
+          "date": "2024-02-27",
+          "occurrences": 314,
+          "potential_overpayment": 639656.19
+        },
+        {
+          "supplier": "AKARI CARE LTD",
+          "amount": 38324.0,
+          "date": "2024-12-30",
+          "occurrences": 17,
+          "potential_overpayment": 613184.0
+        },
+        {
+          "supplier": "CARE UK LTD",
+          "amount": 36146.8,
+          "date": "2024-12-30",
+          "occurrences": 15,
+          "potential_overpayment": 506055.2
+        },
+        {
+          "supplier": "WELLBURN CARE HOMES LTD",
+          "amount": 24397.47,
+          "date": "2025-10-08",
+          "occurrences": 21,
+          "potential_overpayment": 487949.4
+        },
+        {
+          "supplier": "WELLBURN CARE HOMES LTD",
+          "amount": 34092.0,
+          "date": "2024-12-30",
+          "occurrences": 15,
+          "potential_overpayment": 477288.0
+        },
+        {
+          "supplier": "COMFORT CALL LTD",
+          "amount": 41736.6,
+          "date": "2025-11-06",
+          "occurrences": 12,
+          "potential_overpayment": 459102.6
+        },
+        {
+          "supplier": "CARE UK LTD",
+          "amount": 34092.0,
+          "date": "2024-12-30",
+          "occurrences": 14,
+          "potential_overpayment": 443196.0
+        },
+        {
+          "supplier": "ENHANCED ELDERLY CARE LTD",
+          "amount": 24397.47,
+          "date": "2025-10-08",
+          "occurrences": 19,
+          "potential_overpayment": 439154.46
+        },
+        {
+          "supplier": "AKARI CARE LTD",
+          "amount": 27157.41,
+          "date": "2025-10-08",
+          "occurrences": 17,
+          "potential_overpayment": 434518.56
+        },
+        {
+          "supplier": "ROSEWOOD HR SERVICES LTD",
+          "amount": 36146.8,
+          "date": "2024-12-30",
+          "occurrences": 13,
+          "potential_overpayment": 433761.6
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 2710,
+      "total_value": 53229000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 934
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Housing, Environment and Healthy Communities",
+      "spend": 681649610.31,
+      "count": 434585
+    },
+    {
+      "department": "Integrated Adults & Social Care Services",
+      "spend": 526031800.84,
+      "count": 244699
+    },
+    {
+      "department": "Children's Social Care & Lifelong Learning",
+      "spend": 274354992.6,
+      "count": 151548
+    },
+    {
+      "department": "Children, Adults and Families",
+      "spend": 230572431.75,
+      "count": 49821
+    },
+    {
+      "department": "",
+      "spend": 207993803.24,
+      "count": 61073
+    },
+    {
+      "department": "Public Health and Wellbeing",
+      "spend": 87661959.58,
+      "count": 36129
+    },
+    {
+      "department": "Communities & Enviroment",
+      "spend": 51430272.89,
+      "count": 4472
+    },
+    {
+      "department": "Full Authority",
+      "spend": 48735672.64,
+      "count": 1114
+    },
+    {
+      "department": "Resources and Digital",
+      "spend": 47520803.36,
+      "count": 310276
+    },
+    {
+      "department": "Economy, Innovation and Growth",
+      "spend": 37121410.78,
+      "count": 18186
+    },
+    {
+      "department": "Housing Revenue Account",
+      "spend": 28495504.15,
+      "count": 4880
+    },
+    {
+      "department": "Policy, Economic Growth and Transformation",
+      "spend": 28416508.36,
+      "count": 1033
+    },
+    {
+      "department": "Corporate Resources",
+      "spend": 17752489.14,
+      "count": 938
+    },
+    {
+      "department": "Care, Wellbeing & Learning",
+      "spend": 11479934.33,
+      "count": 737
+    },
+    {
+      "department": "Corporate Services & Governance",
+      "spend": 9576915.52,
+      "count": 12026
+    },
+    {
+      "department": "IASCS",
+      "spend": 9403063.69,
+      "count": 6709
+    },
+    {
+      "department": "HEHC",
+      "spend": 8185629.14,
+      "count": 8749
+    },
+    {
+      "department": "CSCLL",
+      "spend": 3523389.85,
+      "count": 3541
+    },
+    {
+      "department": "Schools",
+      "spend": 2116855.25,
+      "count": 36711
+    },
+    {
+      "department": "Chief Executive\u2019s Department",
+      "spend": 1925909.15,
+      "count": 1469
+    },
+    {
+      "department": "CWL",
+      "spend": 1560224.26,
+      "count": 19
+    },
+    {
+      "department": "PH&W",
+      "spend": 1183636.35,
+      "count": 671
+    },
+    {
+      "department": "Office of the Chief Executive",
+      "spend": 1049177.7,
+      "count": 899
+    },
+    {
+      "department": "FA",
+      "spend": 615596.13,
+      "count": 12
+    },
+    {
+      "department": "CAE",
+      "spend": 612493.86,
+      "count": 74
+    },
+    {
+      "department": "RD",
+      "spend": 480816.78,
+      "count": 6891
+    },
+    {
+      "department": "CRS",
+      "spend": 406130.11,
+      "count": 7
+    },
+    {
+      "department": "EIG",
+      "spend": 274053.39,
+      "count": 556
+    },
+    {
+      "department": "CSG",
+      "spend": 181657.12,
+      "count": 329
+    },
+    {
+      "department": "SCH",
+      "spend": 36937.93,
+      "count": 754
+    },
+    {
+      "department": "OCE",
+      "spend": 34072.62,
+      "count": 45
+    },
+    {
+      "department": "HRA",
+      "spend": 29664.37,
+      "count": 47
+    },
+    {
+      "department": "Gateshead Energy Company",
+      "spend": 1771.86,
+      "count": 15
+    },
+    {
+      "department": "Gateshead Trading Company",
+      "spend": 638.29,
+      "count": 6
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2019/20": 183972460.76,
+      "2020/21": 200603663.44,
+      "2021/22": 355597643.34,
+      "2022/23": 367627335.94,
+      "2023/24": 385742353.27,
+      "2024/25": 355023159.09,
+      "2025/26": 471849211.5
+    },
+    "transactions_by_year": {
+      "2019/20": 54292,
+      "2020/21": 69204,
+      "2021/22": 129995,
+      "2022/23": 161221,
+      "2023/24": 282950,
+      "2024/25": 326767,
+      "2025/26": 374592
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 95.6,
+    "total_records": 1399021
+  }
+}

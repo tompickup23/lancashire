@@ -1,0 +1,907 @@
+{
+  "version": "2.0",
+  "council_id": "norfolk_cc",
+  "council_name": "Norfolk Cc",
+  "generated_at": "2026-05-04T14:36:19.295079Z",
+  "data_sources": [
+    "spending.sqlite (council_etl.py + classify_council.py)",
+    "doge_findings.json (35-technique forensic)",
+    "cross_council.json (32-council peer benchmark)",
+    "budgets_summary.json (MHCLG Revenue Outturn)",
+    "revenue_trends.json (8-yr MHCLG time series)",
+    "source_audit.json (record_class breakdown)",
+    "supplier_donor_crossmatch.json (Electoral Commission CSV API)"
+  ],
+  "financial_summary": {
+    "annual_revenue_budget": 1473929000,
+    "council_tax_requirement": 524453000,
+    "service_breakdown": {
+      "Education services": 551844000,
+      "Highways and transport services": 45189000,
+      "Children Social Care": 223600000,
+      "Adult Social Care": 463168000,
+      "Public Health": 51779000,
+      "Cultural and related services": 14340000,
+      "Environmental and regulatory services": 50300000,
+      "Planning and development services": -8464000,
+      "Fire and rescue services": 39378000,
+      "Central services": 38137000,
+      "Other services": 4658000
+    },
+    "procurement_footprint_total": 4132531690.39,
+    "procurement_footprint_annual": 1377510563.46,
+    "transactions_total": 692426,
+    "transactions_annual": 230809,
+    "unique_suppliers": 9897,
+    "data_period": {
+      "min": "2023-04-01",
+      "max": "2026-03-31"
+    },
+    "financial_years_covered": 3,
+    "per_capita_spend": 1492.91,
+    "population": 922702,
+    "net_revenue_expenditure": 740309000,
+    "budget_year": "2024-25"
+  },
+  "reserves_position": {
+    "total": 148967000,
+    "months_of_revenue": 2.4,
+    "adequacy": "Critical",
+    "direction": "stable",
+    "trajectory": [
+      {
+        "year": "2021-22",
+        "earmarked": 157083000,
+        "unallocated": 23839000,
+        "total": 180922000
+      },
+      {
+        "year": "2022-23",
+        "earmarked": 144315000,
+        "unallocated": 24410000,
+        "total": 168725000
+      },
+      {
+        "year": "2023-24",
+        "earmarked": 117983000,
+        "unallocated": 25485000,
+        "total": 143468000
+      },
+      {
+        "year": "2024-25",
+        "earmarked": 122235000,
+        "unallocated": 26732000,
+        "total": 148967000
+      }
+    ],
+    "projected": [
+      {
+        "year": "2025-26",
+        "total": 130240000,
+        "projected": true
+      },
+      {
+        "year": "2026-27",
+        "total": 118127800,
+        "projected": true
+      }
+    ]
+  },
+  "forensic_signals": {
+    "duplicate_value": 106100000,
+    "duplicate_count": 14786,
+    "split_payments_value": 673500000,
+    "weak_competition": null,
+    "anomaly_count": 9,
+    "total_flagged_value": 906220000,
+    "severity_breakdown": {
+      "high": 1,
+      "medium": 5,
+      "low": 3
+    },
+    "overall_hhi": 52.9,
+    "service_hhi_high": [],
+    "top10_supplier_pct": 0.2749,
+    "doge_key_findings": [
+      {
+        "title": "10 suppliers with clock-like payment regularity",
+        "severity": "info",
+        "confidence": "high"
+      },
+      {
+        "title": "HEALTHCARE HOMES GROUP LTD: 24386 transactions totalling \u00a356.6M",
+        "severity": "info",
+        "confidence": "high"
+      }
+    ]
+  },
+  "peer_benchmarks": {
+    "per_capita_spend": {
+      "metric": "per_capita_spend",
+      "this_value": 1492.91,
+      "peer_n": 11,
+      "peer_median": 1037.97,
+      "peer_min": 495.68,
+      "peer_max": 1641.87,
+      "rank": {
+        "rank": 7,
+        "of": 12,
+        "percentile": 58.0
+      }
+    },
+    "top10_supplier_pct": {
+      "metric": "top10_supplier_pct",
+      "this_value": 0.2749,
+      "peer_n": 11,
+      "peer_median": 0.2696,
+      "peer_min": 0.1862,
+      "peer_max": 0.4358,
+      "rank": {
+        "rank": 7,
+        "of": 12,
+        "percentile": 58.0
+      }
+    },
+    "reserves_months": {
+      "metric": "reserves_months",
+      "this_value": 2.4,
+      "peer_n": 11,
+      "peer_median": 3.9,
+      "peer_min": 2.6,
+      "peer_max": 7.5,
+      "rank": {
+        "rank": 6,
+        "of": 12,
+        "percentile": 50.0
+      }
+    },
+    "overall_hhi": {
+      "metric": "overall_hhi",
+      "this_value": 52.9,
+      "peer_n": 11,
+      "peer_median": 80.6,
+      "peer_min": 32.4,
+      "peer_max": 96.8,
+      "rank": {
+        "rank": 4,
+        "of": 6,
+        "percentile": 67.0
+      }
+    },
+    "duplicate_value": {
+      "metric": "duplicate_value",
+      "this_value": 106100000,
+      "peer_n": 11,
+      "peer_median": 0,
+      "peer_min": 0,
+      "peer_max": 424700000,
+      "rank": {
+        "rank": 7,
+        "of": 12,
+        "percentile": 58.0
+      }
+    },
+    "split_payments_value": {
+      "metric": "split_payments_value",
+      "this_value": 673500000,
+      "peer_n": 11,
+      "peer_median": 479100000,
+      "peer_min": 100300000,
+      "peer_max": 1490700000,
+      "rank": {
+        "rank": 4,
+        "of": 6,
+        "percentile": 67.0
+      }
+    }
+  },
+  "audit_research": {
+    "version": "1.0",
+    "council_id": "norfolk_cc",
+    "researched_at": "2026-05-04",
+    "method": "Web research via WebFetch + WebSearch (subagent), all citations primary",
+    "external_audit": {
+      "auditor": "Ernst & Young LLP",
+      "auditor_partner": "Debbie Hanson (Cambridge office)",
+      "year_ended": "2025-03-31",
+      "opinion": "PENDING (Auditor's Annual Report 2024-25 not yet published as of 2026-05-04)",
+      "statement_of_accounts_certified": "2025-06-27",
+      "public_inspection_period": "2025-06-30 to 2025-08-08",
+      "follow_up_required": "Track norfolk.gov.uk/statementofaccounts for VfM commentary publication"
+    },
+    "norse_care_audit": {
+      "audit_status": "PUBLISHED",
+      "owed_to_council_m": 28.5,
+      "loss_period_to": "2027",
+      "return_to_profit": "2028",
+      "loss_attribution": "in large part to the care home contract",
+      "sale_proceeds_use": "applied to outstanding \u00a328.5m council debt",
+      "url": "https://www.northnorfolknews.co.uk/news/26022230.council-rules-rethink-sale-norfolk-care-homes/",
+      "criticality": "highest VfM red flag in this council's recent record"
+    },
+    "internal_audit": {
+      "year": "2024/25 - 2025/26",
+      "committee": "Audit & Governance Committee",
+      "chair": "Cllr Ian Mackie",
+      "limited_assurance_subjects": "not located in primary form",
+      "follow_up_required": "Pull from Audit & Governance Committee papers index norfolk.gov.uk/38696",
+      "url": "https://www.norfolk.gov.uk/38696",
+      "committee_landing": "https://www.norfolk.gov.uk/article/38696/Committees-agendas-and-recent-decisions",
+      "cmis_host": "norfolkcc.cmis.uk.com (not WebFetch-accessible from this environment)",
+      "follow_up_method": "Browser-rendered scrape (Chrome MCP) or FOI for IA Annual Report 2024/25 + Q1-Q4 risk register updates"
+    },
+    "mtfs_2026_31": {
+      "budget_gap_2026_27_m": 41.6,
+      "cumulative_4yr_gap_m": 171.4,
+      "savings_2026_27_final_m": 42.3,
+      "demand_investment_2026_27_m": 76.3,
+      "savings_identified_at_consultation_m": 35.7,
+      "savings_gap_closed_late_m": 6.6,
+      "council_tax_increase_pct": 4.998,
+      "council_tax_components": {
+        "asc_precept": 3.0,
+        "general": 1.998
+      },
+      "approved_date": "2026-02-17",
+      "consultation_pattern": "75-80% of savings identified at consultation, balance closed by Feb via tax / reserves / further work",
+      "url": "https://www.norfolk.gov.uk/article/38760/Setting-next-years-budget"
+    },
+    "strategic_risks": {
+      "register_status": "not located as standalone published list",
+      "inferred_top_risks": [
+        "DSG / High Needs deficit (\u00a3115m forecast cumulative March 2025; Safety Valve under review)",
+        "Norse Group financial position (loss-making to 2027; \u00a328.5m council debt)",
+        "ASC market sustainability (provider sector demanding 13-36% fee increases vs council's 3.2-3.6% offer)",
+        "Local Government Reorganisation (capacity, recruitment & retention, service standards)",
+        "Inflationary pressure on demand-led services (ASC + home-to-school transport)"
+      ],
+      "follow_up_required": "Pull risk register directly from Audit & Governance Committee papers"
+    },
+    "dsg_send": {
+      "cumulative_deficit_forecast_march_2025_m": 115,
+      "safety_valve_status": "Agreement under review with payments suspended pending revised agreement (free-school bid contingencies)",
+      "schools_block_to_high_needs_block_transfer_pct": 1.45,
+      "high_needs_stability_grant_2026_27_eligible": true,
+      "high_needs_stability_grant_coverage_pct": 90,
+      "send_inspection_last": "2023-01 revisit; no 2024-25 inspection located",
+      "url": "https://committees.parliament.uk/writtenevidence/135747/pdf/"
+    },
+    "asc_market_sustainability": {
+      "council_proposed_uplift_2026_27_pct": 3.2,
+      "revised_uplift_pct": "3.42-3.63 (home support, supported living, housing-related, day services)",
+      "annual_investment_m": 13.97,
+      "provider_demanded_uplift_pct": "13-36",
+      "council_modelling_13pct_cost_m": 46.7,
+      "council_internal_pressure_pct": "3.53 non-home / 3.63 home care",
+      "uplift_gap_signal": "Council uplift offered is BELOW its own internal cost-pressure number",
+      "url": "https://www.norfolkcareassociation.org.uk/norfolk-county-council-sets-out-proposed-adult-social-care-fee-uplift-for-2026-27/"
+    },
+    "norse_group": {
+      "company_number": "05694657",
+      "registered_office": "280 Fifers Lane, Norwich",
+      "incorporation_date": "2006-02-01",
+      "shareholder": "Norfolk County Council (sole)",
+      "size_employees": 9500,
+      "size_turnover_m": 350,
+      "size_economy_contribution_m": 200,
+      "structure": "UK's largest Local Authority Trading Company (LATCo)",
+      "subsidiaries": [
+        "Norse Care (residential & housing-with-care)",
+        "Norse Commercial Services",
+        "Norse Eastern",
+        "NPS Group (property consultancy)",
+        "Norse Consulting",
+        "nplaw"
+      ],
+      "group_accounts_2024_25_filed": "2025-12-16",
+      "group_accounts_2024_25_pages": 108,
+      "group_accounts_summary_status": "NOT publicly summarised in news coverage",
+      "follow_up_required": "Download the 108-page PDF from Companies House for verified turnover / loss / impairment / segmental split",
+      "loss_2021_22_m": 13.7,
+      "loss_2021_22_cause": "Impairment of property and goodwill, mostly within Norse Consulting Group",
+      "care_home_contract_start": "2011",
+      "care_home_contract_original_expiry": "2026-03",
+      "care_home_contract_extended_expiry": "2026-07",
+      "care_home_sale_decision_date": "2026-01-26",
+      "care_home_sale_buyer": "Stow Healthcare Group",
+      "care_home_sale_homes": 20,
+      "care_home_sale_status": "Cabinet agreed in principle; public consultation 2026-02-16 to 2026-03-22",
+      "council_position": "Ruled out a rethink of the sale despite criticism of asset stripping",
+      "cross_county_trading": "Trades beyond Norfolk via JVs (e.g. Newport Norse \u2014 JV ended 2024)",
+      "payment_performance": "One of UK's worst-paying LATCos to its supply chain (goodbusinesspays.com research)",
+      "url": "https://find-and-update.company-information.service.gov.uk/company/05694657"
+    },
+    "highways_procurement": {
+      "outgoing_contractor": "Tarmac (Lafarge Tarmac legacy)",
+      "outgoing_contract_term": "2014 to March 2026 (10-yr deal + 2-yr extension)",
+      "outgoing_contract_value_m": "up to 480",
+      "incoming_contractor": "Kier",
+      "incoming_contract_term": "April 2026 to up to April 2040 (14-yr)",
+      "incoming_contract_value_m": 700,
+      "incoming_road_coverage_km": 9999,
+      "fts_notice_year": 2024,
+      "early_contract_benchmarking_window": "OPEN \u2014 fresh April 2026 baseline",
+      "url": "https://www.constructionenquirer.com/2025/10/15/kier-scoops-700m-norfolk-highways-upkeep-deal/",
+      "fts_url": "https://www.find-tender.service.gov.uk/Notice/007638-2024"
+    },
+    "property_strategy": {
+      "framework_name": "Strategic Property Asset Management Framework",
+      "components": "Disposals, revenue savings, direct housing development",
+      "savings_target_m": "not separately published",
+      "follow_up_required": "Read MTFS 2026-31 detail",
+      "norse_consulting_sla": "NPS Group provides property services to NCC under long-running SLA \u2014 Norse Group VfM question"
+    },
+    "actionable_savings_levers_summary": [
+      "Norse Care \u00a328.5m council debt + sale to Stow Healthcare Group = \u00a328.5m one-off recovery against debt",
+      "Remaining Norse subsidiaries (Commercial Services, Eastern, NPS, nplaw, Consulting) \u2014 VfM question vs market alternatives, not just Norse Care",
+      "Kier \u00a3700m highways contract starting April 2026 \u2014 early-contract benchmarking + open-book scrutiny window",
+      "ASC fee gap: providers want 13-36%, council offers 3.4-3.6%; council modelling shows 13% would cost +\u00a346.7m \u2014 sustainability question live",
+      "DSG \u00a3115m deficit + Safety Valve under review = HN Stability Grant 90% cover at risk if DfE tightens terms",
+      "MTFS \u00a3171.4m 4-yr gap with c. 80% identified at consultation = late-cycle structural reform shortfall pattern",
+      "Norse Group 'one of UK's worst-paying LATCos' = SME supplier fairness lens for Reform admin"
+    ],
+    "source_urls": [
+      "https://www.norfolk.gov.uk/article/38760/Setting-next-years-budget",
+      "https://norfolk.citizenspace.com/consultation/budget-proposals-2026-27/",
+      "https://www.norfolk.gov.uk/statementofaccounts",
+      "https://www.norfolk.gov.uk/article/73052/Norfolk-County-Council-to-tackle-financial-challenges-with-major-transformation-programme",
+      "https://committees.parliament.uk/writtenevidence/135747/pdf/",
+      "https://www.norfolkcareassociation.org.uk/norfolk-county-council-sets-out-proposed-adult-social-care-fee-uplift-for-2026-27/",
+      "https://www.norfolk.gov.uk/article/75057/Cabinet-considers-future-of-care-homes",
+      "https://www.northnorfolknews.co.uk/news/26022230.council-rules-rethink-sale-norfolk-care-homes/",
+      "https://find-and-update.company-information.service.gov.uk/company/05694657",
+      "https://goodbusinesspays.com/posts/research-exposes-norfolk-county-council-owned-norse-group-as-one-of-the-uks-worst-paying-local-authorities-trading-companies/",
+      "https://www.constructionenquirer.com/2025/10/15/kier-scoops-700m-norfolk-highways-upkeep-deal/",
+      "https://www.find-tender.service.gov.uk/Notice/007638-2024",
+      "https://www.norfolk.gov.uk/38696"
+    ],
+    "coverage_gaps": [
+      "2024-25 EY Auditor's Annual Report (not yet published)",
+      "2024-25 Internal Audit Annual Report (Audit Committee papers)",
+      "Norse Group 2024-25 group accounts 108pp summary",
+      "Strategic Risk Register Q4 2025 / Q1 2026",
+      "17 Feb 2026 Full Council budget paper (reserves trajectory, capital programme \u00a3M, identified vs unidentified split, directorate breakdown)",
+      "Post-Jan 2023 SEND area inspection follow-up"
+    ]
+  },
+  "donor_links": null,
+  "strategic_themes": [
+    {
+      "id": "asc_fee_uplift_modelling",
+      "title": "ASC fee uplift modelling + provider risk mitigation",
+      "rationale": "ASC market sustainability concern: Council uplift offered is BELOW its own internal cost-pressure number. Council exposure to provider failure + Care Act s.18 statutory duty (must arrange care). Mitigation levers: (a) Cost of Care benchmark refresh, (b) blocked-bed pricing for high-needs cohorts, (c) jointly-commissioned frameworks with NHS ICB, (d) workforce strategy to reduce agency-cost dependency.",
+      "estimated_savings_low_m": 5,
+      "estimated_savings_high_m": 25,
+      "delivery_horizon": "18-30 months",
+      "implementation_complexity": "high",
+      "decision_owner": "Director of Adult Social Care + Cabinet Member",
+      "evidence": [
+        "https://www.norfolkcareassociation.org.uk/norfolk-county-council-sets-out-proposed-adult-social-care-fee-uplift-for-2026-27/"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "norse_group_vfm_review",
+      "title": "Norse Group LATCo VfM review (\u00a3350M/yr turnover)",
+      "rationale": "Norse Group is UK's largest LATCo (CN 05694657, 9,500 employees, c.\u00a3350M turnover). 6 trading subsidiaries beyond Norse Care: Norse Commercial Services, Norse Eastern, NPS Group, Norse Consulting, nplaw. \u00a313.7M group loss 2021-22 due to property + goodwill impairment in Norse Consulting. Care-home contract restructure + sale to Stow Healthcare Group removes the loss-making contract; remaining 5 subsidiaries' VfM unchallenged. Standard LATCo VfM levers: (a) market-test each service line every 3-5 years, (b) FRS 102 s.33 related-party disclosure quality + arm's-length pricing, (c) cross-county trading competitive-neutrality (state-aid risk if subsidising bids into other authorities), (d) supply-chain payment performance (identified as one of UK worst-paying LATCos).",
+      "estimated_savings_low_m": 5,
+      "estimated_savings_high_m": 30,
+      "delivery_horizon": "18-36 months",
+      "implementation_complexity": "high",
+      "decision_owner": "Cabinet (shareholder) + S151 Officer",
+      "evidence": [
+        "https://find-and-update.company-information.service.gov.uk/company/05694657"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "norse_care_debt_recovery",
+      "title": "Recover \u00a328.5M Norse Care debt via care-home sale",
+      "rationale": "Norfolk-commissioned audit found Norse Care Ltd owes \u00a328.5M to Norfolk County Council. Sale of 20 care homes to Stow Healthcare Group will apply sale proceeds to outstanding debt. One-off recovery \u2014 lock in proceeds during public consultation phase 16 Feb \u2013 22 Mar 2026.",
+      "estimated_savings_low_m": 19.95,
+      "estimated_savings_high_m": 28.5,
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "medium (sale already agreed in principle)",
+      "decision_owner": "Cabinet (shareholder) + Director of ASC",
+      "evidence": [
+        "https://www.northnorfolknews.co.uk/news/26022230.council-rules-rethink-sale-norfolk-care-homes/"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "highways_contract_benchmarking",
+      "title": "Highways term-maintenance contract benchmarking (\u00a3700M)",
+      "rationale": "Highways term-maintenance contract: Kier. OPEN \u2014 fresh April 2026 baseline. Open-book pricing review, JCT-style PPM benchmarking, social-value measurement and rate-card comparison vs Crown Commercial Service framework rates standard. 3-7% saving on labour/materials/overhead lines typical from open-book in early-contract period.",
+      "estimated_savings_low_m": 1.5,
+      "estimated_savings_high_m": 3.5,
+      "delivery_horizon": "12-24 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Highways + S151 Officer",
+      "evidence": [
+        "https://www.constructionenquirer.com/2025/10/15/kier-scoops-700m-norfolk-highways-upkeep-deal/"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "workforce_agency_reduction",
+      "title": "Agency / locum staff demand reduction (\u00a34M concentrated)",
+      "rationale": "\u00a34M of agency-staff spend across 2 master vendors. Top: COMENSURA LTD (\u00a32M), JMR RECRUITMENT LTD (\u00a31M). Standard transformation: cap agency premium at 20% above substantive rate, workforce-plan permanent conversion (6-9 month payback), regional bank pool, open-book master-vendor margins. CIPFA experience: 8-15% reduction in 12-18 months.",
+      "estimated_savings_low_m": 0.3,
+      "estimated_savings_high_m": 0.5,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of HR + Director of Finance + S151 Officer",
+      "evidence": [
+        "spending corpus: top agency suppliers"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "energy_procurement_optimisation",
+      "title": "Energy procurement via CCS / LASER / NEPO frameworks (\u00a321M baseline)",
+      "rationale": "\u00a321M utility spend across 3 suppliers. Top: TOTALENERGIES GAS & POWER LTD (\u00a320M), THE LEONARD CHESHIRE FOUNDATION LTD (\u00a31M), LEONARD CHESHIRE DISABILITY (\u00a31M). Crown Commercial RM6306 + LASER / NEPO consortium flex purchase typically saves 4-8% vs direct supplier contracts on a 3-yr horizon. Plus solar PV self-generation on council estate (7-9 yr payback) + DESNZ Public Sector Decarbonisation Scheme grants up to 100% capex on heat pump conversion.",
+      "estimated_savings_low_m": 1.1,
+      "estimated_savings_high_m": 2.6,
+      "savings_type": "recurring + capital grant",
+      "delivery_horizon": "12-36 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Property + Sustainability Lead + S151 Officer",
+      "evidence": [
+        "Crown Commercial RM6306",
+        "DESNZ PSDS scheme",
+        "LASER / NEPO frameworks"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "treasury_borrowing_optimisation",
+      "title": "Treasury management + borrowing cost optimisation (CFR proxy \u00a31179M)",
+      "rationale": "Annual revenue \u00a31474M implies indicative CFR c. \u00a31179M. Standard levers: internal borrowing from earmarked reserves, PWLB Certainty Rate trade, MMF counterparty restructuring, LGPS Property Investment Pool inclusion. 10-30bp saving on external debt typical from a fresh review.",
+      "estimated_savings_low_m": 1.18,
+      "estimated_savings_high_m": 3.54,
+      "savings_type": "recurring",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (subject to TM Strategy approval)",
+      "decision_owner": "S151 Officer + Treasurer",
+      "evidence": [
+        "CIPFA Prudential + Treasury Management Codes 2021",
+        "PWLB Certainty Rate"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "lgps_employer_contribution",
+      "title": "LGPS employer contribution opportunity (2025 triennial valuation cycle)",
+      "rationale": "Indicative pay bill \u00a3590M \u00d7 c. 22% employer contribution rate = \u00a3130M annual employer contribution. Most LGPS funds materially over-funded post-2022 (returns 2022-25 averaged 7-10% pa vs 3-4% discount-rate assumption). 2025 triennial valuation typically yields 2-4pp employer-rate reduction over 2026-2029. Confirm with administering authority + actuary.",
+      "estimated_savings_low_m": 6.5,
+      "estimated_savings_high_m": 19.5,
+      "savings_type": "recurring (3-yr triennial)",
+      "delivery_horizon": "settled at 2025 valuation; recurring 2026-2029",
+      "implementation_complexity": "low (LGPS admin enacts new rate)",
+      "decision_owner": "S151 Officer + LGPS Pensions Committee",
+      "evidence": [
+        "LGPS Regulations 2013 + 2014",
+        "2025 triennial valuation reports"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "income_fees_charges_optimisation",
+      "title": "Fees, charges + traded-services income optimisation (\u00a3147M base)",
+      "rationale": "Indicative fees & charges + traded-services income c. 10% of revenue = \u00a3147M. Standard levers: annual CPI uplift discipline, full-cost-recovery audit on discretionary services (parking, planning, licensing, sports, adult learning, property hire), commercial pricing on traded services. LGA experience: 5-15% income uplift sustainable over 2-3 years.",
+      "estimated_savings_low_m": 7.4,
+      "estimated_savings_high_m": 22.1,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-24 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Cabinet (each fee delegation)",
+      "evidence": [
+        "LGA fees and charges benchmarking",
+        "CIPFA Charging guidance"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "insurance_retention_review",
+      "title": "Insurance retention + premium review (\u00a31.5M premium estimate)",
+      "rationale": "Indicative insurance premium \u00a31.5M (10bp of revenue). Standard 3-5 yr renewal cycle. Levers: tender via IPG / RM Partners (10-25% premium reduction typical), retention review (increase excess + build risk-fund reserve). London-borough cohort average 12% premium reduction at last tender.",
+      "estimated_savings_low_m": 0.15,
+      "estimated_savings_high_m": 0.37,
+      "savings_type": "recurring",
+      "delivery_horizon": "9-18 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Risk Manager",
+      "evidence": [
+        "IPG framework",
+        "RM Partners broker market"
+      ],
+      "severity": "low"
+    },
+    {
+      "id": "procurement_data_review",
+      "title": "Contracts Finder portfolio review (88 notices; 3 contracts at \u00a310M+ ceiling)",
+      "rationale": "Contracts Finder data: 88 notices (27 awarded, \u00a320M aggregate ADVERTISED CEILING value, 0% SME). IMPORTANT: advertised contract value is a CEILING set to avoid retender risk under PCR 2015 Reg.72 / Procurement Act 2023 s.31 \u2014 actual spend through the awardee is typically 30-70% of ceiling, with some off-contract ledger spend permitted within the 50%/50% modification limits. 3 contracts at \u00a310M+ ceiling totalling \u00a3163M (ceiling, NOT spend) \u2014 top 3: Life Opportunities for Adults in Norfolk - Lot 1 Learning Di (ceiling \u00a395M); Framework for Home Support Providers for West &amp; North No (ceiling \u00a356M); Tranche 2 Type B Fire Appliances - AWARD (ceiling \u00a312M). Matched against ledger: Tranche 2 Type B Fire Appliances - AWARD \u2014 ceiling \u00a311.8M, actual ledger spend with awardee \u00a30.9M; Gas Monitoring Equipment for NFRS - AWARD \u2014 ceiling \u00a30.1M, actual ledger spend with awardee \u00a319.6M; Framework for Home Support Providers for West &amp \u2014 ceiling \u00a30.0M, actual ledger spend with awardee \u00a319.1M. Aggregate identified actual spend \u00a3237M. SME-awarded share 0% is below the Procurement Reform 2023 / PPN 03/24 ambition (33% SME share by value). Standard procurement-data savings levers (% of ACTUAL ledger spend, not ceiling): (a) modification-history scrutiny under PCR 2015 Reg.72, (b) Procurement Act 2023 s.31 contract change notice review, (c) re-tender benchmark vs CCS framework rates on next renewal. 2-8% on actual spend through major contracts is a defensible upper bound.",
+      "estimated_savings_low_m": 4.7,
+      "estimated_savings_high_m": 18.9,
+      "savings_type": "recurring (post next contract renewal)",
+      "delivery_horizon": "12-36 months (contract-renewal cycle)",
+      "implementation_complexity": "high",
+      "decision_owner": "Head of Procurement + Cabinet Member + Section 151 Officer",
+      "evidence": [
+        "procurement.json (Contracts Finder API): 88 notices",
+        "ledger-matched actual spend: \u00a3236.8M",
+        "PCR 2015 Reg.72; Procurement Act 2023 s.31"
+      ],
+      "savings_basis": "Ledger-matched actual spend through awardees",
+      "advertised_ceiling_total_m": 162.8,
+      "ledger_matched_actual_spend_m": 236.8,
+      "severity": "medium"
+    },
+    {
+      "id": "companies_house_compliance",
+      "title": "Companies House compliance follow-up (\u00a359M flagged \u2014 1 overdue, 1 dissolved, 1 insolvency-history)",
+      "rationale": "Companies House lookup on top-50 suppliers identified \u00a359M of spend with statutory-compliance flags: \u00a318M to suppliers with overdue accounts (1), \u00a324M to dissolved-status companies (1), \u00a318M to companies with insolvency history (1). NOTE: Some matches are CH fuzzy-search false positives (e.g. school, government-body name collisions) and need human verification. After verification, real flags = (a) credit-risk review on overdue accounts, (b) contract-cleanup on dissolved entities (records still on ledger but supplier extinct \u2014 risk of duplicate-payment leakage), (c) PCR 2015 Reg.57 discretionary exclusion review on insolvency-history suppliers in active contracts.",
+      "estimated_savings_low_m": 0.3,
+      "estimated_savings_high_m": 1.2,
+      "savings_type": "one-off cleanup + recurring risk reduction",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (CH already enriched)",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "companies_house_enrichment.json"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "reserves_rebuild",
+      "title": "Rebuild general reserves to \u22654 months (Critical \u2192 Adequate)",
+      "rationale": "Reserves at 2.4 months (Critical per CIPFA Resilience benchmark). Direction: stable. A 4-month minimum is the CIPFA / S151 prudence floor; below this triggers external auditor VFM concern and elevates s.114 risk.",
+      "estimated_target_m": 197.0,
+      "delivery_horizon": "3-5 years",
+      "implementation_complexity": "high",
+      "decision_owner": "Section 151 Officer + Cabinet",
+      "evidence": [
+        "cross_council.reserves_months",
+        "cross_council.reserves_adequacy"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "duplicate_recovery",
+      "title": "Audit + recover \u00a3106M in flagged duplicate-payment patterns",
+      "rationale": "DOGE forensic flagged \u00a3106M across 14,786 groups of likely duplicates. Industry recovery norm 5-15% via duplicate-detection software (AP Forensics, FISCAL, Oracle Concur). Lloyds Bank Commercial Card analysis typical for spot-check sample of 100 highest-confidence matches.",
+      "estimated_savings_low_m": 5.3,
+      "estimated_savings_high_m": 15.9,
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Finance + Internal Audit",
+      "evidence": [
+        "doge_findings.duplicate_count",
+        "doge_findings.duplicate_value"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "split_payment_review",
+      "title": "Investigate \u00a3674M in flagged split-payment patterns",
+      "rationale": "DOGE flagged \u00a3674M across 0 split-payment instances. Split payments often indicate (a) below-procurement-threshold ledger fragmentation circumventing PCR 2015 Reg.4 contract-value-aggregation rule; or (b) legitimate sub-line invoice splits. Sample audit + reclassify; misuse triggers Reg. 99 challenge exposure.",
+      "estimated_savings_low_m": 13.5,
+      "estimated_savings_high_m": 53.9,
+      "delivery_horizon": "9-12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "doge_findings.split_payments_value",
+        "PCR 2015 Reg.4"
+      ],
+      "severity": "medium"
+    }
+  ],
+  "supplier_recommendations": [
+    {
+      "rank": 1,
+      "supplier": "TARMAC TRADING LTD",
+      "total_spend": 145673066.32,
+      "transactions": 7852,
+      "pct_of_council_procurement": 3.53,
+      "avg_transaction": 18552.35,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "concentration_moderate",
+          "severity": "moderate",
+          "detail": "3.5% of council procurement spend",
+          "evidence": "insights.json supplier_analysis.top_20_suppliers"
+        }
+      ],
+      "council_id": "norfolk_cc"
+    },
+    {
+      "rank": 2,
+      "supplier": "NORSE CARE LTD",
+      "total_spend": 130252657.14,
+      "transactions": 5967,
+      "pct_of_council_procurement": 3.15,
+      "avg_transaction": 21828.83,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "concentration_moderate",
+          "severity": "moderate",
+          "detail": "3.2% of council procurement spend",
+          "evidence": "insights.json supplier_analysis.top_20_suppliers"
+        }
+      ],
+      "council_id": "norfolk_cc"
+    },
+    {
+      "rank": 3,
+      "supplier": "NORSE EASTERN LTD",
+      "total_spend": 118398563.1,
+      "transactions": 4997,
+      "pct_of_council_procurement": 2.87,
+      "avg_transaction": 23693.93,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "concentration_moderate",
+          "severity": "moderate",
+          "detail": "2.9% of council procurement spend",
+          "evidence": "insights.json supplier_analysis.top_20_suppliers"
+        }
+      ],
+      "council_id": "norfolk_cc"
+    },
+    {
+      "rank": 4,
+      "supplier": "PUBLIC WORKS LOAN BOARD",
+      "total_spend": 88272679.16,
+      "transactions": 16,
+      "pct_of_council_procurement": 2.14,
+      "avg_transaction": 5517042.45,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "concentration_moderate",
+          "severity": "moderate",
+          "detail": "2.1% of council procurement spend",
+          "evidence": "insights.json supplier_analysis.top_20_suppliers"
+        },
+        {
+          "type": "large_avg_txn",
+          "severity": "moderate",
+          "detail": "average transaction \u00a35,517K across 16 payments \u2014 consistent with large infrastructure / capital contract",
+          "evidence": "insights.json supplier_analysis (transactions, total)"
+        }
+      ],
+      "council_id": "norfolk_cc"
+    },
+    {
+      "rank": 5,
+      "supplier": "CAMBRIDGESHIRE COMMUNITY SERVICES (NHS TRUST)",
+      "total_spend": 58172408.04,
+      "transactions": 144,
+      "pct_of_council_procurement": 1.41,
+      "avg_transaction": 403975.06,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "norfolk_cc"
+    },
+    {
+      "rank": 6,
+      "supplier": "HEALTHCARE HOMES GROUP LTD",
+      "total_spend": 56609195.4,
+      "transactions": 24386,
+      "pct_of_council_procurement": 1.37,
+      "avg_transaction": 2321.38,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "norfolk_cc"
+    },
+    {
+      "rank": 7,
+      "supplier": "FIRST EASTERN COUNTIES BUSES LTD",
+      "total_spend": 52927327.26,
+      "transactions": 1176,
+      "pct_of_council_procurement": 1.28,
+      "avg_transaction": 45006.23,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "norfolk_cc"
+    },
+    {
+      "rank": 8,
+      "supplier": "VEOLIA ES (UK) LTD",
+      "total_spend": 44961853.42,
+      "transactions": 29,
+      "pct_of_council_procurement": 1.09,
+      "avg_transaction": 1550408.74,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "large_avg_txn",
+          "severity": "moderate",
+          "detail": "average transaction \u00a31,550K across 29 payments \u2014 consistent with large infrastructure / capital contract",
+          "evidence": "insights.json supplier_analysis (transactions, total)"
+        }
+      ],
+      "council_id": "norfolk_cc"
+    },
+    {
+      "rank": 9,
+      "supplier": "OCTAVIUS INFRASTRUCTURE LTD",
+      "total_spend": 43726179.8,
+      "transactions": 45,
+      "pct_of_council_procurement": 1.06,
+      "avg_transaction": 971692.88,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "large_avg_txn",
+          "severity": "moderate",
+          "detail": "average transaction \u00a3972K across 45 payments \u2014 consistent with large infrastructure / capital contract",
+          "evidence": "insights.json supplier_analysis (transactions, total)"
+        }
+      ],
+      "council_id": "norfolk_cc"
+    },
+    {
+      "rank": 10,
+      "supplier": "INDEPENDENCE MATTERS CIC",
+      "total_spend": 43472264.59,
+      "transactions": 3657,
+      "pct_of_council_procurement": 1.05,
+      "avg_transaction": 11887.41,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "norfolk_cc"
+    },
+    {
+      "rank": 11,
+      "supplier": "WEST YORKSHIRE PENSION FUND",
+      "total_spend": 40929098.7,
+      "transactions": 38,
+      "pct_of_council_procurement": 0.99,
+      "avg_transaction": 1077081.54,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "large_avg_txn",
+          "severity": "moderate",
+          "detail": "average transaction \u00a31,077K across 38 payments \u2014 consistent with large infrastructure / capital contract",
+          "evidence": "insights.json supplier_analysis (transactions, total)"
+        }
+      ],
+      "council_id": "norfolk_cc"
+    },
+    {
+      "rank": 12,
+      "supplier": "PUBLIC WORKS LOAN BOARD D/DEBIT",
+      "total_spend": 39181910.0,
+      "transactions": 6,
+      "pct_of_council_procurement": 0.95,
+      "avg_transaction": 6530318.33,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "large_avg_txn",
+          "severity": "moderate",
+          "detail": "average transaction \u00a36,530K across 6 payments \u2014 consistent with large infrastructure / capital contract",
+          "evidence": "insights.json supplier_analysis (transactions, total)"
+        }
+      ],
+      "council_id": "norfolk_cc"
+    },
+    {
+      "rank": 13,
+      "supplier": "MEDEQUIP ASSISTIVE TECHNOLOGY LTD",
+      "total_spend": 35072872.24,
+      "transactions": 91,
+      "pct_of_council_procurement": 0.85,
+      "avg_transaction": 385416.18,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "norfolk_cc"
+    },
+    {
+      "rank": 14,
+      "supplier": "AURORA CARE AND EDUCATION OPCO LTD",
+      "total_spend": 34846636.62,
+      "transactions": 2598,
+      "pct_of_council_procurement": 0.84,
+      "avg_transaction": 13412.87,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "norfolk_cc"
+    },
+    {
+      "rank": 15,
+      "supplier": "NORSE ENVIRONMENTAL WASTE SERVICES LTD",
+      "total_spend": 34813123.38,
+      "transactions": 675,
+      "pct_of_council_procurement": 0.84,
+      "avg_transaction": 51575.0,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "norfolk_cc"
+    },
+    {
+      "rank": 16,
+      "supplier": "AMEY LIGHTING (NORFOLK) LTD",
+      "total_spend": 31341980.48,
+      "transactions": 104,
+      "pct_of_council_procurement": 0.76,
+      "avg_transaction": 301365.2,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "norfolk_cc"
+    },
+    {
+      "rank": 17,
+      "supplier": "WSP UK LTD",
+      "total_spend": 31321864.16,
+      "transactions": 2773,
+      "pct_of_council_procurement": 0.76,
+      "avg_transaction": 11295.3,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "norfolk_cc"
+    },
+    {
+      "rank": 18,
+      "supplier": "CHANGE GROW LIVE SERVICES LTD",
+      "total_spend": 25674870.75,
+      "transactions": 57,
+      "pct_of_council_procurement": 0.62,
+      "avg_transaction": 450436.33,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "norfolk_cc"
+    },
+    {
+      "rank": 19,
+      "supplier": "R G CARTER LTD",
+      "total_spend": 25118595.6,
+      "transactions": 49,
+      "pct_of_council_procurement": 0.61,
+      "avg_transaction": 512624.4,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "large_avg_txn",
+          "severity": "moderate",
+          "detail": "average transaction \u00a3513K across 49 payments \u2014 consistent with large infrastructure / capital contract",
+          "evidence": "insights.json supplier_analysis (transactions, total)"
+        }
+      ],
+      "council_id": "norfolk_cc"
+    },
+    {
+      "rank": 20,
+      "supplier": "BAM FARRANS JV",
+      "total_spend": 24247777.0,
+      "transactions": 25,
+      "pct_of_council_procurement": 0.59,
+      "avg_transaction": 969911.08,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "large_avg_txn",
+          "severity": "moderate",
+          "detail": "average transaction \u00a3970K across 25 payments \u2014 consistent with large infrastructure / capital contract",
+          "evidence": "insights.json supplier_analysis (transactions, total)"
+        }
+      ],
+      "council_id": "norfolk_cc"
+    }
+  ],
+  "supplier_summary_flags": [],
+  "recommendation_counts": {
+    "rebid_candidate": 0,
+    "joint_procurement": 0,
+    "due_diligence": 0,
+    "monitor": 20,
+    "total": 20
+  }
+}

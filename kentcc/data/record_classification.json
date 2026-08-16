@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "council_id": "kent_cc",
+  "updated": "2026-04-19",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Kent County Council is an upper-tier authority (county council). Default is procurement_paid. Pension fund transfers bucket to internal_transfer. REDACTED / accrual rules added if the raw CSV feed exposes them — not all counties do.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions — direct payments to individuals (foster carers, SGO recipients, ASC service-user direct payments, CYP direct payments, Staying Put arrangements). Lawfully unnamed. Pattern covers REDACTED, REDACT, [REDACTED], and REDACTED-suffix variants (e.g. 'REDACTED PERSONAL DATA', 'REDACTED - PERSONAL PAYMENT', 'REDACTED - SPECIFIC VENDOR')."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^.*KENT.*PENSION FUND.*$"
+      },
+      "reason": "Kent CC Pension Fund is the council's own pensions vehicle — money from the general fund to the pension fund is an internal transfer, not third-party procurement."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^(COMMERCIAL SERVICES KENT LTD|KENT SOCIAL CARE PROFESSIONALS LTD)$"
+      },
+      "reason": "KCC wholly-owned trading subsidiaries. Commercial Services Kent Ltd (CSK/Commercial Services Group, wholly-owned since 2010, est. trading company vehicle) £101M / 40K txns. Kent Social Care Professionals Ltd is KCC's in-house social-work temp agency. Council-to-own-subsidiary flows, not third-party procurement."
+    }
+  ],
+  "supplier_aliases": []
+}

@@ -1,0 +1,83 @@
+{
+  "generated": "2026-06-24",
+  "source": "Kirklees MBC 2026/27 budget pack (ModernGov s68291, verified figure-by-figure) + the AI DOGE directorate DSG investigation (DfE Safety Valve agreement, DSG Conditions of Grant 2026-27, Cabinet Q3 monitoring decision 13457).",
+  "council_id": "kirklees",
+  "council_type": "metropolitan_borough",
+  "financial_year": "2026/27",
+  "net_revenue_budget": 467292000,
+  "directorates": [
+    {
+      "id": "adults_health",
+      "name": "Adults and Health",
+      "budget_2026_27": 171000000,
+      "savings_identified": 4400000,
+      "_note": "Adult Social Care, Communities and Access, Public Health partner. 36.6% of net budget, the largest directorate."
+    },
+    {
+      "id": "children_families",
+      "name": "Children and Families",
+      "budget_2026_27": 94813000,
+      "savings_identified": 2600000,
+      "_note": "Carries the ring-fenced DSG High Needs deficit (GBP 81.3m, off the General Fund under the statutory override to March 2028)."
+    },
+    {
+      "id": "central",
+      "name": "Central (corporate, treasury, levies)",
+      "budget_2026_27": 81776000,
+      "savings_identified": 0
+    },
+    {
+      "id": "place",
+      "name": "Place",
+      "budget_2026_27": 60054000,
+      "savings_identified": 1700000
+    },
+    {
+      "id": "public_health_corporate_resources",
+      "name": "Public Health and Corporate Resources",
+      "budget_2026_27": 59302000,
+      "savings_identified": 1800000
+    }
+  ],
+  "cross_cutting": {
+    "combined_low": 11800000,
+    "combined_high": 20300000,
+    "as_pct_of_budget_low": 2.5,
+    "as_pct_of_budget_high": 4.3,
+    "_note": "The 2026/27 inherited savings programme (set by the previous administration) is GBP 10.5m in-year, rising to a cumulative recurring GBP 20.3m by 2028/29. The AI DOGE directorate engine risk-adjusts it on tier probabilities to GBP 11.8m recurring EV by 2028/29. These are the inherited programme's values, not additional AI DOGE-identified savings, because Kirklees has no row-level spend ingested."
+  },
+  "mtfs_gap_cumulative": 52342000,
+  "mtfs_period": "2027/28 to 2030/31",
+  "reserves": {
+    "total": 57785000,
+    "general_unallocated": 26000000,
+    "min_working_balance": 22000000,
+    "_note": "Usable reserves GBP 57.785m at 31 March 2026. General unallocated GBP 26.0m against a GBP 22.0m minimum. The external auditor considers reserves low for a council of this size; the phased reserve drawdown supporting the base budget ends after 2026/27."
+  },
+  "council_tax_band_d": 2062.42,
+  "council_tax_increase_pct": 4.99,
+  "risks": [
+    {
+      "risk": "DSG High Needs deficit cliff. The cumulative deficit reached GBP 81.3m at Q3 2025/26 (up from GBP 43.7m two years earlier) and is held off the General Fund by a statutory override that ends 31 March 2028, two years before the DfE Safety Valve plan returns the deficit to a planned GBP 33.0m (2029/30). A residual deficit of tens of millions could transfer to a General Fund holding GBP 26m of general reserves, an S114 risk.",
+      "severity": "critical"
+    },
+    {
+      "risk": "No administration. The council has been leaderless and in no overall control since 7 May 2026; two leadership votes failed and the multi-year savings and DSG recovery plans lack political grip.",
+      "severity": "high"
+    },
+    {
+      "risk": "Low reserves. Usable reserves GBP 57.785m, general balances GBP 26m, flagged low by the external auditor, with the base-budget reserve support ending after 2026/27.",
+      "severity": "high"
+    },
+    {
+      "risk": "Widening MTFS gap. The forward budget gap rises to GBP 16.8m (2029/30) and GBP 21.1m (2030/31), coinciding with the DSG override cliff.",
+      "severity": "high"
+    },
+    {
+      "risk": "Savings deliverability. The largest single saving (NEWAD2, GBP 2.2m of the GBP 4.4m Adults and Health programme) rests on modelling future demand with an external change partner, graded aspirational by the directorate engine.",
+      "severity": "medium"
+    }
+  ],
+  "_provenance": "Financial picture from the verified 2026/27 budget pack (s68291). The DSG-cliff risk from the directorate investigation (KIRKLEES_DSG_HIGH_NEEDS_CLIFF_2026-06-24). The savings EV from the AI DOGE directorate engine (M4-bis lever_ev --council kirklees). This file is read directly by the Council Intel bundle generator; data_sources.directorate_analysis stays false because the public DirectorateDashboard requires spending and budgets data Kirklees has not yet ingested.",
+  "_budget_note": "Adopted net revenue budget 2026/27 (full Council, 25 February 2026, doc s68597); the Cabinet draft (10 February, s68291) was GBP 466.945m, the difference reflecting the Final Local Government Finance Settlement."
+}

@@ -1,0 +1,19 @@
+{
+  "_meta": {
+    "listing_page": "https://www.nelincs.gov.uk/your-council/council-spending/",
+    "fetched_at": "2026-07-06",
+    "notes": "Three cumulative CSVs refreshed monthly at /assets/uploads/{YYYY}/{MM}/ \u2014 URLs move on each refresh; re-scrape the listing page. Three schema generations: 14-col legacy (2020/21-2021/22), 15-col (2022/23-2025/26), 16-col with duplicate Period column (2026/27)."
+  },
+  "2020-21-to-2021-22": {
+    "url": "https://www.nelincs.gov.uk/assets/uploads/2026/05/Spending-Data-2020-21-to-2021-22.csv",
+    "ext": "csv"
+  },
+  "2022-23-to-2025-26": {
+    "url": "https://www.nelincs.gov.uk/assets/uploads/2026/05/Spending-Data-2022-23-to-2025-26.csv",
+    "ext": "csv"
+  },
+  "Local-2026-27": {
+    "url": "https://www.nelincs.gov.uk/assets/uploads/2026/07/Local-Spending-Data-2026-27-CSV.csv",
+    "ext": "csv"
+  }
+}

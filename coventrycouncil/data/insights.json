@@ -1,0 +1,452 @@
+{
+  "summary": {
+    "total_spend": 2724456050.06,
+    "transaction_count": 569029,
+    "unique_suppliers": 8081,
+    "avg_transaction": 4787.9,
+    "median_transaction": 950.0,
+    "date_range": {
+      "min": "2017-04-01",
+      "max": "2026-04-07"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "NHS COVENTRY & WARWICKSHIRE ICB (QWU)",
+        "total": 242007781.96,
+        "transactions": 240,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WEST MIDLANDS COMBINED AUTHORITY",
+        "total": 66788310.13,
+        "transactions": 158,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WATERMAN ASPEN LTD",
+        "total": 66142886.27,
+        "transactions": 3051,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED PERSONAL DATA",
+        "total": 61457927.05,
+        "transactions": 63941,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BUCKINGHAM GROUP CONTRACTING LTD",
+        "total": 52878468.68,
+        "transactions": 67,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COVENTRY & RUGBY CLINICAL COMMISSIONING GROUP",
+        "total": 51928170.04,
+        "transactions": 107,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COVENTRY & SOLIHULL WASTE DISPOSAL COMPANY",
+        "total": 46353769.58,
+        "transactions": 175,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CONNECT ROADS COVENTRY LTD",
+        "total": 40245413.95,
+        "transactions": 65,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ANCHOR TRUST",
+        "total": 37252471.77,
+        "transactions": 93,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WARWICKSHIRE COUNTY COUNCIL",
+        "total": 34096163.86,
+        "transactions": 347,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BALFOUR BEATTY LIVING PLACES LTD",
+        "total": 34040150.15,
+        "transactions": 1768,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PENDERELS TRUST FUND",
+        "total": 27762221.35,
+        "transactions": 17656,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NHS COVENTRY & WARWICKSHIRE CCG",
+        "total": 26629540.07,
+        "transactions": 24,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FITZROY SUPPORT",
+        "total": 26528676.57,
+        "transactions": 19637,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SOUTH WARWICKSHIRE NHS FOUNDATION TRUST",
+        "total": 26261497.14,
+        "transactions": 41,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WHITEFRIARS HOUSING GROUP LTD",
+        "total": 25288872.23,
+        "transactions": 583,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CHANGE GROW LIVE SERVICES LTD",
+        "total": 22351571.02,
+        "transactions": 232,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SHEARER PROPERTY REGEN LTD",
+        "total": 21647898.98,
+        "transactions": 45,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FRIARGATE COVENTRY DEVELOPMENT LTD",
+        "total": 20995531.1,
+        "transactions": 28,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SOUTH WARWICKSHIRE UNIVERSITY NHS FOUNDATION TRUST",
+        "total": 19044952.9,
+        "transactions": 65,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.3486,
+    "total_unique_suppliers": 8081,
+    "single_transaction_suppliers": 2348
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 70680,
+      "potential_value": 387933991.42,
+      "items": [
+        {
+          "supplier": "SOUTH WARWICKSHIRE NHS FOUNDATION TRUST",
+          "amount": 1529999.0,
+          "date": "2023-07-12",
+          "occurrences": 2,
+          "potential_overpayment": 1529999.0
+        },
+        {
+          "supplier": "CHANGE GROW LIVE SERVICES LTD",
+          "amount": 247496.83,
+          "date": "2018-10-01",
+          "occurrences": 5,
+          "potential_overpayment": 989987.32
+        },
+        {
+          "supplier": "VKM SOLICITORS",
+          "amount": 213750.0,
+          "date": "2024-08-20",
+          "occurrences": 4,
+          "potential_overpayment": 641250.0
+        },
+        {
+          "supplier": "TREKA BUS LTD",
+          "amount": 75170.93,
+          "date": "2023-02-20",
+          "occurrences": 9,
+          "potential_overpayment": 601367.44
+        },
+        {
+          "supplier": "DENNIS EAGLE",
+          "amount": 185115.0,
+          "date": "2022-04-28",
+          "occurrences": 4,
+          "potential_overpayment": 555345.0
+        },
+        {
+          "supplier": "SOUTH WARWICKSHIRE UNIVERSITY NHS FOUNDATION TRUST",
+          "amount": 510000.0,
+          "date": "2024-05-16",
+          "occurrences": 2,
+          "potential_overpayment": 510000.0
+        },
+        {
+          "supplier": "PAYPOINT PLC",
+          "amount": 100000.0,
+          "date": "2026-03-01",
+          "occurrences": 6,
+          "potential_overpayment": 500000.0
+        },
+        {
+          "supplier": "FAUN ZOELLER (UK) LTD",
+          "amount": 245775.0,
+          "date": "2025-10-10",
+          "occurrences": 3,
+          "potential_overpayment": 491550.0
+        },
+        {
+          "supplier": "TREKA BUS LTD",
+          "amount": 81676.28,
+          "date": "2025-11-07",
+          "occurrences": 7,
+          "potential_overpayment": 490057.68
+        },
+        {
+          "supplier": "FARID HILLEND ENGINEERING LTD",
+          "amount": 150226.0,
+          "date": "2025-05-27",
+          "occurrences": 4,
+          "potential_overpayment": 450678.0
+        },
+        {
+          "supplier": "FARID HILLEND ENGINEERING LTD",
+          "amount": 150226.0,
+          "date": "2025-04-30",
+          "occurrences": 4,
+          "potential_overpayment": 450678.0
+        },
+        {
+          "supplier": "THE KNOWLES",
+          "amount": 612.39,
+          "date": "2022-11-19",
+          "occurrences": 719,
+          "potential_overpayment": 439696.02
+        },
+        {
+          "supplier": "ST MATTHEWS (BROAD LANE) LTD - HAWTHORNE HOUSE",
+          "amount": 2219.48,
+          "date": "2025-03-27",
+          "occurrences": 198,
+          "potential_overpayment": 437237.56
+        },
+        {
+          "supplier": "DENNIS EAGLE",
+          "amount": 185115.0,
+          "date": "2022-05-23",
+          "occurrences": 3,
+          "potential_overpayment": 370230.0
+        },
+        {
+          "supplier": "THE WILLOWS",
+          "amount": 609.71,
+          "date": "2022-11-19",
+          "occurrences": 608,
+          "potential_overpayment": 370093.97
+        },
+        {
+          "supplier": "HC1 LTD",
+          "amount": 538.33,
+          "date": "2022-11-19",
+          "occurrences": 682,
+          "potential_overpayment": 366602.73
+        },
+        {
+          "supplier": "HC1 LTD",
+          "amount": 612.31,
+          "date": "2022-11-19",
+          "occurrences": 595,
+          "potential_overpayment": 363712.14
+        },
+        {
+          "supplier": "METHODIST HOMES FOR THE AGED",
+          "amount": 531.61,
+          "date": "2022-11-19",
+          "occurrences": 667,
+          "potential_overpayment": 354052.26
+        },
+        {
+          "supplier": "HC1 LTD",
+          "amount": 590.75,
+          "date": "2022-11-19",
+          "occurrences": 585,
+          "potential_overpayment": 344998.0
+        },
+        {
+          "supplier": "CHANGE GROW LIVE SERVICES LTD",
+          "amount": 343735.04,
+          "date": "2026-03-03",
+          "occurrences": 2,
+          "potential_overpayment": 343735.04
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 3500,
+      "total_value": 182940000.0
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "People",
+      "spend": 989278453.69,
+      "count": 276754
+    },
+    {
+      "department": "Place",
+      "spend": 598748814.37,
+      "count": 43777
+    },
+    {
+      "department": "Adult Services and Housing",
+      "spend": 392885022.85,
+      "count": 169886
+    },
+    {
+      "department": "Children and Education",
+      "spend": 253827675.28,
+      "count": 48942
+    },
+    {
+      "department": "Regeneration and Economy Development",
+      "spend": 130226830.56,
+      "count": 3878
+    },
+    {
+      "department": "City Services",
+      "spend": 116147607.61,
+      "count": 11597
+    },
+    {
+      "department": "Contingency and Central Budgets",
+      "spend": 93748958.17,
+      "count": 277
+    },
+    {
+      "department": "Property Services and Development",
+      "spend": 45132937.7,
+      "count": 4246
+    },
+    {
+      "department": "Public Health",
+      "spend": 43275945.06,
+      "count": 1695
+    },
+    {
+      "department": "Finance and Resources",
+      "spend": 24386307.49,
+      "count": 1518
+    },
+    {
+      "department": "People and Organisational Development",
+      "spend": 11516693.02,
+      "count": 3562
+    },
+    {
+      "department": "Planning and Performance",
+      "spend": 8079027.88,
+      "count": 819
+    },
+    {
+      "department": "Digital Services",
+      "spend": 8020051.26,
+      "count": 248
+    },
+    {
+      "department": "Legal and Governance",
+      "spend": 4798681.53,
+      "count": 1520
+    },
+    {
+      "department": "Net Budget Resources",
+      "spend": 1270062.63,
+      "count": 5
+    },
+    {
+      "department": "Corporate",
+      "spend": 1265840.12,
+      "count": 3
+    },
+    {
+      "department": "Resources",
+      "spend": 1118933.8,
+      "count": 93
+    },
+    {
+      "department": "Law, Governance and Safer Communities???",
+      "spend": 368409.42,
+      "count": 109
+    },
+    {
+      "department": "Policy and Communications",
+      "spend": 345429.62,
+      "count": 97
+    },
+    {
+      "department": "Chief Executive\u00b4s",
+      "spend": 14368.0,
+      "count": 3
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2017/18": 194061022.69,
+      "2018/19": 144317038.61,
+      "2019/20": 243146028.62,
+      "2020/21": 106231065.38,
+      "2021/22": 154538271.38,
+      "2022/23": 320004609.12,
+      "2023/24": 400866281.92,
+      "2024/25": 573983474.26,
+      "2025/26": 587304463.28,
+      "2026/27": 3794.8
+    },
+    "transactions_by_year": {
+      "2017/18": 32472,
+      "2018/19": 26780,
+      "2019/20": 31582,
+      "2020/21": 15468,
+      "2021/22": 23473,
+      "2022/23": 79157,
+      "2023/24": 84461,
+      "2024/25": 149546,
+      "2025/26": 126086,
+      "2026/27": 4
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 569029
+  }
+}

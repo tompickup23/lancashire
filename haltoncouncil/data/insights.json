@@ -1,0 +1,1443 @@
+{
+  "summary": {
+    "total_spend": 998443403.53,
+    "transaction_count": 352857,
+    "unique_suppliers": 3844,
+    "avg_transaction": 2829.6,
+    "median_transaction": 313.14,
+    "date_range": {
+      "min": "2022-01-04",
+      "max": "2026-03-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "REDACTED PERSONAL DATA",
+        "total": 97896085.9,
+        "transactions": 90386,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HALTON HOUSING TRUST",
+        "total": 37667515.37,
+        "transactions": 198,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ST HELENS MBC",
+        "total": 27972594.84,
+        "transactions": 104,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WATES CONSTRUCTION LTD",
+        "total": 27836215.18,
+        "transactions": 35,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PREMIER CARE LTD",
+        "total": 25190512.14,
+        "transactions": 1007,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MATRIX SCM LTD",
+        "total": 24864233.2,
+        "transactions": 22986,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BRIDGEWATER COMMUNITY HEALTHCARE",
+        "total": 23456125.83,
+        "transactions": 404,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HALTON & KENT COMMERCIAL SERVICES LLP",
+        "total": 20124079.79,
+        "transactions": 41312,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COMMUNITY INTEGRATED CARE LTD",
+        "total": 19542642.75,
+        "transactions": 1468,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "POSSABILITIES CIC",
+        "total": 16931264.94,
+        "transactions": 743,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HTP GRANGE LTD",
+        "total": 16664685.93,
+        "transactions": 108,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TARMAC TRADING LTD",
+        "total": 15094090.93,
+        "transactions": 1361,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BALFOUR BEATTY REGIONAL CIVIL ENGINEERING LTD",
+        "total": 14671113.83,
+        "transactions": 41,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NHS CHESHIRE AND MERSEYSIDE INTEGRATED CARE BOARD",
+        "total": 14177034.17,
+        "transactions": 106,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "RIVERSIDE GROUP",
+        "total": 13523071.4,
+        "transactions": 225,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ONWARD HOMES",
+        "total": 10223716.64,
+        "transactions": 139,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LAMBROS PAVING CONTRACTORS LTD",
+        "total": 10213029.19,
+        "transactions": 185,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BALVAC LTD",
+        "total": 8868107.19,
+        "transactions": 53,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EDF ENERGY",
+        "total": 8218510.5,
+        "transactions": 1928,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MINSTER CARE SERVICES LTD",
+        "total": 7828247.92,
+        "transactions": 769,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.4417,
+    "total_unique_suppliers": 3844,
+    "single_transaction_suppliers": 1298
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 33309,
+      "potential_value": 84739556.56,
+      "items": [
+        {
+          "supplier": "BRIDGEWATER COMMUNITY HEALTHCARE",
+          "amount": 215888.63,
+          "date": "2024-02-07",
+          "occurrences": 6,
+          "potential_overpayment": 1079443.15
+        },
+        {
+          "supplier": "NHS HALTON CCG",
+          "amount": 750000.0,
+          "date": "2022-03-28",
+          "occurrences": 2,
+          "potential_overpayment": 750000.0
+        },
+        {
+          "supplier": "FAUN ZOELLER (UK) LTD",
+          "amount": 200784.0,
+          "date": "2023-09-26",
+          "occurrences": 4,
+          "potential_overpayment": 602352.0
+        },
+        {
+          "supplier": "FAUN ZOELLER (UK) LTD",
+          "amount": 235289.0,
+          "date": "2025-09-24",
+          "occurrences": 3,
+          "potential_overpayment": 470578.0
+        },
+        {
+          "supplier": "NHS CHESHIRE AND MERSEYSIDE INTEGRATED CARE BOARD",
+          "amount": 429400.79,
+          "date": "2025-01-10",
+          "occurrences": 2,
+          "potential_overpayment": 429400.79
+        },
+        {
+          "supplier": "BRIDGEWATER COMMUNITY HEALTHCARE",
+          "amount": 79670.0,
+          "date": "2024-02-07",
+          "occurrences": 6,
+          "potential_overpayment": 398350.0
+        },
+        {
+          "supplier": "WARRINGTON BOROUGH COUNCIL",
+          "amount": 150740.17,
+          "date": "2022-05-05",
+          "occurrences": 3,
+          "potential_overpayment": 301480.34
+        },
+        {
+          "supplier": "CHANGING LIVES",
+          "amount": 45645.0,
+          "date": "2022-12-19",
+          "occurrences": 7,
+          "potential_overpayment": 273870.0
+        },
+        {
+          "supplier": "BRIDGEWATER COMMUNITY HEALTHCARE",
+          "amount": 128417.92,
+          "date": "2023-09-18",
+          "occurrences": 3,
+          "potential_overpayment": 256835.84
+        },
+        {
+          "supplier": "BRIDGEWATER COMMUNITY HEALTHCARE",
+          "amount": 215888.63,
+          "date": "2023-05-25",
+          "occurrences": 2,
+          "potential_overpayment": 215888.63
+        },
+        {
+          "supplier": "BRIDGEWATER COMMUNITY HEALTHCARE",
+          "amount": 215888.63,
+          "date": "2022-12-07",
+          "occurrences": 2,
+          "potential_overpayment": 215888.63
+        },
+        {
+          "supplier": "FARID HILLEND ENGINEERING LTD",
+          "amount": 161676.89,
+          "date": "2022-05-24",
+          "occurrences": 2,
+          "potential_overpayment": 161676.89
+        },
+        {
+          "supplier": "MASTER QUALITY HEALTHCARE SERVICES LTD",
+          "amount": 48475.44,
+          "date": "2024-10-16",
+          "occurrences": 4,
+          "potential_overpayment": 145426.32
+        },
+        {
+          "supplier": "CREATIVE SUPPORT LTD",
+          "amount": 16541.93,
+          "date": "2022-05-30",
+          "occurrences": 9,
+          "potential_overpayment": 132335.44
+        },
+        {
+          "supplier": "BRIDGEWATER COMMUNITY HEALTHCARE",
+          "amount": 128417.92,
+          "date": "2023-05-22",
+          "occurrences": 2,
+          "potential_overpayment": 128417.92
+        },
+        {
+          "supplier": "BRIDGEWATER COMMUNITY HEALTHCARE",
+          "amount": 128417.92,
+          "date": "2024-03-20",
+          "occurrences": 2,
+          "potential_overpayment": 128417.92
+        },
+        {
+          "supplier": "BRIDGEWATER COMMUNITY HEALTHCARE",
+          "amount": 127746.33,
+          "date": "2025-08-21",
+          "occurrences": 2,
+          "potential_overpayment": 127746.33
+        },
+        {
+          "supplier": "BRIDGEWATER COMMUNITY HEALTHCARE",
+          "amount": 127746.33,
+          "date": "2026-01-05",
+          "occurrences": 2,
+          "potential_overpayment": 127746.33
+        },
+        {
+          "supplier": "BRIDGEWATER COMMUNITY HEALTHCARE",
+          "amount": 127746.33,
+          "date": "2026-01-12",
+          "occurrences": 2,
+          "potential_overpayment": 127746.33
+        },
+        {
+          "supplier": "CHESHIRE WEST & CHESTER COUNCIL",
+          "amount": 116976.25,
+          "date": "2026-01-16",
+          "occurrences": 2,
+          "potential_overpayment": 116976.25
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 1439,
+      "total_value": 25501000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 127
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Adult Social Care",
+      "spend": 335367281.96,
+      "count": 108992
+    },
+    {
+      "department": "Children & Family Services",
+      "spend": 151870738.55,
+      "count": 96503
+    },
+    {
+      "department": "Finance Department",
+      "spend": 82871398.42,
+      "count": 5585
+    },
+    {
+      "department": "Economy, Enterprise & Property",
+      "spend": 78280399.07,
+      "count": 13884
+    },
+    {
+      "department": "Planning & Transportation",
+      "spend": 73497397.18,
+      "count": 11893
+    },
+    {
+      "department": "Community & Greenspace",
+      "spend": 49890162.09,
+      "count": 44788
+    },
+    {
+      "department": "Education, Inclusion & Provision",
+      "spend": 41053690.95,
+      "count": 15458
+    },
+    {
+      "department": "Public Health & Public Protection",
+      "spend": 24477623.56,
+      "count": 3567
+    },
+    {
+      "department": "Complex Care Pool",
+      "spend": 17105691.47,
+      "count": 2734
+    },
+    {
+      "department": "Finance",
+      "spend": 16973475.27,
+      "count": 1062
+    },
+    {
+      "department": "Corporate Finance",
+      "spend": 15957117.41,
+      "count": 1003
+    },
+    {
+      "department": "Mersey Gateway",
+      "spend": 15423055.97,
+      "count": 259
+    },
+    {
+      "department": "ICT & Support Services",
+      "spend": 11499890.7,
+      "count": 8157
+    },
+    {
+      "department": "Revenues",
+      "spend": 8852879.48,
+      "count": 1473
+    },
+    {
+      "department": "Community & Environment",
+      "spend": 7861419.2,
+      "count": 10103
+    },
+    {
+      "department": "Children in Care",
+      "spend": 7372945.1,
+      "count": 4456
+    },
+    {
+      "department": "Benefits",
+      "spend": 6181031.28,
+      "count": 1027
+    },
+    {
+      "department": "Legal & Democratic Services",
+      "spend": 4804165.75,
+      "count": 1991
+    },
+    {
+      "department": "Waste & Environment Improvement",
+      "spend": 4452709.56,
+      "count": 130
+    },
+    {
+      "department": "Chief Executives Delivery Unit",
+      "spend": 3734118.91,
+      "count": 1850
+    },
+    {
+      "department": "Corporate & Democracy",
+      "spend": 2149582.92,
+      "count": 1159
+    },
+    {
+      "department": "Schools",
+      "spend": 2016550.22,
+      "count": 838
+    },
+    {
+      "department": "Revenues & Financial Management",
+      "spend": 1908675.18,
+      "count": 317
+    },
+    {
+      "department": "Highways",
+      "spend": 1540773.04,
+      "count": 541
+    },
+    {
+      "department": "Enterprise, Community & Resources",
+      "spend": 1513142.5,
+      "count": 37
+    },
+    {
+      "department": "Operations",
+      "spend": 1497130.5,
+      "count": 747
+    },
+    {
+      "department": "Policy, Provision & Performance",
+      "spend": 1439851.25,
+      "count": 590
+    },
+    {
+      "department": "Runcorn - Delinking",
+      "spend": 1214535.78,
+      "count": 18
+    },
+    {
+      "department": "Economy Enterprise & Property",
+      "spend": 1150221.87,
+      "count": 565
+    },
+    {
+      "department": "Care Homes",
+      "spend": 1142799.93,
+      "count": 776
+    },
+    {
+      "department": "ICT & Support",
+      "spend": 1104577.64,
+      "count": 111
+    },
+    {
+      "department": "Crisis Response",
+      "spend": 1018840.38,
+      "count": 163
+    },
+    {
+      "department": "Commissioning",
+      "spend": 1017844.02,
+      "count": 171
+    },
+    {
+      "department": "Transforming Childrens Environment Division",
+      "spend": 975761.19,
+      "count": 3
+    },
+    {
+      "department": "Development & Investent Services",
+      "spend": 950301.11,
+      "count": 194
+    },
+    {
+      "department": "Child Protection & Children in Need",
+      "spend": 923077.77,
+      "count": 717
+    },
+    {
+      "department": "Public Health",
+      "spend": 862548.16,
+      "count": 76
+    },
+    {
+      "department": "Logistics",
+      "spend": 855978.0,
+      "count": 388
+    },
+    {
+      "department": "Integrated Youth Support Services & Commissioning",
+      "spend": 803541.53,
+      "count": 177
+    },
+    {
+      "department": "Mental Health",
+      "spend": 783336.29,
+      "count": 399
+    },
+    {
+      "department": "Decarbonisation Scheme",
+      "spend": 731669.54,
+      "count": 14
+    },
+    {
+      "department": "Children & Family Care",
+      "spend": 722609.14,
+      "count": 139
+    },
+    {
+      "department": "EATF Runcorn Busway",
+      "spend": 619286.74,
+      "count": 10
+    },
+    {
+      "department": "Fleet Vehicles",
+      "spend": 581707.54,
+      "count": 14
+    },
+    {
+      "department": "Concessionary Travel",
+      "spend": 569828.38,
+      "count": 8
+    },
+    {
+      "department": "Creative and Digital Skills Facility",
+      "spend": 557005.78,
+      "count": 10
+    },
+    {
+      "department": "Moor Lane Leisure Centre",
+      "spend": 543371.97,
+      "count": 17
+    },
+    {
+      "department": "East Runcorn Connectivity Pre Development",
+      "spend": 444210.72,
+      "count": 5
+    },
+    {
+      "department": "Schools Catering",
+      "spend": 442255.69,
+      "count": 1009
+    },
+    {
+      "department": "Open Spaces",
+      "spend": 429806.43,
+      "count": 327
+    },
+    {
+      "department": "Leisure & Recreation",
+      "spend": 367339.64,
+      "count": 1388
+    },
+    {
+      "department": "Data Centre Equipment",
+      "spend": 352292.81,
+      "count": 19
+    },
+    {
+      "department": "Brookvale Recreation Centre Pitch",
+      "spend": 306225.09,
+      "count": 3
+    },
+    {
+      "department": "HICaFS (Halton Integrated Care and Frailty Service)",
+      "spend": 275376.75,
+      "count": 19
+    },
+    {
+      "department": "Children' Locality Services Runcorn",
+      "spend": 244835.88,
+      "count": 224
+    },
+    {
+      "department": "Challenge Fund Part 1",
+      "spend": 242518.14,
+      "count": 4
+    },
+    {
+      "department": "Brindley Arts & Events",
+      "spend": 222551.13,
+      "count": 68
+    },
+    {
+      "department": "Policy, People, Performance & Efficiency",
+      "spend": 220651.89,
+      "count": 139
+    },
+    {
+      "department": "Legal Services",
+      "spend": 219343.23,
+      "count": 84
+    },
+    {
+      "department": "Policy & Strategy, Development & Building Control & Contaminated Land",
+      "spend": 216849.89,
+      "count": 49
+    },
+    {
+      "department": "Community Services",
+      "spend": 215628.78,
+      "count": 661
+    },
+    {
+      "department": "SUD - Green Cycle/Walk Corridors",
+      "spend": 211518.61,
+      "count": 7
+    },
+    {
+      "department": "FCERM - Hale Flood",
+      "spend": 197926.58,
+      "count": 3
+    },
+    {
+      "department": "Independent Living",
+      "spend": 191632.91,
+      "count": 282
+    },
+    {
+      "department": "Audit, Procurement & Operational Finance",
+      "spend": 190856.96,
+      "count": 133
+    },
+    {
+      "department": "Broseley House",
+      "spend": 190281.0,
+      "count": 2
+    },
+    {
+      "department": "Legal & Democratic",
+      "spend": 181985.04,
+      "count": 95
+    },
+    {
+      "department": "Employment, Learning & Skills",
+      "spend": 177506.58,
+      "count": 181
+    },
+    {
+      "department": "Traffic, Risk & Emergency Planning/Health & Safety",
+      "spend": 168225.22,
+      "count": 179
+    },
+    {
+      "department": "ICT Business Services",
+      "spend": 166885.8,
+      "count": 14
+    },
+    {
+      "department": "Communities & Environments",
+      "spend": 158271.17,
+      "count": 10
+    },
+    {
+      "department": "Disabled Facilities Grants",
+      "spend": 151859.33,
+      "count": 27
+    },
+    {
+      "department": "Care Management",
+      "spend": 145694.16,
+      "count": 188
+    },
+    {
+      "department": "Halton Town Centre - Halton Lea",
+      "spend": 144021.23,
+      "count": 4
+    },
+    {
+      "department": "Children's Locality Services Runcorn",
+      "spend": 143805.89,
+      "count": 67
+    },
+    {
+      "department": "Communities & Environment",
+      "spend": 138826.56,
+      "count": 9
+    },
+    {
+      "department": "Widnes Cremators",
+      "spend": 138810.0,
+      "count": 2
+    },
+    {
+      "department": "RSL Adaptations",
+      "spend": 138125.12,
+      "count": 53
+    },
+    {
+      "department": "Street Lighting",
+      "spend": 127360.23,
+      "count": 5
+    },
+    {
+      "department": "Administration",
+      "spend": 119048.81,
+      "count": 1479
+    },
+    {
+      "department": "Halton Outbreak Support",
+      "spend": 118862.8,
+      "count": 250
+    },
+    {
+      "department": "Adults Social Care",
+      "spend": 114091.79,
+      "count": 22
+    },
+    {
+      "department": "Open Space Service",
+      "spend": 112326.42,
+      "count": 25
+    },
+    {
+      "department": "Mersey Gateway - Operational",
+      "spend": 112007.97,
+      "count": 12
+    },
+    {
+      "department": "Property Improvements",
+      "spend": 111806.63,
+      "count": 10
+    },
+    {
+      "department": "Windmill Hill Flood Risk Assesment Scheme",
+      "spend": 111612.66,
+      "count": 6
+    },
+    {
+      "department": "Health & Wellbeing",
+      "spend": 111172.09,
+      "count": 232
+    },
+    {
+      "department": "Runcorn Busway - Phase 3",
+      "spend": 109460.5,
+      "count": 5
+    },
+    {
+      "department": "Design & Development",
+      "spend": 108353.94,
+      "count": 4
+    },
+    {
+      "department": "0-19 Learning & Achievement",
+      "spend": 108116.55,
+      "count": 69
+    },
+    {
+      "department": "Stadium",
+      "spend": 105953.74,
+      "count": 77
+    },
+    {
+      "department": "Enterprise, Economy & Resources",
+      "spend": 104332.76,
+      "count": 30
+    },
+    {
+      "department": "Holding Accounts",
+      "spend": 104157.59,
+      "count": 132
+    },
+    {
+      "department": "Insurance",
+      "spend": 100709.56,
+      "count": 35
+    },
+    {
+      "department": "Housing Solutions",
+      "spend": 98721.33,
+      "count": 104
+    },
+    {
+      "department": "Development & Investment",
+      "spend": 98384.19,
+      "count": 64
+    },
+    {
+      "department": "Policy Planning & Transport OD",
+      "spend": 97975.31,
+      "count": 2
+    },
+    {
+      "department": "Agile Offices",
+      "spend": 96901.48,
+      "count": 2
+    },
+    {
+      "department": "Public Health & Protection",
+      "spend": 96863.71,
+      "count": 302
+    },
+    {
+      "department": "Norton Priory Museum",
+      "spend": 86805.0,
+      "count": 1
+    },
+    {
+      "department": "Corportae ICT",
+      "spend": 86335.58,
+      "count": 182
+    },
+    {
+      "department": "Runcorn Town Centre Development",
+      "spend": 79300.0,
+      "count": 3
+    },
+    {
+      "department": "Financial Management",
+      "spend": 79029.59,
+      "count": 12
+    },
+    {
+      "department": "Brindley Theatre Enhancement",
+      "spend": 71362.98,
+      "count": 4
+    },
+    {
+      "department": "Millbrow Care Home",
+      "spend": 70003.83,
+      "count": 4
+    },
+    {
+      "department": "Community Safety",
+      "spend": 69912.59,
+      "count": 23
+    },
+    {
+      "department": "Environment, Public Health & Protection",
+      "spend": 68269.96,
+      "count": 73
+    },
+    {
+      "department": "Adaptations Initiative",
+      "spend": 67254.83,
+      "count": 11
+    },
+    {
+      "department": "Household Support Fund",
+      "spend": 67000.0,
+      "count": 2
+    },
+    {
+      "department": "Development & Investment Services",
+      "spend": 64991.75,
+      "count": 14
+    },
+    {
+      "department": "Ditton Loops",
+      "spend": 60892.03,
+      "count": 5
+    },
+    {
+      "department": "Mersey Gateway Early Land Acquisition",
+      "spend": 52161.36,
+      "count": 11
+    },
+    {
+      "department": "Restart Programme",
+      "spend": 50851.21,
+      "count": 73
+    },
+    {
+      "department": "Marketing & Communication",
+      "spend": 49644.6,
+      "count": 16
+    },
+    {
+      "department": "Childrens Playground Equipment",
+      "spend": 47450.02,
+      "count": 2
+    },
+    {
+      "department": "Property Services - Works",
+      "spend": 46669.66,
+      "count": 2
+    },
+    {
+      "department": "Transformation Project Management",
+      "spend": 45985.17,
+      "count": 20
+    },
+    {
+      "department": "Democratic Services",
+      "spend": 44390.84,
+      "count": 20
+    },
+    {
+      "department": "General Miscellaneous",
+      "spend": 44325.55,
+      "count": 36
+    },
+    {
+      "department": "Lighting Upgrades",
+      "spend": 44267.24,
+      "count": 1
+    },
+    {
+      "department": "Risk Management",
+      "spend": 41169.97,
+      "count": 10
+    },
+    {
+      "department": "Employment, Enterprise & Property",
+      "spend": 40475.03,
+      "count": 9
+    },
+    {
+      "department": "Organisation, Development & Corporate Strategy",
+      "spend": 39704.5,
+      "count": 18
+    },
+    {
+      "department": "Runcorn Station Quarter",
+      "spend": 37367.3,
+      "count": 7
+    },
+    {
+      "department": "Transport Integration - Transportation",
+      "spend": 37106.01,
+      "count": 5
+    },
+    {
+      "department": "Open Spaces Scheme",
+      "spend": 36840.21,
+      "count": 3
+    },
+    {
+      "department": "Prevention & Assessmet",
+      "spend": 33997.32,
+      "count": 8
+    },
+    {
+      "department": "Inclusion",
+      "spend": 33678.03,
+      "count": 90
+    },
+    {
+      "department": "Major Capital Repairs",
+      "spend": 33362.96,
+      "count": 10
+    },
+    {
+      "department": "Mersey Gateway Handback Land",
+      "spend": 33302.31,
+      "count": 7
+    },
+    {
+      "department": "Community Development",
+      "spend": 33023.22,
+      "count": 77
+    },
+    {
+      "department": "Childrens Safeguarding Unit",
+      "spend": 31028.76,
+      "count": 34
+    },
+    {
+      "department": "HR Services",
+      "spend": 30410.44,
+      "count": 20
+    },
+    {
+      "department": "Major Miantenance - Other Bridges",
+      "spend": 29802.95,
+      "count": 6
+    },
+    {
+      "department": "Commissioning & Complex",
+      "spend": 29274.65,
+      "count": 13
+    },
+    {
+      "department": "Contact and Referral Team",
+      "spend": 27253.67,
+      "count": 29
+    },
+    {
+      "department": "F/way Structural Maintenance - Independent",
+      "spend": 27166.53,
+      "count": 2
+    },
+    {
+      "department": "Town Park",
+      "spend": 25838.02,
+      "count": 3
+    },
+    {
+      "department": "Playground Crow Wood Park",
+      "spend": 23501.8,
+      "count": 2
+    },
+    {
+      "department": "Finance Misc. Expenses",
+      "spend": 23162.79,
+      "count": 11
+    },
+    {
+      "department": "Children's Locality Services Widnes",
+      "spend": 22184.41,
+      "count": 106
+    },
+    {
+      "department": "SEND Capital",
+      "spend": 21500.53,
+      "count": 6
+    },
+    {
+      "department": "C/way Structural Maintenance - Drainage",
+      "spend": 20027.73,
+      "count": 4
+    },
+    {
+      "department": "Runcorn Station Masterplan",
+      "spend": 18705.47,
+      "count": 5
+    },
+    {
+      "department": "The Grange BSF Project",
+      "spend": 17118.07,
+      "count": 2
+    },
+    {
+      "department": "Health and Education Hub",
+      "spend": 16800.0,
+      "count": 3
+    },
+    {
+      "department": "Community & Environments",
+      "spend": 15500.0,
+      "count": 3
+    },
+    {
+      "department": "C/way Structural Maintenance - KRN",
+      "spend": 14715.45,
+      "count": 2
+    },
+    {
+      "department": "F/way Structural Maintenance - Other",
+      "spend": 13371.22,
+      "count": 2
+    },
+    {
+      "department": "Income Support",
+      "spend": 13318.5,
+      "count": 7
+    },
+    {
+      "department": "Contact Centre System (UC Phase 3)",
+      "spend": 12582.0,
+      "count": 2
+    },
+    {
+      "department": "Adult Social Care Department",
+      "spend": 12133.14,
+      "count": 21
+    },
+    {
+      "department": "ICT & Support services",
+      "spend": 12040.22,
+      "count": 8
+    },
+    {
+      "department": "Foundry Lane Residential Area",
+      "spend": 12011.05,
+      "count": 6
+    },
+    {
+      "department": "Corporate Buildings Charging Points",
+      "spend": 11773.1,
+      "count": 3
+    },
+    {
+      "department": "Innovate CYPS",
+      "spend": 11474.44,
+      "count": 6
+    },
+    {
+      "department": "Kingsway Learning Centre Improved Facilities",
+      "spend": 11435.84,
+      "count": 2
+    },
+    {
+      "department": "Widnes Market Refurbishment",
+      "spend": 10816.0,
+      "count": 3
+    },
+    {
+      "department": "Policy Provision & Performance",
+      "spend": 10657.05,
+      "count": 8
+    },
+    {
+      "department": "St Pauls Mews",
+      "spend": 10569.26,
+      "count": 4
+    },
+    {
+      "department": "F/way Structural Maintenance - KRN",
+      "spend": 10547.29,
+      "count": 3
+    },
+    {
+      "department": "Measures to Assist Buses",
+      "spend": 10359.8,
+      "count": 2
+    },
+    {
+      "department": "Pupil Premium Plus - Virtual Head",
+      "spend": 10116.83,
+      "count": 8
+    },
+    {
+      "department": "Equality Act Improvement Works",
+      "spend": 9811.87,
+      "count": 7
+    },
+    {
+      "department": "Asbestos Management",
+      "spend": 9570.0,
+      "count": 7
+    },
+    {
+      "department": "LCWIP Phase 2",
+      "spend": 9406.0,
+      "count": 2
+    },
+    {
+      "department": "Early Years NNI & Day Care Centres",
+      "spend": 9047.8,
+      "count": 18
+    },
+    {
+      "department": "Homes for Ukraine",
+      "spend": 8545.5,
+      "count": 14
+    },
+    {
+      "department": "Stadium Minor Works",
+      "spend": 8377.82,
+      "count": 3
+    },
+    {
+      "department": "Software/Hardware Management & Development",
+      "spend": 7490.0,
+      "count": 1
+    },
+    {
+      "department": "Children\u00b4s Locality Services Runcorn",
+      "spend": 7044.22,
+      "count": 56
+    },
+    {
+      "department": "Primary Schools",
+      "spend": 6336.06,
+      "count": 10
+    },
+    {
+      "department": "Orchard House",
+      "spend": 5125.57,
+      "count": 3
+    },
+    {
+      "department": "ICT Support Services",
+      "spend": 4652.0,
+      "count": 3
+    },
+    {
+      "department": "Picow Farm Depot",
+      "spend": 4232.62,
+      "count": 4
+    },
+    {
+      "department": "LSS - Minor Works",
+      "spend": 4219.44,
+      "count": 3
+    },
+    {
+      "department": "Communications and Marketing",
+      "spend": 4150.79,
+      "count": 1
+    },
+    {
+      "department": "Small Capital Works - Schools",
+      "spend": 3950.0,
+      "count": 1
+    },
+    {
+      "department": "Childrens & Family Services",
+      "spend": 3891.21,
+      "count": 3
+    },
+    {
+      "department": "Commercial Catering",
+      "spend": 3686.49,
+      "count": 7
+    },
+    {
+      "department": "Intermediate Care",
+      "spend": 3621.81,
+      "count": 29
+    },
+    {
+      "department": "Asset Management",
+      "spend": 3433.2,
+      "count": 3
+    },
+    {
+      "department": "",
+      "spend": 3170.98,
+      "count": 1
+    },
+    {
+      "department": "Business Growth Programme 3",
+      "spend": 2970.0,
+      "count": 3
+    },
+    {
+      "department": "Runcorn Town Centre Redevelopment",
+      "spend": 2901.93,
+      "count": 1
+    },
+    {
+      "department": "3MG - General",
+      "spend": 2536.0,
+      "count": 2
+    },
+    {
+      "department": "Halton Castle",
+      "spend": 2500.0,
+      "count": 1
+    },
+    {
+      "department": "COP Management",
+      "spend": 2375.83,
+      "count": 57
+    },
+    {
+      "department": "Measures to Assist Walking",
+      "spend": 2242.15,
+      "count": 1
+    },
+    {
+      "department": "Mayors Fund",
+      "spend": 1832.0,
+      "count": 1
+    },
+    {
+      "department": "PC Replacement",
+      "spend": 1368.0,
+      "count": 1
+    },
+    {
+      "department": "Audit & Operational Finance Managment",
+      "spend": 1323.72,
+      "count": 8
+    },
+    {
+      "department": "Governor Support",
+      "spend": 1300.0,
+      "count": 1
+    },
+    {
+      "department": "Commissioning & Complex Care",
+      "spend": 1250.0,
+      "count": 1
+    },
+    {
+      "department": "Policy Planning & Transport",
+      "spend": 1192.94,
+      "count": 1
+    },
+    {
+      "department": "Corporate Health & Safety",
+      "spend": 1167.88,
+      "count": 17
+    },
+    {
+      "department": "Halton Borough Transport Liquidation",
+      "spend": 948.02,
+      "count": 1
+    },
+    {
+      "department": "Environmental, Public Health & Health Protection",
+      "spend": 934.2,
+      "count": 5
+    },
+    {
+      "department": "HR Service Centre",
+      "spend": 896.5,
+      "count": 44
+    },
+    {
+      "department": "Crow Wood Park Pavilion",
+      "spend": 768.0,
+      "count": 1
+    },
+    {
+      "department": "Recruitment & Resourcing",
+      "spend": 739.5,
+      "count": 42
+    },
+    {
+      "department": "Early Years NNI Day Care Centres",
+      "spend": 635.0,
+      "count": 41
+    },
+    {
+      "department": "SJB - Lighting",
+      "spend": 600.0,
+      "count": 1
+    },
+    {
+      "department": "Creative Skills",
+      "spend": 550.0,
+      "count": 1
+    },
+    {
+      "department": "Lavender House",
+      "spend": 523.83,
+      "count": 1
+    },
+    {
+      "department": "LSS - Neighbourhood Centres",
+      "spend": 510.0,
+      "count": 1
+    },
+    {
+      "department": "Care Managment",
+      "spend": 399.5,
+      "count": 22
+    },
+    {
+      "department": "Children\u00b4s Locality Services Widnes",
+      "spend": 251.5,
+      "count": 21
+    },
+    {
+      "department": "Mersey Gateway - MGCB",
+      "spend": 138.33,
+      "count": 7
+    },
+    {
+      "department": "Queen's Pantry Ditton",
+      "spend": 117.0,
+      "count": 2
+    },
+    {
+      "department": "Adult Education",
+      "spend": 106.5,
+      "count": 10
+    },
+    {
+      "department": "Benefits Division",
+      "spend": 84.0,
+      "count": 6
+    },
+    {
+      "department": "Finance Support Team",
+      "spend": 71.62,
+      "count": 36
+    },
+    {
+      "department": "Children\u00b4s Safeguarding Unit",
+      "spend": 49.5,
+      "count": 4
+    },
+    {
+      "department": "One Halton",
+      "spend": 48.0,
+      "count": 2
+    },
+    {
+      "department": "Traffic, Risk&Emergency Planning / Health & Safety",
+      "spend": 45.5,
+      "count": 3
+    },
+    {
+      "department": "ICT - Covid 19",
+      "spend": 24.0,
+      "count": 2
+    },
+    {
+      "department": "Procurement",
+      "spend": 21.0,
+      "count": 1
+    },
+    {
+      "department": "Business Rate Collection",
+      "spend": 12.0,
+      "count": 1
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2021/22": 57721619.11,
+      "2022/23": 148068760.18,
+      "2023/24": 253447944.37,
+      "2024/25": 262852490.84,
+      "2025/26": 276352589.03
+    },
+    "transactions_by_year": {
+      "2021/22": 20241,
+      "2022/23": 59719,
+      "2023/24": 87758,
+      "2024/25": 90561,
+      "2025/26": 94578
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 352857
+  }
+}

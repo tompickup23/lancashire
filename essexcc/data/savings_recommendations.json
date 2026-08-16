@@ -1,0 +1,863 @@
+{
+  "version": "2.0",
+  "council_id": "essex_cc",
+  "council_name": "Essex Cc",
+  "generated_at": "2026-05-13T11:07:38.769357Z",
+  "data_sources": [
+    "spending.sqlite (council_etl.py + classify_council.py)",
+    "doge_findings.json (35-technique forensic)",
+    "cross_council.json (32-council peer benchmark)",
+    "budgets_summary.json (MHCLG Revenue Outturn)",
+    "revenue_trends.json (8-yr MHCLG time series)",
+    "source_audit.json (record_class breakdown)",
+    "supplier_donor_crossmatch.json (Electoral Commission CSV API)"
+  ],
+  "financial_summary": {
+    "annual_revenue_budget": 2185979000,
+    "council_tax_requirement": 848283000,
+    "service_breakdown": {
+      "Education services": 863450000,
+      "Highways and transport services": 96957000,
+      "Children Social Care": 261938000,
+      "Adult Social Care": 698536000,
+      "Public Health": 85015000,
+      "Cultural and related services": 30117000,
+      "Environmental and regulatory services": 91374000,
+      "Planning and development services": 24895000,
+      "Central services": 32023000
+    },
+    "procurement_footprint_total": 15914835997.13,
+    "procurement_footprint_annual": 2273547999.59,
+    "transactions_total": 3478460,
+    "transactions_annual": 496923,
+    "unique_suppliers": 46674,
+    "data_period": {
+      "min": "2019-04-01",
+      "max": "2026-03-31"
+    },
+    "financial_years_covered": 7,
+    "per_capita_spend": 1512.79,
+    "population": 1502888,
+    "net_revenue_expenditure": 1109595360,
+    "budget_year": "2024-25"
+  },
+  "reserves_position": {
+    "total": 649774000,
+    "months_of_revenue": 7.0,
+    "adequacy": "Adequate",
+    "direction": "stable",
+    "trajectory": [
+      {
+        "year": "2021-22",
+        "earmarked": 493998000,
+        "unallocated": 68096000,
+        "total": 562094000
+      },
+      {
+        "year": "2022-23",
+        "earmarked": 527525000,
+        "unallocated": 68096000,
+        "total": 595621000
+      },
+      {
+        "year": "2023-24",
+        "earmarked": 562008000,
+        "unallocated": 68092000,
+        "total": 630100000
+      },
+      {
+        "year": "2024-25",
+        "earmarked": 581682000,
+        "unallocated": 68092000,
+        "total": 649774000
+      }
+    ],
+    "projected": [
+      {
+        "year": "2025-26",
+        "total": 683777000,
+        "projected": true
+      },
+      {
+        "year": "2026-27",
+        "total": 713528900,
+        "projected": true
+      }
+    ]
+  },
+  "forensic_signals": {
+    "duplicate_value": 424700000,
+    "duplicate_count": 129837,
+    "split_payments_value": 1490700000,
+    "weak_competition": null,
+    "anomaly_count": 8,
+    "total_flagged_value": 2218401600,
+    "severity_breakdown": {
+      "high": 0,
+      "medium": 6,
+      "low": 2
+    },
+    "overall_hhi": 85.6,
+    "service_hhi_high": [],
+    "top10_supplier_pct": 0.255,
+    "doge_key_findings": [
+      {
+        "title": "10 suppliers with clock-like payment regularity",
+        "severity": "info",
+        "confidence": "high"
+      },
+      {
+        "title": "MATRIX SCM LTD: 111766 transactions totalling \u00a389.8M",
+        "severity": "info",
+        "confidence": "high"
+      }
+    ]
+  },
+  "peer_benchmarks": {
+    "per_capita_spend": {
+      "metric": "per_capita_spend",
+      "this_value": 1512.79,
+      "peer_n": 11,
+      "peer_median": 1037.97,
+      "peer_min": 495.68,
+      "peer_max": 1641.87,
+      "rank": {
+        "rank": 2,
+        "of": 12,
+        "percentile": 17.0
+      }
+    },
+    "top10_supplier_pct": {
+      "metric": "top10_supplier_pct",
+      "this_value": 0.255,
+      "peer_n": 11,
+      "peer_median": 0.2696,
+      "peer_min": 0.1862,
+      "peer_max": 0.4358,
+      "rank": {
+        "rank": 2,
+        "of": 12,
+        "percentile": 17.0
+      }
+    },
+    "reserves_months": {
+      "metric": "reserves_months",
+      "this_value": 7.0,
+      "peer_n": 11,
+      "peer_median": 3.3,
+      "peer_min": 2.4,
+      "peer_max": 7.5,
+      "rank": {
+        "rank": 11,
+        "of": 12,
+        "percentile": 92.0
+      }
+    },
+    "overall_hhi": {
+      "metric": "overall_hhi",
+      "this_value": 85.6,
+      "peer_n": 11,
+      "peer_median": 52.9,
+      "peer_min": 32.4,
+      "peer_max": 96.8,
+      "rank": {
+        "rank": 1,
+        "of": 6,
+        "percentile": 17.0
+      }
+    },
+    "duplicate_value": {
+      "metric": "duplicate_value",
+      "this_value": 424700000,
+      "peer_n": 11,
+      "peer_median": 0,
+      "peer_min": 0,
+      "peer_max": 264000000,
+      "rank": {
+        "rank": 2,
+        "of": 12,
+        "percentile": 17.0
+      }
+    },
+    "split_payments_value": {
+      "metric": "split_payments_value",
+      "this_value": 1490700000,
+      "peer_n": 11,
+      "peer_median": 479100000,
+      "peer_min": 100300000,
+      "peer_max": 1313200000,
+      "rank": {
+        "rank": 1,
+        "of": 6,
+        "percentile": 17.0
+      }
+    }
+  },
+  "audit_research": {
+    "version": "1.0",
+    "council_id": "essex_cc",
+    "researched_at": "2026-05-04",
+    "method": "Web research via WebFetch + WebSearch (subagent), all citations primary",
+    "external_audit": {
+      "auditor": "Ernst & Young LLP",
+      "year_ended": "2025-03-31",
+      "opinion": "DISCLAIMED",
+      "opinion_severity": "critical",
+      "key_concerns": [
+        "Disclaimed audit opinion on 2024/25 Council and Group financial statements due to back-stop date + 2023/24 disclaimer continuity",
+        "Pension Fund: \u00a341.44m understatement of investment value identified by Pension Fund auditor",
+        "Level 3 Investments: \u00a334.9m understatement; management chose not to adjust on materiality grounds",
+        "Property, Plant & Equipment / Investment Property: EY unable to obtain full assurance over completeness and valuation as at 31 March 2025"
+      ],
+      "report_date": "2025-12-03",
+      "presented_to": "Audit, Governance & Standards Committee 24 November 2025",
+      "url": "https://www.essex.gov.uk/sites/default/files/2025-12/Auditor's%20Annual%20Report%20-%202024-25.pdf"
+    },
+    "internal_audit": {
+      "latest_year_located": "2021/22",
+      "limited_assurance_count_2021_22": 3,
+      "trend_2020_21_to_2021_22": "10 \u2192 3 limited assurance opinions (improving)",
+      "current_year_status": "not located \u2014 held in CMIS Audit Committee papers",
+      "follow_up_required": "Read most recent Audit, Governance & Standards Committee paper on cmis.essex.gov.uk for 2024/25 limited-assurance findings",
+      "year": "2024/25",
+      "overall_opinion": "satisfactory level of assurance (per EY summary)",
+      "no_assurance_subjects": [],
+      "limited_assurance_style_findings": [
+        "Cybersecurity governance \u2014 unclear roles, no dedicated cybersecurity committee, gaps in training"
+      ],
+      "lgsco_findings": [
+        "Significant delays in EHC needs assessments (SEND statutory failure \u2014 child not receiving suitable education)"
+      ],
+      "source": "EY Auditor's Annual Report 2024/25 (24 Nov 2025) \u2014 Internal Audit Annual Report itself behind CMIS",
+      "source_url": "https://www.essex.gov.uk/sites/default/files/2025-12/Auditor%27s%20Annual%20Report%20-%202024-25.pdf",
+      "cmis_followup_url": "https://cmis.essex.gov.uk/essexcmis5/CalendarofMeetings.aspx (JS-rendered, requires browser scrape)"
+    },
+    "mtfs_2026_31": {
+      "total_budget_2026_27_b": 2.0,
+      "savings_target_2026_27_m": 41,
+      "cumulative_savings_5yr_m": 192,
+      "whole_council_transformation_target_m": 100,
+      "forecast_budget_gaps_m": {
+        "2026_27": 26,
+        "2027_28": 83,
+        "2028_29": 129
+      },
+      "inflation_3yr_driver_m": 111,
+      "savings_identified_to_2028_29_m": 61,
+      "cumulative_gap_to_2028_29_m": 238,
+      "unidentified_gap_to_2028_29_m": 177,
+      "additional_2026_27_investment_m": 82,
+      "additional_highway_repairs_m": 6,
+      "reserves_restricted_m": 239.5,
+      "reserves_available_m": 340.9,
+      "capital_property_receipts_10yr_m": 107,
+      "url": "https://www.essex.gov.uk/news/2026/202627-budget-proposals-revealed"
+    },
+    "strategic_risks": {
+      "register_status": "Live register held at quarterly Audit Committee Appendix 1; latest publicly retrievable was Feb-Aug 2023",
+      "inferred_top_risks_2023": [
+        "Borrowing capacity",
+        "Supply chain failure",
+        "Service delivery"
+      ],
+      "register_strategy_url": "https://www.essex.gov.uk/sites/default/files/2024-02/Risk%20Management%20Strategy%20-%2001.02.24.pdf"
+    },
+    "dsg_send": {
+      "cumulative_deficit_2028_forecast_m": 243,
+      "alt_figure_m": 250,
+      "statutory_override_expiry": "2026-03-31",
+      "fiscal_cliff_severity": "high",
+      "send_assessment_compliance_2024_pct": 1,
+      "send_compliance_rank": "worst in England",
+      "ehcp_backlog_cleared": 1300,
+      "ofsted_cqc_send_inspection": "Scheduled January 2026 (outcome pending)",
+      "council_warning_nov_2025": "Council publicly warned parents to be realistic about SEND improvements",
+      "follow_up_required": "Track Jan 2026 Ofsted/CQC SEND inspection outcome"
+    },
+    "asc_market_sustainability": {
+      "plan_published": true,
+      "regulated_provider_count": 700,
+      "cost_of_care_exercise_done": true,
+      "lgsco_concerns_22_feb_2026": "Ombudsman criticised commissioning framework assumptions for high-needs individuals (full-cost-payer rates)",
+      "url": "https://www.essexproviderhub.org/media/muadjedt/market-sustainability-plan-final.pdf"
+    },
+    "lgr": {
+      "status": "live consultation",
+      "scope": "Essex + Southend-on-Sea + Thurrock",
+      "consultation_publisher": "MHCLG",
+      "url": "https://www.gov.uk/government/consultations/local-government-reorganisation-in-essex-southend-on-sea-and-thurrock/proposals-for-local-government-reorganisation-in-essex-southend-on-sea-and-thurrock",
+      "savings_implication": "Outcome will reshape ECC's 2026-31 financial baseline materially"
+    },
+    "property_strategy": {
+      "name": "Property Strategy 2022-2025 (refresh due)",
+      "10yr_capital_receipts_m": 107,
+      "active_programme": "Ways of Working \u2014 net-zero-2030 core-office rationalisation, hybrid working embedded",
+      "url": "https://www.essex.gov.uk/sites/default/files/2024-06/Essex%20COunty%20Council%20Property%20Strategy%202022%20to%202025.pdf"
+    },
+    "actionable_savings_levers_summary": [
+      "Disclaimed audit opinion + \u00a376m of unadjusted material misstatements = governance / financial-controls remediation savings priority (auditor-cost reduction once unmodified opinion restored)",
+      "DSG \u00a3243m deficit + statutory override expiry March 2026 = potential s.114 trigger; Safety Valve / DBV programme entry critical",
+      "1% SEND statutory compliance + Jan 2026 Ofsted/CQC inspection = unplanned cost risk; pre-empt with Priority Action Plan funding",
+      "\u00a3100m Whole Council Transformation target + \u00a3177m unidentified gap to 2028/29 = ~\u00a3277m savings runway to find",
+      "LGR consultation live = strategic baseline reshape; transformation programme savings must be LGR-resilient"
+    ],
+    "source_urls": [
+      "https://www.essex.gov.uk/sites/default/files/2025-12/Auditor's%20Annual%20Report%20-%202024-25.pdf",
+      "https://www.essex.gov.uk/sites/default/files/2025-02/Essex%20County%20Council%20statement%20of%20accounts%202023%20to%202024.pdf",
+      "https://www.essex.gov.uk/sites/default/files/2025-06/Statement-of-Accounts-unaudited-draft-2024-to-2025.pdf",
+      "https://www.essex.gov.uk/news/2026/202627-budget-proposals-revealed",
+      "https://leaderandcabinet.blog.essex.gov.uk/2025/10/15/budget-challenges-ahead-but-essex-is-in-a-strong-position/",
+      "https://www.essex.gov.uk/about-council/plans-and-strategies/corporate-strategies/whole-council-transformation",
+      "https://www.essexproviderhub.org/media/muadjedt/market-sustainability-plan-final.pdf",
+      "https://cmis.essex.gov.uk/essexcmis5/"
+    ],
+    "coverage_gaps": [
+      "Internal Audit Annual Report 2024/25 limited-assurance subject list",
+      "Live Strategic Risk Register top-5 with net ratings",
+      "MTFS year-by-year reserves trajectory",
+      "MTFS capital borrowing trajectory by year",
+      "CIPFA Resilience Index council-specific scores (paywalled)"
+    ]
+  },
+  "donor_links": null,
+  "strategic_themes": [
+    {
+      "id": "audit_opinion_remediation",
+      "title": "Remediate disclaimed audit opinion (Ernst & Young LLP, year ended 2025-03-31)",
+      "rationale": "External auditor issued a DISCLAIMED opinion on financial statements. Concerns: Disclaimed audit opinion on 2024/25 Council and Group financial statements due to back-stop date + 2023/24 disclaimer continuity; Pension Fund: \u00a341.44m understatement of investment value identified by Pension Fund auditor; Level 3 Investments: \u00a334.9m understatement; management chose not to adjust on materiality grounds. Direct savings: PSAA scale fee normalisation (current scale fee \u00a3250K + disclaimer surcharge). Indirect: lifting MHCLG governance flag reduces borrowing-cost premium (typically 5-15bp on new external debt) + opens \u00a3M of grant programmes that require unmodified opinions. Foundation requirement before ANY other transformation saving is credible to auditor or DLUHC.",
+      "estimated_savings_low_m": 0.3,
+      "estimated_savings_high_m": 1.2,
+      "savings_type": "one-off + recurring",
+      "delivery_horizon": "12-24 months (next two audit cycles)",
+      "implementation_complexity": "high",
+      "decision_owner": "Section 151 Officer + Monitoring Officer + Audit Committee",
+      "evidence": [
+        "https://www.essex.gov.uk/sites/default/files/2025-12/Auditor's%20Annual%20Report%20-%202024-25.pdf"
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "hnsg_reform_plan_delivery",
+      "title": "HNSG Reform Plan submission \u2014 secures \u00a3218.7M DSG write-off (90% of \u00a3243.0M)",
+      "rationale": "DSG cumulative high-needs deficit \u00a3243.0M. Under the new High Needs Stability Grant (HNSG) announced 9 Feb 2026, government will write off 90% (~\u00a3218.7M) of every council's DSG deficit at 31 March 2026 via Section 31 grant paid Autumn 2026 \u2014 CONDITIONAL on the council submitting an approved Local SEND Reform Plan to DfE by 19 June 2026. The \u00a324.3M residual remains on council books. Safety Valve programme closed 1 April 2026 and is folded into HNSG. Statutory override extended to 31 March 2028; gov has committed to absorb all DSG deficits from 1 April 2028 onwards. The savings range below covers (a) plan-submission cost avoidance + (b) residual 10% in-year demand management.",
+      "estimated_savings_low_m": 2.4,
+      "estimated_savings_high_m": 12.2,
+      "savings_type": "cost-avoidance (residual 10% management) + plan-conditional write-off",
+      "delivery_horizon": "19 June 2026 plan submission deadline; Autumn 2026 grant payment",
+      "implementation_complexity": "medium \u2014 plan submission is procedural, not discretionary",
+      "decision_owner": "Director of Children's Services + S151 Officer + Cabinet Lead SEND",
+      "evidence": [
+        "GOV.UK Explanatory note on DSG deficits (9 Feb 2026)",
+        "Final Local Government Finance Settlement 2026/27 to 2028/29 (HCWS1315)",
+        "AI DOGE shared/dsg_status_2026_27.json"
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "asc_fee_uplift_modelling",
+      "title": "ASC fee uplift modelling + provider risk mitigation",
+      "rationale": "ASC market sustainability concern: Ombudsman criticised commissioning framework assumptions for high-needs individuals (full-cost-payer rates). Council exposure to provider failure + Care Act s.18 statutory duty (must arrange care). Mitigation levers: (a) Cost of Care benchmark refresh, (b) blocked-bed pricing for high-needs cohorts, (c) jointly-commissioned frameworks with NHS ICB, (d) workforce strategy to reduce agency-cost dependency.",
+      "estimated_savings_low_m": 5,
+      "estimated_savings_high_m": 25,
+      "delivery_horizon": "18-30 months",
+      "implementation_complexity": "high",
+      "decision_owner": "Director of Adult Social Care + Cabinet Member",
+      "evidence": [
+        "https://www.essexproviderhub.org/media/muadjedt/market-sustainability-plan-final.pdf"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "lgr_resilient_transformation",
+      "title": "LGR-resilient transformation design (protect MTFS savings runway)",
+      "rationale": "LGR consultation live (Essex + Southend-on-Sea + Thurrock). MTFS savings runway must survive vesting-day baseline reshape. Without LGR-resilient design, ~30% of transformation savings typically don't transfer (contract structures locked to the disappearing entity, IT depreciation cycles mid-flight, workforce TUPE breakage). Resilience design = directorate-portable savings, contract clauses with novation rights, IT modernisation aligned with vesting day. Value = the share of currently-identified MTFS savings preserved through vesting.",
+      "estimated_savings_low_m": 5,
+      "estimated_savings_high_m": 20,
+      "savings_type": "savings preserved through vesting",
+      "delivery_horizon": "until vesting day",
+      "implementation_complexity": "high",
+      "decision_owner": "S151 Officer + Chief Executive + LGR programme team",
+      "evidence": [
+        "https://www.gov.uk/government/consultations/local-government-reorganisation-in-essex-southend-on-sea-and-thurrock/proposals-for-local-government-reorganisation-in-essex-southend-on-sea-and-thurrock"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "treasury_borrowing_optimisation",
+      "title": "Treasury management + borrowing cost optimisation (CFR proxy \u00a31749M)",
+      "rationale": "Annual revenue \u00a32186M implies indicative CFR c. \u00a31749M. Standard levers: internal borrowing from earmarked reserves, PWLB Certainty Rate trade, MMF counterparty restructuring, LGPS Property Investment Pool inclusion. 10-30bp saving on external debt typical from a fresh review.",
+      "estimated_savings_low_m": 1.75,
+      "estimated_savings_high_m": 5.25,
+      "savings_type": "recurring",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (subject to TM Strategy approval)",
+      "decision_owner": "S151 Officer + Treasurer",
+      "evidence": [
+        "CIPFA Prudential + Treasury Management Codes 2021",
+        "PWLB Certainty Rate"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "lgps_employer_contribution",
+      "title": "LGPS employer contribution opportunity (2025 triennial valuation cycle)",
+      "rationale": "Indicative pay bill \u00a3874M \u00d7 c. 22% employer contribution rate = \u00a3192M annual employer contribution. Most LGPS funds materially over-funded post-2022 (returns 2022-25 averaged 7-10% pa vs 3-4% discount-rate assumption). 2025 triennial valuation typically yields 2-4pp employer-rate reduction over 2026-2029. Confirm with administering authority + actuary.",
+      "estimated_savings_low_m": 9.6,
+      "estimated_savings_high_m": 28.9,
+      "savings_type": "recurring (3-yr triennial)",
+      "delivery_horizon": "settled at 2025 valuation; recurring 2026-2029",
+      "implementation_complexity": "low (LGPS admin enacts new rate)",
+      "decision_owner": "S151 Officer + LGPS Pensions Committee",
+      "evidence": [
+        "LGPS Regulations 2013 + 2014",
+        "2025 triennial valuation reports"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "income_fees_charges_optimisation",
+      "title": "Fees, charges + traded-services income optimisation (\u00a3219M base)",
+      "rationale": "Indicative fees & charges + traded-services income c. 10% of revenue = \u00a3219M. Standard levers: annual CPI uplift discipline, full-cost-recovery audit on discretionary services (parking, planning, licensing, sports, adult learning, property hire), commercial pricing on traded services. LGA experience: 5-15% income uplift sustainable over 2-3 years.",
+      "estimated_savings_low_m": 10.9,
+      "estimated_savings_high_m": 32.8,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-24 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Cabinet (each fee delegation)",
+      "evidence": [
+        "LGA fees and charges benchmarking",
+        "CIPFA Charging guidance"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "insurance_retention_review",
+      "title": "Insurance retention + premium review (\u00a32.2M premium estimate)",
+      "rationale": "Indicative insurance premium \u00a32.2M (10bp of revenue). Standard 3-5 yr renewal cycle. Levers: tender via IPG / RM Partners (10-25% premium reduction typical), retention review (increase excess + build risk-fund reserve). London-borough cohort average 12% premium reduction at last tender.",
+      "estimated_savings_low_m": 0.22,
+      "estimated_savings_high_m": 0.55,
+      "savings_type": "recurring",
+      "delivery_horizon": "9-18 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Risk Manager",
+      "evidence": [
+        "IPG framework",
+        "RM Partners broker market"
+      ],
+      "severity": "low"
+    },
+    {
+      "id": "procurement_data_review",
+      "title": "Contracts Finder portfolio review (87 notices; 4 contracts at \u00a310M+ ceiling)",
+      "rationale": "Contracts Finder data: 87 notices (30 awarded, \u00a397M aggregate ADVERTISED CEILING value, 0% SME). IMPORTANT: advertised contract value is a CEILING set to avoid retender risk under PCR 2015 Reg.72 / Procurement Act 2023 s.31 \u2014 actual spend through the awardee is typically 30-70% of ceiling, with some off-contract ledger spend permitted within the 50%/50% modification limits. 4 contracts at \u00a310M+ ceiling totalling \u00a31329M (ceiling, NOT spend) \u2014 top 3: 0988 Medium-Term Residual Waste Treatment Contract (ceiling \u00a3867M); PL0047 Essex Construction Framework 3 (ceiling \u00a3400M); 0942 - Supply of Electricity and Gas utilities to Essex Coun (ceiling \u00a352M). SME-awarded share 0% is below the Procurement Reform 2023 / PPN 03/24 ambition (33% SME share by value). Standard procurement-data savings levers (% of ACTUAL ledger spend, not ceiling): (a) modification-history scrutiny under PCR 2015 Reg.72, (b) Procurement Act 2023 s.31 contract change notice review, (c) re-tender benchmark vs CCS framework rates on next renewal. 2-8% on actual spend through major contracts is a defensible upper bound.",
+      "estimated_savings_low_m": 2.7,
+      "estimated_savings_high_m": 10.6,
+      "savings_type": "recurring (post next contract renewal)",
+      "delivery_horizon": "12-36 months (contract-renewal cycle)",
+      "implementation_complexity": "high",
+      "decision_owner": "Head of Procurement + Cabinet Member + Section 151 Officer",
+      "evidence": [
+        "procurement.json (Contracts Finder API): 87 notices",
+        "ledger-matched actual spend: \u00a30.0M",
+        "PCR 2015 Reg.72; Procurement Act 2023 s.31"
+      ],
+      "savings_basis": "Conservative 10% of advertised ceiling",
+      "advertised_ceiling_total_m": 1329.0,
+      "ledger_matched_actual_spend_m": 0,
+      "severity": "medium"
+    },
+    {
+      "id": "companies_house_compliance",
+      "title": "Companies House compliance follow-up (\u00a3230M flagged \u2014 0 overdue, 3 dissolved, 1 insolvency-history)",
+      "rationale": "Companies House lookup on top-50 suppliers identified \u00a3230M of spend with statutory-compliance flags: \u00a30M to suppliers with overdue accounts (0), \u00a3189M to dissolved-status companies (3), \u00a341M to companies with insolvency history (1). NOTE: Some matches are CH fuzzy-search false positives (e.g. school, government-body name collisions) and need human verification. After verification, real flags = (a) credit-risk review on overdue accounts, (b) contract-cleanup on dissolved entities (records still on ledger but supplier extinct \u2014 risk of duplicate-payment leakage), (c) PCR 2015 Reg.57 discretionary exclusion review on insolvency-history suppliers in active contracts.",
+      "estimated_savings_low_m": 1.2,
+      "estimated_savings_high_m": 4.6,
+      "savings_type": "one-off cleanup + recurring risk reduction",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (CH already enriched)",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "companies_house_enrichment.json"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "duplicate_recovery",
+      "title": "Audit + recover \u00a3425M in flagged duplicate-payment patterns",
+      "rationale": "DOGE forensic flagged \u00a3425M across 129,837 groups of likely duplicates. Industry recovery norm 5-15% via duplicate-detection software (AP Forensics, FISCAL, Oracle Concur). Lloyds Bank Commercial Card analysis typical for spot-check sample of 100 highest-confidence matches.",
+      "estimated_savings_low_m": 21.2,
+      "estimated_savings_high_m": 63.7,
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Finance + Internal Audit",
+      "evidence": [
+        "doge_findings.duplicate_count",
+        "doge_findings.duplicate_value"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "split_payment_review",
+      "title": "Investigate \u00a31491M in flagged split-payment patterns",
+      "rationale": "DOGE flagged \u00a31,491M across 0 split-payment instances. Split payments often indicate (a) below-procurement-threshold ledger fragmentation circumventing PCR 2015 Reg.4 contract-value-aggregation rule; or (b) legitimate sub-line invoice splits. Sample audit + reclassify; misuse triggers Reg. 99 challenge exposure.",
+      "estimated_savings_low_m": 29.8,
+      "estimated_savings_high_m": 119.3,
+      "delivery_horizon": "9-12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "doge_findings.split_payments_value",
+        "PCR 2015 Reg.4"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "rebid_ringway_jacobs_ltd",
+      "title": "Competitive rebid: RINGWAY JACOBS LTD (\u00a31012M, 6.19% of procurement)",
+      "rationale": "Single-supplier concentration above 5% over 7 years. Long single-source contracts erode market discipline. Standard county-tier rebid yields 3-12% saving on first cycle (Crown Commercial Service framework benchmarks).",
+      "estimated_savings_low_m": 30.4,
+      "estimated_savings_high_m": 121.4,
+      "delivery_horizon": "18-30 months",
+      "implementation_complexity": "high",
+      "decision_owner": "Cabinet Member + S151 Officer",
+      "evidence": [
+        "supplier RINGWAY JACOBS LTD",
+        "PCR 2015"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "asc_dp_governance",
+      "title": "Care Act direct-payment governance review (\u00a3844M / 1,321,997 transactions)",
+      "rationale": "Material direct_payment_individual bucket (Care Act 2014 s.31). Recipients are lawfully unnamed but Reg. 22 Care and Support (Direct Payments) Regulations 2014 audit duty applies. Review (a) recipient capacity assessments, (b) fraud-screening sample, (c) unspent-balance recovery, (d) Pooled Personal Assistant arrangements compliance with HMRC employer-status rules.",
+      "estimated_savings_low_m": 4.2,
+      "estimated_savings_high_m": 21.1,
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Adult Social Care + Internal Audit",
+      "evidence": [
+        "source_audit.class_breakdown.direct_payment_individual"
+      ],
+      "severity": "medium"
+    }
+  ],
+  "supplier_recommendations": [
+    {
+      "rank": 1,
+      "supplier": "RINGWAY JACOBS LTD",
+      "total_spend": 1011844938.11,
+      "transactions": 10141,
+      "pct_of_council_procurement": 6.19,
+      "avg_transaction": 99777.63,
+      "recommendation_type": "rebid_candidate",
+      "flags": [
+        {
+          "type": "concentration_high",
+          "severity": "high",
+          "detail": "6.2% of council procurement spend",
+          "evidence": "insights.json supplier_analysis.top_20_suppliers"
+        }
+      ],
+      "council_id": "essex_cc"
+    },
+    {
+      "rank": 2,
+      "supplier": "ESSEX PFCC FRA",
+      "total_spend": 544446861.58,
+      "transactions": 144,
+      "pct_of_council_procurement": 3.33,
+      "avg_transaction": 3780880.98,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "concentration_moderate",
+          "severity": "moderate",
+          "detail": "3.3% of council procurement spend",
+          "evidence": "insights.json supplier_analysis.top_20_suppliers"
+        },
+        {
+          "type": "large_avg_txn",
+          "severity": "moderate",
+          "detail": "average transaction \u00a33,781K across 144 payments \u2014 consistent with large infrastructure / capital contract",
+          "evidence": "insights.json supplier_analysis (transactions, total)"
+        }
+      ],
+      "council_id": "essex_cc"
+    },
+    {
+      "rank": 3,
+      "supplier": "SOUTHEND ON SEA CITY COUNCIL",
+      "total_spend": 490180440.07,
+      "transactions": 436,
+      "pct_of_council_procurement": 3.0,
+      "avg_transaction": 1124267.06,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "concentration_moderate",
+          "severity": "moderate",
+          "detail": "3.0% of council procurement spend",
+          "evidence": "insights.json supplier_analysis.top_20_suppliers"
+        },
+        {
+          "type": "large_avg_txn",
+          "severity": "moderate",
+          "detail": "average transaction \u00a31,124K across 436 payments \u2014 consistent with large infrastructure / capital contract",
+          "evidence": "insights.json supplier_analysis (transactions, total)"
+        }
+      ],
+      "council_id": "essex_cc"
+    },
+    {
+      "rank": 4,
+      "supplier": "DIRECT PAYMENT",
+      "total_spend": 452688536.3,
+      "transactions": 268189,
+      "pct_of_council_procurement": 2.77,
+      "avg_transaction": 1687.95,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "concentration_moderate",
+          "severity": "moderate",
+          "detail": "2.8% of council procurement spend",
+          "evidence": "insights.json supplier_analysis.top_20_suppliers"
+        }
+      ],
+      "council_id": "essex_cc"
+    },
+    {
+      "rank": 5,
+      "supplier": "ESSEX CARES LTD",
+      "total_spend": 305934542.79,
+      "transactions": 4388,
+      "pct_of_council_procurement": 1.87,
+      "avg_transaction": 69720.73,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "concentration_moderate",
+          "severity": "moderate",
+          "detail": "1.9% of council procurement spend",
+          "evidence": "insights.json supplier_analysis.top_20_suppliers"
+        }
+      ],
+      "council_id": "essex_cc"
+    },
+    {
+      "rank": 6,
+      "supplier": "RUNWOOD HOMES LTD",
+      "total_spend": 249384942.1,
+      "transactions": 5992,
+      "pct_of_council_procurement": 1.53,
+      "avg_transaction": 41619.65,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "concentration_moderate",
+          "severity": "moderate",
+          "detail": "1.5% of council procurement spend",
+          "evidence": "insights.json supplier_analysis.top_20_suppliers"
+        }
+      ],
+      "council_id": "essex_cc"
+    },
+    {
+      "rank": 7,
+      "supplier": "MITIE (UK) LTD",
+      "total_spend": 234301654.46,
+      "transactions": 4584,
+      "pct_of_council_procurement": 1.43,
+      "avg_transaction": 51112.93,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "essex_cc"
+    },
+    {
+      "rank": 8,
+      "supplier": "SOUTHEND ON SEA BOROUGH COUNCIL",
+      "total_spend": 229479413.47,
+      "transactions": 270,
+      "pct_of_council_procurement": 1.4,
+      "avg_transaction": 849923.75,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "large_avg_txn",
+          "severity": "moderate",
+          "detail": "average transaction \u00a3850K across 270 payments \u2014 consistent with large infrastructure / capital contract",
+          "evidence": "insights.json supplier_analysis (transactions, total)"
+        }
+      ],
+      "council_id": "essex_cc"
+    },
+    {
+      "rank": 9,
+      "supplier": "PROVIDE COMMUNITY INTEREST COMPANY",
+      "total_spend": 214625337.41,
+      "transactions": 1586,
+      "pct_of_council_procurement": 1.31,
+      "avg_transaction": 135324.93,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "essex_cc"
+    },
+    {
+      "rank": 10,
+      "supplier": "NETWORK RAIL",
+      "total_spend": 212683972.47,
+      "transactions": 90,
+      "pct_of_council_procurement": 1.3,
+      "avg_transaction": 2363155.25,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "large_avg_txn",
+          "severity": "moderate",
+          "detail": "average transaction \u00a32,363K across 90 payments \u2014 consistent with large infrastructure / capital contract",
+          "evidence": "insights.json supplier_analysis (transactions, total)"
+        }
+      ],
+      "council_id": "essex_cc"
+    },
+    {
+      "rank": 11,
+      "supplier": "FOSTER CARE PAYMENT",
+      "total_spend": 173598125.44,
+      "transactions": 684359,
+      "pct_of_council_procurement": 1.06,
+      "avg_transaction": 253.67,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "essex_cc"
+    },
+    {
+      "rank": 12,
+      "supplier": "HCRG CARE SERVICES LTD",
+      "total_spend": 172399987.22,
+      "transactions": 149,
+      "pct_of_council_procurement": 1.06,
+      "avg_transaction": 1157046.89,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "large_avg_txn",
+          "severity": "moderate",
+          "detail": "average transaction \u00a31,157K across 149 payments \u2014 consistent with large infrastructure / capital contract",
+          "evidence": "insights.json supplier_analysis (transactions, total)"
+        }
+      ],
+      "council_id": "essex_cc"
+    },
+    {
+      "rank": 13,
+      "supplier": "ENOVERT SOUTH LTD",
+      "total_spend": 161383047.08,
+      "transactions": 1426,
+      "pct_of_council_procurement": 0.99,
+      "avg_transaction": 113171.84,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "essex_cc"
+    },
+    {
+      "rank": 14,
+      "supplier": "ESSEX PARTNERSHIP UNIVERSITY NHS FOUNDATION TRUST",
+      "total_spend": 138756630.27,
+      "transactions": 841,
+      "pct_of_council_procurement": 0.85,
+      "avg_transaction": 164990.05,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "essex_cc"
+    },
+    {
+      "rank": 15,
+      "supplier": "PAYMENT TO INDIVIDUAL",
+      "total_spend": 113383852.75,
+      "transactions": 28431,
+      "pct_of_council_procurement": 0.69,
+      "avg_transaction": 3988.04,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "essex_cc"
+    },
+    {
+      "rank": 16,
+      "supplier": "FIRST ESSEX BUSES LTD",
+      "total_spend": 112128294.49,
+      "transactions": 553,
+      "pct_of_council_procurement": 0.69,
+      "avg_transaction": 202763.64,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "essex_cc"
+    },
+    {
+      "rank": 17,
+      "supplier": "COUNTYROUTE (A130) PLC",
+      "total_spend": 106597206.47,
+      "transactions": 131,
+      "pct_of_council_procurement": 0.65,
+      "avg_transaction": 813719.13,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "large_avg_txn",
+          "severity": "moderate",
+          "detail": "average transaction \u00a3814K across 131 payments \u2014 consistent with large infrastructure / capital contract",
+          "evidence": "insights.json supplier_analysis (transactions, total)"
+        }
+      ],
+      "council_id": "essex_cc"
+    },
+    {
+      "rank": 18,
+      "supplier": "VIRGIN CARE SERVICES LTD",
+      "total_spend": 102516470.85,
+      "transactions": 59,
+      "pct_of_council_procurement": 0.63,
+      "avg_transaction": 1737567.3,
+      "recommendation_type": "monitor",
+      "flags": [
+        {
+          "type": "large_avg_txn",
+          "severity": "moderate",
+          "detail": "average transaction \u00a31,738K across 59 payments \u2014 consistent with large infrastructure / capital contract",
+          "evidence": "insights.json supplier_analysis (transactions, total)"
+        }
+      ],
+      "council_id": "essex_cc"
+    },
+    {
+      "rank": 19,
+      "supplier": "NORTH EAST LONDON NHS FOUNDATION TRUST",
+      "total_spend": 90344226.39,
+      "transactions": 209,
+      "pct_of_council_procurement": 0.55,
+      "avg_transaction": 432269.03,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "essex_cc"
+    },
+    {
+      "rank": 20,
+      "supplier": "MATRIX SCM LTD",
+      "total_spend": 89809089.88,
+      "transactions": 111766,
+      "pct_of_council_procurement": 0.55,
+      "avg_transaction": 803.55,
+      "recommendation_type": "monitor",
+      "flags": [],
+      "council_id": "essex_cc"
+    }
+  ],
+  "supplier_summary_flags": [],
+  "recommendation_counts": {
+    "rebid_candidate": 1,
+    "joint_procurement": 0,
+    "due_diligence": 0,
+    "monitor": 19,
+    "total": 20
+  }
+}

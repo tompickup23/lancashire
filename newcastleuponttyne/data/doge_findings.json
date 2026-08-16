@@ -1,0 +1,6852 @@
+{
+  "findings": [
+    {
+      "value": "\u00a31.8M",
+      "label": "Suppliers with Current Red Flags",
+      "detail": "6 current suppliers have Companies House compliance issues (historical payments were made before breaches started)",
+      "severity": "info",
+      "confidence": "medium",
+      "link": "/spending"
+    },
+    {
+      "value": "\u00a3778.4K",
+      "label": "Likely Duplicate Payments",
+      "detail": "352 high-confidence duplicate groups with same supplier, amount, date and reference (3+ copies) (after filtering 8832 CSV republication artifacts)",
+      "severity": "critical",
+      "confidence": "medium",
+      "context_note": "Quarterly CSV overlaps (same transaction appearing in 2 files) have been filtered out. Remaining duplicates show 3+ identical copies, which are more likely genuine overpayments.",
+      "link": "/spending"
+    },
+    {
+      "value": "\u00a32.0M",
+      "label": "Possible Duplicate Payments",
+      "detail": "585 medium-confidence groups (same supplier/amount/date, different references)",
+      "severity": "warning",
+      "confidence": "low",
+      "link": "/spending"
+    },
+    {
+      "value": "\u00a330.5M",
+      "label": "Suspected Split Payments",
+      "detail": "146 instances of 3+ payments just below approval thresholds in the same week",
+      "severity": "warning",
+      "confidence": "low",
+      "context_note": "Split payment detection has a high false-positive rate. Batch processing, staged invoices, and legitimate recurring payments can all trigger this pattern. FOI request for procurement approval chain recommended before drawing conclusions.",
+      "link": "/spending"
+    },
+    {
+      "value": "\u00a364.3M",
+      "label": "Round-Number Payments (>\u00a35K)",
+      "detail": "1598 exact round-number payments over \u00a35,000 \u2014 may indicate estimates rather than invoiced amounts",
+      "severity": "info",
+      "confidence": "low",
+      "link": "/spending"
+    },
+    {
+      "value": "2.0x",
+      "label": "Year-End Spending Pattern",
+      "detail": "ASC & Integrated Services spent 2.0x their monthly average in March (\u00a315.2M above normal). Note: UK councils operate on April\u2013March fiscal years, so elevated March spending is common as departments finalise annual budgets. Spikes above 3x warrant further scrutiny.",
+      "severity": "info",
+      "confidence": "medium",
+      "context_note": "March spending above the monthly average is expected for UK councils on April\u2013March fiscal years. Compare against prior years' March figures for meaningful analysis.",
+      "link": "/spending"
+    },
+    {
+      "value": "15",
+      "label": "Rapid Payment Suppliers",
+      "detail": "15 suppliers receive payments every <14 days on average. Top: Miscellaneous Payments Bacs (1.6 day avg, 10753 payments, \u00a327.1M)",
+      "severity": "info",
+      "confidence": "high",
+      "link": "/spending"
+    },
+    {
+      "value": "\u03c7\u00b2=15923.02",
+      "label": "Benford's Law Anomaly",
+      "detail": "Significant deviation from Benford's Law (p < 0.001). Digit 1 deviates 7.6% from expected distribution across 272,637 transactions. Note: with 272,637 transactions, chi-squared tests are highly sensitive \u2014 the 7.6% max digit deviation is the more practical measure of anomaly.",
+      "severity": "warning",
+      "confidence": "medium",
+      "context_note": "Chi-squared values on samples of 272,637+ transactions are naturally inflated and will almost always show statistical significance. The max digit deviation (7.6%) is a more meaningful indicator \u2014 deviations under 5% are typical for legitimate council spending.",
+      "link": "/spending"
+    },
+    {
+      "value": "\u03c7\u00b2=2612.31",
+      "label": "Second-Digit Benford's Anomaly",
+      "detail": "Second-digit distribution across 282,630 transactions shows p < 0.001 (highly significant). Digit 0 deviates 1.95% from Nigrini's expected distribution. Second-digit tests are more discriminating than first-digit for detecting round-number bias and fabricated invoices.",
+      "severity": "warning",
+      "confidence": "medium",
+      "context_note": "Benford's second-digit analysis (Nigrini, 2012) uses chi-squared with 9 df. Critical values: 16.92 (p=0.05), 21.67 (p=0.01), 27.88 (p=0.001). n=282,630.",
+      "statistics": {
+        "test": "chi_squared_goodness_of_fit",
+        "chi_squared": 2612.31,
+        "df": 9,
+        "n": 282630,
+        "p_description": "p < 0.001 (highly significant)",
+        "significant": true
+      },
+      "link": "/spending"
+    }
+  ],
+  "key_findings": [
+    {
+      "icon": "clock",
+      "badge": "Payment Pattern",
+      "title": "10 suppliers with clock-like payment regularity",
+      "description": "These suppliers receive payments at near-identical intervals (std dev <5 days). Top: Miscellaneous Payments Bacs \u2014 every 1.6 days (10753 payments, \u00a327.1M)",
+      "link": "/spending",
+      "link_text": "View patterns \u2192",
+      "severity": "info",
+      "confidence": "high"
+    },
+    {
+      "icon": "repeat",
+      "badge": "High Volume",
+      "title": "MISCELLANEOUS PAYMENTS BACS: 10753 transactions totalling \u00a327.1M",
+      "description": "Averaging \u00a32.5K per transaction \u2014 the council's most frequent supplier",
+      "link": "/spending?supplier=MISCELLANEOUS PAYMENTS BACS",
+      "link_text": "See all transactions \u2192",
+      "severity": "info",
+      "confidence": "high"
+    }
+  ],
+  "cta_link": "/spending",
+  "cta_text": "Explore all spending data",
+  "generated": "2026-05-17T22:20:54.653884",
+  "analyses_run": [
+    "duplicates",
+    "cross_council_pricing",
+    "payment_patterns",
+    "ch_compliance",
+    "benfords_law",
+    "supplier_concentration",
+    "fraud_triangle",
+    "benfords_first_two_digits",
+    "benfords_last_two_digits",
+    "benfords_summation",
+    "benfords_per_supplier_mad",
+    "same_same_different",
+    "vendor_integrity",
+    "credit_patterns",
+    "description_quality",
+    "supplier_risk",
+    "supplier_lifecycle",
+    "temporal_intelligence",
+    "procurement_intelligence",
+    "audit_standards"
+  ],
+  "payment_velocity": {
+    "rapid_payers": [
+      {
+        "supplier": "MISCELLANEOUS PAYMENTS BACS",
+        "payments": 10753,
+        "avg_days": 1.6,
+        "total_spend": 27125834.92,
+        "regularity": "high"
+      },
+      {
+        "supplier": "BUNZL GREENHAM",
+        "payments": 2633,
+        "avg_days": 2.5,
+        "total_spend": 1568644.71,
+        "regularity": "high"
+      },
+      {
+        "supplier": "ARNOLD CLARK",
+        "payments": 1014,
+        "avg_days": 2.7,
+        "total_spend": 395702.42,
+        "regularity": "high"
+      },
+      {
+        "supplier": "DENTON TRAVEL",
+        "payments": 3496,
+        "avg_days": 2.7,
+        "total_spend": 12496434.3,
+        "regularity": "high"
+      },
+      {
+        "supplier": "EYRE & ELLISTON LTD T/A EGS",
+        "payments": 2500,
+        "avg_days": 2.7,
+        "total_spend": 3229508.86,
+        "regularity": "high"
+      },
+      {
+        "supplier": "NRG LTD",
+        "payments": 982,
+        "avg_days": 2.7,
+        "total_spend": 10447983.83,
+        "regularity": "high"
+      },
+      {
+        "supplier": "ENGIE REGENERATION LTD",
+        "payments": 42,
+        "avg_days": 2.8,
+        "total_spend": 582824.63,
+        "regularity": "high"
+      },
+      {
+        "supplier": "NORTHUMBRIA HEALTHCARE NHS TRUST",
+        "payments": 3367,
+        "avg_days": 3.1,
+        "total_spend": 17071609.67,
+        "regularity": "high"
+      },
+      {
+        "supplier": "PHOENIX SECURITY",
+        "payments": 158,
+        "avg_days": 3.2,
+        "total_spend": 332122.84,
+        "regularity": "high"
+      },
+      {
+        "supplier": "TRINITY CHAMBERS",
+        "payments": 1318,
+        "avg_days": 3.3,
+        "total_spend": 1664005.97,
+        "regularity": "high"
+      }
+    ],
+    "regular_payers": [
+      {
+        "supplier": "MISCELLANEOUS PAYMENTS BACS",
+        "payments": 10753,
+        "avg_days": 1.6,
+        "std_dev": 1.9,
+        "total_spend": 27125834.92
+      },
+      {
+        "supplier": "BUNZL GREENHAM",
+        "payments": 2633,
+        "avg_days": 2.5,
+        "std_dev": 2.0,
+        "total_spend": 1568644.71
+      },
+      {
+        "supplier": "ARNOLD CLARK",
+        "payments": 1014,
+        "avg_days": 2.7,
+        "std_dev": 2.0,
+        "total_spend": 395702.42
+      },
+      {
+        "supplier": "DENTON TRAVEL",
+        "payments": 3496,
+        "avg_days": 2.7,
+        "std_dev": 2.3,
+        "total_spend": 12496434.3
+      },
+      {
+        "supplier": "EYRE & ELLISTON LTD T/A EGS",
+        "payments": 2500,
+        "avg_days": 2.7,
+        "std_dev": 2.1,
+        "total_spend": 3229508.86
+      },
+      {
+        "supplier": "NRG LTD",
+        "payments": 982,
+        "avg_days": 2.7,
+        "std_dev": 2.0,
+        "total_spend": 10447983.83
+      },
+      {
+        "supplier": "ENGIE REGENERATION LTD",
+        "payments": 42,
+        "avg_days": 2.8,
+        "std_dev": 2.2,
+        "total_spend": 582824.63
+      },
+      {
+        "supplier": "NORTHUMBRIA HEALTHCARE NHS TRUST",
+        "payments": 3367,
+        "avg_days": 3.1,
+        "std_dev": 2.6,
+        "total_spend": 17071609.67
+      },
+      {
+        "supplier": "PHOENIX SECURITY",
+        "payments": 158,
+        "avg_days": 3.2,
+        "std_dev": 1.9,
+        "total_spend": 332122.84
+      },
+      {
+        "supplier": "TRINITY CHAMBERS",
+        "payments": 1318,
+        "avg_days": 3.3,
+        "std_dev": 2.8,
+        "total_spend": 1664005.97
+      }
+    ],
+    "day_of_week": [
+      {
+        "day": "Monday",
+        "count": 28783,
+        "total": 351107454.64
+      },
+      {
+        "day": "Tuesday",
+        "count": 55876,
+        "total": 809869602.98
+      },
+      {
+        "day": "Wednesday",
+        "count": 38619,
+        "total": 376177633.65
+      },
+      {
+        "day": "Thursday",
+        "count": 36633,
+        "total": 357240356.08
+      },
+      {
+        "day": "Friday",
+        "count": 51006,
+        "total": 449252988.28
+      },
+      {
+        "day": "Saturday",
+        "count": 4,
+        "total": 81831.97
+      }
+    ],
+    "total_analysed": 1980
+  },
+  "supplier_concentration": {
+    "total_spend": 2343729867.6,
+    "unique_suppliers": 5986,
+    "top5": {
+      "suppliers": [
+        {
+          "supplier": "AURA (NCLE) PROJECT COMPANY LTD",
+          "total": 62386434.88,
+          "count": 504,
+          "pct": 2.7
+        },
+        {
+          "supplier": "SUEZ RECYCLING & RECOVERY HOLDINGS UK",
+          "total": 59365844.89,
+          "count": 210,
+          "pct": 2.5
+        },
+        {
+          "supplier": "A&J KEITH LTD",
+          "total": 45508086.84,
+          "count": 1349,
+          "pct": 1.9
+        },
+        {
+          "supplier": "EDF ENERGY",
+          "total": 40738894.92,
+          "count": 141,
+          "pct": 1.7
+        },
+        {
+          "supplier": "NOTCA",
+          "total": 40281945.74,
+          "count": 29,
+          "pct": 1.7
+        }
+      ],
+      "total": 248281207.27,
+      "pct": 10.6
+    },
+    "top10_pct": 17.4,
+    "top20_pct": 27.7,
+    "hhi": 62.3,
+    "concentration_level": "low"
+  },
+  "fraud_triangle": {
+    "overall_score": 34.2,
+    "risk_level": "low",
+    "dimensions": {
+      "opportunity": {
+        "score": 40,
+        "signals": [
+          {
+            "signal": "146 suspected split payment instances (\u00a330.5M)",
+            "score": 40,
+            "source": "payment_patterns"
+          }
+        ]
+      },
+      "pressure": {
+        "score": 83,
+        "signals": [
+          {
+            "signal": "Year-end spike: 5.2x monthly average in March",
+            "score": 33,
+            "source": "payment_patterns"
+          },
+          {
+            "signal": "352 likely duplicate payments (\u00a3778.4K)",
+            "score": 30,
+            "source": "duplicates"
+          },
+          {
+            "signal": "1598 round-number payments over \u00a35K (\u00a364.3M)",
+            "score": 20,
+            "source": "payment_patterns"
+          }
+        ]
+      },
+      "rationalization": {
+        "score": 12,
+        "signals": [
+          {
+            "signal": "6 suppliers with current CH red flags",
+            "score": 12,
+            "source": "ch_compliance"
+          }
+        ]
+      }
+    },
+    "methodology": "Fraud triangle (Cressey 1953): screening tool synthesising existing DOGE analysis signals. Not an accusation of fraud.",
+    "total_signals": 5
+  },
+  "benfords_advanced": {
+    "first_two_digits": {
+      "total_tested": 282585,
+      "chi_squared": 28645.44,
+      "df": 89,
+      "conformity": "non_conforming",
+      "p_description": "p < 0.001 (highly significant)",
+      "digit_analysis": [
+        {
+          "digits": 10,
+          "observed": 9604,
+          "observed_pct": 3.4,
+          "expected_pct": 4.14,
+          "deviation": -0.74
+        },
+        {
+          "digits": 11,
+          "observed": 8159,
+          "observed_pct": 2.89,
+          "expected_pct": 3.78,
+          "deviation": -0.89
+        },
+        {
+          "digits": 12,
+          "observed": 8305,
+          "observed_pct": 2.94,
+          "expected_pct": 3.48,
+          "deviation": -0.54
+        },
+        {
+          "digits": 13,
+          "observed": 6426,
+          "observed_pct": 2.27,
+          "expected_pct": 3.22,
+          "deviation": -0.94
+        },
+        {
+          "digits": 14,
+          "observed": 6715,
+          "observed_pct": 2.38,
+          "expected_pct": 3.0,
+          "deviation": -0.62
+        },
+        {
+          "digits": 15,
+          "observed": 7063,
+          "observed_pct": 2.5,
+          "expected_pct": 2.8,
+          "deviation": -0.3
+        },
+        {
+          "digits": 16,
+          "observed": 5837,
+          "observed_pct": 2.07,
+          "expected_pct": 2.63,
+          "deviation": -0.57
+        },
+        {
+          "digits": 17,
+          "observed": 4721,
+          "observed_pct": 1.67,
+          "expected_pct": 2.48,
+          "deviation": -0.81
+        },
+        {
+          "digits": 18,
+          "observed": 4432,
+          "observed_pct": 1.57,
+          "expected_pct": 2.35,
+          "deviation": -0.78
+        },
+        {
+          "digits": 19,
+          "observed": 3811,
+          "observed_pct": 1.35,
+          "expected_pct": 2.23,
+          "deviation": -0.88
+        },
+        {
+          "digits": 20,
+          "observed": 4138,
+          "observed_pct": 1.46,
+          "expected_pct": 2.12,
+          "deviation": -0.65
+        },
+        {
+          "digits": 21,
+          "observed": 3541,
+          "observed_pct": 1.25,
+          "expected_pct": 2.02,
+          "deviation": -0.77
+        },
+        {
+          "digits": 22,
+          "observed": 3328,
+          "observed_pct": 1.18,
+          "expected_pct": 1.93,
+          "deviation": -0.75
+        },
+        {
+          "digits": 23,
+          "observed": 3167,
+          "observed_pct": 1.12,
+          "expected_pct": 1.85,
+          "deviation": -0.73
+        },
+        {
+          "digits": 24,
+          "observed": 2944,
+          "observed_pct": 1.04,
+          "expected_pct": 1.77,
+          "deviation": -0.73
+        },
+        {
+          "digits": 25,
+          "observed": 5671,
+          "observed_pct": 2.01,
+          "expected_pct": 1.7,
+          "deviation": 0.3
+        },
+        {
+          "digits": 26,
+          "observed": 4483,
+          "observed_pct": 1.59,
+          "expected_pct": 1.64,
+          "deviation": -0.05
+        },
+        {
+          "digits": 27,
+          "observed": 5782,
+          "observed_pct": 2.05,
+          "expected_pct": 1.58,
+          "deviation": 0.47
+        },
+        {
+          "digits": 28,
+          "observed": 6333,
+          "observed_pct": 2.24,
+          "expected_pct": 1.52,
+          "deviation": 0.72
+        },
+        {
+          "digits": 29,
+          "observed": 5169,
+          "observed_pct": 1.83,
+          "expected_pct": 1.47,
+          "deviation": 0.36
+        },
+        {
+          "digits": 30,
+          "observed": 7551,
+          "observed_pct": 2.67,
+          "expected_pct": 1.42,
+          "deviation": 1.25
+        },
+        {
+          "digits": 31,
+          "observed": 7292,
+          "observed_pct": 2.58,
+          "expected_pct": 1.38,
+          "deviation": 1.2
+        },
+        {
+          "digits": 32,
+          "observed": 5583,
+          "observed_pct": 1.98,
+          "expected_pct": 1.34,
+          "deviation": 0.64
+        },
+        {
+          "digits": 33,
+          "observed": 3987,
+          "observed_pct": 1.41,
+          "expected_pct": 1.3,
+          "deviation": 0.11
+        },
+        {
+          "digits": 34,
+          "observed": 5101,
+          "observed_pct": 1.81,
+          "expected_pct": 1.26,
+          "deviation": 0.55
+        },
+        {
+          "digits": 35,
+          "observed": 5624,
+          "observed_pct": 1.99,
+          "expected_pct": 1.22,
+          "deviation": 0.77
+        },
+        {
+          "digits": 36,
+          "observed": 4331,
+          "observed_pct": 1.53,
+          "expected_pct": 1.19,
+          "deviation": 0.34
+        },
+        {
+          "digits": 37,
+          "observed": 4914,
+          "observed_pct": 1.74,
+          "expected_pct": 1.16,
+          "deviation": 0.58
+        },
+        {
+          "digits": 38,
+          "observed": 3963,
+          "observed_pct": 1.4,
+          "expected_pct": 1.13,
+          "deviation": 0.27
+        },
+        {
+          "digits": 39,
+          "observed": 3528,
+          "observed_pct": 1.25,
+          "expected_pct": 1.1,
+          "deviation": 0.15
+        },
+        {
+          "digits": 40,
+          "observed": 5137,
+          "observed_pct": 1.82,
+          "expected_pct": 1.07,
+          "deviation": 0.75
+        },
+        {
+          "digits": 41,
+          "observed": 3006,
+          "observed_pct": 1.06,
+          "expected_pct": 1.05,
+          "deviation": 0.02
+        },
+        {
+          "digits": 42,
+          "observed": 3224,
+          "observed_pct": 1.14,
+          "expected_pct": 1.02,
+          "deviation": 0.12
+        },
+        {
+          "digits": 43,
+          "observed": 2895,
+          "observed_pct": 1.02,
+          "expected_pct": 1.0,
+          "deviation": 0.03
+        },
+        {
+          "digits": 44,
+          "observed": 2871,
+          "observed_pct": 1.02,
+          "expected_pct": 0.98,
+          "deviation": 0.04
+        },
+        {
+          "digits": 45,
+          "observed": 3509,
+          "observed_pct": 1.24,
+          "expected_pct": 0.95,
+          "deviation": 0.29
+        },
+        {
+          "digits": 46,
+          "observed": 2855,
+          "observed_pct": 1.01,
+          "expected_pct": 0.93,
+          "deviation": 0.08
+        },
+        {
+          "digits": 47,
+          "observed": 2551,
+          "observed_pct": 0.9,
+          "expected_pct": 0.91,
+          "deviation": -0.01
+        },
+        {
+          "digits": 48,
+          "observed": 3115,
+          "observed_pct": 1.1,
+          "expected_pct": 0.9,
+          "deviation": 0.21
+        },
+        {
+          "digits": 49,
+          "observed": 2901,
+          "observed_pct": 1.03,
+          "expected_pct": 0.88,
+          "deviation": 0.15
+        },
+        {
+          "digits": 50,
+          "observed": 4356,
+          "observed_pct": 1.54,
+          "expected_pct": 0.86,
+          "deviation": 0.68
+        },
+        {
+          "digits": 51,
+          "observed": 1898,
+          "observed_pct": 0.67,
+          "expected_pct": 0.84,
+          "deviation": -0.17
+        },
+        {
+          "digits": 52,
+          "observed": 2204,
+          "observed_pct": 0.78,
+          "expected_pct": 0.83,
+          "deviation": -0.05
+        },
+        {
+          "digits": 53,
+          "observed": 2190,
+          "observed_pct": 0.77,
+          "expected_pct": 0.81,
+          "deviation": -0.04
+        },
+        {
+          "digits": 54,
+          "observed": 2019,
+          "observed_pct": 0.71,
+          "expected_pct": 0.8,
+          "deviation": -0.08
+        },
+        {
+          "digits": 55,
+          "observed": 2669,
+          "observed_pct": 0.94,
+          "expected_pct": 0.78,
+          "deviation": 0.16
+        },
+        {
+          "digits": 56,
+          "observed": 2525,
+          "observed_pct": 0.89,
+          "expected_pct": 0.77,
+          "deviation": 0.12
+        },
+        {
+          "digits": 57,
+          "observed": 1942,
+          "observed_pct": 0.69,
+          "expected_pct": 0.76,
+          "deviation": -0.07
+        },
+        {
+          "digits": 58,
+          "observed": 1966,
+          "observed_pct": 0.7,
+          "expected_pct": 0.74,
+          "deviation": -0.05
+        },
+        {
+          "digits": 59,
+          "observed": 1810,
+          "observed_pct": 0.64,
+          "expected_pct": 0.73,
+          "deviation": -0.09
+        },
+        {
+          "digits": 60,
+          "observed": 2581,
+          "observed_pct": 0.91,
+          "expected_pct": 0.72,
+          "deviation": 0.2
+        },
+        {
+          "digits": 61,
+          "observed": 1578,
+          "observed_pct": 0.56,
+          "expected_pct": 0.71,
+          "deviation": -0.15
+        },
+        {
+          "digits": 62,
+          "observed": 2213,
+          "observed_pct": 0.78,
+          "expected_pct": 0.69,
+          "deviation": 0.09
+        },
+        {
+          "digits": 63,
+          "observed": 2485,
+          "observed_pct": 0.88,
+          "expected_pct": 0.68,
+          "deviation": 0.2
+        },
+        {
+          "digits": 64,
+          "observed": 1810,
+          "observed_pct": 0.64,
+          "expected_pct": 0.67,
+          "deviation": -0.03
+        },
+        {
+          "digits": 65,
+          "observed": 1903,
+          "observed_pct": 0.67,
+          "expected_pct": 0.66,
+          "deviation": 0.01
+        },
+        {
+          "digits": 66,
+          "observed": 2335,
+          "observed_pct": 0.83,
+          "expected_pct": 0.65,
+          "deviation": 0.17
+        },
+        {
+          "digits": 67,
+          "observed": 1803,
+          "observed_pct": 0.64,
+          "expected_pct": 0.64,
+          "deviation": -0.01
+        },
+        {
+          "digits": 68,
+          "observed": 1764,
+          "observed_pct": 0.62,
+          "expected_pct": 0.63,
+          "deviation": -0.01
+        },
+        {
+          "digits": 69,
+          "observed": 1823,
+          "observed_pct": 0.65,
+          "expected_pct": 0.62,
+          "deviation": 0.02
+        },
+        {
+          "digits": 70,
+          "observed": 2259,
+          "observed_pct": 0.8,
+          "expected_pct": 0.62,
+          "deviation": 0.18
+        },
+        {
+          "digits": 71,
+          "observed": 1649,
+          "observed_pct": 0.58,
+          "expected_pct": 0.61,
+          "deviation": -0.02
+        },
+        {
+          "digits": 72,
+          "observed": 3053,
+          "observed_pct": 1.08,
+          "expected_pct": 0.6,
+          "deviation": 0.48
+        },
+        {
+          "digits": 73,
+          "observed": 1460,
+          "observed_pct": 0.52,
+          "expected_pct": 0.59,
+          "deviation": -0.07
+        },
+        {
+          "digits": 74,
+          "observed": 2158,
+          "observed_pct": 0.76,
+          "expected_pct": 0.58,
+          "deviation": 0.18
+        },
+        {
+          "digits": 75,
+          "observed": 2205,
+          "observed_pct": 0.78,
+          "expected_pct": 0.58,
+          "deviation": 0.21
+        },
+        {
+          "digits": 76,
+          "observed": 1953,
+          "observed_pct": 0.69,
+          "expected_pct": 0.57,
+          "deviation": 0.12
+        },
+        {
+          "digits": 77,
+          "observed": 1438,
+          "observed_pct": 0.51,
+          "expected_pct": 0.56,
+          "deviation": -0.05
+        },
+        {
+          "digits": 78,
+          "observed": 2237,
+          "observed_pct": 0.79,
+          "expected_pct": 0.55,
+          "deviation": 0.24
+        },
+        {
+          "digits": 79,
+          "observed": 1218,
+          "observed_pct": 0.43,
+          "expected_pct": 0.55,
+          "deviation": -0.12
+        },
+        {
+          "digits": 80,
+          "observed": 2219,
+          "observed_pct": 0.79,
+          "expected_pct": 0.54,
+          "deviation": 0.25
+        },
+        {
+          "digits": 81,
+          "observed": 1543,
+          "observed_pct": 0.55,
+          "expected_pct": 0.53,
+          "deviation": 0.01
+        },
+        {
+          "digits": 82,
+          "observed": 1424,
+          "observed_pct": 0.5,
+          "expected_pct": 0.53,
+          "deviation": -0.02
+        },
+        {
+          "digits": 83,
+          "observed": 1216,
+          "observed_pct": 0.43,
+          "expected_pct": 0.52,
+          "deviation": -0.09
+        },
+        {
+          "digits": 84,
+          "observed": 1483,
+          "observed_pct": 0.52,
+          "expected_pct": 0.51,
+          "deviation": 0.01
+        },
+        {
+          "digits": 85,
+          "observed": 1527,
+          "observed_pct": 0.54,
+          "expected_pct": 0.51,
+          "deviation": 0.03
+        },
+        {
+          "digits": 86,
+          "observed": 1176,
+          "observed_pct": 0.42,
+          "expected_pct": 0.5,
+          "deviation": -0.09
+        },
+        {
+          "digits": 87,
+          "observed": 1314,
+          "observed_pct": 0.46,
+          "expected_pct": 0.5,
+          "deviation": -0.03
+        },
+        {
+          "digits": 88,
+          "observed": 1050,
+          "observed_pct": 0.37,
+          "expected_pct": 0.49,
+          "deviation": -0.12
+        },
+        {
+          "digits": 89,
+          "observed": 1063,
+          "observed_pct": 0.38,
+          "expected_pct": 0.49,
+          "deviation": -0.11
+        },
+        {
+          "digits": 90,
+          "observed": 1504,
+          "observed_pct": 0.53,
+          "expected_pct": 0.48,
+          "deviation": 0.05
+        },
+        {
+          "digits": 91,
+          "observed": 1529,
+          "observed_pct": 0.54,
+          "expected_pct": 0.47,
+          "deviation": 0.07
+        },
+        {
+          "digits": 92,
+          "observed": 1139,
+          "observed_pct": 0.4,
+          "expected_pct": 0.47,
+          "deviation": -0.07
+        },
+        {
+          "digits": 93,
+          "observed": 1202,
+          "observed_pct": 0.43,
+          "expected_pct": 0.46,
+          "deviation": -0.04
+        },
+        {
+          "digits": 94,
+          "observed": 1064,
+          "observed_pct": 0.38,
+          "expected_pct": 0.46,
+          "deviation": -0.08
+        },
+        {
+          "digits": 95,
+          "observed": 1126,
+          "observed_pct": 0.4,
+          "expected_pct": 0.45,
+          "deviation": -0.06
+        },
+        {
+          "digits": 96,
+          "observed": 950,
+          "observed_pct": 0.34,
+          "expected_pct": 0.45,
+          "deviation": -0.11
+        },
+        {
+          "digits": 97,
+          "observed": 1039,
+          "observed_pct": 0.37,
+          "expected_pct": 0.45,
+          "deviation": -0.08
+        },
+        {
+          "digits": 98,
+          "observed": 965,
+          "observed_pct": 0.34,
+          "expected_pct": 0.44,
+          "deviation": -0.1
+        },
+        {
+          "digits": 99,
+          "observed": 981,
+          "observed_pct": 0.35,
+          "expected_pct": 0.44,
+          "deviation": -0.09
+        }
+      ],
+      "spikes": [
+        {
+          "digits": 30,
+          "observed": 7551,
+          "expected": 4024.1,
+          "ratio": 1.88,
+          "amount_range": "\u00a3300-\u00a3309"
+        },
+        {
+          "digits": 31,
+          "observed": 7292,
+          "expected": 3896.4,
+          "ratio": 1.87,
+          "amount_range": "\u00a3310-\u00a3319"
+        },
+        {
+          "digits": 72,
+          "observed": 3053,
+          "expected": 1692.8,
+          "ratio": 1.8,
+          "amount_range": "\u00a3720-\u00a3729"
+        },
+        {
+          "digits": 50,
+          "observed": 4356,
+          "expected": 2430.3,
+          "ratio": 1.79,
+          "amount_range": "\u00a3500-\u00a3509"
+        },
+        {
+          "digits": 40,
+          "observed": 5137,
+          "expected": 3030.4,
+          "ratio": 1.7,
+          "amount_range": "\u00a3400-\u00a3409"
+        },
+        {
+          "digits": 35,
+          "observed": 5624,
+          "expected": 3457.3,
+          "ratio": 1.63,
+          "amount_range": "\u00a3350-\u00a3359"
+        },
+        {
+          "digits": 37,
+          "observed": 4914,
+          "expected": 3272.9,
+          "ratio": 1.5,
+          "amount_range": "\u00a3370-\u00a3379"
+        }
+      ]
+    },
+    "last_two_digits": {
+      "total_tested": 272864,
+      "chi_squared": 141184.0,
+      "df": 99,
+      "conformity": "non_conforming",
+      "p_description": "p < 0.001 (highly significant)",
+      "round_number_excess": 23352.7,
+      "round_number_excess_pct": 8.56,
+      "top_endings": [
+        {
+          "last_two": "00",
+          "observed": 19061,
+          "observed_pct": 6.99,
+          "expected_pct": 1.0,
+          "excess": 5.99
+        },
+        {
+          "last_two": "50",
+          "observed": 9749,
+          "observed_pct": 3.57,
+          "expected_pct": 1.0,
+          "excess": 2.57
+        },
+        {
+          "last_two": "80",
+          "observed": 6180,
+          "observed_pct": 2.26,
+          "expected_pct": 1.0,
+          "excess": 1.26
+        },
+        {
+          "last_two": "20",
+          "observed": 5845,
+          "observed_pct": 2.14,
+          "expected_pct": 1.0,
+          "excess": 1.14
+        },
+        {
+          "last_two": "40",
+          "observed": 5315,
+          "observed_pct": 1.95,
+          "expected_pct": 1.0,
+          "excess": 0.95
+        },
+        {
+          "last_two": "60",
+          "observed": 4982,
+          "observed_pct": 1.83,
+          "expected_pct": 1.0,
+          "excess": 0.83
+        },
+        {
+          "last_two": "18",
+          "observed": 4276,
+          "observed_pct": 1.57,
+          "expected_pct": 1.0,
+          "excess": 0.57
+        },
+        {
+          "last_two": "75",
+          "observed": 3993,
+          "observed_pct": 1.46,
+          "expected_pct": 1.0,
+          "excess": 0.46
+        },
+        {
+          "last_two": "25",
+          "observed": 3818,
+          "observed_pct": 1.4,
+          "expected_pct": 1.0,
+          "excess": 0.4
+        },
+        {
+          "last_two": "70",
+          "observed": 3627,
+          "observed_pct": 1.33,
+          "expected_pct": 1.0,
+          "excess": 0.33
+        }
+      ],
+      "digit_analysis": [
+        {
+          "last_two": "00",
+          "observed": 19061,
+          "observed_pct": 6.99,
+          "expected_pct": 1.0,
+          "excess": 5.99
+        },
+        {
+          "last_two": "01",
+          "observed": 1740,
+          "observed_pct": 0.64,
+          "expected_pct": 1.0,
+          "excess": -0.36
+        },
+        {
+          "last_two": "02",
+          "observed": 2302,
+          "observed_pct": 0.84,
+          "expected_pct": 1.0,
+          "excess": -0.16
+        },
+        {
+          "last_two": "03",
+          "observed": 1633,
+          "observed_pct": 0.6,
+          "expected_pct": 1.0,
+          "excess": -0.4
+        },
+        {
+          "last_two": "04",
+          "observed": 2346,
+          "observed_pct": 0.86,
+          "expected_pct": 1.0,
+          "excess": -0.14
+        },
+        {
+          "last_two": "05",
+          "observed": 2227,
+          "observed_pct": 0.82,
+          "expected_pct": 1.0,
+          "excess": -0.18
+        },
+        {
+          "last_two": "06",
+          "observed": 2152,
+          "observed_pct": 0.79,
+          "expected_pct": 1.0,
+          "excess": -0.21
+        },
+        {
+          "last_two": "07",
+          "observed": 2110,
+          "observed_pct": 0.77,
+          "expected_pct": 1.0,
+          "excess": -0.23
+        },
+        {
+          "last_two": "08",
+          "observed": 2499,
+          "observed_pct": 0.92,
+          "expected_pct": 1.0,
+          "excess": -0.08
+        },
+        {
+          "last_two": "09",
+          "observed": 2791,
+          "observed_pct": 1.02,
+          "expected_pct": 1.0,
+          "excess": 0.02
+        },
+        {
+          "last_two": "10",
+          "observed": 2898,
+          "observed_pct": 1.06,
+          "expected_pct": 1.0,
+          "excess": 0.06
+        },
+        {
+          "last_two": "11",
+          "observed": 1801,
+          "observed_pct": 0.66,
+          "expected_pct": 1.0,
+          "excess": -0.34
+        },
+        {
+          "last_two": "12",
+          "observed": 2210,
+          "observed_pct": 0.81,
+          "expected_pct": 1.0,
+          "excess": -0.19
+        },
+        {
+          "last_two": "13",
+          "observed": 2106,
+          "observed_pct": 0.77,
+          "expected_pct": 1.0,
+          "excess": -0.23
+        },
+        {
+          "last_two": "14",
+          "observed": 2139,
+          "observed_pct": 0.78,
+          "expected_pct": 1.0,
+          "excess": -0.22
+        },
+        {
+          "last_two": "15",
+          "observed": 2432,
+          "observed_pct": 0.89,
+          "expected_pct": 1.0,
+          "excess": -0.11
+        },
+        {
+          "last_two": "16",
+          "observed": 2170,
+          "observed_pct": 0.8,
+          "expected_pct": 1.0,
+          "excess": -0.2
+        },
+        {
+          "last_two": "17",
+          "observed": 2116,
+          "observed_pct": 0.78,
+          "expected_pct": 1.0,
+          "excess": -0.22
+        },
+        {
+          "last_two": "18",
+          "observed": 4276,
+          "observed_pct": 1.57,
+          "expected_pct": 1.0,
+          "excess": 0.57
+        },
+        {
+          "last_two": "19",
+          "observed": 2561,
+          "observed_pct": 0.94,
+          "expected_pct": 1.0,
+          "excess": -0.06
+        },
+        {
+          "last_two": "20",
+          "observed": 5845,
+          "observed_pct": 2.14,
+          "expected_pct": 1.0,
+          "excess": 1.14
+        },
+        {
+          "last_two": "21",
+          "observed": 1837,
+          "observed_pct": 0.67,
+          "expected_pct": 1.0,
+          "excess": -0.33
+        },
+        {
+          "last_two": "22",
+          "observed": 2186,
+          "observed_pct": 0.8,
+          "expected_pct": 1.0,
+          "excess": -0.2
+        },
+        {
+          "last_two": "23",
+          "observed": 2035,
+          "observed_pct": 0.75,
+          "expected_pct": 1.0,
+          "excess": -0.25
+        },
+        {
+          "last_two": "24",
+          "observed": 2058,
+          "observed_pct": 0.75,
+          "expected_pct": 1.0,
+          "excess": -0.25
+        },
+        {
+          "last_two": "25",
+          "observed": 3818,
+          "observed_pct": 1.4,
+          "expected_pct": 1.0,
+          "excess": 0.4
+        },
+        {
+          "last_two": "26",
+          "observed": 2411,
+          "observed_pct": 0.88,
+          "expected_pct": 1.0,
+          "excess": -0.12
+        },
+        {
+          "last_two": "27",
+          "observed": 1816,
+          "observed_pct": 0.67,
+          "expected_pct": 1.0,
+          "excess": -0.33
+        },
+        {
+          "last_two": "28",
+          "observed": 2154,
+          "observed_pct": 0.79,
+          "expected_pct": 1.0,
+          "excess": -0.21
+        },
+        {
+          "last_two": "29",
+          "observed": 2688,
+          "observed_pct": 0.99,
+          "expected_pct": 1.0,
+          "excess": -0.01
+        },
+        {
+          "last_two": "30",
+          "observed": 2925,
+          "observed_pct": 1.07,
+          "expected_pct": 1.0,
+          "excess": 0.07
+        },
+        {
+          "last_two": "31",
+          "observed": 2003,
+          "observed_pct": 0.73,
+          "expected_pct": 1.0,
+          "excess": -0.27
+        },
+        {
+          "last_two": "32",
+          "observed": 1889,
+          "observed_pct": 0.69,
+          "expected_pct": 1.0,
+          "excess": -0.31
+        },
+        {
+          "last_two": "33",
+          "observed": 2458,
+          "observed_pct": 0.9,
+          "expected_pct": 1.0,
+          "excess": -0.1
+        },
+        {
+          "last_two": "34",
+          "observed": 1935,
+          "observed_pct": 0.71,
+          "expected_pct": 1.0,
+          "excess": -0.29
+        },
+        {
+          "last_two": "35",
+          "observed": 2726,
+          "observed_pct": 1.0,
+          "expected_pct": 1.0,
+          "excess": -0.0
+        },
+        {
+          "last_two": "36",
+          "observed": 2807,
+          "observed_pct": 1.03,
+          "expected_pct": 1.0,
+          "excess": 0.03
+        },
+        {
+          "last_two": "37",
+          "observed": 1964,
+          "observed_pct": 0.72,
+          "expected_pct": 1.0,
+          "excess": -0.28
+        },
+        {
+          "last_two": "38",
+          "observed": 1845,
+          "observed_pct": 0.68,
+          "expected_pct": 1.0,
+          "excess": -0.32
+        },
+        {
+          "last_two": "39",
+          "observed": 2512,
+          "observed_pct": 0.92,
+          "expected_pct": 1.0,
+          "excess": -0.08
+        },
+        {
+          "last_two": "40",
+          "observed": 5315,
+          "observed_pct": 1.95,
+          "expected_pct": 1.0,
+          "excess": 0.95
+        },
+        {
+          "last_two": "41",
+          "observed": 1848,
+          "observed_pct": 0.68,
+          "expected_pct": 1.0,
+          "excess": -0.32
+        },
+        {
+          "last_two": "42",
+          "observed": 2008,
+          "observed_pct": 0.74,
+          "expected_pct": 1.0,
+          "excess": -0.26
+        },
+        {
+          "last_two": "43",
+          "observed": 2051,
+          "observed_pct": 0.75,
+          "expected_pct": 1.0,
+          "excess": -0.25
+        },
+        {
+          "last_two": "44",
+          "observed": 2243,
+          "observed_pct": 0.82,
+          "expected_pct": 1.0,
+          "excess": -0.18
+        },
+        {
+          "last_two": "45",
+          "observed": 2578,
+          "observed_pct": 0.94,
+          "expected_pct": 1.0,
+          "excess": -0.06
+        },
+        {
+          "last_two": "46",
+          "observed": 2512,
+          "observed_pct": 0.92,
+          "expected_pct": 1.0,
+          "excess": -0.08
+        },
+        {
+          "last_two": "47",
+          "observed": 1781,
+          "observed_pct": 0.65,
+          "expected_pct": 1.0,
+          "excess": -0.35
+        },
+        {
+          "last_two": "48",
+          "observed": 2424,
+          "observed_pct": 0.89,
+          "expected_pct": 1.0,
+          "excess": -0.11
+        },
+        {
+          "last_two": "49",
+          "observed": 2107,
+          "observed_pct": 0.77,
+          "expected_pct": 1.0,
+          "excess": -0.23
+        },
+        {
+          "last_two": "50",
+          "observed": 9749,
+          "observed_pct": 3.57,
+          "expected_pct": 1.0,
+          "excess": 2.57
+        },
+        {
+          "last_two": "51",
+          "observed": 2018,
+          "observed_pct": 0.74,
+          "expected_pct": 1.0,
+          "excess": -0.26
+        },
+        {
+          "last_two": "52",
+          "observed": 2734,
+          "observed_pct": 1.0,
+          "expected_pct": 1.0,
+          "excess": 0.0
+        },
+        {
+          "last_two": "53",
+          "observed": 2411,
+          "observed_pct": 0.88,
+          "expected_pct": 1.0,
+          "excess": -0.12
+        },
+        {
+          "last_two": "54",
+          "observed": 2007,
+          "observed_pct": 0.74,
+          "expected_pct": 1.0,
+          "excess": -0.26
+        },
+        {
+          "last_two": "55",
+          "observed": 2396,
+          "observed_pct": 0.88,
+          "expected_pct": 1.0,
+          "excess": -0.12
+        },
+        {
+          "last_two": "56",
+          "observed": 2314,
+          "observed_pct": 0.85,
+          "expected_pct": 1.0,
+          "excess": -0.15
+        },
+        {
+          "last_two": "57",
+          "observed": 1909,
+          "observed_pct": 0.7,
+          "expected_pct": 1.0,
+          "excess": -0.3
+        },
+        {
+          "last_two": "58",
+          "observed": 2562,
+          "observed_pct": 0.94,
+          "expected_pct": 1.0,
+          "excess": -0.06
+        },
+        {
+          "last_two": "59",
+          "observed": 2140,
+          "observed_pct": 0.78,
+          "expected_pct": 1.0,
+          "excess": -0.22
+        },
+        {
+          "last_two": "60",
+          "observed": 4982,
+          "observed_pct": 1.83,
+          "expected_pct": 1.0,
+          "excess": 0.83
+        },
+        {
+          "last_two": "61",
+          "observed": 2162,
+          "observed_pct": 0.79,
+          "expected_pct": 1.0,
+          "excess": -0.21
+        },
+        {
+          "last_two": "62",
+          "observed": 2706,
+          "observed_pct": 0.99,
+          "expected_pct": 1.0,
+          "excess": -0.01
+        },
+        {
+          "last_two": "63",
+          "observed": 2071,
+          "observed_pct": 0.76,
+          "expected_pct": 1.0,
+          "excess": -0.24
+        },
+        {
+          "last_two": "64",
+          "observed": 2114,
+          "observed_pct": 0.77,
+          "expected_pct": 1.0,
+          "excess": -0.23
+        },
+        {
+          "last_two": "65",
+          "observed": 3522,
+          "observed_pct": 1.29,
+          "expected_pct": 1.0,
+          "excess": 0.29
+        },
+        {
+          "last_two": "66",
+          "observed": 2154,
+          "observed_pct": 0.79,
+          "expected_pct": 1.0,
+          "excess": -0.21
+        },
+        {
+          "last_two": "67",
+          "observed": 2451,
+          "observed_pct": 0.9,
+          "expected_pct": 1.0,
+          "excess": -0.1
+        },
+        {
+          "last_two": "68",
+          "observed": 2311,
+          "observed_pct": 0.85,
+          "expected_pct": 1.0,
+          "excess": -0.15
+        },
+        {
+          "last_two": "69",
+          "observed": 2466,
+          "observed_pct": 0.9,
+          "expected_pct": 1.0,
+          "excess": -0.1
+        },
+        {
+          "last_two": "70",
+          "observed": 3627,
+          "observed_pct": 1.33,
+          "expected_pct": 1.0,
+          "excess": 0.33
+        },
+        {
+          "last_two": "71",
+          "observed": 1860,
+          "observed_pct": 0.68,
+          "expected_pct": 1.0,
+          "excess": -0.32
+        },
+        {
+          "last_two": "72",
+          "observed": 2375,
+          "observed_pct": 0.87,
+          "expected_pct": 1.0,
+          "excess": -0.13
+        },
+        {
+          "last_two": "73",
+          "observed": 1855,
+          "observed_pct": 0.68,
+          "expected_pct": 1.0,
+          "excess": -0.32
+        },
+        {
+          "last_two": "74",
+          "observed": 2219,
+          "observed_pct": 0.81,
+          "expected_pct": 1.0,
+          "excess": -0.19
+        },
+        {
+          "last_two": "75",
+          "observed": 3993,
+          "observed_pct": 1.46,
+          "expected_pct": 1.0,
+          "excess": 0.46
+        },
+        {
+          "last_two": "76",
+          "observed": 2152,
+          "observed_pct": 0.79,
+          "expected_pct": 1.0,
+          "excess": -0.21
+        },
+        {
+          "last_two": "77",
+          "observed": 2677,
+          "observed_pct": 0.98,
+          "expected_pct": 1.0,
+          "excess": -0.02
+        },
+        {
+          "last_two": "78",
+          "observed": 2224,
+          "observed_pct": 0.82,
+          "expected_pct": 1.0,
+          "excess": -0.18
+        },
+        {
+          "last_two": "79",
+          "observed": 2663,
+          "observed_pct": 0.98,
+          "expected_pct": 1.0,
+          "excess": -0.02
+        },
+        {
+          "last_two": "80",
+          "observed": 6180,
+          "observed_pct": 2.26,
+          "expected_pct": 1.0,
+          "excess": 1.26
+        },
+        {
+          "last_two": "81",
+          "observed": 1988,
+          "observed_pct": 0.73,
+          "expected_pct": 1.0,
+          "excess": -0.27
+        },
+        {
+          "last_two": "82",
+          "observed": 2227,
+          "observed_pct": 0.82,
+          "expected_pct": 1.0,
+          "excess": -0.18
+        },
+        {
+          "last_two": "83",
+          "observed": 1951,
+          "observed_pct": 0.72,
+          "expected_pct": 1.0,
+          "excess": -0.28
+        },
+        {
+          "last_two": "84",
+          "observed": 2650,
+          "observed_pct": 0.97,
+          "expected_pct": 1.0,
+          "excess": -0.03
+        },
+        {
+          "last_two": "85",
+          "observed": 2630,
+          "observed_pct": 0.96,
+          "expected_pct": 1.0,
+          "excess": -0.04
+        },
+        {
+          "last_two": "86",
+          "observed": 2531,
+          "observed_pct": 0.93,
+          "expected_pct": 1.0,
+          "excess": -0.07
+        },
+        {
+          "last_two": "87",
+          "observed": 2342,
+          "observed_pct": 0.86,
+          "expected_pct": 1.0,
+          "excess": -0.14
+        },
+        {
+          "last_two": "88",
+          "observed": 2831,
+          "observed_pct": 1.04,
+          "expected_pct": 1.0,
+          "excess": 0.04
+        },
+        {
+          "last_two": "89",
+          "observed": 1695,
+          "observed_pct": 0.62,
+          "expected_pct": 1.0,
+          "excess": -0.38
+        },
+        {
+          "last_two": "90",
+          "observed": 3593,
+          "observed_pct": 1.32,
+          "expected_pct": 1.0,
+          "excess": 0.32
+        },
+        {
+          "last_two": "91",
+          "observed": 2320,
+          "observed_pct": 0.85,
+          "expected_pct": 1.0,
+          "excess": -0.15
+        },
+        {
+          "last_two": "92",
+          "observed": 2399,
+          "observed_pct": 0.88,
+          "expected_pct": 1.0,
+          "excess": -0.12
+        },
+        {
+          "last_two": "93",
+          "observed": 2768,
+          "observed_pct": 1.01,
+          "expected_pct": 1.0,
+          "excess": 0.01
+        },
+        {
+          "last_two": "94",
+          "observed": 1803,
+          "observed_pct": 0.66,
+          "expected_pct": 1.0,
+          "excess": -0.34
+        },
+        {
+          "last_two": "95",
+          "observed": 3149,
+          "observed_pct": 1.15,
+          "expected_pct": 1.0,
+          "excess": 0.15
+        },
+        {
+          "last_two": "96",
+          "observed": 2304,
+          "observed_pct": 0.84,
+          "expected_pct": 1.0,
+          "excess": -0.16
+        },
+        {
+          "last_two": "97",
+          "observed": 1934,
+          "observed_pct": 0.71,
+          "expected_pct": 1.0,
+          "excess": -0.29
+        },
+        {
+          "last_two": "98",
+          "observed": 2249,
+          "observed_pct": 0.82,
+          "expected_pct": 1.0,
+          "excess": -0.18
+        },
+        {
+          "last_two": "99",
+          "observed": 2147,
+          "observed_pct": 0.79,
+          "expected_pct": 1.0,
+          "excess": -0.21
+        }
+      ]
+    },
+    "summation": {
+      "total_sum": 2436493121.89,
+      "total_amounts": 283402,
+      "digit_analysis": [
+        {
+          "digit": 1,
+          "sum": 772505408.74,
+          "count": 65180,
+          "pct_of_total": 31.71,
+          "expected_pct": 11.11,
+          "deviation": 20.59,
+          "avg_amount": 11851.88
+        },
+        {
+          "digit": 2,
+          "sum": 383547776.32,
+          "count": 44668,
+          "pct_of_total": 15.74,
+          "expected_pct": 11.11,
+          "deviation": 4.63,
+          "avg_amount": 8586.63
+        },
+        {
+          "digit": 3,
+          "sum": 268498304.62,
+          "count": 51942,
+          "pct_of_total": 11.02,
+          "expected_pct": 11.11,
+          "deviation": -0.09,
+          "avg_amount": 5169.19
+        },
+        {
+          "digit": 4,
+          "sum": 201430666.68,
+          "count": 32152,
+          "pct_of_total": 8.27,
+          "expected_pct": 11.11,
+          "deviation": -2.84,
+          "avg_amount": 6264.95
+        },
+        {
+          "digit": 5,
+          "sum": 205317074.44,
+          "count": 23667,
+          "pct_of_total": 8.43,
+          "expected_pct": 11.11,
+          "deviation": -2.68,
+          "avg_amount": 8675.25
+        },
+        {
+          "digit": 6,
+          "sum": 160541359.49,
+          "count": 20403,
+          "pct_of_total": 6.59,
+          "expected_pct": 11.11,
+          "deviation": -4.52,
+          "avg_amount": 7868.52
+        },
+        {
+          "digit": 7,
+          "sum": 150153907.56,
+          "count": 19709,
+          "pct_of_total": 6.16,
+          "expected_pct": 11.11,
+          "deviation": -4.95,
+          "avg_amount": 7618.55
+        },
+        {
+          "digit": 8,
+          "sum": 134354281.7,
+          "count": 14113,
+          "pct_of_total": 5.51,
+          "expected_pct": 11.11,
+          "deviation": -5.6,
+          "avg_amount": 9519.9
+        },
+        {
+          "digit": 9,
+          "sum": 160144342.34,
+          "count": 11568,
+          "pct_of_total": 6.57,
+          "expected_pct": 11.11,
+          "deviation": -4.54,
+          "avg_amount": 13843.74
+        }
+      ],
+      "distortions": [
+        {
+          "digit": 1,
+          "pct_of_total": 31.71,
+          "excess_pct": 20.59,
+          "excess_value": 501783950.75,
+          "count": 65180,
+          "avg_amount": 11851.88
+        }
+      ],
+      "max_digit_pct": 31.71
+    },
+    "per_supplier_mad": {
+      "suppliers_tested": 757,
+      "nonconforming": 745,
+      "nonconforming_spend": 1877046821.66,
+      "marginally_acceptable": 5,
+      "top_20_outliers": [
+        {
+          "supplier": "BEDE HOUSE CARE HOME",
+          "mad": 0.2004,
+          "conformity": "nonconforming",
+          "transaction_count": 75,
+          "total_spend": 344020.74
+        },
+        {
+          "supplier": "EUROVENT HYGIENE SERVICES LTD",
+          "mad": 0.1993,
+          "conformity": "nonconforming",
+          "transaction_count": 83,
+          "total_spend": 56465.0
+        },
+        {
+          "supplier": "WESTMINSTER HAWTHORNS",
+          "mad": 0.1984,
+          "conformity": "nonconforming",
+          "transaction_count": 50,
+          "total_spend": 319783.48
+        },
+        {
+          "supplier": "ASPECTS HOUSE",
+          "mad": 0.1856,
+          "conformity": "nonconforming",
+          "transaction_count": 50,
+          "total_spend": 190431.64
+        },
+        {
+          "supplier": "RENTOKIL INITIAL UK LTD",
+          "mad": 0.1772,
+          "conformity": "nonconforming",
+          "transaction_count": 64,
+          "total_spend": 369802.0
+        },
+        {
+          "supplier": "HILLTOP LODGE",
+          "mad": 0.1698,
+          "conformity": "nonconforming",
+          "transaction_count": 50,
+          "total_spend": 127492.0
+        },
+        {
+          "supplier": "CORDINGLEY HOUSE",
+          "mad": 0.1675,
+          "conformity": "nonconforming",
+          "transaction_count": 51,
+          "total_spend": 408555.57
+        },
+        {
+          "supplier": "DOVECOTE",
+          "mad": 0.1653,
+          "conformity": "nonconforming",
+          "transaction_count": 50,
+          "total_spend": 132406.65
+        },
+        {
+          "supplier": "FORESIGHT RESIDENTIAL LTD",
+          "mad": 0.1653,
+          "conformity": "nonconforming",
+          "transaction_count": 50,
+          "total_spend": 266927.37
+        },
+        {
+          "supplier": "GARVALD HOME FARM",
+          "mad": 0.1639,
+          "conformity": "nonconforming",
+          "transaction_count": 51,
+          "total_spend": 165907.11
+        },
+        {
+          "supplier": "MIGHTY MORTAR",
+          "mad": 0.1629,
+          "conformity": "nonconforming",
+          "transaction_count": 66,
+          "total_spend": 18551.46
+        },
+        {
+          "supplier": "IAN BLACK LEGAL COSTS LTD",
+          "mad": 0.1605,
+          "conformity": "nonconforming",
+          "transaction_count": 72,
+          "total_spend": 25365.0
+        },
+        {
+          "supplier": "FITZROY SUPPORT",
+          "mad": 0.1595,
+          "conformity": "nonconforming",
+          "transaction_count": 51,
+          "total_spend": 335218.37
+        },
+        {
+          "supplier": "CARE VISIONS",
+          "mad": 0.1589,
+          "conformity": "nonconforming",
+          "transaction_count": 50,
+          "total_spend": 1510085.9
+        },
+        {
+          "supplier": "ENERTECH NF LTD",
+          "mad": 0.1574,
+          "conformity": "nonconforming",
+          "transaction_count": 66,
+          "total_spend": 326738.78
+        },
+        {
+          "supplier": "LEAZES HOMES",
+          "mad": 0.1563,
+          "conformity": "nonconforming",
+          "transaction_count": 206,
+          "total_spend": 1458849.62
+        },
+        {
+          "supplier": "BILLINGHAM GRANGE",
+          "mad": 0.1557,
+          "conformity": "nonconforming",
+          "transaction_count": 63,
+          "total_spend": 368083.9
+        },
+        {
+          "supplier": "TIME TO CARE SPECIALIST SUPPORT SERVICES",
+          "mad": 0.1553,
+          "conformity": "nonconforming",
+          "transaction_count": 50,
+          "total_spend": 687644.03
+        },
+        {
+          "supplier": "HEALTH ASSURED LTD",
+          "mad": 0.1546,
+          "conformity": "nonconforming",
+          "transaction_count": 69,
+          "total_spend": 51384.95
+        },
+        {
+          "supplier": "NORTH LAKES CHILDRENS SERVICES",
+          "mad": 0.1537,
+          "conformity": "nonconforming",
+          "transaction_count": 86,
+          "total_spend": 2295691.38
+        }
+      ]
+    }
+  },
+  "forensic_classics": {
+    "same_same_different": {
+      "rebilling": {
+        "flags": [
+          {
+            "supplier": "NOTCA",
+            "amount": 1497023.25,
+            "occurrences": 12,
+            "unique_dates": 12,
+            "total_value": 17964279.0,
+            "departments": [
+              "Corporate Budgets"
+            ]
+          },
+          {
+            "supplier": "NOTCA",
+            "amount": 1454457.83,
+            "occurrences": 11,
+            "unique_dates": 11,
+            "total_value": 15999036.13,
+            "departments": [
+              "Corporate Budgets"
+            ]
+          },
+          {
+            "supplier": "AURA (NCLE) PROJECT COMPANY LTD",
+            "amount": 1258337.57,
+            "occurrences": 8,
+            "unique_dates": 8,
+            "total_value": 10066700.56,
+            "departments": [
+              "Children, Education and Skills"
+            ]
+          },
+          {
+            "supplier": "AURA (NCLE) PROJECT COMPANY LTD",
+            "amount": 1312924.85,
+            "occurrences": 5,
+            "unique_dates": 5,
+            "total_value": 6564624.25,
+            "departments": [
+              "Children & Families"
+            ]
+          },
+          {
+            "supplier": "NORTHUMBERLAND TYNE&WEAR NHS TRUST",
+            "amount": 1032369.0,
+            "occurrences": 6,
+            "unique_dates": 6,
+            "total_value": 6194214.0,
+            "departments": [
+              "Public Health Service"
+            ]
+          },
+          {
+            "supplier": "AURA (NEWCASTLE) PROJECT CO PHASE 2 LTD",
+            "amount": 972150.09,
+            "occurrences": 6,
+            "unique_dates": 6,
+            "total_value": 5832900.54,
+            "departments": [
+              "Children & Families"
+            ]
+          },
+          {
+            "supplier": "NEWCASTLEUPONTYNE HOSPITALTRUST",
+            "amount": 1411897.13,
+            "occurrences": 4,
+            "unique_dates": 4,
+            "total_value": 5647588.52,
+            "departments": [
+              "Public Health Service"
+            ]
+          },
+          {
+            "supplier": "AURA (NCLE) PROJECT COMPANY LTD",
+            "amount": 1319354.42,
+            "occurrences": 4,
+            "unique_dates": 4,
+            "total_value": 5277417.68,
+            "departments": [
+              "Children, Education and Skills"
+            ]
+          },
+          {
+            "supplier": "AURA (NCLE) PROJECT COMPANY LTD",
+            "amount": 1299813.09,
+            "occurrences": 4,
+            "unique_dates": 4,
+            "total_value": 5199252.36,
+            "departments": [
+              "Children & Families"
+            ]
+          },
+          {
+            "supplier": "AURA (NCLE) PROJECT COMPANY LTD",
+            "amount": 1296125.16,
+            "occurrences": 4,
+            "unique_dates": 4,
+            "total_value": 5184500.64,
+            "departments": [
+              "Children & Families"
+            ]
+          },
+          {
+            "supplier": "NOTCA",
+            "amount": 1578057.58,
+            "occurrences": 3,
+            "unique_dates": 3,
+            "total_value": 4734172.74,
+            "departments": [
+              "Corporate Budgets"
+            ]
+          },
+          {
+            "supplier": "KAJIMA NEWCASTLE LIBRARIES LTD",
+            "amount": 336542.28,
+            "occurrences": 12,
+            "unique_dates": 12,
+            "total_value": 4038507.36,
+            "departments": [
+              "Operations & Reg Services",
+              "City Ops, Nghbrhds & Reg Srvcs"
+            ]
+          },
+          {
+            "supplier": "AURA (NCLE) PROJECT COMPANY LTD",
+            "amount": 1331717.36,
+            "occurrences": 3,
+            "unique_dates": 3,
+            "total_value": 3995152.08,
+            "departments": [
+              "Children, Education and Skills"
+            ]
+          },
+          {
+            "supplier": "KAJIMA NEWCASTLE LIBRARIES LTD",
+            "amount": 325730.17,
+            "occurrences": 12,
+            "unique_dates": 12,
+            "total_value": 3908762.04,
+            "departments": [
+              "Operations & Reg Services"
+            ]
+          },
+          {
+            "supplier": "AURA (NEWCASTLE) PROJECT CO PHASE 2 LTD",
+            "amount": 961641.74,
+            "occurrences": 4,
+            "unique_dates": 4,
+            "total_value": 3846566.96,
+            "departments": [
+              "Children & Families"
+            ]
+          },
+          {
+            "supplier": "AURA (NEWCASTLE) PROJECT COMPANY",
+            "amount": 958601.49,
+            "occurrences": 4,
+            "unique_dates": 4,
+            "total_value": 3834405.96,
+            "departments": [
+              "Children, Education and Skills"
+            ]
+          },
+          {
+            "supplier": "AURA (NCLE) PROJECT COMPANY LTD",
+            "amount": 1203941.48,
+            "occurrences": 3,
+            "unique_dates": 3,
+            "total_value": 3611824.44,
+            "departments": [
+              "Children, Education and Skills"
+            ]
+          },
+          {
+            "supplier": "SUEZ RECYCLING & RECOVERY HOLDINGS UK",
+            "amount": 277692.87,
+            "occurrences": 13,
+            "unique_dates": 12,
+            "total_value": 3610007.31,
+            "departments": [
+              "City Ops, Nghbrhds & Reg Srvcs"
+            ]
+          },
+          {
+            "supplier": "SOLUTIONS 4 HEALTH LTD",
+            "amount": 900000.0,
+            "occurrences": 4,
+            "unique_dates": 4,
+            "total_value": 3600000.0,
+            "departments": [
+              "Public Health Service"
+            ]
+          },
+          {
+            "supplier": "NUGENT CARE",
+            "amount": 252000.0,
+            "occurrences": 12,
+            "unique_dates": 12,
+            "total_value": 3024000.0,
+            "departments": [
+              "Children & Families",
+              "Children, Education and Skills"
+            ]
+          }
+        ],
+        "total_flags": 6141,
+        "total_value": 533412565.71
+      },
+      "cross_department": {
+        "flags": [
+          {
+            "supplier": "REDACTED PERSONAL DATA",
+            "date": "2025-08-26",
+            "departments": [
+              "Children & Families",
+              "Investment & Growth",
+              "Adult Social Care & Prevention"
+            ],
+            "payments": 208,
+            "total_value": 1898067.52
+          },
+          {
+            "supplier": "NEWCASTLEUPONTYNE HOSPITALTRUST",
+            "date": "2024-01-04",
+            "departments": [
+              "Children, Education and Skills",
+              "Public Health Service"
+            ],
+            "payments": 2,
+            "total_value": 1895440.5
+          },
+          {
+            "supplier": "SUEZ RECYCLING & RECOVERY HOLDINGS UK",
+            "date": "2022-10-04",
+            "departments": [
+              "Operations&Regulatory Services",
+              "Operations & Reg Services"
+            ],
+            "payments": 3,
+            "total_value": 1789594.98
+          },
+          {
+            "supplier": "NORTHUMBERLAND TYNE&WEAR NHS TRUST",
+            "date": "2025-01-06",
+            "departments": [
+              "Children & Families",
+              "Public Health Service"
+            ],
+            "payments": 5,
+            "total_value": 1772416.59
+          },
+          {
+            "supplier": "REDACTED PERSONAL DATA",
+            "date": "2025-12-15",
+            "departments": [
+              "Children & Families",
+              "Adult Social Care & Prevention"
+            ],
+            "payments": 195,
+            "total_value": 1647834.56
+          },
+          {
+            "supplier": "NEWCASTLEUPONTYNE HOSPITALTRUST",
+            "date": "2025-07-28",
+            "departments": [
+              "Children & Families",
+              "Public Health Service"
+            ],
+            "payments": 2,
+            "total_value": 1531446.56
+          },
+          {
+            "supplier": "NEWCASTLEUPONTYNE HOSPITALTRUST",
+            "date": "2025-10-03",
+            "departments": [
+              "Children & Families",
+              "Public Health Service"
+            ],
+            "payments": 2,
+            "total_value": 1531446.56
+          },
+          {
+            "supplier": "REDACTED PERSONAL DATA",
+            "date": "2025-09-23",
+            "departments": [
+              "Children & Families",
+              "Adult Social Care & Prevention"
+            ],
+            "payments": 185,
+            "total_value": 1531024.99
+          },
+          {
+            "supplier": "NEWCASTLEUPONTYNE HOSPITALTRUST",
+            "date": "2024-10-02",
+            "departments": [
+              "Children & Families",
+              "Public Health Service"
+            ],
+            "payments": 2,
+            "total_value": 1506907.0
+          },
+          {
+            "supplier": "NORTHUMBERLAND TYNE&WEAR NHS TRUST",
+            "date": "2022-10-06",
+            "departments": [
+              "Children, Education and Skills",
+              "Public Health Service"
+            ],
+            "payments": 2,
+            "total_value": 1492569.51
+          },
+          {
+            "supplier": "NEWCASTLEUPONTYNE HOSPITALTRUST",
+            "date": "2025-01-06",
+            "departments": [
+              "Children & Families",
+              "Public Health Service"
+            ],
+            "payments": 3,
+            "total_value": 1476482.0
+          },
+          {
+            "supplier": "NEWCASTLEUPONTYNE HOSPITALTRUST",
+            "date": "2024-04-03",
+            "departments": [
+              "Children, Education and Skills",
+              "Public Health Service"
+            ],
+            "payments": 2,
+            "total_value": 1430844.5
+          },
+          {
+            "supplier": "NEWCASTLEUPONTYNE HOSPITALTRUST",
+            "date": "2024-07-03",
+            "departments": [
+              "Children & Families",
+              "Public Health Service"
+            ],
+            "payments": 2,
+            "total_value": 1430844.5
+          },
+          {
+            "supplier": "REDACTED PERSONAL DATA",
+            "date": "2025-10-20",
+            "departments": [
+              "Children & Families",
+              "Adult Social Care & Prevention"
+            ],
+            "payments": 152,
+            "total_value": 1371343.17
+          },
+          {
+            "supplier": "EQUANS REGENERATION LTD",
+            "date": "2025-04-22",
+            "departments": [
+              "Investment & Growth",
+              "Housing Revenue Account"
+            ],
+            "payments": 3,
+            "total_value": 1325980.33
+          },
+          {
+            "supplier": "AURA (NCLE) PROJECT COMPANY LTD",
+            "date": "2022-04-22",
+            "departments": [
+              "Children, Education and Skills",
+              "General Fund Capital"
+            ],
+            "payments": 4,
+            "total_value": 1247891.48
+          },
+          {
+            "supplier": "AURA (NCLE) PROJECT COMPANY LTD",
+            "date": "2022-06-10",
+            "departments": [
+              "Children, Education and Skills",
+              "General Fund Capital"
+            ],
+            "payments": 4,
+            "total_value": 1211657.48
+          },
+          {
+            "supplier": "AURA NEWCASTLE LTD",
+            "date": "2022-08-05",
+            "departments": [
+              "Place",
+              "Children Education & Skills"
+            ],
+            "payments": 4,
+            "total_value": 1198040.67
+          },
+          {
+            "supplier": "EQUANS REGENERATION LTD",
+            "date": "2024-12-18",
+            "departments": [
+              "Housing & Communities",
+              "Housing Revenue Account"
+            ],
+            "payments": 3,
+            "total_value": 1153449.64
+          },
+          {
+            "supplier": "NORTHUMBERLAND TYNE&WEAR NHS TRUST",
+            "date": "2023-01-06",
+            "departments": [
+              "Children, Education and Skills",
+              "Public Health Service"
+            ],
+            "payments": 3,
+            "total_value": 1150698.7
+          }
+        ],
+        "total_flags": 2582,
+        "total_value": 229873983.27
+      },
+      "collusion_indicators": {
+        "flags": [
+          {
+            "amount": 221887.25,
+            "date": "2025-07-04",
+            "suppliers": [
+              "STONHAM",
+              "CHANGING LIVES"
+            ],
+            "count": 2,
+            "total_value": 443774.5
+          },
+          {
+            "amount": 221887.25,
+            "date": "2025-10-02",
+            "suppliers": [
+              "STONHAM",
+              "CHANGING LIVES"
+            ],
+            "count": 2,
+            "total_value": 443774.5
+          },
+          {
+            "amount": 136056.57,
+            "date": "2025-09-30",
+            "suppliers": [
+              "RIGHT AT HOME TYNESIDE",
+              "MY HOMECARE DURHAM",
+              "KD CARE SERVICES"
+            ],
+            "count": 3,
+            "total_value": 408169.71
+          },
+          {
+            "amount": 136056.57,
+            "date": "2025-11-04",
+            "suppliers": [
+              "RIGHT AT HOME TYNESIDE",
+              "MY HOMECARE DURHAM",
+              "KD CARE SERVICES"
+            ],
+            "count": 3,
+            "total_value": 408169.71
+          },
+          {
+            "amount": 131794.11,
+            "date": "2025-07-30",
+            "suppliers": [
+              "DALECARE LTD",
+              "HALES GROUP",
+              "ST ANTHONYS OF PADUA CARE SERVICES"
+            ],
+            "count": 3,
+            "total_value": 395382.33
+          },
+          {
+            "amount": 131794.11,
+            "date": "2025-07-01",
+            "suppliers": [
+              "DALECARE LTD",
+              "HALES GROUP",
+              "ST ANTHONYS OF PADUA CARE SERVICES"
+            ],
+            "count": 3,
+            "total_value": 395382.33
+          },
+          {
+            "amount": 131794.11,
+            "date": "2025-09-30",
+            "suppliers": [
+              "DALECARE LTD",
+              "HALES GROUP",
+              "ST ANTHONYS OF PADUA CARE SERVICES"
+            ],
+            "count": 3,
+            "total_value": 395382.33
+          },
+          {
+            "amount": 131794.11,
+            "date": "2025-11-04",
+            "suppliers": [
+              "DALECARE LTD",
+              "HALES GROUP",
+              "ST ANTHONYS OF PADUA CARE SERVICES"
+            ],
+            "count": 3,
+            "total_value": 395382.33
+          },
+          {
+            "amount": 131791.11,
+            "date": "2025-05-01",
+            "suppliers": [
+              "DALECARE LTD",
+              "HALES GROUP",
+              "ST ANTHONYS OF PADUA CARE SERVICES"
+            ],
+            "count": 3,
+            "total_value": 395373.33
+          },
+          {
+            "amount": 131791.11,
+            "date": "2025-06-03",
+            "suppliers": [
+              "DALECARE LTD",
+              "HALES GROUP",
+              "ST ANTHONYS OF PADUA CARE SERVICES"
+            ],
+            "count": 3,
+            "total_value": 395373.33
+          },
+          {
+            "amount": 128622.21,
+            "date": "2024-05-31",
+            "suppliers": [
+              "RIGHT AT HOME TYNESIDE",
+              "MY HOMECARE DURHAM",
+              "KD CARE SERVICES"
+            ],
+            "count": 3,
+            "total_value": 385866.63
+          },
+          {
+            "amount": 128622.21,
+            "date": "2025-01-31",
+            "suppliers": [
+              "RIGHT AT HOME TYNESIDE",
+              "MY HOMECARE DURHAM",
+              "KD CARE SERVICES"
+            ],
+            "count": 3,
+            "total_value": 385866.63
+          },
+          {
+            "amount": 128622.21,
+            "date": "2025-01-03",
+            "suppliers": [
+              "RIGHT AT HOME TYNESIDE",
+              "MY HOMECARE DURHAM",
+              "KD CARE SERVICES"
+            ],
+            "count": 3,
+            "total_value": 385866.63
+          },
+          {
+            "amount": 128622.21,
+            "date": "2025-04-04",
+            "suppliers": [
+              "RIGHT AT HOME TYNESIDE",
+              "MY HOMECARE DURHAM",
+              "KD CARE SERVICES"
+            ],
+            "count": 3,
+            "total_value": 385866.63
+          },
+          {
+            "amount": 124592.65,
+            "date": "2025-03-04",
+            "suppliers": [
+              "DALECARE LTD",
+              "HALES GROUP",
+              "ST ANTHONYS OF PADUA CARE SERVICES"
+            ],
+            "count": 3,
+            "total_value": 373777.95
+          },
+          {
+            "amount": 120207.67,
+            "date": "2023-09-01",
+            "suppliers": [
+              "RIGHT AT HOME TYNESIDE",
+              "MY HOMECARE DURHAM",
+              "KD CARE SERVICES"
+            ],
+            "count": 3,
+            "total_value": 360623.01
+          },
+          {
+            "amount": 120207.67,
+            "date": "2023-09-29",
+            "suppliers": [
+              "RIGHT AT HOME TYNESIDE",
+              "MY HOMECARE DURHAM",
+              "KD CARE SERVICES"
+            ],
+            "count": 3,
+            "total_value": 360623.01
+          },
+          {
+            "amount": 120207.67,
+            "date": "2023-10-31",
+            "suppliers": [
+              "RIGHT AT HOME TYNESIDE",
+              "MY HOMECARE DURHAM",
+              "KD CARE SERVICES"
+            ],
+            "count": 3,
+            "total_value": 360623.01
+          },
+          {
+            "amount": 120207.67,
+            "date": "2023-12-22",
+            "suppliers": [
+              "RIGHT AT HOME TYNESIDE",
+              "MY HOMECARE DURHAM",
+              "KD CARE SERVICES"
+            ],
+            "count": 3,
+            "total_value": 360623.01
+          },
+          {
+            "amount": 120207.67,
+            "date": "2024-03-07",
+            "suppliers": [
+              "RIGHT AT HOME TYNESIDE",
+              "MY HOMECARE DURHAM",
+              "KD CARE SERVICES"
+            ],
+            "count": 3,
+            "total_value": 360623.01
+          }
+        ],
+        "total_flags": 841,
+        "total_value": 56256269.46
+      }
+    },
+    "vendor_integrity": {
+      "suspect_vendor_pairs": [
+        {
+          "names": [
+            "HC ONE",
+            "HC ONE LTD"
+          ],
+          "normalised": "HC ONE",
+          "combined_spend": 4784000.39,
+          "combined_transactions": 266,
+          "has_ch_match": false
+        },
+        {
+          "names": [
+            "VOYAGE",
+            "VOYAGE LTD"
+          ],
+          "normalised": "VOYAGE",
+          "combined_spend": 2158405.24,
+          "combined_transactions": 407,
+          "has_ch_match": false
+        },
+        {
+          "names": [
+            "YOUNG FOUNDATIONS",
+            "YOUNG FOUNDATIONS LTD"
+          ],
+          "normalised": "YOUNG FOUNDATIONS",
+          "combined_spend": 1622648.71,
+          "combined_transactions": 62,
+          "has_ch_match": false
+        },
+        {
+          "names": [
+            "CHANGE GROW LIVE",
+            "CHANGE GROW LIVE SERVICES LTD"
+          ],
+          "normalised": "CHANGE GROW LIVE",
+          "combined_spend": 1298655.0,
+          "combined_transactions": 16,
+          "has_ch_match": false
+        },
+        {
+          "names": [
+            "STEELCRAFT",
+            "STEELCRAFT LTD"
+          ],
+          "normalised": "STEELCRAFT",
+          "combined_spend": 1065213.17,
+          "combined_transactions": 156,
+          "has_ch_match": false
+        },
+        {
+          "names": [
+            "KARBON HOMES",
+            "KARBON HOMES LTD"
+          ],
+          "normalised": "KARBON HOMES",
+          "combined_spend": 1013201.5,
+          "combined_transactions": 220,
+          "has_ch_match": false
+        },
+        {
+          "names": [
+            "NUDGE EDUCATION",
+            "NUDGE EDUCATION LTD"
+          ],
+          "normalised": "NUDGE EDUCATION",
+          "combined_spend": 994982.38,
+          "combined_transactions": 587,
+          "has_ch_match": false
+        },
+        {
+          "names": [
+            "CURATED PLACE",
+            "CURATED PLACE LTD"
+          ],
+          "normalised": "CURATED PLACE",
+          "combined_spend": 860647.0,
+          "combined_transactions": 12,
+          "has_ch_match": false
+        },
+        {
+          "names": [
+            "AKARI CARE",
+            "AKARI CARE LTD"
+          ],
+          "normalised": "AKARI CARE",
+          "combined_spend": 846652.48,
+          "combined_transactions": 65,
+          "has_ch_match": false
+        },
+        {
+          "names": [
+            "TYNE HOUSING ASSOCIATION",
+            "TYNE HOUSING ASSOCIATION LTD"
+          ],
+          "normalised": "TYNE HOUSING ASSOCIATION",
+          "combined_spend": 752157.97,
+          "combined_transactions": 99,
+          "has_ch_match": false
+        },
+        {
+          "names": [
+            "NEC SOFTWARE SOLUTIONS",
+            "NEC SOFTWARE SOLUTIONS UK LTD"
+          ],
+          "normalised": "NEC SOFTWARE SOLUTIONS",
+          "combined_spend": 730411.63,
+          "combined_transactions": 50,
+          "has_ch_match": true
+        },
+        {
+          "names": [
+            "INTU ELDON SQUARE",
+            "INTU ELDON SQUARE LTD"
+          ],
+          "normalised": "INTU ELDON SQUARE",
+          "combined_spend": 677514.81,
+          "combined_transactions": 53,
+          "has_ch_match": false
+        },
+        {
+          "names": [
+            "NORTHERN GAS NETWORKS",
+            "NORTHERN GAS NETWORKS LTD"
+          ],
+          "normalised": "NORTHERN GAS NETWORKS",
+          "combined_spend": 476814.13,
+          "combined_transactions": 16,
+          "has_ch_match": false
+        },
+        {
+          "names": [
+            "THE CHILDREN'S SOCIETY",
+            "THE CHILDRENS SOCIETY"
+          ],
+          "normalised": "THE CHILDRENS SOCIETY",
+          "combined_spend": 233915.71,
+          "combined_transactions": 13,
+          "has_ch_match": false
+        },
+        {
+          "names": [
+            "SHEPHERD OFFSHORE LTD",
+            "SHEPHERD OFFSHORE SERVICES LTD"
+          ],
+          "normalised": "SHEPHERD OFFSHORE",
+          "combined_spend": 130974.79,
+          "combined_transactions": 4,
+          "has_ch_match": false
+        },
+        {
+          "names": [
+            "EON NEXT ENERGY",
+            "EON NEXT ENERGY LTD"
+          ],
+          "normalised": "EON NEXT ENERGY",
+          "combined_spend": 105841.99,
+          "combined_transactions": 178,
+          "has_ch_match": false
+        },
+        {
+          "names": [
+            "NISAI VIRTUAL ACADEMY",
+            "NISAI VIRTUAL ACADEMY LTD"
+          ],
+          "normalised": "NISAI VIRTUAL ACADEMY",
+          "combined_spend": 81754.36,
+          "combined_transactions": 39,
+          "has_ch_match": false
+        },
+        {
+          "names": [
+            "NODA TAXIS",
+            "NODA TAXIS LTD"
+          ],
+          "normalised": "NODA TAXIS",
+          "combined_spend": 66709.06,
+          "combined_transactions": 145,
+          "has_ch_match": false
+        },
+        {
+          "names": [
+            "ACCESS INDEPENDENT",
+            "ACCESS INDEPENDENT LTD"
+          ],
+          "normalised": "ACCESS INDEPENDENT",
+          "combined_spend": 55990.22,
+          "combined_transactions": 48,
+          "has_ch_match": false
+        },
+        {
+          "names": [
+            "WESTGATE CARPETS",
+            "WESTGATE CARPETS LTD"
+          ],
+          "normalised": "WESTGATE CARPETS",
+          "combined_spend": 42830.0,
+          "combined_transactions": 72,
+          "has_ch_match": false
+        }
+      ],
+      "total_suspect_pairs": 37,
+      "single_payment_vendors": [
+        {
+          "supplier": "PENNINGTONS MANCHES COOPER LTD",
+          "amount": 700000.0,
+          "date": "2023-05-23",
+          "has_ch": false,
+          "department": "Housing Revenue Account"
+        },
+        {
+          "supplier": "DCLG",
+          "amount": 486996.0,
+          "date": "2025-04-04",
+          "has_ch": false,
+          "department": "Funding Net Budget"
+        },
+        {
+          "supplier": "BELLWAY HOMES LTD NORTH EAST",
+          "amount": 418065.02,
+          "date": "2024-07-12",
+          "has_ch": false,
+          "department": "Investment & Growth"
+        },
+        {
+          "supplier": "NORTHERN GAS NETWORKS",
+          "amount": 360000.0,
+          "date": "2025-08-06",
+          "has_ch": false,
+          "department": "Housing Revenue Account"
+        },
+        {
+          "supplier": "MOBO ORGANISATION LTD",
+          "amount": 359000.0,
+          "date": "2024-10-08",
+          "has_ch": false,
+          "department": "Investment & Growth"
+        },
+        {
+          "supplier": "NEW TYNE WEST DEVELOPMENT CO LLP",
+          "amount": 309000.0,
+          "date": "2024-01-23",
+          "has_ch": false,
+          "department": "Place"
+        },
+        {
+          "supplier": "NORTHUMBRIA ENFORCEMENT UNIT",
+          "amount": 288201.8,
+          "date": "2023-02-10",
+          "has_ch": false,
+          "department": "Operations & Reg Services"
+        },
+        {
+          "supplier": "SOUTH CAUSEY INN",
+          "amount": 260074.51,
+          "date": "2024-08-15",
+          "has_ch": false,
+          "department": "Investment & Growth"
+        },
+        {
+          "supplier": "GILSON GRAY",
+          "amount": 250091.23,
+          "date": "2024-10-15",
+          "has_ch": false,
+          "department": "Housing Revenue Account"
+        },
+        {
+          "supplier": "MERCURY PRIZE LTD",
+          "amount": 250000.0,
+          "date": "2025-10-23",
+          "has_ch": false,
+          "department": "Investment & Growth"
+        },
+        {
+          "supplier": "RACHEL SEBASTIAN & CO SOLICITORS",
+          "amount": 250000.0,
+          "date": "2025-12-04",
+          "has_ch": false,
+          "department": "Housing Revenue Account"
+        },
+        {
+          "supplier": "TT LAW LTD CLIENT ACCOUNT",
+          "amount": 232500.0,
+          "date": "2025-09-18",
+          "has_ch": false,
+          "department": "Corporate Budgets"
+        },
+        {
+          "supplier": "RAW CLARK LLP",
+          "amount": 230000.0,
+          "date": "2023-11-30",
+          "has_ch": false,
+          "department": "Housing Revenue Account"
+        },
+        {
+          "supplier": "THE PARK MEDICAL GROUP",
+          "amount": 222701.5,
+          "date": "2024-09-04",
+          "has_ch": false,
+          "department": "Investment & Growth"
+        },
+        {
+          "supplier": "PERMIER PROPERTY LAWYERS",
+          "amount": 220000.0,
+          "date": "2023-11-30",
+          "has_ch": false,
+          "department": "Housing Revenue Account"
+        },
+        {
+          "supplier": "USHAW HISTORIC HOUSE",
+          "amount": 206268.68,
+          "date": "2024-08-14",
+          "has_ch": false,
+          "department": "Investment & Growth"
+        },
+        {
+          "supplier": "LEIGH DAY CLIENT ACCOUNT",
+          "amount": 177922.0,
+          "date": "2025-02-06",
+          "has_ch": false,
+          "department": "Corporate Budgets"
+        },
+        {
+          "supplier": "ALDERSON LAW",
+          "amount": 177000.0,
+          "date": "2024-02-13",
+          "has_ch": false,
+          "department": "Housing Revenue Account"
+        },
+        {
+          "supplier": "ESLAND NORTH LTD",
+          "amount": 170857.14,
+          "date": "2025-12-22",
+          "has_ch": false,
+          "department": "Children & Families"
+        },
+        {
+          "supplier": "CAPITA IT SERVICES",
+          "amount": 170251.3,
+          "date": "2025-05-22",
+          "has_ch": false,
+          "department": "City Ops, Nghbrhds & Reg Srvcs"
+        }
+      ],
+      "total_single_payment": 189,
+      "single_payment_value": 10620343.74,
+      "unverified_high_spend": [
+        {
+          "supplier": "REDACTED PERSONAL DATA",
+          "total_spend": 92763254.29,
+          "transactions": 72481,
+          "departments": [
+            "Assistant Chief Executive",
+            "CFO Directorate",
+            "HRA Expenditure",
+            "Workforce & Inclusion",
+            "Place"
+          ]
+        },
+        {
+          "supplier": "AURA (NCLE) PROJECT COMPANY LTD",
+          "total_spend": 62386434.88,
+          "transactions": 504,
+          "departments": [
+            "Place",
+            "Children, Education and Skills",
+            "Investment & Growth",
+            "Children & Families",
+            "General Fund Capital"
+          ]
+        },
+        {
+          "supplier": "SUEZ RECYCLING & RECOVERY HOLDINGS UK",
+          "total_spend": 59365844.89,
+          "transactions": 210,
+          "departments": [
+            "Operations&Regulatory Services",
+            "Operations & Reg Services",
+            "City Ops, Nghbrhds & Reg Srvcs"
+          ]
+        },
+        {
+          "supplier": "A&J KEITH LTD",
+          "total_spend": 45508086.84,
+          "transactions": 1349,
+          "departments": [
+            "Place",
+            "Children, Education and Skills",
+            "General Fund Capital",
+            "ASC & Integrated Services",
+            "Operations & Reg Services"
+          ]
+        },
+        {
+          "supplier": "EDF ENERGY",
+          "total_spend": 40738894.92,
+          "transactions": 141,
+          "departments": [
+            "Public Health Service",
+            "Corporate Budgets",
+            "Place",
+            "Investment & Growth",
+            "Adult Social Care & Prevention"
+          ]
+        },
+        {
+          "supplier": "NOTCA",
+          "total_spend": 40281945.74,
+          "transactions": 29,
+          "departments": [
+            "Corporate Budgets",
+            "Assistant Chief Executive",
+            "City Futures"
+          ]
+        },
+        {
+          "supplier": "NEWCASTLEUPONTYNE HOSPITALTRUST",
+          "total_spend": 36372880.86,
+          "transactions": 325,
+          "departments": [
+            "Public Health Service",
+            "Resources",
+            "Assistant Chief Executive",
+            "Children, Education and Skills",
+            "Adult Social Care & Prevention"
+          ]
+        },
+        {
+          "supplier": "EQUANS REGENERATION LTD",
+          "total_spend": 35168764.9,
+          "transactions": 869,
+          "departments": [
+            "Place",
+            "Investment & Growth",
+            "Capital Citywide",
+            "Housing & Communities",
+            "General Fund Capital"
+          ]
+        },
+        {
+          "supplier": "NEW BEGINNINGS (N.E.) LTD",
+          "total_spend": 33621795.76,
+          "transactions": 290,
+          "departments": [
+            "ASC & Integrated Services",
+            "Adult Social Care & Prevention"
+          ]
+        },
+        {
+          "supplier": "PROSPER LEARNING TRUST",
+          "total_spend": 27433159.71,
+          "transactions": 256,
+          "departments": [
+            "Children, Education and Skills",
+            "Children & Families",
+            "Deputy Chief Executive",
+            "Operations & Reg Services",
+            "City Ops, Nghbrhds & Reg Srvcs"
+          ]
+        },
+        {
+          "supplier": "MISCELLANEOUS PAYMENTS BACS",
+          "total_spend": 27125834.92,
+          "transactions": 10753,
+          "departments": [
+            "Assistant Chief Executive",
+            "CFO Directorate",
+            "HRA Expenditure",
+            "Place",
+            "Children, Education and Skills"
+          ]
+        },
+        {
+          "supplier": "ESH CONSTRUCTION",
+          "total_spend": 27099747.63,
+          "transactions": 81,
+          "departments": [
+            "Corporate Services",
+            "Place",
+            "Investment & Growth",
+            "General Fund Capital",
+            "City Ops, Nghbrhds & Reg Srvcs"
+          ]
+        },
+        {
+          "supplier": "NORTHUMBERLAND TYNE&WEAR NHS TRUST",
+          "total_spend": 25220326.37,
+          "transactions": 114,
+          "departments": [
+            "Public Health Service",
+            "Children, Education and Skills",
+            "Adult Social Care & Prevention",
+            "Children & Families",
+            "ASC & Integrated Services"
+          ]
+        },
+        {
+          "supplier": "TAY VALLEY LIGHTING",
+          "total_spend": 25156634.61,
+          "transactions": 45,
+          "departments": [
+            "Place",
+            "Investment & Growth",
+            "City Ops, Nghbrhds & Reg Srvcs"
+          ]
+        },
+        {
+          "supplier": "FOCUS EDUCATION (NEWCASTLE) LTD",
+          "total_spend": 24685091.13,
+          "transactions": 152,
+          "departments": [
+            "Children & Families",
+            "Children, Education and Skills",
+            "Operations & Reg Services",
+            "City Ops, Nghbrhds & Reg Srvcs"
+          ]
+        },
+        {
+          "supplier": "CORONA ENERGY",
+          "total_spend": 24280045.68,
+          "transactions": 104,
+          "departments": [
+            "Corporate Budgets",
+            "Place",
+            "Housing & Communities"
+          ]
+        },
+        {
+          "supplier": "COQUET TRUST",
+          "total_spend": 24076812.69,
+          "transactions": 392,
+          "departments": [
+            "ASC & Integrated Services",
+            "Adult Social Care & Prevention"
+          ]
+        },
+        {
+          "supplier": "DISABILITY NORTH PAYROLL",
+          "total_spend": 23861644.59,
+          "transactions": 379,
+          "departments": [
+            "Children & Families",
+            "Children, Education and Skills",
+            "ASC & Integrated Services",
+            "Adult Social Care & Prevention"
+          ]
+        },
+        {
+          "supplier": "AURA (NEWCASTLE) PROJECT COMPANY",
+          "total_spend": 23317274.81,
+          "transactions": 154,
+          "departments": [
+            "Place",
+            "Children, Education and Skills",
+            "Operations & Reg Services",
+            "General Fund Capital"
+          ]
+        },
+        {
+          "supplier": "NEW PROSPECTS ASSOCIATION LTD",
+          "total_spend": 22622591.93,
+          "transactions": 319,
+          "departments": [
+            "ASC & Integrated Services",
+            "Adult Social Care & Prevention"
+          ]
+        }
+      ],
+      "total_unverified": 1583,
+      "unverified_spend": 2353227333.02
+    },
+    "credit_patterns": {
+      "zero_credit_long_standing": [
+        {
+          "supplier": "AURA (NCLE) PROJECT COMPANY LTD",
+          "total_spend": 62386434.88,
+          "transactions": 504,
+          "relationship_days": 1370,
+          "relationship_years": 3.8
+        },
+        {
+          "supplier": "A&J KEITH LTD",
+          "total_spend": 45508086.84,
+          "transactions": 1349,
+          "relationship_days": 1351,
+          "relationship_years": 3.7
+        },
+        {
+          "supplier": "EDF ENERGY",
+          "total_spend": 40738894.92,
+          "transactions": 141,
+          "relationship_days": 1353,
+          "relationship_years": 3.7
+        },
+        {
+          "supplier": "NOTCA",
+          "total_spend": 40281945.74,
+          "transactions": 29,
+          "relationship_days": 797,
+          "relationship_years": 2.2
+        },
+        {
+          "supplier": "NEWCASTLEUPONTYNE HOSPITALTRUST",
+          "total_spend": 36372880.86,
+          "transactions": 325,
+          "relationship_days": 1357,
+          "relationship_years": 3.7
+        },
+        {
+          "supplier": "EQUANS REGENERATION LTD",
+          "total_spend": 35168764.9,
+          "transactions": 869,
+          "relationship_days": 1335,
+          "relationship_years": 3.7
+        },
+        {
+          "supplier": "PROSPER LEARNING TRUST",
+          "total_spend": 27433159.71,
+          "transactions": 256,
+          "relationship_days": 1362,
+          "relationship_years": 3.7
+        },
+        {
+          "supplier": "ESH CONSTRUCTION",
+          "total_spend": 27099747.63,
+          "transactions": 81,
+          "relationship_days": 1339,
+          "relationship_years": 3.7
+        },
+        {
+          "supplier": "NORTHUMBERLAND TYNE&WEAR NHS TRUST",
+          "total_spend": 25220326.37,
+          "transactions": 114,
+          "relationship_days": 1349,
+          "relationship_years": 3.7
+        },
+        {
+          "supplier": "TAY VALLEY LIGHTING",
+          "total_spend": 25156634.61,
+          "transactions": 45,
+          "relationship_days": 1343,
+          "relationship_years": 3.7
+        },
+        {
+          "supplier": "FOCUS EDUCATION (NEWCASTLE) LTD",
+          "total_spend": 24685091.13,
+          "transactions": 152,
+          "relationship_days": 1356,
+          "relationship_years": 3.7
+        },
+        {
+          "supplier": "CORONA ENERGY",
+          "total_spend": 24280045.68,
+          "transactions": 104,
+          "relationship_days": 1365,
+          "relationship_years": 3.7
+        },
+        {
+          "supplier": "STRAIGHTLINE CONSTRUCTION CO LTD",
+          "total_spend": 20402238.82,
+          "transactions": 340,
+          "relationship_days": 1355,
+          "relationship_years": 3.7
+        },
+        {
+          "supplier": "ROBERTSON CE LTD",
+          "total_spend": 19101983.88,
+          "transactions": 64,
+          "relationship_days": 1322,
+          "relationship_years": 3.6
+        },
+        {
+          "supplier": "NORTHUMBRIA HEALTHCARE NHS TRUST",
+          "total_spend": 17071609.67,
+          "transactions": 3367,
+          "relationship_days": 1366,
+          "relationship_years": 3.7
+        },
+        {
+          "supplier": "RAINTON CONSTRUCTION LTD",
+          "total_spend": 15275171.33,
+          "transactions": 102,
+          "relationship_days": 1335,
+          "relationship_years": 3.7
+        },
+        {
+          "supplier": "KAJIMA NEWCASTLE LIBRARIES LTD",
+          "total_spend": 15020968.97,
+          "transactions": 57,
+          "relationship_days": 1346,
+          "relationship_years": 3.7
+        },
+        {
+          "supplier": "AURA NEWCASTLE LTD",
+          "total_spend": 14843750.45,
+          "transactions": 163,
+          "relationship_days": 1324,
+          "relationship_years": 3.6
+        },
+        {
+          "supplier": "ZURICH MUNICIPAL",
+          "total_spend": 13535615.43,
+          "transactions": 90,
+          "relationship_days": 1127,
+          "relationship_years": 3.1
+        },
+        {
+          "supplier": "DENTON TRAVEL",
+          "total_spend": 12496434.3,
+          "transactions": 3496,
+          "relationship_days": 1358,
+          "relationship_years": 3.7
+        }
+      ],
+      "total_zero_credit": 1349,
+      "zero_credit_spend": 1256616176.7,
+      "exact_offset_credits": [
+        {
+          "supplier": "DWF LLP",
+          "amount": 419500.0,
+          "credit_date": "2024-01-03"
+        },
+        {
+          "supplier": "HEATHERFIELD",
+          "amount": 10643.6,
+          "credit_date": "2025-11-17"
+        },
+        {
+          "supplier": "ELLA MCCAMBRIDGE",
+          "amount": 9490.13,
+          "credit_date": "2023-11-07"
+        },
+        {
+          "supplier": "CARE UK COMMUNITY PARTNERSHIP LTS",
+          "amount": 7486.63,
+          "credit_date": "2024-11-05"
+        },
+        {
+          "supplier": "REDACTED PERSONAL DATA",
+          "amount": 6400.0,
+          "credit_date": "2023-07-04"
+        },
+        {
+          "supplier": "PONTELAND MANOR",
+          "amount": 6346.0,
+          "credit_date": "2025-06-02"
+        },
+        {
+          "supplier": "PRINCES COURT AKARICARE",
+          "amount": 6220.88,
+          "credit_date": "2023-06-20"
+        },
+        {
+          "supplier": "REDACTED PERSONAL DATA",
+          "amount": 5600.0,
+          "credit_date": "2023-12-15"
+        },
+        {
+          "supplier": "LENORE CARE HOME",
+          "amount": 4622.05,
+          "credit_date": "2024-03-12"
+        },
+        {
+          "supplier": "MAGNIT GLOBAL GRI LTD",
+          "amount": 4414.3,
+          "credit_date": "2024-09-18"
+        },
+        {
+          "supplier": "CARE UK COMMUNITY PARTNERSHIP LTS",
+          "amount": 4367.2,
+          "credit_date": "2024-12-03"
+        },
+        {
+          "supplier": "REDACTED PERSONAL DATA",
+          "amount": 3983.14,
+          "credit_date": "2023-05-02"
+        },
+        {
+          "supplier": "ALLAN COURT RESIDENTIAL HOME",
+          "amount": 3240.56,
+          "credit_date": "2023-12-05"
+        },
+        {
+          "supplier": "HC ONE",
+          "amount": 3210.76,
+          "credit_date": "2022-04-26"
+        },
+        {
+          "supplier": "GREAT NORTH CARE HOME",
+          "amount": 3178.44,
+          "credit_date": "2023-10-31"
+        },
+        {
+          "supplier": "WAVERLEY HILLCARE",
+          "amount": 3099.6,
+          "credit_date": "2024-12-17"
+        },
+        {
+          "supplier": "REDACTED PERSONAL DATA",
+          "amount": 3080.0,
+          "credit_date": "2025-07-01"
+        },
+        {
+          "supplier": "REDACTED PERSONAL DATA",
+          "amount": 3021.18,
+          "credit_date": "2022-05-03"
+        },
+        {
+          "supplier": "CRAIGIELEA N H",
+          "amount": 2820.09,
+          "credit_date": "2025-01-14"
+        },
+        {
+          "supplier": "PONTELAND MANOR",
+          "amount": 2201.24,
+          "credit_date": "2025-05-20"
+        }
+      ],
+      "total_exact_offsets": 93,
+      "credit_stats": {
+        "total_credits": 12501,
+        "total_debits": 283402,
+        "credit_ratio": 4.41,
+        "suppliers_with_credits": 283,
+        "suppliers_without_credits": 5705
+      }
+    },
+    "description_quality": {
+      "total_transactions": 283402,
+      "vague_transactions": 0,
+      "empty_descriptions": 0,
+      "vague_rate": 0.0,
+      "total_spend": 2436493121.89,
+      "vague_spend": 0,
+      "transparency_score": 100.0,
+      "department_scores": [
+        {
+          "department": "ASC & Integrated Services",
+          "total_transactions": 35907,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 395067223.28,
+          "vague_spend": 0
+        },
+        {
+          "department": "Resources",
+          "total_transactions": 480,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 2359023.22,
+          "vague_spend": 0
+        },
+        {
+          "department": "Children, Education and Skills",
+          "total_transactions": 56328,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 285382665.73,
+          "vague_spend": 0
+        },
+        {
+          "department": "General Fund Capital",
+          "total_transactions": 487,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 30776496.77,
+          "vague_spend": 0
+        },
+        {
+          "department": "Operations & Reg Services",
+          "total_transactions": 36296,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 177879973.92,
+          "vague_spend": 0
+        },
+        {
+          "department": "Place",
+          "total_transactions": 11397,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 134068770.65,
+          "vague_spend": 0
+        },
+        {
+          "department": "Operations & Regulatory Services",
+          "total_transactions": 4969,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 3719616.08,
+          "vague_spend": 0
+        },
+        {
+          "department": "Public Health Service",
+          "total_transactions": 4246,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 85550831.27,
+          "vague_spend": 0
+        },
+        {
+          "department": "Corporate Budgets",
+          "total_transactions": 5602,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 176812421.34,
+          "vague_spend": 0
+        },
+        {
+          "department": "City Futures",
+          "total_transactions": 208,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 1565895.57,
+          "vague_spend": 0
+        },
+        {
+          "department": "Capital Citywide",
+          "total_transactions": 187,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 5821623.02,
+          "vague_spend": 0
+        },
+        {
+          "department": "HRA Expenditure",
+          "total_transactions": 3845,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 11822302.91,
+          "vague_spend": 0
+        },
+        {
+          "department": "HRA Income",
+          "total_transactions": 304,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 869451.45,
+          "vague_spend": 0
+        },
+        {
+          "department": "Holding & Control",
+          "total_transactions": 17,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 10363707.78,
+          "vague_spend": 0
+        },
+        {
+          "department": "Finance",
+          "total_transactions": 869,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 5777450.97,
+          "vague_spend": 0
+        },
+        {
+          "department": "Assistant Chief Executive",
+          "total_transactions": 846,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 3814824.38,
+          "vague_spend": 0
+        },
+        {
+          "department": "Workforce & Inclusion",
+          "total_transactions": 313,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 667504.55,
+          "vague_spend": 0
+        },
+        {
+          "department": "Funding Net Budget",
+          "total_transactions": 5,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 677584.0,
+          "vague_spend": 0
+        },
+        {
+          "department": "Housing Revenue Account",
+          "total_transactions": 2666,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 88198103.87,
+          "vague_spend": 0
+        },
+        {
+          "department": "Children Education & Skills",
+          "total_transactions": 78,
+          "vague_transactions": 0,
+          "empty_descriptions": 0,
+          "vague_rate": 0.0,
+          "total_spend": 6894616.7,
+          "vague_spend": 0
+        }
+      ],
+      "priority_investigation": []
+    }
+  },
+  "supplier_risk": {
+    "total_suppliers_scored": 3468,
+    "high_risk": 0,
+    "high_risk_spend": 0,
+    "elevated_risk": 3,
+    "elevated_risk_spend": 997117.41,
+    "top_20_risk": [
+      {
+        "supplier": "KNIGHT FRANK",
+        "risk_score": 41,
+        "ch_risk": 8,
+        "payment_risk": 11,
+        "concentration_risk": 10,
+        "transparency_risk": 12,
+        "total_spend": 603668.51,
+        "transactions": 13,
+        "departments": 1,
+        "has_ch": false,
+        "risk_level": "elevated"
+      },
+      {
+        "supplier": "BILLINGHAM GRANGE",
+        "risk_score": 40,
+        "ch_risk": 8,
+        "payment_risk": 10,
+        "concentration_risk": 10,
+        "transparency_risk": 12,
+        "total_spend": 368083.9,
+        "transactions": 63,
+        "departments": 1,
+        "has_ch": false,
+        "risk_level": "elevated"
+      },
+      {
+        "supplier": "IAN BLACK LEGAL COSTS LTD",
+        "risk_score": 40,
+        "ch_risk": 8,
+        "payment_risk": 10,
+        "concentration_risk": 10,
+        "transparency_risk": 12,
+        "total_spend": 25365.0,
+        "transactions": 72,
+        "departments": 1,
+        "has_ch": false,
+        "risk_level": "elevated"
+      },
+      {
+        "supplier": "CHANGE GROW LIVE",
+        "risk_score": 38,
+        "ch_risk": 8,
+        "payment_risk": 8,
+        "concentration_risk": 10,
+        "transparency_risk": 12,
+        "total_spend": 1050000.0,
+        "transactions": 14,
+        "departments": 1,
+        "has_ch": false,
+        "risk_level": "medium"
+      },
+      {
+        "supplier": "SOLUTIONS 4 HEALTH LTD",
+        "risk_score": 38,
+        "ch_risk": 8,
+        "payment_risk": 8,
+        "concentration_risk": 10,
+        "transparency_risk": 12,
+        "total_spend": 7132640.0,
+        "transactions": 12,
+        "departments": 1,
+        "has_ch": false,
+        "risk_level": "medium"
+      },
+      {
+        "supplier": "NORCHEM HEALTHCARE LTD",
+        "risk_score": 37,
+        "ch_risk": 8,
+        "payment_risk": 7,
+        "concentration_risk": 10,
+        "transparency_risk": 12,
+        "total_spend": 69795.91,
+        "transactions": 40,
+        "departments": 1,
+        "has_ch": false,
+        "risk_level": "medium"
+      },
+      {
+        "supplier": "BESTWAY NATIONAL CHEMISTS LTD T/A WELL",
+        "risk_score": 37,
+        "ch_risk": 8,
+        "payment_risk": 7,
+        "concentration_risk": 10,
+        "transparency_risk": 12,
+        "total_spend": 97219.33,
+        "transactions": 35,
+        "departments": 1,
+        "has_ch": false,
+        "risk_level": "medium"
+      },
+      {
+        "supplier": "ASPRIS CHILDRENS SERVICES",
+        "risk_score": 37,
+        "ch_risk": 8,
+        "payment_risk": 7,
+        "concentration_risk": 10,
+        "transparency_risk": 12,
+        "total_spend": 178101.89,
+        "transactions": 12,
+        "departments": 1,
+        "has_ch": false,
+        "risk_level": "medium"
+      },
+      {
+        "supplier": "ROAD TO RECOVERY TRUST",
+        "risk_score": 34,
+        "ch_risk": 8,
+        "payment_risk": 4,
+        "concentration_risk": 10,
+        "transparency_risk": 12,
+        "total_spend": 330782.87,
+        "transactions": 27,
+        "departments": 1,
+        "has_ch": false,
+        "risk_level": "medium"
+      },
+      {
+        "supplier": "PHOENIX HOUSE",
+        "risk_score": 34,
+        "ch_risk": 8,
+        "payment_risk": 4,
+        "concentration_risk": 10,
+        "transparency_risk": 12,
+        "total_spend": 204427.63,
+        "transactions": 36,
+        "departments": 1,
+        "has_ch": false,
+        "risk_level": "medium"
+      },
+      {
+        "supplier": "MILLER HOMES LTD",
+        "risk_score": 34,
+        "ch_risk": 8,
+        "payment_risk": 4,
+        "concentration_risk": 10,
+        "transparency_risk": 12,
+        "total_spend": 2280319.0,
+        "transactions": 10,
+        "departments": 1,
+        "has_ch": false,
+        "risk_level": "medium"
+      },
+      {
+        "supplier": "SHR EXCAVATIONS",
+        "risk_score": 31,
+        "ch_risk": 8,
+        "payment_risk": 11,
+        "concentration_risk": 0,
+        "transparency_risk": 12,
+        "total_spend": 1699978.75,
+        "transactions": 7,
+        "departments": 1,
+        "has_ch": false,
+        "risk_level": "medium"
+      },
+      {
+        "supplier": "ABSOLUTE QUALITY CARE",
+        "risk_score": 30,
+        "ch_risk": 8,
+        "payment_risk": 0,
+        "concentration_risk": 10,
+        "transparency_risk": 12,
+        "total_spend": 140272.23,
+        "transactions": 27,
+        "departments": 1,
+        "has_ch": false,
+        "risk_level": "medium"
+      },
+      {
+        "supplier": "ARTEMIS DOMICILIARY CARE",
+        "risk_score": 30,
+        "ch_risk": 8,
+        "payment_risk": 0,
+        "concentration_risk": 10,
+        "transparency_risk": 12,
+        "total_spend": 178708.35,
+        "transactions": 14,
+        "departments": 1,
+        "has_ch": false,
+        "risk_level": "medium"
+      },
+      {
+        "supplier": "ASHCHEM PHARMACY LTD",
+        "risk_score": 30,
+        "ch_risk": 8,
+        "payment_risk": 0,
+        "concentration_risk": 10,
+        "transparency_risk": 12,
+        "total_spend": 13626.99,
+        "transactions": 33,
+        "departments": 1,
+        "has_ch": false,
+        "risk_level": "medium"
+      },
+      {
+        "supplier": "ASPECTS HOUSE",
+        "risk_score": 30,
+        "ch_risk": 8,
+        "payment_risk": 10,
+        "concentration_risk": 0,
+        "transparency_risk": 12,
+        "total_spend": 190431.64,
+        "transactions": 50,
+        "departments": 2,
+        "has_ch": false,
+        "risk_level": "medium"
+      },
+      {
+        "supplier": "BISHOP BEWICK CATHOLIC EDUACTION TRUST",
+        "risk_score": 30,
+        "ch_risk": 8,
+        "payment_risk": 0,
+        "concentration_risk": 10,
+        "transparency_risk": 12,
+        "total_spend": 1669291.42,
+        "transactions": 189,
+        "departments": 1,
+        "has_ch": false,
+        "risk_level": "medium"
+      },
+      {
+        "supplier": "BOOTS PHARMACY",
+        "risk_score": 30,
+        "ch_risk": 8,
+        "payment_risk": 0,
+        "concentration_risk": 10,
+        "transparency_risk": 12,
+        "total_spend": 258760.83,
+        "transactions": 402,
+        "departments": 1,
+        "has_ch": false,
+        "risk_level": "medium"
+      },
+      {
+        "supplier": "BRAMPTON COURT",
+        "risk_score": 30,
+        "ch_risk": 8,
+        "payment_risk": 0,
+        "concentration_risk": 10,
+        "transparency_risk": 12,
+        "total_spend": 4545435.4,
+        "transactions": 229,
+        "departments": 1,
+        "has_ch": false,
+        "risk_level": "medium"
+      },
+      {
+        "supplier": "BROCKWELL COURT",
+        "risk_score": 30,
+        "ch_risk": 8,
+        "payment_risk": 0,
+        "concentration_risk": 10,
+        "transparency_risk": 12,
+        "total_spend": 90476.93,
+        "transactions": 23,
+        "departments": 1,
+        "has_ch": false,
+        "risk_level": "medium"
+      }
+    ],
+    "risk_distribution": {
+      "high": 0,
+      "elevated": 3,
+      "medium": 3454,
+      "low": 11
+    }
+  },
+  "supplier_lifecycle": {
+    "pump_dump": [
+      {
+        "supplier": "DEPARTMENT FOR BUSINESS,ENERGY&INDUSTRIA",
+        "total_spend": 13522502.24,
+        "transactions": 5,
+        "first_payment": "2022-06-17",
+        "last_payment": "2022-10-14",
+        "active_days": 119,
+        "gap_since_last": 1174
+      },
+      {
+        "supplier": "DWF LLP",
+        "total_spend": 9221442.46,
+        "transactions": 4,
+        "first_payment": "2023-10-27",
+        "last_payment": "2024-01-03",
+        "active_days": 68,
+        "gap_since_last": 728
+      },
+      {
+        "supplier": "BENWELL LANE NEWCASTLE SPV LTD",
+        "total_spend": 1819122.1,
+        "transactions": 6,
+        "first_payment": "2024-08-08",
+        "last_payment": "2024-12-02",
+        "active_days": 116,
+        "gap_since_last": 394
+      },
+      {
+        "supplier": "EON ENERGY SOLUTIONS LTD",
+        "total_spend": 1208367.39,
+        "transactions": 6,
+        "first_payment": "2022-04-08",
+        "last_payment": "2022-07-25",
+        "active_days": 108,
+        "gap_since_last": 1255
+      },
+      {
+        "supplier": "TARA PROPERTIES LTD",
+        "total_spend": 1142639.0,
+        "transactions": 2,
+        "first_payment": "2023-06-23",
+        "last_payment": "2023-08-25",
+        "active_days": 63,
+        "gap_since_last": 859
+      },
+      {
+        "supplier": "IRWIN MITCHELL SOLICITORS",
+        "total_spend": 1050000.0,
+        "transactions": 2,
+        "first_payment": "2022-06-30",
+        "last_payment": "2022-09-15",
+        "active_days": 77,
+        "gap_since_last": 1203
+      },
+      {
+        "supplier": "BRING ENERGY LTD",
+        "total_spend": 771648.74,
+        "transactions": 12,
+        "first_payment": "2024-02-13",
+        "last_payment": "2024-06-13",
+        "active_days": 121,
+        "gap_since_last": 566
+      },
+      {
+        "supplier": "PENNINGTONS MANCHES COOPER LTD",
+        "total_spend": 700000.0,
+        "transactions": 1,
+        "first_payment": "2023-05-23",
+        "last_payment": "2023-05-23",
+        "active_days": 0,
+        "gap_since_last": 953
+      },
+      {
+        "supplier": "INTU ELDON SQUARE",
+        "total_spend": 676468.05,
+        "transactions": 52,
+        "first_payment": "2024-11-18",
+        "last_payment": "2024-11-18",
+        "active_days": 0,
+        "gap_since_last": 408
+      },
+      {
+        "supplier": "NHS NEWCASTLE GATESHEAD CCG",
+        "total_spend": 639264.48,
+        "transactions": 3,
+        "first_payment": "2022-12-23",
+        "last_payment": "2023-02-16",
+        "active_days": 55,
+        "gap_since_last": 1049
+      },
+      {
+        "supplier": "ENGIE REGENERATION LTD",
+        "total_spend": 582824.63,
+        "transactions": 42,
+        "first_payment": "2022-04-01",
+        "last_payment": "2022-04-29",
+        "active_days": 28,
+        "gap_since_last": 1342
+      },
+      {
+        "supplier": "DCLG",
+        "total_spend": 486996.0,
+        "transactions": 1,
+        "first_payment": "2025-04-04",
+        "last_payment": "2025-04-04",
+        "active_days": 0,
+        "gap_since_last": 271
+      },
+      {
+        "supplier": "UK TRADE AND INVESTMENT",
+        "total_spend": 484720.0,
+        "transactions": 2,
+        "first_payment": "2024-12-12",
+        "last_payment": "2024-12-12",
+        "active_days": 0,
+        "gap_since_last": 384
+      },
+      {
+        "supplier": "S & B COMMERCIALS",
+        "total_spend": 480203.1,
+        "transactions": 4,
+        "first_payment": "2022-10-20",
+        "last_payment": "2022-10-21",
+        "active_days": 1,
+        "gap_since_last": 1167
+      },
+      {
+        "supplier": "BELLWAY HOMES LTD NORTH EAST",
+        "total_spend": 418065.02,
+        "transactions": 1,
+        "first_payment": "2024-07-12",
+        "last_payment": "2024-07-12",
+        "active_days": 0,
+        "gap_since_last": 537
+      },
+      {
+        "supplier": "TOYOTA GB PLC",
+        "total_spend": 403332.0,
+        "transactions": 15,
+        "first_payment": "2024-01-16",
+        "last_payment": "2024-07-12",
+        "active_days": 178,
+        "gap_since_last": 537
+      },
+      {
+        "supplier": "MOBO ORGANISATION LTD",
+        "total_spend": 359000.0,
+        "transactions": 1,
+        "first_payment": "2024-10-08",
+        "last_payment": "2024-10-08",
+        "active_days": 0,
+        "gap_since_last": 449
+      },
+      {
+        "supplier": "IMPOWER CONSULTING LTD",
+        "total_spend": 350651.03,
+        "transactions": 3,
+        "first_payment": "2024-04-30",
+        "last_payment": "2024-06-24",
+        "active_days": 55,
+        "gap_since_last": 555
+      },
+      {
+        "supplier": "PHOENIX SECURITY",
+        "total_spend": 332122.84,
+        "transactions": 158,
+        "first_payment": "2022-04-01",
+        "last_payment": "2022-08-31",
+        "active_days": 152,
+        "gap_since_last": 1218
+      },
+      {
+        "supplier": "MONCUR GROUP LTD",
+        "total_spend": 318719.42,
+        "transactions": 15,
+        "first_payment": "2022-04-26",
+        "last_payment": "2022-10-05",
+        "active_days": 162,
+        "gap_since_last": 1183
+      }
+    ],
+    "total_pump_dump": 94,
+    "pump_dump_spend": 44773093.44,
+    "escalations": [
+      {
+        "supplier": "EQUANS REGENERATION LTD",
+        "year": "2024/25",
+        "previous_share": 0.77,
+        "current_share": 2.14,
+        "increase_pct": 176.2,
+        "current_spend": 14347547.17
+      },
+      {
+        "supplier": "A&J KEITH LTD",
+        "year": "2023/24",
+        "previous_share": 0.82,
+        "current_share": 1.69,
+        "increase_pct": 106.6,
+        "current_spend": 10508350.87
+      },
+      {
+        "supplier": "CORONA ENERGY",
+        "year": "2023/24",
+        "previous_share": 0.82,
+        "current_share": 1.46,
+        "increase_pct": 77.4,
+        "current_spend": 9079083.53
+      },
+      {
+        "supplier": "EDF ENERGY",
+        "year": "2023/24",
+        "previous_share": 1.53,
+        "current_share": 2.35,
+        "increase_pct": 53.6,
+        "current_spend": 14672352.67
+      }
+    ],
+    "total_escalations": 4
+  },
+  "temporal_intelligence": {
+    "year_end_acceleration": [
+      {
+        "financial_year": "2022/23",
+        "march_spend": 48996190.1,
+        "avg_monthly": 50064991.61,
+        "acceleration_index": 0.98,
+        "flag": false
+      },
+      {
+        "financial_year": "2023/24",
+        "march_spend": 59311179.2,
+        "avg_monthly": 51964285.83,
+        "acceleration_index": 1.14,
+        "flag": false
+      },
+      {
+        "financial_year": "2024/25",
+        "march_spend": 54662175.4,
+        "avg_monthly": 55994180.4,
+        "acceleration_index": 0.98,
+        "flag": false
+      },
+      {
+        "financial_year": "2025/26",
+        "march_spend": 0,
+        "avg_monthly": 60023514.21,
+        "acceleration_index": 0.0,
+        "flag": false
+      }
+    ],
+    "dept_acceleration": [
+      {
+        "department": "HRA Income",
+        "financial_year": "2022/23",
+        "acceleration_index": 3.06,
+        "march_spend": 48594.93
+      },
+      {
+        "department": "HRA Income",
+        "financial_year": "2023/24",
+        "acceleration_index": 2.91,
+        "march_spend": 26332.03
+      },
+      {
+        "department": "Finance",
+        "financial_year": "2023/24",
+        "acceleration_index": 2.82,
+        "march_spend": 669934.9
+      },
+      {
+        "department": "Operations&Regulatory Services",
+        "financial_year": "2022/23",
+        "acceleration_index": 2.39,
+        "march_spend": 1740004.23
+      }
+    ],
+    "change_points": [
+      {
+        "supplier": "AURA NEWCASTLE LTD",
+        "change_month": "2022-08",
+        "shift_magnitude": 3330311.04,
+        "mean_monthly": 362042.69,
+        "shift_ratio": 9.2,
+        "total_spend": 14843750.45
+      },
+      {
+        "supplier": "ENGIE URBAN ENERGY LTD",
+        "change_month": "2022-07",
+        "shift_magnitude": 6347326.1,
+        "mean_monthly": 917088.35,
+        "shift_ratio": 6.9,
+        "total_spend": 16507590.37
+      },
+      {
+        "supplier": "NEWCASTLEUPONTYNE HOSPITALTRUST",
+        "change_month": "2022-10",
+        "shift_magnitude": 3056562.23,
+        "mean_monthly": 826656.38,
+        "shift_ratio": 3.7,
+        "total_spend": 36372880.86
+      },
+      {
+        "supplier": "PROSPER LEARNING TRUST",
+        "change_month": "2023-10",
+        "shift_magnitude": 2441698.21,
+        "mean_monthly": 669101.46,
+        "shift_ratio": 3.6,
+        "total_spend": 27433159.71
+      },
+      {
+        "supplier": "SUEZ RECYCLING & RECOVERY HOLDINGS UK",
+        "change_month": "2023-01",
+        "shift_magnitude": 4930260.01,
+        "mean_monthly": 1484146.12,
+        "shift_ratio": 3.3,
+        "total_spend": 59365844.89
+      }
+    ],
+    "total_change_points": 5,
+    "spc_charts": [
+      {
+        "supplier": "REDACTED PERSONAL DATA",
+        "mean": 2061405.65,
+        "std_dev": 672446.82,
+        "ucl_2sigma": 3406299.29,
+        "ucl_3sigma": 4078746.11,
+        "months": 45,
+        "out_of_control": 1,
+        "monthly_data": [
+          {
+            "month": "2022-04",
+            "value": 1679890.43
+          },
+          {
+            "month": "2022-05",
+            "value": 2025875.02
+          },
+          {
+            "month": "2022-06",
+            "value": 1712694.91
+          },
+          {
+            "month": "2022-07",
+            "value": 1671432.45
+          },
+          {
+            "month": "2022-08",
+            "value": 2298013.98
+          },
+          {
+            "month": "2022-09",
+            "value": 1553343.02
+          },
+          {
+            "month": "2022-10",
+            "value": 1797893.89
+          },
+          {
+            "month": "2022-11",
+            "value": 2017080.1
+          },
+          {
+            "month": "2022-12",
+            "value": 1522920.11
+          },
+          {
+            "month": "2023-01",
+            "value": 1607745.65
+          },
+          {
+            "month": "2023-02",
+            "value": 1491743.58
+          },
+          {
+            "month": "2023-03",
+            "value": 1654963.42
+          },
+          {
+            "month": "2023-04",
+            "value": 1597220.79
+          },
+          {
+            "month": "2023-05",
+            "value": 1987038.81
+          },
+          {
+            "month": "2023-06",
+            "value": 1681439.6
+          },
+          {
+            "month": "2023-07",
+            "value": 1720624.89
+          },
+          {
+            "month": "2023-08",
+            "value": 2434949.94
+          },
+          {
+            "month": "2023-09",
+            "value": 1747281.99
+          },
+          {
+            "month": "2023-10",
+            "value": 2256692.34
+          },
+          {
+            "month": "2023-11",
+            "value": 1690391.06
+          },
+          {
+            "month": "2023-12",
+            "value": 1781270.03
+          },
+          {
+            "month": "2024-01",
+            "value": 1664405.24
+          },
+          {
+            "month": "2024-02",
+            "value": 1660188.1
+          },
+          {
+            "month": "2024-03",
+            "value": 1765382.93
+          },
+          {
+            "month": "2024-04",
+            "value": 2324717.67
+          },
+          {
+            "month": "2024-05",
+            "value": 1746143.47
+          },
+          {
+            "month": "2024-06",
+            "value": 1806946.58
+          },
+          {
+            "month": "2024-07",
+            "value": 2448848.87
+          },
+          {
+            "month": "2024-08",
+            "value": 2025982.33
+          },
+          {
+            "month": "2024-09",
+            "value": 1733872.67
+          },
+          {
+            "month": "2024-10",
+            "value": 2280430.76
+          },
+          {
+            "month": "2024-11",
+            "value": 1779750.03
+          },
+          {
+            "month": "2024-12",
+            "value": 1911118.79
+          },
+          {
+            "month": "2025-01",
+            "value": 1963447.42
+          },
+          {
+            "month": "2025-02",
+            "value": 1766177.13
+          },
+          {
+            "month": "2025-03",
+            "value": 1728423.0
+          },
+          {
+            "month": "2025-04",
+            "value": 1613341.32
+          },
+          {
+            "month": "2025-05",
+            "value": 1696856.54
+          },
+          {
+            "month": "2025-06",
+            "value": 1859841.31
+          },
+          {
+            "month": "2025-07",
+            "value": 2102982.24
+          },
+          {
+            "month": "2025-08",
+            "value": 3753314.7,
+            "flag": "warning"
+          },
+          {
+            "month": "2025-09",
+            "value": 3960114.78,
+            "flag": "warning"
+          },
+          {
+            "month": "2025-10",
+            "value": 3537109.44,
+            "flag": "warning"
+          },
+          {
+            "month": "2025-11",
+            "value": 3380881.41
+          },
+          {
+            "month": "2025-12",
+            "value": 4322471.55,
+            "flag": "action"
+          }
+        ]
+      },
+      {
+        "supplier": "AURA (NCLE) PROJECT COMPANY LTD",
+        "mean": 1417873.52,
+        "std_dev": 721720.42,
+        "ucl_2sigma": 2861314.37,
+        "ucl_3sigma": 3583034.79,
+        "months": 44,
+        "out_of_control": 0,
+        "monthly_data": [
+          {
+            "month": "2022-04",
+            "value": 1276239.77
+          },
+          {
+            "month": "2022-05",
+            "value": 343581.75
+          },
+          {
+            "month": "2022-06",
+            "value": 2418514.84
+          },
+          {
+            "month": "2022-07",
+            "value": 2250109.34
+          },
+          {
+            "month": "2022-08",
+            "value": 1711526.08
+          },
+          {
+            "month": "2022-09",
+            "value": 1648092.12
+          },
+          {
+            "month": "2022-10",
+            "value": 1258337.57
+          },
+          {
+            "month": "2022-11",
+            "value": 62378.79
+          },
+          {
+            "month": "2022-12",
+            "value": 2849923.23
+          },
+          {
+            "month": "2023-01",
+            "value": 25522.69
+          },
+          {
+            "month": "2023-02",
+            "value": 2556842.18
+          },
+          {
+            "month": "2023-03",
+            "value": 1280033.86
+          },
+          {
+            "month": "2023-04",
+            "value": 1322958.47
+          },
+          {
+            "month": "2023-05",
+            "value": 1333706.04
+          },
+          {
+            "month": "2023-06",
+            "value": 1408263.72
+          },
+          {
+            "month": "2023-07",
+            "value": 1319354.42
+          },
+          {
+            "month": "2023-08",
+            "value": 1401730.33
+          },
+          {
+            "month": "2023-09",
+            "value": 1383886.0
+          },
+          {
+            "month": "2023-10",
+            "value": 1334610.41
+          },
+          {
+            "month": "2023-11",
+            "value": 1578238.3
+          },
+          {
+            "month": "2023-12",
+            "value": 1414808.44
+          },
+          {
+            "month": "2024-01",
+            "value": 1331746.83
+          },
+          {
+            "month": "2024-02",
+            "value": 8208.43
+          },
+          {
+            "month": "2024-03",
+            "value": 2805447.67
+          },
+          {
+            "month": "2024-04",
+            "value": 107445.74
+          },
+          {
+            "month": "2024-05",
+            "value": 1370146.2
+          },
+          {
+            "month": "2024-06",
+            "value": 2546789.78
+          },
+          {
+            "month": "2024-08",
+            "value": 2707336.82
+          },
+          {
+            "month": "2024-09",
+            "value": 1302386.01
+          },
+          {
+            "month": "2024-10",
+            "value": 1308833.81
+          },
+          {
+            "month": "2024-11",
+            "value": 1328441.27
+          },
+          {
+            "month": "2024-12",
+            "value": 1321639.78
+          },
+          {
+            "month": "2025-01",
+            "value": 1318711.45
+          },
+          {
+            "month": "2025-02",
+            "value": 1307852.12
+          },
+          {
+            "month": "2025-03",
+            "value": 1936.25
+          },
+          {
+            "month": "2025-04",
+            "value": 2630015.45
+          },
+          {
+            "month": "2025-05",
+            "value": 1323078.38
+          },
+          {
+            "month": "2025-06",
+            "value": 1325756.29
+          },
+          {
+            "month": "2025-07",
+            "value": 1323523.84
+          },
+          {
+            "month": "2025-08",
+            "value": 1419629.14
+          },
+          {
+            "month": "2025-09",
+            "value": 1411525.11
+          },
+          {
+            "month": "2025-10",
+            "value": 1325105.16
+          },
+          {
+            "month": "2025-11",
+            "value": 1333349.72
+          },
+          {
+            "month": "2025-12",
+            "value": 1348871.28
+          }
+        ]
+      },
+      {
+        "supplier": "SUEZ RECYCLING & RECOVERY HOLDINGS UK",
+        "mean": 1484146.12,
+        "std_dev": 1316922.2,
+        "ucl_2sigma": 4117990.52,
+        "ucl_3sigma": 5434912.71,
+        "months": 40,
+        "out_of_control": 1,
+        "monthly_data": [
+          {
+            "month": "2022-06",
+            "value": 1018416.66
+          },
+          {
+            "month": "2022-07",
+            "value": 3418.48
+          },
+          {
+            "month": "2022-08",
+            "value": 1745233.16
+          },
+          {
+            "month": "2022-09",
+            "value": 1146925.27
+          },
+          {
+            "month": "2022-10",
+            "value": 2028118.1
+          },
+          {
+            "month": "2022-11",
+            "value": 152260.14
+          },
+          {
+            "month": "2022-12",
+            "value": 135092.72
+          },
+          {
+            "month": "2023-01",
+            "value": 6414406.13,
+            "flag": "action"
+          },
+          {
+            "month": "2023-02",
+            "value": 2844169.42
+          },
+          {
+            "month": "2023-03",
+            "value": 762613.83
+          },
+          {
+            "month": "2023-04",
+            "value": 2387447.59
+          },
+          {
+            "month": "2023-05",
+            "value": 119558.13
+          },
+          {
+            "month": "2023-06",
+            "value": 1271112.9
+          },
+          {
+            "month": "2023-08",
+            "value": 1687.28
+          },
+          {
+            "month": "2023-09",
+            "value": 5124256.63,
+            "flag": "warning"
+          },
+          {
+            "month": "2023-10",
+            "value": 265666.8
+          },
+          {
+            "month": "2023-11",
+            "value": 2554010.61
+          },
+          {
+            "month": "2023-12",
+            "value": 1499962.26
+          },
+          {
+            "month": "2024-01",
+            "value": 1134326.08
+          },
+          {
+            "month": "2024-02",
+            "value": 820584.06
+          },
+          {
+            "month": "2024-03",
+            "value": 1518109.24
+          },
+          {
+            "month": "2024-04",
+            "value": 855845.75
+          },
+          {
+            "month": "2024-06",
+            "value": 335104.58
+          },
+          {
+            "month": "2024-07",
+            "value": 2489884.75
+          },
+          {
+            "month": "2024-08",
+            "value": 3029745.95
+          },
+          {
+            "month": "2024-09",
+            "value": 1010298.74
+          },
+          {
+            "month": "2024-10",
+            "value": 1581994.33
+          },
+          {
+            "month": "2024-11",
+            "value": 1222250.89
+          },
+          {
+            "month": "2025-01",
+            "value": 555385.74
+          },
+          {
+            "month": "2025-02",
+            "value": 2392923.89
+          },
+          {
+            "month": "2025-03",
+            "value": 1295800.71
+          },
+          {
+            "month": "2025-04",
+            "value": 986319.86
+          },
+          {
+            "month": "2025-05",
+            "value": 277692.87
+          },
+          {
+            "month": "2025-06",
+            "value": 1264163.02
+          },
+          {
+            "month": "2025-07",
+            "value": 2537457.57
+          },
+          {
+            "month": "2025-08",
+            "value": 1228772.23
+          },
+          {
+            "month": "2025-09",
+            "value": 1296897.25
+          },
+          {
+            "month": "2025-10",
+            "value": 1699681.6
+          },
+          {
+            "month": "2025-11",
+            "value": 737.5
+          },
+          {
+            "month": "2025-12",
+            "value": 2357512.17
+          }
+        ]
+      },
+      {
+        "supplier": "A&J KEITH LTD",
+        "mean": 1011290.82,
+        "std_dev": 591552.11,
+        "ucl_2sigma": 2194395.04,
+        "ucl_3sigma": 2785947.15,
+        "months": 45,
+        "out_of_control": 1,
+        "monthly_data": [
+          {
+            "month": "2022-04",
+            "value": 324689.74
+          },
+          {
+            "month": "2022-05",
+            "value": 90652.05
+          },
+          {
+            "month": "2022-06",
+            "value": 455415.15
+          },
+          {
+            "month": "2022-07",
+            "value": 238149.02
+          },
+          {
+            "month": "2022-08",
+            "value": 415972.28
+          },
+          {
+            "month": "2022-09",
+            "value": 338647.39
+          },
+          {
+            "month": "2022-10",
+            "value": 563157.48
+          },
+          {
+            "month": "2022-11",
+            "value": 501809.7
+          },
+          {
+            "month": "2022-12",
+            "value": 506278.64
+          },
+          {
+            "month": "2023-01",
+            "value": 507159.03
+          },
+          {
+            "month": "2023-02",
+            "value": 479954.21
+          },
+          {
+            "month": "2023-03",
+            "value": 478680.04
+          },
+          {
+            "month": "2023-04",
+            "value": 495191.92
+          },
+          {
+            "month": "2023-05",
+            "value": 349022.42
+          },
+          {
+            "month": "2023-06",
+            "value": 597767.57
+          },
+          {
+            "month": "2023-07",
+            "value": 423304.61
+          },
+          {
+            "month": "2023-08",
+            "value": 488159.21
+          },
+          {
+            "month": "2023-09",
+            "value": 901663.2
+          },
+          {
+            "month": "2023-10",
+            "value": 1200610.07
+          },
+          {
+            "month": "2023-11",
+            "value": 1227482.22
+          },
+          {
+            "month": "2023-12",
+            "value": 1097364.73
+          },
+          {
+            "month": "2024-01",
+            "value": 1194893.7
+          },
+          {
+            "month": "2024-02",
+            "value": 1248118.01
+          },
+          {
+            "month": "2024-03",
+            "value": 1284773.21
+          },
+          {
+            "month": "2024-04",
+            "value": 1200813.97
+          },
+          {
+            "month": "2024-05",
+            "value": 1146479.74
+          },
+          {
+            "month": "2024-06",
+            "value": 1311700.24
+          },
+          {
+            "month": "2024-07",
+            "value": 1282237.91
+          },
+          {
+            "month": "2024-08",
+            "value": 1713198.01
+          },
+          {
+            "month": "2024-09",
+            "value": 852161.53
+          },
+          {
+            "month": "2024-10",
+            "value": 1777699.54
+          },
+          {
+            "month": "2024-11",
+            "value": 1355468.37
+          },
+          {
+            "month": "2024-12",
+            "value": 1274442.59
+          },
+          {
+            "month": "2025-01",
+            "value": 738620.55
+          },
+          {
+            "month": "2025-02",
+            "value": 1146803.79
+          },
+          {
+            "month": "2025-03",
+            "value": 515254.58
+          },
+          {
+            "month": "2025-04",
+            "value": 2900045.62,
+            "flag": "action"
+          },
+          {
+            "month": "2025-05",
+            "value": 1433610.33
+          },
+          {
+            "month": "2025-06",
+            "value": 1322369.95
+          },
+          {
+            "month": "2025-07",
+            "value": 1492257.53
+          },
+          {
+            "month": "2025-08",
+            "value": 1651253.23
+          },
+          {
+            "month": "2025-09",
+            "value": 2208688.89,
+            "flag": "warning"
+          },
+          {
+            "month": "2025-10",
+            "value": 1753366.83
+          },
+          {
+            "month": "2025-11",
+            "value": 1864416.48
+          },
+          {
+            "month": "2025-12",
+            "value": 1158281.56
+          }
+        ]
+      },
+      {
+        "supplier": "EDF ENERGY",
+        "mean": 947416.16,
+        "std_dev": 744350.72,
+        "ucl_2sigma": 2436117.61,
+        "ucl_3sigma": 3180468.33,
+        "months": 43,
+        "out_of_control": 1,
+        "monthly_data": [
+          {
+            "month": "2022-04",
+            "value": 1136.1
+          },
+          {
+            "month": "2022-05",
+            "value": 730373.85
+          },
+          {
+            "month": "2022-06",
+            "value": 796743.02
+          },
+          {
+            "month": "2022-07",
+            "value": 1433288.25
+          },
+          {
+            "month": "2022-08",
+            "value": 985.96
+          },
+          {
+            "month": "2022-09",
+            "value": 1295485.59
+          },
+          {
+            "month": "2022-10",
+            "value": 804539.65
+          },
+          {
+            "month": "2022-11",
+            "value": 498.54
+          },
+          {
+            "month": "2022-12",
+            "value": 928179.87
+          },
+          {
+            "month": "2023-01",
+            "value": 1137.09
+          },
+          {
+            "month": "2023-02",
+            "value": 2148217.11
+          },
+          {
+            "month": "2023-03",
+            "value": 1065201.16
+          },
+          {
+            "month": "2023-04",
+            "value": 950195.2
+          },
+          {
+            "month": "2023-05",
+            "value": 824013.59
+          },
+          {
+            "month": "2023-06",
+            "value": 1718150.45
+          },
+          {
+            "month": "2023-07",
+            "value": 898322.65
+          },
+          {
+            "month": "2023-08",
+            "value": 892783.29
+          },
+          {
+            "month": "2023-09",
+            "value": 881924.31
+          },
+          {
+            "month": "2023-10",
+            "value": 751669.09
+          },
+          {
+            "month": "2023-11",
+            "value": 2059658.15
+          },
+          {
+            "month": "2023-12",
+            "value": 33450.6
+          },
+          {
+            "month": "2024-01",
+            "value": 2231910.15
+          },
+          {
+            "month": "2024-02",
+            "value": 104487.99
+          },
+          {
+            "month": "2024-03",
+            "value": 3325787.2,
+            "flag": "action"
+          },
+          {
+            "month": "2024-04",
+            "value": 75555.6
+          },
+          {
+            "month": "2024-05",
+            "value": 1769643.15
+          },
+          {
+            "month": "2024-07",
+            "value": 786937.62
+          },
+          {
+            "month": "2024-08",
+            "value": 688860.81
+          },
+          {
+            "month": "2024-09",
+            "value": 786596.76
+          },
+          {
+            "month": "2024-10",
+            "value": 725927.93
+          },
+          {
+            "month": "2024-11",
+            "value": 1579952.29
+          },
+          {
+            "month": "2024-12",
+            "value": 1387802.73
+          },
+          {
+            "month": "2025-02",
+            "value": 2116140.96
+          },
+          {
+            "month": "2025-03",
+            "value": 934486.03
+          },
+          {
+            "month": "2025-04",
+            "value": 868820.91
+          },
+          {
+            "month": "2025-05",
+            "value": 1264.13
+          },
+          {
+            "month": "2025-06",
+            "value": 1323434.55
+          },
+          {
+            "month": "2025-07",
+            "value": 472265.08
+          },
+          {
+            "month": "2025-08",
+            "value": 1931.86
+          },
+          {
+            "month": "2025-09",
+            "value": 1211005.26
+          },
+          {
+            "month": "2025-10",
+            "value": 666355.14
+          },
+          {
+            "month": "2025-11",
+            "value": 773.64
+          },
+          {
+            "month": "2025-12",
+            "value": 1463001.61
+          }
+        ]
+      },
+      {
+        "supplier": "NOTCA",
+        "mean": 1611277.83,
+        "std_dev": 392487.19,
+        "ucl_2sigma": 2396252.22,
+        "ucl_3sigma": 2788739.41,
+        "months": 25,
+        "out_of_control": 2,
+        "monthly_data": [
+          {
+            "month": "2022-04",
+            "value": 1554457.83
+          },
+          {
+            "month": "2022-05",
+            "value": 1454457.83
+          },
+          {
+            "month": "2022-07",
+            "value": 2908915.66,
+            "flag": "action"
+          },
+          {
+            "month": "2022-08",
+            "value": 1454457.83
+          },
+          {
+            "month": "2022-09",
+            "value": 1454457.83
+          },
+          {
+            "month": "2022-10",
+            "value": 1454457.83
+          },
+          {
+            "month": "2022-12",
+            "value": 2908915.66,
+            "flag": "action"
+          },
+          {
+            "month": "2023-01",
+            "value": 1454457.83
+          },
+          {
+            "month": "2023-02",
+            "value": 1454457.83
+          },
+          {
+            "month": "2023-03",
+            "value": 1454457.87
+          },
+          {
+            "month": "2023-04",
+            "value": 1497023.25
+          },
+          {
+            "month": "2023-05",
+            "value": 1497023.25
+          },
+          {
+            "month": "2023-06",
+            "value": 1527023.25
+          },
+          {
+            "month": "2023-07",
+            "value": 1497023.25
+          },
+          {
+            "month": "2023-08",
+            "value": 1497023.25
+          },
+          {
+            "month": "2023-09",
+            "value": 1497023.25
+          },
+          {
+            "month": "2023-10",
+            "value": 1497023.25
+          },
+          {
+            "month": "2023-11",
+            "value": 1497023.25
+          },
+          {
+            "month": "2023-12",
+            "value": 1497023.25
+          },
+          {
+            "month": "2024-01",
+            "value": 1497023.25
+          },
+          {
+            "month": "2024-02",
+            "value": 1497023.25
+          },
+          {
+            "month": "2024-03",
+            "value": 1497023.25
+          },
+          {
+            "month": "2024-04",
+            "value": 1578057.58
+          },
+          {
+            "month": "2024-05",
+            "value": 1578057.58
+          },
+          {
+            "month": "2024-06",
+            "value": 1578057.58
+          }
+        ]
+      },
+      {
+        "supplier": "NEWCASTLEUPONTYNE HOSPITALTRUST",
+        "mean": 826656.38,
+        "std_dev": 926621.12,
+        "ucl_2sigma": 2679898.62,
+        "ucl_3sigma": 3606519.73,
+        "months": 44,
+        "out_of_control": 1,
+        "monthly_data": [
+          {
+            "month": "2022-04",
+            "value": 1895208.76
+          },
+          {
+            "month": "2022-05",
+            "value": 1447.59
+          },
+          {
+            "month": "2022-06",
+            "value": 228704.57
+          },
+          {
+            "month": "2022-07",
+            "value": 1490896.52
+          },
+          {
+            "month": "2022-08",
+            "value": 38246.85
+          },
+          {
+            "month": "2022-09",
+            "value": 37500.0
+          },
+          {
+            "month": "2022-10",
+            "value": 3883218.61,
+            "flag": "action"
+          },
+          {
+            "month": "2022-11",
+            "value": 567044.21
+          },
+          {
+            "month": "2022-12",
+            "value": 21216.53
+          },
+          {
+            "month": "2023-01",
+            "value": 2732398.85,
+            "flag": "warning"
+          },
+          {
+            "month": "2023-02",
+            "value": 181365.5
+          },
+          {
+            "month": "2023-03",
+            "value": 373224.64
+          },
+          {
+            "month": "2023-04",
+            "value": 2011633.22
+          },
+          {
+            "month": "2023-05",
+            "value": 492936.58
+          },
+          {
+            "month": "2023-06",
+            "value": 214558.83
+          },
+          {
+            "month": "2023-07",
+            "value": 2437736.09
+          },
+          {
+            "month": "2023-08",
+            "value": 109052.93
+          },
+          {
+            "month": "2023-09",
+            "value": 662876.2
+          },
+          {
+            "month": "2023-10",
+            "value": 1107761.4
+          },
+          {
+            "month": "2023-11",
+            "value": 62747.41
+          },
+          {
+            "month": "2023-12",
+            "value": 94087.3
+          },
+          {
+            "month": "2024-01",
+            "value": 2332535.46
+          },
+          {
+            "month": "2024-03",
+            "value": 302575.6
+          },
+          {
+            "month": "2024-04",
+            "value": 1531007.01
+          },
+          {
+            "month": "2024-05",
+            "value": 139019.89
+          },
+          {
+            "month": "2024-06",
+            "value": 111427.5
+          },
+          {
+            "month": "2024-07",
+            "value": 1495247.75
+          },
+          {
+            "month": "2024-08",
+            "value": 332287.2
+          },
+          {
+            "month": "2024-09",
+            "value": 1048933.71
+          },
+          {
+            "month": "2024-10",
+            "value": 1787707.93
+          },
+          {
+            "month": "2024-11",
+            "value": 119048.19
+          },
+          {
+            "month": "2024-12",
+            "value": 238573.97
+          },
+          {
+            "month": "2025-01",
+            "value": 1503542.0
+          },
+          {
+            "month": "2025-02",
+            "value": 138191.59
+          },
+          {
+            "month": "2025-03",
+            "value": 282393.54
+          },
+          {
+            "month": "2025-04",
+            "value": 590973.61
+          },
+          {
+            "month": "2025-05",
+            "value": 1091758.49
+          },
+          {
+            "month": "2025-06",
+            "value": 133599.04
+          },
+          {
+            "month": "2025-07",
+            "value": 1573458.32
+          },
+          {
+            "month": "2025-08",
+            "value": 252575.18
+          },
+          {
+            "month": "2025-09",
+            "value": 75797.29
+          },
+          {
+            "month": "2025-10",
+            "value": 2219791.58
+          },
+          {
+            "month": "2025-11",
+            "value": 266471.39
+          },
+          {
+            "month": "2025-12",
+            "value": 162102.03
+          }
+        ]
+      },
+      {
+        "supplier": "EQUANS REGENERATION LTD",
+        "mean": 799290.11,
+        "std_dev": 604394.87,
+        "ucl_2sigma": 2008079.86,
+        "ucl_3sigma": 2612474.74,
+        "months": 44,
+        "out_of_control": 1,
+        "monthly_data": [
+          {
+            "month": "2022-05",
+            "value": 61786.53
+          },
+          {
+            "month": "2022-06",
+            "value": 349699.75
+          },
+          {
+            "month": "2022-07",
+            "value": 659535.95
+          },
+          {
+            "month": "2022-08",
+            "value": 354882.16
+          },
+          {
+            "month": "2022-09",
+            "value": 428686.65
+          },
+          {
+            "month": "2022-10",
+            "value": 1247232.2
+          },
+          {
+            "month": "2022-11",
+            "value": 621681.03
+          },
+          {
+            "month": "2022-12",
+            "value": 110870.97
+          },
+          {
+            "month": "2023-01",
+            "value": 369353.72
+          },
+          {
+            "month": "2023-02",
+            "value": 438104.99
+          },
+          {
+            "month": "2023-03",
+            "value": 1171150.12
+          },
+          {
+            "month": "2023-04",
+            "value": 55735.42
+          },
+          {
+            "month": "2023-05",
+            "value": 299277.94
+          },
+          {
+            "month": "2023-06",
+            "value": 328530.86
+          },
+          {
+            "month": "2023-07",
+            "value": 505704.33
+          },
+          {
+            "month": "2023-08",
+            "value": 233775.82
+          },
+          {
+            "month": "2023-09",
+            "value": 385698.68
+          },
+          {
+            "month": "2023-10",
+            "value": 934025.84
+          },
+          {
+            "month": "2023-11",
+            "value": 387316.46
+          },
+          {
+            "month": "2023-12",
+            "value": 363807.12
+          },
+          {
+            "month": "2024-01",
+            "value": 43824.61
+          },
+          {
+            "month": "2024-02",
+            "value": 311651.79
+          },
+          {
+            "month": "2024-03",
+            "value": 972209.47
+          },
+          {
+            "month": "2024-04",
+            "value": 1648134.38
+          },
+          {
+            "month": "2024-05",
+            "value": 633892.65
+          },
+          {
+            "month": "2024-06",
+            "value": 716410.55
+          },
+          {
+            "month": "2024-07",
+            "value": 920504.47
+          },
+          {
+            "month": "2024-08",
+            "value": 1349558.54
+          },
+          {
+            "month": "2024-09",
+            "value": 924564.48
+          },
+          {
+            "month": "2024-10",
+            "value": 1418418.28
+          },
+          {
+            "month": "2024-11",
+            "value": 1586157.78
+          },
+          {
+            "month": "2024-12",
+            "value": 1365116.6
+          },
+          {
+            "month": "2025-01",
+            "value": 1131080.66
+          },
+          {
+            "month": "2025-02",
+            "value": 315405.88
+          },
+          {
+            "month": "2025-03",
+            "value": 2338302.9,
+            "flag": "warning"
+          },
+          {
+            "month": "2025-04",
+            "value": 1567527.44
+          },
+          {
+            "month": "2025-05",
+            "value": 815801.38
+          },
+          {
+            "month": "2025-06",
+            "value": 1184332.04
+          },
+          {
+            "month": "2025-07",
+            "value": 2882803.18,
+            "flag": "action"
+          },
+          {
+            "month": "2025-08",
+            "value": 1137589.24
+          },
+          {
+            "month": "2025-09",
+            "value": 1047405.95
+          },
+          {
+            "month": "2025-10",
+            "value": 586331.03
+          },
+          {
+            "month": "2025-11",
+            "value": 531060.23
+          },
+          {
+            "month": "2025-12",
+            "value": 433824.83
+          }
+        ]
+      },
+      {
+        "supplier": "NEW BEGINNINGS (N.E.) LTD",
+        "mean": 747151.02,
+        "std_dev": 229088.99,
+        "ucl_2sigma": 1205329.01,
+        "ucl_3sigma": 1434418.0,
+        "months": 45,
+        "out_of_control": 2,
+        "monthly_data": [
+          {
+            "month": "2022-04",
+            "value": 570785.85
+          },
+          {
+            "month": "2022-05",
+            "value": 561195.54
+          },
+          {
+            "month": "2022-06",
+            "value": 558357.73
+          },
+          {
+            "month": "2022-07",
+            "value": 714752.39
+          },
+          {
+            "month": "2022-08",
+            "value": 599061.36
+          },
+          {
+            "month": "2022-09",
+            "value": 597364.21
+          },
+          {
+            "month": "2022-10",
+            "value": 589000.35
+          },
+          {
+            "month": "2022-11",
+            "value": 1214426.74,
+            "flag": "warning"
+          },
+          {
+            "month": "2022-12",
+            "value": 576321.12
+          },
+          {
+            "month": "2023-01",
+            "value": 582633.22
+          },
+          {
+            "month": "2023-02",
+            "value": 715312.62
+          },
+          {
+            "month": "2023-03",
+            "value": 608471.26
+          },
+          {
+            "month": "2023-04",
+            "value": 603803.46
+          },
+          {
+            "month": "2023-05",
+            "value": 736170.73
+          },
+          {
+            "month": "2023-06",
+            "value": 654540.45
+          },
+          {
+            "month": "2023-07",
+            "value": 672773.4
+          },
+          {
+            "month": "2023-08",
+            "value": 645825.47
+          },
+          {
+            "month": "2023-09",
+            "value": 745800.71
+          },
+          {
+            "month": "2023-10",
+            "value": 1316195.22,
+            "flag": "warning"
+          },
+          {
+            "month": "2023-11",
+            "value": 727410.54
+          },
+          {
+            "month": "2023-12",
+            "value": 648450.72
+          },
+          {
+            "month": "2024-01",
+            "value": 654524.83
+          },
+          {
+            "month": "2024-02",
+            "value": 692077.03
+          },
+          {
+            "month": "2024-03",
+            "value": 714143.42
+          },
+          {
+            "month": "2024-04",
+            "value": 673095.43
+          },
+          {
+            "month": "2024-05",
+            "value": 543790.82
+          },
+          {
+            "month": "2024-06",
+            "value": 731514.47
+          },
+          {
+            "month": "2024-07",
+            "value": 713701.44
+          },
+          {
+            "month": "2024-08",
+            "value": 736287.31
+          },
+          {
+            "month": "2024-09",
+            "value": 703804.0
+          },
+          {
+            "month": "2024-10",
+            "value": 1546077.14,
+            "flag": "action"
+          },
+          {
+            "month": "2024-11",
+            "value": 714690.69
+          },
+          {
+            "month": "2024-12",
+            "value": 720427.65
+          },
+          {
+            "month": "2025-01",
+            "value": 714084.57
+          },
+          {
+            "month": "2025-02",
+            "value": 700405.94
+          },
+          {
+            "month": "2025-03",
+            "value": 720962.29
+          },
+          {
+            "month": "2025-04",
+            "value": 728079.32
+          },
+          {
+            "month": "2025-05",
+            "value": 823801.94
+          },
+          {
+            "month": "2025-06",
+            "value": 745066.38
+          },
+          {
+            "month": "2025-07",
+            "value": 752617.82
+          },
+          {
+            "month": "2025-08",
+            "value": 720991.06
+          },
+          {
+            "month": "2025-09",
+            "value": 1611554.69,
+            "flag": "action"
+          },
+          {
+            "month": "2025-10",
+            "value": 770929.54
+          },
+          {
+            "month": "2025-11",
+            "value": 761147.72
+          },
+          {
+            "month": "2025-12",
+            "value": 789367.17
+          }
+        ]
+      },
+      {
+        "supplier": "PROSPER LEARNING TRUST",
+        "mean": 669101.46,
+        "std_dev": 807463.49,
+        "ucl_2sigma": 2284028.43,
+        "ucl_3sigma": 3091491.92,
+        "months": 41,
+        "out_of_control": 1,
+        "monthly_data": [
+          {
+            "month": "2022-04",
+            "value": 1026573.36
+          },
+          {
+            "month": "2022-05",
+            "value": 170390.12
+          },
+          {
+            "month": "2022-06",
+            "value": 672411.24
+          },
+          {
+            "month": "2022-07",
+            "value": 12099.1
+          },
+          {
+            "month": "2022-08",
+            "value": 62907.5
+          },
+          {
+            "month": "2022-10",
+            "value": 18169.18
+          },
+          {
+            "month": "2022-11",
+            "value": 2411086.33,
+            "flag": "warning"
+          },
+          {
+            "month": "2022-12",
+            "value": 28280.0
+          },
+          {
+            "month": "2023-01",
+            "value": 1075472.01
+          },
+          {
+            "month": "2023-02",
+            "value": 1000.0
+          },
+          {
+            "month": "2023-03",
+            "value": 44210.0
+          },
+          {
+            "month": "2023-04",
+            "value": 1190191.72
+          },
+          {
+            "month": "2023-06",
+            "value": 1458281.64
+          },
+          {
+            "month": "2023-08",
+            "value": 263607.16
+          },
+          {
+            "month": "2023-09",
+            "value": 33340.0
+          },
+          {
+            "month": "2023-10",
+            "value": 3110799.67,
+            "flag": "action"
+          },
+          {
+            "month": "2023-11",
+            "value": 44305.94
+          },
+          {
+            "month": "2023-12",
+            "value": 184496.68
+          },
+          {
+            "month": "2024-01",
+            "value": 1032998.98
+          },
+          {
+            "month": "2024-02",
+            "value": 14025.0
+          },
+          {
+            "month": "2024-03",
+            "value": 5700.0
+          },
+          {
+            "month": "2024-04",
+            "value": 2159224.66
+          },
+          {
+            "month": "2024-05",
+            "value": 10080.0
+          },
+          {
+            "month": "2024-07",
+            "value": 18866.3
+          },
+          {
+            "month": "2024-08",
+            "value": 1115886.0
+          },
+          {
+            "month": "2024-09",
+            "value": 1488428.73
+          },
+          {
+            "month": "2024-10",
+            "value": 1172342.51
+          },
+          {
+            "month": "2024-11",
+            "value": 10767.5
+          },
+          {
+            "month": "2024-12",
+            "value": 596441.67
+          },
+          {
+            "month": "2025-01",
+            "value": 1139732.96
+          },
+          {
+            "month": "2025-02",
+            "value": 32225.0
+          },
+          {
+            "month": "2025-03",
+            "value": 54494.8
+          },
+          {
+            "month": "2025-04",
+            "value": 1312615.09
+          },
+          {
+            "month": "2025-05",
+            "value": 741113.15
+          },
+          {
+            "month": "2025-06",
+            "value": 204236.74
+          },
+          {
+            "month": "2025-07",
+            "value": 1192626.65
+          },
+          {
+            "month": "2025-08",
+            "value": 15210.34
+          },
+          {
+            "month": "2025-09",
+            "value": 2511277.37,
+            "flag": "warning"
+          },
+          {
+            "month": "2025-10",
+            "value": 1141.68
+          },
+          {
+            "month": "2025-11",
+            "value": 318537.61
+          },
+          {
+            "month": "2025-12",
+            "value": 477565.32
+          }
+        ]
+      }
+    ]
+  },
+  "procurement_intelligence": {
+    "maverick_spend": {
+      "has_procurement_data": false,
+      "overall_maverick_pct": 0.0,
+      "total_maverick_spend": 0,
+      "department_breakdown": [
+        {
+          "department": "ASC & Integrated Services",
+          "total_spend": 395067223.28,
+          "maverick_spend": 0,
+          "maverick_pct": 0.0,
+          "maverick_suppliers": 0
+        },
+        {
+          "department": "Resources",
+          "total_spend": 2359023.22,
+          "maverick_spend": 0,
+          "maverick_pct": 0.0,
+          "maverick_suppliers": 0
+        },
+        {
+          "department": "Children, Education and Skills",
+          "total_spend": 285382665.73,
+          "maverick_spend": 0,
+          "maverick_pct": 0.0,
+          "maverick_suppliers": 0
+        },
+        {
+          "department": "General Fund Capital",
+          "total_spend": 30776496.77,
+          "maverick_spend": 0,
+          "maverick_pct": 0.0,
+          "maverick_suppliers": 0
+        },
+        {
+          "department": "Operations & Reg Services",
+          "total_spend": 177879973.92,
+          "maverick_spend": 0,
+          "maverick_pct": 0.0,
+          "maverick_suppliers": 0
+        },
+        {
+          "department": "Place",
+          "total_spend": 134068770.65,
+          "maverick_spend": 0,
+          "maverick_pct": 0.0,
+          "maverick_suppliers": 0
+        },
+        {
+          "department": "Operations & Regulatory Services",
+          "total_spend": 3719616.08,
+          "maverick_spend": 0,
+          "maverick_pct": 0.0,
+          "maverick_suppliers": 0
+        },
+        {
+          "department": "Public Health Service",
+          "total_spend": 85550831.27,
+          "maverick_spend": 0,
+          "maverick_pct": 0.0,
+          "maverick_suppliers": 0
+        },
+        {
+          "department": "Corporate Budgets",
+          "total_spend": 176812421.34,
+          "maverick_spend": 0,
+          "maverick_pct": 0.0,
+          "maverick_suppliers": 0
+        },
+        {
+          "department": "City Futures",
+          "total_spend": 1565895.57,
+          "maverick_spend": 0,
+          "maverick_pct": 0.0,
+          "maverick_suppliers": 0
+        },
+        {
+          "department": "Capital Citywide",
+          "total_spend": 5821623.02,
+          "maverick_spend": 0,
+          "maverick_pct": 0.0,
+          "maverick_suppliers": 0
+        },
+        {
+          "department": "HRA Expenditure",
+          "total_spend": 11822302.91,
+          "maverick_spend": 0,
+          "maverick_pct": 0.0,
+          "maverick_suppliers": 0
+        },
+        {
+          "department": "HRA Income",
+          "total_spend": 869451.45,
+          "maverick_spend": 0,
+          "maverick_pct": 0.0,
+          "maverick_suppliers": 0
+        },
+        {
+          "department": "Holding & Control",
+          "total_spend": 10363707.78,
+          "maverick_spend": 0,
+          "maverick_pct": 0.0,
+          "maverick_suppliers": 0
+        },
+        {
+          "department": "Finance",
+          "total_spend": 5777450.97,
+          "maverick_spend": 0,
+          "maverick_pct": 0.0,
+          "maverick_suppliers": 0
+        }
+      ]
+    },
+    "price_escalation": {
+      "alerts": [
+        {
+          "supplier": "JEWSONS",
+          "first_year": "2022/23",
+          "last_year": "2025/26",
+          "first_avg": 319.2,
+          "last_avg": 169642.85,
+          "nominal_growth_pct": 53046.3,
+          "real_growth_pct": 53037.0,
+          "total_spend": 7030690.56
+        },
+        {
+          "supplier": "MUCKLE SOLICITORS",
+          "first_year": "2022/23",
+          "last_year": "2025/26",
+          "first_avg": 1691.6,
+          "last_avg": 767244.67,
+          "nominal_growth_pct": 45256.2,
+          "real_growth_pct": 45250.1,
+          "total_spend": 2335373.0
+        },
+        {
+          "supplier": "MICROSITE (MR PETER J HOLDER T/A)",
+          "first_year": "2023/24",
+          "last_year": "2025/26",
+          "first_avg": 450.0,
+          "last_avg": 33831.02,
+          "nominal_growth_pct": 7418.0,
+          "real_growth_pct": 7411.9,
+          "total_spend": 298728.18
+        },
+        {
+          "supplier": "SPRINGS ROOFING LTD",
+          "first_year": "2022/23",
+          "last_year": "2025/26",
+          "first_avg": 2915.91,
+          "last_avg": 180564.04,
+          "nominal_growth_pct": 6092.4,
+          "real_growth_pct": 6083.1,
+          "total_spend": 7849392.73
+        },
+        {
+          "supplier": "THE COMMON ROOM OF THE GREAT NORTH LTD",
+          "first_year": "2022/23",
+          "last_year": "2025/26",
+          "first_avg": 796.25,
+          "last_avg": 30930.0,
+          "nominal_growth_pct": 3784.5,
+          "real_growth_pct": 3775.2,
+          "total_spend": 106160.5
+        },
+        {
+          "supplier": "LLOYD LTD",
+          "first_year": "2022/23",
+          "last_year": "2025/26",
+          "first_avg": 666.42,
+          "last_avg": 20079.08,
+          "nominal_growth_pct": 2913.0,
+          "real_growth_pct": 2903.7,
+          "total_spend": 393919.47
+        },
+        {
+          "supplier": "HAKO MACHINES LTD",
+          "first_year": "2022/23",
+          "last_year": "2025/26",
+          "first_avg": 485.21,
+          "last_avg": 11579.49,
+          "nominal_growth_pct": 2286.5,
+          "real_growth_pct": 2277.2,
+          "total_spend": 859914.98
+        },
+        {
+          "supplier": "NORTH EAST TRUCK & VAN LTD",
+          "first_year": "2022/23",
+          "last_year": "2025/26",
+          "first_avg": 373.47,
+          "last_avg": 7517.89,
+          "nominal_growth_pct": 1913.0,
+          "real_growth_pct": 1903.7,
+          "total_spend": 317615.37
+        },
+        {
+          "supplier": "LOOKERS CORPORATE",
+          "first_year": "2023/24",
+          "last_year": "2025/26",
+          "first_avg": 573.13,
+          "last_avg": 11131.58,
+          "nominal_growth_pct": 1842.3,
+          "real_growth_pct": 1836.2,
+          "total_spend": 58104.7
+        },
+        {
+          "supplier": "AEBI SCHMIDT UK LTD",
+          "first_year": "2022/23",
+          "last_year": "2025/26",
+          "first_avg": 679.58,
+          "last_avg": 13185.8,
+          "nominal_growth_pct": 1840.3,
+          "real_growth_pct": 1831.0,
+          "total_spend": 1244920.28
+        },
+        {
+          "supplier": "A&J KEITH LTD",
+          "first_year": "2022/23",
+          "last_year": "2025/26",
+          "first_avg": 7217.33,
+          "last_avg": 129379.43,
+          "nominal_growth_pct": 1692.6,
+          "real_growth_pct": 1683.3,
+          "total_spend": 45508086.84
+        },
+        {
+          "supplier": "JUNCTION POINT CIC",
+          "first_year": "2022/23",
+          "last_year": "2025/26",
+          "first_avg": 288.75,
+          "last_avg": 5000.0,
+          "nominal_growth_pct": 1631.6,
+          "real_growth_pct": 1622.3,
+          "total_spend": 6127.5
+        },
+        {
+          "supplier": "TROWERS & HAMLINS",
+          "first_year": "2022/23",
+          "last_year": "2025/26",
+          "first_avg": 495.0,
+          "last_avg": 8498.5,
+          "nominal_growth_pct": 1616.9,
+          "real_growth_pct": 1607.6,
+          "total_spend": 143054.5
+        },
+        {
+          "supplier": "LOOKERS FORD GATESHEAD",
+          "first_year": "2023/24",
+          "last_year": "2025/26",
+          "first_avg": 609.3,
+          "last_avg": 9702.27,
+          "nominal_growth_pct": 1492.4,
+          "real_growth_pct": 1486.3,
+          "total_spend": 53958.21
+        },
+        {
+          "supplier": "XL PRINT",
+          "first_year": "2022/23",
+          "last_year": "2025/26",
+          "first_avg": 3006.5,
+          "last_avg": 46270.0,
+          "nominal_growth_pct": 1439.0,
+          "real_growth_pct": 1429.7,
+          "total_spend": 65506.0
+        },
+        {
+          "supplier": "AZTEC COLOUR PRINT",
+          "first_year": "2023/24",
+          "last_year": "2025/26",
+          "first_avg": 381.5,
+          "last_avg": 5842.65,
+          "nominal_growth_pct": 1431.5,
+          "real_growth_pct": 1425.4,
+          "total_spend": 182617.0
+        },
+        {
+          "supplier": "NORTHERN HOUSING CONSORTIUM",
+          "first_year": "2022/23",
+          "last_year": "2025/26",
+          "first_avg": 990.0,
+          "last_avg": 14983.0,
+          "nominal_growth_pct": 1413.4,
+          "real_growth_pct": 1407.3,
+          "total_spend": 16963.0
+        },
+        {
+          "supplier": "GALTEC SOLUTIONS",
+          "first_year": "2022/23",
+          "last_year": "2024/25",
+          "first_avg": 396.41,
+          "last_avg": 5882.5,
+          "nominal_growth_pct": 1383.9,
+          "real_growth_pct": 1377.9,
+          "total_spend": 21613.97
+        },
+        {
+          "supplier": "KD BUILDING SOLUTIONS LTD",
+          "first_year": "2022/23",
+          "last_year": "2025/26",
+          "first_avg": 1378.66,
+          "last_avg": 20283.95,
+          "nominal_growth_pct": 1371.3,
+          "real_growth_pct": 1362.0,
+          "total_spend": 926374.04
+        },
+        {
+          "supplier": "KARNHEATH LTD",
+          "first_year": "2022/23",
+          "last_year": "2025/26",
+          "first_avg": 1039.67,
+          "last_avg": 13836.59,
+          "nominal_growth_pct": 1230.9,
+          "real_growth_pct": 1221.6,
+          "total_spend": 100681.91
+        }
+      ],
+      "total_alerts": 748
+    },
+    "cross_dept_splitting": {
+      "flags": [
+        {
+          "supplier": "DURHAM COUNTY COUNCIL",
+          "financial_year": "2024/25",
+          "combined_spend": 1172177.49,
+          "threshold_exceeded": 500000,
+          "departments": 9,
+          "max_single_dept": 439288.0,
+          "dept_breakdown": {
+            "Children & Families": 439288.0,
+            "Children, Education and Skills": 215255.0,
+            "Investment & Growth": 182001.52,
+            "City Ops, Nghbrhds & Reg Srvcs": 176824.52,
+            "Adult Social Care & Prevention": 92257.24,
+            "Public Health Service": 24448.56,
+            "Housing & Communities": 21256.61,
+            "Corporate Budgets": 18666.67,
+            "ASC & Integrated Services": 2179.37
+          }
+        },
+        {
+          "supplier": "MAGNIT GLOBAL GRI LTD",
+          "financial_year": "2025/26",
+          "combined_spend": 1084021.63,
+          "threshold_exceeded": 500000,
+          "departments": 8,
+          "max_single_dept": 466709.34,
+          "dept_breakdown": {
+            "City Ops, Nghbrhds & Reg Srvcs": 466709.34,
+            "Children & Families": 339476.07,
+            "Deputy Chief Executive": 168196.59,
+            "Investment & Growth": 39064.32,
+            "CFO Directorate": 31123.78,
+            "Adult Social Care & Prevention": 27807.27,
+            "Public Health Service": 9638.14,
+            "Workforce & Development": 2006.12
+          }
+        },
+        {
+          "supplier": "MAGNIT GLOBAL GRI LTD",
+          "financial_year": "2022/23",
+          "combined_spend": 1064210.25,
+          "threshold_exceeded": 500000,
+          "departments": 7,
+          "max_single_dept": 476175.76,
+          "dept_breakdown": {
+            "Operations & Reg Services": 476175.76,
+            "Children, Education and Skills": 341388.04,
+            "Place": 135960.44,
+            "ASC & Integrated Services": 68954.05,
+            "Public Health Service": 30112.07,
+            "Operations&Regulatory Services": 6830.51,
+            "Finance": 4789.38
+          }
+        },
+        {
+          "supplier": "HEALTH WORKS NEWCASTLE",
+          "financial_year": "2023/24",
+          "combined_spend": 873985.54,
+          "threshold_exceeded": 500000,
+          "departments": 2,
+          "max_single_dept": 466022.01,
+          "dept_breakdown": {
+            "Children, Education and Skills": 466022.01,
+            "Public Health Service": 407963.53
+          }
+        },
+        {
+          "supplier": "INTERACT CARE LTD",
+          "financial_year": "2024/25",
+          "combined_spend": 852545.13,
+          "threshold_exceeded": 500000,
+          "departments": 3,
+          "max_single_dept": 464105.13,
+          "dept_breakdown": {
+            "Children & Families": 464105.13,
+            "Adult Social Care & Prevention": 348480.0,
+            "ASC & Integrated Services": 39960.0
+          }
+        },
+        {
+          "supplier": "ACHIEVE TOGETHER LTD",
+          "financial_year": "2025/26",
+          "combined_spend": 839753.34,
+          "threshold_exceeded": 500000,
+          "departments": 2,
+          "max_single_dept": 436004.99,
+          "dept_breakdown": {
+            "Adult Social Care & Prevention": 436004.99,
+            "Children & Families": 403748.35
+          }
+        },
+        {
+          "supplier": "RJ LIFT SERVICE LTD",
+          "financial_year": "2024/25",
+          "combined_spend": 835656.07,
+          "threshold_exceeded": 500000,
+          "departments": 11,
+          "max_single_dept": 432852.44,
+          "dept_breakdown": {
+            "City Ops, Nghbrhds & Reg Srvcs": 432852.44,
+            "Housing Revenue Account": 271060.0,
+            "Corporate Budgets": 89890.49,
+            "HRA Expenditure": 13367.92,
+            "Deputy Chief Executive": 9140.47,
+            "Operations & Reg Services": 7807.79,
+            "Place": 6412.26,
+            "Children & Families": 2913.38,
+            "Housing & Communities": 1845.0,
+            "Assistant Chief Executive": 183.16,
+            "Children, Education and Skills": 183.16
+          }
+        },
+        {
+          "supplier": "MGL DEMOLITION LTD",
+          "financial_year": "2025/26",
+          "combined_spend": 807473.55,
+          "threshold_exceeded": 500000,
+          "departments": 3,
+          "max_single_dept": 468807.66,
+          "dept_breakdown": {
+            "Investment & Growth": 468807.66,
+            "Deputy Chief Executive": 301547.85,
+            "Corporate Budgets": 37118.04
+          }
+        },
+        {
+          "supplier": "RHODAR INDUSTRIAL SERVICES LTD",
+          "financial_year": "2025/26",
+          "combined_spend": 788619.29,
+          "threshold_exceeded": 500000,
+          "departments": 5,
+          "max_single_dept": 479985.09,
+          "dept_breakdown": {
+            "Housing Revenue Account": 479985.09,
+            "City Ops, Nghbrhds & Reg Srvcs": 212759.2,
+            "Corporate Budgets": 89679.0,
+            "Investment & Growth": 5080.0,
+            "Housing & Communities": 1116.0
+          }
+        },
+        {
+          "supplier": "NORTHERN POWERGRID NORTHEAST LTD",
+          "financial_year": "2022/23",
+          "combined_spend": 782587.85,
+          "threshold_exceeded": 500000,
+          "departments": 8,
+          "max_single_dept": 333232.47,
+          "dept_breakdown": {
+            "General Fund Capital": 333232.47,
+            "Public Health": 217061.58,
+            "Place": 159567.46,
+            "Housing Revenue Account": 33677.17,
+            "Assistant Chief Executive": 23098.1,
+            "Operations & Reg Services": 14392.47,
+            "HRA Expenditure": 976.53,
+            "Children, Education and Skills": 582.07
+          }
+        },
+        {
+          "supplier": "JOHN FLOWERS LTD",
+          "financial_year": "2025/26",
+          "combined_spend": 775439.19,
+          "threshold_exceeded": 500000,
+          "departments": 2,
+          "max_single_dept": 409824.67,
+          "dept_breakdown": {
+            "City Ops, Nghbrhds & Reg Srvcs": 409824.67,
+            "Housing Revenue Account": 365614.52
+          }
+        },
+        {
+          "supplier": "UNIVERSAL SYSTEMS AND SOLUTIONS",
+          "financial_year": "2024/25",
+          "combined_spend": 731500.18,
+          "threshold_exceeded": 500000,
+          "departments": 4,
+          "max_single_dept": 374880.34,
+          "dept_breakdown": {
+            "Investment & Growth": 374880.34,
+            "City Ops, Nghbrhds & Reg Srvcs": 283351.64,
+            "Place": 50771.66,
+            "Operations & Reg Services": 22496.54
+          }
+        },
+        {
+          "supplier": "WARD HADAWAY",
+          "financial_year": "2024/25",
+          "combined_spend": 718388.67,
+          "threshold_exceeded": 500000,
+          "departments": 9,
+          "max_single_dept": 339781.29,
+          "dept_breakdown": {
+            "Housing Revenue Account": 339781.29,
+            "HRA Expenditure": 312140.88,
+            "Investment & Growth": 34292.5,
+            "Corporate Budgets": 18300.0,
+            "CFO Directorate": 4262.0,
+            "Place": 4120.0,
+            "Housing & Communities": 3300.0,
+            "Children & Families": 1542.0,
+            "City Ops, Nghbrhds & Reg Srvcs": 650.0
+          }
+        },
+        {
+          "supplier": "PAYPOINT NETWORK LTD",
+          "financial_year": "2023/24",
+          "combined_spend": 711414.89,
+          "threshold_exceeded": 500000,
+          "departments": 7,
+          "max_single_dept": 466008.75,
+          "dept_breakdown": {
+            "Children, Education and Skills": 466008.75,
+            "Finance": 120844.16,
+            "ASC & Integrated Services": 102480.7,
+            "Operations & Reg Services": 15435.29,
+            "HRA Expenditure": 4586.97,
+            "Public Health Service": 1986.02,
+            "Place": 73.0
+          }
+        },
+        {
+          "supplier": "CAMBIAN WHINFELL SCHOOL LTD",
+          "financial_year": "2025/26",
+          "combined_spend": 707719.14,
+          "threshold_exceeded": 500000,
+          "departments": 2,
+          "max_single_dept": 457681.73,
+          "dept_breakdown": {
+            "Children & Families": 457681.73,
+            "Adult Social Care & Prevention": 250037.41
+          }
+        },
+        {
+          "supplier": "PAYPOINT NETWORK LTD",
+          "financial_year": "2024/25",
+          "combined_spend": 703058.89,
+          "threshold_exceeded": 500000,
+          "departments": 16,
+          "max_single_dept": 410217.05,
+          "dept_breakdown": {
+            "Children & Families": 410217.05,
+            "Housing & Communities": 76485.96,
+            "Adult Social Care & Prevention": 75640.03,
+            "Children, Education and Skills": 55282.11,
+            "HRA Expenditure": 17769.35,
+            "ASC & Integrated Services": 17394.3,
+            "Workforce & Development": 14140.92,
+            "CFO Directorate": 12758.7,
+            "Finance": 11238.53,
+            "City Ops, Nghbrhds & Reg Srvcs": 4852.82,
+            "Deputy Chief Executive": 2933.71,
+            "Investment & Growth": 2058.69,
+            "Corporate Budgets": 1204.97,
+            "Public Health Service": 533.55,
+            "Operations & Reg Services": 368.2,
+            "Place": 180.0
+          }
+        },
+        {
+          "supplier": "THOMPSONS OF PRUDHOE LTD",
+          "financial_year": "2025/26",
+          "combined_spend": 696409.48,
+          "threshold_exceeded": 500000,
+          "departments": 4,
+          "max_single_dept": 441000.0,
+          "dept_breakdown": {
+            "Housing & Communities": 441000.0,
+            "Housing Revenue Account": 159115.0,
+            "Investment & Growth": 65978.0,
+            "City Ops, Nghbrhds & Reg Srvcs": 30316.48
+          }
+        },
+        {
+          "supplier": "NUGENT CARE",
+          "financial_year": "2024/25",
+          "combined_spend": 693000.0,
+          "threshold_exceeded": 500000,
+          "departments": 2,
+          "max_single_dept": 441000.0,
+          "dept_breakdown": {
+            "Children & Families": 441000.0,
+            "Children, Education and Skills": 252000.0
+          }
+        },
+        {
+          "supplier": "COMPUTACENTER (UK) LTD",
+          "financial_year": "2022/23",
+          "combined_spend": 689804.65,
+          "threshold_exceeded": 500000,
+          "departments": 6,
+          "max_single_dept": 345877.27,
+          "dept_breakdown": {
+            "Operations&Regulatory Services": 345877.27,
+            "General Fund Capital": 276814.0,
+            "Operations & Reg Services": 37662.74,
+            "Place": 24689.4,
+            "Public Health Service": 3684.0,
+            "Children, Education and Skills": 1077.24
+          }
+        },
+        {
+          "supplier": "COMPUTACENTER (UK) LTD",
+          "financial_year": "2024/25",
+          "combined_spend": 676886.75,
+          "threshold_exceeded": 500000,
+          "departments": 9,
+          "max_single_dept": 467761.33,
+          "dept_breakdown": {
+            "City Ops, Nghbrhds & Reg Srvcs": 467761.33,
+            "Finance": 84861.8,
+            "Operations&Regulatory Services": 59763.88,
+            "CFO Directorate": 23959.86,
+            "Investment & Growth": 21923.68,
+            "Operations & Reg Services": 14918.75,
+            "Assistant Chief Executive": 2387.04,
+            "Children & Families": 773.29,
+            "Deputy Chief Executive": 537.12
+          }
+        }
+      ],
+      "total_flags": 319,
+      "total_value": 61567073.1
+    }
+  },
+  "audit_standards": {
+    "materiality": {
+      "threshold": 24364931.22,
+      "planning_materiality": 12182465.61,
+      "total_expenditure": 2436493121.89,
+      "threshold_pct": 1.0
+    },
+    "acfe_risk_matrix": {
+      "asset_misappropriation": 85,
+      "corruption": 0,
+      "financial_statement": 30,
+      "overall": 38.3
+    },
+    "peer_benchmark": {
+      "fraud_triangle_rank": 0,
+      "fraud_triangle_percentile": 0,
+      "total_councils": 1,
+      "own_score": 34.2
+    }
+  },
+  "technique_count": 35
+}

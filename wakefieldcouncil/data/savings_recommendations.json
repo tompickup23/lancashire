@@ -1,0 +1,550 @@
+{
+  "version": "2.0",
+  "council_id": "wakefield",
+  "council_name": "Wakefield Metropolitan District Council",
+  "generated_at": "2026-05-13T11:06:29.832340Z",
+  "data_sources": [
+    "spending.sqlite (council_etl.py + classify_council.py)",
+    "doge_findings.json (35-technique forensic)",
+    "cross_council.json (32-council peer benchmark)",
+    "budgets_summary.json (MHCLG Revenue Outturn)",
+    "revenue_trends.json (8-yr MHCLG time series)",
+    "source_audit.json (record_class breakdown)",
+    "supplier_donor_crossmatch.json (Electoral Commission CSV API)"
+  ],
+  "financial_summary": {
+    "annual_revenue_budget": 632976000,
+    "council_tax_requirement": 186323000,
+    "service_breakdown": {
+      "Highways and transport services": 10938000,
+      "Housing services (GFRA only)": 12815000,
+      "Cultural and related services": 27713000,
+      "Environmental and regulatory services": 53891000,
+      "Planning and development services": 9970000,
+      "Central services": 25833000
+    },
+    "procurement_footprint_total": 2126126775.85,
+    "procurement_footprint_annual": 303732396.55,
+    "transactions_total": 614172,
+    "transactions_annual": 87739,
+    "unique_suppliers": 8099,
+    "data_period": {
+      "min": "2019-04-01",
+      "max": "2026-03-31"
+    },
+    "financial_years_covered": 7,
+    "per_capita_spend": 859.62,
+    "population": 353333,
+    "net_revenue_expenditure": 349952230,
+    "budget_year": "2024-25"
+  },
+  "reserves_position": {
+    "total": 67075000,
+    "months_of_revenue": 2.3,
+    "adequacy": "Critical",
+    "direction": "declining",
+    "trajectory": [
+      {
+        "year": "2021-22",
+        "earmarked": 148970000,
+        "unallocated": 16283000,
+        "total": 165253000
+      },
+      {
+        "year": "2022-23",
+        "earmarked": 106118000,
+        "unallocated": 16284000,
+        "total": 122402000
+      },
+      {
+        "year": "2023-24",
+        "earmarked": 81493000,
+        "unallocated": 16284000,
+        "total": 97777000
+      },
+      {
+        "year": "2024-25",
+        "earmarked": 50791000,
+        "unallocated": 16284000,
+        "total": 67075000
+      }
+    ],
+    "projected": [
+      {
+        "year": "2025-26",
+        "total": 33337000,
+        "projected": true
+      },
+      {
+        "year": "2026-27",
+        "total": 1421100,
+        "projected": true
+      }
+    ]
+  },
+  "forensic_signals": {
+    "duplicate_value": 27400000,
+    "duplicate_count": 13104,
+    "split_payments_value": 64300000,
+    "weak_competition": null,
+    "anomaly_count": 9,
+    "total_flagged_value": 180500100,
+    "severity_breakdown": {
+      "high": 1,
+      "medium": 6,
+      "low": 2
+    },
+    "overall_hhi": 155.8,
+    "service_hhi_high": [],
+    "top10_supplier_pct": 0.377,
+    "doge_key_findings": [
+      {
+        "title": "10 suppliers with clock-like payment regularity",
+        "severity": "info",
+        "confidence": "high"
+      },
+      {
+        "title": "YORKSHIRE PURCHASING ORGANISATION: 44069 transactions totalling \u00a33.8M",
+        "severity": "info",
+        "confidence": "high"
+      }
+    ]
+  },
+  "peer_benchmarks": {
+    "per_capita_spend": {
+      "metric": "per_capita_spend",
+      "this_value": 859.62,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "top10_supplier_pct": {
+      "metric": "top10_supplier_pct",
+      "this_value": 0.377,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "reserves_months": {
+      "metric": "reserves_months",
+      "this_value": 2.3,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "overall_hhi": {
+      "metric": "overall_hhi",
+      "this_value": 155.8,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "duplicate_value": {
+      "metric": "duplicate_value",
+      "this_value": 27400000,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "split_payments_value": {
+      "metric": "split_payments_value",
+      "this_value": 64300000,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    }
+  },
+  "audit_research": {
+    "version": "1.0",
+    "council_id": "wakefield",
+    "researched_at": "2026-05-13",
+    "method": "Web research via WebFetch + WebSearch (subagent), all citations primary",
+    "external_audit": {
+      "auditor": "not definitively located via web research - draft 2024/25 Statement of Accounts published on Wakefield Council finance pages; per LGC March 2025 reporting, Wakefield is among the councils with a multi-year audit backlog",
+      "year_ended": "2024-03-31",
+      "opinion": "DISCLAIMED",
+      "opinion_severity": "high",
+      "key_concerns": [
+        "2022/23 and 2023/24 accounts were both subject to a disclaimed opinion under the backstop arrangements - knock-on impact on 2024/25 draft accounts (lack of audit assurance about opening position 1 April 2024)",
+        "2024/25 draft Statement of Accounts, draft Annual Governance Statement and Public Inspection Notice published; audit ongoing",
+        "Adult Social Care provision rated 'requires improvement' by CQC (Local Authority Assessment 2025) - service-cost-pressure signal",
+        "Care leavers support rated 'Requires Improvement' in 24 March 2025 Ofsted Children's Services inspection (published 18 July 2025) despite overall Good rating"
+      ],
+      "report_date": "audit ongoing",
+      "presented_to": "Audit Committee (papers via mg.wakefield.gov.uk)",
+      "url": "https://www.wakefield.gov.uk/about-the-council/budget-and-spending/statement-of-accounts/",
+      "draft_accounts_2024_25_url": "https://mg.wakefield.gov.uk/documents/s136504/1b%20-Appendix%20A%20Statement%20of%20Accounts%202024-25.pdf"
+    },
+    "internal_audit": {
+      "latest_year_located": "not located in public web sources",
+      "current_year_status": "held in mg.wakefield.gov.uk Audit Committee papers",
+      "follow_up_required": "Read most recent Audit Committee paper on mg.wakefield.gov.uk for 2024/25 limited-assurance findings + Internal Audit Annual Report",
+      "year": "2024/25",
+      "overall_opinion": "not located",
+      "source": "Standing CIPFA-compliant arrangement; Audit Committee oversight",
+      "source_url": "https://mg.wakefield.gov.uk/"
+    },
+    "mtfs_2026_31": {
+      "savings_target_2026_27_m": 12.6,
+      "savings_delivered_2026_27_m": 11.5,
+      "additional_income_2026_27_m": 11.9,
+      "council_tax_income_increase_m": 9.7,
+      "budget_gap_2026_27_pre_savings_m": 3.1,
+      "five_year_budget_gap_m": 78,
+      "five_year_budget_gap_alt_m": 85,
+      "prior_year_savings_target_2025_26_m": 39.4,
+      "district_investment_fund_2026_27_m": 4.3,
+      "highways_investment_2026_27_m": 2,
+      "winter_pension_payment_2026_27_m_per_recipient": 100,
+      "school_uniform_support_2026_27_m": 2,
+      "url_budget_2026_27": "https://www.wakefield.gov.uk/your-district/202627-budget-approved-with-43m-district-investment-fund-launched",
+      "url_budget_report_pdf": "https://mg.wakefield.gov.uk/documents/s136655/Revenue%20Budget%20and%20Council%20Tax%20202627i.pdf",
+      "url_strategy_update": "https://www.wakefield.gov.uk/your-district/wakefield-council-sets-out-updated-financial-strategy"
+    },
+    "strategic_risks": {
+      "register_status": "Live register held in mg.wakefield.gov.uk Audit Committee papers - not publicly extracted via web search",
+      "inferred_top_risks_2025_26": [
+        "Adult social care market sustainability and cost pressure (CQC 'requires improvement' rating)",
+        "DSG / SEND deficit and statutory override expiry March 2028",
+        "Cost-of-living and energy cost pressure (County Hall closure for energy cost reasons referenced in earlier MTFS coverage)",
+        "Children's services - care leavers support 'requires improvement'",
+        "Budget gap delivery (\u00a378-85m five-year gap)"
+      ],
+      "follow_up_required": "Extract live Strategic Risk Register from Audit Committee Appendix on mg.wakefield.gov.uk"
+    },
+    "dsg_send": {
+      "cumulative_deficit_m": "not located via web search - figure held in Wakefield Schools Forum papers",
+      "statutory_override_expiry": "2028-03-31",
+      "send_inspection": "March 2024 Area SEND Inspection (Ofsted + CQC) - 'local area partnership's arrangements typically lead to positive experiences and outcomes' for SEND children; next full inspection within 5 years; partnership should strengthen access to community clinics for speech & language therapy, specialist CAMHS and neurodevelopmental assessment pathways",
+      "send_inspection_year": "2024",
+      "send_outcome": "positive overall - one of the better Ofsted/CQC SEND outcomes; not in serious-cause-for-concern category",
+      "high_needs_stability_grant_eligibility": "subject to agreement of local SEND reform plan with DfE for 90% deficit cover",
+      "follow_up_required": "Extract specific accumulated DSG deficit from Wakefield Schools Forum papers on wakefield.gov.uk",
+      "url": "https://wakefield.mylocaloffer.org/local-area-send-inspection/"
+    },
+    "asc_market_sustainability": {
+      "plan_published": true,
+      "fair_cost_of_care_done": true,
+      "cqc_rating": "Requires Improvement (Local Authority Assessment 2025)",
+      "cqc_url": "https://www.cqc.org.uk/care-services/local-authority-assessment-reports/wakefield-0925",
+      "cqc_press_url": "https://www.cqc.org.uk/press-release/cqc-rates-wakefield-councils-adult-social-care-provision-requires-improvement",
+      "cqc_concerns": [
+        "Direct payment access difficult",
+        "Online financial assessment process challenging for people without digital skills",
+        "Black, Asian and Minority Ethnic communities possibly not accessing support they need",
+        "Improvement action underway on service access, financial assessment streamlining, direct payment uptake"
+      ],
+      "domiciliary_hours_supplied_oct_2022": 15000,
+      "domiciliary_hours_supplied_current": 20000,
+      "adult_social_care_spend_2021_22_65plus_m": 46.693,
+      "adult_social_care_spend_2022_23_65plus_m": 57.855,
+      "url_market_position": "https://www.wakefield.gov.uk/adult-social-care/adult-social-care-in-wakefield/adult-social-care-market-position-statement/",
+      "url_fair_cost_of_care": "https://www.wakefield.gov.uk/adult-social-care/adult-social-care-in-wakefield/information-for-providers/care-market-sustainability-and-fair-cost-of-care-exercise/"
+    },
+    "lgr": {
+      "status": "not applicable - West Yorkshire councils maintain existing structure under WYCA mayoral combined authority framework (no LGR)",
+      "scope": "Wakefield is one of 5 constituent councils of West Yorkshire Combined Authority (with Bradford, Calderdale, Kirklees, Leeds); WYCA is Established Mayoral Strategic Authority; Integrated Settlement begins April 2026",
+      "url": "https://www.gov.uk/government/publications/english-devolution-area-factsheets/english-devolution-area-factsheets",
+      "savings_implication": "No LGR transition costs - stable structure; devolution-enabled investment pathway via WYCA Integrated Settlement"
+    },
+    "property_strategy": {
+      "name": "not located explicitly via web search - inferred from references to County Hall energy-cost closure",
+      "follow_up_required": "Extract from Cabinet papers on mg.wakefield.gov.uk",
+      "url": "https://www.wakefield.gov.uk/about-the-council/budget-and-spending"
+    },
+    "children_services": {
+      "ofsted_rating_2025": "Good overall, with Outstanding support for children in care",
+      "ofsted_inspection_date": "2025-03-24",
+      "ofsted_report_published": "2025-07-18",
+      "areas_outstanding": "Support for children in care; placement stability; emotional wellbeing services",
+      "areas_requires_improvement": "Support for care leavers",
+      "url": "https://www.wakefield.gov.uk/your-district/wakefield-s-support-for-children-in-care-rated-outstanding-in-ofsted-report",
+      "url_press": "https://www.wakefield.gov.uk/Pages/News/PR8845.aspx"
+    },
+    "actionable_savings_levers_summary": [
+      "\u00a312.6m 2026/27 savings target + \u00a311.5m delivered = manageable in-year gap, but \u00a378-85m five-year gap = transformation runway needed",
+      "Adult Social Care 'requires improvement' CQC rating = service-level remediation creates direct payment uptake + financial assessment digitisation savings",
+      "WYCA Integrated Settlement from April 2026 = devolved funding stream Wakefield can leverage for transformation",
+      "Children's Services Good rating (with Outstanding children-in-care) but care leavers 'requires improvement' = targeted intervention without wholesale reform",
+      "Disclaimed audit opinions 2022/23 and 2023/24 = governance / financial-controls strengthening priority - unmodified opinion restoration reduces audit fee burden",
+      "SEND statutory override expiry March 2028 + High Needs Stability Grant eligibility = pathway to deficit relief if local SEND reform plan agreed with DfE",
+      "Wakefield Waste PFI Ltd \u00a3208.8M and Amey Highways \u00a359.8M (top suppliers) - PFI tail and highways framework warrant negotiation review"
+    ],
+    "source_urls": [
+      "https://www.wakefield.gov.uk/about-the-council/budget-and-spending/statement-of-accounts/",
+      "https://www.wakefield.gov.uk/about-the-council/budget-and-spending/medium-term-financial-strategy",
+      "https://www.wakefield.gov.uk/your-district/202627-budget-approved-with-43m-district-investment-fund-launched",
+      "https://www.wakefield.gov.uk/your-district/wakefield-council-sets-out-updated-financial-strategy",
+      "https://mg.wakefield.gov.uk/documents/s136504/1b%20-Appendix%20A%20Statement%20of%20Accounts%202024-25.pdf",
+      "https://mg.wakefield.gov.uk/documents/s136655/Revenue%20Budget%20and%20Council%20Tax%20202627i.pdf",
+      "https://www.cqc.org.uk/care-services/local-authority-assessment-reports/wakefield-0925",
+      "https://www.cqc.org.uk/press-release/cqc-rates-wakefield-councils-adult-social-care-provision-requires-improvement",
+      "https://www.wakefield.gov.uk/adult-social-care/adult-social-care-in-wakefield/information-for-providers/care-market-sustainability-and-fair-cost-of-care-exercise/",
+      "https://www.wakefield.gov.uk/adult-social-care/adult-social-care-in-wakefield/adult-social-care-market-position-statement/",
+      "https://reports.ofsted.gov.uk/provider/44/80451",
+      "https://wakefield.mylocaloffer.org/local-area-send-inspection/",
+      "https://www.wakefield.gov.uk/your-district/wakefield-s-support-for-children-in-care-rated-outstanding-in-ofsted-report",
+      "https://www.gov.uk/government/publications/english-devolution-area-factsheets/english-devolution-area-factsheets",
+      "https://www.lgcplus.com/finance/revealed-53-councils-missed-audit-backstop-deadline-04-03-2025/",
+      "https://www.yorkshirepost.co.uk/news/politics/council/wakefield-council-faces-budget-gap-of-almost-ps85m-over-the-next-five-years-3868959"
+    ],
+    "coverage_gaps": [
+      "External auditor firm name not definitively located (likely Forvis Mazars or BDO based on sector patterns)",
+      "Internal Audit Annual Report 2024/25 limited-assurance subjects",
+      "Live Strategic Risk Register top-5 with net ratings",
+      "Specific accumulated DSG / High Needs deficit figure (held in Schools Forum papers)",
+      "Total Net Revenue Budget 2026/27 figure (not surfaced in summary news; held in mg.wakefield.gov.uk Revenue Budget Report PDF)",
+      "Reserves position (restricted vs available) 2024/25",
+      "Property strategy document name and disposal targets",
+      "Capital programme totals and PWLB position",
+      "CIPFA Resilience Index council-specific scores (paywalled) - though council was flagged 'Distressed' in CIPFA proxy ranking"
+    ]
+  },
+  "donor_links": null,
+  "strategic_themes": [
+    {
+      "id": "audit_opinion_remediation",
+      "title": "Remediate disclaimed audit opinion (not definitively located via web research - draft 2024/25 Statement of Accounts published on Wakefield Council finance pages; per LGC March 2025 reporting, Wakefield is among the councils with a multi-year audit backlog, year ended 2024-03-31)",
+      "rationale": "External auditor issued a DISCLAIMED opinion on financial statements. Concerns: 2022/23 and 2023/24 accounts were both subject to a disclaimed opinion under the backstop arrangements - knock-on impact on 2024/25 draft accounts (lack of audit assurance about opening position 1 April 2024); 2024/25 draft Statement of Accounts, draft Annual Governance Statement and Public Inspection Notice published; audit ongoing; Adult Social Care provision rated 'requires improvement' by CQC (Local Authority Assessment 2025) - service-cost-pressure signal. Direct savings: PSAA scale fee normalisation (current scale fee \u00a3250K + disclaimer surcharge). Indirect: lifting MHCLG governance flag reduces borrowing-cost premium (typically 5-15bp on new external debt) + opens \u00a3M of grant programmes that require unmodified opinions. Foundation requirement before ANY other transformation saving is credible to auditor or DLUHC.",
+      "estimated_savings_low_m": 0.3,
+      "estimated_savings_high_m": 1.2,
+      "savings_type": "one-off + recurring",
+      "delivery_horizon": "12-24 months (next two audit cycles)",
+      "implementation_complexity": "high",
+      "decision_owner": "Section 151 Officer + Monitoring Officer + Audit Committee",
+      "evidence": [
+        "https://www.wakefield.gov.uk/about-the-council/budget-and-spending/statement-of-accounts/"
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "workforce_agency_reduction",
+      "title": "Agency / locum staff demand reduction (\u00a352M concentrated)",
+      "rationale": "\u00a352M of agency-staff spend across 2 master vendors. Top: REED SPECIALIST RECRUITMENT LTD (\u00a334M), MATRIX SCM LTD (\u00a318M). Standard transformation: cap agency premium at 20% above substantive rate, workforce-plan permanent conversion (6-9 month payback), regional bank pool, open-book master-vendor margins. CIPFA experience: 8-15% reduction in 12-18 months.",
+      "estimated_savings_low_m": 4.2,
+      "estimated_savings_high_m": 7.8,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of HR + Director of Finance + S151 Officer",
+      "evidence": [
+        "spending corpus: top agency suppliers"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "energy_procurement_optimisation",
+      "title": "Energy procurement via CCS / LASER / NEPO frameworks (\u00a359M baseline)",
+      "rationale": "\u00a359M utility spend across 4 suppliers. Top: NPOWER LTD (\u00a342M), CORONA ENERGY RETAIL 4 LTD (\u00a311M), NPOWER YORKSHIRE LTD (\u00a35M), NPOWER (\u00a31M). Crown Commercial RM6306 + LASER / NEPO consortium flex purchase typically saves 4-8% vs direct supplier contracts on a 3-yr horizon. Plus solar PV self-generation on council estate (7-9 yr payback) + DESNZ Public Sector Decarbonisation Scheme grants up to 100% capex on heat pump conversion.",
+      "estimated_savings_low_m": 2.9,
+      "estimated_savings_high_m": 7.0,
+      "savings_type": "recurring + capital grant",
+      "delivery_horizon": "12-36 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Property + Sustainability Lead + S151 Officer",
+      "evidence": [
+        "Crown Commercial RM6306",
+        "DESNZ PSDS scheme",
+        "LASER / NEPO frameworks"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "treasury_borrowing_optimisation",
+      "title": "Treasury management + borrowing cost optimisation (CFR proxy \u00a3506M)",
+      "rationale": "Annual revenue \u00a3633M implies indicative CFR c. \u00a3506M. Standard levers: internal borrowing from earmarked reserves, PWLB Certainty Rate trade, MMF counterparty restructuring, LGPS Property Investment Pool inclusion. 10-30bp saving on external debt typical from a fresh review.",
+      "estimated_savings_low_m": 0.51,
+      "estimated_savings_high_m": 1.52,
+      "savings_type": "recurring",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (subject to TM Strategy approval)",
+      "decision_owner": "S151 Officer + Treasurer",
+      "evidence": [
+        "CIPFA Prudential + Treasury Management Codes 2021",
+        "PWLB Certainty Rate"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "lgps_employer_contribution",
+      "title": "LGPS employer contribution opportunity (2025 triennial valuation cycle)",
+      "rationale": "Indicative pay bill \u00a3253M \u00d7 c. 22% employer contribution rate = \u00a356M annual employer contribution. Most LGPS funds materially over-funded post-2022 (returns 2022-25 averaged 7-10% pa vs 3-4% discount-rate assumption). 2025 triennial valuation typically yields 2-4pp employer-rate reduction over 2026-2029. Confirm with administering authority + actuary.",
+      "estimated_savings_low_m": 2.8,
+      "estimated_savings_high_m": 8.4,
+      "savings_type": "recurring (3-yr triennial)",
+      "delivery_horizon": "settled at 2025 valuation; recurring 2026-2029",
+      "implementation_complexity": "low (LGPS admin enacts new rate)",
+      "decision_owner": "S151 Officer + LGPS Pensions Committee",
+      "evidence": [
+        "LGPS Regulations 2013 + 2014",
+        "2025 triennial valuation reports"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "income_fees_charges_optimisation",
+      "title": "Fees, charges + traded-services income optimisation (\u00a363M base)",
+      "rationale": "Indicative fees & charges + traded-services income c. 10% of revenue = \u00a363M. Standard levers: annual CPI uplift discipline, full-cost-recovery audit on discretionary services (parking, planning, licensing, sports, adult learning, property hire), commercial pricing on traded services. LGA experience: 5-15% income uplift sustainable over 2-3 years.",
+      "estimated_savings_low_m": 3.2,
+      "estimated_savings_high_m": 9.5,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-24 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Cabinet (each fee delegation)",
+      "evidence": [
+        "LGA fees and charges benchmarking",
+        "CIPFA Charging guidance"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "insurance_retention_review",
+      "title": "Insurance retention + premium review (\u00a30.6M premium estimate)",
+      "rationale": "Indicative insurance premium \u00a30.6M (10bp of revenue). Standard 3-5 yr renewal cycle. Levers: tender via IPG / RM Partners (10-25% premium reduction typical), retention review (increase excess + build risk-fund reserve). London-borough cohort average 12% premium reduction at last tender.",
+      "estimated_savings_low_m": 0.06,
+      "estimated_savings_high_m": 0.16,
+      "savings_type": "recurring",
+      "delivery_horizon": "9-18 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Risk Manager",
+      "evidence": [
+        "IPG framework",
+        "RM Partners broker market"
+      ],
+      "severity": "low"
+    },
+    {
+      "id": "procurement_data_review",
+      "title": "Contracts Finder portfolio review (93 notices; 6 contracts at \u00a310M+ ceiling)",
+      "rationale": "Contracts Finder data: 93 notices (47 awarded, \u00a3152M aggregate ADVERTISED CEILING value, 0% SME). IMPORTANT: advertised contract value is a CEILING set to avoid retender risk under PCR 2015 Reg.72 / Procurement Act 2023 s.31 \u2014 actual spend through the awardee is typically 30-70% of ceiling, with some off-contract ledger spend permitted within the 50%/50% modification limits. 6 contracts at \u00a310M+ ceiling totalling \u00a3249M (ceiling, NOT spend) \u2014 top 3: 0-19 Children&#039;s Public Health Services (ceiling \u00a380M); 0-19 Children&#039;s Public Health Services (ceiling \u00a380M); District Wide, Drugs and Alcohol Prevention, Treatment and R (ceiling \u00a340M). Matched against ledger: Wakefield Council Contact Centre Telephony Solutio \u2014 ceiling \u00a30.7M, actual ledger spend with awardee \u00a30.4M; Wakefield Libraries RFID Self-Service Systems \u2014 ceiling \u00a30.1M, actual ledger spend with awardee \u00a30.1M; Wakefield Council Adult Education MIS \u2014 ceiling \u00a30.1M, actual ledger spend with awardee \u00a310.5M. Aggregate identified actual spend \u00a3496M. SME-awarded share 0% is below the Procurement Reform 2023 / PPN 03/24 ambition (33% SME share by value). Standard procurement-data savings levers (% of ACTUAL ledger spend, not ceiling): (a) modification-history scrutiny under PCR 2015 Reg.72, (b) Procurement Act 2023 s.31 contract change notice review, (c) re-tender benchmark vs CCS framework rates on next renewal. 2-8% on actual spend through major contracts is a defensible upper bound.",
+      "estimated_savings_low_m": 9.9,
+      "estimated_savings_high_m": 39.7,
+      "savings_type": "recurring (post next contract renewal)",
+      "delivery_horizon": "12-36 months (contract-renewal cycle)",
+      "implementation_complexity": "high",
+      "decision_owner": "Head of Procurement + Cabinet Member + Section 151 Officer",
+      "evidence": [
+        "procurement.json (Contracts Finder API): 93 notices",
+        "ledger-matched actual spend: \u00a3496.3M",
+        "PCR 2015 Reg.72; Procurement Act 2023 s.31"
+      ],
+      "savings_basis": "Ledger-matched actual spend through awardees",
+      "advertised_ceiling_total_m": 249.4,
+      "ledger_matched_actual_spend_m": 496.3,
+      "severity": "medium"
+    },
+    {
+      "id": "companies_house_compliance",
+      "title": "Companies House compliance follow-up (\u00a383M flagged \u2014 0 overdue, 3 dissolved, 1 insolvency-history)",
+      "rationale": "Companies House lookup on top-50 suppliers identified \u00a383M of spend with statutory-compliance flags: \u00a30M to suppliers with overdue accounts (0), \u00a349M to dissolved-status companies (3), \u00a335M to companies with insolvency history (1). NOTE: Some matches are CH fuzzy-search false positives (e.g. school, government-body name collisions) and need human verification. After verification, real flags = (a) credit-risk review on overdue accounts, (b) contract-cleanup on dissolved entities (records still on ledger but supplier extinct \u2014 risk of duplicate-payment leakage), (c) PCR 2015 Reg.57 discretionary exclusion review on insolvency-history suppliers in active contracts.",
+      "estimated_savings_low_m": 0.4,
+      "estimated_savings_high_m": 1.7,
+      "savings_type": "one-off cleanup + recurring risk reduction",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (CH already enriched)",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "companies_house_enrichment.json"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "refund_credit_recovery",
+      "title": "Refund / credit-note management + contract dispute resolution (\u00a345M, 10,059 rows)",
+      "rationale": "10,059 negative-amount rows totalling \u00a345M \u2014 refunds, credit notes, contract reversals. Volume signals correct ledger capture, but proactive levers exist: (a) contract management review on top recurring refund counterparties, (b) duplicate-payment pre-detection, (c) energy-bill credit-management automation. Typical 5-10% reduction in refund volume + faster reconciliation = 10-30bp net cash improvement.",
+      "estimated_savings_low_m": 0.2,
+      "estimated_savings_high_m": 0.9,
+      "savings_type": "recurring + cash management",
+      "delivery_horizon": "12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Head of Procurement + Internal Audit + Treasury",
+      "evidence": [
+        "sqlite: 10,059 negative rows / \u00a345M"
+      ],
+      "severity": "low"
+    },
+    {
+      "id": "reserves_rebuild",
+      "title": "Rebuild general reserves to \u22654 months (Critical \u2192 Adequate)",
+      "rationale": "Reserves at 2.3 months (Critical per CIPFA Resilience benchmark). Direction: declining. A 4-month minimum is the CIPFA / S151 prudence floor; below this triggers external auditor VFM concern and elevates s.114 risk.",
+      "estimated_target_m": 90.0,
+      "delivery_horizon": "3-5 years",
+      "implementation_complexity": "high",
+      "decision_owner": "Section 151 Officer + Cabinet",
+      "evidence": [
+        "cross_council.reserves_months",
+        "cross_council.reserves_adequacy"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "duplicate_recovery",
+      "title": "Audit + recover \u00a327M in flagged duplicate-payment patterns",
+      "rationale": "DOGE forensic flagged \u00a327M across 13,104 groups of likely duplicates. Industry recovery norm 5-15% via duplicate-detection software (AP Forensics, FISCAL, Oracle Concur). Lloyds Bank Commercial Card analysis typical for spot-check sample of 100 highest-confidence matches.",
+      "estimated_savings_low_m": 1.4,
+      "estimated_savings_high_m": 4.1,
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Finance + Internal Audit",
+      "evidence": [
+        "doge_findings.duplicate_count",
+        "doge_findings.duplicate_value"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "split_payment_review",
+      "title": "Investigate \u00a364M in flagged split-payment patterns",
+      "rationale": "DOGE flagged \u00a364M across 0 split-payment instances. Split payments often indicate (a) below-procurement-threshold ledger fragmentation circumventing PCR 2015 Reg.4 contract-value-aggregation rule; or (b) legitimate sub-line invoice splits. Sample audit + reclassify; misuse triggers Reg. 99 challenge exposure.",
+      "estimated_savings_low_m": 1.3,
+      "estimated_savings_high_m": 5.1,
+      "delivery_horizon": "9-12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "doge_findings.split_payments_value",
+        "PCR 2015 Reg.4"
+      ],
+      "severity": "medium"
+    }
+  ],
+  "supplier_recommendations": [],
+  "supplier_summary_flags": {},
+  "recommendation_counts": {}
+}

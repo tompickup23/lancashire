@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "council_id": "doncaster",
+  "updated": "2026-04-19",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "City of Doncaster Council is a unitary authority. No material REDACTED exposure in the current feed — defaults to procurement_paid. Add explicit rules when raw-CSV audit identifies named-individual or accrual rows.",
+  "rules": [
+    {
+      "class": "settlement_noise",
+      "match": {
+        "supplier_regex": "^HSG CHILDRENS BACS SUNDRY \\d{4}$"
+      },
+      "reason": "Doncaster Housing/Children's BACS sundry settlement label. 2,791 rows / £0.8M. Annual settlement-ledger sweep, not a third-party supplier."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^ST LEGER HOMES OF DONCASTER LTD$"
+      },
+      "reason": "ALMO managing Doncaster MBC's 20K+ council dwellings since 2005. Wholly-owned by the council (Companies House 04817028). £153M / 265 rows. HRA-funded internal transfer, not procurement."
+    }
+  ],
+  "supplier_aliases": []
+}

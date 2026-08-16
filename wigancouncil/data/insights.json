@@ -1,0 +1,990 @@
+{
+  "summary": {
+    "total_spend": 2103154506.09,
+    "transaction_count": 346618,
+    "unique_suppliers": 6081,
+    "avg_transaction": 6067.64,
+    "median_transaction": 1958.0,
+    "date_range": {
+      "min": "2022-04-01",
+      "max": "2026-03-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "AGILISYS LTD",
+        "total": 51864578.44,
+        "transactions": 1041,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FCC RECYCLING (UK) LTD",
+        "total": 50349759.64,
+        "transactions": 812,
+        "company_number": "02674166",
+        "company_url": "https://find-and-update.company-information.service.gov.uk/company/02674166"
+      },
+      {
+        "supplier": "DISABILITY DIRECT",
+        "total": 43420133.12,
+        "transactions": 31313,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ACCESS FOR WIGAN LTD",
+        "total": 40192010.67,
+        "transactions": 136,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "JJH BUILDING CONTRACTORS LTD",
+        "total": 37321877.62,
+        "transactions": 5420,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WRIGHTINGTON WIGAN & LEIGH NHS TRUST",
+        "total": 36207120.23,
+        "transactions": 420,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CROFTWOOD CARE UK LTD",
+        "total": 34974769.42,
+        "transactions": 11553,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CHERISH UK LTD",
+        "total": 30169812.31,
+        "transactions": 5825,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CITYHEART LTD",
+        "total": 27995540.32,
+        "transactions": 143,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "A CONNOLLY LTD",
+        "total": 26198868.94,
+        "transactions": 204,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "IAS (SERVICES) LTD",
+        "total": 24494049.41,
+        "transactions": 4559,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CITYHEART LTD & GALLIFORD TRY CONSTRUCTION LTD BUSINESS CURRENT ACCOUNT",
+        "total": 23089963.75,
+        "transactions": 26,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WE ARE WITH YOU",
+        "total": 22632294.29,
+        "transactions": 148,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "N-POWER",
+        "total": 21997060.59,
+        "transactions": 4423,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CIC",
+        "total": 21574317.36,
+        "transactions": 3656,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CARETECH COMMUNITY SERVICES LTD",
+        "total": 20217426.07,
+        "transactions": 3047,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REED SPECIALIST RECRUITMENT LTD",
+        "total": 19625308.85,
+        "transactions": 14068,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CARE CHOICE NORTH WEST LTD",
+        "total": 18519354.0,
+        "transactions": 4272,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "APPLEBY COURT NURSING HOME",
+        "total": 17811764.46,
+        "transactions": 1899,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ADVINIA CARE HOMES LTD T/A BEDFORD CARE HOME",
+        "total": 16967629.96,
+        "transactions": 6629,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.2785,
+    "total_unique_suppliers": 6081,
+    "single_transaction_suppliers": 1745
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 21625,
+      "potential_value": 242562664.62,
+      "items": [
+        {
+          "supplier": "WRIGHTINGTON WIGAN & LEIGH NHS TRUST",
+          "amount": 417852.75,
+          "date": "2023-03-21",
+          "occurrences": 4,
+          "potential_overpayment": 1253558.25
+        },
+        {
+          "supplier": "WRIGHTINGTON WIGAN & LEIGH NHS TRUST",
+          "amount": 417852.75,
+          "date": "2024-12-06",
+          "occurrences": 4,
+          "potential_overpayment": 1253558.25
+        },
+        {
+          "supplier": "WRIGHTINGTON WIGAN & LEIGH NHS TRUST",
+          "amount": 417852.75,
+          "date": "2022-10-20",
+          "occurrences": 3,
+          "potential_overpayment": 835705.5
+        },
+        {
+          "supplier": "ACCESS FOR WIGAN LTD",
+          "amount": 746531.54,
+          "date": "2023-01-30",
+          "occurrences": 2,
+          "potential_overpayment": 746531.54
+        },
+        {
+          "supplier": "CROFTWOOD CARE UK LTD",
+          "amount": 3060.0,
+          "date": "2025-09-05",
+          "occurrences": 216,
+          "potential_overpayment": 657900.0
+        },
+        {
+          "supplier": "CROFTWOOD CARE UK LTD",
+          "amount": 3060.0,
+          "date": "2025-12-19",
+          "occurrences": 208,
+          "potential_overpayment": 633420.0
+        },
+        {
+          "supplier": "CROFTWOOD CARE UK LTD",
+          "amount": 3060.0,
+          "date": "2026-02-20",
+          "occurrences": 208,
+          "potential_overpayment": 633420.0
+        },
+        {
+          "supplier": "CROFTWOOD CARE UK LTD",
+          "amount": 3060.0,
+          "date": "2025-08-08",
+          "occurrences": 207,
+          "potential_overpayment": 630360.0
+        },
+        {
+          "supplier": "CROFTWOOD CARE UK LTD",
+          "amount": 3060.0,
+          "date": "2025-10-31",
+          "occurrences": 207,
+          "potential_overpayment": 630360.0
+        },
+        {
+          "supplier": "CROFTWOOD CARE UK LTD",
+          "amount": 3060.0,
+          "date": "2025-10-03",
+          "occurrences": 206,
+          "potential_overpayment": 627300.0
+        },
+        {
+          "supplier": "CROFTWOOD CARE UK LTD",
+          "amount": 3060.0,
+          "date": "2025-11-28",
+          "occurrences": 204,
+          "potential_overpayment": 621180.0
+        },
+        {
+          "supplier": "CROFTWOOD CARE UK LTD",
+          "amount": 3060.0,
+          "date": "2025-07-11",
+          "occurrences": 200,
+          "potential_overpayment": 608940.0
+        },
+        {
+          "supplier": "CROFTWOOD CARE UK LTD",
+          "amount": 3060.0,
+          "date": "2026-01-23",
+          "occurrences": 200,
+          "potential_overpayment": 608940.0
+        },
+        {
+          "supplier": "CROFTWOOD CARE UK LTD",
+          "amount": 3060.0,
+          "date": "2026-03-20",
+          "occurrences": 193,
+          "potential_overpayment": 587520.0
+        },
+        {
+          "supplier": "CROFTWOOD CARE UK LTD",
+          "amount": 3060.0,
+          "date": "2025-06-13",
+          "occurrences": 192,
+          "potential_overpayment": 584460.0
+        },
+        {
+          "supplier": "CROFTWOOD CARE UK LTD",
+          "amount": 3152.0,
+          "date": "2025-04-17",
+          "occurrences": 184,
+          "potential_overpayment": 576816.0
+        },
+        {
+          "supplier": "CROFTWOOD CARE UK LTD",
+          "amount": 3060.0,
+          "date": "2025-05-16",
+          "occurrences": 188,
+          "potential_overpayment": 572220.0
+        },
+        {
+          "supplier": "CROFTWOOD CARE UK LTD",
+          "amount": 2876.0,
+          "date": "2025-01-24",
+          "occurrences": 180,
+          "potential_overpayment": 514804.0
+        },
+        {
+          "supplier": "CROFTWOOD CARE UK LTD",
+          "amount": 2876.0,
+          "date": "2025-03-25",
+          "occurrences": 180,
+          "potential_overpayment": 514804.0
+        },
+        {
+          "supplier": "CROFTWOOD CARE UK LTD",
+          "amount": 2876.0,
+          "date": "2025-02-21",
+          "occurrences": 179,
+          "potential_overpayment": 511928.0
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 2862,
+      "total_value": 73959000.0
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "GF Capital Expenditure",
+      "spend": 212106462.94,
+      "count": 9123
+    },
+    {
+      "department": "Permanent Care",
+      "spend": 208169755.85,
+      "count": 52242
+    },
+    {
+      "department": "Payments to Private Contractors",
+      "spend": 178983579.54,
+      "count": 29575
+    },
+    {
+      "department": "Payments to Voluntary Organisations",
+      "spend": 138350771.92,
+      "count": 10527
+    },
+    {
+      "department": "HRA Capital Expenditure",
+      "spend": 112138696.03,
+      "count": 3886
+    },
+    {
+      "department": "Nursery Grant Payments",
+      "spend": 109939765.99,
+      "count": 5111
+    },
+    {
+      "department": "Private Domicilliary",
+      "spend": 94676732.3,
+      "count": 24853
+    },
+    {
+      "department": "Subcontracted Repairs",
+      "spend": 87115605.05,
+      "count": 17685
+    },
+    {
+      "department": "Private Education Services",
+      "spend": 79595294.8,
+      "count": 2892
+    },
+    {
+      "department": "Professional Fees",
+      "spend": 69572813.88,
+      "count": 17050
+    },
+    {
+      "department": "Equipment Furniture & Materials",
+      "spend": 69424967.65,
+      "count": 9668
+    },
+    {
+      "department": "Respite Care",
+      "spend": 56627432.75,
+      "count": 13496
+    },
+    {
+      "department": "Payments to Health Authoritites",
+      "spend": 49884550.39,
+      "count": 947
+    },
+    {
+      "department": "Corporate Waste Disposal Contract (FCC)",
+      "spend": 48011922.65,
+      "count": 484
+    },
+    {
+      "department": "Direct Payments",
+      "spend": 46158459.56,
+      "count": 32084
+    },
+    {
+      "department": "Rent",
+      "spend": 46089511.58,
+      "count": 6339
+    },
+    {
+      "department": "Unitary Charge on PFI Contracts",
+      "spend": 41013948.9,
+      "count": 162
+    },
+    {
+      "department": "Agency Staff",
+      "spend": 28985528.25,
+      "count": 16940
+    },
+    {
+      "department": "Hired & Contracted Services",
+      "spend": 28018971.93,
+      "count": 3722
+    },
+    {
+      "department": "Private Day Care",
+      "spend": 27538127.02,
+      "count": 6149
+    },
+    {
+      "department": "Internal Education Services",
+      "spend": 23813532.76,
+      "count": 1682
+    },
+    {
+      "department": "HRA Programmed Works",
+      "spend": 22954658.56,
+      "count": 633
+    },
+    {
+      "department": "Nursing Care",
+      "spend": 22354955.4,
+      "count": 21364
+    },
+    {
+      "department": "Electricity",
+      "spend": 21090180.99,
+      "count": 4665
+    },
+    {
+      "department": "Computer Software (Licences & Maintenance)",
+      "spend": 18901397.56,
+      "count": 863
+    },
+    {
+      "department": "Insurance Work and Claims",
+      "spend": 16234632.2,
+      "count": 1176
+    },
+    {
+      "department": "Housing Support / Drugs and Alcohol",
+      "spend": 16227922.36,
+      "count": 689
+    },
+    {
+      "department": "Building Cleaning",
+      "spend": 15021434.55,
+      "count": 562
+    },
+    {
+      "department": "Payments to Other Local Authorities",
+      "spend": 13967285.71,
+      "count": 1083
+    },
+    {
+      "department": "Children\ufffds ITU Contractor Costs",
+      "spend": 13211638.98,
+      "count": 2409
+    },
+    {
+      "department": "Home To School",
+      "spend": 11568681.45,
+      "count": 2405
+    },
+    {
+      "department": "HRA Day to Day Responsive Repairs",
+      "spend": 10103362.36,
+      "count": 2806
+    },
+    {
+      "department": "Provisions - Food and Drink",
+      "spend": 8344140.01,
+      "count": 1090
+    },
+    {
+      "department": "Computer Equipment",
+      "spend": 8204898.29,
+      "count": 260
+    },
+    {
+      "department": "Repairs & Maintenance (Non CPMF)",
+      "spend": 8022178.91,
+      "count": 2603
+    },
+    {
+      "department": "Grants to External Bodies",
+      "spend": 7767422.51,
+      "count": 1755
+    },
+    {
+      "department": "HRA Repairs to Void Properties",
+      "spend": 7572658.5,
+      "count": 3282
+    },
+    {
+      "department": "Agresso Warehouse Control Account",
+      "spend": 7264536.5,
+      "count": 5802
+    },
+    {
+      "department": "Repairs & Maintenance (Landlord)",
+      "spend": 7145522.63,
+      "count": 3005
+    },
+    {
+      "department": "Enhanced Pension Costs",
+      "spend": 6984132.74,
+      "count": 133
+    },
+    {
+      "department": "Gas",
+      "spend": 6841603.58,
+      "count": 2341
+    },
+    {
+      "department": "Waste and Recycling",
+      "spend": 6523243.28,
+      "count": 891
+    },
+    {
+      "department": "Payments to Group Companies and Related Parties",
+      "spend": 5907394.56,
+      "count": 28
+    },
+    {
+      "department": "Direct Materials",
+      "spend": 5793669.29,
+      "count": 4958
+    },
+    {
+      "department": "Stock Purchases",
+      "spend": 4872075.82,
+      "count": 386
+    },
+    {
+      "department": "Payments to Joint Authorities",
+      "spend": 4704999.75,
+      "count": 44
+    },
+    {
+      "department": "Vehicle and Plant Hire",
+      "spend": 4328459.42,
+      "count": 3139
+    },
+    {
+      "department": "Postages",
+      "spend": 4031735.78,
+      "count": 288
+    },
+    {
+      "department": "Apprenticeship Levy",
+      "spend": 4030151.0,
+      "count": 47
+    },
+    {
+      "department": "Pooling of Housing Capital Receipts",
+      "spend": 3662270.18,
+      "count": 1
+    },
+    {
+      "department": "Payments to Government Departments",
+      "spend": 3584223.69,
+      "count": 32
+    },
+    {
+      "department": "HRA Disrepair Works",
+      "spend": 3445242.93,
+      "count": 1191
+    },
+    {
+      "department": "Telecommunications",
+      "spend": 3039958.94,
+      "count": 483
+    },
+    {
+      "department": "Water Charges",
+      "spend": 2982416.55,
+      "count": 1497
+    },
+    {
+      "department": "Subscriptions",
+      "spend": 2835410.18,
+      "count": 321
+    },
+    {
+      "department": "Licence Fees",
+      "spend": 2830208.59,
+      "count": 741
+    },
+    {
+      "department": "Leasing",
+      "spend": 2783098.68,
+      "count": 117
+    },
+    {
+      "department": "Highways Maintenance",
+      "spend": 2693583.34,
+      "count": 1062
+    },
+    {
+      "department": "Voluntary Domiciliary",
+      "spend": 2402888.46,
+      "count": 68
+    },
+    {
+      "department": "Wheeled Bins & Recycling Equipment",
+      "spend": 1915009.24,
+      "count": 589
+    },
+    {
+      "department": "Refunds",
+      "spend": 1886438.05,
+      "count": 31
+    },
+    {
+      "department": "Reprographics",
+      "spend": 1558916.98,
+      "count": 70
+    },
+    {
+      "department": "Precepts and Levies",
+      "spend": 1519826.12,
+      "count": 193
+    },
+    {
+      "department": "Leasing (Equipment)",
+      "spend": 1410156.03,
+      "count": 76
+    },
+    {
+      "department": "Consumable Materials",
+      "spend": 1165849.17,
+      "count": 652
+    },
+    {
+      "department": "Education, Training, Exam Fees",
+      "spend": 1114813.63,
+      "count": 483
+    },
+    {
+      "department": "Premises Security",
+      "spend": 960273.05,
+      "count": 390
+    },
+    {
+      "department": "Ground Rent",
+      "spend": 867167.45,
+      "count": 38
+    },
+    {
+      "department": "Equipment Hire",
+      "spend": 819595.26,
+      "count": 498
+    },
+    {
+      "department": "Grounds Maintenance",
+      "spend": 816376.33,
+      "count": 139
+    },
+    {
+      "department": "External Insurance Premiums",
+      "spend": 734819.28,
+      "count": 49
+    },
+    {
+      "department": "Personal Needs",
+      "spend": 641601.13,
+      "count": 221
+    },
+    {
+      "department": "Bank Charges",
+      "spend": 584283.87,
+      "count": 156
+    },
+    {
+      "department": "Repairs To Equipment",
+      "spend": 573298.12,
+      "count": 255
+    },
+    {
+      "department": "Fees & Charges",
+      "spend": 569307.75,
+      "count": 135
+    },
+    {
+      "department": "Tyres",
+      "spend": 567364.87,
+      "count": 49
+    },
+    {
+      "department": "Cleaning & Domestic Supplies",
+      "spend": 560264.26,
+      "count": 259
+    },
+    {
+      "department": "Advertising (Non Employee)",
+      "spend": 504890.7,
+      "count": 321
+    },
+    {
+      "department": "Payments to Carers",
+      "spend": 496044.49,
+      "count": 226
+    },
+    {
+      "department": "Printing & Stationery Supplies",
+      "spend": 489404.53,
+      "count": 179
+    },
+    {
+      "department": "Furnished Accomodation",
+      "spend": 437964.95,
+      "count": 368
+    },
+    {
+      "department": "Other Fuel",
+      "spend": 423346.25,
+      "count": 179
+    },
+    {
+      "department": "Home to School Reimbursement",
+      "spend": 393993.55,
+      "count": 11
+    },
+    {
+      "department": "Hospitality",
+      "spend": 382381.19,
+      "count": 233
+    },
+    {
+      "department": "Marketing & Publicity",
+      "spend": 373931.01,
+      "count": 126
+    },
+    {
+      "department": "Vehicle Licences",
+      "spend": 341216.0,
+      "count": 51
+    },
+    {
+      "department": "Rents",
+      "spend": 322525.45,
+      "count": 4
+    },
+    {
+      "department": "Window Cleaning",
+      "spend": 295065.85,
+      "count": 190
+    },
+    {
+      "department": "Children\ufffds ITU Bus Passes",
+      "spend": 294253.26,
+      "count": 15
+    },
+    {
+      "department": "Voluntary Day Care",
+      "spend": 285568.65,
+      "count": 21
+    },
+    {
+      "department": "Learning and Development",
+      "spend": 282993.58,
+      "count": 137
+    },
+    {
+      "department": "Other MiscellaneousExpenses",
+      "spend": 275042.17,
+      "count": 27
+    },
+    {
+      "department": "Children\ufffds ITU School Provided Transport",
+      "spend": 256547.06,
+      "count": 106
+    },
+    {
+      "department": "Conferences",
+      "spend": 246670.35,
+      "count": 164
+    },
+    {
+      "department": "Investments and Loans",
+      "spend": 243986.76,
+      "count": 9
+    },
+    {
+      "department": "Gym Equipment Maintenance",
+      "spend": 232094.44,
+      "count": 124
+    },
+    {
+      "department": "Refuse Collection",
+      "spend": 199388.5,
+      "count": 208
+    },
+    {
+      "department": "Car Leasing",
+      "spend": 196867.6,
+      "count": 16
+    },
+    {
+      "department": "Clothing, Uniform and Laundry",
+      "spend": 175758.35,
+      "count": 131
+    },
+    {
+      "department": "Chemicals",
+      "spend": 171347.95,
+      "count": 169
+    },
+    {
+      "department": "NNDR",
+      "spend": 157512.3,
+      "count": 20
+    },
+    {
+      "department": "Books, Publications and Resources",
+      "spend": 146420.53,
+      "count": 75
+    },
+    {
+      "department": "Repair And Maintenance Transport",
+      "spend": 125966.8,
+      "count": 91
+    },
+    {
+      "department": "Entertainment Services",
+      "spend": 122765.79,
+      "count": 8
+    },
+    {
+      "department": "Aids and Adaptations",
+      "spend": 99475.83,
+      "count": 92
+    },
+    {
+      "department": "Employee Transport Costs",
+      "spend": 66372.0,
+      "count": 35
+    },
+    {
+      "department": "Children\ufffds ITU Petrol Reimbursements",
+      "spend": 58512.4,
+      "count": 5
+    },
+    {
+      "department": "Interest Payments",
+      "spend": 54709.57,
+      "count": 8
+    },
+    {
+      "department": "Staff Advertising",
+      "spend": 44025.0,
+      "count": 21
+    },
+    {
+      "department": "Indirect Staff Costs",
+      "spend": 42881.13,
+      "count": 15
+    },
+    {
+      "department": "Other Equipment & Hygiene Bins",
+      "spend": 42834.07,
+      "count": 21
+    },
+    {
+      "department": "Contributions",
+      "spend": 28252.88,
+      "count": 7
+    },
+    {
+      "department": "Adoption Allowances",
+      "spend": 18682.13,
+      "count": 22
+    },
+    {
+      "department": "Residential Care Homes",
+      "spend": 15000.0,
+      "count": 6
+    },
+    {
+      "department": "Stores Issues - IM",
+      "spend": 12499.42,
+      "count": 1
+    },
+    {
+      "department": "Commission Charge",
+      "spend": 11510.0,
+      "count": 2
+    },
+    {
+      "department": "Pest Control",
+      "spend": 10792.39,
+      "count": 9
+    },
+    {
+      "department": "Stores Issues - Mainframe/Transport DSO",
+      "spend": 10531.03,
+      "count": 9
+    },
+    {
+      "department": "MOT Certificates/DOT Plating",
+      "spend": 9421.4,
+      "count": 8
+    },
+    {
+      "department": "Carriage",
+      "spend": 8354.0,
+      "count": 10
+    },
+    {
+      "department": "Materials \ufffd Book Remembrance",
+      "spend": 6049.18,
+      "count": 1
+    },
+    {
+      "department": "Other Agency Services",
+      "spend": 5000.0,
+      "count": 1
+    },
+    {
+      "department": "Provision of Meals",
+      "spend": 4549.36,
+      "count": 2
+    },
+    {
+      "department": "Employee Subsistence",
+      "spend": 4344.36,
+      "count": 5
+    },
+    {
+      "department": "Payments To Foster Carers",
+      "spend": 2732.18,
+      "count": 2
+    },
+    {
+      "department": "Broadband",
+      "spend": 2264.64,
+      "count": 2
+    },
+    {
+      "department": "Materials \ufffd Slate",
+      "spend": 1887.82,
+      "count": 1
+    },
+    {
+      "department": "Transport Insurance Claims - Excess",
+      "spend": 1657.25,
+      "count": 2
+    },
+    {
+      "department": "Council Tax",
+      "spend": 1353.43,
+      "count": 1
+    },
+    {
+      "department": "Rent Allowances",
+      "spend": 800.0,
+      "count": 1
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2022/23": 466923985.15,
+      "2023/24": 496282282.57,
+      "2024/25": 542249660.61,
+      "2025/26": 597698577.76
+    },
+    "transactions_by_year": {
+      "2022/23": 81167,
+      "2023/24": 86028,
+      "2024/25": 88985,
+      "2025/26": 90438
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 346618
+  }
+}

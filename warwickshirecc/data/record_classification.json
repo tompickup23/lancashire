@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "council_id": "warwickshire_cc",
+  "updated": "2026-04-19",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Declarative classification rules for Warwickshire County Council spending rows. Applied to the Oracle Fusion transparency feed (Apr 2011 \u2013 Mar 2026, 1.149M rows). Warwickshire publishes raw GL codes (R-codes, C-codes) rather than human category names, so accrual detection is not yet possible from source data \u2014 all rows fall through to procurement_paid unless they match one of the artefact rules below. Derived from Phase 1 audit 2026-04-19 (see investigations/SOURCE_AUDIT_2026-04-19.md).",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(REDACTED|REDACT|WITHHELD)$"
+      },
+      "reason": "33,034 rows / \u00a357M. Care Act 2014 + UK GDPR redactions on ASC Direct Payments, foster-carer / SGO allowances, CYP Direct Payments, Staying Put arrangements. Lawfully unnamed \u2014 not third-party procurement."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^WARWICKSHIRE COUNTY COUNCIL PENSION FUND$"
+      },
+      "reason": "494 rows / \u00a336M. Employer contribution to LGPS fund administered by WCC itself. Money moving inside the council group, not external procurement."
+    },
+    {
+      "class": "statutory_pass_through",
+      "match": {
+        "supplier_regex": "^(NUNEATON & BEDWORTH BOROUGH COUNCIL|WARWICK DISTRICT COUNCIL|STRATFORD ON AVON DISTRICT COUNCIL|RUGBY BOROUGH COUNCIL(?: \\(\\*+\\d+\\))?|NORTH WARWICKSHIRE BOROUGH COUNCIL(?: \\(\\*+\\d+\\))?)$"
+      },
+      "reason": "County\u2192district pass-throughs: Disabled Facilities Grant allocations (statutory under HGCR Act 1996 s.23), concessionary travel reimbursements (Transport Act 2000 s.149), BCF s.75 pooled budget transfers. WCC has no procurement discretion over these flows \u2014 they are formula-driven statutory passes to the lower tier."
+    },
+    {
+      "class": "statutory_pass_through",
+      "match": {
+        "supplier_regex": "^(COVENTRY AND WARWICKSHIRE PARTNERSHIP NHS TRUST|SOUTH WARWICKSHIRE NHS FOUNDATION TRUST(?:\\*+\\d+)?|SOUTH WARWICKSHIRE UNIVERSITY NHS FOUNDATION TRUST|NHS WARWICKSHIRE NORTH CCG|NHS SOUTH WARWICKSHIRE CCG|NHS COVENTRY AND WARWICKSHIRE ICB)$"
+      },
+      "reason": "BCF s.75 pooled budget transfers to NHS commissioning bodies + trust reimbursements for jointly-commissioned services (Section 75 NHS Act 2006). Legally ring-fenced."
+    }
+  ],
+  "supplier_aliases": [
+    {
+      "canonical": "BALFOUR BEATTY LIVING PLACES LTD",
+      "aliases": [
+        "BALFOUR BEATTY LIVING PLACES LTD",
+        "BALFOUR BEATTY LIVING PLACES LTD (****2460)",
+        "BALFOUR BEATTY LIVING PLACES LTD (****6726)",
+        "BALFOUR BEATTY LIVING PLACES LTD (****8503)",
+        "BALFOUR BEATTY LIVING PLACES",
+        "BALFOUR BEATTY LIVING PLACES LTD (HMC16 CERT 001)"
+      ],
+      "reason": "Highways term-maintenance contractor. Warwickshire's Oracle Fusion ledger splits the same legal entity across 6+ masked supplier IDs (\u00a3572M combined across top 4 variants). Canonicalise for HHI + top-supplier rankings."
+    }
+  ]
+}

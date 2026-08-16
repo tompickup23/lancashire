@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "council_id": "west_sussex_cc",
+  "updated": "2026-05-18",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Declarative classification rules for West Sussex County Council spending rows. WSCC publishes a mix of yearly XLSX and monthly CSV files (9 cols: Body Name, Service Label, Service Division Label, Organisational Unit, Expenditure Category, Date, Capital and Revenue, Supplier name, Total) covering Apr 2022 onwards. The 2024-25 file is marked '_redacted' indicating active Care Act / GDPR redaction is applied. Default is procurement_paid. P-card aggregator entries stay as procurement_paid because they represent legitimate spend (just routed through the card provider).",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD|PAYMENT TO AN INDIVIDUAL|PAYMENT TO INDIVIDUAL|PRIVATE INDIVIDUAL|INDIVIDUAL)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions covering ASC direct payments, foster carer / SGO allowances, CYP direct payments. WSCC uses the 'PAYMENT TO AN INDIVIDUAL' literal as their redaction label rather than 'REDACTED'. Lawfully unnamed — not third-party procurement."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^.*WEST SUSSEX.*PENSION FUND.*$"
+      },
+      "reason": "West Sussex Pension Fund — LGPS scheme administered by WSCC itself. Money moving inside the council group, not external procurement."
+    },
+    {
+      "class": "statutory_pass_through",
+      "match": {
+        "supplier_regex": "^(ADUR DISTRICT COUNCIL|ARUN DISTRICT COUNCIL|CHICHESTER DISTRICT COUNCIL|CRAWLEY BOROUGH COUNCIL|HORSHAM DISTRICT COUNCIL|MID SUSSEX DISTRICT COUNCIL|WORTHING BOROUGH COUNCIL)$"
+      },
+      "reason": "County→district pass-throughs: Disabled Facilities Grant allocations (statutory under HGCR Act 1996 s.23), concessionary travel reimbursements (Transport Act 2000 s.149), BCF s.75 pooled budget transfers. WSCC has no procurement discretion over these flows — they are formula-driven statutory passes to the lower tier."
+    },
+    {
+      "class": "statutory_pass_through",
+      "match": {
+        "supplier_regex": "^(SUSSEX PARTNERSHIP NHS FOUNDATION TRUST|UNIVERSITY HOSPITALS SUSSEX NHS FOUNDATION TRUST|WESTERN SUSSEX HOSPITALS NHS FOUNDATION TRUST|NHS SUSSEX ICB|NHS WEST SUSSEX CCG|NHS COASTAL WEST SUSSEX CCG)$"
+      },
+      "reason": "BCF s.75 pooled budget transfers to NHS commissioning bodies + trust reimbursements for jointly-commissioned services (Section 75 NHS Act 2006). Legally ring-fenced."
+    }
+  ],
+  "supplier_aliases": []
+}

@@ -1,0 +1,528 @@
+{
+  "version": "2.0",
+  "council_id": "gateshead",
+  "council_name": "Gateshead Metropolitan Borough Council",
+  "generated_at": "2026-05-13T11:07:32.258185Z",
+  "data_sources": [
+    "spending.sqlite (council_etl.py + classify_council.py)",
+    "doge_findings.json (35-technique forensic)",
+    "cross_council.json (32-council peer benchmark)",
+    "budgets_summary.json (MHCLG Revenue Outturn)",
+    "revenue_trends.json (8-yr MHCLG time series)",
+    "source_audit.json (record_class breakdown)",
+    "supplier_donor_crossmatch.json (Electoral Commission CSV API)"
+  ],
+  "financial_summary": {
+    "annual_revenue_budget": 436582000,
+    "council_tax_requirement": 117485000,
+    "service_breakdown": {
+      "Highways and transport services": 6574000,
+      "Housing services (GFRA only)": 6515000,
+      "Cultural and related services": 14976000,
+      "Environmental and regulatory services": 20775000,
+      "Planning and development services": 15741000,
+      "Central services": 11251000
+    },
+    "procurement_footprint_total": 2120108543.79,
+    "procurement_footprint_annual": 302872649.11,
+    "transactions_total": 1533538,
+    "transactions_annual": 219077,
+    "unique_suppliers": 6411,
+    "data_period": {
+      "min": "2019-04-01",
+      "max": "2026-03-31"
+    },
+    "financial_years_covered": 7,
+    "per_capita_spend": 1543.69,
+    "population": 196200,
+    "net_revenue_expenditure": 206168000,
+    "budget_year": "2024-25"
+  },
+  "reserves_position": {
+    "total": 78206000,
+    "months_of_revenue": 4.6,
+    "adequacy": "Low",
+    "direction": "stable",
+    "trajectory": [
+      {
+        "year": "2021-22",
+        "earmarked": 79708000,
+        "unallocated": 8500000,
+        "total": 88208000
+      },
+      {
+        "year": "2022-23",
+        "earmarked": 66951000,
+        "unallocated": 11873000,
+        "total": 78824000
+      },
+      {
+        "year": "2023-24",
+        "earmarked": 61687000,
+        "unallocated": 16218000,
+        "total": 77905000
+      },
+      {
+        "year": "2024-25",
+        "earmarked": 57253000,
+        "unallocated": 20953000,
+        "total": 78206000
+      }
+    ],
+    "projected": [
+      {
+        "year": "2025-26",
+        "total": 73054500,
+        "projected": true
+      },
+      {
+        "year": "2026-27",
+        "total": 69962000,
+        "projected": true
+      }
+    ]
+  },
+  "forensic_signals": {
+    "duplicate_value": 134500000,
+    "duplicate_count": 24976,
+    "split_payments_value": 308900000,
+    "weak_competition": null,
+    "anomaly_count": 9,
+    "total_flagged_value": 492174900,
+    "severity_breakdown": {
+      "high": 1,
+      "medium": 5,
+      "low": 3
+    },
+    "overall_hhi": 135.2,
+    "service_hhi_high": [],
+    "top10_supplier_pct": 0.3651,
+    "doge_key_findings": [
+      {
+        "title": "10 suppliers with clock-like payment regularity",
+        "severity": "info",
+        "confidence": "high"
+      },
+      {
+        "title": "O2 (UK) LTD: 327583 transactions totalling \u00a33.0M",
+        "severity": "info",
+        "confidence": "high"
+      }
+    ]
+  },
+  "peer_benchmarks": {
+    "per_capita_spend": {
+      "metric": "per_capita_spend",
+      "this_value": 1543.69,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "top10_supplier_pct": {
+      "metric": "top10_supplier_pct",
+      "this_value": 0.3651,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "reserves_months": {
+      "metric": "reserves_months",
+      "this_value": 4.6,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "overall_hhi": {
+      "metric": "overall_hhi",
+      "this_value": 135.2,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "duplicate_value": {
+      "metric": "duplicate_value",
+      "this_value": 134500000,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "split_payments_value": {
+      "metric": "split_payments_value",
+      "this_value": 308900000,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    }
+  },
+  "audit_research": {
+    "version": "1.0",
+    "council_id": "gateshead",
+    "researched_at": "2026-05-13",
+    "method": "Web research via WebFetch + WebSearch (subagent), all citations primary",
+    "external_audit": {
+      "auditor": "Forvis Mazars LLP",
+      "year_ended": "2024-03-31",
+      "opinion": "not located - audit certificate / opinion text not retrievable via WebSearch indexes; Audit Certificate 2023-24 + Auditor's Annual Report 2023-24 are listed as published on gateshead.gov.uk/article/3659",
+      "opinion_severity": "unknown",
+      "key_concerns": [
+        "Forvis Mazars LLP appointed by PSAA December 2022 for five-year term covering 2023/24 through 2027/28 accounts",
+        "Statutory backstop date of 13 December 2024 applied to FY accounts up to 2022/23; further backstops apply for FYs 2023/24 to 2027/28",
+        "Schools PFI (Pinnacle Schools Project, 7 schools - 5 primary + 2 secondaries) runs to July 2034; charges uplifted by January 2023 RPIX of 12.61% in 2023/24 following 8.01% in prior year",
+        "South Tyne & Wear Waste Management Partnership (STWWMP) PFI with Sunderland + South Tyneside continues to charge unitary charge against shared concession",
+        "Residual estimated shortfall of 1.475m on schools PFI to be met between April 2024 and July 2034 contract end"
+      ],
+      "report_date": "not located",
+      "presented_to": "Audit and Standards Committee",
+      "url": "https://www.gateshead.gov.uk/article/3659/External-Auditor-s-Reports"
+    },
+    "internal_audit": {
+      "latest_year_located": "2024/25",
+      "overall_opinion": "not located - Internal Audit Annual Report and Opinion held in democracy.gateshead.gov.uk Audit and Standards Committee papers (Audit Charter 2024/25 publicly indexed)",
+      "limited_assurance_style_findings": [],
+      "source": "Gateshead Council Internal Audit Service - Audit Charter 2024/25",
+      "source_url": "https://democracy.gateshead.gov.uk/documents/s39096/6.a%20-%20Appendix%20A%20Audit%20Charter%202024-25.pdf",
+      "external_quality_assessment_url": "https://gateshead.moderngov.co.uk/documents/s44792/Appendix%20-%20Gateshead%20Metropolitan%20Borough%20Council%20EQA.pdf",
+      "follow_up_required": "Locate Audit and Standards Committee paper containing Internal Audit Annual Report 2024/25 with overall opinion and limited-assurance subject list"
+    },
+    "mtfs_2026_31": {
+      "total_net_revenue_budget_2026_27_m": 346.0,
+      "savings_target_2026_27_m": 10.6,
+      "social_care_intervention_savings_2026_27_m": 5.9,
+      "use_of_reserves_2025_26_m": 8.5,
+      "use_of_reserves_2026_27_m": 4.0,
+      "use_of_reserves_total_2yrs_m": 12.5,
+      "cumulative_financial_gap_to_2029_30_m": 34.4,
+      "proposed_budget_efficiencies_m": 6.1,
+      "unidentified_savings_m": 14.8,
+      "social_care_interventions_mtfs_total_m": 13.4,
+      "council_tax_general_pct": 2.99,
+      "asc_precept_pct": 2.0,
+      "minimum_general_fund_reserve_pct_of_net_budget": 3.0,
+      "reserves_replenishment_assumption": "Use of reserves to balance budget ends 2026/27; reserves replenished from 2027/28 onwards if in-year budgets delivered",
+      "forecast_budget_gaps_m": {
+        "2026_27": 20.5
+      },
+      "savings_identified": "6.1m efficiencies plus 5.9m social care interventions = 12.0m; use of 4m reserves plugs balance of 2026/27 gap",
+      "unidentified_gap": "14.8m over 5-year MTFS horizon to 2030/31",
+      "url": "https://www.gateshead.gov.uk/article/34833/7-Appendix"
+    },
+    "strategic_risks": {
+      "register_status": "Live register held by Cabinet / Audit and Standards Committee under Local Code of Governance",
+      "inferred_top_risks": [
+        "Adult Social Care demand and cost pressures (largest budget; 13.4m intervention target)",
+        "Schools PFI unitary charge inflation exposure (Pinnacle contract to 2034)",
+        "South Tyne & Wear Waste PFI cost pressure",
+        "DSG High Needs Block deficit (described by Schools Forum as 'may possibly enter a deficit position')",
+        "Capital programme borrowing exposure (revenue gap 2025/26 to 2026/27 absorbing 12.5m reserves)"
+      ],
+      "url": "https://www.gateshead.gov.uk/article/29846/Risk-assessment"
+    },
+    "dsg_send": {
+      "cumulative_deficit_m": null,
+      "high_needs_block_status": "Schools Forum (FY 2024/25 papers) noted High Needs Block will continue to use reserves where available and may possibly enter a deficit position",
+      "schools_funding_pressure": "Proposal to top-slice 0.5% from Mainstream Schools Block 2025/26 opposed by Gateshead Secondary School Leaders; up to 40,000 GBP per school at risk",
+      "statutory_override_expiry": "2028-03-31 (extended from 2026 per Nov 2025 DfE announcement)",
+      "fiscal_cliff_severity": "moderate (no Safety Valve / DBV agreement located but deficit pressure noted in Schools Forum minutes)",
+      "send_inspection": {
+        "type": "Ofsted Local Authority Children's Services Inspection (ILACS)",
+        "completed": "2024-12-02",
+        "report_published": "2025-01-29",
+        "outcome": "Continued positive findings; leaders maintained and improved practice. Specific judgement / overall rating not located in indexed sources",
+        "note": "Area SEND inspection completion year not confirmed in indexed sources"
+      },
+      "url": "https://reports.ofsted.gov.uk/provider/44/80469"
+    },
+    "asc_market_sustainability": {
+      "plan_published": true,
+      "plan_period": "Up to October 2025 (reform commencement)",
+      "cost_of_care_exercise_done": true,
+      "msif_received": true,
+      "transformation_target_m": 13.4,
+      "reserves_smoothing_2yr_m": 12.5,
+      "url": "https://www.gateshead.gov.uk/article/22798/Fair-cost-of-care-and-market-sustainability"
+    },
+    "lgr": {
+      "status": "not applicable / no LGR proposals",
+      "scope": "Gateshead is one of seven North East unitary/metropolitan authorities (County Durham, Gateshead, Newcastle, Northumberland, North Tyneside, South Tyneside, Sunderland) under the North East Mayoral Combined Authority. Kim McGuinness (Labour/Co-op) elected as first North East Mayor on 2 May 2024 with 41% of vote. Devolution deal worth over 4.2bn GBP over 30 years.",
+      "url": "https://www.gateshead.gov.uk/article/22753/Questions-about-the-North-East-devolution-deal",
+      "savings_implication": "Mayoral combined authority delivers transport plan + additional investment but does not reorganise Gateshead Council's statutory functions"
+    },
+    "property_strategy": {
+      "name": "Asset Management Strategy 2022-2027",
+      "capital_receipts_2yr_m": 2.36,
+      "url": "https://www.gateshead.gov.uk/article/20107/Asset-Management-Strategy-2022-2027",
+      "active_disposals": "Freehold disposals to PSP Gateshead LLP under consideration by Cabinet; non-domestic asset reviews exploring disposal/demolition/change of use to benefit HRA",
+      "note": "2.36m figure relates to year covered in 2015-2016 Property Performance Report; current capital receipts trajectory not located in indexed sources"
+    },
+    "actionable_savings_levers_summary": [
+      "PFI exposure is the structural drag: Schools PFI (Pinnacle, 7 schools, to July 2034) plus STWWMP waste PFI with Sunderland + South Tyneside; both lock unitary charges with RPIX uplift (12.61% in 2023/24 schools PFI). Renegotiation / handback windows are scarce but should be modelled",
+      "34.4m cumulative MTFS gap to 2029/30 with only 6.1m efficiencies plus 5.9m social care interventions identified = 14.8m unidentified savings target remaining over 5-year horizon",
+      "Reserves smoothing of 12.5m over 2025/26-2026/27 to fund ASC transformation - if transformation under-delivers, reserves will breach 3% minimum",
+      "Schools Forum 2024/25 papers flag High Needs Block possibly entering deficit; statutory override extension to 2028 buys planning runway but Gateshead has not located in Safety Valve / DBV agreement list",
+      "Net revenue budget 346m for 2026/27 - significantly smaller scale than London boroughs in EFS, but reserves replenishment from 2027/28 is conditional on delivering planned transformation pipeline",
+      "Asset Management Strategy 2022-2027 due for refresh; non-domestic asset reviews underway - capital receipts trajectory needs publication",
+      "North East Devolution Deal (4.2bn over 30 years via NEMCA) is upside funding lever via transport / housing not direct revenue support"
+    ],
+    "source_urls": [
+      "https://www.gateshead.gov.uk/article/3659/External-Auditor-s-Reports",
+      "https://www.gateshead.gov.uk/article/3644/Statement-of-Accounts",
+      "https://www.gateshead.gov.uk/article/34833/7-Appendix",
+      "https://www.gateshead.gov.uk/article/34822/2-Key-considerations",
+      "https://www.gateshead.gov.uk/article/22798/Fair-cost-of-care-and-market-sustainability",
+      "https://www.gateshead.gov.uk/article/22753/Questions-about-the-North-East-devolution-deal",
+      "https://www.gateshead.gov.uk/article/20107/Asset-Management-Strategy-2022-2027",
+      "https://www.gateshead.gov.uk/article/3700/Joint-Municipal-Waste-Management-Strategy",
+      "https://www.gateshead.gov.uk/media/3083/PFI-Project-Residual-Waste-Treatment-Contract/pdf/PFIProjectResidualWasteTreatmentContract.pdf",
+      "https://gateshead.moderngov.co.uk/documents/s37722/Item%206%20-%20Schools%20PFI%20Update.pdf",
+      "https://gateshead.moderngov.co.uk/documents/s43090/Revenue+and+Council+Tax+Budget+2025+report+inc+appendices.pdf",
+      "https://democracy.gateshead.gov.uk/documents/s47925/Cabinet%20Budget%20Report%20DRAFT%20v3.pdf",
+      "https://democracy.gateshead.gov.uk/documents/s39096/6.a%20-%20Appendix%20A%20Audit%20Charter%202024-25.pdf",
+      "https://gateshead.moderngov.co.uk/documents/s44792/Appendix%20-%20Gateshead%20Metropolitan%20Borough%20Council%20EQA.pdf",
+      "https://reports.ofsted.gov.uk/provider/44/80469"
+    ],
+    "coverage_gaps": [
+      "External audit opinion text for 2023/24 (Mazars certificate / Auditor's Annual Report not retrievable via WebSearch indexes; documents listed but content not surfaced)",
+      "External audit progress for 2024/25 (year-end 31 March 2025) - not located",
+      "Internal Audit Annual Report 2024/25 overall opinion + limited-assurance subject list",
+      "DSG High Needs Block cumulative deficit figure (specific GBP-millions value)",
+      "Year-by-year MTFS gap split (only 2026/27 = 20.5m and cumulative 34.4m located)",
+      "Total PFI exposure - schools unitary charge GBP-millions / year and waste PFI annual unitary charge",
+      "Strategic Risk Register top-N risks with net ratings",
+      "Current capital receipts trajectory and 5-year asset disposal pipeline value",
+      "Ofsted SEND area inspection date / judgement (last located is ILACS Dec 2024)",
+      "CIPFA Resilience Index council-specific scores (paywalled)"
+    ]
+  },
+  "donor_links": null,
+  "strategic_themes": [
+    {
+      "id": "workforce_agency_reduction",
+      "title": "Agency / locum staff demand reduction (\u00a32M concentrated)",
+      "rationale": "\u00a32M of agency-staff spend across 1 master vendors. Top: COMENSURA LTD (\u00a32M). Standard transformation: cap agency premium at 20% above substantive rate, workforce-plan permanent conversion (6-9 month payback), regional bank pool, open-book master-vendor margins. CIPFA experience: 8-15% reduction in 12-18 months.",
+      "estimated_savings_low_m": 0.1,
+      "estimated_savings_high_m": 0.3,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of HR + Director of Finance + S151 Officer",
+      "evidence": [
+        "spending corpus: top agency suppliers"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "energy_procurement_optimisation",
+      "title": "Energy procurement via CCS / LASER / NEPO frameworks (\u00a343M baseline)",
+      "rationale": "\u00a343M utility spend across 3 suppliers. Top: EDF ENERGY (\u00a330M), CORONA ENERGY LTD (\u00a312M), NPOWER (\u00a31M). Crown Commercial RM6306 + LASER / NEPO consortium flex purchase typically saves 4-8% vs direct supplier contracts on a 3-yr horizon. Plus solar PV self-generation on council estate (7-9 yr payback) + DESNZ Public Sector Decarbonisation Scheme grants up to 100% capex on heat pump conversion.",
+      "estimated_savings_low_m": 2.2,
+      "estimated_savings_high_m": 5.2,
+      "savings_type": "recurring + capital grant",
+      "delivery_horizon": "12-36 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Property + Sustainability Lead + S151 Officer",
+      "evidence": [
+        "Crown Commercial RM6306",
+        "DESNZ PSDS scheme",
+        "LASER / NEPO frameworks"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "treasury_borrowing_optimisation",
+      "title": "Treasury management + borrowing cost optimisation (CFR proxy \u00a3349M)",
+      "rationale": "Annual revenue \u00a3437M implies indicative CFR c. \u00a3349M. Standard levers: internal borrowing from earmarked reserves, PWLB Certainty Rate trade, MMF counterparty restructuring, LGPS Property Investment Pool inclusion. 10-30bp saving on external debt typical from a fresh review.",
+      "estimated_savings_low_m": 0.35,
+      "estimated_savings_high_m": 1.05,
+      "savings_type": "recurring",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (subject to TM Strategy approval)",
+      "decision_owner": "S151 Officer + Treasurer",
+      "evidence": [
+        "CIPFA Prudential + Treasury Management Codes 2021",
+        "PWLB Certainty Rate"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "lgps_employer_contribution",
+      "title": "LGPS employer contribution opportunity (2025 triennial valuation cycle)",
+      "rationale": "Indicative pay bill \u00a3175M \u00d7 c. 22% employer contribution rate = \u00a338M annual employer contribution. Most LGPS funds materially over-funded post-2022 (returns 2022-25 averaged 7-10% pa vs 3-4% discount-rate assumption). 2025 triennial valuation typically yields 2-4pp employer-rate reduction over 2026-2029. Confirm with administering authority + actuary.",
+      "estimated_savings_low_m": 1.9,
+      "estimated_savings_high_m": 5.8,
+      "savings_type": "recurring (3-yr triennial)",
+      "delivery_horizon": "settled at 2025 valuation; recurring 2026-2029",
+      "implementation_complexity": "low (LGPS admin enacts new rate)",
+      "decision_owner": "S151 Officer + LGPS Pensions Committee",
+      "evidence": [
+        "LGPS Regulations 2013 + 2014",
+        "2025 triennial valuation reports"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "income_fees_charges_optimisation",
+      "title": "Fees, charges + traded-services income optimisation (\u00a344M base)",
+      "rationale": "Indicative fees & charges + traded-services income c. 10% of revenue = \u00a344M. Standard levers: annual CPI uplift discipline, full-cost-recovery audit on discretionary services (parking, planning, licensing, sports, adult learning, property hire), commercial pricing on traded services. LGA experience: 5-15% income uplift sustainable over 2-3 years.",
+      "estimated_savings_low_m": 2.2,
+      "estimated_savings_high_m": 6.5,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-24 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Cabinet (each fee delegation)",
+      "evidence": [
+        "LGA fees and charges benchmarking",
+        "CIPFA Charging guidance"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "insurance_retention_review",
+      "title": "Insurance retention + premium review (\u00a30.4M premium estimate)",
+      "rationale": "Indicative insurance premium \u00a30.4M (10bp of revenue). Standard 3-5 yr renewal cycle. Levers: tender via IPG / RM Partners (10-25% premium reduction typical), retention review (increase excess + build risk-fund reserve). London-borough cohort average 12% premium reduction at last tender.",
+      "estimated_savings_low_m": 0.04,
+      "estimated_savings_high_m": 0.11,
+      "savings_type": "recurring",
+      "delivery_horizon": "9-18 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Risk Manager",
+      "evidence": [
+        "IPG framework",
+        "RM Partners broker market"
+      ],
+      "severity": "low"
+    },
+    {
+      "id": "procurement_data_review",
+      "title": "Contracts Finder portfolio review (90 notices; 1 contracts at \u00a310M+ ceiling)",
+      "rationale": "Contracts Finder data: 90 notices (67 awarded, \u00a341M aggregate ADVERTISED CEILING value, 0% SME). IMPORTANT: advertised contract value is a CEILING set to avoid retender risk under PCR 2015 Reg.72 / Procurement Act 2023 s.31 \u2014 actual spend through the awardee is typically 30-70% of ceiling, with some off-contract ledger spend permitted within the 50%/50% modification limits. 1 contracts at \u00a310M+ ceiling totalling \u00a316M (ceiling, NOT spend) \u2014 top 3: Contract for the Provision and Operation of a Material Recov (ceiling \u00a316M). Matched against ledger: GB-Gateshead: TPPL Gateshead Council NEPO GM &amp; \u2014 ceiling \u00a30.0M, actual ledger spend with awardee \u00a30.3M; GB-Gateshead: TPPL Gateshead Council NEPO GM &amp; \u2014 ceiling \u00a30.0M, actual ledger spend with awardee \u00a33.8M; GB-Gateshead: TPPL Gateshead Council NEPO GM &amp; \u2014 ceiling \u00a30.2M, actual ledger spend with awardee \u00a31.8M. Aggregate identified actual spend \u00a3644M. SME-awarded share 0% is below the Procurement Reform 2023 / PPN 03/24 ambition (33% SME share by value). Standard procurement-data savings levers (% of ACTUAL ledger spend, not ceiling): (a) modification-history scrutiny under PCR 2015 Reg.72, (b) Procurement Act 2023 s.31 contract change notice review, (c) re-tender benchmark vs CCS framework rates on next renewal. 2-8% on actual spend through major contracts is a defensible upper bound.",
+      "estimated_savings_low_m": 12.9,
+      "estimated_savings_high_m": 51.6,
+      "savings_type": "recurring (post next contract renewal)",
+      "delivery_horizon": "12-36 months (contract-renewal cycle)",
+      "implementation_complexity": "high",
+      "decision_owner": "Head of Procurement + Cabinet Member + Section 151 Officer",
+      "evidence": [
+        "procurement.json (Contracts Finder API): 90 notices",
+        "ledger-matched actual spend: \u00a3644.5M",
+        "PCR 2015 Reg.72; Procurement Act 2023 s.31"
+      ],
+      "savings_basis": "Ledger-matched actual spend through awardees",
+      "advertised_ceiling_total_m": 15.9,
+      "ledger_matched_actual_spend_m": 644.5,
+      "severity": "medium"
+    },
+    {
+      "id": "companies_house_compliance",
+      "title": "Companies House compliance follow-up (\u00a3108M flagged \u2014 5 overdue, 2 dissolved, 3 insolvency-history)",
+      "rationale": "Companies House lookup on top-50 suppliers identified \u00a3108M of spend with statutory-compliance flags: \u00a358M to suppliers with overdue accounts (5), \u00a319M to dissolved-status companies (2), \u00a332M to companies with insolvency history (3). NOTE: Some matches are CH fuzzy-search false positives (e.g. school, government-body name collisions) and need human verification. After verification, real flags = (a) credit-risk review on overdue accounts, (b) contract-cleanup on dissolved entities (records still on ledger but supplier extinct \u2014 risk of duplicate-payment leakage), (c) PCR 2015 Reg.57 discretionary exclusion review on insolvency-history suppliers in active contracts.",
+      "estimated_savings_low_m": 0.5,
+      "estimated_savings_high_m": 2.2,
+      "savings_type": "one-off cleanup + recurring risk reduction",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (CH already enriched)",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "companies_house_enrichment.json"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "refund_credit_recovery",
+      "title": "Refund / credit-note management + contract dispute resolution (\u00a3200M, 134,517 rows)",
+      "rationale": "134,517 negative-amount rows totalling \u00a3200M \u2014 refunds, credit notes, contract reversals. Volume signals correct ledger capture, but proactive levers exist: (a) contract management review on top recurring refund counterparties, (b) duplicate-payment pre-detection, (c) energy-bill credit-management automation. Typical 5-10% reduction in refund volume + faster reconciliation = 10-30bp net cash improvement.",
+      "estimated_savings_low_m": 1.0,
+      "estimated_savings_high_m": 4.0,
+      "savings_type": "recurring + cash management",
+      "delivery_horizon": "12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Head of Procurement + Internal Audit + Treasury",
+      "evidence": [
+        "sqlite: 134,517 negative rows / \u00a3200M"
+      ],
+      "severity": "low"
+    },
+    {
+      "id": "reserves_rebuild",
+      "title": "Rebuild general reserves to \u22654 months (Low \u2192 Adequate)",
+      "rationale": "Reserves at 4.6 months (Low per CIPFA Resilience benchmark). Direction: stable. A 4-month minimum is the CIPFA / S151 prudence floor; below this triggers external auditor VFM concern and elevates s.114 risk.",
+      "estimated_target_m": 0.0,
+      "delivery_horizon": "3-5 years",
+      "implementation_complexity": "high",
+      "decision_owner": "Section 151 Officer + Cabinet",
+      "evidence": [
+        "cross_council.reserves_months",
+        "cross_council.reserves_adequacy"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "duplicate_recovery",
+      "title": "Audit + recover \u00a3134M in flagged duplicate-payment patterns",
+      "rationale": "DOGE forensic flagged \u00a3134M across 24,976 groups of likely duplicates. Industry recovery norm 5-15% via duplicate-detection software (AP Forensics, FISCAL, Oracle Concur). Lloyds Bank Commercial Card analysis typical for spot-check sample of 100 highest-confidence matches.",
+      "estimated_savings_low_m": 6.7,
+      "estimated_savings_high_m": 20.2,
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Finance + Internal Audit",
+      "evidence": [
+        "doge_findings.duplicate_count",
+        "doge_findings.duplicate_value"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "split_payment_review",
+      "title": "Investigate \u00a3309M in flagged split-payment patterns",
+      "rationale": "DOGE flagged \u00a3309M across 0 split-payment instances. Split payments often indicate (a) below-procurement-threshold ledger fragmentation circumventing PCR 2015 Reg.4 contract-value-aggregation rule; or (b) legitimate sub-line invoice splits. Sample audit + reclassify; misuse triggers Reg. 99 challenge exposure.",
+      "estimated_savings_low_m": 6.2,
+      "estimated_savings_high_m": 24.7,
+      "delivery_horizon": "9-12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "doge_findings.split_payments_value",
+        "PCR 2015 Reg.4"
+      ],
+      "severity": "medium"
+    }
+  ],
+  "supplier_recommendations": [],
+  "supplier_summary_flags": {},
+  "recommendation_counts": {}
+}

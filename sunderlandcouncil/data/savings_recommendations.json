@@ -1,0 +1,536 @@
+{
+  "version": "2.0",
+  "council_id": "sunderland",
+  "council_name": "Sunderland City Council",
+  "generated_at": "2026-05-13T11:06:20.704961Z",
+  "data_sources": [
+    "spending.sqlite (council_etl.py + classify_council.py)",
+    "doge_findings.json (35-technique forensic)",
+    "cross_council.json (32-council peer benchmark)",
+    "budgets_summary.json (MHCLG Revenue Outturn)",
+    "revenue_trends.json (8-yr MHCLG time series)",
+    "source_audit.json (record_class breakdown)",
+    "supplier_donor_crossmatch.json (Electoral Commission CSV API)"
+  ],
+  "financial_summary": {
+    "annual_revenue_budget": 499041000,
+    "council_tax_requirement": 128087000,
+    "service_breakdown": {
+      "Highways and transport services": 10850000,
+      "Housing services (GFRA only)": 7476000,
+      "Cultural and related services": 10743000,
+      "Environmental and regulatory services": 33223000,
+      "Planning and development services": 11774000,
+      "Central services": 20577000
+    },
+    "procurement_footprint_total": 2149290664.96,
+    "procurement_footprint_annual": 307041523.57,
+    "transactions_total": 177643,
+    "transactions_annual": 25378,
+    "unique_suppliers": 5911,
+    "data_period": {
+      "min": "2019-04-02",
+      "max": "2026-03-31"
+    },
+    "financial_years_covered": 7,
+    "per_capita_spend": 1119.77,
+    "population": 274200,
+    "net_revenue_expenditure": 282307000,
+    "budget_year": "2024-25"
+  },
+  "reserves_position": {
+    "total": 164229000,
+    "months_of_revenue": 7.0,
+    "adequacy": "Adequate",
+    "direction": "stable",
+    "trajectory": [
+      {
+        "year": "2021-22",
+        "earmarked": 174580000,
+        "unallocated": 12000000,
+        "total": 186580000
+      },
+      {
+        "year": "2022-23",
+        "earmarked": 172723000,
+        "unallocated": 12000000,
+        "total": 184723000
+      },
+      {
+        "year": "2023-24",
+        "earmarked": 153470000,
+        "unallocated": 13500000,
+        "total": 166970000
+      },
+      {
+        "year": "2024-25",
+        "earmarked": 150229000,
+        "unallocated": 14000000,
+        "total": 164229000
+      }
+    ],
+    "projected": [
+      {
+        "year": "2025-26",
+        "total": 154424000,
+        "projected": true
+      },
+      {
+        "year": "2026-27",
+        "total": 145943400,
+        "projected": true
+      }
+    ]
+  },
+  "forensic_signals": {
+    "duplicate_value": 118005100,
+    "duplicate_count": 7170,
+    "split_payments_value": 9400000,
+    "weak_competition": null,
+    "anomaly_count": 9,
+    "total_flagged_value": 166262700,
+    "severity_breakdown": {
+      "high": 0,
+      "medium": 6,
+      "low": 3
+    },
+    "overall_hhi": 110.5,
+    "service_hhi_high": [],
+    "top10_supplier_pct": 0.3542,
+    "doge_key_findings": [
+      {
+        "title": "10 suppliers with clock-like payment regularity",
+        "severity": "info",
+        "confidence": "high"
+      },
+      {
+        "title": "COMMUNITY INTERGRATED CARE: 7790 transactions totalling \u00a313.9M",
+        "severity": "info",
+        "confidence": "high"
+      }
+    ]
+  },
+  "peer_benchmarks": {
+    "per_capita_spend": {
+      "metric": "per_capita_spend",
+      "this_value": 1119.77,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "top10_supplier_pct": {
+      "metric": "top10_supplier_pct",
+      "this_value": 0.3542,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "reserves_months": {
+      "metric": "reserves_months",
+      "this_value": 7.0,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "overall_hhi": {
+      "metric": "overall_hhi",
+      "this_value": 110.5,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "duplicate_value": {
+      "metric": "duplicate_value",
+      "this_value": 118005100,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "split_payments_value": {
+      "metric": "split_payments_value",
+      "this_value": 9400000,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    }
+  },
+  "audit_research": {
+    "version": "1.0",
+    "council_id": "sunderland",
+    "researched_at": "2026-05-13",
+    "method": "Web research via WebFetch + WebSearch (subagent), all citations primary",
+    "external_audit": {
+      "auditor": "Forvis Mazars LLP",
+      "year_ended": "2024-03-31",
+      "opinion": "UNQUALIFIED (audit completion certificate withheld pending wider sector arrangements)",
+      "opinion_severity": "low",
+      "key_concerns": [
+        "Forvis Mazars audited 2023/24 accounts; concluded that Director of Finance's use of the going concern basis was appropriate and no material uncertainties identified",
+        "Statement of Accounts 2023/24 approved and authorised for issue under delegation granted at Audit and Governance Committee 27 September 2024",
+        "Forvis Mazars LLP could not formally conclude the audit and issue a certificate (procedural - sector-wide backlog issue, not Sunderland-specific)",
+        "2024/25 draft Statement of Accounts subject to audit at audit reporting time; presented to Revenue Outturn report to Cabinet 26 June 2025"
+      ],
+      "report_date": "2024-09-27 (delegation for 2023/24 accounts)",
+      "presented_to": "Audit and Governance Committee 27 September 2024",
+      "url": "https://www.sunderland.gov.uk/media/32683/Statement-of-Accounts-2023-2024/pdf/SCC_Statement_of_Accounts_2023-24_FINAL_v5-2-25_-_signed.pdf",
+      "note": "Sunderland is one of the cleaner audit cases nationally - Forvis Mazars completed the substantive 2023/24 audit and reported no material uncertainties. Contrast with Thurrock (BDO multi-year disclaimer) and Wakefield (sector-backstop disclaimers 2022/23 + 2023/24)."
+    },
+    "internal_audit": {
+      "latest_year_located": "not located in public web sources",
+      "current_year_status": "held in committees.sunderland.gov.uk Audit and Governance Committee papers",
+      "follow_up_required": "Read most recent Audit and Governance Committee papers on committees.sunderland.gov.uk for 2024/25 Internal Audit Annual Report and limited-assurance findings",
+      "year": "2024/25",
+      "overall_opinion": "not located",
+      "source": "Standing CIPFA-compliant arrangement",
+      "source_url": "https://committees.sunderland.gov.uk/"
+    },
+    "mtfs_2026_31": {
+      "savings_target_2026_27_m": 0.6,
+      "reserves_use_2026_27_m": 9.679,
+      "budget_gap_after_reserves_use_m": 6,
+      "core_council_tax_increase_pct": 2.5,
+      "adult_social_care_precept_pct": 2,
+      "total_council_tax_increase_pct": 4.5,
+      "prior_year_funding_gap_2025_26_m": 18,
+      "rationale": "Strategy is to 'prevent further cuts to front line services, enable some essential investment in key priorities and minimise the use of reserves in order to maintain the council's financial resilience' (Cabinet report)",
+      "capital_investment_2026_27_priorities": [
+        "Enrichment facilities for children with higher needs",
+        "Replacement of council vehicles",
+        "Operational ICT investment",
+        "Riverside Sunderland regeneration",
+        "Sunniside regeneration"
+      ],
+      "url": "https://www.sunderland.gov.uk/article/39204/Revenue-Budget-2026-2027-and-Capital-Programme-2025-2026-to-2029-2030-pdf",
+      "url_news": "https://www.sunderland.gov.uk/article/39118/Council-budget-for-the-next-12-months-agreed",
+      "reserves_movement_2024_25": "Net assets/total reserves reduced by \u00a341.809m (mainly \u00a345.803m reduction in unusable reserves due to defined benefit pension asset/liability remeasurement and capital adjustment account movements)"
+    },
+    "strategic_risks": {
+      "register_status": "Live register held in committees.sunderland.gov.uk Audit and Governance Committee papers - latest publicly extractable was 2021/22 Strategic Risk Profile",
+      "inferred_top_risks_2025_26": [
+        "Demand in adult and children's social care (cited in 2026/27 Cabinet report as key pressure)",
+        "Pay, energy and inflation cost pressures",
+        "Supported housing and homelessness demand",
+        "Reserves sustainability (\u00a39.679m drawdown to balance 2026/27 budget)",
+        "North East Combined Authority devolution integration and mayoral accountability"
+      ],
+      "follow_up_required": "Extract live Strategic Risk Register from Audit and Governance Committee papers via committees.sunderland.gov.uk",
+      "url": "https://committees.sunderland.gov.uk/"
+    },
+    "dsg_send": {
+      "cumulative_deficit_m": "not located via web search - figure held in Sunderland Schools Forum papers",
+      "statutory_override_expiry": "2028-03-31",
+      "send_inspection": "June 2021 joint Ofsted + CQC area SEND inspection identified 'significant developments' since Together for Children took over Children's Services but also 'significant concerns regarding effectiveness'; Written Statement of Action required. Concerns: lack of cohesion in joint commissioning of SEND support and consistency of provision during transitions",
+      "send_inspection_year": "2021",
+      "send_outcome": "Written Statement of Action required (one of 59% of local authorities nationally required to do so post-inspection; 72% across North East / Yorkshire and Humber)",
+      "send_strength": "Speed of SEND identification above national average; implementation of EHCPs to address individual needs praised",
+      "delivery_model": "Children's Services delivered by Together for Children (council-owned company)",
+      "follow_up_required": "Locate post-2021 SEND inspection update if any; extract specific accumulated DSG / High Needs deficit from Sunderland Schools Forum papers",
+      "url": "https://reports.ofsted.gov.uk/provider/44/80566"
+    },
+    "asc_market_sustainability": {
+      "plan_published": true,
+      "cqc_rating": "Good (Local Authority Assessment 2025)",
+      "cqc_overall_score": 75,
+      "cqc_all_nine_areas_rating": "Good",
+      "cqc_url": "https://www.cqc.org.uk/care-services/local-authority-assessment-reports/sunderland-0525",
+      "cqc_press_url": "https://www.cqc.org.uk/press-release/cqc-rates-sunderland-city-councils-adult-social-care-provision-good",
+      "cqc_strengths": [
+        "Strong focus on reablement to support independence at home, reducing need for residential care",
+        "Support to help people move out of homelessness and live independently",
+        "Continuous improvements; clear understanding of issues to address"
+      ],
+      "msif_workforce_fund": "Used to pay Real Living Wage for Home Care Providers at additional 3.75% and additional 1% to residential/nursing care providers from 1 October 2023",
+      "adult_social_care_budget_2023_24_estimated_m": 124.889,
+      "adult_social_care_budget_2023_24_actual_m": 129.833,
+      "adult_social_care_overspend_2023_24_m": 4.944,
+      "adult_social_care_strategy": "Adult Social Care Strategy 2023-25 published",
+      "url_strategy": "https://www.sunderland.gov.uk/media/28628/Adult-Social-Care-Strategy-2023-25/pdf/AdultSocialCareStrategy2023-25.pdf"
+    },
+    "lgr": {
+      "status": "not applicable - North East Combined Authority mayoral structure (established 2024) maintains constituent council structure without LGR",
+      "scope": "Sunderland is one of 7 constituent councils of North East Combined Authority (NECA): 2 unitary (Durham, Northumberland) + 5 metropolitan boroughs (Gateshead, Newcastle, North Tyneside, South Tyneside, Sunderland). Directly-elected Mayor (Kim McGuinness, May 2024)",
+      "url": "https://www.gov.uk/government/publications/english-devolution-area-factsheets/english-devolution-area-factsheets",
+      "url_neca": "https://www.northeast-ca.gov.uk/",
+      "url_devolution_scheme": "https://www.sunderland.gov.uk/media/28957/North-East-Devolution-Scheme/pdf/Scheme_-_final.pdf",
+      "savings_implication": "No LGR transition - stable structure; mayoral devolution-enabled investment streams available via NECA"
+    },
+    "property_strategy": {
+      "name": "Riverside Sunderland and Sunniside regeneration programmes (referenced in 2026/27 Capital Programme)",
+      "capital_receipts": "not located explicitly via web search",
+      "follow_up_required": "Extract specific property strategy and disposal targets from Cabinet papers on committees.sunderland.gov.uk",
+      "url": "https://www.sunderland.gov.uk/article/39204/Revenue-Budget-2026-2027-and-Capital-Programme-2025-2026-to-2029-2030-pdf"
+    },
+    "actionable_savings_levers_summary": [
+      "\u00a3600k 2026/27 savings target is modest relative to peer councils - signals 'Healthy' CIPFA proxy is accurate but reserves drawdown of \u00a39.679m is unsustainable beyond 2-3 years",
+      "CQC 'Good' rating with all 9 areas Good = no remediation savings pressure on ASC (contrast with Wakefield 'Requires Improvement') - permits reinvestment of savings into demand prevention",
+      "Kier Construction \u00a3109.5M top supplier (per task brief) = scope for framework procurement competitive tender review",
+      "Together for Children company structure = council-owned arms-length-management vehicle; route to scrutiny of overheads in line with subsidiary review good practice",
+      "North East Combined Authority Integrated Settlement = devolution funding stream Sunderland can leverage for transformation",
+      "SEND statutory override expiry March 2028 + High Needs Stability Grant eligibility = unknown deficit but available pathway for 90% deficit cover if local plan agreed with DfE",
+      "Adult Social Care 2023/24 overspend \u00a34.944m (estimate \u00a3124.889m vs actual \u00a3129.833m) = budget-vs-actual variance worth investigating for cost control"
+    ],
+    "source_urls": [
+      "https://www.sunderland.gov.uk/media/36317/Statement-of-Accounts-2024-2025-subject-to-audit/pdf/Statement_of_Accounts_2024-2025_subject_to_audit.pdf",
+      "https://www.sunderland.gov.uk/media/32683/Statement-of-Accounts-2023-2024/pdf/SCC_Statement_of_Accounts_2023-24_FINAL_v5-2-25_-_signed.pdf",
+      "https://www.sunderland.gov.uk/article/33126/Update-on-Audit-of-2023-2024-Statement-of-Accounts",
+      "https://www.sunderland.gov.uk/article/39204/Revenue-Budget-2026-2027-and-Capital-Programme-2025-2026-to-2029-2030-pdf",
+      "https://www.sunderland.gov.uk/article/39118/Council-budget-for-the-next-12-months-agreed",
+      "https://www.sunderland.gov.uk/article/14140/The-Council-s-accounts",
+      "https://www.sunderland.gov.uk/media/45522/Council-Tax-leaflet-2026-2027/pdf/oce23785_Council_Tax_2026-27_Booklet_A5.pdf",
+      "https://www.cqc.org.uk/care-services/local-authority-assessment-reports/sunderland-0525",
+      "https://www.cqc.org.uk/press-release/cqc-rates-sunderland-city-councils-adult-social-care-provision-good",
+      "https://www.sunderland.gov.uk/media/28628/Adult-Social-Care-Strategy-2023-25/pdf/AdultSocialCareStrategy2023-25.pdf",
+      "https://reports.ofsted.gov.uk/provider/44/80566",
+      "https://www.sunderlandecho.com/education/special-educational-needs-provision-shows-progress-but-concerns-remain-3401482",
+      "https://www.sunderland.gov.uk/media/28957/North-East-Devolution-Scheme/pdf/Scheme_-_final.pdf",
+      "https://www.gov.uk/government/publications/english-devolution-area-factsheets/english-devolution-area-factsheets",
+      "https://www.northeast-ca.gov.uk/",
+      "https://committees.sunderland.gov.uk/"
+    ],
+    "coverage_gaps": [
+      "Final 2024/25 audit opinion (audit ongoing at time of research)",
+      "Internal Audit Annual Report 2024/25 limited-assurance subject list",
+      "Live Strategic Risk Register top-5 with net ratings (latest publicly retrievable was 2021/22)",
+      "Specific accumulated DSG / High Needs deficit figure (held in Schools Forum papers)",
+      "Total Net Revenue Budget 2026/27 figure (held in Revenue Budget 2026/27 PDF)",
+      "Reserves position (restricted vs available) 2024/25 specific figures",
+      "Property strategy document name and capital receipt targets",
+      "Capital programme totals and treasury management strategy",
+      "Post-2021 SEND inspection update (if any)",
+      "CIPFA Resilience Index council-specific scores (paywalled) - though Sunderland was flagged 'Healthy' in CIPFA proxy ranking"
+    ]
+  },
+  "donor_links": null,
+  "strategic_themes": [
+    {
+      "id": "audit_opinion_qualification",
+      "title": "Lift qualified audit opinion (Forvis Mazars LLP)",
+      "rationale": "External auditor issued a qualified opinion on 2024/25 statements. Direct: PSAA scale fee normalisation. Indirect: lifting governance flag reduces borrowing-cost premium. Manual read of audit report needed to itemise qualification reason \u2014 once known, target single-cycle remediation.",
+      "estimated_savings_low_m": 0.1,
+      "estimated_savings_high_m": 0.5,
+      "savings_type": "one-off + recurring",
+      "delivery_horizon": "12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Section 151 Officer",
+      "evidence": [
+        "https://www.sunderland.gov.uk/media/32683/Statement-of-Accounts-2023-2024/pdf/SCC_Statement_of_Accounts_2023-24_FINAL_v5-2-25_-_signed.pdf"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "workforce_agency_reduction",
+      "title": "Agency / locum staff demand reduction (\u00a34M concentrated)",
+      "rationale": "\u00a34M of agency-staff spend across 1 master vendors. Top: COMENSURA LTD (\u00a34M). Standard transformation: cap agency premium at 20% above substantive rate, workforce-plan permanent conversion (6-9 month payback), regional bank pool, open-book master-vendor margins. CIPFA experience: 8-15% reduction in 12-18 months.",
+      "estimated_savings_low_m": 0.3,
+      "estimated_savings_high_m": 0.5,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of HR + Director of Finance + S151 Officer",
+      "evidence": [
+        "spending corpus: top agency suppliers"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "energy_procurement_optimisation",
+      "title": "Energy procurement via CCS / LASER / NEPO frameworks (\u00a374M baseline)",
+      "rationale": "\u00a374M utility spend across 5 suppliers. Top: EDF ENERGY CUSTOMERS PLC (\u00a340M), EDF ENERGY CUSTOMERS LTD (\u00a316M), CORONA ENERGY RETAIL 2 LTD (\u00a315M), SSE UTILITY SOLUTIONS LTD (\u00a32M), NPOWER NORTHERN LTD (\u00a31M). Crown Commercial RM6306 + LASER / NEPO consortium flex purchase typically saves 4-8% vs direct supplier contracts on a 3-yr horizon. Plus solar PV self-generation on council estate (7-9 yr payback) + DESNZ Public Sector Decarbonisation Scheme grants up to 100% capex on heat pump conversion.",
+      "estimated_savings_low_m": 3.7,
+      "estimated_savings_high_m": 8.9,
+      "savings_type": "recurring + capital grant",
+      "delivery_horizon": "12-36 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Property + Sustainability Lead + S151 Officer",
+      "evidence": [
+        "Crown Commercial RM6306",
+        "DESNZ PSDS scheme",
+        "LASER / NEPO frameworks"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "treasury_borrowing_optimisation",
+      "title": "Treasury management + borrowing cost optimisation (CFR proxy \u00a3399M)",
+      "rationale": "Annual revenue \u00a3499M implies indicative CFR c. \u00a3399M. Standard levers: internal borrowing from earmarked reserves, PWLB Certainty Rate trade, MMF counterparty restructuring, LGPS Property Investment Pool inclusion. 10-30bp saving on external debt typical from a fresh review.",
+      "estimated_savings_low_m": 0.4,
+      "estimated_savings_high_m": 1.2,
+      "savings_type": "recurring",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (subject to TM Strategy approval)",
+      "decision_owner": "S151 Officer + Treasurer",
+      "evidence": [
+        "CIPFA Prudential + Treasury Management Codes 2021",
+        "PWLB Certainty Rate"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "lgps_employer_contribution",
+      "title": "LGPS employer contribution opportunity (2025 triennial valuation cycle)",
+      "rationale": "Indicative pay bill \u00a3200M \u00d7 c. 22% employer contribution rate = \u00a344M annual employer contribution. Most LGPS funds materially over-funded post-2022 (returns 2022-25 averaged 7-10% pa vs 3-4% discount-rate assumption). 2025 triennial valuation typically yields 2-4pp employer-rate reduction over 2026-2029. Confirm with administering authority + actuary.",
+      "estimated_savings_low_m": 2.2,
+      "estimated_savings_high_m": 6.6,
+      "savings_type": "recurring (3-yr triennial)",
+      "delivery_horizon": "settled at 2025 valuation; recurring 2026-2029",
+      "implementation_complexity": "low (LGPS admin enacts new rate)",
+      "decision_owner": "S151 Officer + LGPS Pensions Committee",
+      "evidence": [
+        "LGPS Regulations 2013 + 2014",
+        "2025 triennial valuation reports"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "income_fees_charges_optimisation",
+      "title": "Fees, charges + traded-services income optimisation (\u00a350M base)",
+      "rationale": "Indicative fees & charges + traded-services income c. 10% of revenue = \u00a350M. Standard levers: annual CPI uplift discipline, full-cost-recovery audit on discretionary services (parking, planning, licensing, sports, adult learning, property hire), commercial pricing on traded services. LGA experience: 5-15% income uplift sustainable over 2-3 years.",
+      "estimated_savings_low_m": 2.5,
+      "estimated_savings_high_m": 7.5,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-24 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Cabinet (each fee delegation)",
+      "evidence": [
+        "LGA fees and charges benchmarking",
+        "CIPFA Charging guidance"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "insurance_retention_review",
+      "title": "Insurance retention + premium review (\u00a30.5M premium estimate)",
+      "rationale": "Indicative insurance premium \u00a30.5M (10bp of revenue). Standard 3-5 yr renewal cycle. Levers: tender via IPG / RM Partners (10-25% premium reduction typical), retention review (increase excess + build risk-fund reserve). London-borough cohort average 12% premium reduction at last tender.",
+      "estimated_savings_low_m": 0.05,
+      "estimated_savings_high_m": 0.12,
+      "savings_type": "recurring",
+      "delivery_horizon": "9-18 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Risk Manager",
+      "evidence": [
+        "IPG framework",
+        "RM Partners broker market"
+      ],
+      "severity": "low"
+    },
+    {
+      "id": "procurement_data_review",
+      "title": "Contracts Finder portfolio review (98 notices; 8 contracts at \u00a310M+ ceiling)",
+      "rationale": "Contracts Finder data: 98 notices (57 awarded, \u00a390M aggregate ADVERTISED CEILING value, 0% SME). IMPORTANT: advertised contract value is a CEILING set to avoid retender risk under PCR 2015 Reg.72 / Procurement Act 2023 s.31 \u2014 actual spend through the awardee is typically 30-70% of ceiling, with some off-contract ledger spend permitted within the 50%/50% modification limits. 8 contracts at \u00a310M+ ceiling totalling \u00a31344M (ceiling, NOT spend) \u2014 top 3: The appointment of a Technology Partner and the establishmen (ceiling \u00a3500M); The appointment of a Technology Partner and the establishmen (ceiling \u00a3500M); Sunderland Central Heat Network (ceiling \u00a3130M). Matched against ledger: Drainage Investigation and Maintenance Framework \u2014 ceiling \u00a33.6M, actual ledger spend with awardee \u00a320.3M; Framework for the Provision of Security Guarding a \u2014 ceiling \u00a37.5M, actual ledger spend with awardee \u00a37.7M; Portable Toilet Units and Accessible Portable Unit \u2014 ceiling \u00a30.1M, actual ledger spend with awardee \u00a32.3M. Aggregate identified actual spend \u00a3862M. SME-awarded share 0% is below the Procurement Reform 2023 / PPN 03/24 ambition (33% SME share by value). Standard procurement-data savings levers (% of ACTUAL ledger spend, not ceiling): (a) modification-history scrutiny under PCR 2015 Reg.72, (b) Procurement Act 2023 s.31 contract change notice review, (c) re-tender benchmark vs CCS framework rates on next renewal. 2-8% on actual spend through major contracts is a defensible upper bound.",
+      "estimated_savings_low_m": 17.2,
+      "estimated_savings_high_m": 69.0,
+      "savings_type": "recurring (post next contract renewal)",
+      "delivery_horizon": "12-36 months (contract-renewal cycle)",
+      "implementation_complexity": "high",
+      "decision_owner": "Head of Procurement + Cabinet Member + Section 151 Officer",
+      "evidence": [
+        "procurement.json (Contracts Finder API): 98 notices",
+        "ledger-matched actual spend: \u00a3862.1M",
+        "PCR 2015 Reg.72; Procurement Act 2023 s.31"
+      ],
+      "savings_basis": "Ledger-matched actual spend through awardees",
+      "advertised_ceiling_total_m": 1344.0,
+      "ledger_matched_actual_spend_m": 862.1,
+      "severity": "medium"
+    },
+    {
+      "id": "companies_house_compliance",
+      "title": "Companies House compliance follow-up (\u00a3231M flagged \u2014 3 overdue, 1 dissolved, 3 insolvency-history)",
+      "rationale": "Companies House lookup on top-50 suppliers identified \u00a3231M of spend with statutory-compliance flags: \u00a3110M to suppliers with overdue accounts (3), \u00a39M to dissolved-status companies (1), \u00a3111M to companies with insolvency history (3). NOTE: Some matches are CH fuzzy-search false positives (e.g. school, government-body name collisions) and need human verification. After verification, real flags = (a) credit-risk review on overdue accounts, (b) contract-cleanup on dissolved entities (records still on ledger but supplier extinct \u2014 risk of duplicate-payment leakage), (c) PCR 2015 Reg.57 discretionary exclusion review on insolvency-history suppliers in active contracts.",
+      "estimated_savings_low_m": 1.2,
+      "estimated_savings_high_m": 4.6,
+      "savings_type": "one-off cleanup + recurring risk reduction",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (CH already enriched)",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "companies_house_enrichment.json"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "refund_credit_recovery",
+      "title": "Refund / credit-note management + contract dispute resolution (\u00a317M, 1,267 rows)",
+      "rationale": "1,267 negative-amount rows totalling \u00a317M \u2014 refunds, credit notes, contract reversals. Volume signals correct ledger capture, but proactive levers exist: (a) contract management review on top recurring refund counterparties, (b) duplicate-payment pre-detection, (c) energy-bill credit-management automation. Typical 5-10% reduction in refund volume + faster reconciliation = 10-30bp net cash improvement.",
+      "estimated_savings_low_m": 0.1,
+      "estimated_savings_high_m": 0.3,
+      "savings_type": "recurring + cash management",
+      "delivery_horizon": "12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Head of Procurement + Internal Audit + Treasury",
+      "evidence": [
+        "sqlite: 1,267 negative rows / \u00a317M"
+      ],
+      "severity": "low"
+    },
+    {
+      "id": "duplicate_recovery",
+      "title": "Audit + recover \u00a3118M in flagged duplicate-payment patterns",
+      "rationale": "DOGE forensic flagged \u00a3118M across 7,170 groups of likely duplicates. Industry recovery norm 5-15% via duplicate-detection software (AP Forensics, FISCAL, Oracle Concur). Lloyds Bank Commercial Card analysis typical for spot-check sample of 100 highest-confidence matches.",
+      "estimated_savings_low_m": 5.9,
+      "estimated_savings_high_m": 17.7,
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Finance + Internal Audit",
+      "evidence": [
+        "doge_findings.duplicate_count",
+        "doge_findings.duplicate_value"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "split_payment_review",
+      "title": "Investigate \u00a39M in flagged split-payment patterns",
+      "rationale": "DOGE flagged \u00a39M across 0 split-payment instances. Split payments often indicate (a) below-procurement-threshold ledger fragmentation circumventing PCR 2015 Reg.4 contract-value-aggregation rule; or (b) legitimate sub-line invoice splits. Sample audit + reclassify; misuse triggers Reg. 99 challenge exposure.",
+      "estimated_savings_low_m": 0.2,
+      "estimated_savings_high_m": 0.8,
+      "delivery_horizon": "9-12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "doge_findings.split_payments_value",
+        "PCR 2015 Reg.4"
+      ],
+      "severity": "medium"
+    }
+  ],
+  "supplier_recommendations": [],
+  "supplier_summary_flags": {},
+  "recommendation_counts": {}
+}

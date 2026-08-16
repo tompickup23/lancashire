@@ -1,0 +1,525 @@
+{
+  "version": "1.0",
+  "council_id": "barnsley",
+  "council_name": "Barnsley",
+  "generated_at": "2026-05-13T11:07:47.966361+00:00",
+  "method": "Synthesis of (1) audit_research.json MTFS data + (2) savings_recommendations.json strategic themes + (3) cross-sector benchmarks library (burnley-council/data/shared/savings_benchmarks_library.json) gated by council tier + PFI/ALMO/LATCo/audit-opinion flags. Each additional opportunity is verified as NOT in the council's existing programme.",
+  "context": {
+    "net_revenue_budget_m": 221.4,
+    "cipfa_classification": "Healthy",
+    "cipfa_composite_quartile": 1.3,
+    "audit_opinion": "UNQUALIFIED",
+    "lgr_status": "no LGR proposal",
+    "dsg_cumulative_deficit_m": 17.8
+  },
+  "mtfs_anchor": {
+    "savings_target_2026_27_m": 0,
+    "cumulative_savings_5yr_m": null,
+    "forecast_budget_gaps_m": {
+      "2025_26": 12.606,
+      "2026_27": 6.896,
+      "2027_28": 14.381,
+      "2028_29": 22.466
+    },
+    "savings_identified_to_2028_29_m": null,
+    "unidentified_gap_to_2028_29_m": null,
+    "balanced_budget_status": "",
+    "url": "https://barnsleymbc.moderngov.co.uk/documents/s132196/Medium%20Term%20Financial%20Strategy.pdf"
+  },
+  "existing_programme": [
+    {
+      "id": "audit_opinion_qualification",
+      "title": "Lift qualified audit opinion (Grant Thornton UK LLP)",
+      "rationale": "External auditor issued a qualified opinion on 2024/25 statements. Direct: PSAA scale fee normalisation. Indirect: lifting governance flag reduces borrowing-cost premium. Manual read of audit report needed to itemise qualification reason \u2014 once known, target single-cycle remediation.",
+      "estimated_savings_low_m": 0.1,
+      "estimated_savings_high_m": 0.5,
+      "savings_type": "one-off + recurring",
+      "delivery_horizon": "12 months",
+      "signal_strength": null,
+      "source": "AI DOGE strategic theme"
+    },
+    {
+      "id": "hnsg_reform_plan_delivery",
+      "title": "HNSG Reform Plan submission \u2014 secures \u00a316.0M DSG write-off (90% of \u00a317.8M)",
+      "rationale": "DSG cumulative high-needs deficit \u00a317.8M. Under the new High Needs Stability Grant (HNSG) announced 9 Feb 2026, government will write off 90% (~\u00a316.0M) of every council's DSG deficit at 31 March 2026 via Section 31 grant paid Autumn 2026 \u2014 CONDITIONAL on the council submitting an approved Local SEND Reform Plan to DfE by 19 June 2026. The \u00a31.8M residual remains on council books. Safety Valve programme closed 1 April 2026 and is folded into HNSG. Statutory override extended to 31 March 2028; gov has committed to absorb all DSG deficits from 1 April 2028 onwards. The savings range below covers (a) plan-submission cost avoidance + (b) residual 10% in-year demand management.",
+      "estimated_savings_low_m": 0.2,
+      "estimated_savings_high_m": 0.9,
+      "savings_type": "cost-avoidance (residual 10% management) + plan-conditional write-off",
+      "delivery_horizon": "19 June 2026 plan submission deadline; Autumn 2026 grant payment",
+      "signal_strength": null,
+      "source": "AI DOGE strategic theme"
+    },
+    {
+      "id": "workforce_agency_reduction",
+      "title": "Agency / locum staff demand reduction (\u00a349M concentrated)",
+      "rationale": "\u00a349M of agency-staff spend across 3 master vendors. Top: REED SPECIALIST RECRUITMENT LTD (\u00a345M), MATRIX SCM LTD (\u00a33M), DUTTON RECRUITMENT LTD (\u00a31M). Standard transformation: cap agency premium at 20% above substantive rate, workforce-plan permanent conversion (6-9 month payback), regional bank pool, open-book master-vendor margins. CIPFA experience: 8-15% reduction in 12-18 months.",
+      "estimated_savings_low_m": 3.9,
+      "estimated_savings_high_m": 7.3,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-18 months",
+      "signal_strength": null,
+      "source": "AI DOGE strategic theme"
+    },
+    {
+      "id": "energy_procurement_optimisation",
+      "title": "Energy procurement via CCS / LASER / NEPO frameworks (\u00a359M baseline)",
+      "rationale": "\u00a359M utility spend across 5 suppliers. Top: NPOWER LTD (\u00a324M), EDF ENERGY CUSTOMERS LTD (\u00a322M), CORONA ENERGY (\u00a37M), PANACEON HEALTHCARE LTD T/A (\u00a34M), TOTALENERGIES GAS & POWER LTD (\u00a31M). Crown Commercial RM6306 + LASER / NEPO consortium flex purchase typically saves 4-8% vs direct supplier contracts on a 3-yr horizon. Plus solar PV self-generation on council estate (7-9 yr payback) + DESNZ Public Sector Decarbonisation Scheme grants up to 100% capex on heat pump conversion.",
+      "estimated_savings_low_m": 2.9,
+      "estimated_savings_high_m": 7.0,
+      "savings_type": "recurring + capital grant",
+      "delivery_horizon": "12-36 months",
+      "signal_strength": null,
+      "source": "AI DOGE strategic theme"
+    },
+    {
+      "id": "treasury_borrowing_optimisation",
+      "title": "Treasury management + borrowing cost optimisation (CFR proxy \u00a3331M)",
+      "rationale": "Annual revenue \u00a3414M implies indicative CFR c. \u00a3331M. Standard levers: internal borrowing from earmarked reserves, PWLB Certainty Rate trade, MMF counterparty restructuring, LGPS Property Investment Pool inclusion. 10-30bp saving on external debt typical from a fresh review.",
+      "estimated_savings_low_m": 0.33,
+      "estimated_savings_high_m": 0.99,
+      "savings_type": "recurring",
+      "delivery_horizon": "6-12 months",
+      "signal_strength": null,
+      "source": "AI DOGE strategic theme"
+    },
+    {
+      "id": "lgps_employer_contribution",
+      "title": "LGPS employer contribution opportunity (2025 triennial valuation cycle)",
+      "rationale": "Indicative pay bill \u00a3166M \u00d7 c. 22% employer contribution rate = \u00a336M annual employer contribution. Most LGPS funds materially over-funded post-2022 (returns 2022-25 averaged 7-10% pa vs 3-4% discount-rate assumption). 2025 triennial valuation typically yields 2-4pp employer-rate reduction over 2026-2029. Confirm with administering authority + actuary.",
+      "estimated_savings_low_m": 1.8,
+      "estimated_savings_high_m": 5.5,
+      "savings_type": "recurring (3-yr triennial)",
+      "delivery_horizon": "settled at 2025 valuation; recurring 2026-2029",
+      "signal_strength": null,
+      "source": "AI DOGE strategic theme"
+    },
+    {
+      "id": "income_fees_charges_optimisation",
+      "title": "Fees, charges + traded-services income optimisation (\u00a341M base)",
+      "rationale": "Indicative fees & charges + traded-services income c. 10% of revenue = \u00a341M. Standard levers: annual CPI uplift discipline, full-cost-recovery audit on discretionary services (parking, planning, licensing, sports, adult learning, property hire), commercial pricing on traded services. LGA experience: 5-15% income uplift sustainable over 2-3 years.",
+      "estimated_savings_low_m": 2.1,
+      "estimated_savings_high_m": 6.2,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-24 months",
+      "signal_strength": null,
+      "source": "AI DOGE strategic theme"
+    },
+    {
+      "id": "insurance_retention_review",
+      "title": "Insurance retention + premium review (\u00a30.4M premium estimate)",
+      "rationale": "Indicative insurance premium \u00a30.4M (10bp of revenue). Standard 3-5 yr renewal cycle. Levers: tender via IPG / RM Partners (10-25% premium reduction typical), retention review (increase excess + build risk-fund reserve). London-borough cohort average 12% premium reduction at last tender.",
+      "estimated_savings_low_m": 0.04,
+      "estimated_savings_high_m": 0.1,
+      "savings_type": "recurring",
+      "delivery_horizon": "9-18 months",
+      "signal_strength": null,
+      "source": "AI DOGE strategic theme"
+    },
+    {
+      "id": "procurement_data_review",
+      "title": "Contracts Finder portfolio review (108 notices; 2 contracts at \u00a310M+ ceiling)",
+      "rationale": "Contracts Finder data: 108 notices (66 awarded, \u00a374M aggregate ADVERTISED CEILING value, 0% SME). IMPORTANT: advertised contract value is a CEILING set to avoid retender risk under PCR 2015 Reg.72 / Procurement Act 2023 s.31 \u2014 actual spend through the awardee is typically 30-70% of ceiling, with some off-contract ledger spend permitted within the 50%/50% modification limits. 2 contracts at \u00a310M+ ceiling totalling \u00a341M (ceiling, NOT spend) \u2014 top 3: Provision of a Local Energy Supply Offer (ceiling \u00a322M); Integrated Sexual Health Service (ceiling \u00a319M). Matched against ledger: Property and Asset Management Services - Alhambra  \u2014 ceiling \u00a30.5M, actual ledger spend with awardee \u00a30.6M; Barnsley Metropolitan Borough  Council GC13 webCAP \u2014 ceiling \u00a30.4M, actual ledger spend with awardee \u00a30.2M; Gamma Business Communications Ltd \u2014 ceiling \u00a30.0M, actual ledger spend with awardee \u00a30.4M. Aggregate identified actual spend \u00a32244M. SME-awarded share 0% is below the Procurement Reform 2023 / PPN 03/24 ambition (33% SME share by value). Standard procurement-data savings levers (% of ACTUAL ledger spend, not ceiling): (a) modification-history scrutiny under PCR 2015 Reg.72, (b) Procurement Act 2023 s.31 contract change notice review, (c) re-tender benchmark vs CCS framework rates on next renewal. 2-8% on actual spend through major contracts is a defensible upper bound.",
+      "estimated_savings_low_m": 44.9,
+      "estimated_savings_high_m": 179.5,
+      "savings_type": "recurring (post next contract renewal)",
+      "delivery_horizon": "12-36 months (contract-renewal cycle)",
+      "signal_strength": null,
+      "source": "AI DOGE strategic theme"
+    },
+    {
+      "id": "companies_house_compliance",
+      "title": "Companies House compliance follow-up (\u00a3123M flagged \u2014 1 overdue, 2 dissolved, 0 insolvency-history)",
+      "rationale": "Companies House lookup on top-50 suppliers identified \u00a3123M of spend with statutory-compliance flags: \u00a311M to suppliers with overdue accounts (1), \u00a3112M to dissolved-status companies (2), \u00a30M to companies with insolvency history (0). NOTE: Some matches are CH fuzzy-search false positives (e.g. school, government-body name collisions) and need human verification. After verification, real flags = (a) credit-risk review on overdue accounts, (b) contract-cleanup on dissolved entities (records still on ledger but supplier extinct \u2014 risk of duplicate-payment leakage), (c) PCR 2015 Reg.57 discretionary exclusion review on insolvency-history suppliers in active contracts.",
+      "estimated_savings_low_m": 0.6,
+      "estimated_savings_high_m": 2.5,
+      "savings_type": "one-off cleanup + recurring risk reduction",
+      "delivery_horizon": "6-12 months",
+      "signal_strength": null,
+      "source": "AI DOGE strategic theme"
+    },
+    {
+      "id": "duplicate_recovery",
+      "title": "Audit + recover \u00a3135M in flagged duplicate-payment patterns",
+      "rationale": "DOGE forensic flagged \u00a3135M across 20,899 groups of likely duplicates. Industry recovery norm 5-15% via duplicate-detection software (AP Forensics, FISCAL, Oracle Concur). Lloyds Bank Commercial Card analysis typical for spot-check sample of 100 highest-confidence matches.",
+      "estimated_savings_low_m": 6.8,
+      "estimated_savings_high_m": 20.3,
+      "savings_type": null,
+      "delivery_horizon": "12-18 months",
+      "signal_strength": null,
+      "source": "AI DOGE strategic theme"
+    },
+    {
+      "id": "split_payment_review",
+      "title": "Investigate \u00a3244M in flagged split-payment patterns",
+      "rationale": "DOGE flagged \u00a3244M across 0 split-payment instances. Split payments often indicate (a) below-procurement-threshold ledger fragmentation circumventing PCR 2015 Reg.4 contract-value-aggregation rule; or (b) legitimate sub-line invoice splits. Sample audit + reclassify; misuse triggers Reg. 99 challenge exposure.",
+      "estimated_savings_low_m": 4.9,
+      "estimated_savings_high_m": 19.5,
+      "savings_type": null,
+      "delivery_horizon": "9-12 months",
+      "signal_strength": null,
+      "source": "AI DOGE strategic theme"
+    }
+  ],
+  "additional_opportunities": [
+    {
+      "id": "asc_reablement_d2a",
+      "name": "ASC reablement + discharge-to-assess (home-first)",
+      "category": "adult_social_care",
+      "lever_description": "Reablement-at-home (6-8 wks) replacing residential discharge; integrated community teams with ICB; Discharge Fund pooled into BCF s.75. Baseline: 60.7% in community at 12 weeks (2024-25 national); Essex 87% at 91 days.",
+      "council_specific_rationale": "~0.5-2% of \u00a3221M net revenue budget via 20-30% reduction in residential placements",
+      "estimated_savings_low_m": 1.11,
+      "estimated_savings_high_m": 4.43,
+      "case_studies": [
+        {
+          "council": "Essex County Council",
+          "saved_m": 12,
+          "horizon": "if rolled out across all teams",
+          "url": "https://partners4change.co.uk/how-essex-county-council-is-changing-the-delivery-of-adult-social-care-support/",
+          "note": "Good Lives innovation sites \u2014 \u00a33-12m benefits across health+care system. 87% of 65+ still at home 91 days post-discharge."
+        },
+        {
+          "council": "Sefton + Mersey Care (ICRAS)",
+          "saved_m": null,
+          "horizon": "ongoing",
+          "url": "https://www.merseycare.nhs.uk/our-services/sefton/icras-community-intermediate-care-and-urgent-care",
+          "note": "Integrated Community Reablement and Assessment Service \u2014 multidisciplinary discharge-to-assess team."
+        }
+      ],
+      "council_dependencies": [],
+      "build_on_mtfs_principle": "NOT in current programme \u2014 additional to council's existing MTFS"
+    },
+    {
+      "id": "highways_preventative_maintenance",
+      "name": "Highways preventative vs reactive maintenance",
+      "category": "highways",
+      "lever_description": "Surface dressing + micro-asphalt \u00a33-8/m\u00b2 vs full resurfacing \u00a325-35/m\u00b2; pothole fill \u00a381.62-\u00a3106.52 avg (AIA ALARM 2025). Surface dressing extends life ~10 years, repeatable 3x. PAC 2025: planned 35% cheaper than reactive. Potholes Review: preventative 20x cheaper.",
+      "council_specific_rationale": "\u00a31-5M per council via shift to preventative \u2014 HMEP 2023 evidence",
+      "estimated_savings_low_m": 1.0,
+      "estimated_savings_high_m": 5.0,
+      "case_studies": [
+        {
+          "council": "National (PAC 2025)",
+          "saved_m": null,
+          "horizon": "2025",
+          "url": "https://researchbriefings.files.parliament.uk/documents/CBP-9975/CBP-9975.pdf",
+          "note": "PAC 2025: planned 35% cheaper. AIA 2025 ALARM: avg pothole fill \u00a381.62-\u00a3106.52."
+        }
+      ],
+      "council_dependencies": [],
+      "build_on_mtfs_principle": "NOT in current programme \u2014 additional to council's existing MTFS"
+    },
+    {
+      "id": "shared_services_back_office",
+      "name": "Shared services + tri-borough / regional pooling",
+      "category": "officer_overhead",
+      "lever_description": "Combine back-office (IT, HR, finance, R&B, procurement, internal audit) across 2+ authorities. s.113 LGA 1972 agreements. Range: tri-borough peak \u00a333.4m/yr; smaller back-office \u00a3600k-\u00a36m/yr.",
+      "council_specific_rationale": "~10-15% of back-office opex via shared services with neighbouring councils",
+      "estimated_savings_low_m": 1.11,
+      "estimated_savings_high_m": 3.32,
+      "case_studies": [
+        {
+          "council": "Westminster + K&C + H&F (tri-borough)",
+          "saved_m": 33.4,
+          "horizon": "FY 2014/15 peak",
+          "url": "https://en.wikipedia.org/wiki/Tri-borough_shared_services",
+          "note": "\u00a333.4m target by 14/15. Ended Mar 2017."
+        },
+        {
+          "council": "Teignbridge DC + 2 partners",
+          "saved_m": 6.0,
+          "horizon": "annual",
+          "url": "https://www.local.gov.uk/case-studies/procurement-and-contract-management-support",
+          "note": "Shared ICT \u2014 \u00a36m/yr net saving across three councils."
+        },
+        {
+          "council": "Leeds City Council",
+          "saved_m": 16.0,
+          "horizon": "via LGA Productivity Experts",
+          "url": "https://www.local.gov.uk/our-support/efficiency-and-income-generation/productivity-experts-programme",
+          "note": "Traded services + business management \u2014 \u00a316m delivered."
+        },
+        {
+          "council": "STAR Procurement (6 councils)",
+          "saved_m": 50.0,
+          "horizon": "cumulative since 2014",
+          "url": "https://www.star-procurement.gov.uk/",
+          "note": "\u00a350m + \u00a3230m social/economic/environmental benefits. Now 6 councils."
+        }
+      ],
+      "council_dependencies": [],
+      "build_on_mtfs_principle": "NOT in current programme \u2014 additional to council's existing MTFS"
+    },
+    {
+      "id": "property_strategy_workspace",
+      "name": "Property strategy + workspace / office rationalisation",
+      "category": "officer_overhead",
+      "lever_description": "Hybrid baseline (2-3 days office, EY template). Pre-2020 desk utilisation 47%. 30-50% floorspace cut, capital receipts on disposal.",
+      "council_specific_rationale": "~0.5-2% of \u00a3221M net revenue budget via estate rationalisation + hybrid working",
+      "estimated_savings_low_m": 1.11,
+      "estimated_savings_high_m": 4.43,
+      "case_studies": [
+        {
+          "council": "EY cross-sector survey",
+          "saved_m": null,
+          "horizon": "post-pandemic",
+          "url": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-uk/insights/workforce/documents/ey-hybrid-working.pdf",
+          "note": "Pre-2020 desks used 47% of time. >75% planning moderate-to-extensive portfolio changes."
+        },
+        {
+          "council": "Epsom & Ewell BC",
+          "saved_m": 1.6,
+          "horizon": "FY 16/17 + 17/18",
+          "url": "https://www.local.gov.uk/case-studies/income-generation-and-enterprise-plan-epsom-and-ewell-borough-council",
+          "note": "\u00a31.6m via property acquisitions + pest control charges + enhanced care + in-housing catering."
+        }
+      ],
+      "council_dependencies": [],
+      "build_on_mtfs_principle": "NOT in current programme \u2014 additional to council's existing MTFS"
+    },
+    {
+      "id": "pfi_clawback_renegotiation",
+      "name": "PFI contract renegotiation + handback preparation",
+      "category": "fiscal_credibility",
+      "lever_description": "700+ UK PFI contracts; bulk expire 2025+, peak 2035-37 at ~50/yr. IPA: plan from 7 yrs before. Performance deduction recovery, indexation pegging, asset-condition surveys are highest-yield levers.",
+      "council_specific_rationale": "5-15% of annual PFI unitary charge per contract \u2014 typical \u00a30.5-3M",
+      "estimated_savings_low_m": 0.5,
+      "estimated_savings_high_m": 3.0,
+      "case_studies": [
+        {
+          "council": "National (NAO + IPA)",
+          "saved_m": null,
+          "horizon": "next 15 yrs",
+          "url": "https://www.nao.org.uk/reports/managing-pfi-assets-and-services-as-contracts-end/",
+          "note": "Survey: third of authorities expect formal disputes at end."
+        }
+      ],
+      "council_dependencies": [],
+      "build_on_mtfs_principle": "NOT in current programme \u2014 additional to council's existing MTFS"
+    },
+    {
+      "id": "childrens_in_house_provider",
+      "name": "Children's residential care cost containment + in-house provider expansion",
+      "category": "service_quality",
+      "lever_description": "Spending on children's homes \u00a310.7bn\u2192\u00a314.6bn (2015/16\u21922023/24); \u00a397,326/yr avg per child. \u00a33.2bn on residential care 2024-25 (+151% real-terms). Levers: in-house foster expansion (\u00a3255-\u00a3428/wk vs residential \u00a36,100/wk avg); in-house residential; regional commissioning; sufficiency planning; block vs spot purchase.",
+      "council_specific_rationale": "\u00a30.5-3M per council via foster recruitment + Edge of Care",
+      "estimated_savings_low_m": 0.5,
+      "estimated_savings_high_m": 3.0,
+      "case_studies": [
+        {
+          "council": "LGA national analysis",
+          "saved_m": null,
+          "horizon": "2019/20 \u2192 2023/24",
+          "url": "https://www.local.gov.uk/about/news/childrens-social-care-placements-costing-ps10000-plus-rise-sharply-five-years-new-lga",
+          "note": "Avg spend per child in children's home \u00a3239,800\u2192\u00a3318,400/yr (\u00a34,600\u2192\u00a36,100/wk)."
+        }
+      ],
+      "council_dependencies": [],
+      "build_on_mtfs_principle": "NOT in current programme \u2014 additional to council's existing MTFS"
+    },
+    {
+      "id": "council_tax_fraud_nfi",
+      "name": "Council Tax SPD review + NFI fraud recovery",
+      "category": "fiscal_credibility",
+      "lever_description": "NFI annual SPD matching (Cabinet Office / PSFA) + biennial wider NFI; council-commissioned SPD reviews via Civica, NEC, Synectics, Capita using CRA cross-matching.",
+      "council_specific_rationale": "0.5-1.5% of ~\u00a3111M council tax base via NFI fraud matches",
+      "estimated_savings_low_m": 0.55,
+      "estimated_savings_high_m": 1.66,
+      "case_studies": [
+        {
+          "council": "National (NFI 2022-2024)",
+          "saved_m": 51.9,
+          "horizon": "2022-2024 biennium",
+          "url": "https://www.gov.uk/government/publications/national-fraud-initiative-reports/national-fraud-initiative-report-2022-2024-html",
+          "note": "\u00a351.9m fraudulent/wrongly received SPD identified."
+        },
+        {
+          "council": "Sector-wide SPD review market",
+          "saved_m": 20.0,
+          "horizon": "annual",
+          "url": "https://www.synectics-solutions.com/our-thinking/ctspd-service-incorrectly-claimed-council-tax-discounts",
+          "note": ">400k SPD caseloads reviewed/yr \u2192 >\u00a320m additional CTax income."
+        }
+      ],
+      "council_dependencies": [],
+      "build_on_mtfs_principle": "NOT in current programme \u2014 additional to council's existing MTFS"
+    },
+    {
+      "id": "waste_collection_frequency",
+      "name": "Waste & recycling: fortnightly residual + chargeable bulky",
+      "category": "environmental_services",
+      "lever_description": "Move residual waste weekly\u2192fortnightly with alternate recycling (fleet/driver/landfill savings); chargeable bulky at \u00a315-\u00a355/collection; garden waste subscription. Hillingdon cautionary: subs above \u00a370 cause sharp uptake drop.",
+      "council_specific_rationale": "Sandwell \u00a32.6M Y1 / Colchester \u00a31.5M garden waste \u2014 depends on existing collection model",
+      "estimated_savings_low_m": 0.6,
+      "estimated_savings_high_m": 3.0,
+      "case_studies": [
+        {
+          "council": "Sandwell Council",
+          "saved_m": 2.6,
+          "horizon": "Y1; \u00a34m subsequent",
+          "url": "https://www.expressandstar.com/news/local-hubs/sandwell/2024/10/16/sandwell-council-planning-move-to-fortnightly-bin-collections/",
+          "note": "Weekly\u2192fortnightly. ~35 staff out + 13 lorries off road. Within \u00a320m budget programme."
+        },
+        {
+          "council": "Colchester City Council",
+          "saved_m": 1.5,
+          "horizon": "first year",
+          "url": "https://www.gazette-news.co.uk/news/24059708.colchester-garden-waste-scheme-sees-1-5m-income-received/",
+          "note": "Garden waste \u2014 nearly \u00a31.5m income, double anticipated sign-ups."
+        }
+      ],
+      "council_dependencies": [],
+      "build_on_mtfs_principle": "NOT in current programme \u2014 additional to council's existing MTFS"
+    },
+    {
+      "id": "voluntary_redundancy",
+      "name": "Voluntary redundancy / workforce reduction programmes",
+      "category": "officer_overhead",
+      "lever_description": "VR + ER scheme \u2192 management restructure \u2192 CR if shortfall. One-off cost typically 1.5-1.8x annual recurring saving. Whole-council restructure (Somerset model) targets 25%+ headcount.",
+      "council_specific_rationale": "Worcestershire \u00a32.8M / Somerset \u00a334M precedent \u2014 scale ~0.5-2% of \u00a3221M budget",
+      "estimated_savings_low_m": 1.11,
+      "estimated_savings_high_m": 4.43,
+      "case_studies": [
+        {
+          "council": "Somerset Council",
+          "saved_m": 34.0,
+          "horizon": "by Apr 2025",
+          "url": "https://wells.nub.news/news/local-news/somerset-council-plans-450-job-cuts-to-address-ps98m-budget-shortfall-246942",
+          "note": "\u00a334m via workforce reduction (largest line in \u00a347m). 700+ posts going; 555 agreed for removal Feb 2025."
+        },
+        {
+          "council": "Worcestershire CC",
+          "saved_m": 2.8,
+          "horizon": "VR Nov-Dec 2023",
+          "url": "https://worcestershire.moderngov.co.uk/mgAi.aspx?ID=27817",
+          "note": "192 applications, 86 approved \u2192 ~\u00a32.8m savings."
+        },
+        {
+          "council": "Lancashire CC (Reform admin)",
+          "saved_m": null,
+          "horizon": "2026 budget",
+          "url": "https://www.lep.co.uk/news/politics/reform-uk-sets-first-lancashire-county-council-budget-all-you-need-to-know-including-council-tax-rates-5615092",
+          "note": "\u00a311m provision for redundancy ~= 400 jobs. Forecast overspend \u00a328m\u2192\u00a36m for 25/26."
+        }
+      ],
+      "council_dependencies": [],
+      "build_on_mtfs_principle": "NOT in current programme \u2014 additional to council's existing MTFS"
+    },
+    {
+      "id": "subsidiary_open_book",
+      "name": "Council-owned subsidiary transparency + dividend repatriation",
+      "category": "accountability_exposure",
+      "lever_description": "Shareholder direction requiring full accounts (no FRS 102 s33.1A exemption), quarterly performance reports to Audit Committee. Dividend repatriation. Service contract benchmarking. Localism Act 2011 general power of competence \u2192 trade.",
+      "council_specific_rationale": "5-15% of subsidiary turnover recoverable via shareholder direction",
+      "estimated_savings_low_m": 1.0,
+      "estimated_savings_high_m": 5.0,
+      "case_studies": [
+        {
+          "council": "Epsom & Ewell BC",
+          "saved_m": 1.6,
+          "horizon": "FY 16/17 + 17/18",
+          "url": "https://www.local.gov.uk/case-studies/income-generation-and-enterprise-plan-epsom-and-ewell-borough-council",
+          "note": "\u00a31.6m via property acquisitions + pest control + enhanced care + in-housing catering."
+        }
+      ],
+      "council_dependencies": [],
+      "build_on_mtfs_principle": "NOT in current programme \u2014 additional to council's existing MTFS"
+    },
+    {
+      "id": "asc_strength_based",
+      "name": "ASC: strength-based packaging + tech-enabled care",
+      "category": "service_quality",
+      "lever_description": "Reduce traditional homecare reliance via (a) strength-based reassessment still meeting assessed needs; (b) equipment + tech-enabled care; (c) maximising third-sector / community offer; (d) transition planning children's\u2192adults' (avoid over-stepping).",
+      "council_specific_rationale": "Birmingham \u00a35.7-10.2M precedent \u2014 scale ~0.3-1.5% of \u00a3221M budget",
+      "estimated_savings_low_m": 0.66,
+      "estimated_savings_high_m": 3.32,
+      "case_studies": [
+        {
+          "council": "Birmingham CC",
+          "saved_m": 15.9,
+          "horizon": "2024-25 + 2025-26 combined",
+          "url": "https://www.communitycare.co.uk/2024/02/28/review-of-social-work-teams-among-370m-in-savings-plans-set-out-by-birmingham/",
+          "note": "\u00a35.7m + \u00a310.2m strength-based reviews. Largest ASC line. Response to s.114 notice."
+        }
+      ],
+      "council_dependencies": [],
+      "build_on_mtfs_principle": "NOT in current programme \u2014 additional to council's existing MTFS"
+    },
+    {
+      "id": "edi_consultancy_cuts",
+      "name": "EDI / consultancy / officer overhead cuts (Reform pattern)",
+      "category": "political_class_cuts",
+      "lever_description": "Politically symbolic but mathematically modest. openDemocracy FOI: 10 Reform councils have 4.56 FTE EDI combined \u2192 \u00a3228k/yr if scrapped (<0.003% of combined budgets). Material lever is consultancy spend not EDI. Legal floor: PSED (Equality Act 2010 s.149) + EqIAs before service cuts; failure to consult = JR risk.",
+      "council_specific_rationale": "~\u00a30.2-1.1M typical for councils of this size (Reform-cohort precedent)",
+      "estimated_savings_low_m": 0.22,
+      "estimated_savings_high_m": 1.11,
+      "case_studies": [
+        {
+          "council": "10 Reform councils (combined)",
+          "saved_m": 0.228,
+          "horizon": "annual if all scrapped",
+          "url": "https://www.opendemocracy.net/reform-farage-potholes-elections-council-tax-first-year-power/",
+          "note": "4.56 FTE EDI roles total \u2014 \u00a3228k/yr or <0.003% of combined budgets. Four of 10 had zero EDI officers BEFORE Reform took control."
+        }
+      ],
+      "council_dependencies": [],
+      "build_on_mtfs_principle": "NOT in current programme \u2014 additional to council's existing MTFS"
+    },
+    {
+      "id": "net_zero_scheme_review",
+      "name": "Capital programme review \u2014 net-zero / decarbonisation reprofiling",
+      "category": "fiscal_credibility",
+      "lever_description": "Reform-pattern: pause/cancel decarbonisation capex not yet contractually committed. Reduce MRP via delayed scheme implementation. CAVEAT: most claimed savings are TIMING-SHIFTED (postponed not eliminated) or apply only to schemes 'not currently contractually committed'.",
+      "council_specific_rationale": "Durham CC \u00a325M precedent \u2014 capex pause/cancel. Most savings timing-shifted not eliminated.",
+      "estimated_savings_low_m": 1.0,
+      "estimated_savings_high_m": 10.0,
+      "case_studies": [
+        {
+          "council": "Durham CC",
+          "saved_m": 25.0,
+          "horizon": "on solar/EV/heat-pump",
+          "url": "https://environmentjournal.online/headlines/death-by-1000-cuts-reform-uk-net-zero/",
+          "note": "EV upgrade + heat pump installs cancelled. Solar investment reduced. Claimed \u00a325m."
+        },
+        {
+          "council": "Durham CC",
+          "saved_m": 20.0,
+          "horizon": "first 100 days",
+          "url": "https://www.durham.gov.uk/media/48148/Durham-County-Council-Plan-2025-2030/pdf/CouncilPlan2025To2030.pdf",
+          "note": "\u00a320m freed for frontline priorities via review of net-zero + capital schemes."
+        }
+      ],
+      "council_dependencies": [],
+      "build_on_mtfs_principle": "NOT in current programme \u2014 additional to council's existing MTFS"
+    },
+    {
+      "id": "lga_productivity_experts",
+      "name": "LGA Productivity Experts deployment",
+      "category": "transformation_programme",
+      "lever_description": "LGA-funded specialist productivity + commercial experts to councils for diagnostic + delivery.",
+      "council_specific_rationale": "LGA Productivity Experts: \u00a3100K-\u00a316M per engagement; Allerdale \u00a32.3M / Leeds \u00a316M",
+      "estimated_savings_low_m": 0.5,
+      "estimated_savings_high_m": 5.0,
+      "case_studies": [
+        {
+          "council": "Cross-programme",
+          "saved_m": 42.0,
+          "horizon": "cumulative through 2024",
+          "url": "https://www.local.gov.uk/our-support/efficiency-and-income-generation/productivity-experts-programme",
+          "note": ">\u00a342m efficiency + ~\u00a310m income across all Productivity Experts engagements."
+        }
+      ],
+      "council_dependencies": [],
+      "build_on_mtfs_principle": "NOT in current programme \u2014 additional to council's existing MTFS"
+    }
+  ],
+  "net_uplift": {
+    "existing_programme_low_m": 68.6,
+    "existing_programme_high_m": 250.3,
+    "additional_opportunities_low_m": 11.0,
+    "additional_opportunities_high_m": 56.7,
+    "total_savings_envelope_low_m": 79.5,
+    "total_savings_envelope_high_m": 307.0,
+    "mtfs_target_2026_27_m": 0,
+    "build_on_mtfs_principle": "All additional opportunities are NET NEW vs the council's MTFS programme. They do not double-count or replace existing savings \u2014 they extend the savings envelope into themes the council has not yet booked."
+  }
+}

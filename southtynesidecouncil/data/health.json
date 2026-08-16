@@ -1,0 +1,632 @@
+{
+  "meta": {
+    "source": "Fingertips API (OHID) + Census 2021 via Nomis",
+    "council_id": "south_tyneside",
+    "council_name": "South Tyneside",
+    "ons_code": "E08000023",
+    "census_date": "2021-03-21",
+    "generated": "2026-06-28T16:55:20"
+  },
+  "indicators": {
+    "life_expectancy_male": {
+      "value": 77.5,
+      "unit": "years",
+      "period": "2025",
+      "label": "Life expectancy at birth (male)",
+      "ci_lower": 76.4,
+      "ci_upper": 78.6,
+      "trend": "Cannot be calculated",
+      "compared_to_england": "Worse",
+      "england_value": 80.0,
+      "nw_value": 78.4
+    },
+    "life_expectancy_female": {
+      "value": 82.0,
+      "unit": "years",
+      "period": "2025",
+      "label": "Life expectancy at birth (female)",
+      "ci_lower": 81.1,
+      "ci_upper": 83.0,
+      "trend": "Cannot be calculated",
+      "compared_to_england": "Worse",
+      "england_value": 83.8,
+      "nw_value": 82.3
+    },
+    "smoking_prevalence": {
+      "value": 14.9,
+      "unit": "pct",
+      "period": "2024",
+      "label": "Smoking prevalence (18+)",
+      "ci_lower": 11.7,
+      "ci_upper": 18.1,
+      "compared_to_england": "Worse",
+      "england_value": 10.4,
+      "nw_value": 10.2
+    },
+    "obesity_prevalence": {
+      "value": 74.4,
+      "unit": "pct",
+      "period": "2024/25",
+      "label": "Overweight/obese adults",
+      "ci_lower": 71.2,
+      "ci_upper": 77.5,
+      "trend": "Cannot be calculated",
+      "compared_to_england": "Worse",
+      "england_value": 64.6,
+      "nw_value": 70.3
+    },
+    "drug_misuse_deaths": {
+      "value": 11.0,
+      "unit": "per 100,000",
+      "period": "2022 - 24",
+      "label": "Deaths from drug misuse",
+      "ci_lower": 8.1,
+      "ci_upper": 14.7,
+      "count": 47,
+      "trend": "Cannot be calculated",
+      "compared_to_england": "Worse",
+      "england_value": 5.8,
+      "nw_value": 9.9
+    },
+    "infant_mortality": {
+      "value": 5.6,
+      "unit": "per 1,000",
+      "period": "2022 - 24",
+      "label": "Infant mortality rate",
+      "ci_lower": 3.6,
+      "ci_upper": 8.5,
+      "count": 23,
+      "trend": "Cannot be calculated",
+      "compared_to_england": "Similar",
+      "england_value": 4.2,
+      "nw_value": 4.4
+    },
+    "cvd_mortality_u75": {
+      "value": 96.5,
+      "unit": "per 100,000",
+      "period": "2025",
+      "label": "Under 75 CVD mortality",
+      "ci_lower": 81.1,
+      "ci_upper": 114.0,
+      "count": 140,
+      "compared_to_england": "Worse",
+      "england_value": 71.5,
+      "nw_value": 82.5
+    },
+    "cancer_mortality_u75": {
+      "value": 136.8,
+      "unit": "per 100,000",
+      "period": "2025",
+      "label": "Under 75 cancer mortality",
+      "ci_lower": 118.4,
+      "ci_upper": 157.2,
+      "count": 201,
+      "compared_to_england": "Worse",
+      "england_value": 114.6,
+      "nw_value": 128.4
+    },
+    "respiratory_mortality_u75": {
+      "value": 43.7,
+      "unit": "per 100,000",
+      "period": "2025",
+      "label": "Under 75 respiratory mortality",
+      "ci_lower": 33.7,
+      "ci_upper": 55.8,
+      "count": 65,
+      "trend": "No significant change",
+      "compared_to_england": "Worse",
+      "england_value": 31.5,
+      "nw_value": 39.9
+    },
+    "suicide_rate": {
+      "value": 8.7,
+      "unit": "per 100,000",
+      "period": "2022 - 24",
+      "label": "Suicide rate",
+      "ci_lower": 6.0,
+      "ci_upper": 12.1,
+      "count": 35,
+      "trend": "Cannot be calculated",
+      "compared_to_england": "Similar",
+      "england_value": 10.9,
+      "nw_value": 14.1
+    },
+    "alcohol_mortality": {
+      "value": 64.2,
+      "unit": "per 100,000",
+      "period": "2024",
+      "label": "Alcohol-related mortality",
+      "ci_lower": 52.1,
+      "ci_upper": 78.4,
+      "count": 98,
+      "trend": "No significant change",
+      "compared_to_england": "Worse",
+      "england_value": 38.9,
+      "nw_value": 50.8
+    },
+    "self_harm_admissions": {
+      "value": 261.9,
+      "unit": "per 100,000",
+      "period": "2023/24",
+      "label": "Self-harm hospital admissions",
+      "ci_lower": 236.0,
+      "ci_upper": 289.9,
+      "count": 375,
+      "trend": "Decreasing and getting better",
+      "compared_to_england": "Worse",
+      "england_value": 117.0,
+      "nw_value": 191.3
+    }
+  },
+  "census": {
+    "council_totals": {
+      "general_health": {
+        "Very good health": 64656,
+        "Good health": 48869,
+        "Fair health": 22930,
+        "Bad health": 8709,
+        "Very bad health": 2614
+      },
+      "disability": {
+        "Disabled under the Equality Act: Day-to-day activities limited a lot": 16032,
+        "Disabled under the Equality Act: Day-to-day activities limited a little": 17336,
+        "Not disabled under the Equality Act: Has long term physical or mental health condition but day-to-day activities are not limited": 9848,
+        "Not disabled under the Equality Act: No long term physical or mental health conditions": 104561
+      },
+      "unpaid_care": {
+        "Provides no unpaid care": 125073,
+        "Provides 9 hours or less unpaid care a week": 4218,
+        "Provides 10 to 19 hours unpaid care a week": 2101,
+        "Provides 20 to 34 hours unpaid care a week": 1502,
+        "Provides 35 to 49 hours unpaid care a week": 2012,
+        "Provides 50 or more hours unpaid care a week": 5049
+      }
+    },
+    "wards": {
+      "E05001135": {
+        "name": "Beacon and Bents",
+        "general_health": {
+          "Very good health": 3746,
+          "Good health": 2929,
+          "Fair health": 1436,
+          "Bad health": 529,
+          "Very bad health": 157
+        },
+        "disability": {
+          "Disabled under the Equality Act: Day-to-day activities limited a lot": 962,
+          "Disabled under the Equality Act: Day-to-day activities limited a little": 1008,
+          "Not disabled under the Equality Act: Has long term physical or mental health condition but day-to-day activities are not limited": 461,
+          "Not disabled under the Equality Act: No long term physical or mental health conditions": 6365
+        },
+        "unpaid_care": {
+          "Provides no unpaid care": 7612,
+          "Provides 9 hours or less unpaid care a week": 215,
+          "Provides 10 to 19 hours unpaid care a week": 124,
+          "Provides 20 to 34 hours unpaid care a week": 86,
+          "Provides 35 to 49 hours unpaid care a week": 113,
+          "Provides 50 or more hours unpaid care a week": 226
+        }
+      },
+      "E05001136": {
+        "name": "Bede (South Tyneside)",
+        "general_health": {
+          "Very good health": 3174,
+          "Good health": 2440,
+          "Fair health": 1229,
+          "Bad health": 511,
+          "Very bad health": 172
+        },
+        "disability": {
+          "Disabled under the Equality Act: Day-to-day activities limited a lot": 920,
+          "Disabled under the Equality Act: Day-to-day activities limited a little": 913,
+          "Not disabled under the Equality Act: Has long term physical or mental health condition but day-to-day activities are not limited": 448,
+          "Not disabled under the Equality Act: No long term physical or mental health conditions": 5245
+        },
+        "unpaid_care": {
+          "Provides no unpaid care": 6245,
+          "Provides 9 hours or less unpaid care a week": 185,
+          "Provides 10 to 19 hours unpaid care a week": 122,
+          "Provides 20 to 34 hours unpaid care a week": 75,
+          "Provides 35 to 49 hours unpaid care a week": 131,
+          "Provides 50 or more hours unpaid care a week": 306
+        }
+      },
+      "E05001137": {
+        "name": "Biddick and All Saints",
+        "general_health": {
+          "Very good health": 3899,
+          "Good health": 2818,
+          "Fair health": 1459,
+          "Bad health": 657,
+          "Very bad health": 191
+        },
+        "disability": {
+          "Disabled under the Equality Act: Day-to-day activities limited a lot": 1102,
+          "Disabled under the Equality Act: Day-to-day activities limited a little": 1073,
+          "Not disabled under the Equality Act: Has long term physical or mental health condition but day-to-day activities are not limited": 537,
+          "Not disabled under the Equality Act: No long term physical or mental health conditions": 6312
+        },
+        "unpaid_care": {
+          "Provides no unpaid care": 7397,
+          "Provides 9 hours or less unpaid care a week": 193,
+          "Provides 10 to 19 hours unpaid care a week": 117,
+          "Provides 20 to 34 hours unpaid care a week": 103,
+          "Provides 35 to 49 hours unpaid care a week": 159,
+          "Provides 50 or more hours unpaid care a week": 333
+        }
+      },
+      "E05001138": {
+        "name": "Boldon Colliery",
+        "general_health": {
+          "Very good health": 4170,
+          "Good health": 2920,
+          "Fair health": 1341,
+          "Bad health": 517,
+          "Very bad health": 142
+        },
+        "disability": {
+          "Disabled under the Equality Act: Day-to-day activities limited a lot": 928,
+          "Disabled under the Equality Act: Day-to-day activities limited a little": 994,
+          "Not disabled under the Equality Act: Has long term physical or mental health condition but day-to-day activities are not limited": 562,
+          "Not disabled under the Equality Act: No long term physical or mental health conditions": 6606
+        },
+        "unpaid_care": {
+          "Provides no unpaid care": 7684,
+          "Provides 9 hours or less unpaid care a week": 266,
+          "Provides 10 to 19 hours unpaid care a week": 118,
+          "Provides 20 to 34 hours unpaid care a week": 80,
+          "Provides 35 to 49 hours unpaid care a week": 129,
+          "Provides 50 or more hours unpaid care a week": 322
+        }
+      },
+      "E05001139": {
+        "name": "Cleadon and East Boldon",
+        "general_health": {
+          "Very good health": 4376,
+          "Good health": 2748,
+          "Fair health": 966,
+          "Bad health": 219,
+          "Very bad health": 68
+        },
+        "disability": {
+          "Disabled under the Equality Act: Day-to-day activities limited a lot": 485,
+          "Disabled under the Equality Act: Day-to-day activities limited a little": 853,
+          "Not disabled under the Equality Act: Has long term physical or mental health condition but day-to-day activities are not limited": 708,
+          "Not disabled under the Equality Act: No long term physical or mental health conditions": 6328
+        },
+        "unpaid_care": {
+          "Provides no unpaid care": 7118,
+          "Provides 9 hours or less unpaid care a week": 421,
+          "Provides 10 to 19 hours unpaid care a week": 154,
+          "Provides 20 to 34 hours unpaid care a week": 81,
+          "Provides 35 to 49 hours unpaid care a week": 65,
+          "Provides 50 or more hours unpaid care a week": 201
+        }
+      },
+      "E05001140": {
+        "name": "Cleadon Park",
+        "general_health": {
+          "Very good health": 3283,
+          "Good health": 2486,
+          "Fair health": 1203,
+          "Bad health": 477,
+          "Very bad health": 168
+        },
+        "disability": {
+          "Disabled under the Equality Act: Day-to-day activities limited a lot": 870,
+          "Disabled under the Equality Act: Day-to-day activities limited a little": 879,
+          "Not disabled under the Equality Act: Has long term physical or mental health condition but day-to-day activities are not limited": 517,
+          "Not disabled under the Equality Act: No long term physical or mental health conditions": 5346
+        },
+        "unpaid_care": {
+          "Provides no unpaid care": 6407,
+          "Provides 9 hours or less unpaid care a week": 184,
+          "Provides 10 to 19 hours unpaid care a week": 96,
+          "Provides 20 to 34 hours unpaid care a week": 89,
+          "Provides 35 to 49 hours unpaid care a week": 120,
+          "Provides 50 or more hours unpaid care a week": 290
+        }
+      },
+      "E05001141": {
+        "name": "Fellgate and Hedworth",
+        "general_health": {
+          "Very good health": 3060,
+          "Good health": 2551,
+          "Fair health": 1173,
+          "Bad health": 430,
+          "Very bad health": 127
+        },
+        "disability": {
+          "Disabled under the Equality Act: Day-to-day activities limited a lot": 790,
+          "Disabled under the Equality Act: Day-to-day activities limited a little": 925,
+          "Not disabled under the Equality Act: Has long term physical or mental health condition but day-to-day activities are not limited": 527,
+          "Not disabled under the Equality Act: No long term physical or mental health conditions": 5099
+        },
+        "unpaid_care": {
+          "Provides no unpaid care": 6286,
+          "Provides 9 hours or less unpaid care a week": 194,
+          "Provides 10 to 19 hours unpaid care a week": 99,
+          "Provides 20 to 34 hours unpaid care a week": 107,
+          "Provides 35 to 49 hours unpaid care a week": 109,
+          "Provides 50 or more hours unpaid care a week": 249
+        }
+      },
+      "E05001142": {
+        "name": "Harton",
+        "general_health": {
+          "Very good health": 3598,
+          "Good health": 2723,
+          "Fair health": 1252,
+          "Bad health": 488,
+          "Very bad health": 126
+        },
+        "disability": {
+          "Disabled under the Equality Act: Day-to-day activities limited a lot": 867,
+          "Disabled under the Equality Act: Day-to-day activities limited a little": 1019,
+          "Not disabled under the Equality Act: Has long term physical or mental health condition but day-to-day activities are not limited": 581,
+          "Not disabled under the Equality Act: No long term physical or mental health conditions": 5720
+        },
+        "unpaid_care": {
+          "Provides no unpaid care": 6888,
+          "Provides 9 hours or less unpaid care a week": 261,
+          "Provides 10 to 19 hours unpaid care a week": 132,
+          "Provides 20 to 34 hours unpaid care a week": 86,
+          "Provides 35 to 49 hours unpaid care a week": 124,
+          "Provides 50 or more hours unpaid care a week": 321
+        }
+      },
+      "E05001143": {
+        "name": "Hebburn North",
+        "general_health": {
+          "Very good health": 4310,
+          "Good health": 3128,
+          "Fair health": 1390,
+          "Bad health": 487,
+          "Very bad health": 149
+        },
+        "disability": {
+          "Disabled under the Equality Act: Day-to-day activities limited a lot": 919,
+          "Disabled under the Equality Act: Day-to-day activities limited a little": 1095,
+          "Not disabled under the Equality Act: Has long term physical or mental health condition but day-to-day activities are not limited": 604,
+          "Not disabled under the Equality Act: No long term physical or mental health conditions": 6846
+        },
+        "unpaid_care": {
+          "Provides no unpaid care": 8051,
+          "Provides 9 hours or less unpaid care a week": 249,
+          "Provides 10 to 19 hours unpaid care a week": 115,
+          "Provides 20 to 34 hours unpaid care a week": 105,
+          "Provides 35 to 49 hours unpaid care a week": 120,
+          "Provides 50 or more hours unpaid care a week": 265
+        }
+      },
+      "E05001144": {
+        "name": "Hebburn South",
+        "general_health": {
+          "Very good health": 4393,
+          "Good health": 3097,
+          "Fair health": 1314,
+          "Bad health": 488,
+          "Very bad health": 161
+        },
+        "disability": {
+          "Disabled under the Equality Act: Day-to-day activities limited a lot": 905,
+          "Disabled under the Equality Act: Day-to-day activities limited a little": 999,
+          "Not disabled under the Equality Act: Has long term physical or mental health condition but day-to-day activities are not limited": 613,
+          "Not disabled under the Equality Act: No long term physical or mental health conditions": 6935
+        },
+        "unpaid_care": {
+          "Provides no unpaid care": 7972,
+          "Provides 9 hours or less unpaid care a week": 249,
+          "Provides 10 to 19 hours unpaid care a week": 111,
+          "Provides 20 to 34 hours unpaid care a week": 82,
+          "Provides 35 to 49 hours unpaid care a week": 122,
+          "Provides 50 or more hours unpaid care a week": 294
+        }
+      },
+      "E05001145": {
+        "name": "Horsley Hill",
+        "general_health": {
+          "Very good health": 3776,
+          "Good health": 2997,
+          "Fair health": 1248,
+          "Bad health": 439,
+          "Very bad health": 134
+        },
+        "disability": {
+          "Disabled under the Equality Act: Day-to-day activities limited a lot": 910,
+          "Disabled under the Equality Act: Day-to-day activities limited a little": 1019,
+          "Not disabled under the Equality Act: Has long term physical or mental health condition but day-to-day activities are not limited": 600,
+          "Not disabled under the Equality Act: No long term physical or mental health conditions": 6065
+        },
+        "unpaid_care": {
+          "Provides no unpaid care": 7256,
+          "Provides 9 hours or less unpaid care a week": 252,
+          "Provides 10 to 19 hours unpaid care a week": 129,
+          "Provides 20 to 34 hours unpaid care a week": 73,
+          "Provides 35 to 49 hours unpaid care a week": 106,
+          "Provides 50 or more hours unpaid care a week": 338
+        }
+      },
+      "E05001146": {
+        "name": "Monkton",
+        "general_health": {
+          "Very good health": 3476,
+          "Good health": 2858,
+          "Fair health": 1426,
+          "Bad health": 515,
+          "Very bad health": 135
+        },
+        "disability": {
+          "Disabled under the Equality Act: Day-to-day activities limited a lot": 992,
+          "Disabled under the Equality Act: Day-to-day activities limited a little": 1026,
+          "Not disabled under the Equality Act: Has long term physical or mental health condition but day-to-day activities are not limited": 582,
+          "Not disabled under the Equality Act: No long term physical or mental health conditions": 5810
+        },
+        "unpaid_care": {
+          "Provides no unpaid care": 7169,
+          "Provides 9 hours or less unpaid care a week": 232,
+          "Provides 10 to 19 hours unpaid care a week": 122,
+          "Provides 20 to 34 hours unpaid care a week": 64,
+          "Provides 35 to 49 hours unpaid care a week": 102,
+          "Provides 50 or more hours unpaid care a week": 295
+        }
+      },
+      "E05001147": {
+        "name": "Primrose (South Tyneside)",
+        "general_health": {
+          "Very good health": 3074,
+          "Good health": 2544,
+          "Fair health": 1348,
+          "Bad health": 597,
+          "Very bad health": 157
+        },
+        "disability": {
+          "Disabled under the Equality Act: Day-to-day activities limited a lot": 1057,
+          "Disabled under the Equality Act: Day-to-day activities limited a little": 967,
+          "Not disabled under the Equality Act: Has long term physical or mental health condition but day-to-day activities are not limited": 523,
+          "Not disabled under the Equality Act: No long term physical or mental health conditions": 5173
+        },
+        "unpaid_care": {
+          "Provides no unpaid care": 6492,
+          "Provides 9 hours or less unpaid care a week": 198,
+          "Provides 10 to 19 hours unpaid care a week": 112,
+          "Provides 20 to 34 hours unpaid care a week": 89,
+          "Provides 35 to 49 hours unpaid care a week": 121,
+          "Provides 50 or more hours unpaid care a week": 296
+        }
+      },
+      "E05001148": {
+        "name": "Simonside and Rekendyke",
+        "general_health": {
+          "Very good health": 3472,
+          "Good health": 2813,
+          "Fair health": 1496,
+          "Bad health": 679,
+          "Very bad health": 209
+        },
+        "disability": {
+          "Disabled under the Equality Act: Day-to-day activities limited a lot": 1160,
+          "Disabled under the Equality Act: Day-to-day activities limited a little": 1110,
+          "Not disabled under the Equality Act: Has long term physical or mental health condition but day-to-day activities are not limited": 526,
+          "Not disabled under the Equality Act: No long term physical or mental health conditions": 5873
+        },
+        "unpaid_care": {
+          "Provides no unpaid care": 7318,
+          "Provides 9 hours or less unpaid care a week": 214,
+          "Provides 10 to 19 hours unpaid care a week": 134,
+          "Provides 20 to 34 hours unpaid care a week": 81,
+          "Provides 35 to 49 hours unpaid care a week": 107,
+          "Provides 50 or more hours unpaid care a week": 298
+        }
+      },
+      "E05001149": {
+        "name": "Westoe",
+        "general_health": {
+          "Very good health": 3537,
+          "Good health": 2621,
+          "Fair health": 1195,
+          "Bad health": 375,
+          "Very bad health": 113
+        },
+        "disability": {
+          "Disabled under the Equality Act: Day-to-day activities limited a lot": 695,
+          "Disabled under the Equality Act: Day-to-day activities limited a little": 885,
+          "Not disabled under the Equality Act: Has long term physical or mental health condition but day-to-day activities are not limited": 582,
+          "Not disabled under the Equality Act: No long term physical or mental health conditions": 5679
+        },
+        "unpaid_care": {
+          "Provides no unpaid care": 6805,
+          "Provides 9 hours or less unpaid care a week": 259,
+          "Provides 10 to 19 hours unpaid care a week": 112,
+          "Provides 20 to 34 hours unpaid care a week": 69,
+          "Provides 35 to 49 hours unpaid care a week": 102,
+          "Provides 50 or more hours unpaid care a week": 206
+        }
+      },
+      "E05001150": {
+        "name": "West Park (South Tyneside)",
+        "general_health": {
+          "Very good health": 2801,
+          "Good health": 2277,
+          "Fair health": 1041,
+          "Bad health": 416,
+          "Very bad health": 103
+        },
+        "disability": {
+          "Disabled under the Equality Act: Day-to-day activities limited a lot": 706,
+          "Disabled under the Equality Act: Day-to-day activities limited a little": 771,
+          "Not disabled under the Equality Act: Has long term physical or mental health condition but day-to-day activities are not limited": 485,
+          "Not disabled under the Equality Act: No long term physical or mental health conditions": 4676
+        },
+        "unpaid_care": {
+          "Provides no unpaid care": 5720,
+          "Provides 9 hours or less unpaid care a week": 204,
+          "Provides 10 to 19 hours unpaid care a week": 83,
+          "Provides 20 to 34 hours unpaid care a week": 59,
+          "Provides 35 to 49 hours unpaid care a week": 76,
+          "Provides 50 or more hours unpaid care a week": 166
+        }
+      },
+      "E05001151": {
+        "name": "Whitburn and Marsden",
+        "general_health": {
+          "Very good health": 3201,
+          "Good health": 2371,
+          "Fair health": 1101,
+          "Bad health": 369,
+          "Very bad health": 127
+        },
+        "disability": {
+          "Disabled under the Equality Act: Day-to-day activities limited a lot": 764,
+          "Disabled under the Equality Act: Day-to-day activities limited a little": 852,
+          "Not disabled under the Equality Act: Has long term physical or mental health condition but day-to-day activities are not limited": 485,
+          "Not disabled under the Equality Act: No long term physical or mental health conditions": 5069
+        },
+        "unpaid_care": {
+          "Provides no unpaid care": 6081,
+          "Provides 9 hours or less unpaid care a week": 234,
+          "Provides 10 to 19 hours unpaid care a week": 118,
+          "Provides 20 to 34 hours unpaid care a week": 70,
+          "Provides 35 to 49 hours unpaid care a week": 99,
+          "Provides 50 or more hours unpaid care a week": 281
+        }
+      },
+      "E05001152": {
+        "name": "Whiteleas",
+        "general_health": {
+          "Very good health": 3310,
+          "Good health": 2548,
+          "Fair health": 1313,
+          "Bad health": 515,
+          "Very bad health": 179
+        },
+        "disability": {
+          "Disabled under the Equality Act: Day-to-day activities limited a lot": 997,
+          "Disabled under the Equality Act: Day-to-day activities limited a little": 947,
+          "Not disabled under the Equality Act: Has long term physical or mental health condition but day-to-day activities are not limited": 507,
+          "Not disabled under the Equality Act: No long term physical or mental health conditions": 5414
+        },
+        "unpaid_care": {
+          "Provides no unpaid care": 6572,
+          "Provides 9 hours or less unpaid care a week": 205,
+          "Provides 10 to 19 hours unpaid care a week": 102,
+          "Provides 20 to 34 hours unpaid care a week": 104,
+          "Provides 35 to 49 hours unpaid care a week": 109,
+          "Provides 50 or more hours unpaid care a week": 363
+        }
+      }
+    }
+  },
+  "summary": {
+    "life_expectancy_male": 77.5,
+    "life_expectancy_female": 82.0,
+    "smoking_prevalence": 14.9,
+    "obesity_prevalence": 74.4,
+    "suicide_rate": 8.7,
+    "drug_misuse_deaths": 11.0,
+    "good_health_pct": 76.8,
+    "bad_health_pct": 7.7,
+    "disability_pct": 22.6,
+    "unpaid_carers_pct": 10.6
+  }
+}

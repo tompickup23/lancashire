@@ -1,0 +1,309 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aidoge.co.uk/schemas/doge_knowledge.schema.json",
+  "title": "AI DOGE Council Knowledge \u2014 v4.0",
+  "description": "Per-council knowledge file. Hand-authored narrative blocks (investigations, statute_citations, risk_topics) plus machine-verifiable fact_pack reference (OCDS releases, Popolo people, FollowTheMoney entities, provenance-cited facts).",
+  "type": "object",
+  "required": [
+    "version",
+    "council",
+    "council_profile",
+    "data_quality"
+  ],
+  "properties": {
+    "version": {
+      "type": "string",
+      "pattern": "^[134]\\.\\d+$",
+      "description": "Schema version. 1.x = stub, 3.x/4.x = full. Canonical v4.0 file is Burnley."
+    },
+    "last_updated": {
+      "type": "string",
+      "format": "date"
+    },
+    "council": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "core_knowledge": {
+      "oneOf": [
+        {
+          "type": "string",
+          "description": "Path reference to shared core knowledge file"
+        },
+        {
+          "type": "object",
+          "description": "Inline council type/services/population summary"
+        }
+      ]
+    },
+    "schema": {
+      "type": "string"
+    },
+    "fact_pack_ref": {
+      "type": "string",
+      "description": "Relative path to .fact_pack.json alongside this file."
+    },
+    "council_profile": {
+      "type": "object",
+      "description": "High-level narrative profile. See .fact_pack.json.council_profile for machine-verified values.",
+      "additionalProperties": true
+    },
+    "data_quality": {
+      "type": "object",
+      "additionalProperties": true
+    },
+    "investigations": {
+      "type": "object",
+      "description": "Hand-authored narrative of live investigations.",
+      "properties": {
+        "total_active": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "total_spend_flagged": {
+          "type": "string"
+        },
+        "top_3_stories": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "key_entities": {
+          "type": "object"
+        },
+        "legal_framework": {
+          "type": "object"
+        }
+      }
+    },
+    "key_suppliers": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "total_spend": {
+                "type": "string"
+              },
+              "note": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "rank": {
+                "type": "integer"
+              },
+              "supplier": {
+                "type": "string"
+              },
+              "sector": {
+                "type": "string"
+              },
+              "context": {
+                "type": "string"
+              },
+              "txns": {
+                "type": [
+                  "integer",
+                  "number"
+                ]
+              },
+              "company_house": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      ]
+    },
+    "cross_council_context": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": true
+        },
+        {
+          "type": "string"
+        }
+      ]
+    },
+    "statute_citations": {
+      "type": "array",
+      "description": "Typed statutory references for every breach claim. One entry per act/section combination.",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "act",
+          "section",
+          "breach_type"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "act": {
+            "type": "string"
+          },
+          "section": {
+            "type": "string"
+          },
+          "si_ref": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "breach_type": {
+            "type": "string",
+            "enum": [
+              "criminal_offence",
+              "statutory_breach",
+              "statutory_duty",
+              "civil_duty",
+              "potential_ineffectiveness",
+              "regulatory_breach"
+            ]
+          },
+          "penalty": {
+            "type": "string"
+          },
+          "applied_to": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "risk_topics": {
+      "type": "array",
+      "description": "OpenSanctions-style risk entries with severity, evidence, and cross-reference to statute_citations.",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "severity",
+          "confidence",
+          "label",
+          "summary"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9_]+$"
+          },
+          "severity": {
+            "type": "string",
+            "enum": [
+              "critical",
+              "high",
+              "medium",
+              "low",
+              "info"
+            ]
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "high",
+              "medium",
+              "low"
+            ]
+          },
+          "label": {
+            "type": "string"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "related_statutes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "research_pipeline": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label",
+          "status"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "pending",
+              "in_progress",
+              "blocked",
+              "completed",
+              "abandoned"
+            ]
+          },
+          "target": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "fact_pack_summary": {
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "type": "string"
+        },
+        "blocks_included_by_reference": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "claim_count_machine_verified": {
+          "type": "integer"
+        },
+        "validator": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}

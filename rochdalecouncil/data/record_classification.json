@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "council_id": "rochdale",
+  "updated": "2026-08-08",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Rochdale Borough Council is a metropolitan borough in Greater Manchester. Publishes ALL payments (no 500 floor) monthly since 2013, sole traders pre-redacted at source. Default is procurement_paid.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD|PAYMENT TO (AN )?INDIVIDUAL|PRIVATE INDIVIDUAL|INDIVIDUAL)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions for direct payments to individuals (foster carers, ASC direct payments). Lawfully unnamed."
+    },
+    {
+      "class": "statutory_pass_through",
+      "match": {
+        "supplier_regex": "^NHS .+ ICB( \\([A-Z]+\\))?$"
+      },
+      "reason": "NHS Integrated Care Board rows are statutory health funding pass-through, not council procurement."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^(GREATER MANCHESTER PENSION FUND|TAMESIDE MBC RE GMPF).*$"
+      },
+      "reason": "LGPS employer contributions to the Greater Manchester Pension Fund (administered by Tameside MBC) are internal pension flows, not procurement."
+    }
+  ],
+  "supplier_aliases": []
+}

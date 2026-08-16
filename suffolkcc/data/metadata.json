@@ -1,0 +1,108 @@
+{
+  "council": "Suffolk CC",
+  "council_id": "E10000029",
+  "council_type": "county",
+  "spending_threshold": 250,
+  "total_records": 349569,
+  "financial_years": [
+    "2025/26"
+  ],
+  "data_types": [
+    "spend"
+  ],
+  "filters": {
+    "departments": [
+      {
+        "name": "CYP",
+        "spend": 351624358.21,
+        "count": 74259,
+        "suppliers": 1725
+      },
+      {
+        "name": "ADULT SOCIAL CARE",
+        "spend": 347224801.36,
+        "count": 192835,
+        "suppliers": 924
+      },
+      {
+        "name": "GROWTH, HIGHWAYS AND INFRASTRUCTURE",
+        "spend": 210572548.75,
+        "count": 6641,
+        "suppliers": 921
+      },
+      {
+        "name": "CORPORATE SERVICES",
+        "spend": 198654595.16,
+        "count": 7954,
+        "suppliers": 1142
+      },
+      {
+        "name": "ACS",
+        "spend": 99484669.18,
+        "count": 61728,
+        "suppliers": 751
+      },
+      {
+        "name": "PUBLIC HEALTH & COMMUNITIES",
+        "spend": 33623179.55,
+        "count": 3051,
+        "suppliers": 410
+      },
+      {
+        "name": "FIRE AND PUBLIC SAFETY",
+        "spend": 12050675.88,
+        "count": 2789,
+        "suppliers": 405
+      },
+      {
+        "name": "CENTRAL AND CORPORATE FINANCE",
+        "spend": 11778165.88,
+        "count": 312,
+        "suppliers": 130
+      }
+    ],
+    "department_raws": [
+      "ACS",
+      "ADULT SOCIAL CARE",
+      "CENTRAL AND CORPORATE FINANCE",
+      "CORPORATE SERVICES",
+      "CYP",
+      "FIRE AND PUBLIC SAFETY",
+      "GROWTH, HIGHWAYS AND INFRASTRUCTURE",
+      "PUBLIC HEALTH & COMMUNITIES"
+    ]
+  },
+  "total_spend": 1265012993.97,
+  "total_spend_paid": 1265012993.97,
+  "total_spend_committed": 0,
+  "total_spend_all_types_legacy": 1265012993.97,
+  "record_count_paid": 349569,
+  "record_count_committed": 0,
+  "record_class_breakdown": {
+    "procurement_paid": {
+      "count": 306203,
+      "sum": 1221536623.27
+    },
+    "direct_payment_individual": {
+      "count": 43359,
+      "sum": 39827574.63
+    },
+    "internal_transfer": {
+      "count": 7,
+      "sum": 3648796.07
+    }
+  },
+  "spend_triangulation": {
+    "transparency_gross": 1265012993.97,
+    "transparency_paid": 1265012993.97,
+    "procurement_only": 1221536623.27,
+    "non_procurement": 43476370.7
+  },
+  "dedup_rule": "total_spend = spend + purchase_cards; contracts excluded (77% pair with matching spend within 90d \u2014 see .claude/rules/lessons.md)",
+  "dedup_applied": "enforced at ETL (council_etl.py)",
+  "unique_suppliers": 4898,
+  "date_range": {
+    "min": "2025-04-01",
+    "max": "2026-03-31"
+  }
+}

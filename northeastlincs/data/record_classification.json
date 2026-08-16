@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "council_id": "north_east_lincolnshire",
+  "updated": "2026-05-27",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "North East Lincolnshire Council is a unitary authority. Default is procurement_paid. Heavy 'REDACTED PERSONAL INFORMATION' bucket (821+ rows in 2026/27 alone) — Care Act 2014 / UK GDPR direct payments to individuals — buckets to direct_payment_individual.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions — direct payments to individuals (foster carers, SGO recipients, ASC service-user direct payments, CYP direct payments, Staying Put). NELincs uses 'REDACTED PERSONAL INFORMATION' as the canonical form. Lawfully unnamed."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^(EAST RIDING PENSION FUND.*|ERPF PAYROLL)$"
+      },
+      "reason": "Employer LGPS contributions to the East Riding Pension Fund (NEL's administering fund; East Riding of Yorkshire Council administers). 39 rows / £4.1M, including the ledger-labelled 'EAST RIDING PENSION FUND (ACCTY USE ONLY)'. Payroll-related transfer, not procurement — same treatment as Warwickshire's WCC Pension Fund rows. Added 6 Jul 2026 observational audit."
+    }
+  ],
+  "supplier_aliases": []
+}

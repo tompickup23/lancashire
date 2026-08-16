@@ -1,0 +1,947 @@
+{
+  "summary": {
+    "total_spend": 3892032193.28,
+    "transaction_count": 374764,
+    "unique_suppliers": 12301,
+    "avg_transaction": 10385.29,
+    "median_transaction": 1800.0,
+    "date_range": {
+      "min": "2019-04-01",
+      "max": "2026-02-26"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "SANDWELL CHILDREN'S TRUST",
+        "total": 398242328.63,
+        "transactions": 207,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SERCO LTD",
+        "total": 193119481.52,
+        "transactions": 1238,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SANDWELL FUTURES LTD",
+        "total": 74749963.79,
+        "transactions": 1234,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WATES CONSTRUCTION LTD 01",
+        "total": 71761660.89,
+        "transactions": 73,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SANDWELL & WEST BIRMINGHAM HOSPITALS NHS TRUST",
+        "total": 70156070.47,
+        "transactions": 632,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED PERSONAL DATA",
+        "total": 68246682.29,
+        "transactions": 37740,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LOVELL PARTNERSHIPS LTD",
+        "total": 62529654.98,
+        "transactions": 259,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SEDDON CONSTRUCTION LTD",
+        "total": 59059200.32,
+        "transactions": 266,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SANDWELL COMMUNITY CARING TRUST (ASC)",
+        "total": 58961225.74,
+        "transactions": 2650,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ENVIRONMENTS FOR LEARNING SANDWELL PFI ONE LTD",
+        "total": 52341834.52,
+        "transactions": 416,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "RIVERSIDE GROUP",
+        "total": 48561785.41,
+        "transactions": 58,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "VINCI CONSTRUCTION LTD",
+        "total": 43671919.58,
+        "transactions": 1981,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "JOHN A BATES (CONTRACTORS) LTD",
+        "total": 40197499.9,
+        "transactions": 1576,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HAYS SPECIALIST RECRUITMENT LTD",
+        "total": 37639130.19,
+        "transactions": 2805,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WILLMOTT DIXON CONSTRUCTION LTD",
+        "total": 35503473.16,
+        "transactions": 95,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SANDWELL CHILDREN TRUST",
+        "total": 32068269.6,
+        "transactions": 9,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "STAFFORDSHIRE COUNTY COUNCIL",
+        "total": 31522499.2,
+        "transactions": 179,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TOTALENERGIES GAS & POWER LTD",
+        "total": 31191014.62,
+        "transactions": 1881,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WEST MIDLANDS PENSION FUND",
+        "total": 30562700.0,
+        "transactions": 1,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DODD GROUP (MIDLANDS) LTD",
+        "total": 30106514.31,
+        "transactions": 8381,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.3777,
+    "total_unique_suppliers": 12301,
+    "single_transaction_suppliers": 4624
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 16779,
+      "potential_value": 145577401.54,
+      "items": [
+        {
+          "supplier": "SANDWELL CHILDRENS TRUST",
+          "amount": 6215384.62,
+          "date": "2025-08-26",
+          "occurrences": 2,
+          "potential_overpayment": 6215384.62
+        },
+        {
+          "supplier": "SANDWELL CHILDREN'S TRUST",
+          "amount": 6215384.62,
+          "date": "2024-09-06",
+          "occurrences": 2,
+          "potential_overpayment": 6215384.62
+        },
+        {
+          "supplier": "SANDWELL CHILDREN'S TRUST",
+          "amount": 5705769.23,
+          "date": "2023-11-01",
+          "occurrences": 2,
+          "potential_overpayment": 5705769.23
+        },
+        {
+          "supplier": "SANDWELL & WEST BIRMINGHAM HOSPITALS NHS TRUST",
+          "amount": 1469110.5,
+          "date": "2025-09-04",
+          "occurrences": 3,
+          "potential_overpayment": 2938221.0
+        },
+        {
+          "supplier": "SERCO LTD",
+          "amount": 1940065.05,
+          "date": "2024-11-13",
+          "occurrences": 2,
+          "potential_overpayment": 1940065.05
+        },
+        {
+          "supplier": "SANDWELL & WEST BIRMINGHAM HOSPITALS NHS TRUST",
+          "amount": 435853.65,
+          "date": "2021-10-01",
+          "occurrences": 5,
+          "potential_overpayment": 1743414.6
+        },
+        {
+          "supplier": "SERCO LTD",
+          "amount": 1662703.27,
+          "date": "2022-09-01",
+          "occurrences": 2,
+          "potential_overpayment": 1662703.27
+        },
+        {
+          "supplier": "SANDWELL & WEST BIRMINGHAM HOSPITALS NHS TRUST",
+          "amount": 440925.8,
+          "date": "2019-08-01",
+          "occurrences": 4,
+          "potential_overpayment": 1322777.4
+        },
+        {
+          "supplier": "STAFFORDSHIRE COUNTY COUNCIL",
+          "amount": 440460.58,
+          "date": "2025-07-22",
+          "occurrences": 4,
+          "potential_overpayment": 1321381.74
+        },
+        {
+          "supplier": "STAFFORDSHIRE COUNTY COUNCIL",
+          "amount": 1260236.67,
+          "date": "2024-12-18",
+          "occurrences": 2,
+          "potential_overpayment": 1260236.67
+        },
+        {
+          "supplier": "STAFFORDSHIRE COUNTY COUNCIL",
+          "amount": 418563.67,
+          "date": "2022-08-01",
+          "occurrences": 4,
+          "potential_overpayment": 1255691.01
+        },
+        {
+          "supplier": "STAFFORDSHIRE COUNTY COUNCIL",
+          "amount": 409035.58,
+          "date": "2023-07-02",
+          "occurrences": 4,
+          "potential_overpayment": 1227106.74
+        },
+        {
+          "supplier": "SANDWELL & WEST BIRMINGHAM HOSPITALS NHS TRUST",
+          "amount": 489703.5,
+          "date": "2022-07-01",
+          "occurrences": 3,
+          "potential_overpayment": 979407.0
+        },
+        {
+          "supplier": "SANDWELL & WEST BIRMINGHAM HOSPITALS NHS TRUST",
+          "amount": 440440.65,
+          "date": "2022-01-01",
+          "occurrences": 3,
+          "potential_overpayment": 880881.3
+        },
+        {
+          "supplier": "SANDWELL & WEST BIRMINGHAM HOSPITALS NHS TRUST",
+          "amount": 425736.0,
+          "date": "2025-08-19",
+          "occurrences": 3,
+          "potential_overpayment": 851472.0
+        },
+        {
+          "supplier": "STAFFORDSHIRE COUNTY COUNCIL",
+          "amount": 418563.67,
+          "date": "2022-12-09",
+          "occurrences": 3,
+          "potential_overpayment": 837127.34
+        },
+        {
+          "supplier": "STAFFORDSHIRE COUNTY COUNCIL",
+          "amount": 409035.58,
+          "date": "2024-02-06",
+          "occurrences": 3,
+          "potential_overpayment": 818071.16
+        },
+        {
+          "supplier": "REDACTED PERSONAL DATA",
+          "amount": 10000.0,
+          "date": "2020-04-21",
+          "occurrences": 82,
+          "potential_overpayment": 810000.0
+        },
+        {
+          "supplier": "KIELY BROS LTD",
+          "amount": 673954.61,
+          "date": "2024-11-14",
+          "occurrences": 2,
+          "potential_overpayment": 673954.61
+        },
+        {
+          "supplier": "JOHN A BATES (CONTRACTORS) LTD",
+          "amount": 312832.18,
+          "date": "2026-02-05",
+          "occurrences": 3,
+          "potential_overpayment": 625664.36
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 12718,
+      "total_value": 169974000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 42
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Childrens Services",
+      "spend": 427314042.26,
+      "count": 11625
+    },
+    {
+      "department": "Individual School Budgets With Inclusion",
+      "spend": 296908002.74,
+      "count": 30690
+    },
+    {
+      "department": "Resources (Inc SIU)",
+      "spend": 270067842.54,
+      "count": 34642
+    },
+    {
+      "department": "Children And Education L7",
+      "spend": 256643973.25,
+      "count": 15310
+    },
+    {
+      "department": "Housing & Communities",
+      "spend": 240413946.18,
+      "count": 10625
+    },
+    {
+      "department": "Housing Revenue Account Capital",
+      "spend": 233948034.85,
+      "count": 4020
+    },
+    {
+      "department": "Adult Social Care L7",
+      "spend": 233614299.0,
+      "count": 49115
+    },
+    {
+      "department": "Adult Social Care Health and Wellbeing - Total",
+      "spend": 231029279.69,
+      "count": 34481
+    },
+    {
+      "department": "Total Adult Social Care",
+      "spend": 160326995.35,
+      "count": 26321
+    },
+    {
+      "department": "Total Housing Revenue Account",
+      "spend": 154297514.75,
+      "count": 28175
+    },
+    {
+      "department": "Total ASCHWB",
+      "spend": 141714733.03,
+      "count": 20224
+    },
+    {
+      "department": "Total Adult Social Care Health & Well Being",
+      "spend": 125255816.34,
+      "count": 15940
+    },
+    {
+      "department": "Housing L7",
+      "spend": 115168096.76,
+      "count": 14045
+    },
+    {
+      "department": "Regeneration And The Economy Capital",
+      "spend": 112233040.85,
+      "count": 2646
+    },
+    {
+      "department": "Regeneration & Growth",
+      "spend": 104822936.85,
+      "count": 18131
+    },
+    {
+      "department": "Total Borough Economy",
+      "spend": 104083438.14,
+      "count": 6615
+    },
+    {
+      "department": "Environment L7",
+      "spend": 98780207.89,
+      "count": 6818
+    },
+    {
+      "department": "Childrens Services Capital",
+      "spend": 58149917.69,
+      "count": 650
+    },
+    {
+      "department": "Regeneration And Growth L7",
+      "spend": 47200967.9,
+      "count": 4531
+    },
+    {
+      "department": "Finance And Transformation L7",
+      "spend": 44189932.81,
+      "count": 4929
+    },
+    {
+      "department": "FINANCE (Inc SIU)",
+      "spend": 43019084.47,
+      "count": 4087
+    },
+    {
+      "department": "Strategic Finance",
+      "spend": 30234150.83,
+      "count": 162
+    },
+    {
+      "department": "Adults Social Care Capital",
+      "spend": 29863959.08,
+      "count": 2078
+    },
+    {
+      "department": "Public Health L7",
+      "spend": 26871344.83,
+      "count": 581
+    },
+    {
+      "department": "Total Public Health",
+      "spend": 25205436.33,
+      "count": 685
+    },
+    {
+      "department": "Total Adults Social Care Health & Well Being",
+      "spend": 24074426.13,
+      "count": 2617
+    },
+    {
+      "department": "Finance & Capital Team L7",
+      "spend": 20370323.69,
+      "count": 48
+    },
+    {
+      "department": "Total Business Strategy & Change",
+      "spend": 17550415.72,
+      "count": 2073
+    },
+    {
+      "department": "Total Adult Social Care Health and Well Being",
+      "spend": 16866564.65,
+      "count": 1930
+    },
+    {
+      "department": "Total Adult Social Care Health & Well Belling",
+      "spend": 14069345.4,
+      "count": 1399
+    },
+    {
+      "department": "Assistant Chief Executive L7",
+      "spend": 13884518.23,
+      "count": 1078
+    },
+    {
+      "department": "YR23/24AD0000",
+      "spend": 13246323.85,
+      "count": 1570
+    },
+    {
+      "department": "Total Adult Social Care Health &WellBeing",
+      "spend": 12858722.55,
+      "count": 1428
+    },
+    {
+      "department": "Total Adult Social Care Health Well Being",
+      "spend": 12148213.41,
+      "count": 1826
+    },
+    {
+      "department": "Resources Capital",
+      "spend": 11906526.9,
+      "count": 188
+    },
+    {
+      "department": "Central Items L7",
+      "spend": 11469166.95,
+      "count": 972
+    },
+    {
+      "department": "Public Health",
+      "spend": 11442751.19,
+      "count": 363
+    },
+    {
+      "department": "Housing & Assets Total",
+      "spend": 10613002.18,
+      "count": 2632
+    },
+    {
+      "department": "Schools L7",
+      "spend": 9673118.96,
+      "count": 876
+    },
+    {
+      "department": "Capital Projects L7",
+      "spend": 7653863.34,
+      "count": 222
+    },
+    {
+      "department": "YR23/24CF0000",
+      "spend": 7571064.87,
+      "count": 234
+    },
+    {
+      "department": "Resources (Exc SIU)",
+      "spend": 6431430.0,
+      "count": 971
+    },
+    {
+      "department": "Law & Governance",
+      "spend": 5925237.9,
+      "count": 2060
+    },
+    {
+      "department": "YR23/24BE0000",
+      "spend": 5371871.18,
+      "count": 308
+    },
+    {
+      "department": "YR23/24HR0000",
+      "spend": 4503678.75,
+      "count": 612
+    },
+    {
+      "department": "Housing\u2013HRA L7",
+      "spend": 4246429.37,
+      "count": 779
+    },
+    {
+      "department": "YR23/24SB0000",
+      "spend": 4078361.33,
+      "count": 478
+    },
+    {
+      "department": "YR23/24REX000",
+      "spend": 3869562.35,
+      "count": 47
+    },
+    {
+      "department": "Environment and Public Protection L7",
+      "spend": 3827239.55,
+      "count": 256
+    },
+    {
+      "department": "YR23/24HRX000",
+      "spend": 3165713.71,
+      "count": 51
+    },
+    {
+      "department": "YR23/24AH0000",
+      "spend": 2101175.69,
+      "count": 33
+    },
+    {
+      "department": "Corporate Management",
+      "spend": 2001792.63,
+      "count": 55
+    },
+    {
+      "department": "Pensions General L7",
+      "spend": 1739220.23,
+      "count": 11
+    },
+    {
+      "department": "Capital Projects",
+      "spend": 1600409.98,
+      "count": 24
+    },
+    {
+      "department": "YR23/24RP0000",
+      "spend": 1453651.39,
+      "count": 139
+    },
+    {
+      "department": "Economy and Regeneration L7",
+      "spend": 1304160.97,
+      "count": 137
+    },
+    {
+      "department": "Property and Assets L7",
+      "spend": 1267866.1,
+      "count": 280
+    },
+    {
+      "department": "Childrens Services L7",
+      "spend": 1210766.71,
+      "count": 304
+    },
+    {
+      "department": "YR23/24RR0000",
+      "spend": 1184885.87,
+      "count": 126
+    },
+    {
+      "department": "Adult Social Care",
+      "spend": 914565.29,
+      "count": 48
+    },
+    {
+      "department": "Director of Law & Governance",
+      "spend": 721972.14,
+      "count": 285
+    },
+    {
+      "department": "Dead Capital 1",
+      "spend": 667524.76,
+      "count": 9
+    },
+    {
+      "department": "YR23/24HC0000",
+      "spend": 658748.34,
+      "count": 187
+    },
+    {
+      "department": "Housing \u2013 GF L7",
+      "spend": 643899.69,
+      "count": 201
+    },
+    {
+      "department": "Adult Social Care Transformation",
+      "spend": 614210.71,
+      "count": 23
+    },
+    {
+      "department": "YR23/24RR0043",
+      "spend": 517812.19,
+      "count": 172
+    },
+    {
+      "department": "Public Health Capital",
+      "spend": 467268.11,
+      "count": 10
+    },
+    {
+      "department": "Corporate Budgets L7",
+      "spend": 465454.96,
+      "count": 19
+    },
+    {
+      "department": "Corporate Budgets L8",
+      "spend": 449958.49,
+      "count": 10
+    },
+    {
+      "department": "YR23/24BS0000",
+      "spend": 406260.28,
+      "count": 71
+    },
+    {
+      "department": "People L8",
+      "spend": 357027.09,
+      "count": 193
+    },
+    {
+      "department": "Covid 19 Grants L7",
+      "spend": 325000.0,
+      "count": 4
+    },
+    {
+      "department": "Children and Education L7",
+      "spend": 258205.09,
+      "count": 2
+    },
+    {
+      "department": "Corporate Budgets",
+      "spend": 248833.92,
+      "count": 12
+    },
+    {
+      "department": "YR23/24XXX000",
+      "spend": 221228.47,
+      "count": 12
+    },
+    {
+      "department": "Chief Executive Office",
+      "spend": 202869.2,
+      "count": 27
+    },
+    {
+      "department": "YR23/24ASX000",
+      "spend": 202606.37,
+      "count": 25
+    },
+    {
+      "department": "Public  Health",
+      "spend": 163693.35,
+      "count": 1
+    },
+    {
+      "department": "Total Target Budget",
+      "spend": 155542.58,
+      "count": 16
+    },
+    {
+      "department": "Challenge Fund",
+      "spend": 124051.17,
+      "count": 2
+    },
+    {
+      "department": "SAC - Highways Works",
+      "spend": 120945.67,
+      "count": 3
+    },
+    {
+      "department": "Chief Executive L7",
+      "spend": 117134.2,
+      "count": 26
+    },
+    {
+      "department": "Total Borough Economy Capital",
+      "spend": 105831.1,
+      "count": 1
+    },
+    {
+      "department": "Regeneration And The Economy",
+      "spend": 98782.99,
+      "count": 12
+    },
+    {
+      "department": "Emergency Active Travel Fund",
+      "spend": 92894.79,
+      "count": 9
+    },
+    {
+      "department": "Children And Education L8",
+      "spend": 71256.68,
+      "count": 2
+    },
+    {
+      "department": "Rowley Crematorium",
+      "spend": 62374.5,
+      "count": 8
+    },
+    {
+      "department": "Corporate Services L9",
+      "spend": 62262.32,
+      "count": 28
+    },
+    {
+      "department": "Infrastructure.FIXTURES & FITTINGS",
+      "spend": 59992.69,
+      "count": 1
+    },
+    {
+      "department": "Place L8",
+      "spend": 53088.27,
+      "count": 41
+    },
+    {
+      "department": "Legal Costs - Historic Claims",
+      "spend": 45068.56,
+      "count": 4
+    },
+    {
+      "department": "Suspense and Control",
+      "spend": 38208.33,
+      "count": 1
+    },
+    {
+      "department": "Assistant Chief Executive (Excl SIU)",
+      "spend": 37325.0,
+      "count": 1
+    },
+    {
+      "department": "Heat Networks",
+      "spend": 31007.81,
+      "count": 1
+    },
+    {
+      "department": "YR23/24SF0000",
+      "spend": 30792.98,
+      "count": 7
+    },
+    {
+      "department": "Trust Funds",
+      "spend": 29209.83,
+      "count": 3
+    },
+    {
+      "department": "Corporate Budges",
+      "spend": 24747.66,
+      "count": 1
+    },
+    {
+      "department": "0.00",
+      "spend": 21441.81,
+      "count": 3
+    },
+    {
+      "department": "YR23/24LCX000",
+      "spend": 19435.0,
+      "count": 1
+    },
+    {
+      "department": "YR23/24NEX000",
+      "spend": 17459.1,
+      "count": 3
+    },
+    {
+      "department": "YR23/24ACX000",
+      "spend": 16925.49,
+      "count": 3
+    },
+    {
+      "department": "Place Directorate Management L7",
+      "spend": 10000.0,
+      "count": 1
+    },
+    {
+      "department": "SRES Development Plan.",
+      "spend": 5915.0,
+      "count": 1
+    },
+    {
+      "department": "Tipton Green Junior School",
+      "spend": 4082.0,
+      "count": 3
+    },
+    {
+      "department": "Finance and Transformation L7",
+      "spend": 4031.8,
+      "count": 1
+    },
+    {
+      "department": "Children And Education L11",
+      "spend": 4025.0,
+      "count": 1
+    },
+    {
+      "department": "YR23/24HRX001",
+      "spend": 3950.0,
+      "count": 1
+    },
+    {
+      "department": "Blackheath Library",
+      "spend": 3879.53,
+      "count": 3
+    },
+    {
+      "department": "Corporate Management Capital",
+      "spend": 3523.0,
+      "count": 1
+    },
+    {
+      "department": "Children And Education L10",
+      "spend": 2430.0,
+      "count": 1
+    },
+    {
+      "department": "Children And Education L9",
+      "spend": 2018.25,
+      "count": 1
+    },
+    {
+      "department": "TRAFFIC SIGNAL UPGRADES",
+      "spend": 1350.0,
+      "count": 2
+    },
+    {
+      "department": "Total Housing Revenue Account Capital",
+      "spend": 1191.38,
+      "count": 1
+    },
+    {
+      "department": "Flooding - .CIP",
+      "spend": 930.0,
+      "count": 1
+    },
+    {
+      "department": "YR23/24CM1000",
+      "spend": 756.5,
+      "count": 1
+    },
+    {
+      "department": "New Build Feasibility Studies",
+      "spend": 667.5,
+      "count": 1
+    },
+    {
+      "department": "Environmental Improvments",
+      "spend": 598.5,
+      "count": 1
+    },
+    {
+      "department": "Housing Services",
+      "spend": 582.0,
+      "count": 1
+    },
+    {
+      "department": "Balance Sheet L7",
+      "spend": 549.7,
+      "count": 1
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2019/20": 394419559.77,
+      "2020/21": 570788063.64,
+      "2021/22": 524538825.65,
+      "2022/23": 596538589.04,
+      "2023/24": 579549196.48,
+      "2024/25": 640736756.41,
+      "2025/26": 585461202.29
+    },
+    "transactions_by_year": {
+      "2019/20": 44436,
+      "2020/21": 55986,
+      "2021/22": 49965,
+      "2022/23": 49811,
+      "2023/24": 48040,
+      "2024/25": 59922,
+      "2025/26": 66604
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 374764
+  }
+}

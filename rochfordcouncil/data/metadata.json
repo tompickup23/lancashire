@@ -1,0 +1,183 @@
+{
+  "council": "Rochford",
+  "council_id": "E07000075",
+  "council_type": "district",
+  "spending_threshold": 500,
+  "total_records": 28089,
+  "financial_years": [
+    "2019/20",
+    "2020/21",
+    "2021/22",
+    "2022/23",
+    "2023/24",
+    "2024/25",
+    "2025/26"
+  ],
+  "data_types": [
+    "spend"
+  ],
+  "filters": {
+    "departments": [
+      {
+        "name": "Environment Services",
+        "spend": 30143102.63,
+        "count": 3390,
+        "suppliers": 151
+      },
+      {
+        "name": "Capital 2016",
+        "spend": 12217167.6,
+        "count": 1424,
+        "suppliers": 205
+      },
+      {
+        "name": "Apportioned Overheads",
+        "spend": 11108940.02,
+        "count": 7122,
+        "suppliers": 263
+      },
+      {
+        "name": "Loans Pool",
+        "spend": 7035214.19,
+        "count": 6,
+        "suppliers": 3
+      },
+      {
+        "name": "Collection Fund",
+        "spend": 6533709.52,
+        "count": 14,
+        "suppliers": 3
+      },
+      {
+        "name": "Precepts",
+        "spend": 6226414.22,
+        "count": 83,
+        "suppliers": 14
+      },
+      {
+        "name": "Planning and Development",
+        "spend": 5715873.47,
+        "count": 1876,
+        "suppliers": 310
+      },
+      {
+        "name": "Cultural and Related Services",
+        "spend": 5232765.27,
+        "count": 6713,
+        "suppliers": 317
+      },
+      {
+        "name": "Non Distributed Costs",
+        "spend": 4899437.15,
+        "count": 9,
+        "suppliers": 6
+      },
+      {
+        "name": "Housing Services",
+        "spend": 4157789.38,
+        "count": 2459,
+        "suppliers": 164
+      },
+      {
+        "name": "Central Services to the Public",
+        "spend": 3812493.98,
+        "count": 1424,
+        "suppliers": 147
+      },
+      {
+        "name": "Capital - Housing",
+        "spend": 3320197.2,
+        "count": 477,
+        "suppliers": 95
+      },
+      {
+        "name": "Other Operating Income and Expenditure",
+        "spend": 2429907.03,
+        "count": 430,
+        "suppliers": 41
+      },
+      {
+        "name": "Corporate and Democratic Core",
+        "spend": 2417587.19,
+        "count": 1256,
+        "suppliers": 190
+      },
+      {
+        "name": "Personal Accounts",
+        "spend": 1786737.72,
+        "count": 111,
+        "suppliers": 11
+      },
+      {
+        "name": "Highways, Roads and Transport",
+        "spend": 975515.66,
+        "count": 1285,
+        "suppliers": 99
+      },
+      {
+        "name": "Reserves",
+        "spend": 204125.0,
+        "count": 1,
+        "suppliers": 1
+      },
+      {
+        "name": "Capital",
+        "spend": 2329.66,
+        "count": 1,
+        "suppliers": 1
+      },
+      {
+        "name": "HRA",
+        "spend": 1595.22,
+        "count": 8,
+        "suppliers": 3
+      }
+    ],
+    "department_raws": [
+      "Apportioned Overheads",
+      "Capital",
+      "Capital - Housing",
+      "Capital 2016",
+      "Central Services to the Public",
+      "Collection Fund",
+      "Corporate and Democratic Core",
+      "Cultural and Related Services",
+      "Environment Services",
+      "HRA",
+      "Highways, Roads and Transport",
+      "Housing Services",
+      "Loans Pool",
+      "Non Distributed Costs",
+      "Other Operating Income and Expenditure",
+      "Personal Accounts",
+      "Planning and Development",
+      "Precepts",
+      "Reserves"
+    ]
+  },
+  "total_spend": 108220902.11,
+  "total_spend_paid": 108220902.11,
+  "total_spend_committed": 0,
+  "total_spend_all_types_legacy": 108220902.11,
+  "record_count_paid": 28089,
+  "record_count_committed": 0,
+  "record_class_breakdown": {
+    "procurement_paid": {
+      "count": 28089,
+      "sum": 108220902.11
+    }
+  },
+  "spend_triangulation": {
+    "transparency_gross": 108220902.11,
+    "transparency_paid": 108220902.11,
+    "procurement_only": 108220902.11,
+    "non_procurement": 0.0
+  },
+  "dedup_rule": "total_spend = spend + purchase_cards; contracts excluded (77% pair with matching spend within 90d \u2014 see .claude/rules/lessons.md)",
+  "dedup_applied": "enforced at ETL (council_etl.py)",
+  "unique_suppliers": 1398,
+  "date_range": {
+    "min": "2019-04-01",
+    "max": "2026-02-26"
+  }
+}

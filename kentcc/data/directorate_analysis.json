@@ -1,0 +1,89 @@
+{
+ "generated": "2026-06-24",
+ "source": "KCC 2026/27 budget pack (ModernGov 12 Feb 2026 County Council; main report s134609 + Appendix D s134613 + Appendix F s134615), verified figure-by-figure. Supersedes the prior 2024/25 figures.",
+ "council_id": "kent_cc",
+ "council_type": "county",
+ "financial_year": "2026/27",
+ "net_revenue_budget": 1648138200,
+ "directorates": [
+  {
+   "id": "asch",
+   "name": "Adult Social Care & Health (ASCH)",
+   "budget_2026_27": 787500000,
+   "savings_identified": 30000000,
+   "_note": "47.8% of net budget, the largest ASC share in the focus set."
+  },
+  {
+   "id": "cype",
+   "name": "Children, Young People & Education (CYPE)",
+   "budget_2026_27": 423000000,
+   "savings_identified": 18000000
+  },
+  {
+   "id": "get",
+   "name": "Growth, Environment & Transport (GET)",
+   "budget_2026_27": 215500000,
+   "savings_identified": null
+  },
+  {
+   "id": "ced",
+   "name": "Chief Executive & Deputy CE Departments (CED)",
+   "budget_2026_27": 112700000,
+   "savings_identified": null
+  },
+  {
+   "id": "non_attributable",
+   "name": "Non-Attributable (net debt costs) & Corporately Held",
+   "budget_2026_27": 109500000,
+   "savings_identified": null
+  }
+ ],
+ "cross_cutting": {
+  "combined_low": 47626500,
+  "combined_high": 87574200,
+  "as_pct_of_budget_low": 2.9,
+  "as_pct_of_budget_high": 5.3,
+  "_note": "The 2026/27 savings programme is GBP 87.6m gross for in-year delivery, GBP 47.6m net new savings and income. By directorate (gross additional): ASC GBP 30m, Children's GBP 18m, other services GBP 27.6m (across GET, CED and corporate)."
+ },
+ "mtfs_gap_cumulative": 96300000,
+ "mtfs_period": "2027/28 to 2028/29",
+ "reserves": {
+  "total": null,
+  "_note": "General reserve target 5 to 10 percent of net budget. The 2026/27 budget is balanced with GBP 25m of one-offs (GBP 9m capital receipts flexibility + GBP 16m earmarked reserves release). Usable reserves total to-populate from the budget pack."
+ },
+ "risks": [
+  {
+   "risk": "Adult Social Care overspend of about GBP 45m (2024/25) rising to about GBP 50.9m mid-year 2025/26; ASC is GBP 89.8m of the GBP 178m total spending growth.",
+   "severity": "critical"
+  },
+  {
+   "risk": "DSG / SEND accumulated deficit of about GBP 136m by end 2025/26, held off the General Fund by a statutory override that ends 31 March 2028.",
+   "severity": "critical"
+  },
+  {
+   "risk": "ASC books about GBP 30m of new savings but net of GBP 18.3m of reversals of unachievable prior savings, a 61 percent write-off that signals delivery risk on the ASC programme.",
+   "severity": "high"
+  },
+  {
+   "risk": "The 2026/27 budget is balanced with GBP 25m of one-offs that need replacing with sustainable savings in future years.",
+   "severity": "high"
+  },
+  {
+   "risk": "MTFP gap of GBP 54.2m (2027/28) and GBP 42.1m (2028/29), assuming nil council-tax increase in planning years.",
+   "severity": "high"
+  }
+ ],
+ "council_tax_band_d": null,
+ "council_tax_increase_pct": 3.99,
+ "asc_chc_position": {
+  "metric": "NHS Continuing Healthcare eligibility (snapshot, not spend)",
+  "icb": "NHS Kent and Medway ICB",
+  "chc_eligible_per_50k_18plus": 54.5,
+  "rank_of_42_icbs": 10,
+  "england_median_per_50k": 45.5,
+  "position": "exposure_to_defend",
+  "source": "NHS England Continuing Healthcare and NHS-funded Nursing Care CSV, 2025/26 Q4.",
+  "note": "Kent and Medway ICB is above the England median on CHC eligibility (rank 10 of 42), so the CHC funding share is a cost-shift exposure to DEFEND against NHS tightening, not an under-claiming saving to recover. Mirrors the June 2026 Lancashire CHC correction (L&SC ICB 79.8, rank 3 of 42). Kent and Medway is a single ICB / sub-ICB footprint that also covers Medway unitary; there is no Medway-separable sub-ICB, so any Kent-CC-only exposure figure needs a district-level package base before it is quoted."
+ },
+ "_provenance": "Refreshed 24 Jun 2026 from the verified KCC 2026/27 budget pack (primary, ModernGov 12 Feb 2026). Council tax Band D and usable reserves total are left null pending extraction from Appendix H; council_tax_increase_pct 3.99 and all directorate budgets are verified. asc_chc_position added 13 Jul 2026 from NHS England CHC-FNC 2025/26 Q4, primary-source verified (54.5 per 50k, rank 10/42, above England median 45.5) as part of the ASC CHC-inversion correction; this is a hand-curated file, do not overwrite with generate_directorate_analysis.py --all (use --skip-existing)."
+}

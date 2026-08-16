@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "council_id": "lancashire_cc",
+  "updated": "2026-04-18",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Declarative rules that assign each LCC spending row a record_class. Rules are evaluated in the order listed; the first match wins. Default fall-through is procurement_paid. Derived from raw-CSV audit 2026-04-18 (see investigations/DEEP_AUDIT_2026-04-18.md).",
+  "rules": [
+    {
+      "class": "accrual_journal",
+      "match": {
+        "expenditure_category_regex": "^R12 - (AP (EXPENSE|INVENTORY) ACCRUAL|AP LIABILITY|MATERIALS VALUATION)$"
+      },
+      "reason": "Oracle Fusion month-end / year-end accrual journals (R12 AP Expense + Inventory Accrual, AP Liability, Materials Valuation). In the Apr 2024 - Apr 2026 corpus: 14,698 rows / GBP 141.6m, concentrated in Mar 2025 (GBP 64.4m) + Apr 2025 (GBP 77.2m) — the 2024/25 year-end accrual exercise. Accruals reverse when the invoice clears; summing with paid invoices double-counts. PATTERN IS UPPERCASE: the classifier matches on uppercased fields, so a mixed-case pattern never fires (this rule was dead until 11 Jun 2026 for exactly that reason)."
+    },
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(REDACTED|REDACT)$"
+      },
+      "reason": "230,249 rows (29% of corpus, £272.6M). Direct payments to named individuals — foster carers, SGO recipients, ASC service-user direct-payment holders, Staying Put arrangements, CYP Direct Payments. Personal data lawfully redacted under Care Act 2014 s.31 + UK GDPR."
+    },
+    {
+      "class": "settlement_noise",
+      "match": {
+        "supplier_regex": "^(EFT SYSTEMS LTD|BACS CLEARING|SAGEPAY SETTLEMENT)$"
+      },
+      "reason": "75,149 rows, £615,885 total (avg £8.20). Bank-transfer reversals + settlement fees under finance-system clearing labels. Not suppliers."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^LCCG INTERNAL CARE SUPPLIER$"
+      },
+      "reason": "LCC's in-house directly-provided adult social care arm — day centres at Clitheroe (Mearley Fold), Accrington (Woodhaven), Colne (Byron View), Bacup (Parkside) + residential units. CQC provider 1-101642168. Money from LCC commissioner to LCC provider. Not third-party procurement."
+    },
+    {
+      "class": "statutory_pass_through",
+      "match": {
+        "department_regex": "^(SCHOOLS BLOCK - SECONDARY|SCHOOLS BLOCK - PRIMARY|CHORLEY & SOUTH RIBBLE BCF|LRL \\(OLD GRLOL PFI\\)|BSF WAVE 1 PHASE 1|DISABLED FACILITIES GRANT 2015/16|LANCASHIRE CONCESSIONARY TRAVEL SCHEME|HEALTH VISITING 0-5|ENERGY RECHARGE|HOUSEHOLD SUPPORT FUND)$"
+      },
+      "reason": "DSG Schools Block to individual schools, pooled BCF to the ICB, PFI unitary charges, inter-authority DFG passes, statutory concessionary travel, ring-fenced public-health commissions, utility recharges, DWP grant administration. In the Apr 2024 - Apr 2026 corpus: 2,349 rows / GBP 668.5m. The authority has no procurement discretion over these flows. PATTERN IS UPPERCASE (classifier matches uppercased fields; rule was dead until 11 Jun 2026)."
+    }
+  ],
+  "supplier_aliases": [
+    {
+      "canonical": "HCRG CARE SERVICES LTD",
+      "aliases": [
+        "HCRG CARE SERVICES LTD",
+        "HCRG CARE SERVICES LTD (FORMALLY VIRGIN CARE SERVICES)"
+      ],
+      "reason": "Same legal entity (formerly Virgin Care Services Ltd), renamed. LCC ledger carries both spellings on the same Health Visiting 0-5 contract."
+    }
+  ]
+}

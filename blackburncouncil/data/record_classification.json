@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "council_id": "blackburn",
+  "updated": "2026-04-19",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Blackburn with Darwen Borough Council is a unitary authority with a large ASC operation \u2014 REDACTED direct payments to individuals dominate the low-value tail of the feed. Default is procurement_paid; REDACTED rows bucket to direct_payment_individual. Pension fund transfers (if present) bucket to internal_transfer.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(REDACTED|REDACT|NAME WITHHELD)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions \u2014 direct payments to individuals (foster carers, SGO recipients, ASC service-user direct payments, CYP direct payments, Staying Put arrangements). Lawfully unnamed."
+    }
+  ],
+  "supplier_aliases": []
+}

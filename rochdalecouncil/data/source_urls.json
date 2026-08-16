@@ -1,0 +1,652 @@
+{
+  "_meta": {
+    "council": "rochdale",
+    "source": "data.gov.uk CKAN",
+    "ckan_instance": "https://ckan.publishing.service.gov.uk",
+    "ckan_package": "council-spending-over-500",
+    "ckan_org": "rochdale-borough-council",
+    "dataset_page": "https://www.data.gov.uk/dataset/b7e5bb16-dc43-44d3-979d-529fd7f5af13/council-spending-over-500",
+    "landing_page": "https://www.rochdale.gov.uk/budgets-spending/council-spending-over-500",
+    "periods": 158,
+    "notes": [
+      "Keyed on the CKAN resource NAME. The date at the front of a Rochdale filename is the UPLOAD date, not the data month.",
+      "The package named `council-spending` is Leeds City Council. Rochdale is `council-spending-over-500`; always read organization.name back.",
+      "data.rochdale.gov.uk rejects HEAD and answers GET. Probe with a ranged GET.",
+      "2014-11 is genuinely absent from Rochdale's own listing, not a harvest gap."
+    ]
+  },
+  "periods": {
+    "2013-01": {
+      "url": "https://data.rochdale.gov.uk/files/2013-01-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2013-02": {
+      "url": "https://data.rochdale.gov.uk/files/2013-02-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2013-03": {
+      "url": "https://data.rochdale.gov.uk/files/2013-03-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2013-04": {
+      "url": "https://data.rochdale.gov.uk/files/2013-04-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2013-05": {
+      "url": "https://data.rochdale.gov.uk/files/2013-05-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2013-06": {
+      "url": "https://data.rochdale.gov.uk/files/2013_06_spend_over_500_v1.csv",
+      "ext": "csv"
+    },
+    "2013-07": {
+      "url": "https://data.rochdale.gov.uk/files/2013-07-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2013-08": {
+      "url": "https://data.rochdale.gov.uk/files/2013-08-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2013-09": {
+      "url": "https://data.rochdale.gov.uk/files/2013-09-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2013-10": {
+      "url": "https://data.rochdale.gov.uk/files/Spend-over-500-oct-2013.csv",
+      "ext": "csv"
+    },
+    "2013-11": {
+      "url": "https://data.rochdale.gov.uk/files/2013-11-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2013-12": {
+      "url": "https://data.rochdale.gov.uk/files/2013-12-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2014-01": {
+      "url": "https://data.rochdale.gov.uk/files/2014-07-17-Jan-14-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2014-02": {
+      "url": "https://data.rochdale.gov.uk/files/2014-07-17-Feb-14-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2014-03": {
+      "url": "https://data.rochdale.gov.uk/files/2014-07-17-Mar-14-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2014-04": {
+      "url": "https://data.rochdale.gov.uk/files/2014-07-23-Apr-14-Spend-Over-500.csv",
+      "ext": "csv"
+    },
+    "2014-05": {
+      "url": "https://data.rochdale.gov.uk/files/2014-07-23-May-14-Spend-Over-500.csv",
+      "ext": "csv"
+    },
+    "2014-06": {
+      "url": "https://data.rochdale.gov.uk/files/2014-07-25-Jun-Spend-Over-500.csv",
+      "ext": "csv"
+    },
+    "2014-07": {
+      "url": "https://data.rochdale.gov.uk/files/2014-08-22-Jul-Spend-Over-500.csv",
+      "ext": "csv"
+    },
+    "2014-08": {
+      "url": "https://data.rochdale.gov.uk/files/2014-14-10-Aug-Spend-Over-500.csv",
+      "ext": "csv"
+    },
+    "2014-09": {
+      "url": "https://data.rochdale.gov.uk/files/2014-11-13-Purchases-Over-500.csv",
+      "ext": "csv"
+    },
+    "2014-10": {
+      "url": "https://data.rochdale.gov.uk/files/2014-12-29-Oct-Spend-Over-500.csv",
+      "ext": "csv"
+    },
+    "2014-12": {
+      "url": "https://data.rochdale.gov.uk/files/2014_Dec_Spend_over_500-v1.csv",
+      "ext": "csv"
+    },
+    "2015-01": {
+      "url": "https://data.rochdale.gov.uk/pdf/2015_Jan_Spend_over_500_v1.pdf",
+      "ext": "pdf"
+    },
+    "2015-02": {
+      "url": "https://data.rochdale.gov.uk/files/2015_Feb_Spend_over_500_v1.csv",
+      "ext": "csv"
+    },
+    "2015-03": {
+      "url": "https://data.rochdale.gov.uk/files/2015-04-23-March-spend-over-500-v1.csv",
+      "ext": "csv"
+    },
+    "2015-04": {
+      "url": "https://data.rochdale.gov.uk/files/2015_06_09_council_spends_over_500_v1.csv",
+      "ext": "csv"
+    },
+    "2015-05": {
+      "url": "https://data.rochdale.gov.uk/files/2015-05-31-council-spend-over-500-v1.csv",
+      "ext": "csv"
+    },
+    "2015-06": {
+      "url": "https://data.rochdale.gov.uk/files/2015-06-30-council-spend-over-500-v1.csv",
+      "ext": "csv"
+    },
+    "2015-07": {
+      "url": "https://data.rochdale.gov.uk/files/2015-07-31-council-spend-over-500-v1.csv",
+      "ext": "csv"
+    },
+    "2015-08": {
+      "url": "https://data.rochdale.gov.uk/files/2015-08-31-council-spend-over-500-v1.csv",
+      "ext": "csv"
+    },
+    "2015-09": {
+      "url": "https://data.rochdale.gov.uk/files/2015-09-30-council-spend-over-500-v1.csv",
+      "ext": "csv"
+    },
+    "2015-10": {
+      "url": "https://data.rochdale.gov.uk/files/2015-10-31-council-spend-over-500-v1.csv",
+      "ext": "csv"
+    },
+    "2015-11": {
+      "url": "https://data.rochdale.gov.uk/files/2015-11-30-council-spend-over-500-v1.csv",
+      "ext": "csv"
+    },
+    "2015-12": {
+      "url": "https://data.rochdale.gov.uk/files/2015-12-31-council-spend-over-500-v1.csv",
+      "ext": "csv"
+    },
+    "2016-01": {
+      "url": "https://data.rochdale.gov.uk/files/2016-01-31-council-spend-over-500-v1.csv",
+      "ext": "csv"
+    },
+    "2016-02": {
+      "url": "https://data.rochdale.gov.uk/files/2016-02-29-council-spends-over-500-v1.csv",
+      "ext": "csv"
+    },
+    "2016-03": {
+      "url": "https://data.rochdale.gov.uk/files/2016-03-31-council-spends-over-500-v1.csv",
+      "ext": "csv"
+    },
+    "2016-04": {
+      "url": "https://data.rochdale.gov.uk/files/2016-04-30-council-spends-over-500-v1.csv",
+      "ext": "csv"
+    },
+    "2016-05": {
+      "url": "https://data.rochdale.gov.uk/files/2016-05-31-council-spends-over-500-v1.csv",
+      "ext": "csv"
+    },
+    "2016-06": {
+      "url": "https://data.rochdale.gov.uk/files/2016-06-30-Jun-Spend-Over-500.csv",
+      "ext": "csv"
+    },
+    "2016-07": {
+      "url": "https://data.rochdale.gov.uk/files/2016-07-31-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2016-08": {
+      "url": "https://data.rochdale.gov.uk/files/2016_Aug_Spend_over_500_v1.csv",
+      "ext": "csv"
+    },
+    "2016-09": {
+      "url": "https://data.rochdale.gov.uk/files/2016-09-30-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2016-10": {
+      "url": "https://data.rochdale.gov.uk/files/2016_10_spend_over_500_v1.csv",
+      "ext": "csv"
+    },
+    "2016-11": {
+      "url": "https://data.rochdale.gov.uk/files/2016_11_spend_over_500_v1.csv",
+      "ext": "csv"
+    },
+    "2016-12": {
+      "url": "https://data.rochdale.gov.uk/files/2016_12_spend_over_500_v1.csv",
+      "ext": "csv"
+    },
+    "2017-01": {
+      "url": "https://data.rochdale.gov.uk/files/2017_01_spend_over_500_v1.csv",
+      "ext": "csv"
+    },
+    "2017-02": {
+      "url": "https://data.rochdale.gov.uk/files/2017_02_Spend_over_500_v1.csv",
+      "ext": "csv"
+    },
+    "2017-03": {
+      "url": "https://data.rochdale.gov.uk/files/2017_03_Spend_over_500_v1.csv",
+      "ext": "csv"
+    },
+    "2017-04": {
+      "url": "https://data.rochdale.gov.uk/files/2017_04_Spend_over_500_v1.csv",
+      "ext": "csv"
+    },
+    "2017-05": {
+      "url": "https://data.rochdale.gov.uk/files/2017_05_Spend_over_500_v1.csv",
+      "ext": "csv"
+    },
+    "2017-06": {
+      "url": "https://data.rochdale.gov.uk/files/2017_06_Spend_Over_500_v1.1.csv",
+      "ext": "csv"
+    },
+    "2017-07": {
+      "url": "https://data.rochdale.gov.uk/files/2017_07_Spend_Over_500.csv",
+      "ext": "csv"
+    },
+    "2017-08": {
+      "url": "https://data.rochdale.gov.uk/files/2017_08_Spend_Over_500.csv",
+      "ext": "csv"
+    },
+    "2017-09": {
+      "url": "https://data.rochdale.gov.uk/files/2017_09_Spend_over_500.csv",
+      "ext": "csv"
+    },
+    "2017-10": {
+      "url": "https://data.rochdale.gov.uk/files/2017_10_Spend_Over_500.csv",
+      "ext": "csv"
+    },
+    "2017-11": {
+      "url": "https://data.rochdale.gov.uk/files/30-11-2017-council-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2017-12": {
+      "url": "https://data.rochdale.gov.uk/files/31-12-2017-council-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2018-01": {
+      "url": "https://data.rochdale.gov.uk/files/31-01-2018-council-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2018-02": {
+      "url": "https://data.rochdale.gov.uk/files/28-02-2018-council-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2018-03": {
+      "url": "https://data.rochdale.gov.uk/files/31-03-2018-council-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2018-04": {
+      "url": "https://data.rochdale.gov.uk/files/2018-april-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2018-05": {
+      "url": "https://data.rochdale.gov.uk/files/2018-may-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2018-06": {
+      "url": "https://data.rochdale.gov.uk/files/2018-june-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2018-07": {
+      "url": "https://data.rochdale.gov.uk/files/2018-july-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2018-08": {
+      "url": "https://data.rochdale.gov.uk/files/2018-10-12-aug-council-spend-over-500.csv",
+      "ext": "csv"
+    },
+    "2018-09": {
+      "url": "https://data.rochdale.gov.uk/pdf/2018-september-spend-over-500.pdf",
+      "ext": "pdf"
+    },
+    "2018-10": {
+      "url": "https://data.rochdale.gov.uk/files/2018-12-06-october-council-spending-v1.csv",
+      "ext": "csv"
+    },
+    "2018-11": {
+      "url": "https://data.rochdale.gov.uk/files/2019-02-06-november-council-spending-v1.csv",
+      "ext": "csv"
+    },
+    "2018-12": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-december-2018.csv",
+      "ext": "csv"
+    },
+    "2019-01": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-january-2019.csv",
+      "ext": "csv"
+    },
+    "2019-02": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-february-2019.csv",
+      "ext": "csv"
+    },
+    "2019-03": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-march-2019.csv",
+      "ext": "csv"
+    },
+    "2019-04": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-april-2019.csv",
+      "ext": "csv"
+    },
+    "2019-05": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-may-2019.csv",
+      "ext": "csv"
+    },
+    "2019-06": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-june-2019.csv",
+      "ext": "csv"
+    },
+    "2019-07": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-july-2019.csv",
+      "ext": "csv"
+    },
+    "2019-08": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-august-2019.csv",
+      "ext": "csv"
+    },
+    "2019-09": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-september-2019.csv",
+      "ext": "csv"
+    },
+    "2019-10": {
+      "url": "https://data.rochdale.gov.uk/pdf/2019-12-16-october-2019-council-spend-v1.pdf",
+      "ext": "pdf"
+    },
+    "2019-11": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-november-2019.csv",
+      "ext": "csv"
+    },
+    "2019-12": {
+      "url": "https://data.rochdale.gov.uk/pdf/Council%20spend%20December%202019.pdf",
+      "ext": "pdf"
+    },
+    "2020-01": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-january-2020.csv",
+      "ext": "csv"
+    },
+    "2020-02": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-february-2020.csv",
+      "ext": "csv"
+    },
+    "2020-03": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-march-2020.csv",
+      "ext": "csv"
+    },
+    "2020-04": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-april-2020.csv",
+      "ext": "csv"
+    },
+    "2020-05": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-may-2020.csv",
+      "ext": "csv"
+    },
+    "2020-06": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-june-2020.csv",
+      "ext": "csv"
+    },
+    "2020-07": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-july-2020.csv",
+      "ext": "csv"
+    },
+    "2020-08": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-august-2020.csv",
+      "ext": "csv"
+    },
+    "2020-09": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-september-2020-v1.csv",
+      "ext": "csv"
+    },
+    "2020-10": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-october-2020-v1.csv",
+      "ext": "csv"
+    },
+    "2020-11": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-november-2020-v1.csv",
+      "ext": "csv"
+    },
+    "2020-12": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-dec-2020-v1.csv",
+      "ext": "csv"
+    },
+    "2021-01": {
+      "url": "https://data.rochdale.gov.uk/files/jan-2021-spend-data.csv",
+      "ext": "csv"
+    },
+    "2021-02": {
+      "url": "https://data.rochdale.gov.uk/files/feb-2021-spend-data.csv",
+      "ext": "csv"
+    },
+    "2021-03": {
+      "url": "https://data.rochdale.gov.uk/files/mar-2021-spend-data.csv",
+      "ext": "csv"
+    },
+    "2021-04": {
+      "url": "https://data.rochdale.gov.uk/files/2021-09-09-april-21-spend-data-v1.csv",
+      "ext": "csv"
+    },
+    "2021-05": {
+      "url": "https://data.rochdale.gov.uk/files/may-2021-spend-data.csv",
+      "ext": "csv"
+    },
+    "2021-06": {
+      "url": "https://data.rochdale.gov.uk/files/council-spend-june-2021.csv",
+      "ext": "csv"
+    },
+    "2021-07": {
+      "url": "https://data.rochdale.gov.uk/files/2021-july-spend-data.csv",
+      "ext": "csv"
+    },
+    "2021-08": {
+      "url": "https://data.rochdale.gov.uk/files/2021-august-spending-data.csv",
+      "ext": "csv"
+    },
+    "2021-09": {
+      "url": "https://data.rochdale.gov.uk/files/2021-sep-spend-data.csv",
+      "ext": "csv"
+    },
+    "2021-10": {
+      "url": "https://data.rochdale.gov.uk/files/2021-october-spend-data.csv",
+      "ext": "csv"
+    },
+    "2021-11": {
+      "url": "https://data.rochdale.gov.uk/files/2021-november-council-spending.csv",
+      "ext": "csv"
+    },
+    "2021-12": {
+      "url": "https://data.rochdale.gov.uk/files/2021-dec-spend-data.csv",
+      "ext": "csv"
+    },
+    "2022-01": {
+      "url": "https://data.rochdale.gov.uk/files/2022-jan-spend-data.csv",
+      "ext": "csv"
+    },
+    "2022-02": {
+      "url": "https://data.rochdale.gov.uk/files/february-2022-spending-data.csv",
+      "ext": "csv"
+    },
+    "2022-03": {
+      "url": "https://data.rochdale.gov.uk/files/2022_MAR_Spend.csv",
+      "ext": "csv"
+    },
+    "2022-04": {
+      "url": "https://data.rochdale.gov.uk/files/2022_APR_Spend.csv",
+      "ext": "csv"
+    },
+    "2022-05": {
+      "url": "https://data.rochdale.gov.uk/files/2022_May_Spend.csv",
+      "ext": "csv"
+    },
+    "2022-06": {
+      "url": "https://data.rochdale.gov.uk/files/2022_JUN_SPEND.csv",
+      "ext": "csv"
+    },
+    "2022-07": {
+      "url": "https://data.rochdale.gov.uk/files/2022_JUL_Spend.csv",
+      "ext": "csv"
+    },
+    "2022-08": {
+      "url": "https://data.rochdale.gov.uk/files/Aug_2022_Spend.csv",
+      "ext": "csv"
+    },
+    "2022-09": {
+      "url": "https://data.rochdale.gov.uk/files/2022_SEPT_Spend.csv",
+      "ext": "csv"
+    },
+    "2022-10": {
+      "url": "https://data.rochdale.gov.uk/files/2022_OCT_Spend.csv",
+      "ext": "csv"
+    },
+    "2022-11": {
+      "url": "https://data.rochdale.gov.uk/files/2022_NOV_Spend.csv",
+      "ext": "csv"
+    },
+    "2022-12": {
+      "url": "https://data.rochdale.gov.uk/files/2022_Dec_Spend.csv",
+      "ext": "csv"
+    },
+    "2023-01": {
+      "url": "https://data.rochdale.gov.uk/files/2023_JAN_Spend.csv",
+      "ext": "csv"
+    },
+    "2023-02": {
+      "url": "https://data.rochdale.gov.uk/files/2023_FEB_Spend.csv",
+      "ext": "csv"
+    },
+    "2023-03": {
+      "url": "https://data.rochdale.gov.uk/files/2023_MAR_Spend.csv",
+      "ext": "csv"
+    },
+    "2023-04": {
+      "url": "https://data.rochdale.gov.uk/files/2023_APR_Spend.csv",
+      "ext": "csv"
+    },
+    "2023-05": {
+      "url": "https://data.rochdale.gov.uk/files/2023_May_Spend.csv",
+      "ext": "csv"
+    },
+    "2023-06": {
+      "url": "https://data.rochdale.gov.uk/files/2023_JUN_Spend.csv",
+      "ext": "csv"
+    },
+    "2023-07": {
+      "url": "https://data.rochdale.gov.uk/files/2023_JUL_Spend.csv",
+      "ext": "csv"
+    },
+    "2023-08": {
+      "url": "https://data.rochdale.gov.uk/files/2023_AUG_Spend.csv",
+      "ext": "csv"
+    },
+    "2023-09": {
+      "url": "https://data.rochdale.gov.uk/files/2023_SEP_Spend.csv",
+      "ext": "csv"
+    },
+    "2023-10": {
+      "url": "https://data.rochdale.gov.uk/files/2023_OCT_Spend.csv",
+      "ext": "csv"
+    },
+    "2023-11": {
+      "url": "https://data.rochdale.gov.uk/files/2023_NOV_Spend.csv",
+      "ext": "csv"
+    },
+    "2023-12": {
+      "url": "https://data.rochdale.gov.uk/files/2023_DEC_Spend.csv",
+      "ext": "csv"
+    },
+    "2024-01": {
+      "url": "https://data.rochdale.gov.uk/files/2024_JAN_Spend.csv",
+      "ext": "csv"
+    },
+    "2024-02": {
+      "url": "https://data.rochdale.gov.uk/files/2024_FEB_Spend.csv",
+      "ext": "csv"
+    },
+    "2024-03": {
+      "url": "https://data.rochdale.gov.uk/files/2024_MAR_Spend.csv",
+      "ext": "csv"
+    },
+    "2024-04": {
+      "url": "https://data.rochdale.gov.uk/files/2024_APR_Spend.csv",
+      "ext": "csv"
+    },
+    "2024-05": {
+      "url": "https://data.rochdale.gov.uk/files/2024_MAY_Spend.csv",
+      "ext": "csv"
+    },
+    "2024-06": {
+      "url": "https://data.rochdale.gov.uk/files/2024_JUN_Spend.csv",
+      "ext": "csv"
+    },
+    "2024-07": {
+      "url": "https://data.rochdale.gov.uk/files/2024_Jul_Spend.csv",
+      "ext": "csv"
+    },
+    "2024-08": {
+      "url": "https://data.rochdale.gov.uk/files/2024_Aug_Spend.csv",
+      "ext": "csv"
+    },
+    "2024-09": {
+      "url": "https://data.rochdale.gov.uk/files/2024_SEPT_Spend.csv",
+      "ext": "csv"
+    },
+    "2024-10": {
+      "url": "https://data.rochdale.gov.uk/files/2024_OCT_Spend.csv",
+      "ext": "csv"
+    },
+    "2024-11": {
+      "url": "https://data.rochdale.gov.uk/files/2024_NOV_Spend.csv",
+      "ext": "csv"
+    },
+    "2024-12": {
+      "url": "https://data.rochdale.gov.uk/files/2024_DEC_Spend.csv",
+      "ext": "csv"
+    },
+    "2025-01": {
+      "url": "https://data.rochdale.gov.uk/files/2025_JAN_Spend.csv",
+      "ext": "csv"
+    },
+    "2025-02": {
+      "url": "https://data.rochdale.gov.uk/files/2025_FEB_Spend.csv",
+      "ext": "csv"
+    },
+    "2025-03": {
+      "url": "https://data.rochdale.gov.uk/files/2025_MAR_Spend.csv",
+      "ext": "csv"
+    },
+    "2025-04": {
+      "url": "https://data.rochdale.gov.uk/files/2025_APR_Spend.csv",
+      "ext": "csv"
+    },
+    "2025-05": {
+      "url": "https://data.rochdale.gov.uk/files/2025_MAY_Spend.csv",
+      "ext": "csv"
+    },
+    "2025-06": {
+      "url": "https://data.rochdale.gov.uk/files/2025_JUNE_SPEND.csv",
+      "ext": "csv"
+    },
+    "2025-07": {
+      "url": "https://data.rochdale.gov.uk/files/2025_JULY_Spend.csv",
+      "ext": "csv"
+    },
+    "2025-08": {
+      "url": "https://data.rochdale.gov.uk/files/2025_AUGUST_Spend.csv",
+      "ext": "csv"
+    },
+    "2025-09": {
+      "url": "https://data.rochdale.gov.uk/files/2025_SEPTEMBER_Spend.csv",
+      "ext": "csv"
+    },
+    "2025-10": {
+      "url": "https://data.rochdale.gov.uk/files/2025_OCTOBER_Spend.csv",
+      "ext": "csv"
+    },
+    "2025-11": {
+      "url": "https://data.rochdale.gov.uk/files/2025_NOVEMBER_Spend.csv",
+      "ext": "csv"
+    },
+    "2025-12": {
+      "url": "https://data.rochdale.gov.uk/files/2025_DEC_Spend.csv",
+      "ext": "csv"
+    },
+    "2026-01": {
+      "url": "https://data.rochdale.gov.uk/files/2026_JAN_Spend.csv",
+      "ext": "csv"
+    },
+    "2026-02": {
+      "url": "https://data.rochdale.gov.uk/files/2026_FEB_Spend.csv",
+      "ext": "csv"
+    },
+    "2026-03": {
+      "url": "https://data.rochdale.gov.uk/files/2026_March_Spend.csv",
+      "ext": "csv"
+    }
+  }
+}

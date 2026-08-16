@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "council_id": "norfolk_cc",
+  "updated": "2026-05-04",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Declarative classification rules for Norfolk County Council. Source: monthly XLSX (2024+) + quarterly CSV (2023) feed at /article/39418/Payments-to-suppliers (Cloudflare-protected, ingested via Chrome MCP). 21 files Jan 2023 – Mar 2026. Header columns: ORGANISATION NAME, ORGANISATION CODE, EFFECTIVE DATE, DIRECTORATE, SUPPLIER NAME, COMPANY NUMBER, CHARITY NUMBER, VCSE GRANT, PAYMENT DATE, TRANSACTION NUMBER, NET AMOUNT, IRRECOVERABLE VAT, PURPOSE OF SPEND, CATEGORY, CARD TRANSACTION, CONTRACT REF, GROSS AMOUNT WHERE NET NOT AVAILABLE, PCARD MERCHANT CATEGORY. Includes Pension Fund + P-card transactions in same feed.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD|FOSTER CARE PAYMENT|DIRECT PAYMENT|PAYMENT TO INDIVIDUAL|TRAINING BURSARY|NCC EMPLOYEE|EMPLOYEE EXPENSE|SGO PAYMENT|ADOPTION PAYMENT)$"
+      },
+      "reason": "Defensive direct-payment rules — Norfolk's redaction style not yet audited. Catches both standard REDACTED and Essex-style category-as-supplier strings."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^(NORFOLK (COUNTY COUNCIL )?PENSION FUND|NORFOLK COUNTY COUNCIL|NORFOLK COUNTY (COUNCIL )?CARES|NPLAW|NORSE CARE LTD|NORSE COMMERCIAL SERVICES LTD|NORSE GROUP LTD|NORSE EASTERN LTD|NPS GROUP LTD)$"
+      },
+      "reason": "NCC group entities. Pension Fund LGPS, NCC self-payments, Norfolk Cares (LATCo subsidiary if exists), nplaw (in-house legal team trading as shared service). Money inside the council group; not external procurement."
+    },
+    {
+      "class": "statutory_pass_through",
+      "match": {
+        "supplier_regex": "^(NORWICH CITY COUNCIL|GREAT YARMOUTH BOROUGH COUNCIL|KING'S LYNN AND WEST NORFOLK BOROUGH COUNCIL|BREAKLAND DISTRICT COUNCIL|BRECKLAND COUNCIL|NORTH NORFOLK DISTRICT COUNCIL|SOUTH NORFOLK COUNCIL|BROADLAND DISTRICT COUNCIL|NORFOLK AND NORWICH UNIVERSITY HOSPITALS NHS FOUNDATION TRUST|JAMES PAGET UNIVERSITY HOSPITALS NHS FOUNDATION TRUST|QUEEN ELIZABETH HOSPITAL KING'S LYNN NHS FOUNDATION TRUST|NORFOLK AND SUFFOLK NHS FOUNDATION TRUST|NORFOLK COMMUNITY HEALTH AND CARE NHS TRUST|NHS NORFOLK AND WAVENEY ICB|EAST OF ENGLAND AMBULANCE SERVICE NHS TRUST)$"
+      },
+      "reason": "County→district + county→NHS pass-throughs. 7 Norfolk districts get DFG (HGCR Act 1996 s.23) + concessionary travel + BCF s.75. NHS trusts + ICB get pooled-budget transfers (NHS Act 2006 s.75)."
+    }
+  ],
+  "supplier_aliases": []
+}

@@ -1,0 +1,567 @@
+{
+  "summary": {
+    "total_spend": 2745861492.32,
+    "transaction_count": 735055,
+    "unique_suppliers": 8352,
+    "avg_transaction": 3735.59,
+    "median_transaction": 757.35,
+    "date_range": {
+      "min": "2020-04-01",
+      "max": "2026-04-30"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "SOLIHULL COMMUNITY HOUSING",
+        "total": 346801546.42,
+        "transactions": 729,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SOLIHULL BSF SCHOOLS LTD",
+        "total": 96095411.63,
+        "transactions": 951,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED PERSONAL DATA",
+        "total": 82701459.71,
+        "transactions": 103061,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WEST MIDLANDS POLICE AUTHORITY",
+        "total": 65910307.65,
+        "transactions": 111,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "VEOLIA ES (UK) LTD",
+        "total": 64395526.31,
+        "transactions": 636,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WEST MIDLANDS COMBINED AUTHORITY",
+        "total": 63731120.45,
+        "transactions": 153,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NATIONWIDE CARE SERVICES LTD",
+        "total": 43092092.74,
+        "transactions": 48986,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BYTES TECHNOLOGY GROUP",
+        "total": 37944876.95,
+        "transactions": 330,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HAYS SPECIALIST RECRUITMENT LTD",
+        "total": 37731045.46,
+        "transactions": 45615,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WILLMOTT DIXON CONSTRUCTION LTD",
+        "total": 35300101.4,
+        "transactions": 74,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TOTAL GAS & POWER LTD",
+        "total": 33669768.49,
+        "transactions": 824,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BALFOUR BEATTY LIVING PLACES LTD",
+        "total": 33484356.43,
+        "transactions": 8791,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "URBAN GROWTH COMPANY",
+        "total": 27446552.22,
+        "transactions": 44,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ENTERPRISE MANAGED SERVICES LTD",
+        "total": 26800972.02,
+        "transactions": 321,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WEST MIDLANDS FIRE SERVICE",
+        "total": 26776999.2,
+        "transactions": 158,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "RUNWOOD HOMES LTD - ORCHARD BLYTHE",
+        "total": 25761210.09,
+        "transactions": 14493,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "JOHN GRAHAM HOLDINGS LTD",
+        "total": 24900401.38,
+        "transactions": 8387,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PRIME LIFE PLC",
+        "total": 23088895.12,
+        "transactions": 9572,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PEOPLE PLUS",
+        "total": 22691512.36,
+        "transactions": 22156,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BIRMINGHAM AND SOLIHULL MENTAL HEALTH TRUST",
+        "total": 22014439.57,
+        "transactions": 99,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.4153,
+    "total_unique_suppliers": 8352,
+    "single_transaction_suppliers": 2735
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 78238,
+      "potential_value": 376245050.85,
+      "items": [
+        {
+          "supplier": "SOLIHULL COMMUNITY HOUSING",
+          "amount": 4862881.0,
+          "date": "2022-12-23",
+          "occurrences": 2,
+          "potential_overpayment": 4862881.0
+        },
+        {
+          "supplier": "SOLIHULL COMMUNITY HOUSING",
+          "amount": 2053000.0,
+          "date": "2024-12-04",
+          "occurrences": 3,
+          "potential_overpayment": 4106000.0
+        },
+        {
+          "supplier": "SOLIHULL COMMUNITY HOUSING",
+          "amount": 2190000.0,
+          "date": "2025-05-16",
+          "occurrences": 2,
+          "potential_overpayment": 2190000.0
+        },
+        {
+          "supplier": "SOLIHULL COMMUNITY HOUSING",
+          "amount": 1942000.0,
+          "date": "2024-12-04",
+          "occurrences": 2,
+          "potential_overpayment": 1942000.0
+        },
+        {
+          "supplier": "SOUTH WARWICKSHIRE UNIVERSITY NHS FOUNDATION TRUST",
+          "amount": 364359.33,
+          "date": "2025-10-01",
+          "occurrences": 6,
+          "potential_overpayment": 1821796.65
+        },
+        {
+          "supplier": "SOLIHULL BSF SCHOOLS LTD",
+          "amount": 833139.74,
+          "date": "2022-07-17",
+          "occurrences": 3,
+          "potential_overpayment": 1666279.48
+        },
+        {
+          "supplier": "SOLIHULL BSF SCHOOLS LTD",
+          "amount": 824989.15,
+          "date": "2023-06-12",
+          "occurrences": 3,
+          "potential_overpayment": 1649978.3
+        },
+        {
+          "supplier": "SOLIHULL BSF SCHOOLS LTD",
+          "amount": 824989.15,
+          "date": "2023-07-19",
+          "occurrences": 3,
+          "potential_overpayment": 1649978.3
+        },
+        {
+          "supplier": "SOLIHULL BSF SCHOOLS LTD",
+          "amount": 824989.15,
+          "date": "2023-10-20",
+          "occurrences": 3,
+          "potential_overpayment": 1649978.3
+        },
+        {
+          "supplier": "SOLIHULL BSF SCHOOLS LTD",
+          "amount": 824989.15,
+          "date": "2023-11-10",
+          "occurrences": 3,
+          "potential_overpayment": 1649978.3
+        },
+        {
+          "supplier": "SOLIHULL BSF SCHOOLS LTD",
+          "amount": 822781.84,
+          "date": "2023-06-12",
+          "occurrences": 3,
+          "potential_overpayment": 1645563.68
+        },
+        {
+          "supplier": "SOLIHULL BSF SCHOOLS LTD",
+          "amount": 821743.19,
+          "date": "2023-09-22",
+          "occurrences": 3,
+          "potential_overpayment": 1643486.38
+        },
+        {
+          "supplier": "SOLIHULL BSF SCHOOLS LTD",
+          "amount": 782606.1,
+          "date": "2022-09-13",
+          "occurrences": 3,
+          "potential_overpayment": 1565212.2
+        },
+        {
+          "supplier": "SOLIHULL BSF SCHOOLS LTD",
+          "amount": 782606.1,
+          "date": "2022-10-21",
+          "occurrences": 3,
+          "potential_overpayment": 1565212.2
+        },
+        {
+          "supplier": "SOLIHULL BSF SCHOOLS LTD",
+          "amount": 782606.1,
+          "date": "2022-11-14",
+          "occurrences": 3,
+          "potential_overpayment": 1565212.2
+        },
+        {
+          "supplier": "SOLIHULL BSF SCHOOLS LTD",
+          "amount": 782606.1,
+          "date": "2023-01-31",
+          "occurrences": 3,
+          "potential_overpayment": 1565212.2
+        },
+        {
+          "supplier": "SOLIHULL BSF SCHOOLS LTD",
+          "amount": 782556.54,
+          "date": "2023-01-19",
+          "occurrences": 3,
+          "potential_overpayment": 1565113.08
+        },
+        {
+          "supplier": "SOLIHULL BSF SCHOOLS LTD",
+          "amount": 781910.66,
+          "date": "2023-03-20",
+          "occurrences": 3,
+          "potential_overpayment": 1563821.32
+        },
+        {
+          "supplier": "SOLIHULL BSF SCHOOLS LTD",
+          "amount": 781837.92,
+          "date": "2023-05-02",
+          "occurrences": 3,
+          "potential_overpayment": 1563675.84
+        },
+        {
+          "supplier": "SOLIHULL BSF SCHOOLS LTD",
+          "amount": 781714.02,
+          "date": "2022-08-14",
+          "occurrences": 3,
+          "potential_overpayment": 1563428.04
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 9705,
+      "total_value": 275935000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 723
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Adult Social Care",
+      "spend": 464361797.67,
+      "count": 221312
+    },
+    {
+      "department": "Children & Education Services",
+      "spend": 284841083.04,
+      "count": 91590
+    },
+    {
+      "department": "Economy and Infrastructure",
+      "spend": 232645947.34,
+      "count": 26678
+    },
+    {
+      "department": "Resources",
+      "spend": 201926756.88,
+      "count": 72710
+    },
+    {
+      "department": "Adult Care Support",
+      "spend": 183007005.47,
+      "count": 92511
+    },
+    {
+      "department": "Central Services to the Public",
+      "spend": 117456062.63,
+      "count": 7897
+    },
+    {
+      "department": "Childrens Services DSG Central",
+      "spend": 102758654.7,
+      "count": 6777
+    },
+    {
+      "department": "Economy and Infrastructure - HRA",
+      "spend": 97332578.12,
+      "count": 274
+    },
+    {
+      "department": "Public Health & Commissioning",
+      "spend": 93997424.93,
+      "count": 16323
+    },
+    {
+      "department": "Children's Services - DSG Central.",
+      "spend": 90089398.82,
+      "count": 10863
+    },
+    {
+      "department": "Children's Services & Skills",
+      "spend": 86816157.13,
+      "count": 44289
+    },
+    {
+      "department": "Housing Revenue Account",
+      "spend": 80404081.8,
+      "count": 88
+    },
+    {
+      "department": "Children and Education",
+      "spend": 72387868.96,
+      "count": 41112
+    },
+    {
+      "department": "Resources - Non Monitored",
+      "spend": 71720967.25,
+      "count": 3518
+    },
+    {
+      "department": "Economy and Infrastructure HRA",
+      "spend": 69891812.66,
+      "count": 105
+    },
+    {
+      "department": "ADULT CARE SUPPORT",
+      "spend": 59477726.78,
+      "count": 26074
+    },
+    {
+      "department": "Highways & Transport Services",
+      "spend": 53425033.93,
+      "count": 9323
+    },
+    {
+      "department": "Planning & Development Services",
+      "spend": 44321161.85,
+      "count": 6375
+    },
+    {
+      "department": "ECONOMY AND INFRASTRUCTURE HRA",
+      "spend": 38596391.7,
+      "count": 34
+    },
+    {
+      "department": "Environmental and Regulatory Services",
+      "spend": 34891482.14,
+      "count": 1496
+    },
+    {
+      "department": "ECONOMY AND INFRASTRUCTURE",
+      "spend": 33774610.86,
+      "count": 4504
+    },
+    {
+      "department": "CHILDRENS SERVICES",
+      "spend": 28702166.96,
+      "count": 16279
+    },
+    {
+      "department": "CHILDRENS SERVICES DSG CENTRAL",
+      "spend": 28625090.34,
+      "count": 3060
+    },
+    {
+      "department": "Other Housing Services",
+      "spend": 27919276.52,
+      "count": 876
+    },
+    {
+      "department": "RESOURCES - NON MONITORED",
+      "spend": 22052638.96,
+      "count": 838
+    },
+    {
+      "department": "Economy And Infrastructure HRA",
+      "spend": 20631602.91,
+      "count": 30
+    },
+    {
+      "department": "Public Health",
+      "spend": 18801708.58,
+      "count": 1304
+    },
+    {
+      "department": "Economy And Infrastructure",
+      "spend": 16997360.8,
+      "count": 1534
+    },
+    {
+      "department": "Covid-19",
+      "spend": 16783106.0,
+      "count": 6611
+    },
+    {
+      "department": "RESOURCES",
+      "spend": 16390145.91,
+      "count": 8603
+    },
+    {
+      "department": "Childrens Services",
+      "spend": 11803810.71,
+      "count": 5956
+    },
+    {
+      "department": "PUBLIC HEALTH",
+      "spend": 5133124.55,
+      "count": 438
+    },
+    {
+      "department": "Cultural & Related Services",
+      "spend": 4073509.38,
+      "count": 3079
+    },
+    {
+      "department": "Precepts Paid to Parish Councils",
+      "spend": 3639431.33,
+      "count": 64
+    },
+    {
+      "department": "Corporate & Democratic Core",
+      "spend": 2748935.74,
+      "count": 401
+    },
+    {
+      "department": "Covid19",
+      "spend": 2285807.8,
+      "count": 290
+    },
+    {
+      "department": "Children And Education",
+      "spend": 2168532.92,
+      "count": 1446
+    },
+    {
+      "department": "COVID-19",
+      "spend": 1404553.49,
+      "count": 338
+    },
+    {
+      "department": "#N/A",
+      "spend": 614474.09,
+      "count": 34
+    },
+    {
+      "department": "Court Services",
+      "spend": 596717.0,
+      "count": 1
+    },
+    {
+      "department": "CONTRACTORS",
+      "spend": 364053.77,
+      "count": 11
+    },
+    {
+      "department": "FURNITURE EQUIPMENT",
+      "spend": 899.48,
+      "count": 7
+    },
+    {
+      "department": "GENERAL BUILDING COSTS",
+      "spend": 540.42,
+      "count": 2
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2020/21": 407063935.26,
+      "2021/22": 408980495.66,
+      "2022/23": 432978330.25,
+      "2023/24": 462565061.48,
+      "2024/25": 524742648.64,
+      "2025/26": 467781959.84,
+      "2026/27": 41749061.19
+    },
+    "transactions_by_year": {
+      "2020/21": 109156,
+      "2021/22": 121523,
+      "2022/23": 114563,
+      "2023/24": 128390,
+      "2024/25": 131892,
+      "2025/26": 118660,
+      "2026/27": 10871
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 735055
+  }
+}

@@ -1,0 +1,517 @@
+{
+  "summary": {
+    "total_spend": 2165889849.19,
+    "transaction_count": 176376,
+    "unique_suppliers": 5908,
+    "avg_transaction": 12279.96,
+    "median_transaction": 1807.22,
+    "date_range": {
+      "min": "2019-04-02",
+      "max": "2026-03-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "KIER CONSTRUCTION LTD",
+        "total": 111727119.57,
+        "transactions": 101,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORTH EAST COMBINED AUTHORITY",
+        "total": 93712938.97,
+        "transactions": 80,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "GATESHEAD COUNCIL",
+        "total": 73898615.73,
+        "transactions": 278,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORTHUMBRIA POLICE",
+        "total": 69087367.29,
+        "transactions": 129,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ESH CONSTRUCTION LTD",
+        "total": 67277944.73,
+        "transactions": 231,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EDF ENERGY CUSTOMERS PLC",
+        "total": 40487862.82,
+        "transactions": 64,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SIGLION DEVELOPMENTS LLP",
+        "total": 36915615.69,
+        "transactions": 55,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HARROGATE AND DISTRICT NHSFT",
+        "total": 36375112.42,
+        "transactions": 87,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CONNECT ROADS SUNDERLAND HOLDINGS LTD",
+        "total": 33705378.51,
+        "transactions": 63,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SUNDERLAND CLC SCHOOLS SERVICES LTD",
+        "total": 25215762.31,
+        "transactions": 140,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "VOLKERSTEVIN INFRASTRUCTURE LTD",
+        "total": 22440408.79,
+        "transactions": 25,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BRIMS CONSTRUCTION LTD",
+        "total": 21400210.22,
+        "transactions": 71,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CHANGE GROW LIVE SERVICES LTD",
+        "total": 20171625.2,
+        "transactions": 95,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "VOLKERSTEVIN LTD",
+        "total": 17530676.77,
+        "transactions": 24,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "GEOMETRIC RESULTS INTERNATIONAL LTD",
+        "total": 17509645.32,
+        "transactions": 185,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SLW LIMITED - SYCAMORE LODGE",
+        "total": 17398295.79,
+        "transactions": 335,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NETWORK RAIL INFRASTRUCTURE",
+        "total": 16367940.08,
+        "transactions": 90,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EDF ENERGY CUSTOMERS LTD",
+        "total": 15651328.5,
+        "transactions": 39,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SIR ROBERT MCALPINE",
+        "total": 15115891.86,
+        "transactions": 38,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CORONA ENERGY RETAIL 2 LTD",
+        "total": 15110017.22,
+        "transactions": 75,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.3542,
+    "total_unique_suppliers": 5908,
+    "single_transaction_suppliers": 1860
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 15815,
+      "potential_value": 186739769.97,
+      "items": [
+        {
+          "supplier": "KIER CONSTRUCTION LTD",
+          "amount": 5048511.14,
+          "date": "2025-08-07",
+          "occurrences": 2,
+          "potential_overpayment": 5048511.14
+        },
+        {
+          "supplier": "KIER CONSTRUCTION LTD",
+          "amount": 4508984.84,
+          "date": "2025-09-05",
+          "occurrences": 2,
+          "potential_overpayment": 4508984.84
+        },
+        {
+          "supplier": "SIGLION DEVELOPMENTS LLP",
+          "amount": 2961779.87,
+          "date": "2023-02-20",
+          "occurrences": 2,
+          "potential_overpayment": 2961779.87
+        },
+        {
+          "supplier": "MACE LTD",
+          "amount": 2286856.09,
+          "date": "2025-09-08",
+          "occurrences": 2,
+          "potential_overpayment": 2286856.09
+        },
+        {
+          "supplier": "KIER CONSTRUCTION LTD",
+          "amount": 2186879.16,
+          "date": "2024-11-14",
+          "occurrences": 2,
+          "potential_overpayment": 2186879.16
+        },
+        {
+          "supplier": "HARROGATE AND DISTRICT NHSFT",
+          "amount": 670717.0,
+          "date": "2025-09-04",
+          "occurrences": 4,
+          "potential_overpayment": 2012151.0
+        },
+        {
+          "supplier": "KIER CONSTRUCTION LTD",
+          "amount": 1905000.0,
+          "date": "2025-09-04",
+          "occurrences": 2,
+          "potential_overpayment": 1905000.0
+        },
+        {
+          "supplier": "SIGLION DEVELOPMENTS LLP",
+          "amount": 1839308.84,
+          "date": "2025-09-24",
+          "occurrences": 2,
+          "potential_overpayment": 1839308.84
+        },
+        {
+          "supplier": "VOLKERSTEVIN INFRASTRUCTURE LTD",
+          "amount": 1787239.1,
+          "date": "2025-09-09",
+          "occurrences": 2,
+          "potential_overpayment": 1787239.1
+        },
+        {
+          "supplier": "KIER CONSTRUCTION LTD",
+          "amount": 1534244.0,
+          "date": "2025-07-23",
+          "occurrences": 2,
+          "potential_overpayment": 1534244.0
+        },
+        {
+          "supplier": "NORTH EAST COMBINED AUTHORITY",
+          "amount": 1470612.0,
+          "date": "2025-07-29",
+          "occurrences": 2,
+          "potential_overpayment": 1470612.0
+        },
+        {
+          "supplier": "NORTH EAST COMBINED AUTHORITY",
+          "amount": 1470612.0,
+          "date": "2025-08-27",
+          "occurrences": 2,
+          "potential_overpayment": 1470612.0
+        },
+        {
+          "supplier": "NORTH EAST COMBINED AUTHORITY",
+          "amount": 1470612.0,
+          "date": "2025-09-26",
+          "occurrences": 2,
+          "potential_overpayment": 1470612.0
+        },
+        {
+          "supplier": "VOLKERSTEVIN INFRASTRUCTURE LTD",
+          "amount": 1450381.85,
+          "date": "2025-08-12",
+          "occurrences": 2,
+          "potential_overpayment": 1450381.85
+        },
+        {
+          "supplier": "SIGLION DEVELOPMENTS LLP",
+          "amount": 1445985.26,
+          "date": "2025-09-03",
+          "occurrences": 2,
+          "potential_overpayment": 1445985.26
+        },
+        {
+          "supplier": "ESH CONSTRUCTION LTD",
+          "amount": 1436934.65,
+          "date": "2025-08-12",
+          "occurrences": 2,
+          "potential_overpayment": 1436934.65
+        },
+        {
+          "supplier": "NORTHUMBRIA POLICE",
+          "amount": 1250045.0,
+          "date": "2025-07-29",
+          "occurrences": 2,
+          "potential_overpayment": 1250045.0
+        },
+        {
+          "supplier": "NORTHUMBRIA POLICE",
+          "amount": 1250044.0,
+          "date": "2025-08-27",
+          "occurrences": 2,
+          "potential_overpayment": 1250044.0
+        },
+        {
+          "supplier": "NORTHUMBRIA POLICE",
+          "amount": 1250044.0,
+          "date": "2025-09-26",
+          "occurrences": 2,
+          "potential_overpayment": 1250044.0
+        },
+        {
+          "supplier": "KIER CONSTRUCTION LTD",
+          "amount": 1115415.0,
+          "date": "2025-09-19",
+          "occurrences": 2,
+          "potential_overpayment": 1115415.0
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 2558,
+      "total_value": 41741000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 132
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "ADULT SERVICES & SUNDERLAND CARE AND SUPPORT",
+      "spend": 461707435.87,
+      "count": 48898
+    },
+    {
+      "department": "CITY DEVELOPMENT",
+      "spend": 360288003.39,
+      "count": 24154
+    },
+    {
+      "department": "ECONOMY & PLACE",
+      "spend": 313014754.85,
+      "count": 18110
+    },
+    {
+      "department": "NEIGHBOURHOODS",
+      "spend": 306128220.37,
+      "count": 38367
+    },
+    {
+      "department": "CORPORATE SERVICES",
+      "spend": 196501315.43,
+      "count": 9724
+    },
+    {
+      "department": "FINANCE",
+      "spend": 122315941.19,
+      "count": 6788
+    },
+    {
+      "department": "HEALTH, HOUSING & COMMUNITIES",
+      "spend": 66312910.46,
+      "count": 5036
+    },
+    {
+      "department": "ENVIRONMENTAL SERVICES",
+      "spend": 58219944.51,
+      "count": 4671
+    },
+    {
+      "department": "PUBLIC HEALTH AND WELLBEING",
+      "spend": 52263367.43,
+      "count": 3832
+    },
+    {
+      "department": "DIRECTOR OF FINANCE",
+      "spend": 44906175.43,
+      "count": 4872
+    },
+    {
+      "department": "PEOPLE SERVICES - JOINT COMMISSIONING & PUBLIC HEALTH",
+      "spend": 35008374.01,
+      "count": 1508
+    },
+    {
+      "department": "SMART CITIES & ENABLING SERVICES",
+      "spend": 34564841.43,
+      "count": 2580
+    },
+    {
+      "department": "CENTRAL COUNCIL",
+      "spend": 28773606.65,
+      "count": 30
+    },
+    {
+      "department": "CHILDREN'S SERVICES",
+      "spend": 28327181.64,
+      "count": 1274
+    },
+    {
+      "department": "City Development",
+      "spend": 13350839.76,
+      "count": 687
+    },
+    {
+      "department": "NEIGHBOURHOOD SERVICES",
+      "spend": 12758216.19,
+      "count": 1509
+    },
+    {
+      "department": "STRATEGY & CORPORATE AFFAIRS",
+      "spend": 7755722.44,
+      "count": 1250
+    },
+    {
+      "department": "DIRECTOR OF SMART CITIES & ENABLING SERVICES",
+      "spend": 7157147.02,
+      "count": 864
+    },
+    {
+      "department": "CHILDRENS SERVICES & TOGETHER FOR CHILDREN",
+      "spend": 4698500.75,
+      "count": 1019
+    },
+    {
+      "department": "SMART CITIES",
+      "spend": 2608737.19,
+      "count": 92
+    },
+    {
+      "department": "PEOPLE SERVICES - CHILDRENS SERVICES",
+      "spend": 2487366.49,
+      "count": 184
+    },
+    {
+      "department": "PEOPLE, COMMUNITIES AND PARTNERSHIPS",
+      "spend": 1608230.79,
+      "count": 425
+    },
+    {
+      "department": "DIRECTOR OF STRATEGY & CORPORATE AFFAIRS",
+      "spend": 1433823.39,
+      "count": 198
+    },
+    {
+      "department": "Finance",
+      "spend": 706236.26,
+      "count": 92
+    },
+    {
+      "department": "Environmental Services",
+      "spend": 652689.18,
+      "count": 9
+    },
+    {
+      "department": "Health, Housing & Communities",
+      "spend": 652179.87,
+      "count": 49
+    },
+    {
+      "department": "Children's Services",
+      "spend": 599307.34,
+      "count": 47
+    },
+    {
+      "department": "FINANCE & PROPERTY",
+      "spend": 411920.97,
+      "count": 64
+    },
+    {
+      "department": "Smart Cities",
+      "spend": 386607.21,
+      "count": 23
+    },
+    {
+      "department": "ADULT SERVICES & SCAS",
+      "spend": 126194.46,
+      "count": 11
+    },
+    {
+      "department": "PEOPLE COMMUNICATIONS & PARTNERSHIPS",
+      "spend": 84250.0,
+      "count": 5
+    },
+    {
+      "department": "PUBLIC HEALTH & WELLBEING",
+      "spend": 46031.22,
+      "count": 1
+    },
+    {
+      "department": "Adult Services & SCAS",
+      "spend": 33776.0,
+      "count": 3
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2019/20": 268360233.13,
+      "2020/21": 171518.26,
+      "2021/22": 313117948.97,
+      "2022/23": 374449116.24,
+      "2023/24": 283909800.04,
+      "2024/25": 329600622.35,
+      "2025/26": 596280610.2
+    },
+    "transactions_by_year": {
+      "2019/20": 26586,
+      "2020/21": 139,
+      "2021/22": 29478,
+      "2022/23": 30774,
+      "2023/24": 23881,
+      "2024/25": 24691,
+      "2025/26": 40827
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 176376
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "source": "ONS Census 2021 via Nomis API + policy compilation",
+    "council_id": "essex_cc",
+    "council_name": "Essex",
+    "ons_code": "E10000012",
+    "census_date": "2021-03-21",
+    "generated": "2026-06-28T16:56:31"
+  },
+  "census": {
+    "council_totals": {
+      "tenure": {
+        "Total: All households": 626470,
+        "Owned": 432370,
+        "Owned: Owns outright": 227592,
+        "Owned: Owns with a mortgage or loan": 204778,
+        "Shared ownership": 5259,
+        "Shared ownership: Shared ownership": 5259,
+        "Social rented": 88529,
+        "Social rented: Rents from council or Local Authority": 45368,
+        "Social rented: Other social rented": 43161,
+        "Private rented": 99764,
+        "Private rented: Private landlord or letting agency": 87593,
+        "Private rented: Other private rented": 12171,
+        "Lives rent free": 548,
+        "Owns with a mortgage or loan or shared ownership": 210037,
+        "Private rented or lives rent free": 100312
+      },
+      "accommodation_type": {
+        "Total": 626471,
+        "Detached": 191338,
+        "Semi-detached": 197039,
+        "Terraced": 124599,
+        "In a purpose-built block of flats or tenement": 93638,
+        "Part of a converted or shared house, including bedsits": 6623,
+        "Part of another converted building, for example, former school, church or warehouse": 3959,
+        "In a commercial building, for example, in an office building, hotel or over a shop": 4034,
+        "A caravan or other mobile or temporary structure": 5241
+      },
+      "overcrowding": {
+        "Total: All households": 626472,
+        "Occupancy rating of bedrooms: +2 or more": 240165,
+        "Occupancy rating of bedrooms: +1": 210095,
+        "Occupancy rating of bedrooms: 0": 156335,
+        "Occupancy rating of bedrooms: -1": 17820,
+        "Occupancy rating of bedrooms: -2 or less": 2057
+      },
+      "bedrooms": {
+        "Total: All households": 626472,
+        "1 bedroom": 66673,
+        "2 bedrooms": 165045,
+        "3 bedrooms": 237039,
+        "4 or more bedrooms": 157715
+      },
+      "household_size": {
+        "Total: All households": 626472,
+        "0 people in household": 0,
+        "1 person in household": 177924,
+        "2 people in household": 218402,
+        "3 people in household": 102291,
+        "4 people in household": 88815,
+        "5 people in household": 27939,
+        "6 people in household": 7809,
+        "7 people in household": 2231,
+        "8 or more people in household": 1061
+      }
+    },
+    "wards": {}
+  },
+  "policy": {
+    "article_4": {
+      "active": false
+    },
+    "selective_licensing": {
+      "active": false
+    }
+  },
+  "summary": {
+    "total_households": 626470,
+    "owned": 432370,
+    "owned_pct": 69.0,
+    "social_rented": 88529,
+    "social_rented_pct": 14.1,
+    "private_rented": 100312,
+    "private_rented_pct": 16.0,
+    "rent_free": 548,
+    "rent_free_pct": 0.1,
+    "overcrowded": 19877,
+    "overcrowding_pct": 3.2,
+    "detached_pct": 30.5,
+    "semi_detached_pct": 31.5,
+    "terraced_pct": 19.9,
+    "flat_pct": 17.3,
+    "avg_household_size": 2.37,
+    "has_article_4": false,
+    "has_selective_licensing": false
+  }
+}

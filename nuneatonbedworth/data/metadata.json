@@ -1,0 +1,172 @@
+{
+  "council": "Nuneaton & Bedworth",
+  "council_id": "E07000219",
+  "council_type": "district",
+  "spending_threshold": 500,
+  "total_records": 20081,
+  "financial_years": [
+    "2023/24",
+    "2024/25",
+    "2025/26"
+  ],
+  "data_types": [
+    "spend"
+  ],
+  "filters": {
+    "departments": [
+      {
+        "name": "Housing & Community Safety",
+        "spend": 83390875.24,
+        "count": 10467,
+        "suppliers": 381
+      },
+      {
+        "name": "Public Services",
+        "spend": 54279555.5,
+        "count": 3210,
+        "suppliers": 361
+      },
+      {
+        "name": "Economy & Transformation",
+        "spend": 29225068.42,
+        "count": 1309,
+        "suppliers": 251
+      },
+      {
+        "name": "Place & Economy",
+        "spend": 27812385.41,
+        "count": 1391,
+        "suppliers": 287
+      },
+      {
+        "name": "Corporate Services",
+        "spend": 16900680.54,
+        "count": 798,
+        "suppliers": 120
+      },
+      {
+        "name": "Corporate Resources",
+        "spend": 13852819.97,
+        "count": 793,
+        "suppliers": 189
+      },
+      {
+        "name": "Recreation & Culture",
+        "spend": 8108916.23,
+        "count": 159,
+        "suppliers": 48
+      },
+      {
+        "name": "Social Housing & Safety",
+        "spend": 6505550.94,
+        "count": 658,
+        "suppliers": 91
+      },
+      {
+        "name": "Economy & Regeneration",
+        "spend": 6342608.62,
+        "count": 159,
+        "suppliers": 60
+      },
+      {
+        "name": "Finance & Governance",
+        "spend": 2802602.53,
+        "count": 332,
+        "suppliers": 92
+      },
+      {
+        "name": "Chief Executive & Elections",
+        "spend": 2092145.97,
+        "count": 224,
+        "suppliers": 59
+      },
+      {
+        "name": "Strategic Housing",
+        "spend": 1887686.61,
+        "count": 309,
+        "suppliers": 46
+      },
+      {
+        "name": "Environment & Enforcement",
+        "spend": 1538563.09,
+        "count": 112,
+        "suppliers": 40
+      },
+      {
+        "name": "Finance",
+        "spend": 911738.38,
+        "count": 62,
+        "suppliers": 23
+      },
+      {
+        "name": "Central Operations",
+        "spend": 450616.61,
+        "count": 74,
+        "suppliers": 32
+      },
+      {
+        "name": "Democracy & Governance",
+        "spend": 130931.11,
+        "count": 6,
+        "suppliers": 4
+      },
+      {
+        "name": "Elections",
+        "spend": 75042.69,
+        "count": 11,
+        "suppliers": 6
+      },
+      {
+        "name": "Planning",
+        "spend": 17954.61,
+        "count": 7,
+        "suppliers": 4
+      }
+    ],
+    "department_raws": [
+      "Central Operations",
+      "Chief Executive & Elections",
+      "Corporate Resources",
+      "Corporate Services",
+      "Democracy & Governance",
+      "Economy & Regeneration",
+      "Economy & Transformation",
+      "Elections",
+      "Environment & Enforcement",
+      "Finance",
+      "Finance & Governance",
+      "Housing & Community Safety",
+      "Place & Economy",
+      "Planning",
+      "Public Services",
+      "Recreation & Culture",
+      "Social Housing & Safety",
+      "Strategic Housing"
+    ]
+  },
+  "total_spend": 256325742.47,
+  "total_spend_paid": 256325742.47,
+  "total_spend_committed": 0,
+  "total_spend_all_types_legacy": 256325742.47,
+  "record_count_paid": 20081,
+  "record_count_committed": 0,
+  "record_class_breakdown": {
+    "procurement_paid": {
+      "count": 20081,
+      "sum": 256325742.47
+    }
+  },
+  "spend_triangulation": {
+    "transparency_gross": 256325742.47,
+    "transparency_paid": 256325742.47,
+    "procurement_only": 256325742.47,
+    "non_procurement": 0.0
+  },
+  "dedup_rule": "total_spend = spend + purchase_cards; contracts excluded (77% pair with matching spend within 90d \u2014 see .claude/rules/lessons.md)",
+  "dedup_applied": "enforced at ETL (council_etl.py)",
+  "unique_suppliers": 1191,
+  "date_range": {
+    "min": "2023-04-03",
+    "max": "2026-03-31"
+  }
+}

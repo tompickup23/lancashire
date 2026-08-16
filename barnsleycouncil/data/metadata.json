@@ -1,0 +1,140 @@
+{
+  "council": "Barnsley",
+  "council_id": "E08000016",
+  "council_type": "metropolitan_borough",
+  "spending_threshold": 500,
+  "total_records": 369423,
+  "financial_years": [
+    "2020/21",
+    "2021/22",
+    "2022/23",
+    "2023/24",
+    "2024/25",
+    "2025/26"
+  ],
+  "data_types": [
+    "spend"
+  ],
+  "filters": {
+    "departments": [
+      {
+        "name": "Childrens Services",
+        "spend": 570950226.52,
+        "count": 63964,
+        "suppliers": 1120
+      },
+      {
+        "name": "Core Services",
+        "spend": 515078657.8,
+        "count": 71885,
+        "suppliers": 1132
+      },
+      {
+        "name": "Growth & Sustainability",
+        "spend": 503715484.45,
+        "count": 59954,
+        "suppliers": 3194
+      },
+      {
+        "name": "Housing Revenue Account",
+        "spend": 449977509.19,
+        "count": 3094,
+        "suppliers": 203
+      },
+      {
+        "name": "Place Health & Adult Social Care",
+        "spend": 390192796.5,
+        "count": 38736,
+        "suppliers": 464
+      },
+      {
+        "name": "People",
+        "spend": 378412335.87,
+        "count": 51994,
+        "suppliers": 927
+      },
+      {
+        "name": "Place",
+        "spend": 265660841.66,
+        "count": 26105,
+        "suppliers": 1842
+      },
+      {
+        "name": "Corporate Budgets",
+        "spend": 224644823.26,
+        "count": 38865,
+        "suppliers": 3807
+      },
+      {
+        "name": "Public Health & Communities",
+        "spend": 79948626.85,
+        "count": 8832,
+        "suppliers": 897
+      },
+      {
+        "name": "Communities",
+        "spend": 36950587.86,
+        "count": 5495,
+        "suppliers": 603
+      },
+      {
+        "name": "Public Health",
+        "spend": 6769983.77,
+        "count": 428,
+        "suppliers": 97
+      },
+      {
+        "name": "BMBC",
+        "spend": 1062160.93,
+        "count": 66,
+        "suppliers": 2
+      },
+      {
+        "name": "HRA",
+        "spend": 642111.53,
+        "count": 5,
+        "suppliers": 3
+      }
+    ],
+    "department_raws": [
+      "BMBC",
+      "Childrens Services",
+      "Communities",
+      "Core Services",
+      "Corporate Budgets",
+      "Growth & Sustainability",
+      "HRA",
+      "Housing Revenue Account",
+      "People",
+      "Place",
+      "Place Health & Adult Social Care",
+      "Public Health",
+      "Public Health & Communities"
+    ]
+  },
+  "total_spend": 3424006146.19,
+  "total_spend_paid": 3424006146.19,
+  "total_spend_committed": 0,
+  "total_spend_all_types_legacy": 3424006146.19,
+  "record_count_paid": 369423,
+  "record_count_committed": 0,
+  "record_class_breakdown": {
+    "procurement_paid": {
+      "count": 369423,
+      "sum": 3424006146.19
+    }
+  },
+  "spend_triangulation": {
+    "transparency_gross": 3424006146.19,
+    "transparency_paid": 3424006146.19,
+    "procurement_only": 3424006146.19,
+    "non_procurement": 0.0
+  },
+  "dedup_rule": "total_spend = spend + purchase_cards; contracts excluded (77% pair with matching spend within 90d \u2014 see .claude/rules/lessons.md)",
+  "dedup_applied": "enforced at ETL (council_etl.py)",
+  "unique_suppliers": 10015,
+  "date_range": {
+    "min": "2020-07-01",
+    "max": "2026-03-31"
+  }
+}

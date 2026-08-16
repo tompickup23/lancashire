@@ -1,0 +1,70 @@
+{
+ "generated": "2026-06-24",
+ "source": "Staffordshire CC 2026/27 MTFS budget (ModernGov doc s205066, full Council Feb 2026, verified) + the AI DOGE directorate engine.",
+ "council_id": "staffordshire_cc",
+ "council_type": "county",
+ "financial_year": "2026/27",
+ "net_revenue_budget": 840828000,
+ "directorates": [
+  {
+   "id": "health_care",
+   "name": "Health and Care",
+   "budget_2026_27": 332439000,
+   "savings_identified": 13974000,
+   "_note": "Largest directorate; carries the bulk of the savings."
+  },
+  {
+   "id": "children_families",
+   "name": "Children and Families",
+   "budget_2026_27": 238318000,
+   "savings_identified": 2973000
+  },
+  {
+   "id": "economy_infra_skills",
+   "name": "Economy, Infrastructure and Skills",
+   "budget_2026_27": 125234000,
+   "savings_identified": 2800000
+  },
+  {
+   "id": "corporate_central",
+   "name": "Corporate Services and Central items",
+   "budget_2026_27": 144837000,
+   "savings_identified": 1723000
+  }
+ ],
+ "cross_cutting": {
+  "combined_low": 12325400,
+  "combined_high": 21470000,
+  "as_pct_of_budget_low": 1.5,
+  "as_pct_of_budget_high": 2.6,
+  "_note": "2026/27 savings programme GBP 21.470m by directorate; the directorate engine risk-adjusts it to GBP 12.3m EV."
+ },
+ "mtfs_gap_cumulative": 59780000,
+ "mtfs_period": "2027/28 to 2030/31 (Headroom/Shortfall, peak 30/31)",
+ "reserves": {
+  "total": null,
+  "assessment": "low risk",
+  "contribution_2026_27_gbp": 3688000,
+  "_note": "CIPFA resilience indicator: low risk on level and use of usable reserves; a GBP 3.688m contribution from reserves supports the 2026/27 budget. Usable reserves total not separately extracted."
+ },
+ "risks": [
+  {
+   "risk": "DSG High Needs deficit GBP 53.6m at end 2024/25, High Needs Block overspend GBP 42m per year, forecast to exceed GBP 200m by the end of the MTFS if unmitigated, against a statutory override that ends 31 March 2028. Staffordshire has NO DfE Safety Valve agreement and manages the deficit through its own DSG Deficit Management Plan, so the cliff is severe.",
+   "severity": "critical",
+   "rating": "Critical"
+  },
+  {
+   "risk": "Forward MTFP gap (Headroom/Shortfall) rising to GBP 11.030m (2027/28), GBP 25.163m (2028/29), GBP 49.329m (2029/30), GBP 59.780m (2030/31); as a shire county, funding reduces over the period.",
+   "severity": "high",
+   "rating": "High"
+  },
+  {
+   "risk": "Adult social care (Health and Care) carries GBP 13.974m of the GBP 21.470m savings, the bulk; delivery risk concentrated in ASC, with SEND stabilisation a stated pressure.",
+   "severity": "high",
+   "rating": "High"
+  }
+ ],
+ "council_tax_band_d": 1686.42,
+ "council_tax_increase_pct": 3.99,
+ "_provenance": "Refreshed 24 Jun 2026 from the verified 2026/27 MTFS budget (s205066). Supersedes the prior auto-generated 2024/25 directorate_analysis (regenerable via generate_directorate_analysis.py). Read directly by the Council Intel generator; data_sources.directorate_analysis stays absent."
+}

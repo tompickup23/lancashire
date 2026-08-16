@@ -1,0 +1,593 @@
+{
+  "generated": "2026-07-07",
+  "source": "GOV.UK MHCLG Revenue Outturn (2024/25), DOGE forensic analysis, spending data analysis, budgets_summary.json",
+  "council_id": "newcastle_upon_tyne",
+  "council_type": "unitary",
+  "financial_year": "2024/25",
+  "net_revenue_budget": 302165000,
+  "directorates": [
+    {
+      "id": "highways_environment",
+      "name": "Highways & Environment",
+      "budget_2026_27": 35238000,
+      "budget_breakdown": {
+        "Highways and transport services": 88000,
+        "Environmental and regulatory services": 35150000
+      },
+      "savings_opportunities": [
+        {
+          "opportunity": "Preventative highways maintenance vs reactive repair",
+          "estimate_low": 350000,
+          "estimate_high": 1400000,
+          "evidence": "Every \u00a31 not spent on preventative maintenance costs \u00a34-8 in reactive repairs (HMEP 2023). Surface dressing at \u00a33-5/m\u00b2 is 5-10x cheaper than full reconstruction at \u00a330-50/m\u00b2. Risk-based asset management approach prioritises investment on highest-traffic routes.",
+          "timeline": "medium_term",
+          "risk": "Medium \u2014 requires sustained capital investment to realise revenue savings"
+        },
+        {
+          "opportunity": "Waste disposal contract re-procurement and recycling improvement",
+          "estimate_low": 175000,
+          "estimate_high": 700000,
+          "evidence": "Competitive re-tendering of waste disposal. Improving recycling rates diverts tonnage from expensive residual treatment (\u00a3100-120/t residual vs \u00a330-50/t recycled). Food waste separate collection (mandatory from March 2026 \u2014 Environment Act 2021) can divert 30% of residual.",
+          "timeline": "medium_term",
+          "risk": "Low \u2014 regulatory mandate drives investment"
+        },
+        {
+          "opportunity": "LED street lighting conversion and smart dimming",
+          "estimate_low": 75000,
+          "estimate_high": 350000,
+          "evidence": "LED conversion delivers 50-70% energy savings over sodium. Dimming profiles (midnight-5am) and part-night operation offer further 10-15%. Central Management Systems (CMS) enable remote fault detection, reducing patrol costs. Salix finance available at 0% interest.",
+          "timeline": "short_term",
+          "risk": "Low \u2014 proven technology, Salix-funded"
+        },
+        {
+          "opportunity": "Highways permit scheme and lane rental income (NRSWA s171)",
+          "estimate_low": 100000,
+          "estimate_high": 350000,
+          "evidence": "Permit schemes for utility road openings generate net income after admin costs. Lane rental schemes (TMA 2004 s73A) recover cost of congestion from utility works \u2014 \u00a35-15K per day in high-traffic areas. Over-run charges incentivise faster completion.",
+          "timeline": "short_term",
+          "risk": "Low \u2014 established legal framework, DfT encourages adoption"
+        }
+      ],
+      "savings_identified": [],
+      "growth_items_2026_27": [
+        {
+          "item": "Environmental and regulatory services reduction",
+          "amount": -8427000,
+          "type": "efficiency",
+          "detail": "-19.3% year-on-year (35,150,000 vs 43,577,000)"
+        },
+        {
+          "item": "Highways and transport services reduction",
+          "amount": -287000,
+          "type": "efficiency",
+          "detail": "-76.5% year-on-year (88,000 vs 375,000)"
+        }
+      ],
+      "key_contracts": [
+        {
+          "supplier": "Suez Recycling & Recovery Holdings Uk",
+          "value": "\u00a359.4M",
+          "term": "211 transactions",
+          "note": "Top department: Operations & Reg Services"
+        },
+        {
+          "supplier": "Tay Valley Lighting",
+          "value": "\u00a325.2M",
+          "term": "45 transactions",
+          "note": "Top department: Place"
+        },
+        {
+          "supplier": "Ella Mccambridge",
+          "value": "\u00a37.3M",
+          "term": "157 transactions",
+          "note": "Top department: Adult Social Care & Prevention"
+        },
+        {
+          "supplier": "Streetgames Uk Ltd",
+          "value": "\u00a36.3M",
+          "term": "35 transactions",
+          "note": "Top department: Public Health Service"
+        },
+        {
+          "supplier": "Biffa Waste Services Ltd",
+          "value": "\u00a35.3M",
+          "term": "470 transactions",
+          "note": "Top department: Operations & Reg Services"
+        }
+      ],
+      "commercialisation": [
+        {
+          "lever": "Fleet management and specialist vehicle hire",
+          "estimate_low": 75000,
+          "estimate_high": 175000,
+          "evidence": "Shared fleet services with partner organisations (fire, police, NHS). EV charging on council land (10-15% ROI). Vehicle maintenance traded to parish councils. Annual MOT testing income from public facility."
+        },
+        {
+          "lever": "Commercial waste collection and green waste premium",
+          "estimate_low": 100000,
+          "estimate_high": 275000,
+          "evidence": "Trade waste collection to SMEs (\u00a330-80/month per business). Premium garden waste subscriptions (\u00a340-60/yr, 30-40% take-up). Bulky waste charging (\u00a325-40 per collection). Annual income typically \u00a3500K-2M for county/unitary scale."
+        },
+        {
+          "lever": "Highway advertising and asset monetisation",
+          "estimate_low": 25000,
+          "estimate_high": 150000,
+          "evidence": "Roundabout sponsorship (\u00a33-10K/yr), lamp post banners, digital advertising on council land. Revenue share with specialist operators. Bus shelter advertising concessions. Car park naming rights."
+        }
+      ],
+      "performance": {
+        "metric": "Recycling rate (%)",
+        "england_avg": 44.0,
+        "unit": "%",
+        "source": "DEFRA Waste Statistics 2023-24",
+        "budget_change_yoy_pct": -19.8,
+        "income_recovery_pct": 99.8
+      },
+      "waste_flags": [
+        "Likely Duplicate Payments: \u00a3778.4K"
+      ]
+    },
+    {
+      "id": "communities_culture",
+      "name": "Communities & Culture",
+      "budget_2026_27": 13824000,
+      "budget_breakdown": {
+        "Cultural and related services": 13824000
+      },
+      "savings_opportunities": [
+        {
+          "opportunity": "Library service transformation and community partnership model",
+          "estimate_low": 275000,
+          "estimate_high": 1100000,
+          "evidence": "Community-managed or shared library models reduce direct costs 15-30% while maintaining statutory access (Public Libraries and Museums Act 1964). Volunteer-supported models in 40+ authorities. Self-service technology (RFID) reduces staffing needs 25-35%.",
+          "timeline": "medium_term",
+          "risk": "Medium \u2014 statutory duty requires needs assessment and consultation"
+        },
+        {
+          "opportunity": "Leisure trust model and VAT efficiency",
+          "estimate_low": 150000,
+          "estimate_high": 700000,
+          "evidence": "Leisure trust models deliver 20% VAT saving on admissions income (HMRC NPDO exemption). Annual saving of \u00a380-150K per wet-and-dry centre. Trust model also unlocks NNDR charity relief (80% mandatory + 20% discretionary). HMRC Midlothian ruling (2024) clarified agency model.",
+          "timeline": "short_term",
+          "risk": "Low \u2014 well-established model, TUPE transfer required"
+        },
+        {
+          "opportunity": "Registration service and archives digitalisation",
+          "estimate_low": 75000,
+          "estimate_high": 275000,
+          "evidence": "Digital access to archives reduces physical storage costs (\u00a350-100/m\u00b2/yr). Online registration booking reduces counter staff time 30%. Birth/death certificate digitisation saves per-transaction costs. Genealogy subscription income from digitised records.",
+          "timeline": "medium_term",
+          "risk": "Low \u2014 invest-to-save, improves access"
+        }
+      ],
+      "savings_identified": [],
+      "growth_items_2026_27": [
+        {
+          "item": "Cultural and related services growth",
+          "amount": 3705000,
+          "type": "demand_led",
+          "detail": "+36.6% year-on-year (13,824,000 vs 10,119,000)"
+        }
+      ],
+      "key_contracts": [
+        {
+          "supplier": "Dene Park House Akaricare",
+          "value": "\u00a34.8M",
+          "term": "249 transactions",
+          "note": "Top department: Adult Social Care & Prevention"
+        },
+        {
+          "supplier": "Hkg Leisure & Events T/A Pretty Picture",
+          "value": "\u00a3109K",
+          "term": "6 transactions",
+          "note": "Top department: Place"
+        },
+        {
+          "supplier": "Busy Bees Great Park Nursery",
+          "value": "\u00a32.3M",
+          "term": "83 transactions",
+          "note": "Top department: Children & Families"
+        },
+        {
+          "supplier": "Chase Park Neuro Centre",
+          "value": "\u00a31.2M",
+          "term": "315 transactions",
+          "note": "Top department: ASC & Integrated Services"
+        },
+        {
+          "supplier": "Community Transport Newcastle East",
+          "value": "\u00a31.7M",
+          "term": "82 transactions",
+          "note": "Top department: Children & Families"
+        }
+      ],
+      "commercialisation": [
+        {
+          "lever": "Events, venue hire and filming location income",
+          "estimate_low": 150000,
+          "estimate_high": 550000,
+          "evidence": "Council-owned buildings, parks and spaces for weddings (\u00a32-10K/booking), conferences (\u00a3500-2K/day), filming (\u00a3500-5,000/day). Location filming fees increasingly significant (\u00a315M+ spent in English regions 2023). Wedding venue licensing for heritage buildings."
+        },
+        {
+          "lever": "Library commercial partnerships and co-location",
+          "estimate_low": 75000,
+          "estimate_high": 275000,
+          "evidence": "NHS services, post office counters, caf\u00e9 operations co-located in libraries. Rental income + footfall increase. Coffee franchise concessions \u00a310-30K/yr per site. Warm spaces programme funding."
+        },
+        {
+          "lever": "Tourism, heritage and merchandise",
+          "estimate_low": 75000,
+          "estimate_high": 200000,
+          "evidence": "Gift shops, guided tours, educational workshops, schools programme. Heritage sites: \u00a33-8 admission. Events programme: Christmas markets (\u00a350-200K net), food festivals, craft fairs. Tourism BID partnerships for destination marketing."
+        }
+      ],
+      "performance": {
+        "metric": "Library visits per 1,000 population",
+        "england_avg": 3460,
+        "unit": "visits/1K pop",
+        "source": "CIPFA Library Statistics 2023-24",
+        "budget_change_yoy_pct": 36.6,
+        "income_recovery_pct": 31.6
+      },
+      "waste_flags": [
+        "Cultural and related services growth: +36.6% year-on-year (13,824,000 vs 10,119,000) \u2014 review demand drivers",
+        "Likely Duplicate Payments: \u00a3778.4K"
+      ]
+    },
+    {
+      "id": "place_services",
+      "name": "Place Services",
+      "budget_2026_27": 18347000,
+      "budget_breakdown": {
+        "Housing services (GFRA only)": 14902000,
+        "Planning and development services": 3445000
+      },
+      "savings_opportunities": [
+        {
+          "opportunity": "Planning fee income maximisation and pre-application charging",
+          "estimate_low": 375000,
+          "estimate_high": 1475000,
+          "evidence": "Enhanced pre-application advice (\u00a3500-5K per major app), Planning Performance Agreements (\u00a310-50K). National 25% fee increase (Dec 2023) partially offsets cost pressures. Permitted development monitoring fees. Community Infrastructure Levy administration fee (5% of CIL receipts).",
+          "timeline": "short_term",
+          "risk": "Low \u2014 income already budgeted, scope for growth"
+        },
+        {
+          "opportunity": "Homelessness prevention to reduce temporary accommodation costs",
+          "estimate_low": 175000,
+          "estimate_high": 925000,
+          "evidence": "Each family in temporary accommodation costs \u00a320-40K/yr (nightly rate + admin). Prevention programmes (Homelessness Reduction Act 2017 duty) show 50-60% success rate. Rapid Rehousing Pathway: \u00a35K per prevented case vs \u00a325K+ for B&B placement. Housing First model for complex needs (80% tenancy sustainment).",
+          "timeline": "medium_term",
+          "risk": "Medium \u2014 demand-driven, private rental market constraints"
+        },
+        {
+          "opportunity": "HMO licensing income expansion and enforcement",
+          "estimate_low": 100000,
+          "estimate_high": 550000,
+          "evidence": "Mandatory and additional HMO licensing generates income from fees (\u00a3500-1,000 per licence, 5-year renewal). Selective licensing for whole areas (Housing Act 2004 Part 3). Enforcement action recovers costs + Civil Penalty Notices up to \u00a330K per offence (alternative to prosecution).",
+          "timeline": "short_term",
+          "risk": "Low \u2014 self-funding regulatory activity"
+        },
+        {
+          "opportunity": "Building control market share recovery",
+          "estimate_low": 100000,
+          "estimate_high": 375000,
+          "evidence": "Approved Inspector market share now ~60% nationally. Council building control competes on speed, local knowledge, and completion certificate reliability. Full cost recovery through fees (Building Act 1984). Building Safety Act 2022 Higher Risk Buildings must use council BC \u2014 growth opportunity.",
+          "timeline": "medium_term",
+          "risk": "Low \u2014 regulatory reform creates opportunity"
+        }
+      ],
+      "savings_identified": [],
+      "growth_items_2026_27": [
+        {
+          "item": "Housing services (GFRA only) growth",
+          "amount": 4069000,
+          "type": "demand_led",
+          "detail": "+37.6% year-on-year (14,902,000 vs 10,833,000)"
+        },
+        {
+          "item": "Planning and development services growth",
+          "amount": 1570000,
+          "type": "demand_led",
+          "detail": "+83.7% year-on-year (3,445,000 vs 1,875,000)"
+        }
+      ],
+      "key_contracts": [
+        {
+          "supplier": "Equans Regeneration Ltd",
+          "value": "\u00a335.2M",
+          "term": "869 transactions",
+          "note": "Top department: Housing Revenue Account"
+        },
+        {
+          "supplier": "Newcastleupontyne Hospitaltrust",
+          "value": "\u00a336.4M",
+          "term": "325 transactions",
+          "note": "Top department: Public Health Service"
+        },
+        {
+          "supplier": "Miscellaneous Payments Bacs",
+          "value": "\u00a327.1M",
+          "term": "10754 transactions",
+          "note": "Top department: Children, Education and Skills"
+        },
+        {
+          "supplier": "Northumberland Tyne&Wear Nhs Trust",
+          "value": "\u00a325.2M",
+          "term": "114 transactions",
+          "note": "Top department: Public Health Service"
+        },
+        {
+          "supplier": "Sutherland Court",
+          "value": "\u00a37.5M",
+          "term": "166 transactions",
+          "note": "Top department: Adult Social Care & Prevention"
+        }
+      ],
+      "commercialisation": [
+        {
+          "lever": "Strategic land and property disposal programme",
+          "estimate_low": 175000,
+          "estimate_high": 725000,
+          "evidence": "Strategic disposal of surplus land/property holdings for capital receipts. Community asset transfers where appropriate. One Public Estate partnerships. Revenue from Right to Buy receipts (retained 40%). Land assembly for joint ventures with housing associations."
+        },
+        {
+          "lever": "Local housing company rental income",
+          "estimate_low": 100000,
+          "estimate_high": 375000,
+          "evidence": "Local housing companies build/acquire properties for market and affordable rent. Net revenue from rents after financing costs. 30+ councils now operate housing companies. Typical 3-5% yield on investment. Also reduces temporary accommodation costs through supply."
+        }
+      ],
+      "performance": {
+        "metric": "Planning applications decided in time (%)",
+        "england_avg": 88,
+        "unit": "%",
+        "source": "DLUHC Planning Statistics Q4 2023-24",
+        "budget_change_yoy_pct": 44.4,
+        "income_recovery_pct": 59.8
+      },
+      "waste_flags": [
+        "Housing services (GFRA only) growth: +37.6% year-on-year (14,902,000 vs 10,833,000) \u2014 review demand drivers",
+        "Planning and development services growth: +83.7% year-on-year (3,445,000 vs 1,875,000) \u2014 review demand drivers",
+        "Likely Duplicate Payments: \u00a3778.4K"
+      ]
+    },
+    {
+      "id": "corporate_finance",
+      "name": "Corporate & Finance",
+      "budget_2026_27": 11634000,
+      "budget_breakdown": {
+        "Central services": 11514000,
+        "Other services": 120000
+      },
+      "savings_opportunities": [
+        {
+          "opportunity": "Procurement consolidation and category management",
+          "estimate_low": 225000,
+          "estimate_high": 700000,
+          "evidence": "Category management, framework consolidation, and supplier rationalisation. CIPFA recommends 3-5% procurement savings target on addressable spend. National Procurement Strategy 2024 mandates social value weighting. E-procurement systems reduce processing costs \u00a315-30 per transaction.",
+          "timeline": "medium_term",
+          "risk": "Low \u2014 operational improvement"
+        },
+        {
+          "opportunity": "Digital transformation and channel shift",
+          "estimate_low": 125000,
+          "estimate_high": 475000,
+          "evidence": "Channel shift to digital self-service reduces transaction costs: phone call \u00a35-7, face-to-face \u00a38-14, web self-service \u00a30.10-0.30. RPA for high-volume processing (council tax changes, benefits assessment). AI chatbot for first-line enquiries (25-40% deflection rate). GDS design standards.",
+          "timeline": "medium_term",
+          "risk": "Low \u2014 invest-to-save, improves customer experience"
+        },
+        {
+          "opportunity": "PWLB debt repayment and treasury management optimisation",
+          "estimate_low": 50000,
+          "estimate_high": 225000,
+          "evidence": "Opportunistic early repayment of high-rate PWLB loans when cash flow permits. Each \u00a31M early repayment of 4%+ loans saves \u00a330-50K/yr in interest. Internal borrowing from cash balances (currently earning 4-5% vs paying 4-6% on PWLB). CIPFA TM Code compliance.",
+          "timeline": "short_term",
+          "risk": "Low \u2014 prudent financial management"
+        },
+        {
+          "opportunity": "Agency and interim staff spend reduction",
+          "estimate_low": 50000,
+          "estimate_high": 175000,
+          "evidence": "Replace long-term agency workers (12+ months) with permanent or fixed-term contracts. Agency markup typically 15-30% over direct employment cost. LGA workforce survey 2024: average 7.5% agency spend. Council-operated agency (Comensura-type) reduces margin leakage.",
+          "timeline": "short_term",
+          "risk": "Low \u2014 if recruitment market allows, improves institutional knowledge"
+        },
+        {
+          "opportunity": "Insurance mutual membership and self-insurance",
+          "estimate_low": 25000,
+          "estimate_high": 125000,
+          "evidence": "Local authority mutual models (e.g., LAML) vs commercial insurers save 5-15% on premiums. Higher excess/deductible with risk management reserve. Annual premium saving \u00a3100-500K depending on authority size. Property consolidation reduces insured portfolio.",
+          "timeline": "medium_term",
+          "risk": "Medium \u2014 requires risk appetite and reserve allocation"
+        },
+        {
+          "opportunity": "DOGE finding: Suppliers with Current Red Flags",
+          "estimate_low": 180000,
+          "estimate_high": 900000,
+          "evidence": "6 current suppliers have Companies House compliance issues (historical payments were made before breaches started) Flagged value: \u00a31.8M.",
+          "timeline": "short_term",
+          "risk": "Severity: info"
+        },
+        {
+          "opportunity": "DOGE finding: Likely Duplicate Payments",
+          "estimate_low": 70000,
+          "estimate_high": 380000,
+          "evidence": "352 high-confidence duplicate groups with same supplier, amount, date and reference (3+ copies) (after filtering 8832 CSV republication artifacts) Flagged value: \u00a3778.4K.",
+          "timeline": "short_term",
+          "risk": "Severity: critical"
+        },
+        {
+          "opportunity": "DOGE finding: Possible Duplicate Payments",
+          "estimate_low": 200000,
+          "estimate_high": 1000000,
+          "evidence": "585 medium-confidence groups (same supplier/amount/date, different references) Flagged value: \u00a32.0M.",
+          "timeline": "short_term",
+          "risk": "Severity: warning"
+        },
+        {
+          "opportunity": "DOGE finding: Suspected Split Payments",
+          "estimate_low": 3050000,
+          "estimate_high": 15250000,
+          "evidence": "146 instances of 3+ payments just below approval thresholds in the same week Flagged value: \u00a330.5M.",
+          "timeline": "short_term",
+          "risk": "Severity: warning"
+        },
+        {
+          "opportunity": "DOGE finding: Round-Number Payments (>\u00a35K)",
+          "estimate_low": 6430000,
+          "estimate_high": 32150000,
+          "evidence": "1598 exact round-number payments over \u00a35,000 \u2014 may indicate estimates rather than invoiced amounts Flagged value: \u00a364.3M.",
+          "timeline": "short_term",
+          "risk": "Severity: info"
+        }
+      ],
+      "savings_identified": [],
+      "growth_items_2026_27": [
+        {
+          "item": "Central services reduction",
+          "amount": -34914000,
+          "type": "efficiency",
+          "detail": "-75.2% year-on-year (11,514,000 vs 46,428,000)"
+        }
+      ],
+      "key_contracts": [
+        {
+          "supplier": "Aura (Ncle) Project Company Ltd",
+          "value": "\u00a362.4M",
+          "term": "504 transactions",
+          "note": "Top department: Children, Education and Skills"
+        },
+        {
+          "supplier": "A&J Keith Ltd",
+          "value": "\u00a345.5M",
+          "term": "1349 transactions",
+          "note": "Top department: City Ops, Nghbrhds & Reg Srvcs"
+        },
+        {
+          "supplier": "Newcastleupontyne Hospitaltrust",
+          "value": "\u00a336.4M",
+          "term": "325 transactions",
+          "note": "Top department: Public Health Service"
+        },
+        {
+          "supplier": "Equans Regeneration Ltd",
+          "value": "\u00a335.2M",
+          "term": "869 transactions",
+          "note": "Top department: Housing Revenue Account"
+        },
+        {
+          "supplier": "Miscellaneous Payments Bacs",
+          "value": "\u00a327.1M",
+          "term": "10754 transactions",
+          "note": "Top department: Children, Education and Skills"
+        }
+      ],
+      "commercialisation": [
+        {
+          "lever": "Shared services income (HR, finance, legal, IT)",
+          "estimate_low": 50000,
+          "estimate_high": 225000,
+          "evidence": "Selling back-office services to neighbouring councils, parish councils, and partner bodies. CIPFA benchmarking: shared services save 10-25% vs standalone. Essex-model legal partnership generates \u00a32M+ net income. Payroll bureaux (\u00a33-8 per payslip)."
+        },
+        {
+          "lever": "Property portfolio rationalisation and rental income",
+          "estimate_low": 50000,
+          "estimate_high": 175000,
+          "evidence": "Surplus property disposal (capital receipts) and commercial letting of underused office space. Flexible workspace demand growing post-COVID. Solar PV on council roofs (\u00a320-50K/yr per large building). One Public Estate partnerships with NHS/police."
+        },
+        {
+          "lever": "Data, analytics and consultancy services",
+          "estimate_low": 25000,
+          "estimate_high": 100000,
+          "evidence": "Selling council expertise in areas of strength (trading standards, building control, elections admin, data analytics) to other authorities. Knowledge transfer partnerships. Secondment income from partner organisations."
+        }
+      ],
+      "performance": {
+        "metric": "Support services cost per FTE",
+        "england_avg": 4200,
+        "unit": "\u00a3/FTE",
+        "source": "CIPFA VfM Indicators 2023-24",
+        "budget_change_yoy_pct": -75.0,
+        "income_recovery_pct": 86.3
+      },
+      "waste_flags": [
+        "Likely Duplicate Payments: \u00a3778.4K"
+      ]
+    }
+  ],
+  "cross_cutting": {
+    "total_savings_potential": {
+      "from_budget_identified": 0,
+      "from_vacancy_management": 0,
+      "from_new_opportunities_low": 12355000,
+      "from_new_opportunities_high": 59580000
+    },
+    "total_commercialisation_low": 900000,
+    "total_commercialisation_high": 3225000,
+    "combined_low": 13255000,
+    "combined_high": 62805000,
+    "as_pct_of_budget_low": 4.4,
+    "as_pct_of_budget_high": 20.8,
+    "top_5_opportunities": [
+      {
+        "id": "place_services_1",
+        "area": "Place Services",
+        "opportunity": "Planning fee income maximisation and pre-application charging",
+        "estimate": "\u00a30.4M\u2013\u00a31.5M",
+        "timeline": "short_term"
+      },
+      {
+        "id": "highways_environment_1",
+        "area": "Highways",
+        "opportunity": "Preventative highways maintenance vs reactive repair",
+        "estimate": "\u00a30.3M\u2013\u00a31.4M",
+        "timeline": "medium_term"
+      },
+      {
+        "id": "communities_culture_1",
+        "area": "Communities",
+        "opportunity": "Library service transformation and community partnership model",
+        "estimate": "\u00a30.3M\u2013\u00a31.1M",
+        "timeline": "medium_term"
+      },
+      {
+        "id": "place_services_2",
+        "area": "Place Services",
+        "opportunity": "Homelessness prevention to reduce temporary accommodation costs",
+        "estimate": "\u00a3175K\u2013\u00a3925K",
+        "timeline": "medium_term"
+      },
+      {
+        "id": "highways_environment_2",
+        "area": "Highways",
+        "opportunity": "Waste disposal contract re-procurement and recycling improvement",
+        "estimate": "\u00a3175K\u2013\u00a3700K",
+        "timeline": "medium_term"
+      }
+    ],
+    "note": "Combined potential \u00a313.3M\u2013\u00a362.8M against \u00a3302M budget (4.4\u201320.8%). Includes \u00a30.9M\u2013\u00a33.2M from commercialisation."
+  },
+  "mtfs_gap_cumulative": 71549198,
+  "mtfs_period": "2025/26\u20132028/29",
+  "reserves": {
+    "total_at_q3": 178765000,
+    "general_fund": 18146000,
+    "earmarked": 160619000
+  },
+  "risks": [
+    {
+      "risk": "Likely duplicate payments requiring recovery",
+      "detail": "DOGE analysis found \u00a3778.4K in probable duplicate payments \u2014 recovery action recommended",
+      "severity": "high",
+      "rating": "High"
+    },
+    {
+      "risk": "Suspected split payment evasion",
+      "detail": "DOGE analysis found \u00a330.5M in suspected split payments below approval thresholds",
+      "severity": "medium",
+      "rating": "Medium"
+    }
+  ],
+  "council_tax_band_d": 2115.64,
+  "council_tax_increase_pct": 4.99
+}

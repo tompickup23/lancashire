@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "council_id": "wigan",
+  "updated": "2026-05-17",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Wigan Council is a metropolitan borough authority. Default is procurement_paid. Wigan does NOT redact individual payments at the published threshold so direct_payment_individual rules are inactive by default. Greater Manchester Pension Fund payments bucket to internal_transfer. Audit corpus on first run to confirm.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"
+      },
+      "reason": "Defensive REDACTED rule — pattern in case Wigan begins publishing redacted Care Act direct payments."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^.*GREATER MANCHESTER PENSION FUND.*$"
+      },
+      "reason": "Wigan LGPS contributions to the Greater Manchester Pension Fund (administered by Tameside MBC) are internal-transfer from general fund to the council's own pension vehicle, not third-party procurement."
+    }
+  ],
+  "supplier_aliases": []
+}

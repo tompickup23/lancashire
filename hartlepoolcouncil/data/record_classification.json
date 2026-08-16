@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "council_id": "hartlepool",
+  "updated": "2026-07-06",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Hartlepool Borough Council is a unitary authority publishing a single quarterly payments-over-£500 feed (XLSX, 13 cols) with an embedded Card Transaction flag (card rows tagged type=purchase_cards at ETL). ASC + children's services mean the feed carries REDACTED Care Act direct-payment rows (~1,194 across 2022/23-2025/26) — routed to direct_payment_individual to keep them out of HHI / supplier-league / duplicate analyses. Default: procurement_paid.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD|PAYMENT TO AN INDIVIDUAL|PAYMENT TO INDIVIDUAL)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR personal-data redactions — direct payments to individuals (foster carers, SGO recipients, ASC service-user direct payments). Suffix-tolerant regex shared with Gateshead/Blackpool/Blackburn/LCC. Lawfully unnamed."
+    },
+    {
+      "class": "procurement_paid",
+      "match": {},
+      "reason": "Default for Hartlepool. Single quarterly feed, no PO/invoice split; card transactions carry type=purchase_cards which is also a paid outflow."
+    }
+  ]
+}

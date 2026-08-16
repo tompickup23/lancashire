@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "council_id": "coventry",
+  "updated": "2026-05-18",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Declarative classification rules for Coventry City Council monthly spend-over-500 CSVs. Coventry is a metropolitan-borough unitary covering all functions (Education, Adult Social Care, Children's, Highways, Housing). Default is procurement_paid. REDACTED variants bucket to direct_payment_individual. Pension Fund transfers bucket to internal_transfer. NHS pass-throughs (Coventry & Warwickshire ICB / UH Coventry & Warwickshire) bucket to statutory_pass_through.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD|PAYMENT TO AN INDIVIDUAL|PAYMENT TO INDIVIDUAL|PRIVATE INDIVIDUAL|INDIVIDUAL)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions covering ASC direct payments, foster carer / SGO allowances, CYP direct payments. Lawfully unnamed — not third-party procurement."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^.*COVENTRY.*PENSION FUND.*$"
+      },
+      "reason": "West Midlands Pension Fund — LGPS scheme. Money moving inside the council group, not external procurement."
+    },
+    {
+      "class": "statutory_pass_through",
+      "match": {
+        "supplier_regex": "^(NHS COVENTRY (AND|&) WARWICKSHIRE ICB( \\(QWU\\))?|COVENTRY (AND|&) RUGBY (CLINICAL COMMISSIONING GROUP|CCG)|UNIVERSITY HOSPITALS COVENTRY (AND|&) WARWICKSHIRE NHS TRUST|COVENTRY (AND|&) WARWICKSHIRE PARTNERSHIP NHS TRUST|GEORGE ELIOT HOSPITAL NHS TRUST|WARWICKSHIRE COUNTY COUNCIL)$"
+      },
+      "reason": "BCF s.75 pooled budget transfers to NHS commissioning bodies + county-pass-through for shared service-area contributions (Section 75 NHS Act 2006). Legally ring-fenced. ICB names include (QWU) parenthetical suffix and use '&' rather than 'AND'."
+    }
+  ],
+  "supplier_aliases": []
+}

@@ -1,0 +1,501 @@
+{
+  "summary": {
+    "total_spend": 1172163605.05,
+    "transaction_count": 247728,
+    "unique_suppliers": 7786,
+    "avg_transaction": 4731.66,
+    "median_transaction": 1591.74,
+    "date_range": {
+      "min": "2018-08-01",
+      "max": "2024-04-30"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "HAMPSHIRE WASTE SERVICES LTD",
+        "total": 67074228.12,
+        "transactions": 11,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PERSONAL PAYMENTS",
+        "total": 62594470.94,
+        "transactions": 30997,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MILESTONE INFRASTRUCTURE LTD",
+        "total": 37051392.32,
+        "transactions": 2361,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TAY VALLEY LIGHTING (HAMPSHIRE) LTD",
+        "total": 36521114.53,
+        "transactions": 13,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SKANSKA CONSTRUCTION UK LTD",
+        "total": 30629666.65,
+        "transactions": 3065,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HAMPSHIRE PENSION FUND",
+        "total": 24831354.48,
+        "transactions": 47,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HANTS & KENT COMM SERVS LLP",
+        "total": 16771871.96,
+        "transactions": 10,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SOUTHERN HEALTH NHS FOUNDATION TRUS",
+        "total": 10639196.96,
+        "transactions": 57,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DIMENSIONS (NSO)",
+        "total": 10462657.1,
+        "transactions": 4645,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "KIER CONSTRUCTION SOUTHERN",
+        "total": 9886888.65,
+        "transactions": 28,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "STAGECOACH SOUTH LTD",
+        "total": 8937726.52,
+        "transactions": 434,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FAIR WAYS",
+        "total": 8600269.68,
+        "transactions": 932,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NPOWER",
+        "total": 8511721.25,
+        "transactions": 2008,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MATRIX SCM",
+        "total": 7514094.83,
+        "transactions": 4828,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WEST HAMPSHIRE NHS TRUST",
+        "total": 7485860.76,
+        "transactions": 12,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INCLUSION DRUG ALCOHOL AND PSYCHOLO",
+        "total": 7117427.56,
+        "transactions": 14,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CORRIGENDA LIMITED T/A CORRIGENDA F",
+        "total": 6825228.3,
+        "transactions": 764,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NATWEST BANK PLC",
+        "total": 6432229.06,
+        "transactions": 10,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ATKINS LTD",
+        "total": 6329598.76,
+        "transactions": 578,
+        "company_number": "15270037",
+        "company_url": "https://find-and-update.company-information.service.gov.uk/company/15270037"
+      },
+      {
+        "supplier": "CORPORATE RESOURCES",
+        "total": 6063231.44,
+        "transactions": 302,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.3244,
+    "total_unique_suppliers": 7786,
+    "single_transaction_suppliers": 2301
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 26919,
+      "potential_value": 136734057.41,
+      "items": [
+        {
+          "supplier": "SOUTHERN HEALTH NHS FOUNDATION TRUS",
+          "amount": 370136.98,
+          "date": "2022-12-20",
+          "occurrences": 4,
+          "potential_overpayment": 1110410.94
+        },
+        {
+          "supplier": "SOUTHERN HEALTH NHS FOUNDATION TRUS",
+          "amount": 370136.98,
+          "date": "2023-05-10",
+          "occurrences": 4,
+          "potential_overpayment": 1110410.94
+        },
+        {
+          "supplier": "SOUTHERN HEALTH NHS FOUNDATION TRUS",
+          "amount": 370136.98,
+          "date": "2024-04-09",
+          "occurrences": 4,
+          "potential_overpayment": 1110410.94
+        },
+        {
+          "supplier": "ST EDWARDS SCHOOL",
+          "amount": 28632.0,
+          "date": "2022-12-21",
+          "occurrences": 28,
+          "potential_overpayment": 773064.0
+        },
+        {
+          "supplier": "PERSONAL PAYMENTS",
+          "amount": 550.0,
+          "date": "2022-12-22",
+          "occurrences": 784,
+          "potential_overpayment": 430650.0
+        },
+        {
+          "supplier": "FAIR WAYS",
+          "amount": 28463.07,
+          "date": "2019-04-01",
+          "occurrences": 14,
+          "potential_overpayment": 370019.91
+        },
+        {
+          "supplier": "PERSONAL PAYMENTS",
+          "amount": 500.0,
+          "date": "2023-05-25",
+          "occurrences": 696,
+          "potential_overpayment": 347500.0
+        },
+        {
+          "supplier": "FAIR WAYS",
+          "amount": 29996.78,
+          "date": "2021-08-25",
+          "occurrences": 12,
+          "potential_overpayment": 329964.58
+        },
+        {
+          "supplier": "MOTUS GROUP (UK) LTD",
+          "amount": 19284.25,
+          "date": "2024-04-03",
+          "occurrences": 17,
+          "potential_overpayment": 308548.0
+        },
+        {
+          "supplier": "COXLEASE",
+          "amount": 25510.2,
+          "date": "2021-08-23",
+          "occurrences": 12,
+          "potential_overpayment": 280612.2
+        },
+        {
+          "supplier": "CSW GROUP LTD",
+          "amount": 278400.0,
+          "date": "2018-11-20",
+          "occurrences": 2,
+          "potential_overpayment": 278400.0
+        },
+        {
+          "supplier": "PRIORS COURT SERVICES LTD",
+          "amount": 89745.14,
+          "date": "2022-12-13",
+          "occurrences": 4,
+          "potential_overpayment": 269235.42
+        },
+        {
+          "supplier": "COXLEASE",
+          "amount": 25055.28,
+          "date": "2021-08-23",
+          "occurrences": 11,
+          "potential_overpayment": 250552.8
+        },
+        {
+          "supplier": "PRIORY - CLAY HILL SCHOOL",
+          "amount": 26112.21,
+          "date": "2022-12-12",
+          "occurrences": 10,
+          "potential_overpayment": 235009.89
+        },
+        {
+          "supplier": "PERSONAL PAYMENTS",
+          "amount": 500.0,
+          "date": "2024-04-25",
+          "occurrences": 456,
+          "potential_overpayment": 227500.0
+        },
+        {
+          "supplier": "COXLEASE",
+          "amount": 25010.0,
+          "date": "2020-12-10",
+          "occurrences": 10,
+          "potential_overpayment": 225090.0
+        },
+        {
+          "supplier": "COXLEASE",
+          "amount": 24564.0,
+          "date": "2020-12-10",
+          "occurrences": 10,
+          "potential_overpayment": 221076.0
+        },
+        {
+          "supplier": "PRIORY - CLAY HILL SCHOOL",
+          "amount": 25510.2,
+          "date": "2021-08-27",
+          "occurrences": 9,
+          "potential_overpayment": 204081.6
+        },
+        {
+          "supplier": "FAIR WAYS",
+          "amount": 22254.36,
+          "date": "2021-08-25",
+          "occurrences": 10,
+          "potential_overpayment": 200289.24
+        },
+        {
+          "supplier": "FAIR WAYS",
+          "amount": 28463.07,
+          "date": "2018-08-13",
+          "occurrences": 8,
+          "potential_overpayment": 199241.49
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 1637,
+      "total_value": 64131000.0
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Adult Services",
+      "spend": 342768463.13,
+      "count": 106528
+    },
+    {
+      "department": "Children's Services",
+      "spend": 260177195.18,
+      "count": 48903
+    },
+    {
+      "department": "ETE",
+      "spend": 136895675.93,
+      "count": 7470
+    },
+    {
+      "department": "Adults' Health and Care",
+      "spend": 107594461.45,
+      "count": 51869
+    },
+    {
+      "department": "Universal Services",
+      "spend": 101630624.6,
+      "count": 5560
+    },
+    {
+      "department": "Corporate Services",
+      "spend": 53069675.44,
+      "count": 4761
+    },
+    {
+      "department": "Policy & Resources",
+      "spend": 40268140.41,
+      "count": 2137
+    },
+    {
+      "department": "CCBS",
+      "spend": 36135128.55,
+      "count": 6276
+    },
+    {
+      "department": "ETE Holding Accounts",
+      "spend": 19028601.4,
+      "count": 53
+    },
+    {
+      "department": "Children's Services Cashlimited",
+      "spend": 17218848.61,
+      "count": 3839
+    },
+    {
+      "department": "Public Health",
+      "spend": 9927924.08,
+      "count": 349
+    },
+    {
+      "department": "DELETE",
+      "spend": 9495340.27,
+      "count": 4403
+    },
+    {
+      "department": "ETE Cashlimited",
+      "spend": 7658930.02,
+      "count": 759
+    },
+    {
+      "department": "Corporate Services Cashlimited",
+      "spend": 5502557.73,
+      "count": 786
+    },
+    {
+      "department": "ETE Non Delegated",
+      "spend": 5136519.65,
+      "count": 387
+    },
+    {
+      "department": "Hampshire 2050",
+      "spend": 3496609.66,
+      "count": 579
+    },
+    {
+      "department": "HCC Schools Budgets",
+      "spend": 3282011.86,
+      "count": 1534
+    },
+    {
+      "department": "Children's Services Non Delegated",
+      "spend": 2981480.83,
+      "count": 160
+    },
+    {
+      "department": "CCBS Cashlimited",
+      "spend": 2752525.39,
+      "count": 621
+    },
+    {
+      "department": "HCC Corporate Holding Accounts",
+      "spend": 2498516.67,
+      "count": 2
+    },
+    {
+      "department": "Adults Services Non Delegated",
+      "spend": 1539562.73,
+      "count": 51
+    },
+    {
+      "department": "CCBS Non Delegated",
+      "spend": 1358668.7,
+      "count": 331
+    },
+    {
+      "department": "Policy & Resources Holding Accounts",
+      "spend": 634116.54,
+      "count": 79
+    },
+    {
+      "department": "CCBS Trading Units",
+      "spend": 446611.26,
+      "count": 141
+    },
+    {
+      "department": "Policy and Resources Other Cashlimited",
+      "spend": 327997.28,
+      "count": 101
+    },
+    {
+      "department": "Non-Cashlimited Budgets",
+      "spend": 167036.75,
+      "count": 1
+    },
+    {
+      "department": "Coroners",
+      "spend": 101195.08,
+      "count": 23
+    },
+    {
+      "department": "HCC Summary Revenue",
+      "spend": 32999.93,
+      "count": 1
+    },
+    {
+      "department": "Children's Services Trading Units",
+      "spend": 32055.92,
+      "count": 22
+    },
+    {
+      "department": "Basingstoke Canal",
+      "spend": 3580.0,
+      "count": 1
+    },
+    {
+      "department": "Adults Holding Accounts",
+      "spend": 550.0,
+      "count": 1
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2018/19": 306732951.18,
+      "2019/20": 222351631.84,
+      "2020/21": 104268341.16,
+      "2021/22": 186679359.5,
+      "2022/23": 113201510.49,
+      "2023/24": 124892476.24,
+      "2024/25": 114037334.64
+    },
+    "transactions_by_year": {
+      "2018/19": 63402,
+      "2019/20": 38794,
+      "2020/21": 18432,
+      "2021/22": 37183,
+      "2022/23": 20725,
+      "2023/24": 24690,
+      "2024/25": 44502
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 247728
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "council_id": "doncaster",
+  "council_name": "Doncaster",
+  "council_full_name": "City of Doncaster Council",
+  "council_type": "metropolitan",
+  "council_tier": "unitary",
+  "ons_code": "E08000017",
+  "official_website": "https://www.doncaster.gov.uk",
+  "moderngov_url": "https://doncaster.moderngov.co.uk",
+  "spending_threshold": 500,
+  "data_sources": {
+    "spending": true,
+    "budgets": true,
+    "budgets_govuk": true,
+    "budget_trends": true,
+    "news": false,
+    "doge_investigation": true,
+    "borough_savings": true,
+    "lgr_tracker": true,
+    "procurement": true,
+    "politics": true,
+    "integrity": true,
+    "housing": true,
+    "health": true,
+    "economy": true,
+    "deprivation": true,
+    "ward_boundaries": true,
+    "collection_rates": true,
+    "councillor_profiles": false,
+    "spending_db": true,
+    "council_directives": true,
+    "property_assets": true,
+    "cross_council": true
+  },
+  "spending_data_period": "",
+  "hero_subtitle": "Explore how City of Doncaster Council manages public money. Budget analysis powered by GOV.UK MHCLG data.",
+  "disclaimer_entity": "City of Doncaster Council",
+  "publisher": "Tom Pickup",
+  "publisher_bio": "This website was created by Tom Pickup, Reform UK county councillor for Padiham and Burnley West and Cabinet Member for Adult Social Care at Lancashire County Council. He is also parish councillor for Clowbridge with Dunnockshaw. Tom builds transparency tools that make public spending data easier to check.",
+  "publisher_titles": [
+    "County Councillor for Padiham and Burnley West",
+    "Cabinet Member for Adult Social Care, Lancashire County Council",
+    "Parish Councillor for Clowbridge with Dunnockshaw"
+  ],
+  "publisher_photo": "/images/tom-pickup.jpg",
+  "publisher_quote": "It's your money. The more people understand where it goes, the better.",
+  "publisher_social": [
+    {
+      "platform": "x",
+      "url": "https://x.com/tompickup",
+      "label": "@tompickup"
+    }
+  ],
+  "theme_accent": "#0a84ff",
+  "doge_context": {
+    "political_control": "Reform UK majority (May 2025). Previously Labour-controlled.",
+    "total_spend": "£1.14B",
+    "transactions": 346261,
+    "suppliers": 3965,
+    "data_period": "April 2024 – November 2025",
+    "spend_triangulation": {
+      "transparency_gross": "£1.14B",
+      "transparency_paid": "£1.14B",
+      "procurement_only": "£982.1M",
+      "non_procurement": "£154.0M",
+      "note": "Transparency gross = £1.14B across every class in the published corpus. Procurement-paid (discretionary third-party payments) = £982.1M. Non-procurement rows: settlement noise (£836.7K), internal transfers to pension fund / in-house provider / wholly-owned subsidiary (£153.1M) — all excluded from third-party-supplier forensic analyses. Net revenue budget figures (where published) are smaller again because they net capital, grants received, and reserves movements — transparency totals include all of these."
+    },
+    "record_classification": {
+      "procurement_paid": {
+        "count": 343205,
+        "sum": "£982.1M",
+        "note": "Discretionary third-party supplier payments — the real procurement footprint."
+      },
+      "internal_transfer": {
+        "count": 265,
+        "sum": "£153.1M",
+        "note": "Council's own pension fund, in-house provider arm, or wholly-owned subsidiary. Money from commissioner to provider within the authority boundary."
+      },
+      "settlement_noise": {
+        "count": 2791,
+        "sum": "£836.7K",
+        "note": "BACS / EFT settlement micro-journals. Not a supplier."
+      }
+    },
+    "record_classification_updated": "2026-04-19"
+  },
+  "political_control": {
+    "reform_run": true,
+    "tenure_tier": "may_2026_new",
+    "tier_a": true,
+    "tier_b": false,
+    "is_council_intel_focus": true,
+    "tenure_note": null,
+    "as_of": "2026-05-16",
+    "source": "council-intel/platform-bundle.json"
+  }
+}

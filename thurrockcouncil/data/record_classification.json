@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "council_id": "thurrock",
+  "updated": "2026-05-10",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Thurrock Council is a unitary authority under Best Value statutory intervention since September 2022 (Commissioner-led, ongoing through 2027/28). Feed is monthly CSV with 'Source' = 'Purchase Invoices' or 'Procurement Card Transactions' (the ETL maps the latter to type=purchase_cards). Beneficiary 'Redacted' / 'REDACTED' rows are direct payments to individuals (Care Act / fostering / SGO / ASC) and must be excluded from supplier-league + duplicate / split forensic analyses. Cloned from durham template on initial onboarding; revisit after a top-30-supplier audit identifies any settlement-noise or accrual buckets.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions — direct payments to individuals (foster carers, SGO recipients, ASC service-user direct payments, CYP direct payments). Pattern matches both casings ('Redacted', 'REDACTED') including suffixed variants."
+    }
+  ],
+  "supplier_aliases": []
+}

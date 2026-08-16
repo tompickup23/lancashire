@@ -1,0 +1,152 @@
+{
+  "council": "Walsall",
+  "council_id": "E08000030",
+  "council_type": "metropolitan_borough",
+  "spending_threshold": 500,
+  "total_records": 504784,
+  "financial_years": [
+    "2021/22",
+    "2022/23",
+    "2023/24",
+    "2024/25",
+    "2025/26"
+  ],
+  "data_types": [
+    "spend"
+  ],
+  "filters": {
+    "departments": [
+      {
+        "name": "",
+        "spend": 811001560.26,
+        "count": 220908,
+        "suppliers": 3349
+      },
+      {
+        "name": "CHILDRENS",
+        "spend": 328117136.25,
+        "count": 77487,
+        "suppliers": 1503
+      },
+      {
+        "name": "ADULT SOCIAL CARE",
+        "spend": 292600369.9,
+        "count": 119757,
+        "suppliers": 567
+      },
+      {
+        "name": "ECONOMY & ENVIRONMENT CAPITAL",
+        "spend": 123663461.12,
+        "count": 4818,
+        "suppliers": 241
+      },
+      {
+        "name": "ECONOMY, ENVIRONMENT & COMMUNITIES",
+        "spend": 84243510.83,
+        "count": 25077,
+        "suppliers": 1164
+      },
+      {
+        "name": "ADULT SOCIAL CARE & HEALTH",
+        "spend": 76422510.32,
+        "count": 24217,
+        "suppliers": 358
+      },
+      {
+        "name": "RESOURCES AND TRANSFORMATION",
+        "spend": 53029548.36,
+        "count": 16928,
+        "suppliers": 652
+      },
+      {
+        "name": "RESOURCES AND TRANSFORMATION CAPITAL",
+        "spend": 35018050.98,
+        "count": 3460,
+        "suppliers": 242
+      },
+      {
+        "name": "CAPITAL FINANCING",
+        "spend": 34126309.79,
+        "count": 316,
+        "suppliers": 73
+      },
+      {
+        "name": "CHILDRENS CAPITAL",
+        "spend": 31927089.67,
+        "count": 2287,
+        "suppliers": 194
+      },
+      {
+        "name": "ENVIRONMENT, HOUSING & GROWTH",
+        "spend": 27141312.44,
+        "count": 7662,
+        "suppliers": 759
+      },
+      {
+        "name": "CENTRALLY HELD",
+        "spend": 7780892.2,
+        "count": 197,
+        "suppliers": 40
+      },
+      {
+        "name": "RESOURCES",
+        "spend": 4658570.61,
+        "count": 1292,
+        "suppliers": 179
+      },
+      {
+        "name": "HOLDING ACCOUNTS",
+        "spend": 4114463.03,
+        "count": 332,
+        "suppliers": 35
+      },
+      {
+        "name": "CAPITAL LEASING",
+        "spend": 919766.7,
+        "count": 46,
+        "suppliers": 6
+      }
+    ],
+    "department_raws": [
+      "ADULT SOCIAL CARE",
+      "ADULT SOCIAL CARE & HEALTH",
+      "CAPITAL FINANCING",
+      "CAPITAL LEASING",
+      "CENTRALLY HELD",
+      "CHILDRENS",
+      "CHILDRENS CAPITAL",
+      "ECONOMY & ENVIRONMENT CAPITAL",
+      "ECONOMY, ENVIRONMENT & COMMUNITIES",
+      "ENVIRONMENT, HOUSING & GROWTH",
+      "HOLDING ACCOUNTS",
+      "RESOURCES",
+      "RESOURCES AND TRANSFORMATION",
+      "RESOURCES AND TRANSFORMATION CAPITAL"
+    ]
+  },
+  "total_spend": 1914764552.46,
+  "total_spend_paid": 1914764552.46,
+  "total_spend_committed": 0,
+  "total_spend_all_types_legacy": 1914764552.46,
+  "record_count_paid": 504784,
+  "record_count_committed": 0,
+  "record_class_breakdown": {
+    "procurement_paid": {
+      "count": 504784,
+      "sum": 1914764552.46
+    }
+  },
+  "spend_triangulation": {
+    "transparency_gross": 1914764552.46,
+    "transparency_paid": 1914764552.46,
+    "procurement_only": 1914764552.46,
+    "non_procurement": 0.0
+  },
+  "dedup_rule": "total_spend = spend + purchase_cards; contracts excluded (77% pair with matching spend within 90d \u2014 see .claude/rules/lessons.md)",
+  "dedup_applied": "enforced at ETL (council_etl.py)",
+  "unique_suppliers": 5242,
+  "date_range": {
+    "min": "2021-04-01",
+    "max": "2026-02-27"
+  }
+}

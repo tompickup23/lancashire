@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "council_id": "south_tyneside",
+  "updated": "2026-05-11",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "South Tyneside MBC publishes a single payments-over-£500 transparency feed (cloudscraper-fetched from transparency portal, 2015–2025/26). Unitary metropolitan borough with adult social care + children's services responsibility, so feed contains REDACTED Care-Act direct-payment rows mixed with conventional procurement. Default: procurement_paid; REDACTED variants → direct_payment_individual so they don't poison HHI / supplier-league analyses.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR personal-data redactions. South Tyneside CSVs include 'REDACTED PERSONAL DATA' rows (verified in 2019/20 validation sample, Children's Adults & Families Group). Same suffix-tolerant regex as other ASC unitaries (Blackpool, Blackburn, LCC). Excluded from duplicate / split-payment / concentration analyses."
+    },
+    {
+      "class": "procurement_paid",
+      "match": {},
+      "reason": "Default for South Tyneside. Single payments feed — no PO/invoice split. ~255K rows covering 2019/20–2025/26."
+    }
+  ]
+}

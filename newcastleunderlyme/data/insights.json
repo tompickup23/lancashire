@@ -1,0 +1,552 @@
+{
+  "summary": {
+    "total_spend": 58868284.8,
+    "transaction_count": 7924,
+    "unique_suppliers": 950,
+    "avg_transaction": 7429.11,
+    "median_transaction": 1375.7,
+    "date_range": {
+      "min": "2023-04-30",
+      "max": "2026-03-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "KEELE UNIVERSITY",
+        "total": 3238923.33,
+        "transactions": 30,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HARWORTH GROUP",
+        "total": 2870127.43,
+        "transactions": 1,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CAPITAL & CENTRIC (DISTANT WORLD) LTD",
+        "total": 2843654.35,
+        "transactions": 13,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ASPIRE HOUSING",
+        "total": 2815301.46,
+        "transactions": 23,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DENNIS EAGLE LTD",
+        "total": 2761919.71,
+        "transactions": 101,
+        "company_number": "03794455",
+        "company_url": "https://find-and-update.company-information.service.gov.uk/company/03794455"
+      },
+      {
+        "supplier": "STAFFORDSHIRE COUNTY COUNCIL",
+        "total": 2308014.86,
+        "transactions": 95,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CAPITAL & CENTRIC (CASCADE) LTD",
+        "total": 2188992.84,
+        "transactions": 11,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "M2 CONSTRUCTION (STAFFS) LTD",
+        "total": 2186669.91,
+        "transactions": 40,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CAPITAL & CENTRIC (DEVOSA) LTD",
+        "total": 2172462.94,
+        "transactions": 13,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MORGAN SINDALL (CONSTRUCTION) LTD",
+        "total": 1732427.54,
+        "transactions": 9,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ITS TECHNOLOGY GROUP LTD",
+        "total": 1218052.87,
+        "transactions": 8,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "VEOLIA ES (UK) LTD",
+        "total": 888631.2,
+        "transactions": 60,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BD FUELS LTD",
+        "total": 858148.33,
+        "transactions": 82,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "STOKE-ON-TRENT CITY COUNCIL",
+        "total": 806625.6,
+        "transactions": 28,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EDF ENERGY 1 LTD",
+        "total": 805812.44,
+        "transactions": 184,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PHOENIX SOFTWARE LTD",
+        "total": 800999.38,
+        "transactions": 61,
+        "company_number": "02548628",
+        "company_url": "https://find-and-update.company-information.service.gov.uk/company/02548628"
+      },
+      {
+        "supplier": "MARSH LTD",
+        "total": 679428.95,
+        "transactions": 18,
+        "company_number": "01507274",
+        "company_url": "https://find-and-update.company-information.service.gov.uk/company/01507274"
+      },
+      {
+        "supplier": "TOTAL GAS AND POWER",
+        "total": 547148.09,
+        "transactions": 111,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MOTUS COMMERCIALS",
+        "total": 531878.36,
+        "transactions": 36,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BUSINESS IMPROVEMENT DISTRICT (BID)",
+        "total": 501022.0,
+        "transactions": 14,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.5564,
+    "total_unique_suppliers": 950,
+    "single_transaction_suppliers": 338
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 362,
+      "potential_value": 3297412.87,
+      "items": [
+        {
+          "supplier": "DENNIS EAGLE LTD",
+          "amount": 239780.0,
+          "date": "2025-09-30",
+          "occurrences": 8,
+          "potential_overpayment": 1678460.0
+        },
+        {
+          "supplier": "DENNIS EAGLE LTD",
+          "amount": 258810.0,
+          "date": "2025-09-30",
+          "occurrences": 2,
+          "potential_overpayment": 258810.0
+        },
+        {
+          "supplier": "MOTUS COMMERCIALS",
+          "amount": 165758.0,
+          "date": "2023-07-31",
+          "occurrences": 2,
+          "potential_overpayment": 165758.0
+        },
+        {
+          "supplier": "STAFFORDSHIRE UNIVERSITY",
+          "amount": 101000.0,
+          "date": "2024-01-31",
+          "occurrences": 2,
+          "potential_overpayment": 101000.0
+        },
+        {
+          "supplier": "KPMG LLP",
+          "amount": 42889.25,
+          "date": "2025-10-31",
+          "occurrences": 2,
+          "potential_overpayment": 42889.25
+        },
+        {
+          "supplier": "CAPITAL & CENTRIC (LOST) LTD",
+          "amount": 40000.0,
+          "date": "2023-12-31",
+          "occurrences": 2,
+          "potential_overpayment": 40000.0
+        },
+        {
+          "supplier": "ABELLIO EAST MIDLANDS LTD",
+          "amount": 35680.73,
+          "date": "2023-08-31",
+          "occurrences": 2,
+          "potential_overpayment": 35680.73
+        },
+        {
+          "supplier": "L. JONES (JOINERY)",
+          "amount": 23748.75,
+          "date": "2025-11-30",
+          "occurrences": 2,
+          "potential_overpayment": 23748.75
+        },
+        {
+          "supplier": "ASPIRE HOUSING",
+          "amount": 7500.0,
+          "date": "2023-06-30",
+          "occurrences": 4,
+          "potential_overpayment": 22500.0
+        },
+        {
+          "supplier": "KEEN BUILDING LTD",
+          "amount": 19111.0,
+          "date": "2025-06-30",
+          "occurrences": 2,
+          "potential_overpayment": 19111.0
+        },
+        {
+          "supplier": "STAFFORDSHIRE NORTH AND STOKE ON TRENT CAB",
+          "amount": 17500.0,
+          "date": "2024-02-29",
+          "occurrences": 2,
+          "potential_overpayment": 17500.0
+        },
+        {
+          "supplier": "LOUD MOUTH EDUCATION & TRAINING LTD",
+          "amount": 17000.0,
+          "date": "2024-02-29",
+          "occurrences": 2,
+          "potential_overpayment": 17000.0
+        },
+        {
+          "supplier": "ASPIRE (RENTAL INCOME)",
+          "amount": 8295.36,
+          "date": "2025-06-30",
+          "occurrences": 3,
+          "potential_overpayment": 16590.72
+        },
+        {
+          "supplier": "REMOVED",
+          "amount": 500.0,
+          "date": "2023-08-31",
+          "occurrences": 34,
+          "potential_overpayment": 16500.0
+        },
+        {
+          "supplier": "REMOVED",
+          "amount": 500.0,
+          "date": "2023-10-31",
+          "occurrences": 32,
+          "potential_overpayment": 15500.0
+        },
+        {
+          "supplier": "CRAEMER UK LTD",
+          "amount": 14325.0,
+          "date": "2025-08-31",
+          "occurrences": 2,
+          "potential_overpayment": 14325.0
+        },
+        {
+          "supplier": "UNUSUAL PROJECTS",
+          "amount": 14250.0,
+          "date": "2023-11-30",
+          "occurrences": 2,
+          "potential_overpayment": 14250.0
+        },
+        {
+          "supplier": "VERDON GUEST HOUSE",
+          "amount": 560.0,
+          "date": "2025-06-30",
+          "occurrences": 26,
+          "potential_overpayment": 14000.0
+        },
+        {
+          "supplier": "COOPER GROUP",
+          "amount": 13531.92,
+          "date": "2025-06-30",
+          "occurrences": 2,
+          "potential_overpayment": 13531.92
+        },
+        {
+          "supplier": "REMOVED",
+          "amount": 500.0,
+          "date": "2024-02-29",
+          "occurrences": 28,
+          "potential_overpayment": 13500.0
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 150,
+      "total_value": 1939000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 21
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Housing",
+      "spend": 16794175.0,
+      "count": 1399
+    },
+    {
+      "department": "Finance",
+      "spend": 12938279.21,
+      "count": 509
+    },
+    {
+      "department": "Waste Management",
+      "spend": 4837524.51,
+      "count": 579
+    },
+    {
+      "department": "Economic Regeneration",
+      "spend": 4529959.62,
+      "count": 170
+    },
+    {
+      "department": "Transport Workshop",
+      "spend": 2919315.31,
+      "count": 689
+    },
+    {
+      "department": "Public Buildings and Engineering",
+      "spend": 2335029.41,
+      "count": 893
+    },
+    {
+      "department": "Legal Services",
+      "spend": 2085958.73,
+      "count": 458
+    },
+    {
+      "department": "ICT Services",
+      "spend": 2065421.41,
+      "count": 314
+    },
+    {
+      "department": "Smith-Bellerby Utilities",
+      "spend": 1699500.64,
+      "count": 329
+    },
+    {
+      "department": "Insurance",
+      "spend": 809955.04,
+      "count": 38
+    },
+    {
+      "department": "Development Control",
+      "spend": 780320.21,
+      "count": 212
+    },
+    {
+      "department": "Property",
+      "spend": 737164.76,
+      "count": 164
+    },
+    {
+      "department": "Jubilee 2",
+      "spend": 734471.71,
+      "count": 268
+    },
+    {
+      "department": "Streetscene (O & P)",
+      "spend": 732364.5,
+      "count": 337
+    },
+    {
+      "department": "Landscaping",
+      "spend": 700125.24,
+      "count": 55
+    },
+    {
+      "department": "Operational Services Admin",
+      "spend": 675986.14,
+      "count": 152
+    },
+    {
+      "department": "Human Resources",
+      "spend": 543552.18,
+      "count": 148
+    },
+    {
+      "department": "Bereavement",
+      "spend": 441798.09,
+      "count": 205
+    },
+    {
+      "department": "Environmental Health",
+      "spend": 359752.84,
+      "count": 149
+    },
+    {
+      "department": "Transport Management",
+      "spend": 359594.34,
+      "count": 85
+    },
+    {
+      "department": "Community Development",
+      "spend": 283791.82,
+      "count": 154
+    },
+    {
+      "department": "One Front Door",
+      "spend": 279936.55,
+      "count": 150
+    },
+    {
+      "department": "Elections",
+      "spend": 244841.0,
+      "count": 105
+    },
+    {
+      "department": "Executive",
+      "spend": 244089.4,
+      "count": 19
+    },
+    {
+      "department": "Planning Policy",
+      "spend": 191389.66,
+      "count": 85
+    },
+    {
+      "department": "Museum",
+      "spend": 122479.6,
+      "count": 75
+    },
+    {
+      "department": "Public Buildings",
+      "spend": 108181.14,
+      "count": 8
+    },
+    {
+      "department": "Members Services",
+      "spend": 76712.07,
+      "count": 46
+    },
+    {
+      "department": "Smith-Bellerby Telephones",
+      "spend": 51182.09,
+      "count": 59
+    },
+    {
+      "department": "Business Improvement",
+      "spend": 39763.86,
+      "count": 8
+    },
+    {
+      "department": "Markets",
+      "spend": 39462.95,
+      "count": 15
+    },
+    {
+      "department": "Revenues",
+      "spend": 26444.04,
+      "count": 14
+    },
+    {
+      "department": "Licensing",
+      "spend": 20273.61,
+      "count": 7
+    },
+    {
+      "department": "Land Charges",
+      "spend": 15368.4,
+      "count": 8
+    },
+    {
+      "department": "Partnerships",
+      "spend": 15000.0,
+      "count": 1
+    },
+    {
+      "department": "Customer Services",
+      "spend": 11000.0,
+      "count": 1
+    },
+    {
+      "department": "Communications",
+      "spend": 6443.65,
+      "count": 6
+    },
+    {
+      "department": "Health and Safety",
+      "spend": 3900.0,
+      "count": 5
+    },
+    {
+      "department": "Engineering",
+      "spend": 2610.0,
+      "count": 1
+    },
+    {
+      "department": "Partnerships Management",
+      "spend": 2500.0,
+      "count": 1
+    },
+    {
+      "department": "Britain in Bloom",
+      "spend": 1628.67,
+      "count": 2
+    },
+    {
+      "department": "Creditors",
+      "spend": 1037.4,
+      "count": 1
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2023/24": 21580042.74,
+      "2025/26": 37288242.06
+    },
+    "transactions_by_year": {
+      "2023/24": 3793,
+      "2025/26": 4131
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 7924
+  }
+}

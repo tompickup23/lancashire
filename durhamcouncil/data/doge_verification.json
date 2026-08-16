@@ -1,0 +1,49 @@
+{
+  "checks": [
+    {
+      "label": "Data completeness",
+      "status": "pass",
+      "detail": "Dates: 100.0%, Suppliers: 100.0%, Amounts: 100.0%, Departments: 100.0%, Descriptions: 100.0%",
+      "metrics": {
+        "date_pct": 100.0,
+        "supplier_pct": 100.0,
+        "amount_pct": 100.0,
+        "dept_pct": 100.0,
+        "desc_pct": 100.0
+      }
+    },
+    {
+      "label": "Duplicate payment verification",
+      "status": "pass",
+      "detail": "No high-confidence duplicates after filtering 197 batch payments and 4671 CSV overlaps. Previous false positives eliminated."
+    },
+    {
+      "label": "Split payment analysis",
+      "status": "pass",
+      "detail": "173 suspect instances (\u00a347.5M, 2.9% of spend). Threshold: 5+ payments to same supplier in same week, 80%+ of approval limit."
+    },
+    {
+      "label": "CH breach temporal verification",
+      "status": "pass",
+      "detail": "6 suppliers with \u00a3197.3K confirmed during active breach periods. Enrichment errors excluded. Only dated violations with confirmed overlap flagged."
+    },
+    {
+      "label": "Cross-council price comparison",
+      "status": "warning",
+      "detail": "24 shared suppliers found. 8 with >200% price gap (requiring 3+ transactions each side). Extreme disparities (>10,000%) filtered as different service scopes."
+    },
+    {
+      "label": "Benford's Law forensic screening",
+      "status": "warning",
+      "detail": "Significant deviation from Benford's Law (p < 0.001). \u03c7\u00b2=5058.98 on 137324 amounts >\u00a3100. Largest deviation: digit 4 (3.8% off expected)."
+    }
+  ],
+  "warnings": [
+    "8 suppliers show >200% price disparity after filtering. These are more likely genuine value concerns than extreme outliers.",
+    "Benford's Law analysis shows significant deviation (\u03c7\u00b2=5058.98). Digit 4 deviates 3.8% from expected. This warrants investigation but can also occur with legitimate round-number grants or threshold-based payments."
+  ],
+  "score": 67,
+  "total_checks": 6,
+  "passed": 4,
+  "generated": "2026-08-02T02:06:25.203252"
+}

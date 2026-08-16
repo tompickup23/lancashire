@@ -1,0 +1,513 @@
+{
+  "version": "2.0",
+  "council_id": "south_tyneside",
+  "council_name": "South Tyneside Council",
+  "generated_at": "2026-05-13T11:06:51.595953Z",
+  "data_sources": [
+    "spending.sqlite (council_etl.py + classify_council.py)",
+    "doge_findings.json (35-technique forensic)",
+    "cross_council.json (32-council peer benchmark)",
+    "budgets_summary.json (MHCLG Revenue Outturn)",
+    "revenue_trends.json (8-yr MHCLG time series)",
+    "source_audit.json (record_class breakdown)",
+    "supplier_donor_crossmatch.json (Electoral Commission CSV API)"
+  ],
+  "financial_summary": {
+    "annual_revenue_budget": 371232990,
+    "council_tax_requirement": 75380000,
+    "service_breakdown": {
+      "Highways and transport services": 7812000,
+      "Housing services (GFRA only)": 1766000,
+      "Cultural and related services": 10494000,
+      "Environmental and regulatory services": 16269000,
+      "Planning and development services": 7435000,
+      "Central services": 9139990,
+      "Other services": -1008000
+    },
+    "procurement_footprint_total": 2069611241.22,
+    "procurement_footprint_annual": 295658748.75,
+    "transactions_total": 255674,
+    "transactions_annual": 36525,
+    "unique_suppliers": 10572,
+    "data_period": {
+      "min": "2019-04-01",
+      "max": "2025-06-06"
+    },
+    "financial_years_covered": 7,
+    "per_capita_spend": 2000.4,
+    "population": 147800,
+    "net_revenue_expenditure": 172276990,
+    "budget_year": "2024-25"
+  },
+  "reserves_position": {
+    "total": 22723000,
+    "months_of_revenue": 1.6,
+    "adequacy": "Critical",
+    "direction": "declining",
+    "trajectory": [
+      {
+        "year": "2021-22",
+        "earmarked": 58069000,
+        "unallocated": 7722000,
+        "total": 65791000
+      },
+      {
+        "year": "2022-23",
+        "earmarked": 54234000,
+        "unallocated": 4807000,
+        "total": 59041000
+      },
+      {
+        "year": "2023-24",
+        "earmarked": 29178000,
+        "unallocated": 11212000,
+        "total": 40390000
+      },
+      {
+        "year": "2024-25",
+        "earmarked": 18021000,
+        "unallocated": 4702000,
+        "total": 22723000
+      }
+    ],
+    "projected": [
+      {
+        "year": "2025-26",
+        "total": 10022500,
+        "projected": true
+      },
+      {
+        "year": "2026-27",
+        "total": 0,
+        "projected": true
+      }
+    ]
+  },
+  "forensic_signals": {
+    "duplicate_value": 60800000,
+    "duplicate_count": 4499,
+    "split_payments_value": 29400000,
+    "weak_competition": null,
+    "anomaly_count": 8,
+    "total_flagged_value": 148476900,
+    "severity_breakdown": {
+      "high": 0,
+      "medium": 4,
+      "low": 4
+    },
+    "overall_hhi": 156.4,
+    "service_hhi_high": [],
+    "top10_supplier_pct": 0.393,
+    "doge_key_findings": [
+      {
+        "title": "10 suppliers with clock-like payment regularity",
+        "severity": "info",
+        "confidence": "high"
+      },
+      {
+        "title": "JR HOLLAND FOODSERVICE: 20732 transactions totalling \u00a32.0M",
+        "severity": "info",
+        "confidence": "high"
+      }
+    ]
+  },
+  "peer_benchmarks": {
+    "per_capita_spend": {
+      "metric": "per_capita_spend",
+      "this_value": 2000.4,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "top10_supplier_pct": {
+      "metric": "top10_supplier_pct",
+      "this_value": 0.393,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "reserves_months": {
+      "metric": "reserves_months",
+      "this_value": 1.6,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "overall_hhi": {
+      "metric": "overall_hhi",
+      "this_value": 156.4,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "duplicate_value": {
+      "metric": "duplicate_value",
+      "this_value": 60800000,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "split_payments_value": {
+      "metric": "split_payments_value",
+      "this_value": 29400000,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    }
+  },
+  "audit_research": {
+    "version": "1.0",
+    "council_id": "south_tyneside",
+    "researched_at": "2026-05-13",
+    "method": "Web research via WebFetch + WebSearch (subagent), all citations primary",
+    "external_audit": {
+      "auditor": "Ernst & Young LLP",
+      "year_ended": "2024-03-31",
+      "opinion": "DISCLAIMED",
+      "opinion_severity": "critical",
+      "opinion_detail": "Ernst & Young disclaimed their opinion on the 2023/24 financial statements due to (i) the disclaimer of opinion on the prior year accounts, (ii) resource capacity of the finance team to support the audit, and (iii) limited time between backstop dates. EY explicitly stated they did not have the required resources available to complete the detailed audit procedures needed to obtain sufficient appropriate audit evidence to issue an unmodified audit report.",
+      "prior_year_disclaimers": [
+        "2022/23: DISCLAIMED (backstop)",
+        "2023/24: DISCLAIMED (backstop)"
+      ],
+      "governance_finding": "Annual Governance Statement for 2023/24 was not available until November 2024 and therefore was not published alongside the draft financial statements, requiring the inspection period to be re-run to comply with Accounts and Audit Regulations 2015 - a procedural compliance failure",
+      "pwlb_status": "Council has no PWLB borrowings primarily for yield, nor plans for such borrowings (per 2021 Prudential Code update which prevents this)",
+      "audit_2024_25_status": "Audit Committee Annual Report for 2024/25 to be presented at Full Council meeting on 15 January 2026 - 2024/25 audit opinion not yet publicly available at research date",
+      "report_url_2023_24": "https://www.southtyneside.gov.uk/media/9003/Financial-Statements-2023-24/pdf/A02_Statement_for_Publication_2023_24_audited_-_RL.pdf"
+    },
+    "internal_audit": {
+      "year": "2024/25",
+      "overall_opinion": "not located - Audit Committee Annual Report 2024/25 to be presented to Full Council 15 January 2026",
+      "follow_up_required": "Read Audit Committee Annual Report on portal.southtyneside.info CMIS after 15 January 2026",
+      "source_url": "https://portal.southtyneside.info/cmis5images/"
+    },
+    "mtfs_2026_31": {
+      "title": "Medium Term Financial Plan 2026-2031",
+      "total_net_revenue_budget_2026_27": "figure not located in publicly accessible documents (Cloudflare gate prevents direct fetch of MTFP PDF)",
+      "savings_target_2026_27_m": 11.6,
+      "savings_target_2026_27_alt_figure_m": 11.8,
+      "savings_to_2027_28_cumulative_m": 24,
+      "savings_strategy": "Targeted efficiencies, service redesigns and income generation; streamlining Adult Social Care charging policies to ensure consistency and sustainability while protecting most vulnerable",
+      "staffing_reduction_posts": 100,
+      "staffing_reduction_pct_of_3500_filled": 3,
+      "reduction_focus": "Management and back-office functions to protect frontline services",
+      "council_tax_increase_2026_27_pct": 4.95,
+      "council_tax_components": "2% Adult Social Care precept + 2.95% general increase",
+      "funding_settlement_note": "Modest uplift in core funding announced in 2026/27 Local Government Finance Settlement; resources expected to flatline and then fall in years ahead - \u00a31.5M better than previous modelling for 2026/27 but \u00a32M worse off for 2027/28 and 2028/29",
+      "reserves_2024_total_m": 56.918,
+      "reserves_2024_accessible_m": 15.542,
+      "reserves_strategy_25_26": "Used circa \u00a38M reserves to present balanced 2024/25 budget; \u00a36M-plus 2024/25 overspend forecast",
+      "reserves_strategy_26_31": "Efforts under way to maximise savings to start to build back reserves, reduce future service cuts and post reductions; MTFP sets a path back toward greater financial resilience",
+      "approval_date": "2026-02-26",
+      "url": "https://www.southtyneside.gov.uk/media/10641/Council-budget-2026-2031-Medium-Term-Financial-Plan/pdf/Medium-Term-Financial-Plan-2026-2031.pdf"
+    },
+    "strategic_risks": {
+      "register_status": "not located via web search - held in Audit Committee papers on portal.southtyneside.info CMIS",
+      "inferred_top_risks": [
+        "Borrowing affordability / debt service - \u00a34,947 debt per person (highest in North East, 9th highest in country, 6x County Durham); historic borrowing from BSF schools programme (\u00a3112M, Kings Meadow + Horsley Hill Community Campus) and town centre regeneration",
+        "Adult Social Care + Childrens Social Care demand and inflation - drove \u00a36.018M general fund overspend forecast for 2024/25",
+        "SEND demand and cost (not quantified at South Tyneside specifically but flagged in MTFP narrative)",
+        "Reserves depletion: \u00a356.9M total reserves but only \u00a315.5M accessible at 1 April 2024 - circa \u00a38M drawdown in 2024/25 to balance budget",
+        "South Tyneside Homes Limited (council-owned ALMO, company 05381705): both accounts and confirmation statement currently overdue at Companies House (status active); application made to formally dissolve the registered company. ALMO manages 18,000 council homes."
+      ],
+      "follow_up_required": "Read Audit Committee strategic risk register on portal.southtyneside.info CMIS",
+      "st_homes_clarification": "The \u00a3270.5M overdue-accounts figure in companies_house_enrichment.json represents two ledger variants (SOUTH TYNESIDE HOMES LTD \u00a3170.04M + SOUTH TYNESIDE HOMES \u00a3100.43M) of the SAME company - the wholly-owned ALMO (company number 05381705). This is NOT two suppliers with overdue accounts; it is one ALMO whose statutory filings have lapsed. Per public-domain notice, an application has been made to formally dissolve the registered company - the ALMO function is being wound up / transferred back to direct council management."
+    },
+    "dsg_send": {
+      "cumulative_deficit_m": "not located via web search",
+      "statutory_override_status": "Generally applies via statutory override extended nationally to 31 March 2028; South Tyneside-specific DSG deficit figures not retrievable due to Cloudflare gate on southtyneside.gov.uk",
+      "high_needs_block_status": "Not located - check Schools Forum papers",
+      "safety_valve_status": "Not located - check DfE Safety Valve LA list at gov.uk",
+      "follow_up_required": "Request DSG / High Needs Block deficit position via Schools Forum papers or FOI"
+    },
+    "asc_market_sustainability": {
+      "plan_published": "not located via web search",
+      "asc_pressure_driver": "Rising demand for childrens and adults social care plus inflationary pressures - drove \u00a36M overspend forecast for 2024/25; council described position as significant and ongoing financial pressures",
+      "asc_charging_policy_review": "Streamlining of Adult Social Care charging policies forming part of 2026/27 \u00a311.6M savings package",
+      "follow_up_required": "Verify ASC Market Sustainability Plan publication on southtyneside.gov.uk"
+    },
+    "lgr": {
+      "status": "no LGR proposal",
+      "context": "South Tyneside is one of seven councils in the North East Combined Authority (NECA) which absorbed the previous combined authority on 6 March 2024 with deeper devolution deal. NECA is led by elected Mayor Kim McGuinness (first election 2 May 2024). At time of research, there are no plans for councils within NECA to undergo local government reorganisation.",
+      "scope": "Not applicable",
+      "source_url": "https://en.wikipedia.org/wiki/North_East_Combined_Authority"
+    },
+    "property_strategy": {
+      "name": "Capital and Investment Strategy 2025-2030",
+      "fixed_assets_m": 1353,
+      "borrowing_per_capita_\u00a3": 4947,
+      "borrowing_per_capita_increase_yoy_\u00a3": 402,
+      "borrowing_per_capita_rank_NE": "highest of NECA seven",
+      "borrowing_per_capita_rank_national": 9,
+      "borrowing_per_capita_ratio_durham": 6,
+      "pfi_bsf_programme": {
+        "name": "Building Schools for the Future",
+        "total_value_m": 112,
+        "phase_1_total_m": 45.546,
+        "phase_1_conventional_m": 14.042,
+        "phase_1_pfi_m": 31.504,
+        "schools_completed": [
+          "Kings Meadow (South Tyneside and Gateshead, September 2008)",
+          "Horsley Hill Community Campus (October 2006)"
+        ],
+        "unitary_charge_status": "PFI contracts entered 1998-2016, typically 25-30 years, expiring 2023-2042 - South Tyneside BSF PFI still running for remaining contract life"
+      },
+      "commercial_property_concern": "Experts have raised concerns about growth in councils investment in commercial property which exposes public finances to new risks - South Tyneside borrowing flagged in regional press as not normal level of indebtedness",
+      "council_response": "South Tyneside Council representative stated council had invested in the future of South Tyneside and that investment is paying dividends but was now borrowing less money than previously due to higher interest rates",
+      "url": "https://publications.southtyneside.gov.uk/plans/medium-term-financial-plan/2025-2030/capital-investment.html"
+    },
+    "actionable_savings_levers_summary": [
+      "Two consecutive years of DISCLAIMED audit opinions (2022/23 + 2023/24) by Ernst & Young - finance team capacity AND audit firm capacity issue; 2024/25 audit opinion still pending at 13 May 2026 research date",
+      "Highest borrowing per capita in North East (\u00a34,947/person, 9th highest nationally, 6x County Durham) - PWLB debt service is the systemic cost driver; review Treasury Management Strategy 2026/27 for refinance options",
+      "BSF PFI unitary charge from 1998-2016 vintage contracts still running to 2023-2042 - explore VfM contract review / pinch point analysis at next expiry milestones; \u00a3112M total programme value at inception",
+      "\u00a311.6M-\u00a311.8M savings target 2026/27 + \u00a324M cumulative over 2 years; reserves restocking is explicit MTFP objective (only \u00a315.5M accessible at 1 April 2024)",
+      "South Tyneside Homes Limited ALMO (wholly-owned, company 05381705) - both annual accounts AND confirmation statement overdue at Companies House; application made to formally dissolve - investigate transition to direct council management as opportunity to capture overhead saving (note: not yet quantified)",
+      "100 post reduction (3% of workforce) in 2026/27 focused on management and back-office - validate FTE-cost-saving ratio against benchmark",
+      "Annual Governance Statement 2023/24 not delivered until November 2024 (procedural compliance failure under Accounts and Audit Regulations 2015) - fix finance team capacity to ensure 2024/25 AGS lands on time"
+    ],
+    "source_urls": [
+      "https://www.southtyneside.gov.uk/media/9003/Financial-Statements-2023-24/pdf/A02_Statement_for_Publication_2023_24_audited_-_RL.pdf",
+      "https://www.southtyneside.gov.uk/media/10641/Council-budget-2026-2031-Medium-Term-Financial-Plan/pdf/Medium-Term-Financial-Plan-2026-2031.pdf",
+      "https://www.southtyneside.gov.uk/article/1348/Financial-statements",
+      "https://www.southtyneside.gov.uk/article/1347/Council-budget",
+      "https://publications.southtyneside.gov.uk/plans/medium-term-financial-plan/2025-2030/capital-investment.html",
+      "https://publications.southtyneside.gov.uk/plans/medium-term-financial-plan-2024-2029/",
+      "https://www.southtyneside.gov.uk/article/29313/Council-Sets-Out-Financial-Plan-to-Protect-Vital-Services-Despite-Pressures",
+      "https://www.southtyneside.gov.uk/article/29437/Council-Secures-Extra-Funding-in-Settlement-but-Major-Budget-Pressures-Remain",
+      "https://www.shieldsgazette.com/news/politics/council/south-tyneside-council-tax-set-to-rise-again-as-ps118m-of-savings-planned-budget-plans-in-full-detail-5493585",
+      "https://northeastbylines.co.uk/business/economy/north-east-council-debt-levels/",
+      "https://www.shieldsgazette.com/news/south-tyneside-council-borrowing-tops-ps630m-118904",
+      "https://find-and-update.company-information.service.gov.uk/company/05381705",
+      "https://www.southtynesidehomes.org.uk/article/9294/About-South-Tyneside-Homes",
+      "https://en.wikipedia.org/wiki/North_East_Combined_Authority"
+    ],
+    "coverage_gaps": [
+      "2024/25 audit opinion (Audit Committee Annual Report due 15 January 2026 - check post-research date)",
+      "2024/25 statutory accounts publication on southtyneside.gov.uk (Cloudflare gate prevents direct fetch)",
+      "DSG / High Needs Block deficit position and Safety Valve status",
+      "Internal Audit Annual Report 2024/25 limited-assurance subject list",
+      "Strategic Risk Register full top-N list with net ratings (held in committee papers, CMIS at portal.southtyneside.info)",
+      "MTFP 2026-2031 final figures direct from PDF (Cloudflare gate prevents direct fetch)",
+      "CIPFA Resilience Index council-specific scores (paywalled - per AI DOGE cipfa_resilience_proxy.json council classified Distressed)",
+      "South Tyneside Homes Ltd dissolution timeline and transition plan",
+      "Specific PFI unitary charge run-rate per annum for remaining BSF contract life",
+      "Treasury Management Strategy 2026/27 PWLB borrowing refinance schedule",
+      "Sundial Properties: searched but no link to South Tyneside borrowing crisis located - may be unrelated company"
+    ]
+  },
+  "donor_links": null,
+  "strategic_themes": [
+    {
+      "id": "audit_opinion_remediation",
+      "title": "Remediate disclaimed audit opinion (Ernst & Young LLP, year ended 2024-03-31)",
+      "rationale": "External auditor issued a DISCLAIMED opinion on financial statements. Concerns: see audit research. Direct savings: PSAA scale fee normalisation (current scale fee \u00a3250K + disclaimer surcharge). Indirect: lifting MHCLG governance flag reduces borrowing-cost premium (typically 5-15bp on new external debt) + opens \u00a3M of grant programmes that require unmodified opinions. Foundation requirement before ANY other transformation saving is credible to auditor or DLUHC.",
+      "estimated_savings_low_m": 0.3,
+      "estimated_savings_high_m": 1.2,
+      "savings_type": "one-off + recurring",
+      "delivery_horizon": "12-24 months (next two audit cycles)",
+      "implementation_complexity": "high",
+      "decision_owner": "Section 151 Officer + Monitoring Officer + Audit Committee",
+      "evidence": [],
+      "severity": "critical"
+    },
+    {
+      "id": "energy_procurement_optimisation",
+      "title": "Energy procurement via CCS / LASER / NEPO frameworks (\u00a342M baseline)",
+      "rationale": "\u00a342M utility spend across 2 suppliers. Top: EDF ENERGY CUSTOMERS PLC (\u00a328M), CORONA ENERGY RETAIL 2 LTD (\u00a314M). Crown Commercial RM6306 + LASER / NEPO consortium flex purchase typically saves 4-8% vs direct supplier contracts on a 3-yr horizon. Plus solar PV self-generation on council estate (7-9 yr payback) + DESNZ Public Sector Decarbonisation Scheme grants up to 100% capex on heat pump conversion.",
+      "estimated_savings_low_m": 2.1,
+      "estimated_savings_high_m": 5.0,
+      "savings_type": "recurring + capital grant",
+      "delivery_horizon": "12-36 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Property + Sustainability Lead + S151 Officer",
+      "evidence": [
+        "Crown Commercial RM6306",
+        "DESNZ PSDS scheme",
+        "LASER / NEPO frameworks"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "treasury_borrowing_optimisation",
+      "title": "Treasury management + borrowing cost optimisation (CFR proxy \u00a3297M)",
+      "rationale": "Annual revenue \u00a3371M implies indicative CFR c. \u00a3297M. Standard levers: internal borrowing from earmarked reserves, PWLB Certainty Rate trade, MMF counterparty restructuring, LGPS Property Investment Pool inclusion. 10-30bp saving on external debt typical from a fresh review.",
+      "estimated_savings_low_m": 0.3,
+      "estimated_savings_high_m": 0.89,
+      "savings_type": "recurring",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (subject to TM Strategy approval)",
+      "decision_owner": "S151 Officer + Treasurer",
+      "evidence": [
+        "CIPFA Prudential + Treasury Management Codes 2021",
+        "PWLB Certainty Rate"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "lgps_employer_contribution",
+      "title": "LGPS employer contribution opportunity (2025 triennial valuation cycle)",
+      "rationale": "Indicative pay bill \u00a3148M \u00d7 c. 22% employer contribution rate = \u00a333M annual employer contribution. Most LGPS funds materially over-funded post-2022 (returns 2022-25 averaged 7-10% pa vs 3-4% discount-rate assumption). 2025 triennial valuation typically yields 2-4pp employer-rate reduction over 2026-2029. Confirm with administering authority + actuary.",
+      "estimated_savings_low_m": 1.6,
+      "estimated_savings_high_m": 4.9,
+      "savings_type": "recurring (3-yr triennial)",
+      "delivery_horizon": "settled at 2025 valuation; recurring 2026-2029",
+      "implementation_complexity": "low (LGPS admin enacts new rate)",
+      "decision_owner": "S151 Officer + LGPS Pensions Committee",
+      "evidence": [
+        "LGPS Regulations 2013 + 2014",
+        "2025 triennial valuation reports"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "income_fees_charges_optimisation",
+      "title": "Fees, charges + traded-services income optimisation (\u00a337M base)",
+      "rationale": "Indicative fees & charges + traded-services income c. 10% of revenue = \u00a337M. Standard levers: annual CPI uplift discipline, full-cost-recovery audit on discretionary services (parking, planning, licensing, sports, adult learning, property hire), commercial pricing on traded services. LGA experience: 5-15% income uplift sustainable over 2-3 years.",
+      "estimated_savings_low_m": 1.9,
+      "estimated_savings_high_m": 5.6,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-24 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Cabinet (each fee delegation)",
+      "evidence": [
+        "LGA fees and charges benchmarking",
+        "CIPFA Charging guidance"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "insurance_retention_review",
+      "title": "Insurance retention + premium review (\u00a30.4M premium estimate)",
+      "rationale": "Indicative insurance premium \u00a30.4M (10bp of revenue). Standard 3-5 yr renewal cycle. Levers: tender via IPG / RM Partners (10-25% premium reduction typical), retention review (increase excess + build risk-fund reserve). London-borough cohort average 12% premium reduction at last tender.",
+      "estimated_savings_low_m": 0.04,
+      "estimated_savings_high_m": 0.09,
+      "savings_type": "recurring",
+      "delivery_horizon": "9-18 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Risk Manager",
+      "evidence": [
+        "IPG framework",
+        "RM Partners broker market"
+      ],
+      "severity": "low"
+    },
+    {
+      "id": "procurement_data_review",
+      "title": "Contracts Finder portfolio review (86 notices; 3 contracts at \u00a310M+ ceiling)",
+      "rationale": "Contracts Finder data: 86 notices (54 awarded, \u00a363M aggregate ADVERTISED CEILING value, 0% SME). IMPORTANT: advertised contract value is a CEILING set to avoid retender risk under PCR 2015 Reg.72 / Procurement Act 2023 s.31 \u2014 actual spend through the awardee is typically 30-70% of ceiling, with some off-contract ledger spend permitted within the 50%/50% modification limits. 3 contracts at \u00a310M+ ceiling totalling \u00a345M (ceiling, NOT spend) \u2014 top 3: Contract for Civil Engineering Enabling Works at Holborn, So (ceiling \u00a319M); FRAMEWORK FOR THE SUPPLY, INSTALLATION AND REPAIR OF PITCHED (ceiling \u00a314M); Dynamic Purchasing System for the Provision of Passenger Tra (ceiling \u00a312M). Matched against ledger: Expert Witness Reports \u2014 ceiling \u00a30.2M, actual ledger spend with awardee \u00a30.1M; Reynolds Avenue - Groundworks, Drainage and Founda \u2014 ceiling \u00a30.8M, actual ledger spend with awardee \u00a36.3M; Lizard Lane - Groundworks, Drainage and Foundation \u2014 ceiling \u00a30.8M, actual ledger spend with awardee \u00a36.3M. Aggregate identified actual spend \u00a33103M. SME-awarded share 0% is below the Procurement Reform 2023 / PPN 03/24 ambition (33% SME share by value). Standard procurement-data savings levers (% of ACTUAL ledger spend, not ceiling): (a) modification-history scrutiny under PCR 2015 Reg.72, (b) Procurement Act 2023 s.31 contract change notice review, (c) re-tender benchmark vs CCS framework rates on next renewal. 2-8% on actual spend through major contracts is a defensible upper bound.",
+      "estimated_savings_low_m": 62.1,
+      "estimated_savings_high_m": 248.2,
+      "savings_type": "recurring (post next contract renewal)",
+      "delivery_horizon": "12-36 months (contract-renewal cycle)",
+      "implementation_complexity": "high",
+      "decision_owner": "Head of Procurement + Cabinet Member + Section 151 Officer",
+      "evidence": [
+        "procurement.json (Contracts Finder API): 86 notices",
+        "ledger-matched actual spend: \u00a33102.6M",
+        "PCR 2015 Reg.72; Procurement Act 2023 s.31"
+      ],
+      "savings_basis": "Ledger-matched actual spend through awardees",
+      "advertised_ceiling_total_m": 44.5,
+      "ledger_matched_actual_spend_m": 3102.6,
+      "severity": "medium"
+    },
+    {
+      "id": "companies_house_compliance",
+      "title": "Companies House compliance follow-up (\u00a3324M flagged \u2014 2 overdue, 2 dissolved, 1 insolvency-history)",
+      "rationale": "Companies House lookup on top-50 suppliers identified \u00a3324M of spend with statutory-compliance flags: \u00a3270M to suppliers with overdue accounts (2), \u00a328M to dissolved-status companies (2), \u00a326M to companies with insolvency history (1). NOTE: Some matches are CH fuzzy-search false positives (e.g. school, government-body name collisions) and need human verification. After verification, real flags = (a) credit-risk review on overdue accounts, (b) contract-cleanup on dissolved entities (records still on ledger but supplier extinct \u2014 risk of duplicate-payment leakage), (c) PCR 2015 Reg.57 discretionary exclusion review on insolvency-history suppliers in active contracts.",
+      "estimated_savings_low_m": 1.6,
+      "estimated_savings_high_m": 6.5,
+      "savings_type": "one-off cleanup + recurring risk reduction",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (CH already enriched)",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "companies_house_enrichment.json"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "reserves_rebuild",
+      "title": "Rebuild general reserves to \u22654 months (Critical \u2192 Adequate)",
+      "rationale": "Reserves at 1.6 months (Critical per CIPFA Resilience benchmark). Direction: declining. A 4-month minimum is the CIPFA / S151 prudence floor; below this triggers external auditor VFM concern and elevates s.114 risk.",
+      "estimated_target_m": 74.0,
+      "delivery_horizon": "3-5 years",
+      "implementation_complexity": "high",
+      "decision_owner": "Section 151 Officer + Cabinet",
+      "evidence": [
+        "cross_council.reserves_months",
+        "cross_council.reserves_adequacy"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "duplicate_recovery",
+      "title": "Audit + recover \u00a361M in flagged duplicate-payment patterns",
+      "rationale": "DOGE forensic flagged \u00a361M across 4,499 groups of likely duplicates. Industry recovery norm 5-15% via duplicate-detection software (AP Forensics, FISCAL, Oracle Concur). Lloyds Bank Commercial Card analysis typical for spot-check sample of 100 highest-confidence matches.",
+      "estimated_savings_low_m": 3.0,
+      "estimated_savings_high_m": 9.1,
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Finance + Internal Audit",
+      "evidence": [
+        "doge_findings.duplicate_count",
+        "doge_findings.duplicate_value"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "split_payment_review",
+      "title": "Investigate \u00a329M in flagged split-payment patterns",
+      "rationale": "DOGE flagged \u00a329M across 0 split-payment instances. Split payments often indicate (a) below-procurement-threshold ledger fragmentation circumventing PCR 2015 Reg.4 contract-value-aggregation rule; or (b) legitimate sub-line invoice splits. Sample audit + reclassify; misuse triggers Reg. 99 challenge exposure.",
+      "estimated_savings_low_m": 0.6,
+      "estimated_savings_high_m": 2.4,
+      "delivery_horizon": "9-12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "doge_findings.split_payments_value",
+        "PCR 2015 Reg.4"
+      ],
+      "severity": "medium"
+    }
+  ],
+  "supplier_recommendations": [],
+  "supplier_summary_flags": {},
+  "recommendation_counts": {}
+}

@@ -1,0 +1,41 @@
+{
+  "generated": "2026-06-24",
+  "source": "Durham CC FINAL MTFP(16) 2026/27 budget (ModernGov doc s220555, Council 18 Feb 2026, verified figure-by-figure) + the AI DOGE directorate engine (M4-bis lever_ev --council durham).",
+  "council_id": "durham",
+  "council_type": "unitary",
+  "financial_year": "2026/27",
+  "net_revenue_budget": 674060000,
+  "directorates": [
+    {"id": "cyps", "name": "Children and Young People's Services (CYPS)", "budget_2026_27": 244846000, "savings_identified": 1264000, "_note": "Children Looked After placement budget GBP 97.346m, up about 300% over 7 years."},
+    {"id": "ahs", "name": "Adult and Health Services (AHS)", "budget_2026_27": 181088000, "savings_identified": 2922000},
+    {"id": "ne", "name": "Neighbourhoods and Environment (N&E)", "budget_2026_27": 111961000, "savings_identified": 4770000},
+    {"id": "res", "name": "Resources (RES)", "budget_2026_27": 70400000, "savings_identified": 3079000},
+    {"id": "reg", "name": "Regeneration, Economy and Growth (REG)", "budget_2026_27": 38364000, "savings_identified": 1428000},
+    {"id": "ceo", "name": "Chief Executive's Office (CEO)", "budget_2026_27": 22944000, "savings_identified": 374000},
+    {"id": "corporate", "name": "Corporate Costs and Contingencies", "budget_2026_27": 18683000, "savings_identified": 1632000}
+  ],
+  "cross_cutting": {
+    "combined_low": 9749000,
+    "combined_high": 15469000,
+    "as_pct_of_budget_low": 1.4,
+    "as_pct_of_budget_high": 2.3,
+    "_note": "MTFP(16) savings programme is GBP 15.469m (GBP 12.914m, 83.5%, delivered in 2026/27). The AI DOGE directorate engine risk-adjusts it on tier probabilities to GBP 9.749m EV. Durham delivers 83.5% in-year, a strong delivery profile."
+  },
+  "mtfs_gap_cumulative": 44745000,
+  "mtfs_period": "2027/28 to 2029/30",
+  "reserves": {
+    "total": 35914000,
+    "general_reserve": 35914000,
+    "earmarked_reserves": 155300000,
+    "_note": "General reserve GBP 35.914m (5.3% of NBR, policy range 5 to 7.5 percent); earmarked GBP 155.3m. No reserves draw planned to fund the 2026/27 budget, the first such year in some time."
+  },
+  "council_tax_band_d": 2071.11,
+  "council_tax_increase_pct": 1.99,
+  "risks": [
+    {"risk": "DSG High Needs deficit: cumulative about GBP 39.7m (March 2026), forecast about GBP 85m by March 2028, held off the General Fund by a statutory override that ends 31 March 2028. Durham qualifies for the new High Needs Stability Grant (about GBP 36m), but the budget assumes Government takes on SEND funding responsibility from April 2028.", "severity": "high", "rating": "High"},
+    {"risk": "Children Looked After placement budget GBP 97.346m (2025/26), up about 300% over 7 years; residential placements are about 19 percent of children but about 75 percent of the budget.", "severity": "high", "rating": "High"},
+    {"risk": "Forward MTFP gap of GBP 44.745m to 2029/30 (GBP 10.805m, then GBP 20.912m, then GBP 13.028m), assuming nil council-tax increase in planning years.", "severity": "medium", "rating": "Medium"},
+    {"risk": "Children's Social Care pressure (GBP 19.744m) and Adult Social Care pressure (GBP 10.005m) are the two largest cost drivers in 2026/27.", "severity": "medium", "rating": "Medium"}
+  ],
+  "_provenance": "Refreshed 24 Jun 2026 from the verified FINAL MTFP(16) budget (s220555); savings EV from the AI DOGE directorate engine. This supersedes the prior auto-generated 2024/25 directorate_analysis (MHCLG Revenue Outturn categories + AI DOGE forensic opportunity estimates), whose per-directorate opportunity detail can be regenerated via scripts/generate_directorate_analysis.py if needed. Read directly by the Council Intel bundle generator; data_sources.directorate_analysis stays absent because the public DirectorateDashboard is not yet wired for Durham's directorate slice. Durham is a financially healthier focus council than the intervention cases (no reserves draw, strong CIPFA resilience, no statutory intervention)."
+}

@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "council_id": "kirklees",
+  "updated": "2026-08-08",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Kirklees Council is a metropolitan borough in West Yorkshire. Monthly workbooks Apr 2017 onward with Companies House numbers on supplier rows. Council redacts personal-data payments (adoption, fostering, care) at source. Default is procurement_paid.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD|PAYMENT TO (AN )?INDIVIDUAL|PRIVATE INDIVIDUAL|INDIVIDUAL)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions for direct payments to individuals (foster carers, ASC direct payments). Lawfully unnamed."
+    },
+    {
+      "class": "statutory_pass_through",
+      "match": {
+        "supplier_regex": "^NHS .+ ICB( \\([A-Z]+\\))?$"
+      },
+      "reason": "NHS Integrated Care Board rows are statutory health funding pass-through, not council procurement."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^(WEST YORKSHIRE PENSION FUND).*$"
+      },
+      "reason": "LGPS employer contributions to the West Yorkshire Pension Fund are internal pension flows, not procurement."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^KIRKLEES NEIGHBOURHOOD HOUSING$"
+      },
+      "reason": "Kirklees Neighbourhood Housing was the council's wholly-owned ALMO (housing management returned in-house 2021); payments to it are council-to-own-arm flows, not third-party procurement. (Corona Energy (KNH) rows stay procurement_paid: third-party energy billed for KNH stock.)"
+    }
+  ],
+  "supplier_aliases": []
+}

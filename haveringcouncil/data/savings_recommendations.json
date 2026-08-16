@@ -1,0 +1,569 @@
+{
+  "version": "2.0",
+  "council_id": "havering",
+  "council_name": "Havering London Borough Council",
+  "generated_at": "2026-05-13T11:07:35.388456Z",
+  "data_sources": [
+    "spending.sqlite (council_etl.py + classify_council.py)",
+    "doge_findings.json (35-technique forensic)",
+    "cross_council.json (32-council peer benchmark)",
+    "budgets_summary.json (MHCLG Revenue Outturn)",
+    "revenue_trends.json (8-yr MHCLG time series)",
+    "source_audit.json (record_class breakdown)",
+    "supplier_donor_crossmatch.json (Electoral Commission CSV API)"
+  ],
+  "financial_summary": {
+    "annual_revenue_budget": 490300000,
+    "council_tax_requirement": 158023000,
+    "service_breakdown": {
+      "Highways and transport services": 6413000,
+      "Housing services (GFRA only)": 21749000,
+      "Cultural and related services": 2067000,
+      "Environmental and regulatory services": 14200000,
+      "Planning and development services": 4747000,
+      "Central services": 21210000
+    },
+    "procurement_footprint_total": 918642832.56,
+    "procurement_footprint_annual": 306214277.52,
+    "transactions_total": 248055,
+    "transactions_annual": 82685,
+    "unique_suppliers": 3153,
+    "data_period": {
+      "min": "2023-04-01",
+      "max": "2026-01-31"
+    },
+    "financial_years_covered": 3,
+    "per_capita_spend": 1161.66,
+    "population": 263600,
+    "net_revenue_expenditure": 232897560,
+    "budget_year": "2024-25"
+  },
+  "reserves_position": {
+    "total": 53013000,
+    "months_of_revenue": 2.7,
+    "adequacy": "Critical",
+    "direction": "improving",
+    "trajectory": [
+      {
+        "year": "2021-22",
+        "earmarked": 56990000,
+        "unallocated": 10942000,
+        "total": 67932000
+      },
+      {
+        "year": "2022-23",
+        "earmarked": 38449000,
+        "unallocated": 8154000,
+        "total": 46603000
+      },
+      {
+        "year": "2023-24",
+        "earmarked": 32825000,
+        "unallocated": 10113000,
+        "total": 42938000
+      },
+      {
+        "year": "2024-25",
+        "earmarked": 37900000,
+        "unallocated": 15113000,
+        "total": 53013000
+      }
+    ],
+    "projected": [
+      {
+        "year": "2025-26",
+        "total": 40516000,
+        "projected": true
+      },
+      {
+        "year": "2026-27",
+        "total": 35673800,
+        "projected": true
+      }
+    ]
+  },
+  "forensic_signals": {
+    "duplicate_value": 131500000,
+    "duplicate_count": 23315,
+    "split_payments_value": 133900000,
+    "weak_competition": null,
+    "anomaly_count": 8,
+    "total_flagged_value": 287836500,
+    "severity_breakdown": {
+      "high": 0,
+      "medium": 4,
+      "low": 4
+    },
+    "overall_hhi": 118.1,
+    "service_hhi_high": [],
+    "top10_supplier_pct": 0.3398,
+    "doge_key_findings": [
+      {
+        "title": "10 suppliers with clock-like payment regularity",
+        "severity": "info",
+        "confidence": "high"
+      },
+      {
+        "title": "MATRIX SCM LTD: 47354 transactions totalling \u00a366.9M",
+        "severity": "info",
+        "confidence": "high"
+      }
+    ]
+  },
+  "peer_benchmarks": {
+    "per_capita_spend": {
+      "metric": "per_capita_spend",
+      "this_value": 1161.66,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "top10_supplier_pct": {
+      "metric": "top10_supplier_pct",
+      "this_value": 0.3398,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "reserves_months": {
+      "metric": "reserves_months",
+      "this_value": 2.7,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "overall_hhi": {
+      "metric": "overall_hhi",
+      "this_value": 118.1,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "duplicate_value": {
+      "metric": "duplicate_value",
+      "this_value": 131500000,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "split_payments_value": {
+      "metric": "split_payments_value",
+      "this_value": 133900000,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    }
+  },
+  "audit_research": {
+    "version": "1.0",
+    "council_id": "havering",
+    "researched_at": "2026-05-13",
+    "method": "Web research via WebFetch + WebSearch (subagent), all citations primary",
+    "external_audit": {
+      "auditor": "Ernst & Young LLP (Mark Hodgson, Audit Partner)",
+      "year_ended": "2025-03-31",
+      "opinion": "DISCLAIMED",
+      "opinion_severity": "critical",
+      "key_concerns": [
+        "EY expected to issue a disclaimed audit opinion for 2024/25 financial statements - per Audit Committee Agenda 24 February 2026",
+        "Disclaimed opinion also likely for 2025/26",
+        "Council received disclaimed audit opinions in 2021/22, 2022/23 and 2023/24",
+        "It will take several years to rebuild audit assurances required to return to an unqualified opinion",
+        "Disclaimed opinions correlate with three consecutive years of Exceptional Financial Support (EFS) capitalisation directions to balance budgets"
+      ],
+      "report_date": "2026-02-24 (Audit Committee meeting)",
+      "presented_to": "Audit Committee 24 February 2026",
+      "url": "https://democracy.havering.gov.uk/documents/g8124/Public%20reports%20pack%2024th-Feb-2026%2019.00%20Audit%20Committee.pdf"
+    },
+    "internal_audit": {
+      "latest_year_located": "2024/25",
+      "overall_opinion": "not located - held in Audit Committee papers at democracy.havering.gov.uk",
+      "limited_assurance_style_findings": [
+        "Children's Services rated Inadequate by Ofsted December 2023 (published February 2024); second monitoring visit March 2025 cited slow progress, poor leadership, lack of technical knowledge - shared 29 April 2025",
+        "Adult Social Care + Children's Social Care + homelessness + home-to-school transport identified by CIPFA External Assurance Review (March 2025) as primary drivers of financial pressure"
+      ],
+      "source": "London Borough of Havering Audit Committee papers + CIPFA External Assurance Review",
+      "source_url": "https://democracy.havering.gov.uk/documents/g7883/Public+reports+pack+17th-Apr-2025+19.00+Audit+Committee.pdf",
+      "cipfa_review_url": "https://assets.publishing.service.gov.uk/media/67cac66f3f8b61c757fa0002/London_Borough_of_Havering_-_CIPFA_external_assurance_review.pdf",
+      "follow_up_required": "Locate Internal Audit Annual Report 2024/25 overall opinion + subject list"
+    },
+    "mtfs_2026_31": {
+      "total_net_revenue_budget_2026_27_m": null,
+      "savings_target_2026_27_m": null,
+      "approved_savings_nov_2025_3yr_to_2028_29_m": 23,
+      "cumulative_savings_since_administration_m": 40,
+      "cumulative_savings_since_2018_19_m": 79.3,
+      "cumulative_savings_since_2010_m": 160,
+      "forecast_budget_gaps_m": {
+        "2024_25_overspend": 21.2,
+        "2025_26_mid_case": 70.2,
+        "2025_26_worst_case": 88.0,
+        "2026_27_mid_case": 72.7,
+        "2026_27_worst_case": 83.8,
+        "2026_27_alt_recent_figure": 65.9,
+        "2026_27_alt_worst_case": 77.0
+      },
+      "exceptional_financial_support_m": {
+        "2024_25_capitalisation_direction": 32.5,
+        "2025_26_capitalisation_direction": 88.0,
+        "2026_27_capitalisation_direction_requested": 77.0,
+        "total_efs_since_2024_m": 197.5,
+        "alt_efs_running_total_per_press": 237.0
+      },
+      "cipfa_review_efs_warranted_m": 53.7,
+      "capital_programme_2026_27_m": 391,
+      "capital_programme_5yr_to_2030_31_m": 1050,
+      "capital_funding_breakdown_b": {
+        "receipts": 0.04,
+        "grants": 0.25,
+        "contributions_revenue_reserves": 0.07,
+        "borrowing": 0.68
+      },
+      "council_tax_general_pct": 2.99,
+      "asc_precept_pct": 2.0,
+      "url": "https://democracy.havering.gov.uk/documents/s82442/Budget%201%20-%20Budget%20report%20cabinet%202026%201.pdf"
+    },
+    "strategic_risks": {
+      "register_status": "Live register; CIPFA External Assurance Review March 2025 identified no deficiencies in financial management arrangements but recommended formalising against CIPFA Financial Management Code",
+      "inferred_top_risks": [
+        "Inability to balance budget without continuing Exceptional Financial Support (EFS) - 3rd consecutive year of capitalisation direction sought for 2026/27",
+        "Adult Social Care demand pressure (Council's largest budget)",
+        "Children's Social Care: Ofsted Inadequate rating December 2023; monitoring visit March 2025 cited slow progress",
+        "Temporary accommodation / homelessness cost spiral (housing budget overspent 6.1m last year)",
+        "Home-to-school transport pressure",
+        "Capital programme borrowing 0.68bn of 1.05bn 5-year programme - PWLB +1% (~6.8%) servicing cost on 20-year EFS loans"
+      ],
+      "url": "https://www.gov.uk/government/publications/london-borough-of-havering-council-external-assurance-review"
+    },
+    "dsg_send": {
+      "cumulative_deficit_m": 67.7,
+      "dsg_budget_2025_26_m": 355.5,
+      "dsg_budget_prior_year_m": 317.3,
+      "dsg_in_year_overspend_forecast_m": 31.5,
+      "statutory_override_expiry": "2028-03-31 (extended from 2026 per Nov 2025 DfE announcement)",
+      "fiscal_cliff_severity": "high",
+      "send_inspection": {
+        "type": "Ofsted Local Authority Children's Services Inspection (ILACS) + monitoring visits",
+        "ilacs_judgement": "Inadequate (December 2023 inspection, report February 2024)",
+        "previous_rating": "Good (2018)",
+        "monitoring_visit_1": "October 2024",
+        "monitoring_visit_2": "March 2025 (26-27 March 2025)",
+        "monitoring_outcome_apr_2025": "Ofsted issued concerning monitoring update 29 April 2025: improvement 'too slow and falling short in many areas due to poor leadership and a lack of technical knowledge'",
+        "area_send_inspection_status": "Listed on Ofsted area SEND inspection schedule; completed inspection outcome not located in indexed sources"
+      },
+      "url": "https://democracy.havering.gov.uk/ieDecisionDetails.aspx?Id=8394"
+    },
+    "asc_market_sustainability": {
+      "plan_published": true,
+      "msif_grant_received_k": 679,
+      "cost_of_care_exercise_done": true,
+      "framework_projected_cost_m": 360,
+      "framework_note": "Romford Recorder reported November 2025 that Havering Adult Social Care framework expected to cost 360m GBP",
+      "url": "https://www.havering.gov.uk/downloads/file/6119/market_sustainability_plan_-_annex_c_to_cost_of_care_exercise"
+    },
+    "lgr": {
+      "status": "not applicable - London governance via GLA",
+      "scope": "Havering is a London Borough; London local government structure (32 boroughs + City of London + GLA + Mayor of London) is excluded from English LGR proposals per December 2024 White Paper. Strategic-tier decisions sit with Greater London Authority / Mayor of London.",
+      "url": "https://en.wikipedia.org/wiki/Havering_London_Borough_Council",
+      "savings_implication": "No structural LGR reshaping; EFS pathway and CIPFA-led recovery + savings programme is the route back to sustainability"
+    },
+    "property_strategy": {
+      "name": "Havering Asset Management / Future Accommodation Needs programme",
+      "capital_programme_2026_27_m": 391,
+      "url": "https://www.local.gov.uk/case-studies/future-accommodation-needs-havering",
+      "active_programme": "Capital programme includes housing/regeneration; CIPFA review recommended reviewing and potentially deferring elements of the ambitious housebuilding programme to reduce revenue costs",
+      "note": "Discrete Property Strategy document with capital receipts trajectory not located in indexed sources - CIPFA review highlights capital programme review as recovery lever"
+    },
+    "actionable_savings_levers_summary": [
+      "DISCLAIMED audit opinion expected for 2024/25 (4th consecutive disclaimed year, following 2021/22, 2022/23, 2023/24) plus 3rd-year EFS capitalisation direction = top governance / financial-controls remediation priority",
+      "DSG cumulative deficit 67.7m with 31.5m in-year overspend forecast for 2025/26; statutory override to 2028 buys runway but Safety Valve / DBV programme entry needs to be confirmed",
+      "Children's Services Ofsted Inadequate (Dec 2023) + April 2025 monitoring criticism = ongoing unplanned cost risk + ministerial intervention possibility",
+      "EFS dependency: 32.5m (2024/25) + 88m (2025/26) + 77m sought (2026/27) = potentially 197.5m (or 237m per press) of 20-year PWLB+1% (~6.8%) debt before any new pressures - debt servicing cost will compound revenue pressure",
+      "CIPFA External Assurance Review (March 2025) recommended formalising financial management against CIPFA FM Code + reviewing capital programme to reduce revenue costs - direct implementable savings runway",
+      "Adult Social Care framework projected cost 360m versus a Council where ASC is the largest budget; demand management + commissioning reform is the single biggest material lever",
+      "Capital programme 1.05bn over 5 years with 0.68bn borrowed - this is the structural exposure; revenue-bearing capital schemes must be paused or deferred",
+      "London governance via GLA = no LGR upside; Council must rebuild solvency under existing footprint"
+    ],
+    "source_urls": [
+      "https://democracy.havering.gov.uk/documents/s82442/Budget%201%20-%20Budget%20report%20cabinet%202026%201.pdf",
+      "https://democracy.havering.gov.uk/documents/s77851/7.0%20Budget%20report.pdf",
+      "https://democracy.havering.gov.uk/documents/g8124/Public%20reports%20pack%2024th-Feb-2026%2019.00%20Audit%20Committee.pdf",
+      "https://democracy.havering.gov.uk/documents/g7883/Public+reports+pack+17th-Apr-2025+19.00+Audit+Committee.pdf",
+      "https://www.gov.uk/government/publications/london-borough-of-havering-council-external-assurance-review",
+      "https://assets.publishing.service.gov.uk/media/67cac66f3f8b61c757fa0002/London_Borough_of_Havering_-_CIPFA_external_assurance_review.pdf",
+      "https://www.havering.gov.uk/news/article/1505/council-responds-to-chartered-institute-of-public-finance-and-accountancy-cipfa-external-assurance-review",
+      "https://www.havering.gov.uk/news/article/1706/havering-s-cabinet-agree-another-challenging-budget",
+      "https://www.havering.gov.uk/news/article/1716/full-council-agrees-budget-for-havering",
+      "https://www.havering.gov.uk/downloads/file/6119/market_sustainability_plan_-_annex_c_to_cost_of_care_exercise",
+      "https://www.havering.gov.uk/adult-social-care/commissioning",
+      "https://reports.ofsted.gov.uk/provider/42/53127",
+      "https://reports.ofsted.gov.uk/provider/44/80500",
+      "https://www.havering.gov.uk/news/article/1520/havering-local-authority-children-s-services-monitoring-visit-",
+      "https://democracy.havering.gov.uk/ieDecisionDetails.aspx?Id=8726",
+      "https://democracy.havering.gov.uk/ieDecisionDetails.aspx?Id=9386",
+      "https://thehaveringdaily.co.uk/2025/02/26/cash-strapped-council-to-receive-88million-bailout-loan/",
+      "https://eastlondontimes.co.uk/local/havering/havering-council/havering-council-seeks-third-77m-bailout-in-crisis-havering-2026/"
+    ],
+    "coverage_gaps": [
+      "Specific text of EY disclaimer paragraphs for 2024/25 (Audit Committee paper of 24 Feb 2026 references the expectation but full opinion not retrievable via WebSearch indexes)",
+      "Total net revenue budget figure for 2026/27 (only gap and EFS figures consistently published)",
+      "Internal Audit Annual Report 2024/25 overall opinion + limited-assurance subject list",
+      "Year-by-year MTFS gap breakdown beyond 2025/26 and 2026/27",
+      "Strategic Risk Register top-N risks with net ratings (CIPFA review references but does not enumerate)",
+      "Safety Valve / DBV programme participation status (Havering not located on published participant list)",
+      "Ofsted Area SEND inspection outcome (listed on schedule but completion not located in indexed sources)",
+      "Adult Social Care Framework primary contract value detail",
+      "Discrete Property Strategy / Asset Management Strategy document with capital receipts trajectory",
+      "CIPFA Resilience Index council-specific scores (paywalled)"
+    ]
+  },
+  "donor_links": null,
+  "strategic_themes": [
+    {
+      "id": "audit_opinion_remediation",
+      "title": "Remediate disclaimed audit opinion (Ernst & Young LLP (Mark Hodgson, Audit Partner), year ended 2025-03-31)",
+      "rationale": "External auditor issued a DISCLAIMED opinion on financial statements. Concerns: EY expected to issue a disclaimed audit opinion for 2024/25 financial statements - per Audit Committee Agenda 24 February 2026; Disclaimed opinion also likely for 2025/26; Council received disclaimed audit opinions in 2021/22, 2022/23 and 2023/24. Direct savings: PSAA scale fee normalisation (current scale fee \u00a3250K + disclaimer surcharge). Indirect: lifting MHCLG governance flag reduces borrowing-cost premium (typically 5-15bp on new external debt) + opens \u00a3M of grant programmes that require unmodified opinions. Foundation requirement before ANY other transformation saving is credible to auditor or DLUHC.",
+      "estimated_savings_low_m": 0.3,
+      "estimated_savings_high_m": 1.2,
+      "savings_type": "one-off + recurring",
+      "delivery_horizon": "12-24 months (next two audit cycles)",
+      "implementation_complexity": "high",
+      "decision_owner": "Section 151 Officer + Monitoring Officer + Audit Committee",
+      "evidence": [
+        "https://democracy.havering.gov.uk/documents/g8124/Public%20reports%20pack%2024th-Feb-2026%2019.00%20Audit%20Committee.pdf"
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "hnsg_reform_plan_delivery",
+      "title": "HNSG Reform Plan submission \u2014 secures \u00a360.9M DSG write-off (90% of \u00a367.7M)",
+      "rationale": "DSG cumulative high-needs deficit \u00a367.7M. Under the new High Needs Stability Grant (HNSG) announced 9 Feb 2026, government will write off 90% (~\u00a360.9M) of every council's DSG deficit at 31 March 2026 via Section 31 grant paid Autumn 2026 \u2014 CONDITIONAL on the council submitting an approved Local SEND Reform Plan to DfE by 19 June 2026. The \u00a36.8M residual remains on council books. Safety Valve programme closed 1 April 2026 and is folded into HNSG. Statutory override extended to 31 March 2028; gov has committed to absorb all DSG deficits from 1 April 2028 onwards. The savings range below covers (a) plan-submission cost avoidance + (b) residual 10% in-year demand management.",
+      "estimated_savings_low_m": 0.7,
+      "estimated_savings_high_m": 3.4,
+      "savings_type": "cost-avoidance (residual 10% management) + plan-conditional write-off",
+      "delivery_horizon": "19 June 2026 plan submission deadline; Autumn 2026 grant payment",
+      "implementation_complexity": "medium \u2014 plan submission is procedural, not discretionary",
+      "decision_owner": "Director of Children's Services + S151 Officer + Cabinet Lead SEND",
+      "evidence": [
+        "GOV.UK Explanatory note on DSG deficits (9 Feb 2026)",
+        "Final Local Government Finance Settlement 2026/27 to 2028/29 (HCWS1315)",
+        "AI DOGE shared/dsg_status_2026_27.json"
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "workforce_agency_reduction",
+      "title": "Agency / locum staff demand reduction (\u00a378M concentrated)",
+      "rationale": "\u00a378M of agency-staff spend across 2 master vendors. Top: MATRIX SCM LTD (\u00a367M), ADECCO UK LTD (\u00a311M). Standard transformation: cap agency premium at 20% above substantive rate, workforce-plan permanent conversion (6-9 month payback), regional bank pool, open-book master-vendor margins. CIPFA experience: 8-15% reduction in 12-18 months.",
+      "estimated_savings_low_m": 6.2,
+      "estimated_savings_high_m": 11.7,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of HR + Director of Finance + S151 Officer",
+      "evidence": [
+        "spending corpus: top agency suppliers"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "energy_procurement_optimisation",
+      "title": "Energy procurement via CCS / LASER / NEPO frameworks (\u00a33M baseline)",
+      "rationale": "\u00a33M utility spend across 1 suppliers. Top: NPOWER (\u00a33M). Crown Commercial RM6306 + LASER / NEPO consortium flex purchase typically saves 4-8% vs direct supplier contracts on a 3-yr horizon. Plus solar PV self-generation on council estate (7-9 yr payback) + DESNZ Public Sector Decarbonisation Scheme grants up to 100% capex on heat pump conversion.",
+      "estimated_savings_low_m": 0.2,
+      "estimated_savings_high_m": 0.4,
+      "savings_type": "recurring + capital grant",
+      "delivery_horizon": "12-36 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Property + Sustainability Lead + S151 Officer",
+      "evidence": [
+        "Crown Commercial RM6306",
+        "DESNZ PSDS scheme",
+        "LASER / NEPO frameworks"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "treasury_borrowing_optimisation",
+      "title": "Treasury management + borrowing cost optimisation (CFR proxy \u00a3392M)",
+      "rationale": "Annual revenue \u00a3490M implies indicative CFR c. \u00a3392M. Standard levers: internal borrowing from earmarked reserves, PWLB Certainty Rate trade, MMF counterparty restructuring, LGPS Property Investment Pool inclusion. 10-30bp saving on external debt typical from a fresh review.",
+      "estimated_savings_low_m": 0.39,
+      "estimated_savings_high_m": 1.18,
+      "savings_type": "recurring",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (subject to TM Strategy approval)",
+      "decision_owner": "S151 Officer + Treasurer",
+      "evidence": [
+        "CIPFA Prudential + Treasury Management Codes 2021",
+        "PWLB Certainty Rate"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "lgps_employer_contribution",
+      "title": "LGPS employer contribution opportunity (2025 triennial valuation cycle)",
+      "rationale": "Indicative pay bill \u00a3196M \u00d7 c. 22% employer contribution rate = \u00a343M annual employer contribution. Most LGPS funds materially over-funded post-2022 (returns 2022-25 averaged 7-10% pa vs 3-4% discount-rate assumption). 2025 triennial valuation typically yields 2-4pp employer-rate reduction over 2026-2029. Confirm with administering authority + actuary.",
+      "estimated_savings_low_m": 2.2,
+      "estimated_savings_high_m": 6.5,
+      "savings_type": "recurring (3-yr triennial)",
+      "delivery_horizon": "settled at 2025 valuation; recurring 2026-2029",
+      "implementation_complexity": "low (LGPS admin enacts new rate)",
+      "decision_owner": "S151 Officer + LGPS Pensions Committee",
+      "evidence": [
+        "LGPS Regulations 2013 + 2014",
+        "2025 triennial valuation reports"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "income_fees_charges_optimisation",
+      "title": "Fees, charges + traded-services income optimisation (\u00a349M base)",
+      "rationale": "Indicative fees & charges + traded-services income c. 10% of revenue = \u00a349M. Standard levers: annual CPI uplift discipline, full-cost-recovery audit on discretionary services (parking, planning, licensing, sports, adult learning, property hire), commercial pricing on traded services. LGA experience: 5-15% income uplift sustainable over 2-3 years.",
+      "estimated_savings_low_m": 2.5,
+      "estimated_savings_high_m": 7.4,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-24 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Cabinet (each fee delegation)",
+      "evidence": [
+        "LGA fees and charges benchmarking",
+        "CIPFA Charging guidance"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "insurance_retention_review",
+      "title": "Insurance retention + premium review (\u00a30.5M premium estimate)",
+      "rationale": "Indicative insurance premium \u00a30.5M (10bp of revenue). Standard 3-5 yr renewal cycle. Levers: tender via IPG / RM Partners (10-25% premium reduction typical), retention review (increase excess + build risk-fund reserve). London-borough cohort average 12% premium reduction at last tender.",
+      "estimated_savings_low_m": 0.05,
+      "estimated_savings_high_m": 0.12,
+      "savings_type": "recurring",
+      "delivery_horizon": "9-18 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Risk Manager",
+      "evidence": [
+        "IPG framework",
+        "RM Partners broker market"
+      ],
+      "severity": "low"
+    },
+    {
+      "id": "procurement_data_review",
+      "title": "Contracts Finder portfolio review (62 notices; 3 contracts at \u00a310M+ ceiling)",
+      "rationale": "Contracts Finder data: 62 notices (34 awarded, \u00a3206M aggregate ADVERTISED CEILING value, 0% SME). IMPORTANT: advertised contract value is a CEILING set to avoid retender risk under PCR 2015 Reg.72 / Procurement Act 2023 s.31 \u2014 actual spend through the awardee is typically 30-70% of ceiling, with some off-contract ledger spend permitted within the 50%/50% modification limits. 3 contracts at \u00a310M+ ceiling totalling \u00a3194M (ceiling, NOT spend) \u2014 top 3: Highways and Street Lighting contract (ceiling \u00a3170M); Subleasing of shared housing for complex needs residents (ceiling \u00a313M); London Borough of Havering Reablement Service (ceiling \u00a311M). Matched against ledger: GB-London: TPPL London Borough of Havering BNES Bu \u2014 ceiling \u00a31.0M, actual ledger spend with awardee \u00a30.7M; Highways and Street Lighting contract \u2014 ceiling \u00a3170.0M, actual ledger spend with awardee \u00a37.5M; London Borough of Havering Mortuary Storage Servic \u2014 ceiling \u00a30.8M, actual ledger spend with awardee \u00a394.1M. Aggregate identified actual spend \u00a3296M. SME-awarded share 0% is below the Procurement Reform 2023 / PPN 03/24 ambition (33% SME share by value). Standard procurement-data savings levers (% of ACTUAL ledger spend, not ceiling): (a) modification-history scrutiny under PCR 2015 Reg.72, (b) Procurement Act 2023 s.31 contract change notice review, (c) re-tender benchmark vs CCS framework rates on next renewal. 2-8% on actual spend through major contracts is a defensible upper bound.",
+      "estimated_savings_low_m": 5.9,
+      "estimated_savings_high_m": 23.7,
+      "savings_type": "recurring (post next contract renewal)",
+      "delivery_horizon": "12-36 months (contract-renewal cycle)",
+      "implementation_complexity": "high",
+      "decision_owner": "Head of Procurement + Cabinet Member + Section 151 Officer",
+      "evidence": [
+        "procurement.json (Contracts Finder API): 62 notices",
+        "ledger-matched actual spend: \u00a3295.9M",
+        "PCR 2015 Reg.72; Procurement Act 2023 s.31"
+      ],
+      "savings_basis": "Ledger-matched actual spend through awardees",
+      "advertised_ceiling_total_m": 194.3,
+      "ledger_matched_actual_spend_m": 295.9,
+      "severity": "medium"
+    },
+    {
+      "id": "companies_house_compliance",
+      "title": "Companies House compliance follow-up (\u00a3108M flagged \u2014 0 overdue, 4 dissolved, 1 insolvency-history)",
+      "rationale": "Companies House lookup on top-50 suppliers identified \u00a3108M of spend with statutory-compliance flags: \u00a30M to suppliers with overdue accounts (0), \u00a374M to dissolved-status companies (4), \u00a334M to companies with insolvency history (1). NOTE: Some matches are CH fuzzy-search false positives (e.g. school, government-body name collisions) and need human verification. After verification, real flags = (a) credit-risk review on overdue accounts, (b) contract-cleanup on dissolved entities (records still on ledger but supplier extinct \u2014 risk of duplicate-payment leakage), (c) PCR 2015 Reg.57 discretionary exclusion review on insolvency-history suppliers in active contracts.",
+      "estimated_savings_low_m": 0.5,
+      "estimated_savings_high_m": 2.2,
+      "savings_type": "one-off cleanup + recurring risk reduction",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (CH already enriched)",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "companies_house_enrichment.json"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "reserves_rebuild",
+      "title": "Rebuild general reserves to \u22654 months (Critical \u2192 Adequate)",
+      "rationale": "Reserves at 2.7 months (Critical per CIPFA Resilience benchmark). Direction: improving. A 4-month minimum is the CIPFA / S151 prudence floor; below this triggers external auditor VFM concern and elevates s.114 risk.",
+      "estimated_target_m": 53.0,
+      "delivery_horizon": "3-5 years",
+      "implementation_complexity": "high",
+      "decision_owner": "Section 151 Officer + Cabinet",
+      "evidence": [
+        "cross_council.reserves_months",
+        "cross_council.reserves_adequacy"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "duplicate_recovery",
+      "title": "Audit + recover \u00a3132M in flagged duplicate-payment patterns",
+      "rationale": "DOGE forensic flagged \u00a3132M across 23,315 groups of likely duplicates. Industry recovery norm 5-15% via duplicate-detection software (AP Forensics, FISCAL, Oracle Concur). Lloyds Bank Commercial Card analysis typical for spot-check sample of 100 highest-confidence matches.",
+      "estimated_savings_low_m": 6.6,
+      "estimated_savings_high_m": 19.7,
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Finance + Internal Audit",
+      "evidence": [
+        "doge_findings.duplicate_count",
+        "doge_findings.duplicate_value"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "split_payment_review",
+      "title": "Investigate \u00a3134M in flagged split-payment patterns",
+      "rationale": "DOGE flagged \u00a3134M across 0 split-payment instances. Split payments often indicate (a) below-procurement-threshold ledger fragmentation circumventing PCR 2015 Reg.4 contract-value-aggregation rule; or (b) legitimate sub-line invoice splits. Sample audit + reclassify; misuse triggers Reg. 99 challenge exposure.",
+      "estimated_savings_low_m": 2.7,
+      "estimated_savings_high_m": 10.7,
+      "delivery_horizon": "9-12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "doge_findings.split_payments_value",
+        "PCR 2015 Reg.4"
+      ],
+      "severity": "medium"
+    }
+  ],
+  "supplier_recommendations": [],
+  "supplier_summary_flags": {},
+  "recommendation_counts": {}
+}

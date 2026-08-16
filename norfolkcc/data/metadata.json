@@ -1,0 +1,190 @@
+{
+  "council": "Norfolk CC",
+  "council_id": "E10000020",
+  "council_type": "county",
+  "spending_threshold": 500,
+  "total_records": 692426,
+  "financial_years": [
+    "2023/24",
+    "2024/25",
+    "2025/26"
+  ],
+  "data_types": [
+    "spend"
+  ],
+  "filters": {
+    "departments": [
+      {
+        "name": "Adult Social Care",
+        "spend": 948252536.83,
+        "count": 231885,
+        "suppliers": 1134
+      },
+      {
+        "name": "Adult Social Services",
+        "spend": 827657636.86,
+        "count": 234812,
+        "suppliers": 1403
+      },
+      {
+        "name": "Children's Services",
+        "spend": 734097602.18,
+        "count": 93331,
+        "suppliers": 3551
+      },
+      {
+        "name": "Community & Environmental Services",
+        "spend": 616609047.32,
+        "count": 49846,
+        "suppliers": 2937
+      },
+      {
+        "name": "Infrastructure Directorate",
+        "spend": 502048848.97,
+        "count": 55589,
+        "suppliers": 948
+      },
+      {
+        "name": "Finance and Commercial Services",
+        "spend": 194466156.91,
+        "count": 8018,
+        "suppliers": 770
+      },
+      {
+        "name": "Finance Directorate",
+        "spend": 96389940.85,
+        "count": 1269,
+        "suppliers": 175
+      },
+      {
+        "name": "Strategy and Transformation Directorate",
+        "spend": 49352863.85,
+        "count": 3409,
+        "suppliers": 1005
+      },
+      {
+        "name": "Community and Environment Directorate",
+        "spend": 40558195.92,
+        "count": 4130,
+        "suppliers": 1056
+      },
+      {
+        "name": "Strategy & Governance",
+        "spend": 27646117.37,
+        "count": 3168,
+        "suppliers": 435
+      },
+      {
+        "name": "Norfolk Fire & Rescue Service and Trading Standards",
+        "spend": 25938626.04,
+        "count": 1505,
+        "suppliers": 285
+      },
+      {
+        "name": "",
+        "spend": 24125871.39,
+        "count": 285,
+        "suppliers": 126
+      },
+      {
+        "name": "Children's Services (Dedicated Schools Grant)",
+        "spend": 19472194.78,
+        "count": 2375,
+        "suppliers": 169
+      },
+      {
+        "name": "CES",
+        "spend": 14089897.44,
+        "count": 428,
+        "suppliers": 95
+      },
+      {
+        "name": "Chief Executive's Directorate",
+        "spend": 6426271.07,
+        "count": 2108,
+        "suppliers": 238
+      },
+      {
+        "name": "Resources - Pensions",
+        "spend": 5205144.03,
+        "count": 58,
+        "suppliers": 8
+      },
+      {
+        "name": "Strategy and Governance",
+        "spend": 88984.57,
+        "count": 85,
+        "suppliers": 28
+      },
+      {
+        "name": "Community and Environmental Services",
+        "spend": 84460.92,
+        "count": 114,
+        "suppliers": 37
+      },
+      {
+        "name": "Unknown",
+        "spend": 21293.09,
+        "count": 11,
+        "suppliers": 4
+      }
+    ],
+    "department_raws": [
+      "Adult Social Care",
+      "Adult Social Services",
+      "CES",
+      "Chief Executive's Directorate",
+      "Children's Services",
+      "Children's Services (Dedicated Schools Grant)",
+      "Community & Environmental Services",
+      "Community and Environment Directorate",
+      "Community and Environmental Services",
+      "Finance Directorate",
+      "Finance and Commercial Services",
+      "Infrastructure Directorate",
+      "Norfolk Fire & Rescue Service and Trading Standards",
+      "Resources - Pensions",
+      "Strategy & Governance",
+      "Strategy and Governance",
+      "Strategy and Transformation Directorate",
+      "Unknown"
+    ]
+  },
+  "total_spend": 4132531690.39,
+  "total_spend_paid": 4132531690.39,
+  "total_spend_committed": 0,
+  "total_spend_all_types_legacy": 4132531690.39,
+  "record_count_paid": 692426,
+  "record_count_committed": 0,
+  "record_class_breakdown": {
+    "procurement_paid": {
+      "count": 674545,
+      "sum": 4019811951.78
+    },
+    "direct_payment_individual": {
+      "count": 16156,
+      "sum": 19102282.28
+    },
+    "statutory_pass_through": {
+      "count": 1715,
+      "sum": 91325308.03
+    },
+    "internal_transfer": {
+      "count": 10,
+      "sum": 2292148.3
+    }
+  },
+  "spend_triangulation": {
+    "transparency_gross": 4132531690.39,
+    "transparency_paid": 4132531690.39,
+    "procurement_only": 4019811951.78,
+    "non_procurement": 112719738.61
+  },
+  "dedup_rule": "total_spend = spend + purchase_cards; contracts excluded (77% pair with matching spend within 90d \u2014 see .claude/rules/lessons.md)",
+  "dedup_applied": "enforced at ETL (council_etl.py)",
+  "unique_suppliers": 9897,
+  "date_range": {
+    "min": "2023-04-01",
+    "max": "2026-03-31"
+  }
+}

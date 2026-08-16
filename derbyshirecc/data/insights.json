@@ -1,0 +1,405 @@
+{
+  "summary": {
+    "total_spend": 3618666748.41,
+    "transaction_count": 543898,
+    "unique_suppliers": 6957,
+    "avg_transaction": 6653.21,
+    "median_transaction": 2194.08,
+    "date_range": {
+      "min": "2024-01-02",
+      "max": "2026-06-30"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "HMRC-CUMBERNAULD",
+        "total": 262069837.61,
+        "transactions": 219,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED PERSONAL DATA",
+        "total": 172660324.18,
+        "transactions": 79218,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LGPS CENTRAL LTD",
+        "total": 125868673.4,
+        "transactions": 8,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TEACHER PENSIONS",
+        "total": 109030447.93,
+        "transactions": 161,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EAST MIDLANDS COMBINED COUNTY AUTHO",
+        "total": 107868768.78,
+        "transactions": 11,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ASSOCIATED WASTE MANAGEMENT LTD",
+        "total": 94490088.92,
+        "transactions": 120,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DERBYSHIRE COMMUNITY HEALTH",
+        "total": 51968736.28,
+        "transactions": 458,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "STATE STREET GLOBAL ADVISORS",
+        "total": 50000000.0,
+        "transactions": 2,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COMENSURA LTD",
+        "total": 45987487.58,
+        "transactions": 316,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LEGAL AND GENERAL INVESTMENT MANAGE",
+        "total": 35000000.0,
+        "transactions": 2,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CQS CREDIT MULTI ASSET FUND",
+        "total": 35000000.0,
+        "transactions": 1,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HENDERSON GLOBAL INVESTORS",
+        "total": 30000000.0,
+        "transactions": 1,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EMH GROUP",
+        "total": 28363413.47,
+        "transactions": 5805,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SENAD LTD",
+        "total": 25899969.78,
+        "transactions": 1211,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DEUTSCHE GLOBAL LIQUIDITY MANAGED",
+        "total": 25000000.0,
+        "transactions": 1,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "H W MARTIN WASTE LTD",
+        "total": 22755959.53,
+        "transactions": 98,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SWARCO UK & IRELAND LTD",
+        "total": 21758082.98,
+        "transactions": 951,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MEDEQUIP ASSISTIVE TECHNOLOGY LTD",
+        "total": 21690243.11,
+        "transactions": 238,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "STAGECOACH SERVICES LTD",
+        "total": 21472043.04,
+        "transactions": 1281,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FEDERATED HERMES CASH",
+        "total": 20000000.0,
+        "transactions": 1,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.3612,
+    "total_unique_suppliers": 6957,
+    "single_transaction_suppliers": 1696
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 41833,
+      "potential_value": 410252724.26,
+      "items": [
+        {
+          "supplier": "NOTTINGHAMSHIRE COUNTY COUNCIL",
+          "amount": 2169187.14,
+          "date": "2025-08-12",
+          "occurrences": 2,
+          "potential_overpayment": 2169187.14
+        },
+        {
+          "supplier": "DERBYSHIRE COMMUNITY HEALTH",
+          "amount": 1068031.42,
+          "date": "2024-05-20",
+          "occurrences": 2,
+          "potential_overpayment": 1068031.42
+        },
+        {
+          "supplier": "DERBYSHIRE COMMUNITY HEALTH",
+          "amount": 1041667.0,
+          "date": "2024-01-02",
+          "occurrences": 2,
+          "potential_overpayment": 1041667.0
+        },
+        {
+          "supplier": "DERBYSHIRE COMMUNITY HEALTH",
+          "amount": 810145.26,
+          "date": "2025-06-02",
+          "occurrences": 2,
+          "potential_overpayment": 810145.26
+        },
+        {
+          "supplier": "DERBYSHIRE COMMUNITY HEALTH",
+          "amount": 98324.0,
+          "date": "2024-04-17",
+          "occurrences": 9,
+          "potential_overpayment": 786592.0
+        },
+        {
+          "supplier": "NOTTINGHAM COMMUNITY HOUSING ASSOCI",
+          "amount": 642211.6,
+          "date": "2025-08-13",
+          "occurrences": 2,
+          "potential_overpayment": 642211.6
+        },
+        {
+          "supplier": "BLOOM PROCUREMENT SERVICES LTD",
+          "amount": 243727.0,
+          "date": "2025-10-23",
+          "occurrences": 3,
+          "potential_overpayment": 487454.0
+        },
+        {
+          "supplier": "DERBYSHIRE HEALTHCARE NHS",
+          "amount": 439766.25,
+          "date": "2024-01-29",
+          "occurrences": 2,
+          "potential_overpayment": 439766.25
+        },
+        {
+          "supplier": "DERBYSHIRE COMMUNITY HEALTH",
+          "amount": 425242.73,
+          "date": "2026-06-17",
+          "occurrences": 2,
+          "potential_overpayment": 425242.73
+        },
+        {
+          "supplier": "HIGH GRANGE SPECIALIST SCHOOL",
+          "amount": 37979.0,
+          "date": "2026-04-21",
+          "occurrences": 12,
+          "potential_overpayment": 417769.0
+        },
+        {
+          "supplier": "HIGH GRANGE SPECIALIST SCHOOL",
+          "amount": 37979.0,
+          "date": "2025-04-07",
+          "occurrences": 12,
+          "potential_overpayment": 417769.0
+        },
+        {
+          "supplier": "HIGH GRANGE SPECIALIST SCHOOL",
+          "amount": 37979.0,
+          "date": "2025-11-12",
+          "occurrences": 12,
+          "potential_overpayment": 417769.0
+        },
+        {
+          "supplier": "DERBYSHIRE COMMUNITY HEALTH",
+          "amount": 395833.33,
+          "date": "2024-01-04",
+          "occurrences": 2,
+          "potential_overpayment": 395833.33
+        },
+        {
+          "supplier": "INCLUDE EDUCATION LTD",
+          "amount": 21333.33,
+          "date": "2026-04-08",
+          "occurrences": 18,
+          "potential_overpayment": 362666.61
+        },
+        {
+          "supplier": "SMOOTHSTONE CARE AND EDUCATION LTD",
+          "amount": 23583.6,
+          "date": "2025-12-22",
+          "occurrences": 16,
+          "potential_overpayment": 353754.0
+        },
+        {
+          "supplier": "SMOOTHSTONE CARE AND EDUCATION LTD",
+          "amount": 23584.44,
+          "date": "2026-04-08",
+          "occurrences": 15,
+          "potential_overpayment": 330182.16
+        },
+        {
+          "supplier": "SENAD LTD",
+          "amount": 46900.0,
+          "date": "2025-12-22",
+          "occurrences": 8,
+          "potential_overpayment": 328300.0
+        },
+        {
+          "supplier": "SMOOTHSTONE CARE AND EDUCATION LTD",
+          "amount": 21618.3,
+          "date": "2025-03-24",
+          "occurrences": 15,
+          "potential_overpayment": 302656.2
+        },
+        {
+          "supplier": "DERBYSHIRE COMMUNITY HEALTH",
+          "amount": 270048.42,
+          "date": "2025-06-02",
+          "occurrences": 2,
+          "potential_overpayment": 270048.42
+        },
+        {
+          "supplier": "SMOOTHSTONE CARE AND EDUCATION LTD",
+          "amount": 24527.64,
+          "date": "2026-04-08",
+          "occurrences": 12,
+          "potential_overpayment": 269804.04
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 2090,
+      "total_value": 464891000.0
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Adult Social Care and Health",
+      "spend": 874208600.14,
+      "count": 243477
+    },
+    {
+      "department": "Children's Services",
+      "spend": 734275349.82,
+      "count": 121877
+    },
+    {
+      "department": "Balance Sheet",
+      "spend": 715967467.56,
+      "count": 5435
+    },
+    {
+      "department": "Adult Social Health Care",
+      "spend": 348650233.75,
+      "count": 110264
+    },
+    {
+      "department": "Place",
+      "spend": 306061503.48,
+      "count": 25041
+    },
+    {
+      "department": "Pension Fund",
+      "spend": 233125728.79,
+      "count": 651
+    },
+    {
+      "department": "Corporate Services and Transformation",
+      "spend": 163499602.83,
+      "count": 13096
+    },
+    {
+      "department": "Economic Transport & Communities",
+      "spend": 114024468.96,
+      "count": 13109
+    },
+    {
+      "department": "Capital",
+      "spend": 54910779.24,
+      "count": 2497
+    },
+    {
+      "department": "Commissioning Community and Policy",
+      "spend": 40760099.72,
+      "count": 4940
+    },
+    {
+      "department": "Corporate",
+      "spend": 27976538.14,
+      "count": 1262
+    },
+    {
+      "department": "Community Services",
+      "spend": 4554240.8,
+      "count": 2115
+    },
+    {
+      "department": "Chief Executives",
+      "spend": 652135.18,
+      "count": 134
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2023/24": 529283800.61,
+      "2024/25": 1214305147.86,
+      "2025/26": 1504152770.04,
+      "2026/27": 370925029.9
+    },
+    "transactions_by_year": {
+      "2023/24": 60851,
+      "2024/25": 206564,
+      "2025/26": 213147,
+      "2026/27": 63336
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 543898
+  }
+}

@@ -1,0 +1,3318 @@
+{
+  "summary": {
+    "total_spend": 4714745105.69,
+    "transaction_count": 370713,
+    "unique_suppliers": 3841,
+    "avg_transaction": 12718.05,
+    "median_transaction": 2248.0,
+    "date_range": {
+      "min": "2024-01-01",
+      "max": "2025-12-30"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "NORTHAMPTONSHIRE CHILDREN\u0092S TRUST LTD",
+        "total": 405906459.68,
+        "transactions": 131,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NOTTINGHAMSHIRE COUNTY COUNCIL",
+        "total": 240048000.0,
+        "transactions": 6,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORTHAMPTON PARTNERSHIP HOMES",
+        "total": 231126201.59,
+        "transactions": 125,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORTHAMPTONSHIRE CHILDREN\u2019S TRUST LTD",
+        "total": 193100037.72,
+        "transactions": 76,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORTHAMPTON SCHOOLS LTD",
+        "total": 190070556.08,
+        "transactions": 534,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORTHANTS POLICE",
+        "total": 169404437.52,
+        "transactions": 51,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "KIER TRANSPORTATION LTD",
+        "total": 130408779.24,
+        "transactions": 64,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ACCESS UK LIMITED T/A ADAM",
+        "total": 115565799.85,
+        "transactions": 555,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED PERSONAL DATA",
+        "total": 111101571.27,
+        "transactions": 52478,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORTH NORTHAMPTONSHIRE COUNCIL",
+        "total": 89250589.42,
+        "transactions": 444,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "KIER HIGHWAYS LTD",
+        "total": 70889546.63,
+        "transactions": 27,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CONNECT ROADS NORTHAMPTONSHIRE LTD",
+        "total": 69334066.28,
+        "transactions": 143,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "VEOLIA ENVIRONMENTAL SERVICES",
+        "total": 67408536.73,
+        "transactions": 652,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORTHAMPTONSHIRE COMMISSIONER FIRE & RESCUE AUTHORITY",
+        "total": 51871316.63,
+        "transactions": 84,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WILLMOTT DIXON CONSTRUCTION",
+        "total": 49100074.92,
+        "transactions": 43,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MILLBROOK HEALTHCARE",
+        "total": 38924035.13,
+        "transactions": 111,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "OPUS PEOPLE SOLUTIONS (EAST) LTD",
+        "total": 38324480.42,
+        "transactions": 260,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CGL",
+        "total": 32185997.9,
+        "transactions": 56,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SUEZ RECYCLING AND RECOVERY UK LTD",
+        "total": 29164500.34,
+        "transactions": 52,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "THALIA WB ODC LTD",
+        "total": 28709440.88,
+        "transactions": 122,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.4988,
+    "total_unique_suppliers": 3841,
+    "single_transaction_suppliers": 52
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 140676,
+      "potential_value": 2450824646.45,
+      "items": [
+        {
+          "supplier": "NOTTINGHAMSHIRE COUNTY COUNCIL",
+          "amount": 120000000.0,
+          "date": "2025-12-30",
+          "occurrences": 2,
+          "potential_overpayment": 120000000.0
+        },
+        {
+          "supplier": "NORTHAMPTONSHIRE CHILDREN\u2019S TRUST LTD",
+          "amount": 14076706.8,
+          "date": "2024-06-28",
+          "occurrences": 2,
+          "potential_overpayment": 14076706.8
+        },
+        {
+          "supplier": "KIER TRANSPORTATION LTD",
+          "amount": 3635365.92,
+          "date": "2025-06-04",
+          "occurrences": 4,
+          "potential_overpayment": 10906097.76
+        },
+        {
+          "supplier": "NORTHAMPTONSHIRE CHILDREN\u0092S TRUST LTD",
+          "amount": 10366752.0,
+          "date": "2025-04-09",
+          "occurrences": 2,
+          "potential_overpayment": 10366752.0
+        },
+        {
+          "supplier": "NORTHAMPTONSHIRE CHILDREN\u0092S TRUST LTD",
+          "amount": 10366752.0,
+          "date": "2025-08-06",
+          "occurrences": 2,
+          "potential_overpayment": 10366752.0
+        },
+        {
+          "supplier": "NORTHAMPTONSHIRE CHILDREN\u0092S TRUST LTD",
+          "amount": 10366752.0,
+          "date": "2025-12-03",
+          "occurrences": 2,
+          "potential_overpayment": 10366752.0
+        },
+        {
+          "supplier": "NORTHAMPTONSHIRE CHILDREN\u0092S TRUST LTD",
+          "amount": 10366752.0,
+          "date": "2025-07-09",
+          "occurrences": 2,
+          "potential_overpayment": 10366752.0
+        },
+        {
+          "supplier": "NORTHAMPTONSHIRE CHILDREN\u0092S TRUST LTD",
+          "amount": 10366752.0,
+          "date": "2025-06-04",
+          "occurrences": 2,
+          "potential_overpayment": 10366752.0
+        },
+        {
+          "supplier": "NORTHAMPTONSHIRE CHILDREN\u0092S TRUST LTD",
+          "amount": 10366752.0,
+          "date": "2025-05-14",
+          "occurrences": 2,
+          "potential_overpayment": 10366752.0
+        },
+        {
+          "supplier": "NORTHAMPTONSHIRE CHILDREN\u0092S TRUST LTD",
+          "amount": 10366752.0,
+          "date": "2025-11-05",
+          "occurrences": 2,
+          "potential_overpayment": 10366752.0
+        },
+        {
+          "supplier": "NORTHAMPTONSHIRE CHILDREN\u0092S TRUST LTD",
+          "amount": 10366752.0,
+          "date": "2025-10-06",
+          "occurrences": 2,
+          "potential_overpayment": 10366752.0
+        },
+        {
+          "supplier": "NORTHAMPTONSHIRE CHILDREN\u0092S TRUST LTD",
+          "amount": 10366752.0,
+          "date": "2025-09-02",
+          "occurrences": 2,
+          "potential_overpayment": 10366752.0
+        },
+        {
+          "supplier": "NORTHAMPTONSHIRE CHILDREN\u0092S TRUST LTD",
+          "amount": 10366752.0,
+          "date": "2025-09-05",
+          "occurrences": 2,
+          "potential_overpayment": 10366752.0
+        },
+        {
+          "supplier": "NORTHAMPTONSHIRE CHILDREN\u2019S TRUST LTD",
+          "amount": 10051700.4,
+          "date": "2024-05-07",
+          "occurrences": 2,
+          "potential_overpayment": 10051700.4
+        },
+        {
+          "supplier": "NORTHAMPTONSHIRE CHILDREN\u0092S TRUST LTD",
+          "amount": 10051700.4,
+          "date": "2024-09-04",
+          "occurrences": 2,
+          "potential_overpayment": 10051700.4
+        },
+        {
+          "supplier": "NORTHAMPTONSHIRE CHILDREN\u0092S TRUST LTD",
+          "amount": 10051700.4,
+          "date": "2025-01-10",
+          "occurrences": 2,
+          "potential_overpayment": 10051700.4
+        },
+        {
+          "supplier": "NORTHAMPTONSHIRE CHILDREN\u0092S TRUST LTD",
+          "amount": 10051700.4,
+          "date": "2025-03-07",
+          "occurrences": 2,
+          "potential_overpayment": 10051700.4
+        },
+        {
+          "supplier": "NORTHAMPTONSHIRE CHILDREN\u2019S TRUST LTD",
+          "amount": 10051700.4,
+          "date": "2024-04-08",
+          "occurrences": 2,
+          "potential_overpayment": 10051700.4
+        },
+        {
+          "supplier": "NORTHAMPTONSHIRE CHILDREN\u0092S TRUST LTD",
+          "amount": 10051700.4,
+          "date": "2025-02-05",
+          "occurrences": 2,
+          "potential_overpayment": 10051700.4
+        },
+        {
+          "supplier": "NORTHAMPTONSHIRE CHILDREN\u2019S TRUST LTD",
+          "amount": 10051700.4,
+          "date": "2024-08-05",
+          "occurrences": 2,
+          "potential_overpayment": 10051700.4
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 3139,
+      "total_value": 347460000.0
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Northamptonshire Children's Trust",
+      "spend": 582076776.98,
+      "count": 119
+    },
+    {
+      "department": "Central Management Services - Teams",
+      "spend": 240024306.96,
+      "count": 8
+    },
+    {
+      "department": "Financing [NCC]",
+      "spend": 234231446.31,
+      "count": 121
+    },
+    {
+      "department": "Maintained schools",
+      "spend": 222874396.54,
+      "count": 2374
+    },
+    {
+      "department": "DART Care Costs",
+      "spend": 212011562.02,
+      "count": 54130
+    },
+    {
+      "department": "Highways Maintenance WNC",
+      "spend": 202032240.91,
+      "count": 402
+    },
+    {
+      "department": "Traveller sites",
+      "spend": 199236067.02,
+      "count": 38
+    },
+    {
+      "department": "Northampton Schools PFI",
+      "spend": 190681045.78,
+      "count": 587
+    },
+    {
+      "department": "LD Daventry and South Care Costs",
+      "spend": 164150281.43,
+      "count": 41969
+    },
+    {
+      "department": "Social Care & Health Transport",
+      "spend": 115568602.93,
+      "count": 557
+    },
+    {
+      "department": "High Needs Independent and Out County",
+      "spend": 109841949.42,
+      "count": 7108
+    },
+    {
+      "department": "Schools Budgets (DSG) [NCC]",
+      "spend": 95235566.37,
+      "count": 4051
+    },
+    {
+      "department": "LD Northampton Care Costs",
+      "spend": 91877530.67,
+      "count": 22113
+    },
+    {
+      "department": "3-4 year olds",
+      "spend": 83185442.0,
+      "count": 20068
+    },
+    {
+      "department": "Street Lights",
+      "spend": 78447995.89,
+      "count": 259
+    },
+    {
+      "department": "0-2 year olds",
+      "spend": 76048939.46,
+      "count": 19906
+    },
+    {
+      "department": "HRA Capital [NBC]",
+      "spend": 73099257.3,
+      "count": 1025
+    },
+    {
+      "department": "Special Schools",
+      "spend": 60767760.46,
+      "count": 1090
+    },
+    {
+      "department": "Community Team Care Costs - Northampton North and East",
+      "spend": 54105626.2,
+      "count": 28110
+    },
+    {
+      "department": "Tiffield SEND School",
+      "spend": 51498287.18,
+      "count": 155
+    },
+    {
+      "department": "Street cleansing [NBC]",
+      "spend": 42807427.42,
+      "count": 32
+    },
+    {
+      "department": "Finance Operations [NCC]",
+      "spend": 39881991.92,
+      "count": 259
+    },
+    {
+      "department": "Academies [NCC]",
+      "spend": 39776617.69,
+      "count": 3692
+    },
+    {
+      "department": "Community Team Care Costs - Northampton South and West",
+      "spend": 39453309.95,
+      "count": 21445
+    },
+    {
+      "department": "Domestic Waste [NCC]",
+      "spend": 38783237.94,
+      "count": 187
+    },
+    {
+      "department": "Economic Development",
+      "spend": 36378890.75,
+      "count": 943
+    },
+    {
+      "department": "Temporary Accommodation",
+      "spend": 35430710.38,
+      "count": 3084
+    },
+    {
+      "department": "Community Team Care Costs - Rural North and West",
+      "spend": 32959038.69,
+      "count": 18778
+    },
+    {
+      "department": "Community Team Care Costs - Rural South and East",
+      "spend": 32954979.13,
+      "count": 18062
+    },
+    {
+      "department": "Provision For Pupils With SEN",
+      "spend": 31389614.42,
+      "count": 4660
+    },
+    {
+      "department": "Sustainable Travel WNC",
+      "spend": 28814937.96,
+      "count": 1473
+    },
+    {
+      "department": "Substance Misuse [NCC]",
+      "spend": 28691913.52,
+      "count": 111
+    },
+    {
+      "department": "Northampton North West Relief Road",
+      "spend": 26790130.16,
+      "count": 189
+    },
+    {
+      "department": "Provision For Pupils With SEN [NCC]",
+      "spend": 26161831.81,
+      "count": 5524
+    },
+    {
+      "department": "Equipment and Adaptations [NCC]",
+      "spend": 26037292.08,
+      "count": 50
+    },
+    {
+      "department": "SEND Schools Grant Schemes",
+      "spend": 26032127.03,
+      "count": 412
+    },
+    {
+      "department": "Community Team Care Costs - Northampton Central",
+      "spend": 25974787.5,
+      "count": 13823
+    },
+    {
+      "department": "Household Support Fund (HSF)",
+      "spend": 24486155.62,
+      "count": 463
+    },
+    {
+      "department": "Wooldale Centre - CCS (DSG)",
+      "spend": 23209741.21,
+      "count": 268
+    },
+    {
+      "department": "NCT Grant Income Passthrough",
+      "spend": 22877824.74,
+      "count": 41
+    },
+    {
+      "department": "Pupil Premium and Other Grants",
+      "spend": 22594686.32,
+      "count": 1366
+    },
+    {
+      "department": "Rural Leisure Centres Heat Decarbonisation Scheme",
+      "spend": 22291619.42,
+      "count": 175
+    },
+    {
+      "department": "Street cleansing Northampton area",
+      "spend": 19873235.02,
+      "count": 16
+    },
+    {
+      "department": "Domestic Waste",
+      "spend": 19717341.18,
+      "count": 60
+    },
+    {
+      "department": "Bereavement Services",
+      "spend": 19539776.18,
+      "count": 566
+    },
+    {
+      "department": "HRA",
+      "spend": 18518029.35,
+      "count": 91
+    },
+    {
+      "department": "0-19 Services [NCC]",
+      "spend": 18100301.04,
+      "count": 26
+    },
+    {
+      "department": "Infrastructure Contracts",
+      "spend": 18049367.81,
+      "count": 322
+    },
+    {
+      "department": "Utility Services",
+      "spend": 17043622.57,
+      "count": 762
+    },
+    {
+      "department": "Overstone Leys Primary School",
+      "spend": 15308943.12,
+      "count": 203
+    },
+    {
+      "department": "Refuse and recycling [DDC]",
+      "spend": 15307549.48,
+      "count": 224
+    },
+    {
+      "department": "Substance Misuse",
+      "spend": 15112590.88,
+      "count": 34
+    },
+    {
+      "department": "Alternative Provision",
+      "spend": 15091323.5,
+      "count": 932
+    },
+    {
+      "department": "Supplementary Substance Misuse Grants",
+      "spend": 14739358.7,
+      "count": 248
+    },
+    {
+      "department": "SEN Units and Res Prov",
+      "spend": 14298526.66,
+      "count": 1046
+    },
+    {
+      "department": "Post 16",
+      "spend": 14043348.54,
+      "count": 926
+    },
+    {
+      "department": "PS&E Operational Property Running Costs",
+      "spend": 13940267.21,
+      "count": 292
+    },
+    {
+      "department": "Pupil Premium and Other Grants [NCC]",
+      "spend": 13892248.78,
+      "count": 1286
+    },
+    {
+      "department": "PFI Contract [NCC]",
+      "spend": 13673557.28,
+      "count": 31
+    },
+    {
+      "department": "Office Optimisation",
+      "spend": 13272574.98,
+      "count": 496
+    },
+    {
+      "department": "Insurance [NCC]",
+      "spend": 12572606.14,
+      "count": 106
+    },
+    {
+      "department": "Equipment and Adaptations",
+      "spend": 12264015.7,
+      "count": 16
+    },
+    {
+      "department": "Public Health Grant Reserve and Reinvestment [NCC]",
+      "spend": 11378825.17,
+      "count": 251
+    },
+    {
+      "department": "County Hall Refurbishment/Improvements",
+      "spend": 11368282.68,
+      "count": 43
+    },
+    {
+      "department": "Corn Exchange Acquisition",
+      "spend": 10989208.24,
+      "count": 22
+    },
+    {
+      "department": "Early Education and Childcare 3 & 4 Funded Universal Entitlement EYNFF [NCC]",
+      "spend": 10936261.66,
+      "count": 3152
+    },
+    {
+      "department": "PH - Management & Admin [NCC]",
+      "spend": 10886623.94,
+      "count": 132
+    },
+    {
+      "department": "0-19 Services",
+      "spend": 10872492.2,
+      "count": 30
+    },
+    {
+      "department": "Parking and Bus Lane Enforcement",
+      "spend": 10165390.55,
+      "count": 295
+    },
+    {
+      "department": "Property Management [NBC]",
+      "spend": 9395078.39,
+      "count": 2643
+    },
+    {
+      "department": "Schools Minor Works",
+      "spend": 9011235.02,
+      "count": 640
+    },
+    {
+      "department": "St Andrew's Hospital",
+      "spend": 8951740.0,
+      "count": 36
+    },
+    {
+      "department": "PFI Contract",
+      "spend": 8941315.52,
+      "count": 20
+    },
+    {
+      "department": "Home to School Transport WNC",
+      "spend": 8904029.7,
+      "count": 1538
+    },
+    {
+      "department": "Refuse and recycling [SNC]",
+      "spend": 8691770.85,
+      "count": 472
+    },
+    {
+      "department": "Economic development",
+      "spend": 8462754.7,
+      "count": 635
+    },
+    {
+      "department": "Enforcement and Monitoring",
+      "spend": 8272554.52,
+      "count": 267
+    },
+    {
+      "department": "Highways Development Liason WNC",
+      "spend": 8118375.03,
+      "count": 225
+    },
+    {
+      "department": "Telephony & Networks Contracts",
+      "spend": 7745208.5,
+      "count": 872
+    },
+    {
+      "department": "High Needs Out County [NCC]",
+      "spend": 7677035.06,
+      "count": 740
+    },
+    {
+      "department": "Household Waste Recycling Centres [NCC]",
+      "spend": 7499155.9,
+      "count": 8
+    },
+    {
+      "department": "Shared Services Business Systems",
+      "spend": 7358147.29,
+      "count": 179
+    },
+    {
+      "department": "Applications Contracts",
+      "spend": 7353503.84,
+      "count": 155
+    },
+    {
+      "department": "Virtual School",
+      "spend": 7286437.28,
+      "count": 64
+    },
+    {
+      "department": "PC Equipment Hardware Refresh",
+      "spend": 7223398.26,
+      "count": 144
+    },
+    {
+      "department": "Refuse and recycling Daventry area",
+      "spend": 6933017.86,
+      "count": 90
+    },
+    {
+      "department": "Soft FM",
+      "spend": 6908871.12,
+      "count": 547
+    },
+    {
+      "department": "Redundancy/PRC",
+      "spend": 6907407.68,
+      "count": 22
+    },
+    {
+      "department": "Northampton Secondary School Capacity",
+      "spend": 6895735.5,
+      "count": 76
+    },
+    {
+      "department": "Growing Innovation Fund Grants",
+      "spend": 5810036.26,
+      "count": 96
+    },
+    {
+      "department": "Holiday activities & food grant",
+      "spend": 5803230.2,
+      "count": 8
+    },
+    {
+      "department": "Library Service",
+      "spend": 5722190.57,
+      "count": 1318
+    },
+    {
+      "department": "Sexual Health [NCC]",
+      "spend": 5581639.2,
+      "count": 16
+    },
+    {
+      "department": "Disabled Facilities Grants (Northampton area)",
+      "spend": 5553631.58,
+      "count": 958
+    },
+    {
+      "department": "Educational Psychology",
+      "spend": 5424685.38,
+      "count": 1495
+    },
+    {
+      "department": "Voluntary sector support",
+      "spend": 4998380.35,
+      "count": 492
+    },
+    {
+      "department": "Regeneration",
+      "spend": 4981640.13,
+      "count": 341
+    },
+    {
+      "department": "Northamptonshire Holistic Flood Reslilience",
+      "spend": 4959785.55,
+      "count": 342
+    },
+    {
+      "department": "Household Waste Recycling Centres",
+      "spend": 4953264.56,
+      "count": 18
+    },
+    {
+      "department": "Flood & Water Management",
+      "spend": 4815935.94,
+      "count": 156
+    },
+    {
+      "department": "Coroner Service [NCC]",
+      "spend": 4801055.53,
+      "count": 740
+    },
+    {
+      "department": "Pensions Section",
+      "spend": 4763802.99,
+      "count": 120
+    },
+    {
+      "department": "Elections & Electoral Registration (WNC)",
+      "spend": 4511448.52,
+      "count": 594
+    },
+    {
+      "department": "Fleet [SNC]",
+      "spend": 4503101.36,
+      "count": 22
+    },
+    {
+      "department": "Infection Control Grant [NCC]",
+      "spend": 4233538.38,
+      "count": 33
+    },
+    {
+      "department": "Homelessness",
+      "spend": 4163197.56,
+      "count": 362
+    },
+    {
+      "department": "External Audit [DDC]",
+      "spend": 4109126.4,
+      "count": 22
+    },
+    {
+      "department": "Facilities management [NBC]",
+      "spend": 4049687.28,
+      "count": 688
+    },
+    {
+      "department": "Refuse and recycling South area",
+      "spend": 3961920.34,
+      "count": 142
+    },
+    {
+      "department": "Appropriations and Technical",
+      "spend": 3903984.2,
+      "count": 4
+    },
+    {
+      "department": "Targeted SEN",
+      "spend": 3855554.0,
+      "count": 2456
+    },
+    {
+      "department": "additional funding",
+      "spend": 3778042.52,
+      "count": 1598
+    },
+    {
+      "department": "Balance Sheet [NBC]",
+      "spend": 3670610.84,
+      "count": 108
+    },
+    {
+      "department": "Community safety",
+      "spend": 3608178.0,
+      "count": 336
+    },
+    {
+      "department": "Property Minor Works",
+      "spend": 3552332.69,
+      "count": 277
+    },
+    {
+      "department": "Alternative Provision [NCC]",
+      "spend": 3422820.3,
+      "count": 363
+    },
+    {
+      "department": "Legal services",
+      "spend": 3397723.7,
+      "count": 1459
+    },
+    {
+      "department": "MH Mental Health CCP LT [NCC]",
+      "spend": 3366944.06,
+      "count": 924
+    },
+    {
+      "department": "Sexual Health",
+      "spend": 3228580.8,
+      "count": 60
+    },
+    {
+      "department": "Systems and Service Development (WNC)",
+      "spend": 3200160.35,
+      "count": 83
+    },
+    {
+      "department": "Resilience and Investment Grants",
+      "spend": 3184032.66,
+      "count": 194
+    },
+    {
+      "department": "Insurance - Claims [NCC]",
+      "spend": 3061212.46,
+      "count": 561
+    },
+    {
+      "department": "Pupil Growth Fund",
+      "spend": 3029256.0,
+      "count": 96
+    },
+    {
+      "department": "Disabled Facilities Grants (Daventry area)",
+      "spend": 2949484.88,
+      "count": 540
+    },
+    {
+      "department": "General Balance Sheet [NCC]",
+      "spend": 2934892.71,
+      "count": 285
+    },
+    {
+      "department": "NCT One Off Investments",
+      "spend": 2847672.7,
+      "count": 8
+    },
+    {
+      "department": "Events",
+      "spend": 2806273.1,
+      "count": 95
+    },
+    {
+      "department": "Rural England Prosperity Funding (REPF)",
+      "spend": 2735806.0,
+      "count": 18
+    },
+    {
+      "department": "Highways & Transport Planning WNC",
+      "spend": 2673328.92,
+      "count": 321
+    },
+    {
+      "department": "Payroll & HR Transactions",
+      "spend": 2588422.04,
+      "count": 140
+    },
+    {
+      "department": "HG0220 - Northamptonshire Superfast Broadband",
+      "spend": 2587093.0,
+      "count": 4
+    },
+    {
+      "department": "Provision of Relocatable Temporary Accommodation",
+      "spend": 2578810.84,
+      "count": 38
+    },
+    {
+      "department": "Property Management [DDC]",
+      "spend": 2417075.58,
+      "count": 84
+    },
+    {
+      "department": "Early Education and Childcare HNF [NCC]",
+      "spend": 2384598.23,
+      "count": 1677
+    },
+    {
+      "department": "Property Management",
+      "spend": 2315972.66,
+      "count": 980
+    },
+    {
+      "department": "Enterprise Zone",
+      "spend": 2252280.74,
+      "count": 388
+    },
+    {
+      "department": "Contracts & Capacity",
+      "spend": 2212015.88,
+      "count": 256
+    },
+    {
+      "department": "Car parks management Daventry",
+      "spend": 2087753.14,
+      "count": 112
+    },
+    {
+      "department": "Strategic Planning",
+      "spend": 2086726.74,
+      "count": 92
+    },
+    {
+      "department": "OP North Older People CCP LT [NCC]",
+      "spend": 2022405.65,
+      "count": 1162
+    },
+    {
+      "department": "Leisure facilities",
+      "spend": 1996332.58,
+      "count": 200
+    },
+    {
+      "department": "New Residential 4 Bed Childrens Home",
+      "spend": 1982574.32,
+      "count": 24
+    },
+    {
+      "department": "Rough Sleeper Initiative",
+      "spend": 1973892.42,
+      "count": 78
+    },
+    {
+      "department": "Wraparound Childcare Programme grant",
+      "spend": 1949816.0,
+      "count": 106
+    },
+    {
+      "department": "EPC Improvments to Leased Buildings",
+      "spend": 1937879.51,
+      "count": 37
+    },
+    {
+      "department": "Bus stations and interchanges",
+      "spend": 1921837.82,
+      "count": 197
+    },
+    {
+      "department": "Health Improvement [NCC]",
+      "spend": 1912807.12,
+      "count": 94
+    },
+    {
+      "department": "Royal & Derngate RAAC Works",
+      "spend": 1868508.16,
+      "count": 54
+    },
+    {
+      "department": "Refuse and recycling [NBC]",
+      "spend": 1853565.0,
+      "count": 241
+    },
+    {
+      "department": "SEMLEP Growth Hub Core",
+      "spend": 1852180.04,
+      "count": 290
+    },
+    {
+      "department": "Strategic Acquisition",
+      "spend": 1802474.4,
+      "count": 8
+    },
+    {
+      "department": "Senior Management",
+      "spend": 1747601.24,
+      "count": 46
+    },
+    {
+      "department": "Council Tax Collection(WNC)",
+      "spend": 1743871.36,
+      "count": 336
+    },
+    {
+      "department": "Desktop Support Contracts",
+      "spend": 1743002.68,
+      "count": 363
+    },
+    {
+      "department": "Planning Policy & Specialist Services",
+      "spend": 1730352.86,
+      "count": 183
+    },
+    {
+      "department": "Planning Service IAAs",
+      "spend": 1720563.44,
+      "count": 26
+    },
+    {
+      "department": "Digital Contracts",
+      "spend": 1672642.95,
+      "count": 109
+    },
+    {
+      "department": "TR Transitions RES LT [NCC]",
+      "spend": 1652683.07,
+      "count": 31
+    },
+    {
+      "department": "SEMLEP",
+      "spend": 1641444.0,
+      "count": 2
+    },
+    {
+      "department": "Shared Lives Schemes [NCC]",
+      "spend": 1589794.96,
+      "count": 979
+    },
+    {
+      "department": "Facilities Management",
+      "spend": 1567696.96,
+      "count": 298
+    },
+    {
+      "department": "Control Accounts [NCC]",
+      "spend": 1554148.52,
+      "count": 187
+    },
+    {
+      "department": "Carers Services",
+      "spend": 1550025.0,
+      "count": 12
+    },
+    {
+      "department": "Floor & Wall Finishes Replacement/Renewal Programme",
+      "spend": 1505477.57,
+      "count": 58
+    },
+    {
+      "department": "St. James Bus Depot",
+      "spend": 1472017.82,
+      "count": 74
+    },
+    {
+      "department": "Housing Solutions - Grant Funded",
+      "spend": 1439349.5,
+      "count": 218
+    },
+    {
+      "department": "Business Support - Waste",
+      "spend": 1430546.46,
+      "count": 156
+    },
+    {
+      "department": "PD Physical Disability CCP LT [NCC]",
+      "spend": 1429399.27,
+      "count": 899
+    },
+    {
+      "department": "ARISE",
+      "spend": 1410442.23,
+      "count": 43
+    },
+    {
+      "department": "Planning - Development Management",
+      "spend": 1397508.42,
+      "count": 318
+    },
+    {
+      "department": "Car parks management Northampton",
+      "spend": 1391944.78,
+      "count": 379
+    },
+    {
+      "department": "Covid Grants",
+      "spend": 1375240.0,
+      "count": 4
+    },
+    {
+      "department": "HG0252 - Northampton Growth Management Scheme Phase 1",
+      "spend": 1357361.36,
+      "count": 133
+    },
+    {
+      "department": "Reactive Maintenance",
+      "spend": 1228845.73,
+      "count": 884
+    },
+    {
+      "department": "Mental Health Services [NCC]",
+      "spend": 1221563.48,
+      "count": 61
+    },
+    {
+      "department": "Fleet [NBC]",
+      "spend": 1189404.02,
+      "count": 44
+    },
+    {
+      "department": "Environmental Protection",
+      "spend": 1184558.98,
+      "count": 297
+    },
+    {
+      "department": "Energy and Carbon Management",
+      "spend": 1167298.08,
+      "count": 71
+    },
+    {
+      "department": "Cyber Security & Risk",
+      "spend": 1126882.66,
+      "count": 8
+    },
+    {
+      "department": "Connect To Work",
+      "spend": 1125132.76,
+      "count": 42
+    },
+    {
+      "department": "Accelerated Reform Fund",
+      "spend": 1113398.0,
+      "count": 18
+    },
+    {
+      "department": "Adults Prevention Services [NCC]",
+      "spend": 1112153.58,
+      "count": 49
+    },
+    {
+      "department": "Purchase of Leasehold Properties in Brackley",
+      "spend": 1106197.14,
+      "count": 66
+    },
+    {
+      "department": "EHCP case management system replacement",
+      "spend": 1098299.5,
+      "count": 14
+    },
+    {
+      "department": "Central Support Services",
+      "spend": 1094544.14,
+      "count": 110
+    },
+    {
+      "department": "OP North Older People CCP ST [NCC]",
+      "spend": 1075196.44,
+      "count": 45
+    },
+    {
+      "department": "PS&E General Estates Management",
+      "spend": 1073313.12,
+      "count": 260
+    },
+    {
+      "department": "Museum and Art Galleries",
+      "spend": 1065137.78,
+      "count": 335
+    },
+    {
+      "department": "Central Library Refurbishment",
+      "spend": 1058170.32,
+      "count": 37
+    },
+    {
+      "department": "Early Years Expansion grant",
+      "spend": 1046012.96,
+      "count": 408
+    },
+    {
+      "department": "Royal & Derngate Fire Safety Works",
+      "spend": 1021200.0,
+      "count": 4
+    },
+    {
+      "department": "Shared Lives Schemes",
+      "spend": 1018539.9,
+      "count": 614
+    },
+    {
+      "department": "Disabled Facilities Grants (South Northants area)",
+      "spend": 1006429.56,
+      "count": 170
+    },
+    {
+      "department": "Traffic Signals WNC",
+      "spend": 995477.94,
+      "count": 88
+    },
+    {
+      "department": "Business Support",
+      "spend": 991142.4,
+      "count": 50
+    },
+    {
+      "department": "Refurbishment of John Greenwood Shipman",
+      "spend": 986755.58,
+      "count": 24
+    },
+    {
+      "department": "Parks & Open Spaces [NBC]",
+      "spend": 981118.24,
+      "count": 117
+    },
+    {
+      "department": "2 year olds Universal Entitlement",
+      "spend": 980635.16,
+      "count": 360
+    },
+    {
+      "department": "Carers Services [NCC]",
+      "spend": 973350.0,
+      "count": 4
+    },
+    {
+      "department": "Refuse and recycling Northampton area",
+      "spend": 961862.56,
+      "count": 114
+    },
+    {
+      "department": "Adults Prevention Services",
+      "spend": 959114.52,
+      "count": 32
+    },
+    {
+      "department": "Health Checks",
+      "spend": 957868.62,
+      "count": 140
+    },
+    {
+      "department": "Internal Audit [NCC]",
+      "spend": 954024.92,
+      "count": 70
+    },
+    {
+      "department": "Sensory Equipment & Rehabilitation Team [NCC]",
+      "spend": 950332.39,
+      "count": 228
+    },
+    {
+      "department": "Smoking Cessation",
+      "spend": 924175.84,
+      "count": 255
+    },
+    {
+      "department": "Pupil Growth Fund [NCC]",
+      "spend": 900377.14,
+      "count": 52
+    },
+    {
+      "department": "Moulton School & Science College - Undercover area and additional mobile classroom",
+      "spend": 891698.82,
+      "count": 18
+    },
+    {
+      "department": "Learning Disability Support CCP [NCC]",
+      "spend": 872228.0,
+      "count": 2
+    },
+    {
+      "department": "Emergency Duty Team -Care [NCC]",
+      "spend": 871956.0,
+      "count": 4
+    },
+    {
+      "department": "Bus Service Improvement Plan",
+      "spend": 866249.1,
+      "count": 16
+    },
+    {
+      "department": "Academies",
+      "spend": 827403.54,
+      "count": 130
+    },
+    {
+      "department": "Hospital & Outreach",
+      "spend": 815279.86,
+      "count": 40
+    },
+    {
+      "department": "Markets management",
+      "spend": 814364.54,
+      "count": 169
+    },
+    {
+      "department": "Treasury [NCC]",
+      "spend": 802607.7,
+      "count": 122
+    },
+    {
+      "department": "Revenues and Benefits Assistant Director (WNC)",
+      "spend": 799015.12,
+      "count": 35
+    },
+    {
+      "department": "Towns Fund",
+      "spend": 794959.58,
+      "count": 13
+    },
+    {
+      "department": "S106 Agreements",
+      "spend": 791905.22,
+      "count": 12
+    },
+    {
+      "department": "Funding Precepts and Levies - Centrally Controlled",
+      "spend": 782859.74,
+      "count": 2
+    },
+    {
+      "department": "Private Sector Housing",
+      "spend": 782189.55,
+      "count": 281
+    },
+    {
+      "department": "Social Care Funding",
+      "spend": 781925.92,
+      "count": 520
+    },
+    {
+      "department": "Central Support Services [NCC]",
+      "spend": 775876.38,
+      "count": 217
+    },
+    {
+      "department": "LD Learning Disability CCP LT [NCC]",
+      "spend": 772752.97,
+      "count": 326
+    },
+    {
+      "department": "PS&E Disposal / Site Promotion Costs",
+      "spend": 772512.38,
+      "count": 109
+    },
+    {
+      "department": "PH - Health Protection [NCC]",
+      "spend": 771613.42,
+      "count": 204
+    },
+    {
+      "department": "Organisational Development & Technology",
+      "spend": 769327.54,
+      "count": 289
+    },
+    {
+      "department": "Parks and open spaces [NBC]",
+      "spend": 761165.88,
+      "count": 203
+    },
+    {
+      "department": "Investigation, Searches & Enforcement WNC",
+      "spend": 755580.42,
+      "count": 107
+    },
+    {
+      "department": "New Roads and Street Works Act WNC",
+      "spend": 755033.97,
+      "count": 328
+    },
+    {
+      "department": "General Management",
+      "spend": 749873.9,
+      "count": 40
+    },
+    {
+      "department": "Early Years Supplementary Grant (EYSG)",
+      "spend": 745031.5,
+      "count": 815
+    },
+    {
+      "department": "Sensory Equipment & Rehabilitation Team",
+      "spend": 740799.78,
+      "count": 122
+    },
+    {
+      "department": "Executive Support [NCC]",
+      "spend": 738627.62,
+      "count": 71
+    },
+    {
+      "department": "Digital Services",
+      "spend": 730452.14,
+      "count": 89
+    },
+    {
+      "department": "Devolved Formula Capital (DFC) School\u00a0Funding",
+      "spend": 726402.32,
+      "count": 114
+    },
+    {
+      "department": "Pathway 2 - RIB Model Pilot",
+      "spend": 710925.09,
+      "count": 321
+    },
+    {
+      "department": "Exceptional Finance Support Projects",
+      "spend": 695807.36,
+      "count": 36
+    },
+    {
+      "department": "Education Health Care",
+      "spend": 691433.72,
+      "count": 136
+    },
+    {
+      "department": "Northampton School S106 Project",
+      "spend": 667397.34,
+      "count": 8
+    },
+    {
+      "department": "Parks and Open Spaces",
+      "spend": 654370.58,
+      "count": 178
+    },
+    {
+      "department": "Environmental Protection [NCC]",
+      "spend": 648361.57,
+      "count": 83
+    },
+    {
+      "department": "Intelligent Client Function",
+      "spend": 646223.28,
+      "count": 14
+    },
+    {
+      "department": "DTI Office Optimisation Works",
+      "spend": 644764.2,
+      "count": 14
+    },
+    {
+      "department": "External Audit [NCC]",
+      "spend": 643912.8,
+      "count": 2
+    },
+    {
+      "department": "Freedom of Information Team",
+      "spend": 643642.8,
+      "count": 250
+    },
+    {
+      "department": "Payroll & HR Transactions [NCC]",
+      "spend": 641357.49,
+      "count": 68
+    },
+    {
+      "department": "AMHP Service",
+      "spend": 629217.26,
+      "count": 2
+    },
+    {
+      "department": "Registration Service [NCC]",
+      "spend": 624181.14,
+      "count": 32
+    },
+    {
+      "department": "Health and Safety",
+      "spend": 621161.5,
+      "count": 222
+    },
+    {
+      "department": "OCS Central Management [NCC]",
+      "spend": 598810.1,
+      "count": 73
+    },
+    {
+      "department": "HG0246 - A43 Northampton -Kettering Phase 1b",
+      "spend": 585270.36,
+      "count": 64
+    },
+    {
+      "department": "Early Education and Childcare HNF",
+      "spend": 580079.86,
+      "count": 502
+    },
+    {
+      "department": "Magdalen College School Expansion",
+      "spend": 542271.38,
+      "count": 6
+    },
+    {
+      "department": "Job Centre Plus Relocation",
+      "spend": 516549.9,
+      "count": 120
+    },
+    {
+      "department": "Technical Services",
+      "spend": 512304.7,
+      "count": 72
+    },
+    {
+      "department": "External Audit [NBC]",
+      "spend": 498864.0,
+      "count": 2
+    },
+    {
+      "department": "Legacy NCC",
+      "spend": 496480.1,
+      "count": 138
+    },
+    {
+      "department": "OP North Older People RES LT [NCC]",
+      "spend": 492556.93,
+      "count": 162
+    },
+    {
+      "department": "Housing Benefits Administration (WNC)",
+      "spend": 490053.74,
+      "count": 38
+    },
+    {
+      "department": "Commercial Estate Management",
+      "spend": 489161.92,
+      "count": 187
+    },
+    {
+      "department": "Environmental Crime",
+      "spend": 488721.36,
+      "count": 116
+    },
+    {
+      "department": "Afghan Resettlement",
+      "spend": 480400.24,
+      "count": 184
+    },
+    {
+      "department": "[CLOSED] DTI Contracts",
+      "spend": 477835.16,
+      "count": 26
+    },
+    {
+      "department": "Health Improvement",
+      "spend": 474611.2,
+      "count": 16
+    },
+    {
+      "department": "Customer Services [NCC]",
+      "spend": 470077.7,
+      "count": 58
+    },
+    {
+      "department": "Demolition of Vacant Buildings",
+      "spend": 454361.94,
+      "count": 12
+    },
+    {
+      "department": "Towcester South Primary School",
+      "spend": 452422.94,
+      "count": 18
+    },
+    {
+      "department": "Northamptonshire Safeguarding Children Partnership",
+      "spend": 422697.42,
+      "count": 8
+    },
+    {
+      "department": "Community Service [DDC]",
+      "spend": 408475.84,
+      "count": 35
+    },
+    {
+      "department": "Homes 2 Inspire - Childrens Homes",
+      "spend": 404000.0,
+      "count": 2
+    },
+    {
+      "department": "Spinneyfields",
+      "spend": 398562.0,
+      "count": 4
+    },
+    {
+      "department": "AD Assets & Environment",
+      "spend": 388281.94,
+      "count": 8
+    },
+    {
+      "department": "LED Replacement Lighting Scheme",
+      "spend": 382502.2,
+      "count": 28
+    },
+    {
+      "department": "DAF - Disability Access funding",
+      "spend": 379120.0,
+      "count": 394
+    },
+    {
+      "department": "Sponne School - S106 improvement project",
+      "spend": 374187.32,
+      "count": 4
+    },
+    {
+      "department": "Out of hours call service [NBC]",
+      "spend": 366487.87,
+      "count": 70
+    },
+    {
+      "department": "Adult\u0092s Mental Health",
+      "spend": 352225.24,
+      "count": 20
+    },
+    {
+      "department": "School Standards & Effectiveness [NCC]",
+      "spend": 349035.38,
+      "count": 110
+    },
+    {
+      "department": "Professional Finance [NCC]",
+      "spend": 348216.8,
+      "count": 36
+    },
+    {
+      "department": "Business Intelligence [NCC]",
+      "spend": 347597.2,
+      "count": 42
+    },
+    {
+      "department": "WNC Garden Waste Service",
+      "spend": 347377.18,
+      "count": 34
+    },
+    {
+      "department": "SEMLEP Careers Hub",
+      "spend": 344975.58,
+      "count": 92
+    },
+    {
+      "department": "LDS Residential Care Independent Sector Contracts [NCC]",
+      "spend": 341958.68,
+      "count": 16
+    },
+    {
+      "department": "Abington Active Travel \u0096 Active Travel Tranche 2",
+      "spend": 338021.0,
+      "count": 9
+    },
+    {
+      "department": "Housing strategy and development of affordable housing",
+      "spend": 322373.9,
+      "count": 25
+    },
+    {
+      "department": "Boiler Replacements",
+      "spend": 320759.66,
+      "count": 26
+    },
+    {
+      "department": "Democratic Services",
+      "spend": 320289.63,
+      "count": 131
+    },
+    {
+      "department": "Consolidated backup solution",
+      "spend": 320128.8,
+      "count": 6
+    },
+    {
+      "department": "Homes for Ukraine",
+      "spend": 314168.58,
+      "count": 65
+    },
+    {
+      "department": "Trading Standards",
+      "spend": 313259.68,
+      "count": 73
+    },
+    {
+      "department": "Accountancy",
+      "spend": 307719.42,
+      "count": 33
+    },
+    {
+      "department": "Digital Social Care Records",
+      "spend": 307369.78,
+      "count": 47
+    },
+    {
+      "department": "Gladstone Road [NCC]",
+      "spend": 306511.72,
+      "count": 221
+    },
+    {
+      "department": "Childcare Expansion Capital Funding",
+      "spend": 305705.3,
+      "count": 24
+    },
+    {
+      "department": "Social Care Funding [NCC]",
+      "spend": 305237.5,
+      "count": 250
+    },
+    {
+      "department": "Communications & Marketing [NCC]",
+      "spend": 304544.08,
+      "count": 55
+    },
+    {
+      "department": "HG0241 - A45 Daventry Development Link - Prep",
+      "spend": 301277.8,
+      "count": 42
+    },
+    {
+      "department": "Extended Photovoltaic System for One Angel Square",
+      "spend": 299618.32,
+      "count": 10
+    },
+    {
+      "department": "L&D Adult Services & Practice Educators",
+      "spend": 297316.18,
+      "count": 68
+    },
+    {
+      "department": "Homes to Support Fostering",
+      "spend": 292556.4,
+      "count": 36
+    },
+    {
+      "department": "Assistant Director Education",
+      "spend": 288953.98,
+      "count": 50
+    },
+    {
+      "department": "Flow & Capacity Team",
+      "spend": 287560.88,
+      "count": 36
+    },
+    {
+      "department": "Telephony & Contact Centre Replacement",
+      "spend": 287231.01,
+      "count": 15
+    },
+    {
+      "department": "Director (Communities and Opportunities)",
+      "spend": 286167.96,
+      "count": 74
+    },
+    {
+      "department": "CCTV management",
+      "spend": 284806.8,
+      "count": 18
+    },
+    {
+      "department": "Workforce Policy & Strategy",
+      "spend": 281410.1,
+      "count": 59
+    },
+    {
+      "department": "Longlands [NCC]",
+      "spend": 281060.0,
+      "count": 133
+    },
+    {
+      "department": "Reablement West",
+      "spend": 280877.67,
+      "count": 241
+    },
+    {
+      "department": "Catering",
+      "spend": 278008.84,
+      "count": 369
+    },
+    {
+      "department": "Transformation - Place & Economy",
+      "spend": 277635.46,
+      "count": 4
+    },
+    {
+      "department": "Payroll Control Accounts [NCC]",
+      "spend": 276471.82,
+      "count": 16
+    },
+    {
+      "department": "Licensing - All kinds",
+      "spend": 272922.16,
+      "count": 129
+    },
+    {
+      "department": "Archive and Heritage Service",
+      "spend": 272465.96,
+      "count": 96
+    },
+    {
+      "department": "Adult\u0092s Mental Health [NCC]",
+      "spend": 271278.94,
+      "count": 26
+    },
+    {
+      "department": "Solar PV Project",
+      "spend": 266443.84,
+      "count": 6
+    },
+    {
+      "department": "Early Years Budget Grant",
+      "spend": 261010.92,
+      "count": 206
+    },
+    {
+      "department": "Bridge Replacement Works",
+      "spend": 256535.22,
+      "count": 8
+    },
+    {
+      "department": "Countywide Traveller Unit Partnership - IAA",
+      "spend": 256120.94,
+      "count": 14
+    },
+    {
+      "department": "Guildhall Gates - Old Town Hall Steps",
+      "spend": 248272.58,
+      "count": 4
+    },
+    {
+      "department": "Operations - Management",
+      "spend": 244728.48,
+      "count": 84
+    },
+    {
+      "department": "OCS Central Management",
+      "spend": 239157.5,
+      "count": 30
+    },
+    {
+      "department": "Library Management System Replacement",
+      "spend": 238173.0,
+      "count": 24
+    },
+    {
+      "department": "OP South Older People CCP LT [NCC]",
+      "spend": 236021.23,
+      "count": 144
+    },
+    {
+      "department": "Gladstone Road",
+      "spend": 221599.24,
+      "count": 122
+    },
+    {
+      "department": "Business Systems Portfolio Projects",
+      "spend": 216624.22,
+      "count": 45
+    },
+    {
+      "department": "CYP & all age MH & Oral Health",
+      "spend": 215138.98,
+      "count": 14
+    },
+    {
+      "department": "Money advice, Social Inclusion and debt advice  [WNC)",
+      "spend": 210977.28,
+      "count": 16
+    },
+    {
+      "department": "Highways Network WNC",
+      "spend": 207324.06,
+      "count": 17
+    },
+    {
+      "department": "LD Learning Disability RES LT [NCC]",
+      "spend": 206564.36,
+      "count": 16
+    },
+    {
+      "department": "High Needs Projects",
+      "spend": 205015.84,
+      "count": 66
+    },
+    {
+      "department": "Union Facilities (DSG) [NCC]",
+      "spend": 204479.74,
+      "count": 56
+    },
+    {
+      "department": "HR Advisory",
+      "spend": 201140.84,
+      "count": 41
+    },
+    {
+      "department": "Obelisk House [NCC]",
+      "spend": 198993.48,
+      "count": 161
+    },
+    {
+      "department": "Social & Leisure [NCC]",
+      "spend": 197826.99,
+      "count": 158
+    },
+    {
+      "department": "Healthy Places & Health Protection",
+      "spend": 197266.66,
+      "count": 14
+    },
+    {
+      "department": "Falls Service [NCC]",
+      "spend": 196975.76,
+      "count": 6
+    },
+    {
+      "department": "Insurance",
+      "spend": 195690.88,
+      "count": 12
+    },
+    {
+      "department": "Household Waste Recycling Centres Sinking Fund",
+      "spend": 187581.12,
+      "count": 4
+    },
+    {
+      "department": "Database Administration contracts",
+      "spend": 185909.27,
+      "count": 7
+    },
+    {
+      "department": "Commercial refuse and recycling [SNC]",
+      "spend": 185632.0,
+      "count": 6
+    },
+    {
+      "department": "Health Inequalities",
+      "spend": 183012.94,
+      "count": 10
+    },
+    {
+      "department": "Community Team - Northampton South and West",
+      "spend": 175939.76,
+      "count": 30
+    },
+    {
+      "department": "Redundancy/PRC - Schools de-delegation",
+      "spend": 175415.24,
+      "count": 10
+    },
+    {
+      "department": "Southfields House [NCC]",
+      "spend": 175108.46,
+      "count": 157
+    },
+    {
+      "department": "Property Access Control System",
+      "spend": 174538.8,
+      "count": 16
+    },
+    {
+      "department": "DFG's Owner Occupiers",
+      "spend": 173827.02,
+      "count": 20
+    },
+    {
+      "department": "Falls Service",
+      "spend": 172718.5,
+      "count": 6
+    },
+    {
+      "department": "Brixworth Library Improvements",
+      "spend": 172135.34,
+      "count": 10
+    },
+    {
+      "department": "Treasury - Interest Payable",
+      "spend": 172032.68,
+      "count": 42
+    },
+    {
+      "department": "Replacement of MFDs (Multi-function devices)",
+      "spend": 171936.32,
+      "count": 22
+    },
+    {
+      "department": "Ridgway House [NCC]",
+      "spend": 169884.84,
+      "count": 21
+    },
+    {
+      "department": "Housing Allocations",
+      "spend": 168048.0,
+      "count": 8
+    },
+    {
+      "department": "Learning & Development Adults",
+      "spend": 166435.26,
+      "count": 216
+    },
+    {
+      "department": "Individual Schools Budgets (DSG)",
+      "spend": 166000.0,
+      "count": 14
+    },
+    {
+      "department": "Magistrates Court & Hazelrigg House Roof Repairs",
+      "spend": 164747.85,
+      "count": 9
+    },
+    {
+      "department": "PS&E Staffing & Resources",
+      "spend": 163646.8,
+      "count": 20
+    },
+    {
+      "department": "Purchase of Former Public Toilets - Cattlemarket Road",
+      "spend": 160000.0,
+      "count": 2
+    },
+    {
+      "department": "Local Land charges administration",
+      "spend": 157416.0,
+      "count": 12
+    },
+    {
+      "department": "Out of hours call service",
+      "spend": 156540.88,
+      "count": 38
+    },
+    {
+      "department": "PS&E Leisure Investment Property",
+      "spend": 152760.18,
+      "count": 22
+    },
+    {
+      "department": "Union Facilities (DSG)",
+      "spend": 151986.26,
+      "count": 52
+    },
+    {
+      "department": "Environmental Services (DDC)",
+      "spend": 150025.6,
+      "count": 8
+    },
+    {
+      "department": "Central Management Services - Teams [NCC]",
+      "spend": 149368.0,
+      "count": 20
+    },
+    {
+      "department": "Housing Solutions - Staffing",
+      "spend": 149275.46,
+      "count": 110
+    },
+    {
+      "department": "OP South Older People RES LT [NCC]",
+      "spend": 146941.08,
+      "count": 50
+    },
+    {
+      "department": "Extension to Thornton House Children's Home",
+      "spend": 144111.46,
+      "count": 2
+    },
+    {
+      "department": "Elections and electoral registration [DDC]",
+      "spend": 143365.54,
+      "count": 23
+    },
+    {
+      "department": "MH Mental Health RES LT [NCC]",
+      "spend": 142647.82,
+      "count": 25
+    },
+    {
+      "department": "Facilities management Daventry",
+      "spend": 140724.61,
+      "count": 65
+    },
+    {
+      "department": "Abington Park - New Public Toilet Facilities",
+      "spend": 140111.44,
+      "count": 62
+    },
+    {
+      "department": "Treasury, Tax & Collection Fund Team",
+      "spend": 139762.04,
+      "count": 36
+    },
+    {
+      "department": "Convertor Academies",
+      "spend": 139668.88,
+      "count": 104
+    },
+    {
+      "department": "Social & Leisure",
+      "spend": 134009.54,
+      "count": 98
+    },
+    {
+      "department": "TR Transitions CCP LT [NCC]",
+      "spend": 133189.18,
+      "count": 41
+    },
+    {
+      "department": "Street cleansing [SNC]",
+      "spend": 132830.46,
+      "count": 59
+    },
+    {
+      "department": "Longlands",
+      "spend": 131697.68,
+      "count": 70
+    },
+    {
+      "department": "Building Control and Street Naming",
+      "spend": 130914.02,
+      "count": 80
+    },
+    {
+      "department": "Hard FM",
+      "spend": 129215.25,
+      "count": 66
+    },
+    {
+      "department": "Rents, Rates, Taxes",
+      "spend": 128425.32,
+      "count": 2
+    },
+    {
+      "department": "Leisure development",
+      "spend": 121568.18,
+      "count": 48
+    },
+    {
+      "department": "School Improvement Monitoring & Brokering grant",
+      "spend": 119822.28,
+      "count": 36
+    },
+    {
+      "department": "Noise Monitoring Equipment Refresh",
+      "spend": 118965.6,
+      "count": 4
+    },
+    {
+      "department": "Community Centre's Refubishment",
+      "spend": 118525.4,
+      "count": 20
+    },
+    {
+      "department": "Local Land charges administration [NBC]",
+      "spend": 118500.0,
+      "count": 4
+    },
+    {
+      "department": "Southfields House",
+      "spend": 115406.74,
+      "count": 104
+    },
+    {
+      "department": "Healthy Adults & Communities",
+      "spend": 113698.0,
+      "count": 4
+    },
+    {
+      "department": "IT Infrastructure Replacement",
+      "spend": 113196.58,
+      "count": 2
+    },
+    {
+      "department": "Adults Commissioning [NCC]",
+      "spend": 112773.24,
+      "count": 8
+    },
+    {
+      "department": "Customer Services",
+      "spend": 112574.72,
+      "count": 52
+    },
+    {
+      "department": "Wellbeing Service",
+      "spend": 112027.3,
+      "count": 62
+    },
+    {
+      "department": "The Grange School",
+      "spend": 111909.3,
+      "count": 2
+    },
+    {
+      "department": "Business Rates Collection (WNC)",
+      "spend": 110238.56,
+      "count": 88
+    },
+    {
+      "department": "Northampton public conviencences contract",
+      "spend": 109885.34,
+      "count": 8
+    },
+    {
+      "department": "Country Parks ANPR Equipment",
+      "spend": 109188.0,
+      "count": 2
+    },
+    {
+      "department": "Kingsthorpe College - improvement project",
+      "spend": 109091.36,
+      "count": 2
+    },
+    {
+      "department": "Customer Contact Team Revs & Bens (WNC)",
+      "spend": 106361.68,
+      "count": 36
+    },
+    {
+      "department": "West Northamptonshire Crematorium & Mortuary",
+      "spend": 105576.32,
+      "count": 12
+    },
+    {
+      "department": "Public Health Commissioning",
+      "spend": 104972.0,
+      "count": 4
+    },
+    {
+      "department": "Client Funds",
+      "spend": 104752.34,
+      "count": 12
+    },
+    {
+      "department": "Schools Strategic Maintenance \u0096 PFI Blinds",
+      "spend": 102351.92,
+      "count": 8
+    },
+    {
+      "department": "Construction",
+      "spend": 100491.84,
+      "count": 25
+    },
+    {
+      "department": "Moulton School & Science College - Creation of sixth form classroom and well-being space",
+      "spend": 99407.9,
+      "count": 4
+    },
+    {
+      "department": "Disabled Facilities Grants [DDC]",
+      "spend": 97106.0,
+      "count": 14
+    },
+    {
+      "department": "Emergency Planning [NCC]",
+      "spend": 93457.65,
+      "count": 18
+    },
+    {
+      "department": "Community Libraries Programme",
+      "spend": 92138.0,
+      "count": 2
+    },
+    {
+      "department": "PS&E General Investment Properties",
+      "spend": 91276.12,
+      "count": 33
+    },
+    {
+      "department": "Live [NCC]",
+      "spend": 90558.92,
+      "count": 76
+    },
+    {
+      "department": "Accommodation for NPH",
+      "spend": 89419.2,
+      "count": 17
+    },
+    {
+      "department": "PH - Health Protection",
+      "spend": 89204.74,
+      "count": 36
+    },
+    {
+      "department": "Facilities management Towceste",
+      "spend": 88287.51,
+      "count": 75
+    },
+    {
+      "department": "Obelisk House",
+      "spend": 87880.74,
+      "count": 76
+    },
+    {
+      "department": "HRA Housing IT Project",
+      "spend": 87547.44,
+      "count": 4
+    },
+    {
+      "department": "LTP Integrated Transport Block",
+      "spend": 87295.66,
+      "count": 8
+    },
+    {
+      "department": "Street / Flood Lighting (Churchyards)",
+      "spend": 87052.5,
+      "count": 32
+    },
+    {
+      "department": "Adult\u2019s Mental Health [NCC]",
+      "spend": 86018.8,
+      "count": 6
+    },
+    {
+      "department": "School Improvement Group (DSG) [NCC]",
+      "spend": 85255.08,
+      "count": 22
+    },
+    {
+      "department": "Highways & Transport Management WNC",
+      "spend": 85065.36,
+      "count": 36
+    },
+    {
+      "department": "Children and Education Central",
+      "spend": 84480.0,
+      "count": 14
+    },
+    {
+      "department": "West Haddon Rural Exception Scheme",
+      "spend": 83900.0,
+      "count": 2
+    },
+    {
+      "department": "A43 Moulton Phase 2",
+      "spend": 83678.56,
+      "count": 24
+    },
+    {
+      "department": "Schools Minor Works 2022-23",
+      "spend": 82797.38,
+      "count": 6
+    },
+    {
+      "department": "Geospatial Data",
+      "spend": 82482.84,
+      "count": 6
+    },
+    {
+      "department": "New Commercial Unit Plot 2B Heartlands Daventry",
+      "spend": 79919.4,
+      "count": 8
+    },
+    {
+      "department": "DTI Minor Works",
+      "spend": 76566.6,
+      "count": 10
+    },
+    {
+      "department": "Community services",
+      "spend": 76331.64,
+      "count": 50
+    },
+    {
+      "department": "Infection Control Grant",
+      "spend": 74781.02,
+      "count": 10
+    },
+    {
+      "department": "Northamptonshire Libraries Self Service Terminals",
+      "spend": 73920.0,
+      "count": 4
+    },
+    {
+      "department": "Regulatory Works Relating to Fire Risk",
+      "spend": 73548.0,
+      "count": 2
+    },
+    {
+      "department": "Innovation Hub Seed Fund",
+      "spend": 72675.58,
+      "count": 4
+    },
+    {
+      "department": "School Improvement Group (DSG)",
+      "spend": 72671.54,
+      "count": 30
+    },
+    {
+      "department": "Northampton Gateway",
+      "spend": 72311.48,
+      "count": 4
+    },
+    {
+      "department": "Community Use of Schools",
+      "spend": 71616.0,
+      "count": 49
+    },
+    {
+      "department": "Procurement [NCC]",
+      "spend": 70605.6,
+      "count": 10
+    },
+    {
+      "department": "Financial Assessment",
+      "spend": 70588.46,
+      "count": 4
+    },
+    {
+      "department": "Health Protection",
+      "spend": 70484.0,
+      "count": 36
+    },
+    {
+      "department": "Complaints",
+      "spend": 70259.5,
+      "count": 42
+    },
+    {
+      "department": "Fernie Fields Changing Places Grant",
+      "spend": 67200.0,
+      "count": 5
+    },
+    {
+      "department": "Customer services",
+      "spend": 63787.2,
+      "count": 8
+    },
+    {
+      "department": "Unified Digital Network",
+      "spend": 63695.76,
+      "count": 6
+    },
+    {
+      "department": "Car Parks Management (WNC)",
+      "spend": 63607.98,
+      "count": 11
+    },
+    {
+      "department": "Toilet Turnstile Replacement Northgate Bus Station",
+      "spend": 63432.0,
+      "count": 4
+    },
+    {
+      "department": "LD Learning Disability RES ST [NCC]",
+      "spend": 61857.68,
+      "count": 8
+    },
+    {
+      "department": "Care Home Review and CHC West [NCC]",
+      "spend": 61541.48,
+      "count": 8
+    },
+    {
+      "department": "School Standards & Effectiveness",
+      "spend": 61110.48,
+      "count": 10
+    },
+    {
+      "department": "Technical - Development",
+      "spend": 60449.4,
+      "count": 58
+    },
+    {
+      "department": "Early Education and Childcare DFE Inclusion Funding [NCC]",
+      "spend": 58251.0,
+      "count": 50
+    },
+    {
+      "department": "Safeguarding Adults Board [NCC]",
+      "spend": 57441.23,
+      "count": 45
+    },
+    {
+      "department": "Hospital Discharge Hub",
+      "spend": 57371.88,
+      "count": 7
+    },
+    {
+      "department": "Family Hubs",
+      "spend": 57081.6,
+      "count": 18
+    },
+    {
+      "department": "LTP Integrated Transport Block 2022-23",
+      "spend": 56855.56,
+      "count": 10
+    },
+    {
+      "department": "Boniface House - Children\u0092s Accommodation",
+      "spend": 55540.24,
+      "count": 18
+    },
+    {
+      "department": "Complex",
+      "spend": 53800.34,
+      "count": 40
+    },
+    {
+      "department": "Thackley Green [NCC]",
+      "spend": 53342.9,
+      "count": 10
+    },
+    {
+      "department": "Street cleansing South area",
+      "spend": 53214.38,
+      "count": 26
+    },
+    {
+      "department": "Inclusion - Daventry/South Northants &NN4",
+      "spend": 52320.34,
+      "count": 7
+    },
+    {
+      "department": "PD Physical Disability RES LT [NCC]",
+      "spend": 51472.48,
+      "count": 6
+    },
+    {
+      "department": "Brampton Valley Way Tunnels",
+      "spend": 51384.0,
+      "count": 6
+    },
+    {
+      "department": "Property Management [SNC]",
+      "spend": 50000.0,
+      "count": 1
+    },
+    {
+      "department": "Outdoor Learning",
+      "spend": 49790.12,
+      "count": 52
+    },
+    {
+      "department": "Local Land charges administration [SNC]",
+      "spend": 48960.0,
+      "count": 2
+    },
+    {
+      "department": "Shared Services Programme Team",
+      "spend": 48555.7,
+      "count": 13
+    },
+    {
+      "department": "Major Projects WNC",
+      "spend": 48175.72,
+      "count": 4
+    },
+    {
+      "department": "Extended Producer Responsibility (EPR)",
+      "spend": 48029.8,
+      "count": 6
+    },
+    {
+      "department": "Insurance - Claims",
+      "spend": 47285.28,
+      "count": 22
+    },
+    {
+      "department": "Complex [NCC]",
+      "spend": 46830.24,
+      "count": 47
+    },
+    {
+      "department": "Health Promotion [NCC]",
+      "spend": 45368.54,
+      "count": 10
+    },
+    {
+      "department": "Schools Strategic Maintenance \u2013 PFI Blinds",
+      "spend": 45254.0,
+      "count": 4
+    },
+    {
+      "department": "Joint Planning Unit - JPU [SNC]",
+      "spend": 44140.8,
+      "count": 4
+    },
+    {
+      "department": "Leadership & Governance",
+      "spend": 43808.0,
+      "count": 16
+    },
+    {
+      "department": "Housing Options",
+      "spend": 42791.3,
+      "count": 18
+    },
+    {
+      "department": "Fleet Management",
+      "spend": 42666.4,
+      "count": 6
+    },
+    {
+      "department": "Sustainability Project",
+      "spend": 41832.96,
+      "count": 20
+    },
+    {
+      "department": "Countywide Traveller Unit Partnership [NCC]",
+      "spend": 41345.0,
+      "count": 2
+    },
+    {
+      "department": "Executive Director (Place and Economy)",
+      "spend": 40815.42,
+      "count": 12
+    },
+    {
+      "department": "Troubled Families Programme Funding",
+      "spend": 40811.26,
+      "count": 18
+    },
+    {
+      "department": "East Hunsbury Primary School - S106 improvement project",
+      "spend": 38932.48,
+      "count": 4
+    },
+    {
+      "department": "Live",
+      "spend": 38110.74,
+      "count": 34
+    },
+    {
+      "department": "Moulton GP Surgery",
+      "spend": 35586.4,
+      "count": 6
+    },
+    {
+      "department": "Property Minor Works 2022-23",
+      "spend": 34592.88,
+      "count": 3
+    },
+    {
+      "department": "Car parks management Towcester",
+      "spend": 34169.9,
+      "count": 16
+    },
+    {
+      "department": "Business Transformation Service [NCC]",
+      "spend": 33329.1,
+      "count": 4
+    },
+    {
+      "department": "Flood defences and land drainage",
+      "spend": 33184.0,
+      "count": 4
+    },
+    {
+      "department": "LSE - Early Education and Childcare Expenditure [NCC]",
+      "spend": 33088.0,
+      "count": 42
+    },
+    {
+      "department": "Business Development",
+      "spend": 32559.52,
+      "count": 40
+    },
+    {
+      "department": "Safeguarding in Education",
+      "spend": 31908.6,
+      "count": 18
+    },
+    {
+      "department": "Executive Director (Finance)",
+      "spend": 31128.0,
+      "count": 6
+    },
+    {
+      "department": "Additional Highways Maintenance",
+      "spend": 30349.44,
+      "count": 4
+    },
+    {
+      "department": "Daventry Parks & Open Spaces",
+      "spend": 28058.88,
+      "count": 27
+    },
+    {
+      "department": "Delapre Annexe Refurbishment",
+      "spend": 27908.4,
+      "count": 8
+    },
+    {
+      "department": "Safeguarding Adults Board",
+      "spend": 27408.0,
+      "count": 12
+    },
+    {
+      "department": "Complaints, FOI, GDPR and information governance [SNC]",
+      "spend": 27161.23,
+      "count": 15
+    },
+    {
+      "department": "Early Years Provision Staffing",
+      "spend": 27050.74,
+      "count": 16
+    },
+    {
+      "department": "Director of Governance and Monitoring Officer",
+      "spend": 25877.92,
+      "count": 16
+    },
+    {
+      "department": "Non Functioning Estate [NCC]",
+      "spend": 24375.96,
+      "count": 16
+    },
+    {
+      "department": "Housing needs and allocations",
+      "spend": 23988.0,
+      "count": 2
+    },
+    {
+      "department": "PBSS",
+      "spend": 23613.38,
+      "count": 34
+    },
+    {
+      "department": "Grounds maintenance contract",
+      "spend": 23258.78,
+      "count": 6
+    },
+    {
+      "department": "Parks & Open Spaces [DDC]",
+      "spend": 23232.0,
+      "count": 6
+    },
+    {
+      "department": "Community Team - Northampton North and East",
+      "spend": 23018.56,
+      "count": 19
+    },
+    {
+      "department": "Specialist Support Service",
+      "spend": 22736.53,
+      "count": 19
+    },
+    {
+      "department": "Community Occupational Therapy [NCC]",
+      "spend": 22415.84,
+      "count": 18
+    },
+    {
+      "department": "Corporate Legal Expenses",
+      "spend": 22054.48,
+      "count": 5
+    },
+    {
+      "department": "Purple Oaks Academy Land Acquisition",
+      "spend": 22000.0,
+      "count": 2
+    },
+    {
+      "department": "Convertor Academies [NCC]",
+      "spend": 21532.0,
+      "count": 16
+    },
+    {
+      "department": "Strategy & Architecture",
+      "spend": 21338.0,
+      "count": 2
+    },
+    {
+      "department": "Direct Payments Team",
+      "spend": 21302.01,
+      "count": 26
+    },
+    {
+      "department": "Moderation",
+      "spend": 21300.0,
+      "count": 26
+    },
+    {
+      "department": "Asylum Support",
+      "spend": 21072.0,
+      "count": 10
+    },
+    {
+      "department": "Public Realm",
+      "spend": 19533.6,
+      "count": 10
+    },
+    {
+      "department": "Russell House Training Flats - Children\u0092s Accommodation",
+      "spend": 19154.4,
+      "count": 12
+    },
+    {
+      "department": "Watermeadows Footpaths",
+      "spend": 18981.6,
+      "count": 4
+    },
+    {
+      "department": "Public Health Grant [NCC]",
+      "spend": 18747.35,
+      "count": 3
+    },
+    {
+      "department": "School attendance support service",
+      "spend": 18547.32,
+      "count": 13
+    },
+    {
+      "department": "USVF Road Safety Review - RAF Croughton",
+      "spend": 17599.48,
+      "count": 2
+    },
+    {
+      "department": "Flood defences and land drainage [SNC]",
+      "spend": 17497.0,
+      "count": 4
+    },
+    {
+      "department": "Community Development [NBC]",
+      "spend": 17303.8,
+      "count": 2
+    },
+    {
+      "department": "Disabled Facilities Grants",
+      "spend": 16782.66,
+      "count": 12
+    },
+    {
+      "department": "Pension Fund Costs",
+      "spend": 16678.73,
+      "count": 11
+    },
+    {
+      "department": "Adults Prevention and Wellbeing",
+      "spend": 15918.0,
+      "count": 2
+    },
+    {
+      "department": "Non Functioning Estate",
+      "spend": 15576.0,
+      "count": 4
+    },
+    {
+      "department": "Customer services [DDC]",
+      "spend": 14876.17,
+      "count": 5
+    },
+    {
+      "department": "Ringfenced / Technical",
+      "spend": 14400.0,
+      "count": 2
+    },
+    {
+      "department": "Boniface House [NCC]",
+      "spend": 14119.2,
+      "count": 2
+    },
+    {
+      "department": "AD Regulatory Services",
+      "spend": 14078.4,
+      "count": 6
+    },
+    {
+      "department": "Disabled Facilities Grants [SNC]",
+      "spend": 13740.0,
+      "count": 3
+    },
+    {
+      "department": "SEND IASS",
+      "spend": 13643.6,
+      "count": 12
+    },
+    {
+      "department": "Community Occupational Therapy",
+      "spend": 13291.24,
+      "count": 22
+    },
+    {
+      "department": "The Abbey Centre",
+      "spend": 13260.0,
+      "count": 2
+    },
+    {
+      "department": "Street naming and numbering [DDC]",
+      "spend": 13231.24,
+      "count": 3
+    },
+    {
+      "department": "Connecting the Active Quarter - Access for All",
+      "spend": 13116.0,
+      "count": 4
+    },
+    {
+      "department": "Care & Repair  [DDC]",
+      "spend": 12932.4,
+      "count": 2
+    },
+    {
+      "department": "OP South Older People CCP ST [NCC]",
+      "spend": 12803.31,
+      "count": 5
+    },
+    {
+      "department": "PS&E Retail Investment Properties",
+      "spend": 12800.78,
+      "count": 11
+    },
+    {
+      "department": "Early Years LA Delivery support funding",
+      "spend": 12600.0,
+      "count": 4
+    },
+    {
+      "department": "DOLS Service",
+      "spend": 11415.82,
+      "count": 12
+    },
+    {
+      "department": "DfT Highway Maintenance Needs Block",
+      "spend": 11400.0,
+      "count": 2
+    },
+    {
+      "department": "Emergency Planning",
+      "spend": 11073.16,
+      "count": 6
+    },
+    {
+      "department": "Disabled Facilities Grants (WNC)",
+      "spend": 11000.0,
+      "count": 2
+    },
+    {
+      "department": "Northamptonshire Records Office Storage Expansion",
+      "spend": 10806.0,
+      "count": 4
+    },
+    {
+      "department": "Community Team - Northampton Central",
+      "spend": 10572.0,
+      "count": 2
+    },
+    {
+      "department": "HRA Development Team and Feasibility",
+      "spend": 10197.6,
+      "count": 4
+    },
+    {
+      "department": "Abington Active Travel \u2013 Active Travel Tranche 2",
+      "spend": 10044.82,
+      "count": 6
+    },
+    {
+      "department": "Revenues and Benefits Capital Investments",
+      "spend": 9902.4,
+      "count": 2
+    },
+    {
+      "department": "LDS Residential Care Independent Sector Contracts",
+      "spend": 9737.0,
+      "count": 12
+    },
+    {
+      "department": "Customer Contact Team",
+      "spend": 9342.5,
+      "count": 6
+    },
+    {
+      "department": "DSG Schools supplementary grant",
+      "spend": 9268.0,
+      "count": 2
+    },
+    {
+      "department": "AD Planning",
+      "spend": 9232.8,
+      "count": 4
+    },
+    {
+      "department": "Very Sheltered Housing Care Provision [NCC]",
+      "spend": 8639.28,
+      "count": 4
+    },
+    {
+      "department": "LD West [NCC]",
+      "spend": 7969.88,
+      "count": 3
+    },
+    {
+      "department": "Environmental Services support",
+      "spend": 7908.26,
+      "count": 9
+    },
+    {
+      "department": "Technical Subsidy & Performance( WNC)",
+      "spend": 7650.0,
+      "count": 4
+    },
+    {
+      "department": "PFI Lifecycle Works",
+      "spend": 7267.64,
+      "count": 4
+    },
+    {
+      "department": "Harefield Road - Children\u0092s Accommodation",
+      "spend": 6948.0,
+      "count": 4
+    },
+    {
+      "department": "Technical - Final Accounts",
+      "spend": 6555.0,
+      "count": 2
+    },
+    {
+      "department": "Daventry Leisure Centre",
+      "spend": 6552.0,
+      "count": 1
+    },
+    {
+      "department": "Evelyn Wright - Children\u0092s Accommodation",
+      "spend": 6456.0,
+      "count": 4
+    },
+    {
+      "department": "Eleanor Lodge - In House",
+      "spend": 6315.14,
+      "count": 6
+    },
+    {
+      "department": "HG0224 - HCA Upton Remedial works",
+      "spend": 6035.38,
+      "count": 2
+    },
+    {
+      "department": "Closed Churchyard Special Expenses",
+      "spend": 5892.0,
+      "count": 4
+    },
+    {
+      "department": "DTI Contracts",
+      "spend": 5760.0,
+      "count": 1
+    },
+    {
+      "department": "Director of Legal & Democratic & MO",
+      "spend": 5616.0,
+      "count": 2
+    },
+    {
+      "department": "Development Infrastructure & Funding [NCC]",
+      "spend": 5600.0,
+      "count": 2
+    },
+    {
+      "department": "PS&E Industrial Investment Properties",
+      "spend": 5380.0,
+      "count": 4
+    },
+    {
+      "department": "Children's Universal Services",
+      "spend": 5311.94,
+      "count": 4
+    },
+    {
+      "department": "Spinneyfields [NCC]",
+      "spend": 5285.36,
+      "count": 5
+    },
+    {
+      "department": "Restoration of Historic Monuments & Statues",
+      "spend": 4831.66,
+      "count": 2
+    },
+    {
+      "department": "Community Team - Rural North and West",
+      "spend": 4654.0,
+      "count": 2
+    },
+    {
+      "department": "DOLS Service [NCC]",
+      "spend": 4646.0,
+      "count": 6
+    },
+    {
+      "department": "OPE Partnership Programme",
+      "spend": 4200.0,
+      "count": 2
+    },
+    {
+      "department": "Licensing \u2013 all kinds [SNC]",
+      "spend": 4049.64,
+      "count": 4
+    },
+    {
+      "department": "Healthcare Public Health",
+      "spend": 3968.4,
+      "count": 2
+    },
+    {
+      "department": "(closed) Planning Policy [SNC]",
+      "spend": 3856.8,
+      "count": 4
+    },
+    {
+      "department": "Commercial refuse and recycling South area",
+      "spend": 3453.6,
+      "count": 4
+    },
+    {
+      "department": "Waste Non-Operational Staffing",
+      "spend": 3361.12,
+      "count": 2
+    },
+    {
+      "department": "Property Minor Works 2019-20",
+      "spend": 3245.96,
+      "count": 2
+    },
+    {
+      "department": "Early Years Provision Staffing [NCC]",
+      "spend": 3200.0,
+      "count": 2
+    },
+    {
+      "department": "[CLOSED] Energy and Carbon Management",
+      "spend": 3067.82,
+      "count": 2
+    },
+    {
+      "department": "Schools Forum (DSG)",
+      "spend": 3000.0,
+      "count": 2
+    },
+    {
+      "department": "Pleydell Road - Children\u0092s Accommodation",
+      "spend": 2935.2,
+      "count": 2
+    },
+    {
+      "department": "Elections and electoral registration [NBC]",
+      "spend": 2854.82,
+      "count": 4
+    },
+    {
+      "department": "Schools Forum (DSG) [NCC]",
+      "spend": 2800.0,
+      "count": 2
+    },
+    {
+      "department": "National Productivity Investment Fund(NPIF) - Cliftonville",
+      "spend": 2737.36,
+      "count": 1
+    },
+    {
+      "department": "Landlord Incentive Scheme",
+      "spend": 2550.0,
+      "count": 1
+    },
+    {
+      "department": "Licensing \u2013 all kinds [DDC]",
+      "spend": 2400.0,
+      "count": 2
+    },
+    {
+      "department": "HRA - Sheltered Housing Team [NBC]",
+      "spend": 2373.18,
+      "count": 4
+    },
+    {
+      "department": "OP North Older People RES ST [NCC]",
+      "spend": 2333.88,
+      "count": 2
+    },
+    {
+      "department": "Applications Support",
+      "spend": 2200.0,
+      "count": 2
+    },
+    {
+      "department": "Infrastructure",
+      "spend": 2118.04,
+      "count": 2
+    },
+    {
+      "department": "OP South Older People RES ST [NCC]",
+      "spend": 2019.88,
+      "count": 2
+    },
+    {
+      "department": "Abington Active Travel \u0096 UKSPF",
+      "spend": 1926.34,
+      "count": 2
+    },
+    {
+      "department": "Customer Engagement [NCC]",
+      "spend": 1500.0,
+      "count": 2
+    },
+    {
+      "department": "Customer Engagement (NCC)",
+      "spend": 1200.0,
+      "count": 2
+    },
+    {
+      "department": "SAN (Storage Area Network) Replacement",
+      "spend": 1119.6,
+      "count": 2
+    },
+    {
+      "department": "Younger Adults Transitions Team [NCC]",
+      "spend": 1046.14,
+      "count": 2
+    },
+    {
+      "department": "Inclusion and Intervention Support Team",
+      "spend": 1008.0,
+      "count": 2
+    },
+    {
+      "department": "Licensing \u0096 all kinds [DDC]",
+      "spend": 678.36,
+      "count": 1
+    },
+    {
+      "department": "Licensing \u0096 all kinds [SNC]",
+      "spend": 559.16,
+      "count": 1
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2023/24": 439480739.37,
+      "2024/25": 2232610337.28,
+      "2025/26": 2042654029.04
+    },
+    "transactions_by_year": {
+      "2023/24": 35951,
+      "2024/25": 179904,
+      "2025/26": 154858
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 370713
+  }
+}

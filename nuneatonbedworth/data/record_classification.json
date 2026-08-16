@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "council_id": "nuneaton_and_bedworth",
+  "updated": "2026-07-06",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Nuneaton and Bedworth Borough Council is a Warwickshire district (stock-holding HRA landlord). District feeds are procurement-dominant: no ASC/children's Care Act direct payments (county function), so no REDACTED bucket expected. Default: procurement_paid. REDACTED rule retained defensively — suffix-tolerant regex costs nothing if the bucket is empty.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD|PAYMENT TO AN INDIVIDUAL|PAYMENT TO INDIVIDUAL)$"
+      },
+      "reason": "Defensive: districts occasionally publish redacted rows (housing benefit / DHP recipients). Anchored regex avoids false positives on real suppliers."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^WCC PENSION FUND.*$"
+      },
+      "reason": "Employer LGPS contributions to the Warwickshire County Council Pension Fund (NBBC's administering authority) — 81 rows / £1.89M labelled 'WCC PENSION FUND - CREDITORS'. Same treatment as Warwickshire CC's own WCC Pension Fund rows: payroll-related transfer, not procurement; keeps it out of HHI / supplier leagues."
+    },
+    {
+      "class": "procurement_paid",
+      "match": {},
+      "reason": "Default for Nuneaton and Bedworth. Single payments-over-£500 feed, no PO/invoice split. NOTE: top supplier NABCEL (Nuneaton & Bedworth Community Enterprises Ltd, £15.3M) is a wholly-owned council trading company — kept procurement_paid pending Companies House PSC verification per the leisure-trust-vs-ALMO rule; revisit if verified wholly-council-commissioned."
+    }
+  ]
+}

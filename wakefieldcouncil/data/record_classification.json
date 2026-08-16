@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "council_id": "wakefield",
+  "updated": "2026-05-10",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Wakefield Metropolitan District Council is a metropolitan borough (treated as unitary for AI DOGE purposes). Quarterly Supplier Spend feed published via Data Mill North. Modern (2023+) layout uses Date + Amount; legacy (pre-2023) layout uses Payment Date + Net Amount. Supplier 'REDACTED' rows are direct payments to individuals (Care Act / fostering / SGO / ASC) and must be excluded from supplier-league + duplicate / split forensic analyses. Top-supplier-by-£ is dominated by WAKEFIELD WASTE PFI LTD (legitimate single-supplier PFI contract — keep as procurement_paid, do not bucket). Cloned from durham template; revisit after top-30 audit for any settlement-noise / accrual / pension-fund buckets.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions — direct payments to individuals (foster carers, SGO recipients, ASC service-user direct payments, CYP direct payments). Wakefield's modern feed publishes 'REDACTED' as the supplier name for affected payments."
+    }
+  ],
+  "supplier_aliases": []
+}

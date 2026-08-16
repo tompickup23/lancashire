@@ -1,0 +1,428 @@
+{
+  "summary": {
+    "total_spend": 262335693.41,
+    "transaction_count": 19770,
+    "unique_suppliers": 1191,
+    "avg_transaction": 13269.38,
+    "median_transaction": 1953.0,
+    "date_range": {
+      "min": "2023-04-03",
+      "max": "2026-03-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "BAM CONSTRUCTION LTD",
+        "total": 74556843.92,
+        "transactions": 83,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NABCEL",
+        "total": 15713930.94,
+        "transactions": 2279,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COVENTRY CITY COUNCIL",
+        "total": 8367236.11,
+        "transactions": 166,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LOVELL PARTNERSHIPS LTD",
+        "total": 7532338.49,
+        "transactions": 64,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "IMPART LINKS LTD",
+        "total": 7132847.96,
+        "transactions": 172,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "JEAKINS WEIR",
+        "total": 5460201.91,
+        "transactions": 41,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "GLENDALE MANAGED SERVICES LTD",
+        "total": 5186877.27,
+        "transactions": 207,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ASSET PLUS ENERGY PERFORMANCE LTD",
+        "total": 5059495.39,
+        "transactions": 12,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INTEGRAL ROOFING & MAINT SERV",
+        "total": 4825388.19,
+        "transactions": 115,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TRINITY FIRE & SECURITY SYSTEM",
+        "total": 4438967.93,
+        "transactions": 287,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WESTDALE NORTH LTD",
+        "total": 3895636.13,
+        "transactions": 22,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SLM EVERYONE ACTIVE",
+        "total": 3877823.43,
+        "transactions": 59,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COMENSURA LTD",
+        "total": 3611280.66,
+        "transactions": 159,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SHERBOURNE RECYCLING LTD",
+        "total": 3329611.57,
+        "transactions": 41,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HARDYMAN AND CO LTD",
+        "total": 3299675.73,
+        "transactions": 364,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DODD GROUP MIDLANDS LTD",
+        "total": 3117835.24,
+        "transactions": 271,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "J HARPER & SONS LTD",
+        "total": 3101073.22,
+        "transactions": 20,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ARTHUR J GALLAGHER INS",
+        "total": 2846394.16,
+        "transactions": 45,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FORGREEN LTD",
+        "total": 2522600.0,
+        "transactions": 2,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TOTALENERGIES",
+        "total": 2279524.63,
+        "transactions": 24,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.6486,
+    "total_unique_suppliers": 1191,
+    "single_transaction_suppliers": 388
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 867,
+      "potential_value": 6744099.36,
+      "items": [
+        {
+          "supplier": "FORGREEN LTD",
+          "amount": 1261300.0,
+          "date": "2023-04-03",
+          "occurrences": 2,
+          "potential_overpayment": 1261300.0
+        },
+        {
+          "supplier": "LOOKERS GROUP PLC",
+          "amount": 37517.9,
+          "date": "2023-10-03",
+          "occurrences": 18,
+          "potential_overpayment": 637804.3
+        },
+        {
+          "supplier": "COVENTRY CITY COUNCIL",
+          "amount": 193845.67,
+          "date": "2024-08-27",
+          "occurrences": 2,
+          "potential_overpayment": 193845.67
+        },
+        {
+          "supplier": "COVENTRY CITY COUNCIL",
+          "amount": 193845.67,
+          "date": "2025-05-01",
+          "occurrences": 2,
+          "potential_overpayment": 193845.67
+        },
+        {
+          "supplier": "GLENDALE MANAGED SERVICES LTD",
+          "amount": 147892.07,
+          "date": "2024-12-12",
+          "occurrences": 2,
+          "potential_overpayment": 147892.07
+        },
+        {
+          "supplier": "LOOKERS GROUP PLC",
+          "amount": 36133.76,
+          "date": "2023-09-12",
+          "occurrences": 5,
+          "potential_overpayment": 144535.04
+        },
+        {
+          "supplier": "LOOKERS GROUP PLC",
+          "amount": 37517.9,
+          "date": "2023-11-14",
+          "occurrences": 4,
+          "potential_overpayment": 112553.7
+        },
+        {
+          "supplier": "LOOKERS GROUP PLC",
+          "amount": 36196.93,
+          "date": "2023-12-20",
+          "occurrences": 4,
+          "potential_overpayment": 108590.79
+        },
+        {
+          "supplier": "LOOKERS GROUP PLC",
+          "amount": 36163.76,
+          "date": "2023-09-19",
+          "occurrences": 4,
+          "potential_overpayment": 108491.28
+        },
+        {
+          "supplier": "ESPO",
+          "amount": 80225.38,
+          "date": "2023-06-19",
+          "occurrences": 2,
+          "potential_overpayment": 80225.38
+        },
+        {
+          "supplier": "LDJ SOLICITORS",
+          "amount": 77963.03,
+          "date": "2023-06-23",
+          "occurrences": 2,
+          "potential_overpayment": 77963.03
+        },
+        {
+          "supplier": "IMPART LINKS LTD",
+          "amount": 73750.91,
+          "date": "2025-04-01",
+          "occurrences": 2,
+          "potential_overpayment": 73750.91
+        },
+        {
+          "supplier": "COVENTRY CITY COUNCIL",
+          "amount": 67701.6,
+          "date": "2024-12-24",
+          "occurrences": 2,
+          "potential_overpayment": 67701.6
+        },
+        {
+          "supplier": "COVENTRY CITY COUNCIL",
+          "amount": 30845.1,
+          "date": "2025-12-23",
+          "occurrences": 3,
+          "potential_overpayment": 61690.2
+        },
+        {
+          "supplier": "COVENTRY CITY COUNCIL",
+          "amount": 53889.0,
+          "date": "2024-02-01",
+          "occurrences": 2,
+          "potential_overpayment": 53889.0
+        },
+        {
+          "supplier": "WCC PENSION FUND - CREDITORS",
+          "amount": 26166.67,
+          "date": "2023-06-29",
+          "occurrences": 3,
+          "potential_overpayment": 52333.34
+        },
+        {
+          "supplier": "LOOKERS GROUP PLC",
+          "amount": 24311.58,
+          "date": "2023-06-13",
+          "occurrences": 3,
+          "potential_overpayment": 48623.16
+        },
+        {
+          "supplier": "AZETS HOLDINGS LTD",
+          "amount": 45998.4,
+          "date": "2025-03-27",
+          "occurrences": 2,
+          "potential_overpayment": 45998.4
+        },
+        {
+          "supplier": "LOVELL PARTNERSHIPS LTD",
+          "amount": 43966.21,
+          "date": "2025-07-22",
+          "occurrences": 2,
+          "potential_overpayment": 43966.21
+        },
+        {
+          "supplier": "HMRC",
+          "amount": 41256.0,
+          "date": "2023-04-17",
+          "occurrences": 2,
+          "potential_overpayment": 41256.0
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 352,
+      "total_value": 6037000.0
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Housing & Community Safety",
+      "spend": 85052815.13,
+      "count": 10339
+    },
+    {
+      "department": "Public Services",
+      "spend": 56262154.36,
+      "count": 3162
+    },
+    {
+      "department": "Economy & Transformation",
+      "spend": 30805458.36,
+      "count": 1285
+    },
+    {
+      "department": "Place & Economy",
+      "spend": 28018593.1,
+      "count": 1346
+    },
+    {
+      "department": "Corporate Services",
+      "spend": 16900680.54,
+      "count": 798
+    },
+    {
+      "department": "Corporate Resources",
+      "spend": 14096890.06,
+      "count": 772
+    },
+    {
+      "department": "Recreation & Culture",
+      "spend": 8116386.98,
+      "count": 157
+    },
+    {
+      "department": "Social Housing & Safety",
+      "spend": 6663737.31,
+      "count": 651
+    },
+    {
+      "department": "Economy & Regeneration",
+      "spend": 6353953.57,
+      "count": 155
+    },
+    {
+      "department": "Finance & Governance",
+      "spend": 2869073.97,
+      "count": 323
+    },
+    {
+      "department": "Chief Executive & Elections",
+      "spend": 2111560.27,
+      "count": 214
+    },
+    {
+      "department": "Strategic Housing",
+      "spend": 1953373.23,
+      "count": 298
+    },
+    {
+      "department": "Environment & Enforcement",
+      "spend": 1543779.13,
+      "count": 111
+    },
+    {
+      "department": "Finance",
+      "spend": 911738.38,
+      "count": 62
+    },
+    {
+      "department": "Central Operations",
+      "spend": 450616.61,
+      "count": 74
+    },
+    {
+      "department": "Democracy & Governance",
+      "spend": 130931.11,
+      "count": 6
+    },
+    {
+      "department": "Elections",
+      "spend": 75996.69,
+      "count": 10
+    },
+    {
+      "department": "Planning",
+      "spend": 17954.61,
+      "count": 7
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2023/24": 77253487.9,
+      "2024/25": 85133611.52,
+      "2025/26": 99948593.99
+    },
+    "transactions_by_year": {
+      "2023/24": 5932,
+      "2024/25": 6921,
+      "2025/26": 6917
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 19770
+  }
+}

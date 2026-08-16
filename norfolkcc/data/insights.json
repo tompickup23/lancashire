@@ -1,0 +1,433 @@
+{
+  "summary": {
+    "total_spend": 4132531690.39,
+    "transaction_count": 692426,
+    "unique_suppliers": 9877,
+    "avg_transaction": 5968.19,
+    "median_transaction": 2322.37,
+    "date_range": {
+      "min": "2023-04-01",
+      "max": "2026-03-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "TARMAC TRADING LTD",
+        "total": 145673066.32,
+        "transactions": 7852,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORSE CARE LTD",
+        "total": 130252657.14,
+        "transactions": 5967,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORSE EASTERN LTD",
+        "total": 118398563.1,
+        "transactions": 4997,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PUBLIC WORKS LOAN BOARD",
+        "total": 88272679.16,
+        "transactions": 16,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CAMBRIDGESHIRE COMMUNITY SERVICES (NHS TRUST)",
+        "total": 58172408.04,
+        "transactions": 144,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HEALTHCARE HOMES GROUP LTD",
+        "total": 56609195.4,
+        "transactions": 24386,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FIRST EASTERN COUNTIES BUSES LTD",
+        "total": 52927327.26,
+        "transactions": 1176,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "VEOLIA ES (UK) LTD",
+        "total": 44961853.42,
+        "transactions": 29,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "OCTAVIUS INFRASTRUCTURE LTD",
+        "total": 43726179.8,
+        "transactions": 45,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INDEPENDENCE MATTERS CIC",
+        "total": 43472264.59,
+        "transactions": 3657,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WEST YORKSHIRE PENSION FUND",
+        "total": 40929098.7,
+        "transactions": 38,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PUBLIC WORKS LOAN BOARD D/DEBIT",
+        "total": 39181910.0,
+        "transactions": 6,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MEDEQUIP ASSISTIVE TECHNOLOGY LTD",
+        "total": 35072872.24,
+        "transactions": 91,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "AURORA CARE AND EDUCATION OPCO LTD",
+        "total": 34846636.62,
+        "transactions": 2598,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORSE ENVIRONMENTAL WASTE SERVICES LTD",
+        "total": 34813123.38,
+        "transactions": 675,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "AMEY LIGHTING (NORFOLK) LTD",
+        "total": 31341980.48,
+        "transactions": 104,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WSP UK LTD",
+        "total": 31321864.16,
+        "transactions": 2773,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CHANGE GROW LIVE SERVICES LTD",
+        "total": 25674870.75,
+        "transactions": 57,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "R G CARTER LTD",
+        "total": 25118595.6,
+        "transactions": 49,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BAM FARRANS JV",
+        "total": 24247777.0,
+        "transactions": 25,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.2749,
+    "total_unique_suppliers": 9877,
+    "single_transaction_suppliers": 3103
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 73729,
+      "potential_value": 837652235.82,
+      "items": [
+        {
+          "supplier": "NORSE EASTERN LTD",
+          "amount": 3574833.25,
+          "date": "2025-07-08",
+          "occurrences": 2,
+          "potential_overpayment": 3574833.25
+        },
+        {
+          "supplier": "INDEPENDENCE MATTERS CIC",
+          "amount": 541929.44,
+          "date": "2025-10-29",
+          "occurrences": 7,
+          "potential_overpayment": 3251576.64
+        },
+        {
+          "supplier": "VEOLIA ES (UK) LTD",
+          "amount": 1884618.14,
+          "date": "2024-12-17",
+          "occurrences": 2,
+          "potential_overpayment": 1884618.14
+        },
+        {
+          "supplier": "AURORA CARE AND EDUCATION OPCO LTD",
+          "amount": 18860.12,
+          "date": "2026-03-17",
+          "occurrences": 100,
+          "potential_overpayment": 1867151.88
+        },
+        {
+          "supplier": "NORSE CARE LTD",
+          "amount": 1837452.14,
+          "date": "2025-07-04",
+          "occurrences": 2,
+          "potential_overpayment": 1837452.14
+        },
+        {
+          "supplier": "VEOLIA ES (UK) LTD",
+          "amount": 1833791.36,
+          "date": "2024-10-14",
+          "occurrences": 2,
+          "potential_overpayment": 1833791.36
+        },
+        {
+          "supplier": "R G CARTER LTD",
+          "amount": 1776680.0,
+          "date": "2025-07-02",
+          "occurrences": 2,
+          "potential_overpayment": 1776680.0
+        },
+        {
+          "supplier": "GREAT YARMOUTH PORT COMPANY LTD",
+          "amount": 1750000.0,
+          "date": "2025-07-22",
+          "occurrences": 2,
+          "potential_overpayment": 1750000.0
+        },
+        {
+          "supplier": "NORTH NORFOLK DISTRICT COUNCIL",
+          "amount": 1680858.0,
+          "date": "2025-07-18",
+          "occurrences": 2,
+          "potential_overpayment": 1680858.0
+        },
+        {
+          "supplier": "VEOLIA ES (UK) LTD",
+          "amount": 1680497.05,
+          "date": "2024-11-15",
+          "occurrences": 2,
+          "potential_overpayment": 1680497.05
+        },
+        {
+          "supplier": "GREAT YARMOUTH BOROUGH COUNCIL",
+          "amount": 1672706.0,
+          "date": "2025-07-31",
+          "occurrences": 2,
+          "potential_overpayment": 1672706.0
+        },
+        {
+          "supplier": "BRECKLAND DISTRICT COUNCIL",
+          "amount": 1649872.0,
+          "date": "2025-07-24",
+          "occurrences": 2,
+          "potential_overpayment": 1649872.0
+        },
+        {
+          "supplier": "AURORA CARE AND EDUCATION OPCO LTD",
+          "amount": 16165.82,
+          "date": "2025-12-09",
+          "occurrences": 101,
+          "potential_overpayment": 1616582.0
+        },
+        {
+          "supplier": "EDENRED (UK GROUP) LIMITED (IN LIQUIDATION)",
+          "amount": 1500000.0,
+          "date": "2025-07-16",
+          "occurrences": 2,
+          "potential_overpayment": 1500000.0
+        },
+        {
+          "supplier": "NORFOLK COMMUNITY HEALTH & CARE (NHS TRUST)",
+          "amount": 361022.0,
+          "date": "2024-10-10",
+          "occurrences": 5,
+          "potential_overpayment": 1444088.0
+        },
+        {
+          "supplier": "NORSE CARE LTD",
+          "amount": 1403386.83,
+          "date": "2025-07-01",
+          "occurrences": 2,
+          "potential_overpayment": 1403386.83
+        },
+        {
+          "supplier": "NORSE ENVIRONMENTAL WASTE SERVICES LTD",
+          "amount": 689357.0,
+          "date": "2025-06-04",
+          "occurrences": 3,
+          "potential_overpayment": 1378714.0
+        },
+        {
+          "supplier": "CAMBRIDGESHIRE COMMUNITY SERVICES (NHS TRUST)",
+          "amount": 1366494.0,
+          "date": "2025-07-02",
+          "occurrences": 2,
+          "potential_overpayment": 1366494.0
+        },
+        {
+          "supplier": "SOUTH NORFOLK DISTRICT COUNCIL",
+          "amount": 1284794.0,
+          "date": "2025-07-28",
+          "occurrences": 2,
+          "potential_overpayment": 1284794.0
+        },
+        {
+          "supplier": "ACTION FOR CHILDREN SERVICES LTD",
+          "amount": 1263313.5,
+          "date": "2025-07-04",
+          "occurrences": 2,
+          "potential_overpayment": 1263313.5
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 5408,
+      "total_value": 150196000.0
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Adult Social Care",
+      "spend": 948252536.83,
+      "count": 231885
+    },
+    {
+      "department": "Adult Social Services",
+      "spend": 827657636.86,
+      "count": 234812
+    },
+    {
+      "department": "Children's Services",
+      "spend": 734097602.18,
+      "count": 93331
+    },
+    {
+      "department": "Community & Environmental Services",
+      "spend": 616609047.32,
+      "count": 49846
+    },
+    {
+      "department": "Infrastructure Directorate",
+      "spend": 502048848.97,
+      "count": 55589
+    },
+    {
+      "department": "Finance and Commercial Services",
+      "spend": 194466156.91,
+      "count": 8018
+    },
+    {
+      "department": "Finance Directorate",
+      "spend": 96389940.85,
+      "count": 1269
+    },
+    {
+      "department": "Strategy and Transformation Directorate",
+      "spend": 49352863.85,
+      "count": 3409
+    },
+    {
+      "department": "Community and Environment Directorate",
+      "spend": 40558195.92,
+      "count": 4130
+    },
+    {
+      "department": "Strategy & Governance",
+      "spend": 27646117.37,
+      "count": 3168
+    },
+    {
+      "department": "Norfolk Fire & Rescue Service and Trading Standards",
+      "spend": 25938626.04,
+      "count": 1505
+    },
+    {
+      "department": "",
+      "spend": 24125871.39,
+      "count": 285
+    },
+    {
+      "department": "Children's Services (Dedicated Schools Grant)",
+      "spend": 19472194.78,
+      "count": 2375
+    },
+    {
+      "department": "CES",
+      "spend": 14089897.44,
+      "count": 428
+    },
+    {
+      "department": "Chief Executive's Directorate",
+      "spend": 6426271.07,
+      "count": 2108
+    },
+    {
+      "department": "Resources - Pensions",
+      "spend": 5205144.03,
+      "count": 58
+    },
+    {
+      "department": "Strategy and Governance",
+      "spend": 88984.57,
+      "count": 85
+    },
+    {
+      "department": "Community and Environmental Services",
+      "spend": 84460.92,
+      "count": 114
+    },
+    {
+      "department": "Unknown",
+      "spend": 21293.09,
+      "count": 11
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2023/24": 1357856714.58,
+      "2024/25": 1410098646.31,
+      "2025/26": 1364576329.5
+    },
+    "transactions_by_year": {
+      "2023/24": 224828,
+      "2024/25": 228210,
+      "2025/26": 239388
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 692426
+  }
+}

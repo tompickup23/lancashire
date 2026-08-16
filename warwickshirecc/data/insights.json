@@ -1,0 +1,693 @@
+{
+  "summary": {
+    "total_spend": 6990907221.89,
+    "transaction_count": 1135823,
+    "unique_suppliers": 23092,
+    "avg_transaction": 6154.93,
+    "median_transaction": 1867.56,
+    "date_range": {
+      "min": "2011-04-04",
+      "max": "2026-03-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "BALFOUR BEATTY LIVING PLACES LTD",
+        "total": 445276349.73,
+        "transactions": 244,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BALFOUR BEATTY LIVING PLACES",
+        "total": 162836324.14,
+        "transactions": 66,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WCS CARE GROUP LTD",
+        "total": 135103581.87,
+        "transactions": 12273,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "RUNWOOD HOMES LTD",
+        "total": 94954042.66,
+        "transactions": 25661,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "STAGECOACH SERVICES LTD",
+        "total": 93265132.99,
+        "transactions": 3843,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DODD GROUP (MIDLANDS) LTD",
+        "total": 80739527.98,
+        "transactions": 19871,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PEOPLE IN ACTION",
+        "total": 78518076.26,
+        "transactions": 18448,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ARDEN CONSTRUCTION LTD",
+        "total": 76424617.97,
+        "transactions": 6129,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PERTEMPS RECRUITMENT PARTNERSHIP LTD",
+        "total": 72361921.73,
+        "transactions": 57487,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WILLMOTT DIXON HOLDINGS ACCOUNT",
+        "total": 68717252.98,
+        "transactions": 86,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SOUTH WARWICKSHIRE NHS FOUNDATION TRUST",
+        "total": 62039330.97,
+        "transactions": 836,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "THE COVENTRY AND SOLIHULL WASTE DISPOSAL COMPANY LTD",
+        "total": 59707507.08,
+        "transactions": 564,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED",
+        "total": 57676201.79,
+        "transactions": 32776,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ASHE CONSTRUCTION LTD",
+        "total": 56049967.69,
+        "transactions": 338,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MILLBROOK HEALTHCARE - A DIVISION OF MILLBROOK FURNISHING INDUSTRIES LTD",
+        "total": 52221923.5,
+        "transactions": 308,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COVENTRY AND WARWICKSHIRE PARTNERSHIP NHS TRUST",
+        "total": 48511421.05,
+        "transactions": 486,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FCC RECYCLING (UK) LTD",
+        "total": 47968985.73,
+        "transactions": 944,
+        "company_number": "02674166",
+        "company_url": "https://find-and-update.company-information.service.gov.uk/company/02674166"
+      },
+      {
+        "supplier": "NHS SOUTH WARWICKSHIRE CCG",
+        "total": 46154683.76,
+        "transactions": 84,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SOUTH WARWICKSHIRE UNIVERSITY NHS FOUNDATION TRUST",
+        "total": 45950293.09,
+        "transactions": 582,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SPELLER METCALFE MALVERN LTD",
+        "total": 45525927.26,
+        "transactions": 121,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.2618,
+    "total_unique_suppliers": 23092,
+    "single_transaction_suppliers": 9263
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 88358,
+      "potential_value": 622752293.95,
+      "items": [
+        {
+          "supplier": "SOUTH WARWICKSHIRE UNIVERSITY NHS FOUNDATION TRUST",
+          "amount": 1611129.0,
+          "date": "2023-09-05",
+          "occurrences": 6,
+          "potential_overpayment": 8055645.0
+        },
+        {
+          "supplier": "BALFOUR BEATTY LIVING PLACES LTD",
+          "amount": 3186037.09,
+          "date": "2020-07-14",
+          "occurrences": 2,
+          "potential_overpayment": 3186037.09
+        },
+        {
+          "supplier": "BALFOUR BEATTY LIVING PLACES LTD",
+          "amount": 3105200.51,
+          "date": "2020-09-11",
+          "occurrences": 2,
+          "potential_overpayment": 3105200.51
+        },
+        {
+          "supplier": "BALFOUR BEATTY LIVING PLACES LTD",
+          "amount": 3105200.51,
+          "date": "2020-09-22",
+          "occurrences": 2,
+          "potential_overpayment": 3105200.51
+        },
+        {
+          "supplier": "COVENTRY AND WARWICKSHIRE PARTNERSHIP NHS TRUST",
+          "amount": 2047110.8,
+          "date": "2020-09-25",
+          "occurrences": 2,
+          "potential_overpayment": 2047110.8
+        },
+        {
+          "supplier": "BALFOUR BEATTY LIVING PLACES LTD",
+          "amount": 950000.0,
+          "date": "2012-04-24",
+          "occurrences": 3,
+          "potential_overpayment": 1900000.0
+        },
+        {
+          "supplier": "SOUTH WARWICKSHIRE UNIVERSITY NHS FOUNDATION TRUST",
+          "amount": 1611129.0,
+          "date": "2022-11-09",
+          "occurrences": 2,
+          "potential_overpayment": 1611129.0
+        },
+        {
+          "supplier": "SOUTH WARWICKSHIRE UNIVERSITY NHS FOUNDATION TRUST",
+          "amount": 1611128.75,
+          "date": "2024-09-20",
+          "occurrences": 2,
+          "potential_overpayment": 1611128.75
+        },
+        {
+          "supplier": "SOUTH WARWICKSHIRE NHS FOUNDATION TRUST",
+          "amount": 1528750.0,
+          "date": "2021-09-02",
+          "occurrences": 2,
+          "potential_overpayment": 1528750.0
+        },
+        {
+          "supplier": "NUNEATON & BEDWORTH BOROUGH COUNCIL",
+          "amount": 1456056.0,
+          "date": "2020-09-02",
+          "occurrences": 2,
+          "potential_overpayment": 1456056.0
+        },
+        {
+          "supplier": "NSL LTD",
+          "amount": 1125000.0,
+          "date": "2020-07-29",
+          "occurrences": 2,
+          "potential_overpayment": 1125000.0
+        },
+        {
+          "supplier": "KEDLESTON (OS EDUCATION) LTD",
+          "amount": 20537.33,
+          "date": "2025-11-28",
+          "occurrences": 48,
+          "potential_overpayment": 965254.51
+        },
+        {
+          "supplier": "BALFOUR BEATTY LIVING PLACES LTD",
+          "amount": 900000.0,
+          "date": "2012-04-30",
+          "occurrences": 2,
+          "potential_overpayment": 900000.0
+        },
+        {
+          "supplier": "CHG-MERIDIAN UK LTD",
+          "amount": 896032.11,
+          "date": "2022-12-20",
+          "occurrences": 2,
+          "potential_overpayment": 896032.11
+        },
+        {
+          "supplier": "CHANGE GROW LIVE (CGL)",
+          "amount": 892472.75,
+          "date": "2025-12-17",
+          "occurrences": 2,
+          "potential_overpayment": 892472.75
+        },
+        {
+          "supplier": "WARWICK DISTRICT COUNCIL",
+          "amount": 880821.0,
+          "date": "2020-09-02",
+          "occurrences": 2,
+          "potential_overpayment": 880821.0
+        },
+        {
+          "supplier": "STAFFORDSHIRE COUNTY COUNCIL",
+          "amount": 862025.61,
+          "date": "2025-01-15",
+          "occurrences": 2,
+          "potential_overpayment": 862025.61
+        },
+        {
+          "supplier": "STRATFORD ON AVON DISTRICT COUNCIL",
+          "amount": 847346.0,
+          "date": "2020-09-02",
+          "occurrences": 2,
+          "potential_overpayment": 847346.0
+        },
+        {
+          "supplier": "KEDLESTON (OS EDUCATION) LTD",
+          "amount": 20537.33,
+          "date": "2025-07-30",
+          "occurrences": 42,
+          "potential_overpayment": 842030.53
+        },
+        {
+          "supplier": "KEDLESTON (OS EDUCATION) LTD",
+          "amount": 20537.33,
+          "date": "2024-12-06",
+          "occurrences": 40,
+          "potential_overpayment": 800955.87
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 18142,
+      "total_value": 331740000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 133
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Communities",
+      "spend": 2036042464.7,
+      "count": 232662
+    },
+    {
+      "department": "People Group",
+      "spend": 1848504351.52,
+      "count": 420806
+    },
+    {
+      "department": "Capital",
+      "spend": 829306138.85,
+      "count": 22158
+    },
+    {
+      "department": "Social Care & Health",
+      "spend": 736624447.66,
+      "count": 181914
+    },
+    {
+      "department": "Children & Young People",
+      "spend": 574889375.58,
+      "count": 67307
+    },
+    {
+      "department": "Resources",
+      "spend": 455910051.54,
+      "count": 119858
+    },
+    {
+      "department": "Other Services",
+      "spend": 88210246.63,
+      "count": 5531
+    },
+    {
+      "department": "",
+      "spend": 61984164.61,
+      "count": 11151
+    },
+    {
+      "department": "People",
+      "spend": 57165785.98,
+      "count": 9685
+    },
+    {
+      "department": "ADULT HEALTH AND COMMUNITY SERVICES",
+      "spend": 56715885.05,
+      "count": 19497
+    },
+    {
+      "department": "Schools",
+      "spend": 41952976.86,
+      "count": 14375
+    },
+    {
+      "department": "CHILDREN YOUNG PEOPLE AND FAMILIES",
+      "spend": 28538167.48,
+      "count": 3997
+    },
+    {
+      "department": "COMMUNITIES GROUP",
+      "spend": 25717015.42,
+      "count": 2935
+    },
+    {
+      "department": "ENVIRONMENT AND ECONOMY",
+      "spend": 21354566.85,
+      "count": 2156
+    },
+    {
+      "department": "PEOPLE GROUP",
+      "spend": 19670650.54,
+      "count": 8871
+    },
+    {
+      "department": "Fire and Rescue",
+      "spend": 18896709.17,
+      "count": 5386
+    },
+    {
+      "department": "CAPITAL",
+      "spend": 16856843.91,
+      "count": 1067
+    },
+    {
+      "department": "County Highways",
+      "spend": 14370109.68,
+      "count": 6
+    },
+    {
+      "department": "RESOURCES GROUP",
+      "spend": 12938922.65,
+      "count": 2929
+    },
+    {
+      "department": "RESOURCES",
+      "spend": 10753142.13,
+      "count": 2365
+    },
+    {
+      "department": "Corporate Services",
+      "spend": 5519932.92,
+      "count": 396
+    },
+    {
+      "department": "Social Care & Support",
+      "spend": 5410333.24,
+      "count": 6
+    },
+    {
+      "department": "Control Codes",
+      "spend": 4360690.62,
+      "count": 93
+    },
+    {
+      "department": "Communities Group",
+      "spend": 3925365.21,
+      "count": 5
+    },
+    {
+      "department": "County Highways - Communities Directorate",
+      "spend": 2906037.5,
+      "count": 1
+    },
+    {
+      "department": "Strategic Commissioning",
+      "spend": 2611809.8,
+      "count": 60
+    },
+    {
+      "department": "Law and Governance",
+      "spend": 2026267.62,
+      "count": 5
+    },
+    {
+      "department": "Highways Maintenance Contract/Fees",
+      "spend": 1049095.27,
+      "count": 1
+    },
+    {
+      "department": "FIRE & RESCUE",
+      "spend": 1045117.22,
+      "count": 312
+    },
+    {
+      "department": "Transport & Highways - Communities Group",
+      "spend": 1008580.39,
+      "count": 2
+    },
+    {
+      "department": "OTHER SERVICES",
+      "spend": 966735.03,
+      "count": 59
+    },
+    {
+      "department": "Law & Governance",
+      "spend": 924531.14,
+      "count": 39
+    },
+    {
+      "department": "Transport & Highways - Design Services",
+      "spend": 641382.85,
+      "count": 1
+    },
+    {
+      "department": "Information Assets",
+      "spend": 585248.33,
+      "count": 1
+    },
+    {
+      "department": "Resources Group",
+      "spend": 375719.36,
+      "count": 8
+    },
+    {
+      "department": "LIBRARIES & HERITAGE",
+      "spend": 163645.83,
+      "count": 44
+    },
+    {
+      "department": "Social Care & Support - People Group",
+      "spend": 122000.0,
+      "count": 1
+    },
+    {
+      "department": "Law & Governance - Resources Group",
+      "spend": 113312.31,
+      "count": 5
+    },
+    {
+      "department": "Environment & Regeneration",
+      "spend": 99630.93,
+      "count": 1
+    },
+    {
+      "department": "Finance",
+      "spend": 97559.72,
+      "count": 1
+    },
+    {
+      "department": "Strategic Finance - People Group",
+      "spend": 86073.41,
+      "count": 1
+    },
+    {
+      "department": "People Group - Social Care & Support",
+      "spend": 80850.82,
+      "count": 3
+    },
+    {
+      "department": "Finance - Resources Group",
+      "spend": 57000.0,
+      "count": 3
+    },
+    {
+      "department": "Communites",
+      "spend": 39707.44,
+      "count": 39
+    },
+    {
+      "department": "Transport & Economy",
+      "spend": 37156.56,
+      "count": 1
+    },
+    {
+      "department": "Transport and Economy",
+      "spend": 36363.0,
+      "count": 1
+    },
+    {
+      "department": "Communties",
+      "spend": 34246.45,
+      "count": 32
+    },
+    {
+      "department": "Strategic Finance - Resources Directorate",
+      "spend": 29560.0,
+      "count": 1
+    },
+    {
+      "department": "Transport and Highways",
+      "spend": 26992.08,
+      "count": 1
+    },
+    {
+      "department": "Physical Assets",
+      "spend": 25857.0,
+      "count": 1
+    },
+    {
+      "department": "Suspense",
+      "spend": 23952.68,
+      "count": 6
+    },
+    {
+      "department": "Estates & Smallholdings",
+      "spend": 13322.0,
+      "count": 1
+    },
+    {
+      "department": "COMMUNITIES",
+      "spend": 10772.49,
+      "count": 12
+    },
+    {
+      "department": "Warwickshire County Records Office",
+      "spend": 10240.68,
+      "count": 1
+    },
+    {
+      "department": "Commerical & Regulatory - Resources Directorate",
+      "spend": 9400.0,
+      "count": 2
+    },
+    {
+      "department": "TREASURERS SUB LEDGER",
+      "spend": 6060.13,
+      "count": 3
+    },
+    {
+      "department": "Fire & Rescue",
+      "spend": 5801.61,
+      "count": 6
+    },
+    {
+      "department": "Infrastructure & Regeneration",
+      "spend": 5297.57,
+      "count": 1
+    },
+    {
+      "department": "PEOPLE",
+      "spend": 4868.8,
+      "count": 3
+    },
+    {
+      "department": "Corporate Finance",
+      "spend": 2667.31,
+      "count": 1
+    },
+    {
+      "department": "FIRE AND RESCUE",
+      "spend": 2090.0,
+      "count": 2
+    },
+    {
+      "department": "Moreton",
+      "spend": 1406.56,
+      "count": 1
+    },
+    {
+      "department": "CHIDLREN YOUNG PEOPLE AND FAMILIES",
+      "spend": 1193.95,
+      "count": 2
+    },
+    {
+      "department": "Fire",
+      "spend": 745.63,
+      "count": 1
+    },
+    {
+      "department": "MISCELLANEOUS EXPENDITURE",
+      "spend": 583.62,
+      "count": 1
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2011/12": 264565933.73,
+      "2012/13": 247804498.42,
+      "2013/14": 63604039.34,
+      "2014/15": 356636084.06,
+      "2015/16": 392837207.77,
+      "2016/17": 364739161.15,
+      "2017/18": 418882692.99,
+      "2018/19": 233994175.19,
+      "2019/20": 342193857.01,
+      "2020/21": 497157940.51,
+      "2021/22": 624226084.47,
+      "2022/23": 624779194.79,
+      "2023/24": 757872893.59,
+      "2024/25": 845034888.76,
+      "2025/26": 956578570.11
+    },
+    "transactions_by_year": {
+      "2011/12": 54487,
+      "2012/13": 49966,
+      "2013/14": 12242,
+      "2014/15": 66504,
+      "2015/16": 55035,
+      "2016/17": 52166,
+      "2017/18": 53185,
+      "2018/19": 23195,
+      "2019/20": 31356,
+      "2020/21": 54721,
+      "2021/22": 127739,
+      "2022/23": 123185,
+      "2023/24": 136132,
+      "2024/25": 144508,
+      "2025/26": 151402
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 99.0,
+    "total_records": 1135823
+  }
+}

@@ -1,0 +1,2711 @@
+{
+  "summary": {
+    "total_spend": 5041242052.97,
+    "transaction_count": 774583,
+    "unique_suppliers": 9283,
+    "avg_transaction": 6508.33,
+    "median_transaction": 1215.9,
+    "date_range": {
+      "min": "2020-04-01",
+      "max": "2026-04-30"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "BRADFORD CHILDREN AND FAMILIES",
+        "total": 703145100.31,
+        "transactions": 278,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WEST YORKSHIRE COMBINED AUTHORITY",
+        "total": 276588720.68,
+        "transactions": 292,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COMENSURA LTD",
+        "total": 202572784.02,
+        "transactions": 636,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INTEGRATED BRADFORD SPV 2 LTD",
+        "total": 182554928.46,
+        "transactions": 103,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ASSOCIATED WASTE MANAGEMENT LTD",
+        "total": 111061692.62,
+        "transactions": 1172,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NPOWER (ELECTRIC) YPO CONTRACT",
+        "total": 110936613.6,
+        "transactions": 8686,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INTEGRATED BRADFORD SPVONE LTD",
+        "total": 89333965.62,
+        "transactions": 95,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BRADFORD DISTRICT CARE NHS FOUNDATI",
+        "total": 80821850.44,
+        "transactions": 456,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BALFOUR BEATTY CIVIL ENGINEERING LT",
+        "total": 72040798.87,
+        "transactions": 285,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WEST YORKSHIRE FIRE AND RESCUE",
+        "total": 61691296.02,
+        "transactions": 123,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TURNING POINT",
+        "total": 58699692.28,
+        "transactions": 19267,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "UNITED RESPONSE SERVICES LTD",
+        "total": 56264901.03,
+        "transactions": 37749,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BRADFORD LIVE",
+        "total": 42665989.08,
+        "transactions": 155,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HORTON HOUSING SUPPORT LTD",
+        "total": 36014478.57,
+        "transactions": 1053,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "OFFICE OF THE POLICE & CRIME",
+        "total": 32360013.7,
+        "transactions": 95,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MUSE DEVELOPMENTS LTD",
+        "total": 32276559.75,
+        "transactions": 34,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED PERSONAL DATA",
+        "total": 31551845.55,
+        "transactions": 15125,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CO-OP ACADEMY SOUTHFIELD",
+        "total": 29540485.25,
+        "transactions": 80,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "AMEY OW LTD",
+        "total": 28557274.09,
+        "transactions": 64,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ASSISTED LIVES LTD",
+        "total": 28172030.98,
+        "transactions": 15511,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.4497,
+    "total_unique_suppliers": 9283,
+    "single_transaction_suppliers": 2840
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 64876,
+      "potential_value": 360604117.26,
+      "items": [
+        {
+          "supplier": "NHS WEST YORKS INTERGRATED CARE",
+          "amount": 800000.0,
+          "date": "2023-03-22",
+          "occurrences": 6,
+          "potential_overpayment": 4000000.0
+        },
+        {
+          "supplier": "BRADFORD DISTRICT CARE NHS FOUNDATI",
+          "amount": 1093666.67,
+          "date": "2025-08-14",
+          "occurrences": 4,
+          "potential_overpayment": 3281000.01
+        },
+        {
+          "supplier": "HUMANKIND CHARITY",
+          "amount": 616666.23,
+          "date": "2024-09-05",
+          "occurrences": 5,
+          "potential_overpayment": 2466664.92
+        },
+        {
+          "supplier": "BRADFORD DISTRICT CARE NHS FOUNDATI",
+          "amount": 1027798.67,
+          "date": "2024-08-02",
+          "occurrences": 3,
+          "potential_overpayment": 2055597.34
+        },
+        {
+          "supplier": "WAYTHROUGH SUPPORT SERVICES LTD",
+          "amount": 1803641.52,
+          "date": "2026-02-17",
+          "occurrences": 2,
+          "potential_overpayment": 1803641.52
+        },
+        {
+          "supplier": "LEEDS CITY COUNCIL",
+          "amount": 514878.31,
+          "date": "2023-11-17",
+          "occurrences": 3,
+          "potential_overpayment": 1029756.62
+        },
+        {
+          "supplier": "WAYTHROUGH SUPPORT SERVICES LTD",
+          "amount": 978385.64,
+          "date": "2026-02-17",
+          "occurrences": 2,
+          "potential_overpayment": 978385.64
+        },
+        {
+          "supplier": "BRADFORD CHILDREN AND FAMILIES",
+          "amount": 486519.0,
+          "date": "2025-09-04",
+          "occurrences": 3,
+          "potential_overpayment": 973038.0
+        },
+        {
+          "supplier": "DENNIS EAGLE LTD",
+          "amount": 174246.0,
+          "date": "2022-03-07",
+          "occurrences": 6,
+          "potential_overpayment": 871230.0
+        },
+        {
+          "supplier": "DENNIS EAGLE LTD",
+          "amount": 212565.0,
+          "date": "2024-08-22",
+          "occurrences": 5,
+          "potential_overpayment": 850260.0
+        },
+        {
+          "supplier": "DENNIS EAGLE LTD",
+          "amount": 163748.0,
+          "date": "2020-08-21",
+          "occurrences": 6,
+          "potential_overpayment": 818740.0
+        },
+        {
+          "supplier": "TURNING POINT",
+          "amount": 113705.6,
+          "date": "2024-11-26",
+          "occurrences": 8,
+          "potential_overpayment": 795939.2
+        },
+        {
+          "supplier": "BRADFORD CHILDREN AND FAMILIES",
+          "amount": 396000.0,
+          "date": "2024-08-12",
+          "occurrences": 3,
+          "potential_overpayment": 792000.0
+        },
+        {
+          "supplier": "TURNING POINT",
+          "amount": 107947.17,
+          "date": "2023-02-13",
+          "occurrences": 7,
+          "potential_overpayment": 647683.02
+        },
+        {
+          "supplier": "HUMANKIND CHARITY",
+          "amount": 616666.23,
+          "date": "2023-09-08",
+          "occurrences": 2,
+          "potential_overpayment": 616666.23
+        },
+        {
+          "supplier": "WAYTHROUGH SUPPORT SERVICES LTD",
+          "amount": 616666.23,
+          "date": "2025-05-13",
+          "occurrences": 2,
+          "potential_overpayment": 616666.23
+        },
+        {
+          "supplier": "NORTHERN COMMERCIALS (MIRFIELD)",
+          "amount": 29041.3,
+          "date": "2020-08-06",
+          "occurrences": 22,
+          "potential_overpayment": 609867.3
+        },
+        {
+          "supplier": "THE HOME FARM TRUST LTD",
+          "amount": 599984.0,
+          "date": "2021-02-02",
+          "occurrences": 2,
+          "potential_overpayment": 599984.0
+        },
+        {
+          "supplier": "CO-OP ACADEMY SOUTHFIELD",
+          "amount": 537585.0,
+          "date": "2026-04-16",
+          "occurrences": 2,
+          "potential_overpayment": 537585.0
+        },
+        {
+          "supplier": "CO-OP ACADEMY SOUTHFIELD",
+          "amount": 524266.0,
+          "date": "2025-06-19",
+          "occurrences": 2,
+          "potential_overpayment": 524266.0
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 7155,
+      "total_value": 590377000.0
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Soc Serv Children & Young People",
+      "spend": 1001879160.26,
+      "count": 18854
+    },
+    {
+      "department": "Financial Services",
+      "spend": 400333166.51,
+      "count": 881
+    },
+    {
+      "department": "",
+      "spend": 243110079.12,
+      "count": 52856
+    },
+    {
+      "department": "School Budget Holding A/C",
+      "spend": 235356883.28,
+      "count": 16796
+    },
+    {
+      "department": "Highways Asset Management",
+      "spend": 221022732.58,
+      "count": 10149
+    },
+    {
+      "department": "Public Health",
+      "spend": 212431380.59,
+      "count": 4072
+    },
+    {
+      "department": "Procurement",
+      "spend": 199130576.07,
+      "count": 1463
+    },
+    {
+      "department": "Education Buildings Team",
+      "spend": 177338423.25,
+      "count": 443
+    },
+    {
+      "department": "St Scene & Waste Man",
+      "spend": 163757346.06,
+      "count": 17695
+    },
+    {
+      "department": "Soc Serv Adults",
+      "spend": 137572300.21,
+      "count": 20017
+    },
+    {
+      "department": "Council Wide",
+      "spend": 117179454.07,
+      "count": 12034
+    },
+    {
+      "department": "Devolved Payments to Academies",
+      "spend": 111418573.33,
+      "count": 3238
+    },
+    {
+      "department": "Operational Services",
+      "spend": 105558774.73,
+      "count": 62340
+    },
+    {
+      "department": "LD Supported Living - Spot Contracts",
+      "spend": 98964649.42,
+      "count": 71844
+    },
+    {
+      "department": "Facilities Management",
+      "spend": 89313205.82,
+      "count": 15038
+    },
+    {
+      "department": "3 & 4 year olds nef",
+      "spend": 87471195.86,
+      "count": 6201
+    },
+    {
+      "department": "OP Residential Care - Purchased",
+      "spend": 75656403.27,
+      "count": 53173
+    },
+    {
+      "department": "Residential",
+      "spend": 69941485.79,
+      "count": 3750
+    },
+    {
+      "department": "Children's Social Care",
+      "spend": 68809993.31,
+      "count": 6553
+    },
+    {
+      "department": "Learning Disabilities Supported Living",
+      "spend": 60079542.89,
+      "count": 37206
+    },
+    {
+      "department": "IT Services",
+      "spend": 58457701.81,
+      "count": 2251
+    },
+    {
+      "department": "Landscape",
+      "spend": 56329006.7,
+      "count": 4076
+    },
+    {
+      "department": "Education, Employment & Skills",
+      "spend": 52150205.06,
+      "count": 4755
+    },
+    {
+      "department": "Housing",
+      "spend": 45847039.22,
+      "count": 7619
+    },
+    {
+      "department": "Economic Development Programmes",
+      "spend": 42218034.94,
+      "count": 961
+    },
+    {
+      "department": "OP Nursing Care - Purchased",
+      "spend": 37254459.49,
+      "count": 23280
+    },
+    {
+      "department": "Finance & Procurement",
+      "spend": 32259813.26,
+      "count": 366
+    },
+    {
+      "department": "OP Home Care - Purchased",
+      "spend": 31282855.41,
+      "count": 39981
+    },
+    {
+      "department": "Waste, Fleet & Transport Services",
+      "spend": 30729312.0,
+      "count": 2821
+    },
+    {
+      "department": "LD Residential Care - Purchased",
+      "spend": 30177807.93,
+      "count": 10400
+    },
+    {
+      "department": "Ed Contract Services",
+      "spend": 24392500.19,
+      "count": 4050
+    },
+    {
+      "department": "Estates & Property",
+      "spend": 22743884.75,
+      "count": 4283
+    },
+    {
+      "department": "Learning Disabilities - Residential",
+      "spend": 21009803.87,
+      "count": 6416
+    },
+    {
+      "department": "Fostering",
+      "spend": 20951609.82,
+      "count": 5923
+    },
+    {
+      "department": "Legal Services",
+      "spend": 19824809.39,
+      "count": 8515
+    },
+    {
+      "department": "General Fund",
+      "spend": 19230475.0,
+      "count": 95
+    },
+    {
+      "department": "Planning, Transportation & Highways",
+      "spend": 18949227.11,
+      "count": 1909
+    },
+    {
+      "department": "Deputy Directors Office",
+      "spend": 18293764.17,
+      "count": 4572
+    },
+    {
+      "department": "Leaving Care",
+      "spend": 17199569.88,
+      "count": 2398
+    },
+    {
+      "department": "Post 16 SEN",
+      "spend": 14059731.0,
+      "count": 322
+    },
+    {
+      "department": "LD Home Care - Purchased",
+      "spend": 13458504.01,
+      "count": 8615
+    },
+    {
+      "department": "Neighbourhood & Customer Services",
+      "spend": 13261058.67,
+      "count": 1136
+    },
+    {
+      "department": "Assistant Director Operational Services",
+      "spend": 12641331.38,
+      "count": 2073
+    },
+    {
+      "department": "MH Residential Care - Purchased",
+      "spend": 12088588.13,
+      "count": 9006
+    },
+    {
+      "department": "Older People South - Residential",
+      "spend": 11273459.8,
+      "count": 6332
+    },
+    {
+      "department": "Business Services",
+      "spend": 11152714.04,
+      "count": 806
+    },
+    {
+      "department": "Older People East - Residential",
+      "spend": 11092092.54,
+      "count": 6356
+    },
+    {
+      "department": "Older People Keighley - Residential",
+      "spend": 11091980.84,
+      "count": 5775
+    },
+    {
+      "department": "Older People Shipley - Residential",
+      "spend": 11091295.16,
+      "count": 6095
+    },
+    {
+      "department": "Revenues & Benefits",
+      "spend": 10944139.89,
+      "count": 1667
+    },
+    {
+      "department": "OP ISF\u2019s (Home Support)",
+      "spend": 10637812.05,
+      "count": 15674
+    },
+    {
+      "department": "Emp Relations & Resourcing",
+      "spend": 10321240.1,
+      "count": 2009
+    },
+    {
+      "department": "Asset Management",
+      "spend": 9892389.7,
+      "count": 934
+    },
+    {
+      "department": "Neighbourhood Service",
+      "spend": 9641352.02,
+      "count": 1666
+    },
+    {
+      "department": "Democratic Services",
+      "spend": 9573030.89,
+      "count": 2237
+    },
+    {
+      "department": "Theatres, Arts & Festivals",
+      "spend": 9099556.66,
+      "count": 4259
+    },
+    {
+      "department": "Gen Fund Approp A/c",
+      "spend": 8388160.0,
+      "count": 51
+    },
+    {
+      "department": "Transportation Development",
+      "spend": 8226906.61,
+      "count": 435
+    },
+    {
+      "department": "Integrations & Transitions",
+      "spend": 7996158.53,
+      "count": 540
+    },
+    {
+      "department": "Information Services",
+      "spend": 7868876.46,
+      "count": 419
+    },
+    {
+      "department": "Further Education High Needs Funding",
+      "spend": 7676260.0,
+      "count": 136
+    },
+    {
+      "department": "Older People West - Residential",
+      "spend": 7524756.48,
+      "count": 4158
+    },
+    {
+      "department": "Mental Health - Residential",
+      "spend": 7338143.2,
+      "count": 4236
+    },
+    {
+      "department": "Insurance",
+      "spend": 7272332.98,
+      "count": 197
+    },
+    {
+      "department": "Fleet Services",
+      "spend": 7269387.77,
+      "count": 4251
+    },
+    {
+      "department": "Older People West - Homecare",
+      "spend": 7198141.25,
+      "count": 8886
+    },
+    {
+      "department": "COUNCIL WIDE",
+      "spend": 6658373.59,
+      "count": 1013
+    },
+    {
+      "department": "Sport & Culture",
+      "spend": 6467872.21,
+      "count": 1260
+    },
+    {
+      "department": "Older People Shipley - Nursing",
+      "spend": 6268456.32,
+      "count": 3126
+    },
+    {
+      "department": "Learning Disabilities - Day Care",
+      "spend": 6206408.93,
+      "count": 8564
+    },
+    {
+      "department": "Older People Keighley - Nursing",
+      "spend": 6140630.75,
+      "count": 2815
+    },
+    {
+      "department": "LD Day Care - Purchased",
+      "spend": 6034998.79,
+      "count": 7545
+    },
+    {
+      "department": "Policy & Events",
+      "spend": 5950843.57,
+      "count": 765
+    },
+    {
+      "department": "Skills for Work",
+      "spend": 5737540.21,
+      "count": 2266
+    },
+    {
+      "department": "Voluntary Sector",
+      "spend": 5664019.43,
+      "count": 536
+    },
+    {
+      "department": "Safer Communities",
+      "spend": 5483674.04,
+      "count": 141
+    },
+    {
+      "department": "Older People East - Homecare",
+      "spend": 5164290.68,
+      "count": 6671
+    },
+    {
+      "department": "PD Residential Care - Purchased",
+      "spend": 4971129.94,
+      "count": 2925
+    },
+    {
+      "department": "Mental Health Supported Living",
+      "spend": 4928507.98,
+      "count": 3059
+    },
+    {
+      "department": "MH Nursing Care - Purchased",
+      "spend": 4732821.13,
+      "count": 3360
+    },
+    {
+      "department": "Older People East - Nursing",
+      "spend": 4654850.79,
+      "count": 2249
+    },
+    {
+      "department": "Older People West - Nursing",
+      "spend": 4616623.43,
+      "count": 2340
+    },
+    {
+      "department": "16+",
+      "spend": 4582652.89,
+      "count": 822
+    },
+    {
+      "department": "Building Control",
+      "spend": 4560365.37,
+      "count": 390
+    },
+    {
+      "department": "Older People South - Homecare",
+      "spend": 4552724.19,
+      "count": 5888
+    },
+    {
+      "department": "Libraries, Archives & Info",
+      "spend": 4545579.28,
+      "count": 610
+    },
+    {
+      "department": "MH Supported Living - Purchased",
+      "spend": 4503303.32,
+      "count": 3861
+    },
+    {
+      "department": "Older People Keighley - Homecare",
+      "spend": 4501807.4,
+      "count": 5657
+    },
+    {
+      "department": "Sports and Leisure",
+      "spend": 4495373.48,
+      "count": 1676
+    },
+    {
+      "department": "Miscellaneous",
+      "spend": 4304092.41,
+      "count": 176
+    },
+    {
+      "department": "Older People South - Nursing",
+      "spend": 4250392.89,
+      "count": 1965
+    },
+    {
+      "department": "Older People Shipley - Homecare",
+      "spend": 4207825.64,
+      "count": 5147
+    },
+    {
+      "department": "Household Support Fund",
+      "spend": 4187061.89,
+      "count": 2162
+    },
+    {
+      "department": "Accountancy",
+      "spend": 4108749.15,
+      "count": 63
+    },
+    {
+      "department": "Plans & Performance",
+      "spend": 3743586.24,
+      "count": 516
+    },
+    {
+      "department": "External Enablement",
+      "spend": 3604146.85,
+      "count": 4455
+    },
+    {
+      "department": "Joint Committees",
+      "spend": 3585879.0,
+      "count": 9
+    },
+    {
+      "department": "SD Health & Wellbeing",
+      "spend": 3384370.0,
+      "count": 323
+    },
+    {
+      "department": "Education Client Team",
+      "spend": 3364500.11,
+      "count": 141
+    },
+    {
+      "department": "Markets",
+      "spend": 3358243.33,
+      "count": 711
+    },
+    {
+      "department": "LD Nursing Care - Purchased",
+      "spend": 3287067.83,
+      "count": 1137
+    },
+    {
+      "department": "Holiday Activity Programme Grant",
+      "spend": 3205424.7,
+      "count": 680
+    },
+    {
+      "department": "PD Home Care - Purchased",
+      "spend": 3188469.08,
+      "count": 2725
+    },
+    {
+      "department": "Marketing and Communications",
+      "spend": 2985726.07,
+      "count": 1180
+    },
+    {
+      "department": "Education Opportunity Area",
+      "spend": 2927206.45,
+      "count": 234
+    },
+    {
+      "department": "Performance, Commissioning & Partnerships",
+      "spend": 2852086.47,
+      "count": 234
+    },
+    {
+      "department": "Payments Of Claims",
+      "spend": 2822275.59,
+      "count": 68
+    },
+    {
+      "department": "Stronger Communities",
+      "spend": 2813140.94,
+      "count": 561
+    },
+    {
+      "department": "Delegated Schools Fund",
+      "spend": 2790423.97,
+      "count": 131
+    },
+    {
+      "department": "Disabilities Service",
+      "spend": 2775543.18,
+      "count": 1072
+    },
+    {
+      "department": "Education Purchase Placements",
+      "spend": 2757615.8,
+      "count": 762
+    },
+    {
+      "department": "Economy & Development Services",
+      "spend": 2689397.25,
+      "count": 400
+    },
+    {
+      "department": "Prevention / Resources",
+      "spend": 2658374.15,
+      "count": 381
+    },
+    {
+      "department": "MH Other Commissioned Services",
+      "spend": 2635069.37,
+      "count": 42
+    },
+    {
+      "department": "Mental Health - Nursing",
+      "spend": 2603002.73,
+      "count": 1468
+    },
+    {
+      "department": "H&W Grants to VCS",
+      "spend": 2557492.06,
+      "count": 354
+    },
+    {
+      "department": "Physical Disabilities - Residential",
+      "spend": 2502995.27,
+      "count": 1065
+    },
+    {
+      "department": "PD Extra Care/Supported Living Purchased",
+      "spend": 2312605.37,
+      "count": 1540
+    },
+    {
+      "department": "Vehicle services management",
+      "spend": 2291754.42,
+      "count": 1298
+    },
+    {
+      "department": "PD Nursing Care  - Purchased",
+      "spend": 2287279.16,
+      "count": 1667
+    },
+    {
+      "department": "Physical Disabilities - Homecare",
+      "spend": 2185821.73,
+      "count": 2049
+    },
+    {
+      "department": "Physical Disabilities Supported Living",
+      "spend": 2147873.6,
+      "count": 1344
+    },
+    {
+      "department": "Information Technology Services",
+      "spend": 2129117.55,
+      "count": 76
+    },
+    {
+      "department": "Legal & Democratic Services",
+      "spend": 2033849.65,
+      "count": 912
+    },
+    {
+      "department": "Learning Disabilities - Nursing",
+      "spend": 1970426.92,
+      "count": 578
+    },
+    {
+      "department": "OP Extra Care - Purchased",
+      "spend": 1902053.46,
+      "count": 2308
+    },
+    {
+      "department": "Strategy, Partnership & Perfomance",
+      "spend": 1809067.24,
+      "count": 157
+    },
+    {
+      "department": "MH Home Care - Purchased",
+      "spend": 1800514.05,
+      "count": 1603
+    },
+    {
+      "department": "Primary Schools",
+      "spend": 1658029.97,
+      "count": 10
+    },
+    {
+      "department": "Human Resources",
+      "spend": 1559804.05,
+      "count": 230
+    },
+    {
+      "department": "Museums, Galleries & Heritage",
+      "spend": 1526397.09,
+      "count": 795
+    },
+    {
+      "department": "MHCLG Accommodation Funding",
+      "spend": 1485619.12,
+      "count": 26
+    },
+    {
+      "department": "SEN - Support to Mainstream",
+      "spend": 1405260.59,
+      "count": 445
+    },
+    {
+      "department": "Early Years Team",
+      "spend": 1394749.58,
+      "count": 258
+    },
+    {
+      "department": "Learning Disabilities - Homecare",
+      "spend": 1384331.17,
+      "count": 1445
+    },
+    {
+      "department": "Office of the Chief Executive",
+      "spend": 1376287.2,
+      "count": 308
+    },
+    {
+      "department": "Neighbourhood Support Service",
+      "spend": 1312521.0,
+      "count": 621
+    },
+    {
+      "department": "Respite OP",
+      "spend": 1302517.57,
+      "count": 831
+    },
+    {
+      "department": "Assistant Director's Office",
+      "spend": 1290819.61,
+      "count": 149
+    },
+    {
+      "department": "Highways Services",
+      "spend": 1279454.88,
+      "count": 13
+    },
+    {
+      "department": "Secondary Schools",
+      "spend": 1127572.6,
+      "count": 4
+    },
+    {
+      "department": "Business Grants(C-19)\u00a0Emergency Payments",
+      "spend": 1113679.44,
+      "count": 1
+    },
+    {
+      "department": "Special Schools",
+      "spend": 1110495.87,
+      "count": 2
+    },
+    {
+      "department": "Physical Disabilities - Nursing",
+      "spend": 1097141.63,
+      "count": 578
+    },
+    {
+      "department": "Clean Air Plan",
+      "spend": 1031774.0,
+      "count": 13
+    },
+    {
+      "department": "5-NR-Business Services",
+      "spend": 1024768.39,
+      "count": 80
+    },
+    {
+      "department": "Chief Executive's Office",
+      "spend": 1019131.16,
+      "count": 57
+    },
+    {
+      "department": "Skills House",
+      "spend": 983284.51,
+      "count": 84
+    },
+    {
+      "department": "Vehicle workshops",
+      "spend": 965340.73,
+      "count": 409
+    },
+    {
+      "department": "Comm'y Safety Fund",
+      "spend": 916284.11,
+      "count": 50
+    },
+    {
+      "department": "Multi Agency Support Team",
+      "spend": 872663.9,
+      "count": 3
+    },
+    {
+      "department": "Environmental Protection",
+      "spend": 834259.87,
+      "count": 336
+    },
+    {
+      "department": "Elm Tree Court",
+      "spend": 781626.79,
+      "count": 916
+    },
+    {
+      "department": "Education & Learning",
+      "spend": 719273.66,
+      "count": 31
+    },
+    {
+      "department": "Environment Climate Change Unit",
+      "spend": 703743.4,
+      "count": 301
+    },
+    {
+      "department": "NRTPF Childrens",
+      "spend": 684631.32,
+      "count": 259
+    },
+    {
+      "department": "Mental Health",
+      "spend": 666673.94,
+      "count": 55
+    },
+    {
+      "department": "Achievement Service",
+      "spend": 653037.48,
+      "count": 227
+    },
+    {
+      "department": "LD Individual Service Funds",
+      "spend": 635430.83,
+      "count": 393
+    },
+    {
+      "department": "Revenues, Benefits & Payroll",
+      "spend": 633510.32,
+      "count": 168
+    },
+    {
+      "department": "Gainshare",
+      "spend": 631227.21,
+      "count": 51
+    },
+    {
+      "department": "Uniformed Services",
+      "spend": 592418.77,
+      "count": 65
+    },
+    {
+      "department": "Community Fund Unit",
+      "spend": 575603.2,
+      "count": 120
+    },
+    {
+      "department": "Development Services",
+      "spend": 574423.61,
+      "count": 228
+    },
+    {
+      "department": "Trading standards",
+      "spend": 557237.0,
+      "count": 1
+    },
+    {
+      "department": "Community Funding Budget",
+      "spend": 550800.0,
+      "count": 71
+    },
+    {
+      "department": "NRTPF Adults",
+      "spend": 548350.83,
+      "count": 278
+    },
+    {
+      "department": "Dementia Commissioned Services",
+      "spend": 519834.2,
+      "count": 6
+    },
+    {
+      "department": "Archives & archaeology",
+      "spend": 514781.0,
+      "count": 1
+    },
+    {
+      "department": "Strategic Programmes",
+      "spend": 511919.38,
+      "count": 69
+    },
+    {
+      "department": "Living & Ageing Well",
+      "spend": 466563.47,
+      "count": 143
+    },
+    {
+      "department": "Housing Strategy & Access to Housing",
+      "spend": 458897.54,
+      "count": 339
+    },
+    {
+      "department": "SSC Grant Funded Programmes",
+      "spend": 449000.0,
+      "count": 14
+    },
+    {
+      "department": "Revenue contributions",
+      "spend": 417417.0,
+      "count": 1
+    },
+    {
+      "department": "AHL Policy Res & Dev",
+      "spend": 416964.88,
+      "count": 163
+    },
+    {
+      "department": "Strategic Investment in Culture",
+      "spend": 400391.0,
+      "count": 16
+    },
+    {
+      "department": "AD Integration and Transition",
+      "spend": 400000.0,
+      "count": 11
+    },
+    {
+      "department": "Travel Assistance",
+      "spend": 395090.25,
+      "count": 402
+    },
+    {
+      "department": "PD ISF\u2019s (Home Support)",
+      "spend": 386136.78,
+      "count": 439
+    },
+    {
+      "department": "5-NR\u2013Bradford CLLD",
+      "spend": 376605.91,
+      "count": 16
+    },
+    {
+      "department": "Other Short term Support",
+      "spend": 368549.52,
+      "count": 12
+    },
+    {
+      "department": "Transformation",
+      "spend": 365252.68,
+      "count": 34
+    },
+    {
+      "department": "Non Service",
+      "spend": 365000.0,
+      "count": 3
+    },
+    {
+      "department": "Air Quality \u2013 NO2 Exceedences",
+      "spend": 355000.0,
+      "count": 5
+    },
+    {
+      "department": "Car Parks",
+      "spend": 351000.0,
+      "count": 36
+    },
+    {
+      "department": "Health & Wellbeing",
+      "spend": 336004.86,
+      "count": 205
+    },
+    {
+      "department": "Mental Health - Homecare",
+      "spend": 327939.84,
+      "count": 305
+    },
+    {
+      "department": "Bradford Festival",
+      "spend": 324993.87,
+      "count": 39
+    },
+    {
+      "department": "Community Learning Aug 20-July 21",
+      "spend": 324992.24,
+      "count": 1
+    },
+    {
+      "department": "Development Management",
+      "spend": 318566.9,
+      "count": 49
+    },
+    {
+      "department": "Dementia Project",
+      "spend": 314082.97,
+      "count": 5
+    },
+    {
+      "department": "Secure",
+      "spend": 311588.0,
+      "count": 9
+    },
+    {
+      "department": "Rapid Rehousing Pathway",
+      "spend": 310332.0,
+      "count": 4
+    },
+    {
+      "department": "Extra care hsg a&scg staveley court",
+      "spend": 310305.37,
+      "count": 271
+    },
+    {
+      "department": "Keighley & Shipley",
+      "spend": 291687.44,
+      "count": 54
+    },
+    {
+      "department": "LD Direct Payments",
+      "spend": 291142.36,
+      "count": 63
+    },
+    {
+      "department": "5-NR\u2013Keighley CLLD",
+      "spend": 290294.24,
+      "count": 29
+    },
+    {
+      "department": "City Solicitor",
+      "spend": 285738.14,
+      "count": 93
+    },
+    {
+      "department": "LD Other Commissioned Services",
+      "spend": 280483.27,
+      "count": 29
+    },
+    {
+      "department": "NRPF Children's Services",
+      "spend": 253622.44,
+      "count": 96
+    },
+    {
+      "department": "Taxi Transport",
+      "spend": 248859.25,
+      "count": 169
+    },
+    {
+      "department": "Extra Care Housing \u2013 Fern House (Abbeyfi",
+      "spend": 245641.54,
+      "count": 239
+    },
+    {
+      "department": "NRPF Adult Services",
+      "spend": 224314.1,
+      "count": 117
+    },
+    {
+      "department": "Legal",
+      "spend": 218116.31,
+      "count": 25
+    },
+    {
+      "department": "Pupil Referral Units",
+      "spend": 216639.15,
+      "count": 1
+    },
+    {
+      "department": "St matthews (ce) primary",
+      "spend": 209136.67,
+      "count": 1
+    },
+    {
+      "department": "Hallcroft extra care",
+      "spend": 208194.62,
+      "count": 212
+    },
+    {
+      "department": "Tobacco programme/NRT Vouchers",
+      "spend": 199260.0,
+      "count": 16
+    },
+    {
+      "department": "Enablement Service - In House",
+      "spend": 189099.69,
+      "count": 230
+    },
+    {
+      "department": "District Wide Advocacy",
+      "spend": 187224.59,
+      "count": 9
+    },
+    {
+      "department": "OP Individual Service Funds",
+      "spend": 182524.25,
+      "count": 200
+    },
+    {
+      "department": "Safer Streets External Funding",
+      "spend": 181083.3,
+      "count": 13
+    },
+    {
+      "department": "AD Commissioning & Integration",
+      "spend": 180000.0,
+      "count": 4
+    },
+    {
+      "department": "Screen Strategies",
+      "spend": 175900.0,
+      "count": 7
+    },
+    {
+      "department": "14 -19 Service",
+      "spend": 173253.0,
+      "count": 4
+    },
+    {
+      "department": "Z Inactive Legal & Democratic",
+      "spend": 172239.15,
+      "count": 15
+    },
+    {
+      "department": "OP Direct Payments",
+      "spend": 171186.79,
+      "count": 60
+    },
+    {
+      "department": "Financial Accounting \uff06 Systems",
+      "spend": 167813.55,
+      "count": 5
+    },
+    {
+      "department": "Capital -Disabled Housing Facilities Grant 96 ACT-M-DFG",
+      "spend": 164400.66,
+      "count": 22
+    },
+    {
+      "department": "Into Employment (LD)",
+      "spend": 164136.0,
+      "count": 6
+    },
+    {
+      "department": "Housing Operations",
+      "spend": 158196.8,
+      "count": 173
+    },
+    {
+      "department": "PD Individual Service Funds",
+      "spend": 156311.06,
+      "count": 142
+    },
+    {
+      "department": "Safer \uff06Stronger Communities Project Team",
+      "spend": 150000.0,
+      "count": 1
+    },
+    {
+      "department": "Digital Systems Innovation and Support T",
+      "spend": 149845.67,
+      "count": 28
+    },
+    {
+      "department": "Learning Dis Indiv. Service Funds",
+      "spend": 141954.57,
+      "count": 82
+    },
+    {
+      "department": "School Improvement Grant",
+      "spend": 140441.0,
+      "count": 28
+    },
+    {
+      "department": "Older People Shipley - Vouchers",
+      "spend": 138248.88,
+      "count": 76
+    },
+    {
+      "department": "VCS Community Capacity H&WB",
+      "spend": 137000.0,
+      "count": 13
+    },
+    {
+      "department": "Localities",
+      "spend": 134698.38,
+      "count": 59
+    },
+    {
+      "department": "Integrated Commissioning",
+      "spend": 132000.0,
+      "count": 9
+    },
+    {
+      "department": "Customer Relations",
+      "spend": 131939.89,
+      "count": 23
+    },
+    {
+      "department": "Development Mngmt Services",
+      "spend": 130645.35,
+      "count": 30
+    },
+    {
+      "department": "Parish Councils",
+      "spend": 130181.0,
+      "count": 34
+    },
+    {
+      "department": "Respite",
+      "spend": 128828.19,
+      "count": 1
+    },
+    {
+      "department": "PD & SN Commissioning",
+      "spend": 126200.0,
+      "count": 3
+    },
+    {
+      "department": "Health & Safety",
+      "spend": 125538.0,
+      "count": 4
+    },
+    {
+      "department": "SD - Corporate Resources",
+      "spend": 124639.0,
+      "count": 11
+    },
+    {
+      "department": "Non weight bearing support",
+      "spend": 119954.2,
+      "count": 46
+    },
+    {
+      "department": "Joint Carers Commissioning",
+      "spend": 118966.0,
+      "count": 6
+    },
+    {
+      "department": "PRS Access Fund",
+      "spend": 118943.97,
+      "count": 119
+    },
+    {
+      "department": "Fleet & Transport Services",
+      "spend": 117018.97,
+      "count": 19
+    },
+    {
+      "department": "Children & Young People",
+      "spend": 116731.4,
+      "count": 10
+    },
+    {
+      "department": "LD Respite Care - Purchased",
+      "spend": 116389.63,
+      "count": 71
+    },
+    {
+      "department": "Extra Care Housing \u2013 The Beeches (Abbeyf",
+      "spend": 112972.68,
+      "count": 171
+    },
+    {
+      "department": "Internal audit",
+      "spend": 111944.65,
+      "count": 2
+    },
+    {
+      "department": "Strategic Programmes Team",
+      "spend": 109490.0,
+      "count": 13
+    },
+    {
+      "department": "PD Day Care - Purchased",
+      "spend": 107961.47,
+      "count": 132
+    },
+    {
+      "department": "Financial Inclusion Grants",
+      "spend": 100000.0,
+      "count": 1
+    },
+    {
+      "department": "Alhambra Theatre",
+      "spend": 99358.84,
+      "count": 2
+    },
+    {
+      "department": "Older People South - Vouchers",
+      "spend": 99172.75,
+      "count": 59
+    },
+    {
+      "department": "Primary School Catering",
+      "spend": 98839.71,
+      "count": 24
+    },
+    {
+      "department": "Education Safeguarding",
+      "spend": 97403.0,
+      "count": 21
+    },
+    {
+      "department": "Public Health Leadership",
+      "spend": 95046.86,
+      "count": 20
+    },
+    {
+      "department": "Older People Mental Health Team",
+      "spend": 90409.73,
+      "count": 69
+    },
+    {
+      "department": "Physical Disabilities - Day Care",
+      "spend": 89356.83,
+      "count": 121
+    },
+    {
+      "department": "Bereavement Services",
+      "spend": 88682.0,
+      "count": 37
+    },
+    {
+      "department": "Healthy Place",
+      "spend": 88080.62,
+      "count": 6
+    },
+    {
+      "department": "YS - Keighley",
+      "spend": 87480.0,
+      "count": 5
+    },
+    {
+      "department": "TDP Developer Accounts",
+      "spend": 85674.2,
+      "count": 7
+    },
+    {
+      "department": "Social Work Service",
+      "spend": 85499.79,
+      "count": 20
+    },
+    {
+      "department": "City centre events",
+      "spend": 82500.0,
+      "count": 7
+    },
+    {
+      "department": "Home Care South/West",
+      "spend": 81000.0,
+      "count": 1
+    },
+    {
+      "department": "Strategic Director-Children/Yng People",
+      "spend": 79536.9,
+      "count": 3
+    },
+    {
+      "department": "Send & Behaviour",
+      "spend": 78866.65,
+      "count": 14
+    },
+    {
+      "department": "Older People West - Vouchers",
+      "spend": 77201.78,
+      "count": 40
+    },
+    {
+      "department": "Non Weight Bearing",
+      "spend": 76066.43,
+      "count": 30
+    },
+    {
+      "department": "Private Rented Sector Scheme",
+      "spend": 75943.4,
+      "count": 99
+    },
+    {
+      "department": "Older People East - Vouchers",
+      "spend": 74203.32,
+      "count": 41
+    },
+    {
+      "department": "Workforce Development",
+      "spend": 72742.0,
+      "count": 1
+    },
+    {
+      "department": "Financial Accounting & Systems",
+      "spend": 72405.08,
+      "count": 11
+    },
+    {
+      "department": "Older People Keighley - Vouchers",
+      "spend": 60943.27,
+      "count": 36
+    },
+    {
+      "department": "Problem Solving Court",
+      "spend": 60864.0,
+      "count": 4
+    },
+    {
+      "department": "Environmental Delivery",
+      "spend": 59264.0,
+      "count": 97
+    },
+    {
+      "department": "Shipley area committee",
+      "spend": 58831.21,
+      "count": 26
+    },
+    {
+      "department": "OP Keighley Indiv. Service Funds",
+      "spend": 58326.41,
+      "count": 51
+    },
+    {
+      "department": "Domestic Violence/MARAC",
+      "spend": 57760.84,
+      "count": 5
+    },
+    {
+      "department": "Homes for Ukraine",
+      "spend": 54350.0,
+      "count": 28
+    },
+    {
+      "department": "LD Assessment & Support",
+      "spend": 52514.64,
+      "count": 3
+    },
+    {
+      "department": "PH Covid-19 response",
+      "spend": 51103.5,
+      "count": 12
+    },
+    {
+      "department": "Land Drainage",
+      "spend": 50000.0,
+      "count": 1
+    },
+    {
+      "department": "Dda work",
+      "spend": 50000.0,
+      "count": 2
+    },
+    {
+      "department": "Estates Operations",
+      "spend": 49085.6,
+      "count": 5
+    },
+    {
+      "department": "Physical Dis Indiv. Service Funds",
+      "spend": 48621.67,
+      "count": 34
+    },
+    {
+      "department": "Capital - CS0381 Fmr Odeon Building",
+      "spend": 48465.82,
+      "count": 1
+    },
+    {
+      "department": "Respite MH",
+      "spend": 47516.4,
+      "count": 24
+    },
+    {
+      "department": "Assistant Director Economy & Development",
+      "spend": 47078.55,
+      "count": 51
+    },
+    {
+      "department": "Bereavement services management",
+      "spend": 45160.0,
+      "count": 6
+    },
+    {
+      "department": "Strategic Director - Place",
+      "spend": 44778.9,
+      "count": 30
+    },
+    {
+      "department": "Countryside & Rights of Way",
+      "spend": 44768.75,
+      "count": 4
+    },
+    {
+      "department": "Connected Person",
+      "spend": 42279.75,
+      "count": 56
+    },
+    {
+      "department": "SGO\u2019s",
+      "spend": 41740.8,
+      "count": 13
+    },
+    {
+      "department": "Bradford South",
+      "spend": 41221.23,
+      "count": 19
+    },
+    {
+      "department": "Extra Care Housing \u2013 Out of Area",
+      "spend": 40808.24,
+      "count": 37
+    },
+    {
+      "department": "Towns Fund",
+      "spend": 39015.0,
+      "count": 2
+    },
+    {
+      "department": "Older People Keighley - Day Care",
+      "spend": 37063.66,
+      "count": 16
+    },
+    {
+      "department": "Bradford City of Film",
+      "spend": 36000.0,
+      "count": 4
+    },
+    {
+      "department": "Access & Inclusion",
+      "spend": 35689.71,
+      "count": 12
+    },
+    {
+      "department": "Parks & Recreational Spaces",
+      "spend": 34656.0,
+      "count": 1
+    },
+    {
+      "department": "Learning Disabilities - Vouchers",
+      "spend": 33297.14,
+      "count": 19
+    },
+    {
+      "department": "PD Direct Payments",
+      "spend": 33291.56,
+      "count": 11
+    },
+    {
+      "department": "Tourism",
+      "spend": 33158.73,
+      "count": 21
+    },
+    {
+      "department": "City Ctr-Delivery",
+      "spend": 31548.56,
+      "count": 8
+    },
+    {
+      "department": "Respite PD",
+      "spend": 31219.66,
+      "count": 9
+    },
+    {
+      "department": "Theatres & Public Halls",
+      "spend": 30929.26,
+      "count": 10
+    },
+    {
+      "department": "Director's Office",
+      "spend": 30511.42,
+      "count": 3
+    },
+    {
+      "department": "Music & Arts",
+      "spend": 30000.0,
+      "count": 3
+    },
+    {
+      "department": "children's Social Care",
+      "spend": 29755.95,
+      "count": 16
+    },
+    {
+      "department": "OP Day Care - Purchased",
+      "spend": 29050.16,
+      "count": 21
+    },
+    {
+      "department": "Cultural Policy & Events",
+      "spend": 27788.0,
+      "count": 22
+    },
+    {
+      "department": "Keighly area committee",
+      "spend": 27000.0,
+      "count": 39
+    },
+    {
+      "department": "Towns Fund Shipley",
+      "spend": 27000.0,
+      "count": 1
+    },
+    {
+      "department": "Ex/CHsg-Rowanberries housing -ascg",
+      "spend": 26950.75,
+      "count": 24
+    },
+    {
+      "department": "Building Services - General Maintenance",
+      "spend": 26680.6,
+      "count": 1
+    },
+    {
+      "department": "Drugs and Alcohol Purchased Care",
+      "spend": 26650.0,
+      "count": 4
+    },
+    {
+      "department": "Mainstream",
+      "spend": 26618.41,
+      "count": 42
+    },
+    {
+      "department": "Levys",
+      "spend": 26485.46,
+      "count": 7
+    },
+    {
+      "department": "Projects",
+      "spend": 26411.25,
+      "count": 5
+    },
+    {
+      "department": "MH Individual Service Funds",
+      "spend": 26172.17,
+      "count": 27
+    },
+    {
+      "department": "Living Well Service",
+      "spend": 26005.0,
+      "count": 6
+    },
+    {
+      "department": "MH Shared Lives Purchased",
+      "spend": 25808.04,
+      "count": 51
+    },
+    {
+      "department": "Post 16 Transport",
+      "spend": 24707.66,
+      "count": 18
+    },
+    {
+      "department": "Area Co-ordinators Office",
+      "spend": 24552.59,
+      "count": 20
+    },
+    {
+      "department": "OP Residential Care - In House",
+      "spend": 24165.81,
+      "count": 20
+    },
+    {
+      "department": "Central Library Services",
+      "spend": 23484.66,
+      "count": 38
+    },
+    {
+      "department": "Economic Delivery",
+      "spend": 23234.0,
+      "count": 15
+    },
+    {
+      "department": "Coroners Service",
+      "spend": 23164.01,
+      "count": 3
+    },
+    {
+      "department": "Wheeled bins",
+      "spend": 22767.0,
+      "count": 23
+    },
+    {
+      "department": "Housing First",
+      "spend": 22154.46,
+      "count": 15
+    },
+    {
+      "department": "Business Support",
+      "spend": 22125.0,
+      "count": 2
+    },
+    {
+      "department": "MH Day Care - Purchased",
+      "spend": 21497.11,
+      "count": 10
+    },
+    {
+      "department": "Council Wardens",
+      "spend": 21154.0,
+      "count": 3
+    },
+    {
+      "department": "Director Human Resources",
+      "spend": 20700.0,
+      "count": 1
+    },
+    {
+      "department": "Bradford East",
+      "spend": 20267.31,
+      "count": 11
+    },
+    {
+      "department": "Hm coroner's office",
+      "spend": 19707.63,
+      "count": 15
+    },
+    {
+      "department": "MH Shared Lives Out of Area",
+      "spend": 19401.56,
+      "count": 36
+    },
+    {
+      "department": "CCA Finance",
+      "spend": 19046.0,
+      "count": 12
+    },
+    {
+      "department": "Area Operarations",
+      "spend": 18725.0,
+      "count": 10
+    },
+    {
+      "department": "AD Sports and Culture",
+      "spend": 18200.0,
+      "count": 10
+    },
+    {
+      "department": "Bradford West",
+      "spend": 17939.25,
+      "count": 15
+    },
+    {
+      "department": "Landscape Design & Conservation",
+      "spend": 17900.0,
+      "count": 2
+    },
+    {
+      "department": "Safer & Stronger Communities Project",
+      "spend": 17260.0,
+      "count": 1
+    },
+    {
+      "department": "Member Support",
+      "spend": 16960.0,
+      "count": 16
+    },
+    {
+      "department": "Youth Service",
+      "spend": 16875.0,
+      "count": 1
+    },
+    {
+      "department": "4-NR-TD&P",
+      "spend": 16523.0,
+      "count": 1
+    },
+    {
+      "department": "Community Enterprise",
+      "spend": 16400.0,
+      "count": 2
+    },
+    {
+      "department": "Adult Skills",
+      "spend": 15046.0,
+      "count": 12
+    },
+    {
+      "department": "Estate Management",
+      "spend": 14895.7,
+      "count": 9
+    },
+    {
+      "department": "OP East Indiv. Service Funds",
+      "spend": 14849.52,
+      "count": 13
+    },
+    {
+      "department": "Programmes Delivery",
+      "spend": 13277.0,
+      "count": 1
+    },
+    {
+      "department": "Premium Income",
+      "spend": 13154.6,
+      "count": 2
+    },
+    {
+      "department": "Capital - CS0323 Flood Risk Management",
+      "spend": 12960.0,
+      "count": 6
+    },
+    {
+      "department": "Major Events",
+      "spend": 12450.0,
+      "count": 2
+    },
+    {
+      "department": "OP Shipley Indiv. Service Funds",
+      "spend": 12382.0,
+      "count": 14
+    },
+    {
+      "department": "Claire Shoesmith",
+      "spend": 12312.0,
+      "count": 3
+    },
+    {
+      "department": "Deputy Director",
+      "spend": 12222.86,
+      "count": 5
+    },
+    {
+      "department": "Reader promotion schemes",
+      "spend": 12112.54,
+      "count": 18
+    },
+    {
+      "department": "OP West Indiv. Service Funds",
+      "spend": 11612.96,
+      "count": 11
+    },
+    {
+      "department": "AD Neigh & Cust Serv",
+      "spend": 11200.0,
+      "count": 2
+    },
+    {
+      "department": "Traded services",
+      "spend": 10907.35,
+      "count": 12
+    },
+    {
+      "department": "SEN Assessments",
+      "spend": 10851.12,
+      "count": 7
+    },
+    {
+      "department": "Management",
+      "spend": 10443.38,
+      "count": 10
+    },
+    {
+      "department": "Adrian Tolan",
+      "spend": 10000.0,
+      "count": 1
+    },
+    {
+      "department": "Shared Lives Permanent Placements",
+      "spend": 9958.17,
+      "count": 15
+    },
+    {
+      "department": "Not Used",
+      "spend": 9600.0,
+      "count": 3
+    },
+    {
+      "department": "Mental Health - Vouchers",
+      "spend": 9558.28,
+      "count": 4
+    },
+    {
+      "department": "External Sports & Leisure",
+      "spend": 9460.0,
+      "count": 8
+    },
+    {
+      "department": "Environmental Health PH",
+      "spend": 9090.0,
+      "count": 1
+    },
+    {
+      "department": "Keighley Town Council",
+      "spend": 9064.0,
+      "count": 2
+    },
+    {
+      "department": "MH Direct Payments",
+      "spend": 9052.9,
+      "count": 3
+    },
+    {
+      "department": "Capital-Bfd City Ctre Townscape Herit",
+      "spend": 8974.01,
+      "count": 1
+    },
+    {
+      "department": "Council Housing",
+      "spend": 8500.0,
+      "count": 2
+    },
+    {
+      "department": "Bradford South Area Committee",
+      "spend": 8400.0,
+      "count": 14
+    },
+    {
+      "department": "PH COVID Grants",
+      "spend": 8000.0,
+      "count": 2
+    },
+    {
+      "department": "IT Applications",
+      "spend": 7736.72,
+      "count": 1
+    },
+    {
+      "department": "Capital -Development of Equity Loans H&S Assistance",
+      "spend": 7700.0,
+      "count": 2
+    },
+    {
+      "department": "Strategic Support",
+      "spend": 7674.0,
+      "count": 1
+    },
+    {
+      "department": "Physical Disabilities - Vouchers",
+      "spend": 7642.9,
+      "count": 4
+    },
+    {
+      "department": "Assessment & Support",
+      "spend": 7500.0,
+      "count": 7
+    },
+    {
+      "department": "Prevention & Early Help",
+      "spend": 7130.57,
+      "count": 10
+    },
+    {
+      "department": "OP West ISF (HS)",
+      "spend": 6640.34,
+      "count": 2
+    },
+    {
+      "department": "Financial Support",
+      "spend": 6402.08,
+      "count": 5
+    },
+    {
+      "department": "Outdoor Education Centres",
+      "spend": 6380.34,
+      "count": 6
+    },
+    {
+      "department": "Central Admin for Area Action",
+      "spend": 5973.39,
+      "count": 2
+    },
+    {
+      "department": "Building Cleaning",
+      "spend": 5823.5,
+      "count": 1
+    },
+    {
+      "department": "Innovate Central Covid Team",
+      "spend": 5818.3,
+      "count": 7
+    },
+    {
+      "department": "Bradford East Area Committee",
+      "spend": 5700.0,
+      "count": 7
+    },
+    {
+      "department": "Elections",
+      "spend": 5598.2,
+      "count": 1
+    },
+    {
+      "department": "Technical management",
+      "spend": 5543.75,
+      "count": 2
+    },
+    {
+      "department": "OP Other Commissioned Services",
+      "spend": 5500.0,
+      "count": 5
+    },
+    {
+      "department": "Funding & Performance",
+      "spend": 5179.0,
+      "count": 1
+    },
+    {
+      "department": "Equipment - BACES - Pooled",
+      "spend": 5174.57,
+      "count": 5
+    },
+    {
+      "department": "Bingley Community Council",
+      "spend": 5120.0,
+      "count": 2
+    },
+    {
+      "department": "Education Psychology",
+      "spend": 5000.0,
+      "count": 10
+    },
+    {
+      "department": "Externally Funded Programmes",
+      "spend": 4803.75,
+      "count": 1
+    },
+    {
+      "department": "Older People Shipley - Day Care",
+      "spend": 4767.22,
+      "count": 2
+    },
+    {
+      "department": "Safeguarding",
+      "spend": 4714.49,
+      "count": 3
+    },
+    {
+      "department": "OP East ISF (HS)",
+      "spend": 4602.08,
+      "count": 8
+    },
+    {
+      "department": "Section 106",
+      "spend": 4440.0,
+      "count": 1
+    },
+    {
+      "department": "Ilkley pc",
+      "spend": 4310.0,
+      "count": 2
+    },
+    {
+      "department": "Early Years Professional Development Gra",
+      "spend": 4240.0,
+      "count": 5
+    },
+    {
+      "department": "FM Catering & Office Services",
+      "spend": 4235.0,
+      "count": 1
+    },
+    {
+      "department": "Flood defence",
+      "spend": 4102.67,
+      "count": 1
+    },
+    {
+      "department": "Burials",
+      "spend": 4051.73,
+      "count": 2
+    },
+    {
+      "department": "Mental Health - Day Care",
+      "spend": 4012.36,
+      "count": 3
+    },
+    {
+      "department": "Disabilities - Assessment & Support",
+      "spend": 3752.15,
+      "count": 4
+    },
+    {
+      "department": "Baildon Parish Council",
+      "spend": 3748.0,
+      "count": 2
+    },
+    {
+      "department": "Interfaith Education Service",
+      "spend": 3746.25,
+      "count": 4
+    },
+    {
+      "department": "Music Service",
+      "spend": 3634.0,
+      "count": 1
+    },
+    {
+      "department": "Children 0-4 yr old",
+      "spend": 3600.0,
+      "count": 4
+    },
+    {
+      "department": "Homeless Prevention Fund",
+      "spend": 3500.0,
+      "count": 1
+    },
+    {
+      "department": "Parks - Technical",
+      "spend": 3369.19,
+      "count": 3
+    },
+    {
+      "department": "LD Shared Lives - Out of Area",
+      "spend": 3220.38,
+      "count": 1
+    },
+    {
+      "department": "PFI / BSF",
+      "spend": 3202.7,
+      "count": 1
+    },
+    {
+      "department": "HR Miscellaneous Income",
+      "spend": 3127.02,
+      "count": 3
+    },
+    {
+      "department": "Commercial & Contracts",
+      "spend": 3000.0,
+      "count": 4
+    },
+    {
+      "department": "AD Neighbourhood & Customer Services",
+      "spend": 3000.0,
+      "count": 5
+    },
+    {
+      "department": "Family Hubs",
+      "spend": 3000.0,
+      "count": 3
+    },
+    {
+      "department": "LD Management",
+      "spend": 3000.0,
+      "count": 1
+    },
+    {
+      "department": "Parks - Depots",
+      "spend": 2900.0,
+      "count": 3
+    },
+    {
+      "department": "OP & PD Localities \u2013 Assessment & Suppor",
+      "spend": 2896.22,
+      "count": 3
+    },
+    {
+      "department": "Shipley Town Council",
+      "spend": 2798.0,
+      "count": 2
+    },
+    {
+      "department": "Residential & Day Services",
+      "spend": 2426.38,
+      "count": 2
+    },
+    {
+      "department": "Theatres Other",
+      "spend": 2250.0,
+      "count": 1
+    },
+    {
+      "department": "Gains & Losses on Dispsl of Fixed Assets",
+      "spend": 2208.0,
+      "count": 1
+    },
+    {
+      "department": "West Yorkshire Pension Fund",
+      "spend": 2201.64,
+      "count": 2
+    },
+    {
+      "department": "Adoption Services",
+      "spend": 2059.1,
+      "count": 2
+    },
+    {
+      "department": "Bradford West Area Committee",
+      "spend": 2000.0,
+      "count": 1
+    },
+    {
+      "department": "Commissioning & Contracts",
+      "spend": 1984.92,
+      "count": 3
+    },
+    {
+      "department": "External service provision-East bfd",
+      "spend": 1961.6,
+      "count": 1
+    },
+    {
+      "department": "Keelham Primary",
+      "spend": 1889.17,
+      "count": 1
+    },
+    {
+      "department": "Food safety",
+      "spend": 1883.0,
+      "count": 1
+    },
+    {
+      "department": "Older People Keighley - Direct Payments",
+      "spend": 1854.36,
+      "count": 1
+    },
+    {
+      "department": "Housing Access, Strategy & Homelessness",
+      "spend": 1823.8,
+      "count": 2
+    },
+    {
+      "department": "Burley Parish Council",
+      "spend": 1792.0,
+      "count": 2
+    },
+    {
+      "department": "Home Care Keighley",
+      "spend": 1782.0,
+      "count": 1
+    },
+    {
+      "department": "Corporate Debt",
+      "spend": 1664.69,
+      "count": 1
+    },
+    {
+      "department": "Physical Disabilities - Direct Payments",
+      "spend": 1564.99,
+      "count": 1
+    },
+    {
+      "department": "Burials & receiverships",
+      "spend": 1499.0,
+      "count": 1
+    },
+    {
+      "department": "Clayton",
+      "spend": 1494.0,
+      "count": 2
+    },
+    {
+      "department": "Council Run Libraries",
+      "spend": 1446.0,
+      "count": 2
+    },
+    {
+      "department": "PAYP Bradford South",
+      "spend": 1387.88,
+      "count": 1
+    },
+    {
+      "department": "Bradford Dragonboat Festival",
+      "spend": 1278.45,
+      "count": 1
+    },
+    {
+      "department": "Z Inactive Travel Assistance",
+      "spend": 1190.0,
+      "count": 2
+    },
+    {
+      "department": "SEND Transformation & Compliance",
+      "spend": 1171.42,
+      "count": 1
+    },
+    {
+      "department": "Shared Lives/Time Out",
+      "spend": 1099.92,
+      "count": 1
+    },
+    {
+      "department": "Building support services",
+      "spend": 1079.0,
+      "count": 1
+    },
+    {
+      "department": "Wilsden",
+      "spend": 1048.0,
+      "count": 2
+    },
+    {
+      "department": "Trade Waste",
+      "spend": 1023.88,
+      "count": 1
+    },
+    {
+      "department": "B.C. Regulatory - chargeable",
+      "spend": 1004.51,
+      "count": 1
+    },
+    {
+      "department": "Holding Accounts",
+      "spend": 928.57,
+      "count": 1
+    },
+    {
+      "department": "Housing Development",
+      "spend": 900.0,
+      "count": 1
+    },
+    {
+      "department": "Swimming Development",
+      "spend": 833.6,
+      "count": 1
+    },
+    {
+      "department": "Extra care hsg. abbeyfield-ascg",
+      "spend": 820.4,
+      "count": 1
+    },
+    {
+      "department": "Res & Day Care Management",
+      "spend": 800.0,
+      "count": 1
+    },
+    {
+      "department": "Household Waste Sites",
+      "spend": 750.0,
+      "count": 1
+    },
+    {
+      "department": "Hothfield street junior",
+      "spend": 742.6,
+      "count": 1
+    },
+    {
+      "department": "Miscellaneous accounts",
+      "spend": 731.16,
+      "count": 1
+    },
+    {
+      "department": "SEN Integrated Assessment",
+      "spend": 700.0,
+      "count": 1
+    },
+    {
+      "department": "Victoria hall keighley",
+      "spend": 697.99,
+      "count": 1
+    },
+    {
+      "department": "Danny McLellan",
+      "spend": 685.5,
+      "count": 1
+    },
+    {
+      "department": "Receiverships inc FP Sys Items",
+      "spend": 675.0,
+      "count": 1
+    },
+    {
+      "department": "HT22 Street Lighting - engineers recharg",
+      "spend": 608.32,
+      "count": 1
+    },
+    {
+      "department": "O/t's services to adults",
+      "spend": 580.0,
+      "count": 1
+    },
+    {
+      "department": "Information services",
+      "spend": 565.9,
+      "count": 1
+    },
+    {
+      "department": "Local studies",
+      "spend": 545.17,
+      "count": 1
+    },
+    {
+      "department": "Register Office",
+      "spend": 540.0,
+      "count": 1
+    },
+    {
+      "department": "Shared Lives",
+      "spend": 512.33,
+      "count": 1
+    },
+    {
+      "department": "OP Shipley ISF (HS)",
+      "spend": 509.25,
+      "count": 1
+    },
+    {
+      "department": "Civic Affairs",
+      "spend": 500.0,
+      "count": 1
+    },
+    {
+      "department": "Keighley Fitness Centre",
+      "spend": 500.0,
+      "count": 1
+    },
+    {
+      "department": "Transitions Team",
+      "spend": 500.0,
+      "count": 1
+    },
+    {
+      "department": "AD Operations",
+      "spend": 500.0,
+      "count": 1
+    },
+    {
+      "department": "OP Small Budget Keighley",
+      "spend": 500.0,
+      "count": 1
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2020/21": 478702137.73,
+      "2021/22": 639766256.15,
+      "2022/23": 774563727.77,
+      "2023/24": 990137007.54,
+      "2024/25": 1052408511.63,
+      "2025/26": 1015230579.73,
+      "2026/27": 90433832.42
+    },
+    "transactions_by_year": {
+      "2020/21": 101739,
+      "2021/22": 120564,
+      "2022/23": 129230,
+      "2023/24": 135473,
+      "2024/25": 144395,
+      "2025/26": 130508,
+      "2026/27": 12674
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 93.2,
+    "total_records": 774583
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "_meta": {
+    "council": "bradford",
+    "source_index": "https://www.bradford.gov.uk/open-data/our-datasets/expenditure-greater-than-500-in-value/",
+    "notes": [
+      "Keys are CALENDAR windows and MUST name the same year as the URL. A prior off-by-one keyed Q1 (Jan-Mar) as year y while fetching y-1, so Jan-Mar 2024 and Jan-Mar 2025 were never downloaded.",
+      "Bradford mislabels some files: 'Data 07.2025 to 07.2025.csv' actually contains Jul, Aug AND Sep 2025.",
+      "Some CSV exports ship a blank supplier-name column; the XLSX of the same period is intact. Those entries use ext=xlsx.",
+      "Entries with skip=true are known-bad upstream duplicates and are not downloaded."
+    ]
+  },
+  "2020-2021_full": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Payments%20Data%202020-2021%20FINAL.csv",
+    "ext": "csv"
+  },
+  "2021-04_to_2021-06": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2004.2021%20to%2006.2021.csv",
+    "ext": "csv"
+  },
+  "2021-07_to_2021-09": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2007.2021%20to%2009.2021.csv",
+    "ext": "csv"
+  },
+  "2021-10_to_2021-12": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2010.2021%20to%2012.2021.csv",
+    "ext": "csv"
+  },
+  "2022-01_to_2022-03": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2001.2022%20to%2003.2022.csv",
+    "ext": "csv"
+  },
+  "2022-04_to_2022-06": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2004.2022%20to%2006.2022.csv",
+    "ext": "csv"
+  },
+  "2022-07_to_2022-09": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2007.2022%20to%2009.2022.csv",
+    "ext": "csv"
+  },
+  "2022-10_to_2022-12": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2010.2022%20to%2012.2022.csv",
+    "ext": "csv"
+  },
+  "2023-01_to_2023-03": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2001.2023%20to%2003.2023.csv",
+    "ext": "csv"
+  },
+  "2023-04_to_2023-06": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2004.2023%20to%2006.2023.csv",
+    "ext": "csv"
+  },
+  "2023-07_to_2023-09": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2007.2023%20to%2009.2023.csv",
+    "ext": "csv"
+  },
+  "2023-10_to_2023-12": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2010.2023%20to%2012.2023.csv",
+    "ext": "csv"
+  },
+  "2024-01_to_2024-03": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2001.2024%20to%2003.2024.csv",
+    "ext": "csv"
+  },
+  "2024-04_to_2024-06": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2004.2024%20to%2006.2024.csv",
+    "ext": "csv"
+  },
+  "2024-07_to_2024-09": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2007.2024%20to%2009.2024.csv",
+    "ext": "csv"
+  },
+  "2024-10_to_2024-12": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2010.2024%20to%2012.2024.csv",
+    "ext": "csv"
+  },
+  "2025-01_to_2025-03": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2001.2025%20to%2003.2025.csv",
+    "ext": "csv"
+  },
+  "2025-04": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2004.2025%20to%2004.2025.xlsx",
+    "ext": "xlsx",
+    "note": "CSV export has a blank supplier-name column; XLSX is intact"
+  },
+  "2025-05": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2005.2025%20to%2005.2025.xlsx",
+    "ext": "xlsx",
+    "note": "CSV export has a blank supplier-name column; XLSX is intact"
+  },
+  "2025-06": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2006.2025%20to%2006.2025.csv",
+    "ext": "csv"
+  },
+  "2025-07": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2007.2025%20to%2007.2025.csv",
+    "ext": "csv",
+    "note": "mislabelled upstream: actually contains Jul, Aug and Sep 2025"
+  },
+  "2025-08": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2008.2025%20to%2008.2025.csv",
+    "ext": "csv",
+    "skip": true,
+    "note": "same Jul-Sep window as 2025-07 but with a blank supplier-name column; superseded"
+  },
+  "2025-09": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2009.2025%20to%2009.2025.csv",
+    "ext": "csv"
+  },
+  "2025-10": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2010.2025%20to%2010.2025.csv",
+    "ext": "csv"
+  },
+  "2025-11": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2011.2025%20to%2011.2025.csv",
+    "ext": "csv"
+  },
+  "2025-12": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2012.2025%20to%2012.2025.csv",
+    "ext": "csv"
+  },
+  "2026-01": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2001.2026%20to%2001.2026.csv",
+    "ext": "csv"
+  },
+  "2026-02": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2002.2026%20to%2002.2026.xlsx",
+    "ext": "xlsx",
+    "note": "CSV export has a blank supplier-name column; XLSX is intact"
+  },
+  "2026-03": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2003.2026%20to%2003.2026.csv",
+    "ext": "csv"
+  },
+  "2026-04": {
+    "url": "https://datahub.bradford.gov.uk/opendata/500payments/Data%2004.2026%20to%2004.2026.csv",
+    "ext": "csv"
+  }
+}

@@ -1,0 +1,73 @@
+{
+ "generated": "2026-06-24",
+ "source": "Nottinghamshire CC 2026/27 budget (NEWS-SOURCED secondary; Notts uses CMIS not ModernGov, primary pull pending) + the AI DOGE directorate engine.",
+ "council_id": "nottinghamshire_cc",
+ "council_type": "county",
+ "financial_year": "2026/27",
+ "net_revenue_budget": 880007000,
+ "directorates": [
+  {
+   "id": "asch",
+   "name": "Adult Social Care and Health",
+   "budget_2026_27": null,
+   "savings_identified": 21300000,
+   "_note": "News-sourced savings by 2028/29; ASC demand +10%."
+  },
+  {
+   "id": "children_families",
+   "name": "Children and Families",
+   "budget_2026_27": null,
+   "savings_identified": 17500000,
+   "_note": "News-sourced; includes SEND home-to-school transport ~2.75m."
+  },
+  {
+   "id": "place",
+   "name": "Place",
+   "budget_2026_27": null,
+   "savings_identified": 2700000,
+   "_note": "Estimate to balance the news-sourced 44.2m total."
+  },
+  {
+   "id": "chief_executives",
+   "name": "Chief Executive's",
+   "budget_2026_27": null,
+   "savings_identified": 2700000,
+   "_note": "Estimate; Communications, Finance, IT, HR, Legal."
+  }
+ ],
+ "cross_cutting": {
+  "combined_low": 25120000,
+  "combined_high": 44200000,
+  "as_pct_of_budget_low": 2.9,
+  "as_pct_of_budget_high": 5.0,
+  "_note": "News-sourced ~44.2m of mitigations by 2028/29 (ASC 21.3m, Children's 17.5m); engine risk-adjusts to ~25.12m EV."
+ },
+ "mtfs_gap_cumulative": 0,
+ "mtfs_period": "2026/27 balanced; surpluses 27/28 (14.3m) + 28/29 (17.4m) post-settlement (news-sourced)",
+ "reserves": {
+  "total": 36000000,
+  "general_reserves_unallocated": 36000000,
+  "_note": "News-sourced ~36m unallocated; no reserves draw in 2026/27; 2m set aside for LGR."
+ },
+ "risks": [
+  {
+   "risk": "DSG High Needs deficit ~GBP 30.3m at March 2026; the DfE is writing off 90% of eligible DSG deficits to March 2026, leaving the council liable for a residual ~GBP 17.8m by March 2028 when the statutory override ends. No Safety Valve agreement.",
+   "severity": "high",
+   "rating": "High"
+  },
+  {
+   "risk": "Adult Social Care demand +10% (about GBP 68.3m of growth into ASC); the news-sourced GBP 21.3m ASC savings carry delivery risk against that demand.",
+   "severity": "high",
+   "rating": "High"
+  },
+  {
+   "risk": "Data confidence: the 2026/27 budget figures here are NEWS-SOURCED (Notts uses a CMIS system with no curl path), pending a primary-source pull. The roster is primary-verified.",
+   "severity": "medium",
+   "rating": "Medium"
+  }
+ ],
+ "council_tax_band_d": 1970.13,
+ "council_tax_increase_pct": 3.99,
+ "_data_quality": "Budget figures are NEWS-SOURCED (West Bridgford Wire / ITV), not the primary report. The roster is primary-verified. Confirm against the primary report (CMIS, Council 26 Feb 2026) before chamber-grade use.",
+ "_provenance": "Refreshed 24 Jun 2026 from NEWS-SOURCED figures (secondary; Notts CMIS, primary pull pending via headless browser). Supersedes the prior auto-generated 2024/25 directorate_analysis. Read directly by the Council Intel generator; data_sources flags off."
+}

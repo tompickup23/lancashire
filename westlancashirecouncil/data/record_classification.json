@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "council_id": "west_lancashire",
+  "updated": "2026-04-19",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "West Lancashire Borough Council is a Lancashire district authority publishing a single paid-invoice feed. No contracts/PO feed, no REDACTED Care-Act rows, no accrual ledger exposure at district scale \u2014 every record is procurement_paid by default.",
+  "rules": [
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^TAWD VALLEY DEVELOPMENTS LTD$"
+      },
+      "reason": "WLBC wholly-owned development company (Companies House 11055437, established 2017 for council housing/regeneration schemes). \u00a321M / 125 rows. Equivalent to Blackpool Housing Company. Not third-party procurement."
+    }
+  ],
+  "supplier_aliases": "../shared/lancashire_district_aliases.json"
+}

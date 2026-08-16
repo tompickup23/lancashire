@@ -1,0 +1,506 @@
+{
+  "summary": {
+    "total_spend": 2436493121.89,
+    "transaction_count": 283402,
+    "unique_suppliers": 5988,
+    "avg_transaction": 8597.3,
+    "median_transaction": 900.28,
+    "date_range": {
+      "min": "2022-04-01",
+      "max": "2025-12-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "REDACTED PERSONAL DATA",
+        "total": 92763254.29,
+        "transactions": 72481,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "AURA (NCLE) PROJECT COMPANY LTD",
+        "total": 62386434.88,
+        "transactions": 504,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SUEZ RECYCLING & RECOVERY HOLDINGS UK",
+        "total": 59365844.89,
+        "transactions": 210,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "A&J KEITH LTD",
+        "total": 45508086.84,
+        "transactions": 1349,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EDF ENERGY",
+        "total": 40738894.92,
+        "transactions": 141,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NOTCA",
+        "total": 40281945.74,
+        "transactions": 29,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NEWCASTLEUPONTYNE HOSPITALTRUST",
+        "total": 36372880.86,
+        "transactions": 325,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EQUANS REGENERATION LTD",
+        "total": 35168764.9,
+        "transactions": 869,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NEW BEGINNINGS (N.E.) LTD",
+        "total": 33621795.76,
+        "transactions": 290,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PROSPER LEARNING TRUST",
+        "total": 27433159.71,
+        "transactions": 256,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MISCELLANEOUS PAYMENTS BACS",
+        "total": 27125834.92,
+        "transactions": 10753,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ESH CONSTRUCTION",
+        "total": 27099747.63,
+        "transactions": 81,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORTHUMBERLAND TYNE&WEAR NHS TRUST",
+        "total": 25220326.37,
+        "transactions": 114,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TAY VALLEY LIGHTING",
+        "total": 25156634.61,
+        "transactions": 45,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FOCUS EDUCATION (NEWCASTLE) LTD",
+        "total": 24685091.13,
+        "transactions": 152,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CORONA ENERGY",
+        "total": 24280045.68,
+        "transactions": 104,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COQUET TRUST",
+        "total": 24076812.69,
+        "transactions": 392,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DISABILITY NORTH PAYROLL",
+        "total": 23861644.59,
+        "transactions": 379,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "AURA (NEWCASTLE) PROJECT COMPANY",
+        "total": 23317274.81,
+        "transactions": 154,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NEW PROSPECTS ASSOCIATION LTD",
+        "total": 22622591.93,
+        "transactions": 319,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.296,
+    "total_unique_suppliers": 5988,
+    "single_transaction_suppliers": 1731
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 16892,
+      "potential_value": 51541230.14,
+      "items": [
+        {
+          "supplier": "NEWCASTLEUPONTYNE HOSPITALTRUST",
+          "amount": 293614.9,
+          "date": "2023-09-27",
+          "occurrences": 2,
+          "potential_overpayment": 293614.9
+        },
+        {
+          "supplier": "PROTECTIVE CARE GROUP",
+          "amount": 93676.12,
+          "date": "2023-12-11",
+          "occurrences": 4,
+          "potential_overpayment": 281028.36
+        },
+        {
+          "supplier": "SUEZ RECYCLING & RECOVERY HOLDINGS UK",
+          "amount": 277692.87,
+          "date": "2024-07-12",
+          "occurrences": 2,
+          "potential_overpayment": 277692.87
+        },
+        {
+          "supplier": "LOOKERS VAN CENTRE NEWCASTLE",
+          "amount": 30366.62,
+          "date": "2024-09-11",
+          "occurrences": 10,
+          "potential_overpayment": 273299.58
+        },
+        {
+          "supplier": "SUEZ RECYCLING & RECOVERY HOLDINGS UK",
+          "amount": 265666.8,
+          "date": "2023-09-11",
+          "occurrences": 2,
+          "potential_overpayment": 265666.8
+        },
+        {
+          "supplier": "DIMENSIONS",
+          "amount": 264791.32,
+          "date": "2025-03-18",
+          "occurrences": 2,
+          "potential_overpayment": 264791.32
+        },
+        {
+          "supplier": "MOTUS GROUP (UK) LTD",
+          "amount": 84811.0,
+          "date": "2024-01-31",
+          "occurrences": 4,
+          "potential_overpayment": 254433.0
+        },
+        {
+          "supplier": "LOOKERS FORD SHEFFIELD",
+          "amount": 71424.55,
+          "date": "2025-09-26",
+          "occurrences": 4,
+          "potential_overpayment": 214273.65
+        },
+        {
+          "supplier": "MOTUS GROUP (UK) LTD",
+          "amount": 25271.83,
+          "date": "2023-03-31",
+          "occurrences": 9,
+          "potential_overpayment": 202174.64
+        },
+        {
+          "supplier": "ENVIRONMENT AGENCY",
+          "amount": 63843.44,
+          "date": "2025-04-03",
+          "occurrences": 4,
+          "potential_overpayment": 191530.32
+        },
+        {
+          "supplier": "MOTUS GROUP (UK) LTD",
+          "amount": 72976.95,
+          "date": "2022-12-14",
+          "occurrences": 3,
+          "potential_overpayment": 145953.9
+        },
+        {
+          "supplier": "MOTUS GROUP (UK) LTD",
+          "amount": 69761.85,
+          "date": "2022-05-30",
+          "occurrences": 3,
+          "potential_overpayment": 139523.7
+        },
+        {
+          "supplier": "BELLE VUE HOUSE",
+          "amount": 133944.77,
+          "date": "2024-01-26",
+          "occurrences": 2,
+          "potential_overpayment": 133944.77
+        },
+        {
+          "supplier": "HAKO MACHINES LTD",
+          "amount": 128106.3,
+          "date": "2025-12-12",
+          "occurrences": 2,
+          "potential_overpayment": 128106.3
+        },
+        {
+          "supplier": "LOOKERS NISSAN GATESHEAD",
+          "amount": 20246.0,
+          "date": "2024-04-03",
+          "occurrences": 7,
+          "potential_overpayment": 121476.0
+        },
+        {
+          "supplier": "LITTLE BEARS CHAPEL HOUSE",
+          "amount": 51040.98,
+          "date": "2022-06-13",
+          "occurrences": 3,
+          "potential_overpayment": 102081.96
+        },
+        {
+          "supplier": "STAGECOACH SERVICES LTD",
+          "amount": 96490.5,
+          "date": "2025-01-22",
+          "occurrences": 2,
+          "potential_overpayment": 96490.5
+        },
+        {
+          "supplier": "PARKSIDE HOUSE SCHOOL",
+          "amount": 94784.37,
+          "date": "2025-10-02",
+          "occurrences": 2,
+          "potential_overpayment": 94784.37
+        },
+        {
+          "supplier": "ASPIRE HEALTHCARE LTD",
+          "amount": 2611.84,
+          "date": "2023-03-08",
+          "occurrences": 37,
+          "potential_overpayment": 94026.24
+        },
+        {
+          "supplier": "ACTION FOR CHILDREN",
+          "amount": 92500.0,
+          "date": "2025-10-01",
+          "occurrences": 2,
+          "potential_overpayment": 92500.0
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 2528,
+      "total_value": 67049000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 622
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "ASC & Integrated Services",
+      "spend": 395067223.28,
+      "count": 35907
+    },
+    {
+      "department": "Adult Social Care & Prevention",
+      "spend": 374501166.18,
+      "count": 27672
+    },
+    {
+      "department": "Children, Education and Skills",
+      "spend": 285382665.73,
+      "count": 56328
+    },
+    {
+      "department": "Children & Families",
+      "spend": 279908651.59,
+      "count": 49479
+    },
+    {
+      "department": "City Ops, Nghbrhds & Reg Srvcs",
+      "spend": 190434762.94,
+      "count": 25579
+    },
+    {
+      "department": "Operations & Reg Services",
+      "spend": 177879973.92,
+      "count": 36296
+    },
+    {
+      "department": "Corporate Budgets",
+      "spend": 176812421.34,
+      "count": 5602
+    },
+    {
+      "department": "Place",
+      "spend": 134068770.65,
+      "count": 11397
+    },
+    {
+      "department": "Investment & Growth",
+      "spend": 98796865.35,
+      "count": 6290
+    },
+    {
+      "department": "Housing Revenue Account",
+      "spend": 88198103.87,
+      "count": 2666
+    },
+    {
+      "department": "Public Health Service",
+      "spend": 85550831.27,
+      "count": 4246
+    },
+    {
+      "department": "General Fund Capital",
+      "spend": 30776496.77,
+      "count": 487
+    },
+    {
+      "department": "Housing & Communities",
+      "spend": 20809446.48,
+      "count": 3782
+    },
+    {
+      "department": "Public Health",
+      "spend": 13384133.97,
+      "count": 165
+    },
+    {
+      "department": "HRA Expenditure",
+      "spend": 11822302.91,
+      "count": 3845
+    },
+    {
+      "department": "Operations&Regulatory Services",
+      "spend": 11545997.36,
+      "count": 473
+    },
+    {
+      "department": "Deputy Chief Executive",
+      "spend": 10683770.33,
+      "count": 2735
+    },
+    {
+      "department": "Holding & Control",
+      "spend": 10363707.78,
+      "count": 17
+    },
+    {
+      "department": "Children Education & Skills",
+      "spend": 6894616.7,
+      "count": 78
+    },
+    {
+      "department": "Capital Citywide",
+      "spend": 5821623.02,
+      "count": 187
+    },
+    {
+      "department": "Finance",
+      "spend": 5777450.97,
+      "count": 869
+    },
+    {
+      "department": "CFO Directorate",
+      "spend": 4524872.1,
+      "count": 1814
+    },
+    {
+      "department": "Assistant Chief Executive",
+      "spend": 3814824.38,
+      "count": 846
+    },
+    {
+      "department": "Operations & Regulatory Services",
+      "spend": 3719616.08,
+      "count": 4969
+    },
+    {
+      "department": "Corporate Services",
+      "spend": 2846767.75,
+      "count": 19
+    },
+    {
+      "department": "Resources",
+      "spend": 2359023.22,
+      "count": 480
+    },
+    {
+      "department": "City Futures",
+      "spend": 1565895.57,
+      "count": 208
+    },
+    {
+      "department": "Workforce & Development",
+      "spend": 964633.38,
+      "count": 341
+    },
+    {
+      "department": "HRA Income",
+      "spend": 869451.45,
+      "count": 304
+    },
+    {
+      "department": "Funding Net Budget",
+      "spend": 677584.0,
+      "count": 5
+    },
+    {
+      "department": "Workforce & Inclusion",
+      "spend": 667504.55,
+      "count": 313
+    },
+    {
+      "department": "Collection Fund & Precepts",
+      "spend": 1967.0,
+      "count": 3
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2022/23": 600779899.31,
+      "2023/24": 623571429.92,
+      "2024/25": 671930164.8,
+      "2025/26": 540211627.86
+    },
+    "transactions_by_year": {
+      "2022/23": 73043,
+      "2023/24": 73290,
+      "2024/25": 77805,
+      "2025/26": 59264
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 283402
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "council_id": "gateshead",
+  "updated": "2026-05-11",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Gateshead MBC publishes a single payments-over-£500 transparency feed (cloudscraper-fetched from /article/3456/Expenditure-over-500). Unitary metropolitan borough with adult social care + children's services, so feed contains 'REDACTED - PERSONAL INFORMATION' Care-Act direct-payment rows. Default: procurement_paid; REDACTED variants → direct_payment_individual to keep them out of HHI / supplier-league analyses.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR personal-data redactions. Gateshead transparency feed includes 'REDACTED - PERSONAL INFORMATION' rows (verified ~24K in 2024/25 alone). Suffix-tolerant regex matches the canonical pattern shared with Blackpool/Blackburn/LCC/South Tyneside."
+    },
+    {
+      "class": "procurement_paid",
+      "match": {},
+      "reason": "Default for Gateshead. Single payments feed, no PO/invoice split. ~1.5M rows covering 2019/20–2025/26."
+    }
+  ]
+}

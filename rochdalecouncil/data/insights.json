@@ -1,0 +1,564 @@
+{
+  "summary": {
+    "total_spend": 4211453266.43,
+    "transaction_count": 2145768,
+    "unique_suppliers": 9364,
+    "avg_transaction": 1962.68,
+    "median_transaction": 276.0,
+    "date_range": {
+      "min": "2013-04-01",
+      "max": "2026-03-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "GMCA",
+        "total": 368834622.91,
+        "transactions": 701,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED - PERSONAL DATA",
+        "total": 301842205.34,
+        "transactions": 375061,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "G M WASTE DISPOSAL AUTHORITY",
+        "total": 176190161.34,
+        "transactions": 140,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "AXIOM EDUCATION ROCHDALE LTD",
+        "total": 85580856.32,
+        "transactions": 1074,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WILLMOTT DIXON CONSTRUCTION",
+        "total": 81698136.65,
+        "transactions": 121,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INSPIREDSPACES ROCHDALE PROJECTCO2 LTD",
+        "total": 65654266.21,
+        "transactions": 187,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORTHERN CARE ALLIANCE NHS FOUNDATION TRUST",
+        "total": 64281205.31,
+        "transactions": 763,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "POSSABILITIES CIC ISF",
+        "total": 55146968.0,
+        "transactions": 29501,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INSPIREDSPACES ROCHDALE PROJECT CO1 LTD",
+        "total": 54671529.23,
+        "transactions": 173,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COMMUNITY LIGHTING PARTNERSHIP ROCHDALE LTD",
+        "total": 51666111.84,
+        "transactions": 145,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BALFOUR BEATTY LIVING PLACES",
+        "total": 49890404.23,
+        "transactions": 120,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FUTURE DIRECTIONS CIC",
+        "total": 48103112.09,
+        "transactions": 12889,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REED SPECIALIST RECRUITMENT LTD",
+        "total": 47237825.5,
+        "transactions": 79385,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "H H SMITH AND SONS CO LTD",
+        "total": 41711662.49,
+        "transactions": 199,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "THE PENNINE ACUTE HOSPITALS NHS TRUST",
+        "total": 37983196.81,
+        "transactions": 611,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ALTERNATIVE FUTURES GROUP LTD",
+        "total": 36169132.18,
+        "transactions": 8906,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PENNINE CARE NHS",
+        "total": 34884002.18,
+        "transactions": 562,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "AXIOM EDUCATION (ROCHDALE) LTD",
+        "total": 33701934.77,
+        "transactions": 257,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INSPIREDSPACES ROCHDALE LTD",
+        "total": 30994608.09,
+        "transactions": 393,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "POSSABILITIES CIC TRADING",
+        "total": 25514085.64,
+        "transactions": 13641,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.4017,
+    "total_unique_suppliers": 9364,
+    "single_transaction_suppliers": 2454
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 223924,
+      "potential_value": 584115266.77,
+      "items": [
+        {
+          "supplier": "HM REVENUES AND CUSTOMS SHIPLEY",
+          "amount": 1076439.76,
+          "date": "2020-07-24",
+          "occurrences": 2,
+          "potential_overpayment": 1076439.76
+        },
+        {
+          "supplier": "REDACTED - PERSONAL DATA",
+          "amount": 1442.0,
+          "date": "2025-06-13",
+          "occurrences": 676,
+          "potential_overpayment": 973350.0
+        },
+        {
+          "supplier": "ROCHDALE BOROUGHWIDE HOUSING",
+          "amount": 145000.0,
+          "date": "2017-02-10",
+          "occurrences": 7,
+          "potential_overpayment": 870000.0
+        },
+        {
+          "supplier": "NORTHERN CARE ALLIANCE NHS FOUNDATION TRUST",
+          "amount": 414506.25,
+          "date": "2025-02-11",
+          "occurrences": 3,
+          "potential_overpayment": 829012.5
+        },
+        {
+          "supplier": "FAUN ZOELLER UK LTD",
+          "amount": 203422.0,
+          "date": "2023-05-22",
+          "occurrences": 5,
+          "potential_overpayment": 813688.0
+        },
+        {
+          "supplier": "NORTHERN CARE ALLIANCE NHS FOUNDATION TRUST",
+          "amount": 404993.25,
+          "date": "2026-03-26",
+          "occurrences": 3,
+          "potential_overpayment": 809986.5
+        },
+        {
+          "supplier": "PHOENIX SOFTWARE LTD",
+          "amount": 804691.26,
+          "date": "2025-08-19",
+          "occurrences": 2,
+          "potential_overpayment": 804691.26
+        },
+        {
+          "supplier": "PENNINE CARE NHS",
+          "amount": 370341.0,
+          "date": "2015-07-30",
+          "occurrences": 3,
+          "potential_overpayment": 740682.0
+        },
+        {
+          "supplier": "PHOENIX SOFTWARE LTD",
+          "amount": 721409.11,
+          "date": "2024-07-22",
+          "occurrences": 2,
+          "potential_overpayment": 721409.11
+        },
+        {
+          "supplier": "PENNINE CARE NHS",
+          "amount": 355417.0,
+          "date": "2016-08-30",
+          "occurrences": 3,
+          "potential_overpayment": 710834.0
+        },
+        {
+          "supplier": "REDACTED - PERSONAL DATA",
+          "amount": 1442.0,
+          "date": "2025-06-27",
+          "occurrences": 466,
+          "potential_overpayment": 670530.0
+        },
+        {
+          "supplier": "FAUN ZOELLER UK LTD",
+          "amount": 147420.16,
+          "date": "2018-01-22",
+          "occurrences": 5,
+          "potential_overpayment": 589680.64
+        },
+        {
+          "supplier": "PHOENIX SOFTWARE LTD",
+          "amount": 568417.83,
+          "date": "2023-07-04",
+          "occurrences": 2,
+          "potential_overpayment": 568417.83
+        },
+        {
+          "supplier": "DEPT FOR COMMUNITIES & LOCAL GOVERNMENT",
+          "amount": 278386.0,
+          "date": "2017-07-28",
+          "occurrences": 3,
+          "potential_overpayment": 556772.0
+        },
+        {
+          "supplier": "VIRGIN CARE SERVICES LTD",
+          "amount": 268556.0,
+          "date": "2016-09-20",
+          "occurrences": 3,
+          "potential_overpayment": 537112.0
+        },
+        {
+          "supplier": "PHOENIX SOFTWARE LTD",
+          "amount": 531788.51,
+          "date": "2022-07-01",
+          "occurrences": 2,
+          "potential_overpayment": 531788.51
+        },
+        {
+          "supplier": "TIMEOUT CHILDRENS HOMES LTD",
+          "amount": 23159.33,
+          "date": "2025-10-28",
+          "occurrences": 23,
+          "potential_overpayment": 509505.26
+        },
+        {
+          "supplier": "THE PENNINE ACUTE HOSPITALS NHS TRUST",
+          "amount": 500651.0,
+          "date": "2020-11-13",
+          "occurrences": 2,
+          "potential_overpayment": 500651.0
+        },
+        {
+          "supplier": "THE PENNINE ACUTE HOSPITALS NHS TRUST",
+          "amount": 500650.0,
+          "date": "2021-10-05",
+          "occurrences": 2,
+          "potential_overpayment": 500650.0
+        },
+        {
+          "supplier": "THE PENNINE ACUTE HOSPITALS NHS TRUST",
+          "amount": 500650.0,
+          "date": "2021-05-11",
+          "occurrences": 2,
+          "potential_overpayment": 500650.0
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 6890,
+      "total_value": 307920000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 1494
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "ADULT CARE LCO FUNCTIONS",
+      "spend": 823237376.12,
+      "count": 549588
+    },
+    {
+      "department": "EARLY HELP AND SCHOOLS",
+      "spend": 737713518.11,
+      "count": 171369
+    },
+    {
+      "department": "NEIGHBOURHOODS AND ENVIRONMENT",
+      "spend": 502536638.19,
+      "count": 841655
+    },
+    {
+      "department": "ECONOMY DIRECTORATE",
+      "spend": 482169082.31,
+      "count": 46583
+    },
+    {
+      "department": "CHILDREN\u2019S SOCIAL CARE",
+      "spend": 303758284.4,
+      "count": 308090
+    },
+    {
+      "department": "PROPERTY AND HIGHWAYS",
+      "spend": 301213392.54,
+      "count": 44115
+    },
+    {
+      "department": "PUBLIC HEALTH",
+      "spend": 221338761.62,
+      "count": 16938
+    },
+    {
+      "department": "COLLECTION FUND",
+      "spend": 189178735.5,
+      "count": 428
+    },
+    {
+      "department": "LEARNING DIS & MENTAL HEALTH",
+      "spend": 116441525.39,
+      "count": 49468
+    },
+    {
+      "department": "RESOURCES",
+      "spend": 108065665.21,
+      "count": 24128
+    },
+    {
+      "department": "PHYSICAL DIS & OLDER PEOPLE",
+      "spend": 101586855.78,
+      "count": 69466
+    },
+    {
+      "department": "ECONOMY AND ENVIRONMENT",
+      "spend": 83252753.78,
+      "count": 5663
+    },
+    {
+      "department": "BETTER CARE FUND POOLED BUDGET",
+      "spend": 79224960.26,
+      "count": 536
+    },
+    {
+      "department": "FINANCE CONTROL",
+      "spend": 44177558.96,
+      "count": 1091
+    },
+    {
+      "department": "COMMISSIONING AND STATUTORY",
+      "spend": 33321135.64,
+      "count": 6416
+    },
+    {
+      "department": "FINANCE SERVICES",
+      "spend": 29910610.88,
+      "count": 3654
+    },
+    {
+      "department": "CUSTOMERS & CORPORATE SERVICES",
+      "spend": 20685753.26,
+      "count": 3150
+    },
+    {
+      "department": "CORPORATE SERVICES",
+      "spend": 9597191.21,
+      "count": 1554
+    },
+    {
+      "department": "FINANCE AND PROCUREMENT",
+      "spend": 3875388.91,
+      "count": 238
+    },
+    {
+      "department": "SUPPORT FOR LEARNING",
+      "spend": 3772805.6,
+      "count": 129
+    },
+    {
+      "department": "-",
+      "spend": 2247423.37,
+      "count": 147
+    },
+    {
+      "department": "BUSINESS RATES BID INCOME",
+      "spend": 2210335.14,
+      "count": 43
+    },
+    {
+      "department": "PLANNING AND REGULATION",
+      "spend": 2066654.4,
+      "count": 35
+    },
+    {
+      "department": "HEALTH AND SOCIAL CARE POOLED",
+      "spend": 1900001.0,
+      "count": 1
+    },
+    {
+      "department": "DIRECTOR OF ECONOMY SERVICES",
+      "spend": 1788485.77,
+      "count": 53
+    },
+    {
+      "department": "OBSOLETE SERVICES",
+      "spend": 1785450.46,
+      "count": 160
+    },
+    {
+      "department": "CHILDREN\u00d5S SOCIAL CARE",
+      "spend": 954735.81,
+      "count": 432
+    },
+    {
+      "department": "ADULT CARE OPERATIONS",
+      "spend": 685667.63,
+      "count": 140
+    },
+    {
+      "department": "OPERATIONS SERVICE",
+      "spend": 584924.43,
+      "count": 123
+    },
+    {
+      "department": "CUSTOMERS AND COMMUNITIES",
+      "spend": 574293.06,
+      "count": 68
+    },
+    {
+      "department": "REDACTED PERSONAL DATA",
+      "spend": 447674.84,
+      "count": 17
+    },
+    {
+      "department": "FINANCE, PROC & OTH MGD BUDGET",
+      "spend": 378259.47,
+      "count": 10
+    },
+    {
+      "department": "FINANCE",
+      "spend": 265129.9,
+      "count": 161
+    },
+    {
+      "department": "CONTROL ACCOUNT",
+      "spend": 224166.32,
+      "count": 48
+    },
+    {
+      "department": "MENTAL HEALTH LD AND VUL ADULT",
+      "spend": 174084.36,
+      "count": 25
+    },
+    {
+      "department": "REDACTED - PERSONAL DATA",
+      "spend": 66342.83,
+      "count": 32
+    },
+    {
+      "department": "TAXATION AND NON SPECIFIC GRAN",
+      "spend": 13874.0,
+      "count": 1
+    },
+    {
+      "department": "REDACTED",
+      "spend": 10209.06,
+      "count": 2
+    },
+    {
+      "department": "BEQUESTS",
+      "spend": 9560.91,
+      "count": 10
+    },
+    {
+      "department": "TAX AND TREASURY",
+      "spend": 8000.0,
+      "count": 1
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2013/14": 141600938.54,
+      "2014/15": 95426672.3,
+      "2015/16": 247228080.75,
+      "2016/17": 246855028.18,
+      "2017/18": 271426205.51,
+      "2018/19": 259180460.37,
+      "2019/20": 243150906.94,
+      "2020/21": 345179201.09,
+      "2021/22": 381007724.85,
+      "2022/23": 466325660.71,
+      "2023/24": 468866639.83,
+      "2024/25": 494157394.72,
+      "2025/26": 551048352.64
+    },
+    "transactions_by_year": {
+      "2013/14": 13132,
+      "2014/15": 12766,
+      "2015/16": 49825,
+      "2016/17": 54052,
+      "2017/18": 59726,
+      "2018/19": 151129,
+      "2019/20": 203221,
+      "2020/21": 213197,
+      "2021/22": 248525,
+      "2022/23": 274379,
+      "2023/24": 275578,
+      "2024/25": 288820,
+      "2025/26": 301418
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 2145768
+  }
+}

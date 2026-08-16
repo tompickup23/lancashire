@@ -1,0 +1,402 @@
+{
+  "summary": {
+    "total_spend": 1122884790.48,
+    "transaction_count": 186356,
+    "unique_suppliers": 5380,
+    "avg_transaction": 6025.48,
+    "median_transaction": 1060.32,
+    "date_range": {
+      "min": "2020-04-01",
+      "max": "2026-06-01"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "REDACTED PERSONAL INFORMATION",
+        "total": 134938957.32,
+        "transactions": 61316,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EQUANS SERVICES LTD",
+        "total": 60712537.5,
+        "transactions": 3641,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ENGIE SERVICES LTD",
+        "total": 36585445.63,
+        "transactions": 1741,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "C R REYNOLDS (CONSTRUCTION) LTD",
+        "total": 22198291.84,
+        "transactions": 155,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "POLICE AND CRIME COMMISSIONER FOR HUMBERSIDE",
+        "total": 21368970.12,
+        "transactions": 41,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COMENSURA LTD",
+        "total": 19220378.85,
+        "transactions": 354,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LINCS INSPIRE LTD",
+        "total": 17325782.2,
+        "transactions": 182,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "GMI CONSTRUCTION GROUP PLC",
+        "total": 17308979.26,
+        "transactions": 23,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "STAGECOACH SERVICES",
+        "total": 17306079.04,
+        "transactions": 719,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WE ARE WITH YOU",
+        "total": 17108904.22,
+        "transactions": 221,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TOTAL ENERGIES GAS & POWER LTD",
+        "total": 17004875.24,
+        "transactions": 4985,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "THE CAMBRIDGE PARK ACADEMY",
+        "total": 14982357.14,
+        "transactions": 219,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HOBSON & PORTER",
+        "total": 13053251.92,
+        "transactions": 81,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HUMBERSTON PARK SPECIAL SCHOOL",
+        "total": 11402317.5,
+        "transactions": 154,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "VSL SYSTEMS (UK) LTD",
+        "total": 11317721.78,
+        "transactions": 15,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TOPCON BUILDING LTD",
+        "total": 11210476.69,
+        "transactions": 140,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ORCHARD EDUCATION LTD",
+        "total": 10905472.17,
+        "transactions": 66,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LINCOLNSHIRE PARTNERSHIP NHS FOUNDATION TRUST",
+        "total": 10058734.74,
+        "transactions": 62,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HUMBERSIDE FIRE AUTHORITY",
+        "total": 8918673.13,
+        "transactions": 24,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "KEYS PCE LTD",
+        "total": 8520539.56,
+        "transactions": 1047,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.4288,
+    "total_unique_suppliers": 5380,
+    "single_transaction_suppliers": 1845
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 11849,
+      "potential_value": 153330305.27,
+      "items": [
+        {
+          "supplier": "POLICE AND CRIME COMMISSIONER FOR HUMBERSIDE",
+          "amount": 899986.44,
+          "date": "2021-04-08",
+          "occurrences": 11,
+          "potential_overpayment": 8999864.4
+        },
+        {
+          "supplier": "POLICE AND CRIME COMMISSIONER FOR HUMBERSIDE",
+          "amount": 843031.37,
+          "date": "2020-04-16",
+          "occurrences": 11,
+          "potential_overpayment": 8430313.7
+        },
+        {
+          "supplier": "REDACTED PERSONAL INFORMATION",
+          "amount": 8000.0,
+          "date": "2021-04-08",
+          "occurrences": 531,
+          "potential_overpayment": 4240000.0
+        },
+        {
+          "supplier": "HUMBERSIDE FIRE AUTHORITY",
+          "amount": 372072.84,
+          "date": "2020-04-16",
+          "occurrences": 11,
+          "potential_overpayment": 3720728.4
+        },
+        {
+          "supplier": "REDACTED PERSONAL INFORMATION",
+          "amount": 4000.0,
+          "date": "2021-01-13",
+          "occurrences": 888,
+          "potential_overpayment": 3548000.0
+        },
+        {
+          "supplier": "HUMBERSIDE FIRE AUTHORITY",
+          "amount": 359329.93,
+          "date": "2021-04-08",
+          "occurrences": 10,
+          "potential_overpayment": 3233969.37
+        },
+        {
+          "supplier": "REDACTED PERSONAL INFORMATION",
+          "amount": 10000.0,
+          "date": "2020-04-02",
+          "occurrences": 260,
+          "potential_overpayment": 2590000.0
+        },
+        {
+          "supplier": "REDACTED PERSONAL INFORMATION",
+          "amount": 10000.0,
+          "date": "2020-04-03",
+          "occurrences": 227,
+          "potential_overpayment": 2260000.0
+        },
+        {
+          "supplier": "REDACTED PERSONAL INFORMATION",
+          "amount": 2096.0,
+          "date": "2021-03-02",
+          "occurrences": 1019,
+          "potential_overpayment": 2133728.0
+        },
+        {
+          "supplier": "REDACTED PERSONAL INFORMATION",
+          "amount": 10000.0,
+          "date": "2020-04-06",
+          "occurrences": 191,
+          "potential_overpayment": 1900000.0
+        },
+        {
+          "supplier": "EAST RIDING PENSION FUND (ACCTY USE ONLY)",
+          "amount": 170550.0,
+          "date": "2021-07-22",
+          "occurrences": 12,
+          "potential_overpayment": 1876050.0
+        },
+        {
+          "supplier": "REDACTED PERSONAL INFORMATION",
+          "amount": 10000.0,
+          "date": "2020-04-08",
+          "occurrences": 182,
+          "potential_overpayment": 1810000.0
+        },
+        {
+          "supplier": "REDACTED PERSONAL INFORMATION",
+          "amount": 2001.0,
+          "date": "2021-01-13",
+          "occurrences": 886,
+          "potential_overpayment": 1770885.0
+        },
+        {
+          "supplier": "REDACTED PERSONAL INFORMATION",
+          "amount": 10000.0,
+          "date": "2020-04-07",
+          "occurrences": 159,
+          "potential_overpayment": 1580000.0
+        },
+        {
+          "supplier": "REDACTED PERSONAL INFORMATION",
+          "amount": 8500.0,
+          "date": "2021-04-08",
+          "occurrences": 131,
+          "potential_overpayment": 1105000.0
+        },
+        {
+          "supplier": "DENNIS EAGLE LTD",
+          "amount": 181846.0,
+          "date": "2020-04-02",
+          "occurrences": 7,
+          "potential_overpayment": 1091076.0
+        },
+        {
+          "supplier": "REDACTED PERSONAL INFORMATION",
+          "amount": 10000.0,
+          "date": "2020-04-14",
+          "occurrences": 109,
+          "potential_overpayment": 1080000.0
+        },
+        {
+          "supplier": "REDACTED PERSONAL INFORMATION",
+          "amount": 10000.0,
+          "date": "2020-04-09",
+          "occurrences": 106,
+          "potential_overpayment": 1050000.0
+        },
+        {
+          "supplier": "REDACTED PERSONAL INFORMATION",
+          "amount": 12000.0,
+          "date": "2021-04-08",
+          "occurrences": 82,
+          "potential_overpayment": 972000.0
+        },
+        {
+          "supplier": "REDACTED PERSONAL INFORMATION",
+          "amount": 10000.0,
+          "date": "2020-04-22",
+          "occurrences": 95,
+          "potential_overpayment": 940000.0
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 9140,
+      "total_value": 105598000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 396
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "",
+      "spend": 366893992.2,
+      "count": 61446
+    },
+    {
+      "department": "Childrens Services",
+      "spend": 337696791.61,
+      "count": 71107
+    },
+    {
+      "department": "Economy And Growth",
+      "spend": 261441522.53,
+      "count": 23899
+    },
+    {
+      "department": "Resources",
+      "spend": 80078117.78,
+      "count": 16542
+    },
+    {
+      "department": "Environment",
+      "spend": 30561094.2,
+      "count": 7096
+    },
+    {
+      "department": "Public Health",
+      "spend": 26632406.79,
+      "count": 2186
+    },
+    {
+      "department": "Adult Services",
+      "spend": 12409259.87,
+      "count": 3905
+    },
+    {
+      "department": "Funding",
+      "spend": 6612652.0,
+      "count": 29
+    },
+    {
+      "department": "Other Corporate Budgets",
+      "spend": 512422.0,
+      "count": 111
+    },
+    {
+      "department": "Asc - Care Trust Plus",
+      "spend": 46531.5,
+      "count": 35
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2020/21": 207878530.89,
+      "2021/22": 164620881.16,
+      "2022/23": 149104193.61,
+      "2023/24": 161012125.24,
+      "2024/25": 199148615.33,
+      "2025/26": 213598555.81,
+      "2026/27": 27521888.44
+    },
+    "transactions_by_year": {
+      "2020/21": 33508,
+      "2021/22": 29002,
+      "2022/23": 24700,
+      "2023/24": 25689,
+      "2024/25": 31256,
+      "2025/26": 37232,
+      "2026/27": 4969
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 67.0,
+    "total_records": 186356
+  }
+}

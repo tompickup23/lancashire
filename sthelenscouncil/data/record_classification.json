@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "council_id": "st_helens",
+  "updated": "2026-05-10",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "St Helens BC publishes redacted direct-payment-individual rows under supplier_name='Personal Data' with narrative='REDACT - PERSONAL INFORMATION'. Match BOTH the supplier name and the REDACT prefix on the narrative for safety. Without this rule the supplier-bucket 'Personal Data' will appear as the council's largest by row-count and skew HHI / duplicate / split-payment forensics.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD|PERSONAL DATA)$"
+      },
+      "reason": "Direct payment to service-user, foster carer, SGO recipient. Sample Feb 2026 file shows several rows of supplier='Personal Data' with narrative='REDACT - PERSONAL INFORMATION'. Lawfully unnamed under Care Act 2014 + UK GDPR. Pattern uppercased 11 Jun 2026 (classifier matches uppercased fields; the mixed-case 'Personal Data' alternative was dead: 74 rows / GBP 1.0m sat in procurement_paid)."
+    }
+  ],
+  "supplier_aliases": []
+}

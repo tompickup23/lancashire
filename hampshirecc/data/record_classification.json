@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "council_id": "hampshire_cc",
+  "updated": "2026-08-08",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Hampshire County Council corpus is the Wayback harvest (partial months 2016-17 to 2024-25, site bot-walled). Purchase card rows carry type purchase_card. The council's own redaction label for direct payments appears as the supplier string 'Adult Services'. Default is procurement_paid.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD|PAYMENT TO (AN )?INDIVIDUAL|PRIVATE INDIVIDUAL|INDIVIDUAL)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions for direct payments to individuals (foster carers, ASC direct payments). Lawfully unnamed."
+    },
+    {
+      "class": "statutory_pass_through",
+      "match": {
+        "supplier_regex": "^NHS .+ ICB( \\([A-Z]+\\))?$"
+      },
+      "reason": "NHS Integrated Care Board rows are statutory health funding pass-through, not council procurement."
+    },
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(PERSONAL PAYMENTS?|ADULT SERVICES|CHILDREN'?S SERVICES)$"
+      },
+      "reason": "Hampshire's published redaction labels for payments to individuals (PERSONAL PAYMENTS dominates the feed at ~32k rows; Adult Services/Children's Services appear in older files); not suppliers."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^(HAMPSHIRE (COUNTY COUNCIL )?PENSION FUND).*$"
+      },
+      "reason": "LGPS flows to the Hampshire Pension Fund (HCC is the administering authority) are internal, not procurement."
+    }
+  ],
+  "supplier_aliases": []
+}

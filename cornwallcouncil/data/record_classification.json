@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "council_id": "cornwall",
+  "updated": "2026-05-17",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Cornwall Council is a unitary authority. Default is procurement_paid. Pension fund transfers bucket to internal_transfer. REDACTED Care Act / DFG-administered pass-through rules added if found in corpus — Cornwall's monthly CSV includes Directorate / Service/Board / Subjective fields so context-based classification is feasible.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions — direct payments to individuals (foster carers, SGO recipients, ASC service-user direct payments). Pattern covers REDACTED, REDACT, [REDACTED], and REDACTED-suffix variants."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^.*CORNWALL.*PENSION FUND.*$"
+      },
+      "reason": "Cornwall Pension Fund is the council's own pensions vehicle — internal transfer, not third-party procurement."
+    }
+  ],
+  "supplier_aliases": []
+}

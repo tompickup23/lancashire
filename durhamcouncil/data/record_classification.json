@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "council_id": "durham",
+  "updated": "2026-04-19",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Durham County Council is a unitary authority. No material REDACTED exposure in the current feed — defaults to procurement_paid. Add explicit rules when raw-CSV audit identifies named-individual or accrual rows.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions — direct payments to individuals (foster carers, SGO recipients, ASC service-user direct payments, CYP direct payments, Staying Put arrangements). Lawfully unnamed. Pattern covers REDACTED, REDACT, [REDACTED], and REDACTED-suffix variants (e.g. 'REDACTED PERSONAL DATA', 'REDACTED - PERSONAL PAYMENT', 'REDACTED - SPECIFIC VENDOR')."
+    }
+  ],
+  "supplier_aliases": []
+}

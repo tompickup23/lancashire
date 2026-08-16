@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "council_id": "east_sussex_cc",
+  "updated": "2026-05-18",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Declarative classification rules for East Sussex County Council quarterly XLSX spending files (Apr 2022 onwards). Default is procurement_paid. REDACTED variants and 'PAYMENT TO AN INDIVIDUAL' bucket to direct_payment_individual. Pension Fund transfers bucket to internal_transfer. NHS pass-throughs (Sussex ICB / partnership trusts) and district-council DFG/concessionary travel transfers bucket to statutory_pass_through.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD|PAYMENT TO AN INDIVIDUAL|PAYMENT TO INDIVIDUAL|PRIVATE INDIVIDUAL|INDIVIDUAL)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions covering ASC direct payments, foster carer / SGO allowances, CYP direct payments. Lawfully unnamed — not third-party procurement."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^.*EAST SUSSEX.*PENSION FUND.*$"
+      },
+      "reason": "East Sussex Pension Fund — LGPS scheme administered by ESCC itself. Money moving inside the council group, not external procurement."
+    },
+    {
+      "class": "statutory_pass_through",
+      "match": {
+        "supplier_regex": "^(EASTBOURNE BOROUGH COUNCIL|HASTINGS BOROUGH COUNCIL|LEWES DISTRICT COUNCIL|ROTHER DISTRICT COUNCIL|WEALDEN DISTRICT COUNCIL)$"
+      },
+      "reason": "County→district pass-throughs (DFG / concessionary travel / BCF). ESCC has no procurement discretion over these flows."
+    },
+    {
+      "class": "statutory_pass_through",
+      "match": {
+        "supplier_regex": "^(NHS SUSSEX ICB|EAST SUSSEX HEALTHCARE NHS TRUST|SUSSEX PARTNERSHIP NHS FOUNDATION TRUST|UNIVERSITY HOSPITALS SUSSEX NHS FOUNDATION TRUST)$"
+      },
+      "reason": "BCF s.75 pooled budget transfers to NHS commissioning bodies + trust reimbursements for jointly-commissioned services (Section 75 NHS Act 2006). Legally ring-fenced."
+    }
+  ],
+  "supplier_aliases": []
+}

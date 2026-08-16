@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "generated": "2026-03-03T11:51:30.426270",
+    "council_id": "pendle",
+    "sources": [
+      "Census 2021",
+      "ONS SNPP 2022",
+      "IMD 2019",
+      "GOV.UK QRC4",
+      "DfE SEND Statistics 2023",
+      "Home Office Immigration Statistics 2025"
+    ]
+  },
+  "fiscal_resilience_score": 40,
+  "service_demand_pressure_score": 80,
+  "demographic_change_velocity": 17.7,
+  "ethnic_composition_acceleration": {
+    "White": -0.2,
+    "Asian": 0.2
+  },
+  "religion_composition_acceleration": {
+    "Christian": -11.6,
+    "No religion": 2.9,
+    "Muslim": 9.2,
+    "Not answered": -0.5
+  },
+  "diversity_index_2021": 0.4303,
+  "diversity_index_2032": 0.4322,
+  "diversity_change": 0.0019,
+  "composition_insights": [
+    {
+      "type": "religion_shift",
+      "group": "Muslim",
+      "change_pp": 9.2,
+      "desc": "Muslim projected to grow by 9.2pp by 2032"
+    },
+    {
+      "type": "religion_shift",
+      "group": "No religion",
+      "change_pp": 2.9,
+      "desc": "No religion projected to grow by 2.9pp by 2032"
+    },
+    {
+      "type": "most_diverse_ward",
+      "ward": "Marsden & Southfield",
+      "diversity_index": 0.7841,
+      "desc": "Marsden & Southfield projected as most ethnically diverse ward by 2032 (index: 0.784)"
+    }
+  ],
+  "risk_category": "Structurally Deficit",
+  "ethnic_composition_summary": {
+    "white_british_pct": 66.1,
+    "muslim_pct": 26.0,
+    "pakistani_bangladeshi_pct": 25.9,
+    "grt_count": 97,
+    "roma_count": 126,
+    "eu8_eu2_born_pct": 3.8,
+    "black_african_caribbean_pct": 0.3
+  },
+  "send_risk": {
+    "estimated_send_rate_pct": 15.7,
+    "vs_national_avg_pp": 0.8,
+    "estimated_send_pupils": 2295,
+    "eal_estimate_pct": 17.7,
+    "grt_send_contribution": "97 GRT pupils at 35% SEND rate = ~7 additional SEND cases"
+  },
+  "asylum_impact": {
+    "current_seekers": 454,
+    "per_1000_pop": 4.7,
+    "projected_2028": {
+      "low": 526,
+      "central": 638,
+      "high": 785
+    },
+    "projected_2032": {
+      "low": 592,
+      "central": 775,
+      "high": 1149
+    },
+    "annual_cost_estimate": 9434120,
+    "trend": [
+      {
+        "date": "31 Mar 2022",
+        "people": 191
+      },
+      {
+        "date": "31 Mar 2023",
+        "people": 222
+      },
+      {
+        "date": "31 Mar 2024",
+        "people": 525
+      },
+      {
+        "date": "31 Mar 2025",
+        "people": 454
+      }
+    ]
+  },
+  "council_tax_risk": {
+    "collection_rate": 95.68,
+    "collection_trend": -0.65,
+    "arrears": 9655000.0
+  },
+  "pressure_zones": [
+    {
+      "ward": "Bradley",
+      "imd_decile": 1.0,
+      "imd_score": 51.63,
+      "national_percentile": 6.0,
+      "muslim_pct": 0.0,
+      "under_16_pct": 0.0,
+      "flag": "CRITICAL"
+    },
+    {
+      "ward": "Whitefield",
+      "imd_decile": 1.0,
+      "imd_score": 49.07,
+      "national_percentile": 7.1,
+      "muslim_pct": 0.0,
+      "under_16_pct": 0.0,
+      "flag": "CRITICAL"
+    },
+    {
+      "ward": "Southfield",
+      "imd_decile": 1.8,
+      "imd_score": 47.64,
+      "national_percentile": 12.6,
+      "muslim_pct": 0.0,
+      "under_16_pct": 0.0,
+      "flag": "HIGH"
+    },
+    {
+      "ward": "Clover Hill",
+      "imd_decile": 2.0,
+      "imd_score": 40.93,
+      "national_percentile": 16.2,
+      "muslim_pct": 0.0,
+      "under_16_pct": 0.0,
+      "flag": "HIGH"
+    },
+    {
+      "ward": "Brierfield",
+      "imd_decile": 2.0,
+      "imd_score": 38.71,
+      "national_percentile": 16.4,
+      "muslim_pct": 0.0,
+      "under_16_pct": 0.0,
+      "flag": "HIGH"
+    },
+    {
+      "ward": "Walverden",
+      "imd_decile": 2.0,
+      "imd_score": 36.38,
+      "national_percentile": 19.1,
+      "muslim_pct": 0.0,
+      "under_16_pct": 0.0,
+      "flag": "HIGH"
+    }
+  ],
+  "threats": [
+    {
+      "type": "fiscal",
+      "severity": "critical",
+      "description": "Fiscal sustainability score 40/100 \u2014 structural deficit risk",
+      "evidence": "Collection rate 95.68%, IMD 27.65, employment 51.2%"
+    },
+    {
+      "type": "demographic",
+      "severity": "high",
+      "description": "Service demand pressure 80/100 \u2014 above-average service costs",
+      "evidence": "SEND rate 15.7%, under-16 21.4%, asylum seekers 454"
+    },
+    {
+      "type": "fiscal",
+      "severity": "high",
+      "description": "Declining council tax collection \u2014 revenue base eroding",
+      "evidence": "5-year trend: -0.65% per year"
+    },
+    {
+      "type": "service",
+      "severity": "high",
+      "description": "Concentrated asylum dispersal (454 seekers) \u2014 growing pressure on housing, schools, health",
+      "evidence": "Growth from 191 to 454 in 4 years"
+    },
+    {
+      "type": "demographic_acceleration",
+      "severity": "high",
+      "description": "Projected Muslim population growth of +9.2pp by 2032 \u2014 accelerating SEND/EAL demand",
+      "evidence": "Driven by higher TFR (2.3 vs 1.52 national). Projected school-age cohort expansion."
+    }
+  ],
+  "lgr_threats": [
+    {
+      "model": "two_unitary",
+      "authority": "South Lancashire",
+      "severity": "high",
+      "risk_category": "At Risk",
+      "fiscal_score": 37,
+      "demand_score": 74
+    },
+    {
+      "model": "three_unitary",
+      "authority": "Pennine Lancashire",
+      "severity": "critical",
+      "risk_category": "Structurally Deficit",
+      "fiscal_score": 38,
+      "demand_score": 78
+    },
+    {
+      "model": "four_unitary",
+      "authority": "Pennine Lancashire",
+      "severity": "critical",
+      "risk_category": "Structurally Deficit",
+      "fiscal_score": 34,
+      "demand_score": 81
+    },
+    {
+      "model": "four_unitary_alt",
+      "authority": "Eastern Lancashire",
+      "severity": "critical",
+      "risk_category": "Structurally Deficit",
+      "fiscal_score": 34,
+      "demand_score": 81
+    },
+    {
+      "model": "five_unitary",
+      "authority": "East Lancashire",
+      "severity": "critical",
+      "risk_category": "Structurally Deficit",
+      "fiscal_score": 35,
+      "demand_score": 78
+    }
+  ],
+  "risk_factors": [
+    "Declining collection rate (trend: -0.7%)",
+    "Significant asylum dispersal (454 seekers)",
+    "High service demand demographics (Muslim 26.0%)",
+    "GRT/Roma population (223) \u2014 highest SEND prevalence group",
+    "Low employment rate (51.2%)"
+  ]
+}

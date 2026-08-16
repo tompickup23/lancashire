@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "council_id": "suffolk_cc",
+  "updated": "2026-05-04",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Declarative classification rules for Suffolk County Council spending rows. Source: monthly CSV 'expenditure exceeding £250' published by SCC at /council-and-democracy/open-data-suffolk/.../expenditure-exceeding-250. Coverage Jan 2025 – Mar 2026 (15 months) on the live page; older years require FOI. Header columns: Organisation Name, Organisation Code, Directorate, Service Area, Sub-Service Area, Sub-description, Payment Date, Sub Amount, Inv Amount, Supplier Name. £250 threshold (lower than peers' £500). UTF-8 with BOM. ~37K rows/month → ~440K rows/year. Sample: 9.5% (3,523/37,205) of Mar 2026 rows are REDACTED PERSONAL DATA — Adult Social Care Direct Payments (Care Act 2014 s.31 DP, lawfully unnamed). Pension Fund is published as a separate file (suffolk_pension_csvs/) and ingested separately if at all.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"
+      },
+      "reason": "3,523 rows / month = 9.5% of feed. Suffolk publishes single canonical string 'REDACTED PERSONAL DATA' for ASC Direct Payment recipients (Care Act 2014 s.31). Uses the broadened cross-council regex for safety. Will not match REDACTIVE / REDACTION trade names."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^(SUFFOLK (COUNTY COUNCIL )?PENSION FUND|SUFFOLK COUNTY COUNCIL|VERTAS IPSWICH LTD|VERTAS GROUP LTD|VERTAS SUFFOLK LTD)$"
+      },
+      "reason": "SCC group entities. SUFFOLK COUNTY COUNCIL (54 rows / £43M) = self-payments / internal recharges. VERTAS IPSWICH LTD + VERTAS GROUP LTD (1,200 rows / £16.6M) = wholly-owned facilities-management subsidiary spun out by SCC in 2013 (now JV with Essex CC since 2020 — keep at internal_transfer because >50% ownership and entire trading footprint is council-commissioned). PENSION FUND defensive rule."
+    },
+    {
+      "class": "statutory_pass_through",
+      "match": {
+        "supplier_regex": "^(INLAND REVENUE|HM REVENUE (AND |& )?CUSTOMS|HMRC|NHS PENSIONS|UNITY SCHOOLS PARTNERSHIP|SUFFOLK ACADEMIES TRUST|EAST SUFFOLK COUNCIL|WEST SUFFOLK COUNCIL|IPSWICH BOROUGH COUNCIL|MID SUFFOLK DISTRICT COUNCIL|BABERGH DISTRICT COUNCIL|EAST SUFFOLK AND NORTH ESSEX NHS FOUNDATION TRUST|WEST SUFFOLK NHS FOUNDATION TRUST|NHS SUFFOLK AND NORTH EAST ESSEX ICB|NORFOLK AND SUFFOLK NHS FOUNDATION TRUST)$"
+      },
+      "reason": "Statutory passes. INLAND REVENUE (£66M, 112 txns) = PAYE / NI / pension contributions remitted to HMRC. UNITY SCHOOLS PARTNERSHIP (424 txns / £18.7M) + Suffolk Academies Trust = academy block grants (Education Act 2002 funding agreement, no procurement discretion). Suffolk districts (East/West Suffolk, Ipswich, Mid Suffolk, Babergh) get DFG (HGCR Act 1996) + concessionary travel + BCF s.75. NHS trusts + ICB get pooled-budget transfers (NHS Act 2006 s.75)."
+    }
+  ],
+  "supplier_aliases": []
+}

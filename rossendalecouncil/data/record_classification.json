@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "council_id": "rossendale",
+  "updated": "2026-04-19",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Rossendale Borough Council's published feed contains 3,167 REDACTED rows (~7.5% of the corpus). These are fostering / SGO payments passed through the district on behalf of the county's Children's Services \u2014 the district acts as paymaster but the recipients are named individuals lawfully redacted under Care Act 2014 + UK GDPR. Default is procurement_paid; REDACTED rows bucket to direct_payment_individual.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(REDACTED|REDACT|NAME WITHHELD)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions \u2014 direct payments to individuals (foster carers, SGO recipients, ASC service-user direct payments, CYP direct payments, Staying Put arrangements). Lawfully unnamed."
+    }
+  ],
+  "supplier_aliases": "../shared/lancashire_district_aliases.json"
+}

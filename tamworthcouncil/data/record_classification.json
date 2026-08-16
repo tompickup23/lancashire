@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "council_id": "tamworth",
+  "updated": "2026-05-27",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Tamworth Borough Council is a district authority. Default is procurement_paid. Small district with minimal direct-payment-individual bucket expected — REDACTED rule precautionary per the lessons playbook.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions for direct payments to individuals. Precautionary rule for any future redacted records."
+    }
+  ],
+  "supplier_aliases": []
+}

@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "council_id": "cannock_chase",
+  "updated": "2026-05-27",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Cannock Chase District Council is a district authority. Default is procurement_paid. Small district (£20-40M/yr) — REDACTED rule precautionary per the lessons playbook; smaller councils may not have substantial Care-Act direct-payment buckets.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions for direct payments to individuals. Precautionary rule — pattern matches if/when council adopts redaction convention."
+    }
+  ],
+  "supplier_aliases": []
+}

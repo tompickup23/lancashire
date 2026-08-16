@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "council_id": "lancashire_pcc",
+  "updated": "2026-04-19",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Lancashire Police and Crime Commissioner is a police and crime commissioner. Accrual-coded expenditure categories bucket to accrual_journal. Pension contributions bucket to internal_transfer. Otherwise procurement_paid.",
+  "rules": [
+    {
+      "class": "accrual_journal",
+      "match": {
+        "expenditure_category_regex": "^(R12.*ACCRUAL|.*AP EXPENSE ACCRUAL|ACCRUAL .*)$"
+      },
+      "reason": "Month-end accrual bookings in the finance ledger. Reverse when invoices clear \u2014 summing with paid invoices double-counts."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^.*LANCASHIRE POLICE.*PENSION FUND.*$"
+      },
+      "reason": "Lancashire Police Pension Fund is the council's own pensions vehicle \u2014 money from the general fund to the pension fund is an internal transfer, not third-party procurement."
+    }
+  ],
+  "supplier_aliases": []
+}

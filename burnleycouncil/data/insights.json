@@ -1,0 +1,388 @@
+{
+  "summary": {
+    "total_spend": 217675600.28,
+    "transaction_count": 26536,
+    "unique_suppliers": 4455,
+    "avg_transaction": 8203.03,
+    "median_transaction": 1100.43,
+    "date_range": {
+      "min": "2021-04-01",
+      "max": "2025-12-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "Liberata UK Ltd",
+        "total": 21183056.07,
+        "transactions": 363,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "GELDARDS",
+        "total": 20108266.36,
+        "transactions": 20,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BARNFIELD INVESTMENT PROPERTIES LTD",
+        "total": 17343321.67,
+        "transactions": 69,
+        "company_number": "04128632",
+        "company_url": "https://find-and-update.company-information.service.gov.uk/company/04128632"
+      },
+      {
+        "supplier": "MAPLE GROVE DEVELOPMENTS LTD",
+        "total": 16588871.94,
+        "transactions": 41,
+        "company_number": "01577201",
+        "company_url": "https://find-and-update.company-information.service.gov.uk/company/01577201"
+      },
+      {
+        "supplier": "URBASER LTD",
+        "total": 11406461.42,
+        "transactions": 731,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LANCASHIRE CC - PRESTON COUNTY HALL",
+        "total": 8674873.11,
+        "transactions": 263,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BURNLEY LEISURE",
+        "total": 7857845.88,
+        "transactions": 259,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BEACHCROFT LLP",
+        "total": 4406071.19,
+        "transactions": 6,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FCC ENVIRONMENT/URBASER LTD",
+        "total": 3982346.52,
+        "transactions": 243,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HISTORIC PROPERTY RESTORATION LTD",
+        "total": 3440801.59,
+        "transactions": 35,
+        "company_number": "03104806",
+        "company_url": "https://find-and-update.company-information.service.gov.uk/company/03104806"
+      },
+      {
+        "supplier": "EDF ENERGY",
+        "total": 3174195.53,
+        "transactions": 127,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "KRNS PROPERTIES LTD",
+        "total": 2480866.21,
+        "transactions": 15,
+        "company_number": "06781096",
+        "company_url": "https://find-and-update.company-information.service.gov.uk/company/06781096"
+      },
+      {
+        "supplier": "TOTAL GAS & POWER LTD",
+        "total": 2057462.76,
+        "transactions": 151,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "POST OFFICE LTD - PAYOUT FUND",
+        "total": 1782417.0,
+        "transactions": 15,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CALICO ENTERPRISE LTD",
+        "total": 1688087.98,
+        "transactions": 28,
+        "company_number": "06329047",
+        "company_url": "https://find-and-update.company-information.service.gov.uk/company/06329047"
+      },
+      {
+        "supplier": "BURNLEY PENDLE & ROSSENDALE COUNCIL FOR",
+        "total": 1631861.1,
+        "transactions": 51,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "N I CONSTRUCTIONS NW LTD",
+        "total": 1610595.42,
+        "transactions": 179,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ENVIRONMENT AGENCY",
+        "total": 1536066.5,
+        "transactions": 6,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CEMPLAS WATERPROOFING & CONCRETE REPAIRS LTD - GRO",
+        "total": 1289793.4,
+        "transactions": 7,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ARTHUR J GALLAGHER INSURANCE BROKERS LTD",
+        "total": 1276063.55,
+        "transactions": 53,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.6134,
+    "total_unique_suppliers": 4455,
+    "single_transaction_suppliers": 2689
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 793,
+      "potential_value": 2307329.53,
+      "items": [
+        {
+          "supplier": "TOTAL POOL CHEMICALS LTD",
+          "amount": 245626.0,
+          "date": null,
+          "occurrences": 2,
+          "potential_overpayment": 245626.0
+        },
+        {
+          "supplier": "TRANSDEV BLAZEFIELD LTD",
+          "amount": 11837.16,
+          "date": "2021-11-02",
+          "occurrences": 7,
+          "potential_overpayment": 71022.96
+        },
+        {
+          "supplier": "FCC ENVIRONMENT/URBASER LTD",
+          "amount": 70815.0,
+          "date": "2025-07-08",
+          "occurrences": 2,
+          "potential_overpayment": 70815.0
+        },
+        {
+          "supplier": "URBASER LTD",
+          "amount": 66758.0,
+          "date": "2023-10-30",
+          "occurrences": 2,
+          "potential_overpayment": 66758.0
+        },
+        {
+          "supplier": "FCC ENVIRONMENT/URBASER LTD",
+          "amount": 65068.0,
+          "date": "2025-07-08",
+          "occurrences": 2,
+          "potential_overpayment": 65068.0
+        },
+        {
+          "supplier": "URBASER LTD",
+          "amount": 61637.0,
+          "date": "2023-10-30",
+          "occurrences": 2,
+          "potential_overpayment": 61637.0
+        },
+        {
+          "supplier": "FCC ENVIRONMENT/URBASER LTD",
+          "amount": 49694.0,
+          "date": "2025-07-08",
+          "occurrences": 2,
+          "potential_overpayment": 49694.0
+        },
+        {
+          "supplier": "URBASER LTD",
+          "amount": 47153.0,
+          "date": "2023-10-30",
+          "occurrences": 2,
+          "potential_overpayment": 47153.0
+        },
+        {
+          "supplier": "ZAM FM LTD",
+          "amount": 23332.22,
+          "date": null,
+          "occurrences": 3,
+          "potential_overpayment": 46664.44
+        },
+        {
+          "supplier": "BURNLEY LEISURE",
+          "amount": 46000.0,
+          "date": "2025-10-16",
+          "occurrences": 2,
+          "potential_overpayment": 46000.0
+        },
+        {
+          "supplier": "TRANSDEV BLAZEFIELD LTD",
+          "amount": 11837.16,
+          "date": "2022-02-25",
+          "occurrences": 4,
+          "potential_overpayment": 35511.48
+        },
+        {
+          "supplier": "FCC ENVIRONMENT/URBASER LTD",
+          "amount": 33549.0,
+          "date": "2025-07-08",
+          "occurrences": 2,
+          "potential_overpayment": 33549.0
+        },
+        {
+          "supplier": "URBASER LTD",
+          "amount": 31632.0,
+          "date": "2023-10-30",
+          "occurrences": 2,
+          "potential_overpayment": 31632.0
+        },
+        {
+          "supplier": "TRANSDEV LANCASHIRE UNITED LTD",
+          "amount": 15679.5,
+          "date": "2023-12-14",
+          "occurrences": 3,
+          "potential_overpayment": 31359.0
+        },
+        {
+          "supplier": "BURNLEY LEISURE",
+          "amount": 12000.0,
+          "date": "2021-05-05",
+          "occurrences": 3,
+          "potential_overpayment": 24000.0
+        },
+        {
+          "supplier": "WATER PLUS LTD",
+          "amount": 11715.61,
+          "date": "2025-03-05",
+          "occurrences": 3,
+          "potential_overpayment": 23431.22
+        },
+        {
+          "supplier": "FCC ENVIRONMENT/URBASER LTD",
+          "amount": 22814.0,
+          "date": "2025-07-08",
+          "occurrences": 2,
+          "potential_overpayment": 22814.0
+        },
+        {
+          "supplier": "URBASER LTD",
+          "amount": 21706.0,
+          "date": "2023-10-30",
+          "occurrences": 2,
+          "potential_overpayment": 21706.0
+        },
+        {
+          "supplier": "BALMERS GM LTD",
+          "amount": 21000.0,
+          "date": "2025-03-18",
+          "occurrences": 2,
+          "potential_overpayment": 21000.0
+        },
+        {
+          "supplier": "WATER PLUS LTD",
+          "amount": 9403.57,
+          "date": "2024-02-29",
+          "occurrences": 3,
+          "potential_overpayment": 18807.14
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 1475,
+      "total_value": 21124000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 103
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Planning & Transportation",
+      "spend": 58369593.44,
+      "count": 2253
+    },
+    {
+      "department": "Environmental Services",
+      "spend": 35712722.46,
+      "count": 6405
+    },
+    {
+      "department": "Legal & Democratic",
+      "spend": 35264028.11,
+      "count": 1678
+    },
+    {
+      "department": "Regeneration & Housing",
+      "spend": 26488248.71,
+      "count": 4139
+    },
+    {
+      "department": "Other",
+      "spend": 23757926.36,
+      "count": 1113
+    },
+    {
+      "department": "Resources & Finance",
+      "spend": 20103842.85,
+      "count": 3124
+    },
+    {
+      "department": "Chief Executive & Corporate",
+      "spend": 10037358.04,
+      "count": 7319
+    },
+    {
+      "department": "Leisure & Culture",
+      "spend": 7941880.31,
+      "count": 505
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2021/22": 54652149.79,
+      "2022/23": 39247643.42,
+      "2023/24": 51515077.38,
+      "2024/25": 44219222.58,
+      "2025/26": 28041507.11
+    },
+    "transactions_by_year": {
+      "2021/22": 5916,
+      "2022/23": 4943,
+      "2023/24": 5274,
+      "2024/25": 5631,
+      "2025/26": 4772
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 99.2,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 26536
+  }
+}

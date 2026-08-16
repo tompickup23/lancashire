@@ -1,0 +1,201 @@
+{
+  "council": "Coventry",
+  "council_id": "E08000026",
+  "council_type": "unitary",
+  "spending_threshold": 500,
+  "total_records": 617442,
+  "financial_years": [
+    "2017/18",
+    "2018/19",
+    "2019/20",
+    "2020/21",
+    "2021/22",
+    "2022/23",
+    "2023/24",
+    "2024/25",
+    "2025/26",
+    "2026/27"
+  ],
+  "data_types": [
+    "spend"
+  ],
+  "filters": {
+    "departments": [
+      {
+        "name": "People",
+        "spend": 951256984.61,
+        "count": 302693,
+        "suppliers": 4106
+      },
+      {
+        "name": "Place",
+        "spend": 581963934.59,
+        "count": 44906,
+        "suppliers": 3056
+      },
+      {
+        "name": "Adult Services and Housing",
+        "spend": 368364591.26,
+        "count": 189571,
+        "suppliers": 822
+      },
+      {
+        "name": "Children and Education",
+        "spend": 250211984.08,
+        "count": 49853,
+        "suppliers": 1513
+      },
+      {
+        "name": "City Services",
+        "spend": 114740788.47,
+        "count": 11824,
+        "suppliers": 602
+      },
+      {
+        "name": "Contingency and Central Budgets",
+        "spend": 89825734.31,
+        "count": 287,
+        "suppliers": 53
+      },
+      {
+        "name": "Regeneration and Economy Development",
+        "spend": 77031895.55,
+        "count": 3946,
+        "suppliers": 778
+      },
+      {
+        "name": "Public Health",
+        "spend": 41916809.95,
+        "count": 1729,
+        "suppliers": 151
+      },
+      {
+        "name": "Property Services and Development",
+        "spend": 35824912.7,
+        "count": 4411,
+        "suppliers": 305
+      },
+      {
+        "name": "Finance and Resources",
+        "spend": 23841727.2,
+        "count": 1553,
+        "suppliers": 196
+      },
+      {
+        "name": "People and Organisational Development",
+        "spend": 10883954.65,
+        "count": 3708,
+        "suppliers": 277
+      },
+      {
+        "name": "Digital Services",
+        "spend": 7923178.41,
+        "count": 259,
+        "suppliers": 69
+      },
+      {
+        "name": "Planning and Performance",
+        "spend": 7609192.23,
+        "count": 862,
+        "suppliers": 82
+      },
+      {
+        "name": "Legal and Governance",
+        "spend": 4789518.83,
+        "count": 1524,
+        "suppliers": 267
+      },
+      {
+        "name": "Net Budget Resources",
+        "spend": 1270062.63,
+        "count": 5,
+        "suppliers": 5
+      },
+      {
+        "name": "Corporate",
+        "spend": 1265840.12,
+        "count": 3,
+        "suppliers": 3
+      },
+      {
+        "name": "Resources",
+        "spend": 1118235.96,
+        "count": 94,
+        "suppliers": 48
+      },
+      {
+        "name": "Law, Governance and Safer Communities???",
+        "spend": 367460.42,
+        "count": 110,
+        "suppliers": 42
+      },
+      {
+        "name": "Policy and Communications",
+        "spend": 333162.62,
+        "count": 101,
+        "suppliers": 37
+      },
+      {
+        "name": "Chief Executive\u00b4s",
+        "spend": 14368.0,
+        "count": 3,
+        "suppliers": 3
+      }
+    ],
+    "department_raws": [
+      "Adult Services and Housing",
+      "Chief Executive\u00b4s",
+      "Children and Education",
+      "City Services",
+      "Contingency and Central Budgets",
+      "Corporate",
+      "Digital Services",
+      "Finance and Resources",
+      "Law, Governance and Safer Communities???",
+      "Legal and Governance",
+      "Net Budget Resources",
+      "People",
+      "People and Organisational Development",
+      "Place",
+      "Planning and Performance",
+      "Policy and Communications",
+      "Property Services and Development",
+      "Public Health",
+      "Regeneration and Economy Development",
+      "Resources"
+    ]
+  },
+  "total_spend": 2570554336.59,
+  "total_spend_paid": 2570554336.59,
+  "total_spend_committed": 0,
+  "total_spend_all_types_legacy": 2570554336.59,
+  "record_count_paid": 617442,
+  "record_count_committed": 0,
+  "record_class_breakdown": {
+    "procurement_paid": {
+      "count": 548997,
+      "sum": 2182089144.22
+    },
+    "direct_payment_individual": {
+      "count": 67568,
+      "sum": 56192058.08
+    },
+    "statutory_pass_through": {
+      "count": 877,
+      "sum": 332273134.29
+    }
+  },
+  "spend_triangulation": {
+    "transparency_gross": 2570554336.59,
+    "transparency_paid": 2570554336.59,
+    "procurement_only": 2182089144.22,
+    "non_procurement": 388465192.37
+  },
+  "dedup_rule": "total_spend = spend + purchase_cards; contracts excluded (77% pair with matching spend within 90d \u2014 see .claude/rules/lessons.md)",
+  "dedup_applied": "enforced at ETL (council_etl.py)",
+  "unique_suppliers": 8088,
+  "date_range": {
+    "min": "2017-04-01",
+    "max": "2026-04-07"
+  }
+}

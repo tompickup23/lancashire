@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "council_id": "lincolnshire_cc",
+  "updated": "2026-04-19",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Lincolnshire County Council is an upper-tier authority (county council). Default is procurement_paid. Pension fund transfers bucket to internal_transfer. REDACTED / accrual rules added if the raw CSV feed exposes them — not all counties do.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions — direct payments to individuals (foster carers, SGO recipients, ASC service-user direct payments, CYP direct payments, Staying Put arrangements). Lawfully unnamed. Pattern covers REDACTED, REDACT, [REDACTED], and REDACTED-suffix variants (e.g. 'REDACTED PERSONAL DATA', 'REDACTED - PERSONAL PAYMENT', 'REDACTED - SPECIFIC VENDOR')."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^.*LINCOLNSHIRE.*PENSION FUND.*$"
+      },
+      "reason": "Lincolnshire CC Pension Fund is the council's own pensions vehicle — money from the general fund to the pension fund is an internal transfer, not third-party procurement."
+    },
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^20\\d{4}$"
+      },
+      "reason": "Lincolnshire CC uses 6-digit period codes (202412=Dec 2024, 202501=Jan 2025, 202502=Feb 2025) as supplier name when redacting supplier identity for recent months. 55,470 rows / £208.9M / 3 codes. Cannot be aggregated as 'supplier 202501' — treated as redacted-identity per taxonomy ('or the individual's reference code'). Applies only to Lincs."
+    }
+  ],
+  "supplier_aliases": []
+}

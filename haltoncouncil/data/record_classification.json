@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "council_id": "halton",
+  "updated": "2026-05-27",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Halton Borough Council is a unitary authority. Default is procurement_paid. REDACTED rule is defensive — Halton publishes 'redacted' for sensitive vulnerable-people/children-in-care payments per their own page note. Body not observed in latest-FY sample but rule is precautionary per the lessons playbook.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions — direct payments to individuals (foster carers, SGO recipients, ASC service-user direct payments, CYP direct payments). Halton's own page note: 'Names of payment beneficiaries for goods and services that might reveal sensitive information about vulnerable people or children in the Council's care have been removed (redacted)'."
+    }
+  ],
+  "supplier_aliases": []
+}

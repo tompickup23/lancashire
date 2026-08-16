@@ -1,0 +1,453 @@
+{
+  "summary": {
+    "total_spend": 3736138065.37,
+    "transaction_count": 79989,
+    "unique_suppliers": 4774,
+    "avg_transaction": 46708.15,
+    "median_transaction": 537.9,
+    "date_range": {
+      "min": "2023-04-01",
+      "max": "2027-06-22"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "PUBLIC WORKS LOAN BOARD",
+        "total": 2218167313.2,
+        "transactions": 54,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DEPARTMENT OF COMMUNITIES & LOCAL GOVERNMENT",
+        "total": 222455528.85,
+        "transactions": 74,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "THURROCK COUNCIL",
+        "total": 115572346.66,
+        "transactions": 1111,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INLAND REVENUE",
+        "total": 74424312.96,
+        "transactions": 235,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ESSEX COUNTY COUNCIL",
+        "total": 71521385.5,
+        "transactions": 311,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LONDON BOROUGH OF BARKING & DAGENHAM",
+        "total": 59712613.69,
+        "transactions": 31,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WEST BROMWICH BUILDING SOCIETY",
+        "total": 50000000.0,
+        "transactions": 3,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED",
+        "total": 44584746.28,
+        "transactions": 16155,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "POLICE AND CRIME COMMISSIONER FOR ESSEX",
+        "total": 40445876.0,
+        "transactions": 40,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MATRIX SCM LTD",
+        "total": 39275955.78,
+        "transactions": 125,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MEARS LTD",
+        "total": 37368134.86,
+        "transactions": 1624,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WATES CONSTRUCTION LTD",
+        "total": 23560865.33,
+        "transactions": 77,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HENDERSON AND TAYLOR P W LTD",
+        "total": 22271452.22,
+        "transactions": 368,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TREETOPS LEARNING COMMUNITY T/A TREETOPS SCHOOL",
+        "total": 20363043.4,
+        "transactions": 53,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DEPARTMENT FOR BUSINESS ENERGY & INDUSTRIAL STRATEGY",
+        "total": 20123571.47,
+        "transactions": 7,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CORNWALL COUNTY COUNCIL",
+        "total": 20000000.0,
+        "transactions": 1,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORTH EAST LONDON NHS FOUNDATION TRUST",
+        "total": 18901126.52,
+        "transactions": 62,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PURPLE CONVERSATION CIC",
+        "total": 18855254.15,
+        "transactions": 147,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "AXIS EUROPE PLC",
+        "total": 15512598.87,
+        "transactions": 24,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NHS MID AND SOUTH ESSEX ICB",
+        "total": 12342504.09,
+        "transactions": 45,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.8419,
+    "total_unique_suppliers": 4774,
+    "single_transaction_suppliers": 1731
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 3173,
+      "potential_value": 141371059.32,
+      "items": [
+        {
+          "supplier": "PUBLIC WORKS LOAN BOARD",
+          "amount": 90000000.0,
+          "date": "2026-01-23",
+          "occurrences": 2,
+          "potential_overpayment": 90000000.0
+        },
+        {
+          "supplier": "DEPARTMENT OF COMMUNITIES & LOCAL GOVERNMENT",
+          "amount": 5733308.0,
+          "date": "2026-02-19",
+          "occurrences": 2,
+          "potential_overpayment": 5733308.0
+        },
+        {
+          "supplier": "DEPARTMENT OF COMMUNITIES & LOCAL GOVERNMENT",
+          "amount": 5196498.0,
+          "date": "2026-02-26",
+          "occurrences": 2,
+          "potential_overpayment": 5196498.0
+        },
+        {
+          "supplier": "LONDON BOROUGH OF BARKING & DAGENHAM",
+          "amount": 3124467.0,
+          "date": "2026-02-19",
+          "occurrences": 2,
+          "potential_overpayment": 3124467.0
+        },
+        {
+          "supplier": "INLAND REVENUE",
+          "amount": 2587204.34,
+          "date": "2026-02-16",
+          "occurrences": 2,
+          "potential_overpayment": 2587204.34
+        },
+        {
+          "supplier": "PUBLIC WORKS LOAN BOARD",
+          "amount": 2313000.0,
+          "date": "2026-01-23",
+          "occurrences": 2,
+          "potential_overpayment": 2313000.0
+        },
+        {
+          "supplier": "ESSEX COUNTY COUNCIL",
+          "amount": 1916982.94,
+          "date": "2026-02-19",
+          "occurrences": 2,
+          "potential_overpayment": 1916982.94
+        },
+        {
+          "supplier": "THURROCK COUNCIL",
+          "amount": 1265956.66,
+          "date": "2026-01-23",
+          "occurrences": 2,
+          "potential_overpayment": 1265956.66
+        },
+        {
+          "supplier": "POLICE AND CRIME COMMISSIONER FOR ESSEX",
+          "amount": 1175664.0,
+          "date": "2026-02-19",
+          "occurrences": 2,
+          "potential_overpayment": 1175664.0
+        },
+        {
+          "supplier": "THURROCK COUNCIL",
+          "amount": 1000000.0,
+          "date": "2026-02-16",
+          "occurrences": 2,
+          "potential_overpayment": 1000000.0
+        },
+        {
+          "supplier": "LONDON BOROUGH OF HAVERING",
+          "amount": 738829.0,
+          "date": "2026-02-19",
+          "occurrences": 2,
+          "potential_overpayment": 738829.0
+        },
+        {
+          "supplier": "TREETOPS LEARNING COMMUNITY T/A TREETOPS SCHOOL",
+          "amount": 703492.0,
+          "date": "2026-02-16",
+          "occurrences": 2,
+          "potential_overpayment": 703492.0
+        },
+        {
+          "supplier": "PURPLE CONVERSATION CIC",
+          "amount": 546494.77,
+          "date": "2026-02-02",
+          "occurrences": 2,
+          "potential_overpayment": 546494.77
+        },
+        {
+          "supplier": "POLICE AND CRIME COMMISSIONER FOR ESSEX",
+          "amount": 519781.0,
+          "date": "2026-02-19",
+          "occurrences": 2,
+          "potential_overpayment": 519781.0
+        },
+        {
+          "supplier": "CORY TOPCO LTD",
+          "amount": 482861.91,
+          "date": "2026-02-12",
+          "occurrences": 2,
+          "potential_overpayment": 482861.91
+        },
+        {
+          "supplier": "ESSEX COUNTY COUNCIL",
+          "amount": 451765.95,
+          "date": "2026-02-18",
+          "occurrences": 2,
+          "potential_overpayment": 451765.95
+        },
+        {
+          "supplier": "MARFLEET AND BRADSHAW LTD",
+          "amount": 448220.41,
+          "date": "2026-02-10",
+          "occurrences": 2,
+          "potential_overpayment": 448220.41
+        },
+        {
+          "supplier": "MEARS LTD",
+          "amount": 439882.44,
+          "date": "2026-02-19",
+          "occurrences": 2,
+          "potential_overpayment": 439882.44
+        },
+        {
+          "supplier": "NORTH EAST LONDON NHS FOUNDATION TRUST",
+          "amount": 439422.69,
+          "date": "2026-02-09",
+          "occurrences": 2,
+          "potential_overpayment": 439422.69
+        },
+        {
+          "supplier": "GRAYS CONVENT HIGH SCHOOL",
+          "amount": 402168.42,
+          "date": "2026-02-16",
+          "occurrences": 2,
+          "potential_overpayment": 402168.42
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 981,
+      "total_value": 2404842000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 429
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Balance Sheet",
+      "spend": 2565711331.97,
+      "count": 5292
+    },
+    {
+      "department": "Collection Fund",
+      "spend": 250415002.0,
+      "count": 129
+    },
+    {
+      "department": "Children's Services",
+      "spend": 248545100.15,
+      "count": 25356
+    },
+    {
+      "department": "Adult Social Care & Health",
+      "spend": 136458648.84,
+      "count": 10831
+    },
+    {
+      "department": "Place",
+      "spend": 135507024.51,
+      "count": 11484
+    },
+    {
+      "department": "Housing Revenue Account",
+      "spend": 129964377.49,
+      "count": 7991
+    },
+    {
+      "department": "Treasury & Central Financing",
+      "spend": 93420847.29,
+      "count": 130
+    },
+    {
+      "department": "Adults; Housing and Health",
+      "spend": 71061837.27,
+      "count": 5557
+    },
+    {
+      "department": "Public Realm",
+      "spend": 23464428.0,
+      "count": 2755
+    },
+    {
+      "department": "Corporate Costs",
+      "spend": 18011053.83,
+      "count": 1448
+    },
+    {
+      "department": "Assistant Chief Exec's Office",
+      "spend": 17370722.41,
+      "count": 1031
+    },
+    {
+      "department": "Finance",
+      "spend": 16395248.01,
+      "count": 1619
+    },
+    {
+      "department": "Corporate Services",
+      "spend": 15975160.12,
+      "count": 4154
+    },
+    {
+      "department": "HR; OD and Transformation",
+      "spend": 4915600.34,
+      "count": 499
+    },
+    {
+      "department": "Housing General Fund",
+      "spend": 4676839.92,
+      "count": 949
+    },
+    {
+      "department": "Assisant Chief Exec's Office",
+      "spend": 1941332.79,
+      "count": 100
+    },
+    {
+      "department": "Resources & Place Delivery",
+      "spend": 953783.59,
+      "count": 50
+    },
+    {
+      "department": "Legal & Governance",
+      "spend": 768124.48,
+      "count": 294
+    },
+    {
+      "department": "Chief of Staff",
+      "spend": 326129.97,
+      "count": 72
+    },
+    {
+      "department": "Strategy; Engagement & Growth",
+      "spend": 215122.39,
+      "count": 243
+    },
+    {
+      "department": "Adult Soclal Care & Health",
+      "spend": 40350.0,
+      "count": 5
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2023/24": 2527868734.59,
+      "2024/25": 323860303.41,
+      "2025/26": 884406710.93,
+      "2026/27": 1688.96,
+      "2027/28": 627.48
+    },
+    "transactions_by_year": {
+      "2023/24": 31586,
+      "2024/25": 17643,
+      "2025/26": 30758,
+      "2026/27": 1,
+      "2027/28": 1
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 79989
+  }
+}

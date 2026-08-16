@@ -1,0 +1,409 @@
+{
+  "summary": {
+    "total_spend": 3424006146.19,
+    "transaction_count": 369423,
+    "unique_suppliers": 10015,
+    "avg_transaction": 9268.52,
+    "median_transaction": 1384.72,
+    "date_range": {
+      "min": "2020-07-01",
+      "max": "2026-03-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "REDACTED PERSONAL DATA",
+        "total": 222085018.15,
+        "transactions": 107519,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PRIP - BERNESLAI HOMES LTD",
+        "total": 166269116.06,
+        "transactions": 82,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BERNESLAI HOMES LTD",
+        "total": 101920513.56,
+        "transactions": 219,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BARNSLEY SPV THREE LTD",
+        "total": 100272218.84,
+        "transactions": 172,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PWLB",
+        "total": 97376683.0,
+        "transactions": 571,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BARNSLEY SPV ONE LTD",
+        "total": 90547040.46,
+        "transactions": 197,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "POLICE AND CRIME COMMISSIONER FOR",
+        "total": 86968516.93,
+        "transactions": 119,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WATES PROPERTY SERVICES LTD",
+        "total": 83699041.42,
+        "transactions": 74,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PENISTONE GRAMMAR SCHOOL",
+        "total": 60615825.69,
+        "transactions": 415,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BARNSLEY SPV TWO LTD",
+        "total": 50555390.36,
+        "transactions": 175,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HENRY BOOT CONSTRUCTION LTD",
+        "total": 50137467.2,
+        "transactions": 42,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REED SPECIALIST RECRUITMENT LTD",
+        "total": 44618112.36,
+        "transactions": 32707,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WELLSPRING ACADEMY TRUST",
+        "total": 38228187.56,
+        "transactions": 562,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MODERN SCHOOLS (BARNSLEY) LTD C/O",
+        "total": 33887276.15,
+        "transactions": 310,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SOUTH YORKS. FIRE & RESCUE SERVICE",
+        "total": 33162758.23,
+        "transactions": 65,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SCR COMBINED AUTHORITY",
+        "total": 30347207.71,
+        "transactions": 38,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NAS SERVICES LTD",
+        "total": 28749177.4,
+        "transactions": 843,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SOUTH YORKSHIRE MAYORAL",
+        "total": 25406831.24,
+        "transactions": 117,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BARNSLEY LEP LTD",
+        "total": 25126431.37,
+        "transactions": 277,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NPOWER LTD",
+        "total": 24108440.91,
+        "transactions": 2771,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.4071,
+    "total_unique_suppliers": 10015,
+    "single_transaction_suppliers": 4426
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 23097,
+      "potential_value": 198657370.26,
+      "items": [
+        {
+          "supplier": "REDACTED PERSONAL DATA",
+          "amount": 4000.0,
+          "date": "2021-01-06",
+          "occurrences": 1049,
+          "potential_overpayment": 4192000.0
+        },
+        {
+          "supplier": "REDACTED PERSONAL DATA",
+          "amount": 2096.0,
+          "date": "2021-02-23",
+          "occurrences": 1095,
+          "potential_overpayment": 2293024.0
+        },
+        {
+          "supplier": "REDACTED PERSONAL DATA",
+          "amount": 2001.0,
+          "date": "2021-01-06",
+          "occurrences": 1049,
+          "potential_overpayment": 2097048.0
+        },
+        {
+          "supplier": "REDACTED PERSONAL DATA",
+          "amount": 8000.0,
+          "date": "2021-04-07",
+          "occurrences": 251,
+          "potential_overpayment": 2000000.0
+        },
+        {
+          "supplier": "PRIP - BERNESLAI HOMES LTD",
+          "amount": 999000.0,
+          "date": "2024-12-11",
+          "occurrences": 3,
+          "potential_overpayment": 1998000.0
+        },
+        {
+          "supplier": "BERNESLAI HOMES LTD",
+          "amount": 1601053.3,
+          "date": "2025-06-16",
+          "occurrences": 2,
+          "potential_overpayment": 1601053.3
+        },
+        {
+          "supplier": "BERNESLAI HOMES LTD",
+          "amount": 1551756.9,
+          "date": "2024-01-09",
+          "occurrences": 2,
+          "potential_overpayment": 1551756.9
+        },
+        {
+          "supplier": "BARNSLEY SPV THREE LTD",
+          "amount": 1414150.4,
+          "date": "2022-06-13",
+          "occurrences": 2,
+          "potential_overpayment": 1414150.4
+        },
+        {
+          "supplier": "BARNSLEY SPV THREE LTD",
+          "amount": 1414150.4,
+          "date": "2022-09-12",
+          "occurrences": 2,
+          "potential_overpayment": 1414150.4
+        },
+        {
+          "supplier": "BERNESLAI HOMES LTD",
+          "amount": 1383208.2,
+          "date": "2022-05-18",
+          "occurrences": 2,
+          "potential_overpayment": 1383208.2
+        },
+        {
+          "supplier": "REDACTED PERSONAL DATA",
+          "amount": 8000.0,
+          "date": "2021-04-08",
+          "occurrences": 170,
+          "potential_overpayment": 1352000.0
+        },
+        {
+          "supplier": "BARNSLEY SPV ONE LTD",
+          "amount": 1244436.01,
+          "date": "2022-09-12",
+          "occurrences": 2,
+          "potential_overpayment": 1244436.01
+        },
+        {
+          "supplier": "BERNESLAI HOMES LTD",
+          "amount": 1222539.0,
+          "date": "2020-08-10",
+          "occurrences": 2,
+          "potential_overpayment": 1222539.0
+        },
+        {
+          "supplier": "PRIP - BERNESLAI HOMES LTD",
+          "amount": 999999.0,
+          "date": "2024-12-20",
+          "occurrences": 2,
+          "potential_overpayment": 999999.0
+        },
+        {
+          "supplier": "REDACTED PERSONAL DATA",
+          "amount": 8000.0,
+          "date": "2021-04-14",
+          "occurrences": 97,
+          "potential_overpayment": 768000.0
+        },
+        {
+          "supplier": "POLICE AND CRIME COMMISSIONER FOR",
+          "amount": 758195.0,
+          "date": "2025-09-18",
+          "occurrences": 2,
+          "potential_overpayment": 758195.0
+        },
+        {
+          "supplier": "NAS SERVICES LTD",
+          "amount": 91546.0,
+          "date": "2024-08-15",
+          "occurrences": 9,
+          "potential_overpayment": 732368.0
+        },
+        {
+          "supplier": "BARNSLEY SPV TWO LTD",
+          "amount": 724076.4,
+          "date": "2022-09-14",
+          "occurrences": 2,
+          "potential_overpayment": 724076.4
+        },
+        {
+          "supplier": "HUMANKIND CHARITY",
+          "amount": 237959.17,
+          "date": "2022-01-13",
+          "occurrences": 4,
+          "potential_overpayment": 713877.51
+        },
+        {
+          "supplier": "BARNSLEY SPV TWO LTD",
+          "amount": 698402.69,
+          "date": "2021-08-04",
+          "occurrences": 2,
+          "potential_overpayment": 698402.69
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 7912,
+      "total_value": 131326000.0
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Childrens Services",
+      "spend": 570950226.52,
+      "count": 63964
+    },
+    {
+      "department": "Core Services",
+      "spend": 515078657.8,
+      "count": 71885
+    },
+    {
+      "department": "Growth & Sustainability",
+      "spend": 503715484.45,
+      "count": 59954
+    },
+    {
+      "department": "Housing Revenue Account",
+      "spend": 449977509.19,
+      "count": 3094
+    },
+    {
+      "department": "Place Health & Adult Social Care",
+      "spend": 390192796.5,
+      "count": 38736
+    },
+    {
+      "department": "People",
+      "spend": 378412335.87,
+      "count": 51994
+    },
+    {
+      "department": "Place",
+      "spend": 265660841.66,
+      "count": 26105
+    },
+    {
+      "department": "Corporate Budgets",
+      "spend": 224644823.26,
+      "count": 38865
+    },
+    {
+      "department": "Public Health & Communities",
+      "spend": 79948626.85,
+      "count": 8832
+    },
+    {
+      "department": "Communities",
+      "spend": 36950587.86,
+      "count": 5495
+    },
+    {
+      "department": "Public Health",
+      "spend": 6769983.77,
+      "count": 428
+    },
+    {
+      "department": "BMBC",
+      "spend": 1062160.93,
+      "count": 66
+    },
+    {
+      "department": "HRA",
+      "spend": 642111.53,
+      "count": 5
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2020/21": 449182260.91,
+      "2021/22": 558900934.91,
+      "2022/23": 417975970.66,
+      "2023/24": 628105471.93,
+      "2024/25": 654514050.1,
+      "2025/26": 715327457.68
+    },
+    "transactions_by_year": {
+      "2020/21": 57879,
+      "2021/22": 67222,
+      "2022/23": 43892,
+      "2023/24": 63326,
+      "2024/25": 66418,
+      "2025/26": 70686
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 369423
+  }
+}

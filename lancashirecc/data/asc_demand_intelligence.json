@@ -1,0 +1,339 @@
+{
+  "generated": "2026-03-24",
+  "sources": [
+    "ONS 2022-based Subnational Population Projections",
+    "NHS Digital Primary Care Dementia Data (Dec 2025)",
+    "OHE/Alzheimer's Research UK prevalence rates",
+    "NICE NG249 Falls Prevention (April 2025)",
+    "PHE Falls Prevention ROI Tool",
+    "ADASS Spring Survey 2025",
+    "CQC State of Care 2024/25",
+    "CQC Lancashire Assessment (Feb 2025)",
+    "Census 2021 Unpaid Care",
+    "GOV.UK ASCOF 2024-25",
+    "GOV.UK ASC Finance Report 2024-25",
+    "LaingBuisson Care Cost Benchmarks 14th Ed",
+    "Lancashire County Council Insight"
+  ],
+
+  "population_projections": {
+    "source": "ONS 2022-based SNPP (Lancashire-14)",
+    "total_population": 1497000,
+    "segments": [
+      { "age_band": "65-74", "2024": 142000, "2026": 144500, "2029": 148000, "2034": 155000, "growth_pct_pa": 0.9 },
+      { "age_band": "75-84", "2024": 78000, "2026": 82500, "2029": 92000, "2034": 103000, "growth_pct_pa": 2.8 },
+      { "age_band": "85+", "2024": 32000, "2026": 34200, "2029": 38000, "2034": 45000, "growth_pct_pa": 3.5 },
+      { "age_band": "18-64_LD", "2024": 4200, "2026": 4350, "2029": 4600, "2034": 5000, "growth_pct_pa": 1.8 },
+      { "age_band": "18-64_MH", "2024": 3800, "2026": 3950, "2029": 4200, "2034": 4600, "growth_pct_pa": 2.0 }
+    ],
+    "over_65_total": { "2024": 252000, "2029": 278000, "2034": 303000 },
+    "over_80_total": { "2024": 68980, "2034": 132018, "note": "80+ nearly doubles by 2047" },
+    "oadr": {
+      "lancashire_2024": 340,
+      "england_2024": 275,
+      "lancashire_2034": 420,
+      "fylde_wyre_2024": 450,
+      "note": "Fylde and Wyre have highest OADRs in Lancashire, both over 450 (England = 275)"
+    },
+    "natural_change": "More deaths than births projected in every period in Lancashire-14"
+  },
+
+  "dementia": {
+    "prevalence_by_age": [
+      { "age_band": "65-69", "male_pct": 1.69, "female_pct": 1.45, "blended_pct": 1.57, "pop_2024": 75000, "cases_2024": 1178 },
+      { "age_band": "70-74", "male_pct": 3.81, "female_pct": 3.18, "blended_pct": 3.50, "pop_2024": 67000, "cases_2024": 2345 },
+      { "age_band": "75-79", "male_pct": 5.12, "female_pct": 6.44, "blended_pct": 5.78, "pop_2024": 47000, "cases_2024": 2717 },
+      { "age_band": "80-84", "male_pct": 11.36, "female_pct": 11.50, "blended_pct": 11.43, "pop_2024": 31000, "cases_2024": 3543 },
+      { "age_band": "85-89", "male_pct": 15.63, "female_pct": 20.43, "blended_pct": 18.03, "pop_2024": 18000, "cases_2024": 3245 },
+      { "age_band": "90+", "male_pct": 24.47, "female_pct": 34.57, "blended_pct": 29.52, "pop_2024": 14000, "cases_2024": 4133 }
+    ],
+    "lancashire_estimated_total_2024": 17161,
+    "lancashire_diagnosed_2024": 12500,
+    "diagnosis_rate_pct": 66.3,
+    "national_diagnosed_dec_2025": 512466,
+    "under_65_prevalence_per_10k": 2.9,
+    "annual_cost_per_person": {
+      "mild": 28700,
+      "moderate": 47000,
+      "severe": 80500,
+      "note": "Alzheimer's Society: lifetime cost ~£100K per person"
+    },
+    "severity_split_pct": { "mild": 55, "moderate": 30, "severe": 15 },
+    "cost_composition": {
+      "social_care_pct": 72,
+      "health_care_pct": 15,
+      "unpaid_care_pct": 13,
+      "note": "Social care costs 3x health care costs (£10.2B vs £3.8B nationally)"
+    },
+    "projected_2034": {
+      "estimated_total": 26500,
+      "growth_pct": 54.4,
+      "driver": "85+ growth (3.5% pa) with 18-30% prevalence drives majority of increase"
+    },
+    "national_projected_2040": 1400000
+  },
+
+  "falls": {
+    "annual_rate_over_65_pct": 33,
+    "annual_rate_over_80_pct": 50,
+    "lancashire_over_65_pop": 252000,
+    "lancashire_estimated_falls_pa": 83160,
+    "lancashire_over_80_falls_pa": 34490,
+    "hospital_admissions_pa_england": 210000,
+    "hospital_admissions_over_80_pct": 70,
+    "lancashire_estimated_admissions_pa": 5200,
+    "hip_fracture": {
+      "lancashire_pa": 1100,
+      "cost_per_fracture": 30000,
+      "total_annual_cost": 33000000,
+      "mortality_within_year_pct": 25,
+      "care_home_admission_pct": 30,
+      "new_care_placements_pa": 330,
+      "annual_care_cost_per_placement": 44200,
+      "ongoing_care_cost": 14586000,
+      "note": "1 in 3 hip fracture survivors need care home placement. 1 in 4 die within a year."
+    },
+    "total_falls_cost_pa": 47600000,
+    "prevention_roi": {
+      "home_assessment_modification": { "cost_per_person": 500, "per_pound_health_social": 3.17, "per_pound_inc_qol": 7.34 },
+      "otago_exercise": { "cost_per_person": 200, "roi_per_pound": 0.95 },
+      "fame_programme": { "cost_per_person": 349, "roi_per_pound": 0.99, "icer_per_fall_averted": 3320 },
+      "nice_ng249_note": "April 2025: expanded scope to 50+ at higher risk, multidisciplinary preventive care"
+    },
+    "estimated_avoidable_with_prevention": {
+      "falls_reduced_pct": 25,
+      "admissions_avoided": 1300,
+      "placements_avoided": 83,
+      "cost_avoided": 15000000,
+      "investment_required": 3000000,
+      "net_saving": 12000000
+    }
+  },
+
+  "learning_disabilities": {
+    "lancashire_recipients": 4200,
+    "avg_weekly_cost": 735,
+    "avg_weekly_cost_2019": 565,
+    "cost_growth_5yr_pct": 31,
+    "complex_avg_weekly": 3316,
+    "complex_cost_growth_1yr": 1299,
+    "annual_spend": 160600000,
+    "national_18_64_spend": 10900000000,
+    "care_setting_split": {
+      "supported_living_pct": 46,
+      "residential_pct": 25,
+      "direct_payments_pct": 24,
+      "nursing_pct": 4,
+      "supported_accommodation_pct": 7
+    },
+    "transforming_care": {
+      "ld_inpatients_reduced_since_2015_pct": 59,
+      "autistic_inpatients_no_ld_increase_pct": 84,
+      "autistic_inpatients_current": 1080,
+      "supported_housing_shortfall_by_2037": 30000,
+      "transformation_funding_pa": 129000000
+    },
+    "growth_drivers": [
+      "Improved life expectancy — more adults with LD living into 60s/70s",
+      "Transition pipeline from children's services (SEND cohort growing 3-5% pa)",
+      "Complex needs: dual diagnosis (LD + MH, LD + autism) increasing",
+      "Supported living costs rising 31% in 5 years"
+    ],
+    "projected_national_spend_2030": 17000000000
+  },
+
+  "mental_health": {
+    "national_referrals_pa": 5200000,
+    "national_referral_growth_5yr_pct": 37.9,
+    "national_in_contact": 4100000,
+    "national_growth_since_2017_pct": 56,
+    "cyp_growth_pct": 118,
+    "very_urgent_referral_growth_pct": 77,
+    "lancashire_estimates": {
+      "s117_aftercare_recipients": 1200,
+      "s117_avg_annual_cost": 42000,
+      "s117_total_cost": 50400000,
+      "community_caseload": 8500,
+      "amhp_assessments_pa": 2200
+    },
+    "capacity_crisis": {
+      "acute_bed_occupancy_pct": 95,
+      "avg_length_of_stay_days": 42,
+      "workforce_vacancy_pct": 9,
+      "waiting_list_national": 1700000,
+      "90th_percentile_wait_weeks": 114
+    },
+    "mh_act_2025": {
+      "statutory_care_plans": true,
+      "lps_replacing_dols": true,
+      "community_treatment_orders_growth_pct": 17,
+      "note": "Mental Health Act 2025 places care and treatment plans on statutory footing for the first time"
+    },
+    "cost_pressure_annual": 8000000,
+    "growth_driver": "73% of ADASS Directors report increasing MH referrals"
+  },
+
+  "unpaid_carers": {
+    "census_2021": {
+      "lancashire_14_total": 140635,
+      "lancashire_12_total": 112737,
+      "pct_of_population": 9.6,
+      "england_pct": 8.8,
+      "change_from_2011": -24700,
+      "note": "Numbers declined but hours per carer increased"
+    },
+    "hours_distribution": {
+      "providing_50plus_hours": 38000,
+      "providing_20_49_hours": 22000,
+      "providing_1_19_hours": 80635,
+      "female_pct": 58.5,
+      "not_in_employment_due_to_caring_pct": 14.5
+    },
+    "high_risk_cohorts": {
+      "aged_65_plus_carers": 28000,
+      "aged_75_plus_carers": 12000,
+      "aged_65_plus_providing_50plus_hours": 15000,
+      "note": "15,000 elderly people providing 50+ hours/week of unpaid care — highest breakdown risk"
+    },
+    "economic_value": {
+      "national_replacement_value": 162000000000,
+      "lancashire_estimated_replacement": 5400000000,
+      "carers_allowance_weekly": 81.90,
+      "note": "Unpaid care value equivalent to a second NHS (£189B NHS budget)"
+    },
+    "breakdown_scenarios": {
+      "carer_hospital_admission_cost": 5000,
+      "respite_cost_per_week": 850,
+      "full_replacement_cost_pa": 35000,
+      "if_10pct_fail": { "carers_affected": 1500, "additional_annual_cost": 52500000 },
+      "if_5pct_fail": { "carers_affected": 750, "additional_annual_cost": 26250000 },
+      "note": "Each high-risk carer breakdown triggers ~£35K pa in formal care costs"
+    },
+    "blackpool_highest_50plus_hours_pct": 3.9,
+    "ribble_valley_lowest_50plus_hours_pct": 2.0
+  },
+
+  "deprivation_impact": {
+    "disability_prevalence": {
+      "most_deprived_40_44_pct": 21.6,
+      "least_deprived_40_44_pct": 8.1,
+      "ratio": 2.67,
+      "note": "Disability rates for 40-44 year olds: 2.67x higher in most deprived areas — indicating earlier care onset"
+    },
+    "lancashire_deprived_districts": [
+      { "district": "Burnley", "imd_rank": 12, "quintile": 1 },
+      { "district": "Hyndburn", "imd_rank": 22, "quintile": 1 },
+      { "district": "Pendle", "imd_rank": 39, "quintile": 1 },
+      { "district": "Blackpool", "imd_rank": 1, "quintile": 1 },
+      { "district": "Blackburn with Darwen", "imd_rank": 11, "quintile": 1 }
+    ],
+    "earlier_onset_years": 10,
+    "healthy_life_expectancy_gap_years": 8,
+    "life_expectancy_gap_years": 10,
+    "multimorbidity": {
+      "higher_in": ["Bangladeshi", "Pakistani", "Black Caribbean"],
+      "five_conditions_90pct_gap": ["chronic pain", "COPD", "type 2 diabetes", "CVD", "anxiety/depression"]
+    },
+    "demand_multiplier": 2.0,
+    "economic_cost": {
+      "nhs_cost_inequalities_pa": 4800000000,
+      "lost_productivity_pa": 31000000000,
+      "total_societal_cost": 82000000000
+    },
+    "prevention_access_gap": {
+      "deprived_used_3plus_services_pct": 58,
+      "average_pct": 67,
+      "note": "People in most deprived areas less likely to access preventative care"
+    }
+  },
+
+  "care_market": {
+    "fees": {
+      "north_west_residential_weekly": 799,
+      "north_west_nursing_weekly": 1037,
+      "england_avg_combined_weekly": 1185,
+      "self_funder_premium_pct": 43,
+      "nw_self_funder_residential_weekly": 1143,
+      "funded_nursing_care_rate_weekly": 235.88,
+      "fnc_covers_true_cost_pct_directors": 9,
+      "note": "North West has second lowest residential fees in England"
+    },
+    "homecare": {
+      "council_avg_hourly": 23.56,
+      "homecare_association_sustainable_rate": 32.14,
+      "rate_gap_pct": 36,
+      "rate_gap_per_hour": 8.58,
+      "national_hours_q1_2025": 47500000,
+      "people_receiving_domiciliary": 499797,
+      "hours_per_person_weekly": "14:23",
+      "note": "Councils pay 36% below the sustainable rate — driving provider exits"
+    },
+    "workforce": {
+      "care_home_vacancy_pct": 5,
+      "homecare_vacancy_pct": 10,
+      "turnover_pct": 25,
+      "international_recruitment_halved": true,
+      "international_2023_24": 105000,
+      "international_2024_25": 50000,
+      "note": "Homecare vacancy rate double care homes. International recruitment halved."
+    },
+    "supply": {
+      "care_homes_nursing_national": 4186,
+      "care_homes_no_nursing_national": 10301,
+      "domiciliary_providers_national": 15232,
+      "domiciliary_growth_pct": 11,
+      "bed_occupancy_pct": 86.3,
+      "provider_closures": {
+        "directors_reporting_closures_pct": 56,
+        "people_affected_6mo": 4000,
+        "note": "56% of ADASS Directors reported closures/handbacks affecting 4,000+ people in last 6 months"
+      }
+    }
+  },
+
+  "cqc_assessment": {
+    "lancashire_rating": "Requires Improvement",
+    "score": "2/4 across all 9 assessment categories",
+    "assessment_period": "October 2024 - February 2025",
+    "backlogs": {
+      "waiting_initial_assessment": 2100,
+      "median_wait_days": 27,
+      "max_wait_days": 226,
+      "awaiting_annual_review": 3800,
+      "median_review_wait_days": 441,
+      "max_review_wait_days": 2760,
+      "ot_waiting": 1100,
+      "ot_median_wait_days": 40,
+      "ot_max_wait_days": 262
+    },
+    "direct_payment_outcomes": {
+      "more_activities_pct": 64,
+      "more_choice_control_pct": 66,
+      "better_health_pct": 60
+    },
+    "carers_supported": "Significantly better than national averages",
+    "electronic_records": "Flagged as unreliable by CQC"
+  },
+
+  "national_context": {
+    "adass_spring_2025": {
+      "overspend_2024_25": 774000000,
+      "planned_savings_2025_26": 932000000,
+      "asc_budget_2025_26": 22400000000,
+      "requests_pa": 2000000,
+      "requests_per_day": 5700,
+      "prevention_spend_pct": 5.6,
+      "used_underspends_from_other_depts_pct": 69,
+      "dipped_into_reserves_pct": 66,
+      "nhs_absorbing_pct_directors": 94,
+      "confident_budgets_meet_older_needs_pct": 24,
+      "confident_budgets_meet_working_age_pct": 21,
+      "response_rate_pct": 91,
+      "note": "Record overspend. Only 24% of Directors confident budgets meet older people's needs."
+    },
+    "ascof_2024_25": {
+      "reablement_12wk_community_pct": 60.7,
+      "note": "First year using Client Level Data — metrics not comparable with previous years"
+    }
+  }
+}

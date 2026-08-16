@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "council_id": "burnley",
+  "updated": "2026-04-19",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Declarative rules that assign each Burnley spending row a record_class. Burnley is a district authority publishing three feeds (spend / contracts / purchase_cards) \u2014 procurement is the dominant class. contracts \u2192 procurement_committed (POs raised; 77% pair with a matching spend record within 90d). spend + purchase_cards \u2192 procurement_paid. Burnley has no REDACTED Care-Act rows, no EFT settlement noise, and no accrual ledger exposure at district scale. Internal-transfer candidates (e.g. Burnley Leisure Trust management fee) await explicit FOI-verified status before tagging \u2014 conservative default keeps them in procurement_paid.",
+  "rules": [
+    {
+      "class": "procurement_committed",
+      "match": {
+        "type_regex": "^contracts$"
+      },
+      "reason": "4,044 rows. POs raised in the finance system but not yet settled as paid invoices. 77% pair with a spend record within 90 days (find_po_spend_pairs) \u2014 those pairs are excluded from duplicate/split detection to avoid double-counting the same transaction across feeds. Unpaired contracts (e.g. CRF grant PORD085086 to Planet Pizza, \u00a398,498, 22 Mar 2022, never drew down) may be lapsed POs."
+    },
+    {
+      "class": "procurement_paid",
+      "match": {
+        "type_regex": "^(spend|purchase_cards|)$"
+      },
+      "reason": "Default for Burnley. spend = 19,865 paid invoices; purchase_cards = 6,671 CEO / departmental card transactions. Empty string matches legacy records whose type was lost in older retrofits."
+    }
+  ],
+  "supplier_aliases": "../shared/lancashire_district_aliases.json"
+}

@@ -1,0 +1,591 @@
+{
+  "version": "2.0",
+  "council_id": "sandwell",
+  "council_name": "Sandwell Metropolitan Borough Council",
+  "generated_at": "2026-05-13T11:06:47.258141Z",
+  "data_sources": [
+    "spending.sqlite (council_etl.py + classify_council.py)",
+    "doge_findings.json (35-technique forensic)",
+    "cross_council.json (32-council peer benchmark)",
+    "budgets_summary.json (MHCLG Revenue Outturn)",
+    "revenue_trends.json (8-yr MHCLG time series)",
+    "source_audit.json (record_class breakdown)",
+    "supplier_donor_crossmatch.json (Electoral Commission CSV API)"
+  ],
+  "financial_summary": {
+    "annual_revenue_budget": 661017000,
+    "council_tax_requirement": 135870000,
+    "service_breakdown": {
+      "Highways and transport services": 6561000,
+      "Housing services (GFRA only)": 4327000,
+      "Cultural and related services": 10831000,
+      "Environmental and regulatory services": 37196000,
+      "Planning and development services": 13844000,
+      "Central services": 21988000
+    },
+    "procurement_footprint_total": 3852842010.62,
+    "procurement_footprint_annual": 550406001.52,
+    "transactions_total": 377622,
+    "transactions_annual": 53946,
+    "unique_suppliers": 12303,
+    "data_period": {
+      "min": "2019-04-01",
+      "max": "2026-02-26"
+    },
+    "financial_years_covered": 7,
+    "per_capita_spend": 1610.32,
+    "population": 341800,
+    "net_revenue_expenditure": 225092000,
+    "budget_year": "2024-25"
+  },
+  "reserves_position": {
+    "total": 170552000,
+    "months_of_revenue": 9.1,
+    "adequacy": "Adequate",
+    "direction": "improving",
+    "trajectory": [
+      {
+        "year": "2021-22",
+        "earmarked": 145471000,
+        "unallocated": 65281000,
+        "total": 210752000
+      },
+      {
+        "year": "2022-23",
+        "earmarked": 21216000,
+        "unallocated": 65281000,
+        "total": 86497000
+      },
+      {
+        "year": "2023-24",
+        "earmarked": 127323000,
+        "unallocated": 15158000,
+        "total": 142481000
+      },
+      {
+        "year": "2024-25",
+        "earmarked": 147983000,
+        "unallocated": 22569000,
+        "total": 170552000
+      }
+    ],
+    "projected": [
+      {
+        "year": "2025-26",
+        "total": 136416500,
+        "projected": true
+      },
+      {
+        "year": "2026-27",
+        "total": 129954900,
+        "projected": true
+      }
+    ]
+  },
+  "forensic_signals": {
+    "duplicate_value": 50000000,
+    "duplicate_count": 5230,
+    "split_payments_value": 89500000,
+    "weak_competition": null,
+    "anomaly_count": 8,
+    "total_flagged_value": 299306000,
+    "severity_breakdown": {
+      "high": 0,
+      "medium": 5,
+      "low": 3
+    },
+    "overall_hhi": 170.9,
+    "service_hhi_high": [],
+    "top10_supplier_pct": 0.3777,
+    "doge_key_findings": [
+      {
+        "title": "10 suppliers with clock-like payment regularity",
+        "severity": "info",
+        "confidence": "high"
+      },
+      {
+        "title": "REDACTED PERSONAL DATA: 37740 transactions totalling \u00a368.2M",
+        "severity": "info",
+        "confidence": "high"
+      }
+    ]
+  },
+  "peer_benchmarks": {
+    "per_capita_spend": {
+      "metric": "per_capita_spend",
+      "this_value": 1610.32,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "top10_supplier_pct": {
+      "metric": "top10_supplier_pct",
+      "this_value": 0.3777,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "reserves_months": {
+      "metric": "reserves_months",
+      "this_value": 9.1,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "overall_hhi": {
+      "metric": "overall_hhi",
+      "this_value": 170.9,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "duplicate_value": {
+      "metric": "duplicate_value",
+      "this_value": 50000000,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "split_payments_value": {
+      "metric": "split_payments_value",
+      "this_value": 89500000,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    }
+  },
+  "audit_research": {
+    "version": "1.0",
+    "council_id": "sandwell",
+    "researched_at": "2026-05-13",
+    "method": "Web research via WebFetch + WebSearch (subagent), all citations primary",
+    "external_audit": {
+      "auditor": "Grant Thornton UK LLP",
+      "audit_partner": "Andrew Smith",
+      "year_ended": "2025-03-31",
+      "opinion": "AUDIT IN PROGRESS",
+      "opinion_severity": "medium",
+      "opinion_detail": "Audit of 2024/25 accounts commenced 4 August 2025 following July 2025 planning activities. Fieldwork underway. Scheduled to complete by end of December 2025 with audit findings to Audit and Risk Assurance Committee 15 January 2026 and final SoA published by 30 January 2026. Backstop deadline for 2024/25 was 27 February 2026. Prior years 2022/23 and 2023/24 received DISCLAIMER OF OPINION by Grant Thornton due to backstop time constraints, NOT due to underlying control failures - explicitly noted in cabinet paper as the auditor unable to gain assurance necessary by backstop date.",
+      "prior_year_disclaimers": [
+        "2022/23: DISCLAIMED (backstop)",
+        "2023/24: DISCLAIMED (backstop)"
+      ],
+      "vfm_conclusion": "2024/25 VfM work in progress. 2021 Grant Thornton VfM Governance Review identified three statutory recommendations - all three LIFTED by Grant Thornton December 2023 follow-up review.",
+      "key_risks_in_2024_25_audit_plan": [
+        "Management override of controls",
+        "Valuation of land and buildings, council dwellings and investment properties",
+        "Valuation of pension fund net liability",
+        "Implementation of Oracle Fusion General Ledger (post-implementation review needed)",
+        "IFRS 16 leases implementation",
+        "VfM risk: delivery of housing service - Housing Improvement and Transformation Programme being monitored",
+        "VfM risk: Sandwell Childrens Trust \u00a33M deterioration vs forecast outturn (control weakness concern)"
+      ],
+      "report_date": "audit findings due 15 January 2026",
+      "presented_to": "Audit and Risk Assurance Committee",
+      "url": "https://sandwell.moderngov.co.uk/documents/g7365/Public+reports+pack+18th-Sep-2025+18.00+Audit+and+Risk+Assurance+Committee.pdf"
+    },
+    "historical_intervention": {
+      "commissioners_appointed": "2022-03-22",
+      "commissioners": [
+        "Kim Bromley-Derry CBE DL (lead, also interim CEO from August 2021)",
+        "Jim Taylor"
+      ],
+      "trigger": "Grant Thornton VfM Governance Review 3 December 2021 identified deeply troubling picture of mismanagement and ineffective scrutiny and accountability arrangements",
+      "intervention_ended": "2024-03-22",
+      "intervention_duration_years": 2,
+      "cost_m": 0.58,
+      "sos_finding": "Secretary of State agreed Council now meeting Best Value Duty; Commissioners fourth report 7 March 2024 concluded Council ready to move forward without Commissioner support",
+      "statutory_recommendations_lifted_date": "2023-12",
+      "source_urls": [
+        "https://www.gov.uk/government/collections/intervention-at-sandwell-metropolitan-borough-council",
+        "https://data.parliament.uk/DepositedPapers/Files/DEP2024-0274/Sandwell_MBC-Commissioners_Fourth_Report-20_Dec.pdf",
+        "https://www.sandwell.gov.uk/news/article/365/external-auditors-report-statutory-recommendations-can-now-be-lifted-at-sandwell-council",
+        "https://www.sandwell.gov.uk/news/article/387/government-intervention-at-sandwell-council-to-end"
+      ]
+    },
+    "internal_audit": {
+      "year": "2024/25",
+      "overall_opinion": "reasonable assurance",
+      "overall_opinion_detail": "In the opinion of Internal Audit, reasonable assurance could be provided that the Council had adequate and effective governance, risk management and internal control processes. Opinion based on work undertaken throughout the year by Internal Audit alongside work by other external bodies. Audits conducted in accordance with Public Sector Internal Audit Standards. Majority of key financial systems work undertaken during SBS-to-Oracle Fusion transition (which temporarily increased audit issues raised and recommendations made).",
+      "limited_assurance_count": 5,
+      "limited_assurance_subjects": [
+        "Aids and adaptations - delays in equipping households with required adaptations to support independent living",
+        "Use of council procurement cards - follow-up review showed slight improvement; further tightened controls required for transaction documentation",
+        "Accounts receivable and capital accounting - discrepancies identified in data transferred between SBS and Oracle Fusion (raised with Oracle Fusion Support team)",
+        "Sandwell Community School - governance and financial controls concerns; recommendations made to strengthen arrangements and terms of reference",
+        "Fifth subject not enumerated in extracted September 2025 committee minutes - check full Internal Audit Annual Report"
+      ],
+      "counter_fraud_2024_25": {
+        "investigations_completed": 194,
+        "prosecutions": 20,
+        "recovered_properties": 33,
+        "blue_badge_warning_letters": 12,
+        "value_of_recovered_and_prevented_fraud_m": 3.37,
+        "spd_removed_value_\u00a3": 73414,
+        "spd_penalty_notices_issued": 134
+      },
+      "source_url": "https://sandwell.moderngov.co.uk/documents/g7365/Public+reports+pack+18th-Sep-2025+18.00+Audit+and+Risk+Assurance+Committee.pdf"
+    },
+    "mtfs_2026_31": {
+      "title": "Draft MTFS 2026/27 to 2030/31",
+      "total_net_revenue_budget_2026_27_m": 464.48,
+      "forecast_net_expenditure_requirement_m": {
+        "2026_27": 389.123,
+        "2027_28": 412.621,
+        "2028_29": 434.527,
+        "2029_30": 456.462,
+        "2030_31": 478.561
+      },
+      "total_funding_available_m": {
+        "2026_27": 380.77,
+        "2027_28": 386.557,
+        "2028_29": 396.828,
+        "2029_30": 413.19,
+        "2030_31": 430.48
+      },
+      "forecast_budget_gaps_m_pre_efficiency": {
+        "2026_27": 8.353,
+        "2027_28": 26.064,
+        "2028_29": 37.699,
+        "2029_30": 43.272,
+        "2030_31": 48.081
+      },
+      "savings_target_2026_27_m": 8.353,
+      "cumulative_savings_5yr_m": 45.525,
+      "efficiencies_per_year_m": {
+        "2026_27": 8.353,
+        "2027_28": 8.773,
+        "2028_29": 9.253,
+        "2029_30": 9.333,
+        "2030_31": 9.813
+      },
+      "forecast_deficit_after_efficiencies_m": {
+        "2026_27": 0,
+        "2027_28": 17.291,
+        "2028_29": 28.446,
+        "2029_30": 33.939,
+        "2030_31": 38.268
+      },
+      "budget_balanced_2026_27": true,
+      "reserves_used_in_2026_27_m": 9,
+      "reserves_strategy": "Council has enhanced reserves strategy introduced in 2025/26. MTFS does not factor in use of General Reserves in medium term to balance financial deficits from 2027/28 onwards. 2026/27 includes -\u00a319.792M draw to offset Sandwell Childrens Trust cumulative deficit (over 3 years), -\u00a32.640M dividend receipts to balance, -\u00a30.180M to fund Sandwell Plan document.",
+      "reserves_total_general_fund_at_1_april_2024_m": 19.046,
+      "reserves_unearmarked_at_31_march_2024_m": 17.4,
+      "council_tax_increase_2026_27_pct": 4.99,
+      "council_tax_band_d_rise_\u00a3": 111,
+      "savings_fortnightly_bin_collection_m": 2.5,
+      "capital_debt_service_2025_26_m": 22,
+      "capital_debt_service_pct_of_net_budget": 6,
+      "url": "https://sandwell.moderngov.co.uk/documents/s31886/Appendix%201%20-%20Medium-Term%20Financial%20Strategy%20202627%20to%20203031.pdf"
+    },
+    "strategic_risks": {
+      "register_status": "Live register maintained by Audit and Risk Assurance Committee; status reported in May 2025 meeting and ongoing",
+      "red_risks_may_2025": [
+        "Demand and cost of SEND Placements and Transport",
+        "Homelessness and Temporary Accommodation"
+      ],
+      "risks_reduced_red_to_amber_may_2025": [
+        "Climate Change",
+        "Housing Transformation",
+        "Cyber Security",
+        "Adults - Strategic Workforce Development"
+      ],
+      "mtfs_strategic_risks": [
+        "Childrens Social Care - if Sandwell Childrens Trust does not address performance issues, risks failing statutory responsibilities",
+        "Business Continuity Management",
+        "Compliance with Data Protection Act 2018, GDPR and Freedom of Information Act 2000",
+        "Cyber Security",
+        "Regeneration Fund Programmes - delivery to scope, time and budget",
+        "Customer Experience",
+        "Equalities - failure to meet Equality Act 2010 / Public Sector Equality Duty obligations"
+      ],
+      "url": "https://sandwell.moderngov.co.uk/documents/g7365/Public+reports+pack+18th-Sep-2025+18.00+Audit+and+Risk+Assurance+Committee.pdf"
+    },
+    "dsg_send": {
+      "dsg_2026_27_allocation_after_adjustments_m": 529.663,
+      "dsg_2026_27_allocation_gross_m": 538.913,
+      "dsg_yoy_increase_pct": 5.31,
+      "high_needs_block_2026_27_provisional_m": 81.779,
+      "high_needs_block_2025_26_after_adjustments_m": 77.607,
+      "dsg_25_26_in_year_high_needs_overspend_provisional_m": 4.167,
+      "dsg_reserve_status_2025_26": "High Needs Block reserve position becoming a deficit reserve in 2025/26 - estimated \u00a34.167M negative balance held against overall council resources, not chargeable to General Fund under statutory override",
+      "statutory_override_extended_to": "2028-03-31",
+      "safety_valve_status": "Not in Safety Valve programme; per MTFS, working on mitigation strategy via strategic partner for 12-month SEND transformation programme (strategy and forward planning, locality model, SEND service restructure, front door model for Inclusive Learning Services, whole school SEND/inclusion offer, home to school transport review)",
+      "asc_overspend_2024_25_m": 2.5,
+      "sandwell_childrens_trust_cumulative_deficit_2024_25_m": 19.792,
+      "sandwell_childrens_trust_remediation": "Council intends to resolve Trust deficit by drawing \u00a319.792M from earmarked reserves; new 3-year contract sum 2025/26-2027/28 funded from reserves of \u00a36.597M in 2026/27 and 2027/28 to reduce deficit to nil over period",
+      "url": "https://sandwell.moderngov.co.uk/documents/s31886/Appendix%201%20-%20Medium-Term%20Financial%20Strategy%20202627%20to%20203031.pdf"
+    },
+    "asc_market_sustainability": {
+      "plan_published": "not located via web search - check sandwell.gov.uk publications",
+      "asc_pressure_driver": "Inflation associated with Adult Social Care contracts and increase from April 2026 in National Living Wage; \u00a310.328M ongoing growth from 2026/27 for inflationary pressures + \u00a37.404M ongoing budget growth for ASC placements",
+      "follow_up_required": "Verify Market Sustainability Plan publication on sandwell.gov.uk"
+    },
+    "lgr": {
+      "status": "no LGR proposal",
+      "context": "Sandwell is a metropolitan borough within the West Midlands Combined Authority (WMCA). No live LGR consultation for West Midlands metropolitan boroughs.",
+      "scope": "Not applicable",
+      "url": null
+    },
+    "property_strategy": {
+      "name": "General Fund Capital Programme (MTFS Annex 9)",
+      "capital_debt_service_pct_target": "Below 6% of council net budget for MTFS period (currently 6%)",
+      "revenue_costs_of_borrowing_per_year_m": {
+        "2026_27_previous_programmes": 16.82,
+        "2027_28_previous_programmes": 16.661,
+        "2028_29_previous_programmes": 16.311,
+        "2029_30_previous_programmes": 13.46,
+        "2030_31_previous_programmes": 13.384,
+        "5yr_total_previous": 76.636,
+        "5yr_total_current_core_programme": 25.968,
+        "5yr_total_pipeline_proposals": 11.18
+      },
+      "url": "https://sandwell.moderngov.co.uk/documents/s31886/Appendix%201%20-%20Medium-Term%20Financial%20Strategy%20202627%20to%20203031.pdf"
+    },
+    "actionable_savings_levers_summary": [
+      "Cumulative \u00a3155M budget gap pre-efficiency over 5 years (2026/27 to 2030/31) with only \u00a345.5M efficiencies identified - \u00a3109M remaining unidentified gap",
+      "Sandwell Childrens Trust \u00a319.792M cumulative deficit being absorbed by reserves over 3 years - performance/cost reduction critical to avoid further drawdown",
+      "DSG High Needs Block deficit just starting (\u00a34.167M in 25/26) - early Safety Valve engagement could prevent Lancashire-scale \u00a3243M trajectory",
+      "Oracle Fusion General Ledger post-implementation review is auditor priority - cleanup of SBS-to-Fusion data discrepancies, accounts receivable and capital accounting (limited-assurance internal audit subjects)",
+      "Counter-fraud: \u00a33.37M recovered/prevented in 2024/25 against 194 investigations - scope to extend SPD fraud programme (\u00a373k removed via 134 penalty notices)",
+      "Procurement card controls remain limited-assurance - follow-up internal audit needed to confirm full remediation",
+      "Housing Improvement and Transformation Programme is auditor VfM monitoring item - delivery progress directly affects audit risk rating"
+    ],
+    "source_urls": [
+      "https://sandwell.moderngov.co.uk/documents/g7365/Public+reports+pack+18th-Sep-2025+18.00+Audit+and+Risk+Assurance+Committee.pdf",
+      "https://sandwell.moderngov.co.uk/documents/s31886/Appendix%201%20-%20Medium-Term%20Financial%20Strategy%20202627%20to%20203031.pdf",
+      "https://sandwell.moderngov.co.uk/documents/s30241/Appendix+2+-+Draft+Medium-Term+Financial+Strategy+202627-203031.pdf",
+      "https://sandwell.moderngov.co.uk/documents/s29446/Draft%20Statement%20of%20Accounts%202024%2025.pdf",
+      "https://www.gov.uk/government/collections/intervention-at-sandwell-metropolitan-borough-council",
+      "https://www.sandwell.gov.uk/news/article/365/external-auditors-report-statutory-recommendations-can-now-be-lifted-at-sandwell-council",
+      "https://www.sandwell.gov.uk/news/article/387/government-intervention-at-sandwell-council-to-end",
+      "https://www.sandwell.gov.uk/news/article/778/about-the-council-s-budget-for-2026-27-how-council-tax-helps-fund-a-huge-range-of-services"
+    ],
+    "coverage_gaps": [
+      "Final 2024/25 audit opinion (audit findings report due 15 January 2026, after research date)",
+      "Fifth limited-assurance internal audit subject (not enumerated in extracted September 2025 minutes)",
+      "ASC Market Sustainability Plan publication URL",
+      "Sandwell Childrens Trust performance trajectory under new 3-year contract sum",
+      "Sandwell Plan document content (\u00a30.180M earmarked from reserves to fund creation)",
+      "CIPFA Resilience Index council-specific scores (paywalled)"
+    ]
+  },
+  "donor_links": null,
+  "strategic_themes": [
+    {
+      "id": "workforce_agency_reduction",
+      "title": "Agency / locum staff demand reduction (\u00a338M concentrated)",
+      "rationale": "\u00a338M of agency-staff spend across 1 master vendors. Top: HAYS SPECIALIST RECRUITMENT LTD (\u00a338M). Standard transformation: cap agency premium at 20% above substantive rate, workforce-plan permanent conversion (6-9 month payback), regional bank pool, open-book master-vendor margins. CIPFA experience: 8-15% reduction in 12-18 months.",
+      "estimated_savings_low_m": 3.0,
+      "estimated_savings_high_m": 5.6,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of HR + Director of Finance + S151 Officer",
+      "evidence": [
+        "spending corpus: top agency suppliers"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "energy_procurement_optimisation",
+      "title": "Energy procurement via CCS / LASER / NEPO frameworks (\u00a331M baseline)",
+      "rationale": "\u00a331M utility spend across 1 suppliers. Top: TOTALENERGIES GAS & POWER LTD (\u00a331M). Crown Commercial RM6306 + LASER / NEPO consortium flex purchase typically saves 4-8% vs direct supplier contracts on a 3-yr horizon. Plus solar PV self-generation on council estate (7-9 yr payback) + DESNZ Public Sector Decarbonisation Scheme grants up to 100% capex on heat pump conversion.",
+      "estimated_savings_low_m": 1.6,
+      "estimated_savings_high_m": 3.7,
+      "savings_type": "recurring + capital grant",
+      "delivery_horizon": "12-36 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Property + Sustainability Lead + S151 Officer",
+      "evidence": [
+        "Crown Commercial RM6306",
+        "DESNZ PSDS scheme",
+        "LASER / NEPO frameworks"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "treasury_borrowing_optimisation",
+      "title": "Treasury management + borrowing cost optimisation (CFR proxy \u00a3529M)",
+      "rationale": "Annual revenue \u00a3661M implies indicative CFR c. \u00a3529M. Standard levers: internal borrowing from earmarked reserves, PWLB Certainty Rate trade, MMF counterparty restructuring, LGPS Property Investment Pool inclusion. 10-30bp saving on external debt typical from a fresh review.",
+      "estimated_savings_low_m": 0.53,
+      "estimated_savings_high_m": 1.59,
+      "savings_type": "recurring",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (subject to TM Strategy approval)",
+      "decision_owner": "S151 Officer + Treasurer",
+      "evidence": [
+        "CIPFA Prudential + Treasury Management Codes 2021",
+        "PWLB Certainty Rate"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "lgps_employer_contribution",
+      "title": "LGPS employer contribution opportunity (2025 triennial valuation cycle)",
+      "rationale": "Indicative pay bill \u00a3264M \u00d7 c. 22% employer contribution rate = \u00a358M annual employer contribution. Most LGPS funds materially over-funded post-2022 (returns 2022-25 averaged 7-10% pa vs 3-4% discount-rate assumption). 2025 triennial valuation typically yields 2-4pp employer-rate reduction over 2026-2029. Confirm with administering authority + actuary.",
+      "estimated_savings_low_m": 2.9,
+      "estimated_savings_high_m": 8.7,
+      "savings_type": "recurring (3-yr triennial)",
+      "delivery_horizon": "settled at 2025 valuation; recurring 2026-2029",
+      "implementation_complexity": "low (LGPS admin enacts new rate)",
+      "decision_owner": "S151 Officer + LGPS Pensions Committee",
+      "evidence": [
+        "LGPS Regulations 2013 + 2014",
+        "2025 triennial valuation reports"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "income_fees_charges_optimisation",
+      "title": "Fees, charges + traded-services income optimisation (\u00a366M base)",
+      "rationale": "Indicative fees & charges + traded-services income c. 10% of revenue = \u00a366M. Standard levers: annual CPI uplift discipline, full-cost-recovery audit on discretionary services (parking, planning, licensing, sports, adult learning, property hire), commercial pricing on traded services. LGA experience: 5-15% income uplift sustainable over 2-3 years.",
+      "estimated_savings_low_m": 3.3,
+      "estimated_savings_high_m": 9.9,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-24 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Cabinet (each fee delegation)",
+      "evidence": [
+        "LGA fees and charges benchmarking",
+        "CIPFA Charging guidance"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "insurance_retention_review",
+      "title": "Insurance retention + premium review (\u00a30.7M premium estimate)",
+      "rationale": "Indicative insurance premium \u00a30.7M (10bp of revenue). Standard 3-5 yr renewal cycle. Levers: tender via IPG / RM Partners (10-25% premium reduction typical), retention review (increase excess + build risk-fund reserve). London-borough cohort average 12% premium reduction at last tender.",
+      "estimated_savings_low_m": 0.07,
+      "estimated_savings_high_m": 0.17,
+      "savings_type": "recurring",
+      "delivery_horizon": "9-18 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Risk Manager",
+      "evidence": [
+        "IPG framework",
+        "RM Partners broker market"
+      ],
+      "severity": "low"
+    },
+    {
+      "id": "procurement_data_review",
+      "title": "Contracts Finder portfolio review (186 notices; 1 contracts at \u00a310M+ ceiling)",
+      "rationale": "Contracts Finder data: 186 notices (42 awarded, \u00a319M aggregate ADVERTISED CEILING value, 0% SME). IMPORTANT: advertised contract value is a CEILING set to avoid retender risk under PCR 2015 Reg.72 / Procurement Act 2023 s.31 \u2014 actual spend through the awardee is typically 30-70% of ceiling, with some off-contract ledger spend permitted within the 50%/50% modification limits. 1 contracts at \u00a310M+ ceiling totalling \u00a3130M (ceiling, NOT spend) \u2014 top 3: West Midlands Fostering Framework 2020 (ceiling \u00a3130M). Matched against ledger: Sandwell Carers Service - AWARD \u2014 ceiling \u00a31.5M, actual ledger spend with awardee \u00a30.5M; Mortuary Facilities and Pathology Services - AWARD \u2014 ceiling \u00a31.1M, actual ledger spend with awardee \u00a3816.1M; Printing of the Sandwell Herald council newspaper  \u2014 ceiling \u00a30.1M, actual ledger spend with awardee \u00a31.4M. Aggregate identified actual spend \u00a316888M. SME-awarded share 0% is below the Procurement Reform 2023 / PPN 03/24 ambition (33% SME share by value). Standard procurement-data savings levers (% of ACTUAL ledger spend, not ceiling): (a) modification-history scrutiny under PCR 2015 Reg.72, (b) Procurement Act 2023 s.31 contract change notice review, (c) re-tender benchmark vs CCS framework rates on next renewal. 2-8% on actual spend through major contracts is a defensible upper bound.",
+      "estimated_savings_low_m": 337.8,
+      "estimated_savings_high_m": 1351.1,
+      "savings_type": "recurring (post next contract renewal)",
+      "delivery_horizon": "12-36 months (contract-renewal cycle)",
+      "implementation_complexity": "high",
+      "decision_owner": "Head of Procurement + Cabinet Member + Section 151 Officer",
+      "evidence": [
+        "procurement.json (Contracts Finder API): 186 notices",
+        "ledger-matched actual spend: \u00a316888.3M",
+        "PCR 2015 Reg.72; Procurement Act 2023 s.31"
+      ],
+      "savings_basis": "Ledger-matched actual spend through awardees",
+      "advertised_ceiling_total_m": 130.0,
+      "ledger_matched_actual_spend_m": 16888.3,
+      "severity": "medium"
+    },
+    {
+      "id": "companies_house_compliance",
+      "title": "Companies House compliance follow-up (\u00a379M flagged \u2014 1 overdue, 3 dissolved, 1 insolvency-history)",
+      "rationale": "Companies House lookup on top-50 suppliers identified \u00a379M of spend with statutory-compliance flags: \u00a324M to suppliers with overdue accounts (1), \u00a342M to dissolved-status companies (3), \u00a313M to companies with insolvency history (1). NOTE: Some matches are CH fuzzy-search false positives (e.g. school, government-body name collisions) and need human verification. After verification, real flags = (a) credit-risk review on overdue accounts, (b) contract-cleanup on dissolved entities (records still on ledger but supplier extinct \u2014 risk of duplicate-payment leakage), (c) PCR 2015 Reg.57 discretionary exclusion review on insolvency-history suppliers in active contracts.",
+      "estimated_savings_low_m": 0.4,
+      "estimated_savings_high_m": 1.6,
+      "savings_type": "one-off cleanup + recurring risk reduction",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (CH already enriched)",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "companies_house_enrichment.json"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "refund_credit_recovery",
+      "title": "Refund / credit-note management + contract dispute resolution (\u00a339M, 2,858 rows)",
+      "rationale": "2,858 negative-amount rows totalling \u00a339M \u2014 refunds, credit notes, contract reversals. Volume signals correct ledger capture, but proactive levers exist: (a) contract management review on top recurring refund counterparties, (b) duplicate-payment pre-detection, (c) energy-bill credit-management automation. Typical 5-10% reduction in refund volume + faster reconciliation = 10-30bp net cash improvement.",
+      "estimated_savings_low_m": 0.2,
+      "estimated_savings_high_m": 0.8,
+      "savings_type": "recurring + cash management",
+      "delivery_horizon": "12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Head of Procurement + Internal Audit + Treasury",
+      "evidence": [
+        "sqlite: 2,858 negative rows / \u00a339M"
+      ],
+      "severity": "low"
+    },
+    {
+      "id": "duplicate_recovery",
+      "title": "Audit + recover \u00a350M in flagged duplicate-payment patterns",
+      "rationale": "DOGE forensic flagged \u00a350M across 5,230 groups of likely duplicates. Industry recovery norm 5-15% via duplicate-detection software (AP Forensics, FISCAL, Oracle Concur). Lloyds Bank Commercial Card analysis typical for spot-check sample of 100 highest-confidence matches.",
+      "estimated_savings_low_m": 2.5,
+      "estimated_savings_high_m": 7.5,
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Finance + Internal Audit",
+      "evidence": [
+        "doge_findings.duplicate_count",
+        "doge_findings.duplicate_value"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "split_payment_review",
+      "title": "Investigate \u00a390M in flagged split-payment patterns",
+      "rationale": "DOGE flagged \u00a390M across 0 split-payment instances. Split payments often indicate (a) below-procurement-threshold ledger fragmentation circumventing PCR 2015 Reg.4 contract-value-aggregation rule; or (b) legitimate sub-line invoice splits. Sample audit + reclassify; misuse triggers Reg. 99 challenge exposure.",
+      "estimated_savings_low_m": 1.8,
+      "estimated_savings_high_m": 7.2,
+      "delivery_horizon": "9-12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "doge_findings.split_payments_value",
+        "PCR 2015 Reg.4"
+      ],
+      "severity": "medium"
+    }
+  ],
+  "supplier_recommendations": [],
+  "supplier_summary_flags": {},
+  "recommendation_counts": {}
+}

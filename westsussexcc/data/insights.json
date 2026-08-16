@@ -1,0 +1,496 @@
+{
+  "summary": {
+    "total_spend": 4855056724.46,
+    "transaction_count": 872831,
+    "unique_suppliers": 7863,
+    "avg_transaction": 5562.42,
+    "median_transaction": 1514.22,
+    "date_range": {
+      "min": "2022-04-01",
+      "max": "2025-12-24"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "PAYMENT TO AN INDIVIDUAL",
+        "total": 254515233.69,
+        "transactions": 152558,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NHS SUSSEX ICB",
+        "total": 209517432.19,
+        "transactions": 77,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BIFFA WEST SUSSEX LTD",
+        "total": 149488275.43,
+        "transactions": 119,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SHAW HEALTHCARE (WEST SUSSEX ) LTD",
+        "total": 121730163.06,
+        "transactions": 29796,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BIFFA WEST SUSSEX RECYCLING LTD",
+        "total": 99689825.91,
+        "transactions": 282,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MATRIX SCM LTD",
+        "total": 81567435.07,
+        "transactions": 62120,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "W SUSSEX BRITANNIACREST SENECA PSHI",
+        "total": 59657848.25,
+        "transactions": 189,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BALFOUR BEATTY LIVING PLACES LTD",
+        "total": 59096411.4,
+        "transactions": 1124,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TAY VALLEY LIGHTING (WEST SUSSEX) L",
+        "total": 52078738.91,
+        "transactions": 65,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SUSSEX COMMUNITY NHS TRUST",
+        "total": 48229226.45,
+        "transactions": 300,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CRAWLEY SCHOOLS LTD",
+        "total": 46713204.93,
+        "transactions": 303,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "F M CONWAY LTD",
+        "total": 41304902.56,
+        "transactions": 310,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ADELAIDE CARE LTD",
+        "total": 41127983.33,
+        "transactions": 2144,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NPOWER COMMERCIAL GAS LTD",
+        "total": 36317159.74,
+        "transactions": 8160,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "JACKSON CIVIL ENGINEERING GROUP LTD",
+        "total": 35517446.53,
+        "transactions": 104,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LANDBUILD LTD",
+        "total": 35185911.69,
+        "transactions": 859,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SOUTHDOWN HOUSING ASSOCIATION LTD",
+        "total": 29935202.77,
+        "transactions": 4075,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "KENT COUNTY COUNCIL",
+        "total": 29721275.85,
+        "transactions": 8023,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "STAGECOACH SERVICES LTD",
+        "total": 29595041.57,
+        "transactions": 799,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PATHWAY HEALTHCARE LTD",
+        "total": 26249456.79,
+        "transactions": 1951,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.3063,
+    "total_unique_suppliers": 7863,
+    "single_transaction_suppliers": 2169
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 80169,
+      "potential_value": 764847266.73,
+      "items": [
+        {
+          "supplier": "NHS SUSSEX ICB",
+          "amount": 9784039.25,
+          "date": "2022-11-08",
+          "occurrences": 2,
+          "potential_overpayment": 9784039.25
+        },
+        {
+          "supplier": "NHS SUSSEX ICB",
+          "amount": 2679206.5,
+          "date": "2024-03-20",
+          "occurrences": 4,
+          "potential_overpayment": 8037619.5
+        },
+        {
+          "supplier": "NHS SUSSEX ICB",
+          "amount": 5000000.0,
+          "date": "2024-03-20",
+          "occurrences": 2,
+          "potential_overpayment": 5000000.0
+        },
+        {
+          "supplier": "NHS SUSSEX ICB",
+          "amount": 2370325.0,
+          "date": "2022-11-14",
+          "occurrences": 2,
+          "potential_overpayment": 2370325.0
+        },
+        {
+          "supplier": "PAYMENT TO AN INDIVIDUAL",
+          "amount": 9445.38,
+          "date": "2024-12-04",
+          "occurrences": 241,
+          "potential_overpayment": 2266891.2
+        },
+        {
+          "supplier": "PAYMENT TO AN INDIVIDUAL",
+          "amount": 8526.88,
+          "date": "2023-12-20",
+          "occurrences": 256,
+          "potential_overpayment": 2174354.4
+        },
+        {
+          "supplier": "PAYMENT TO AN INDIVIDUAL",
+          "amount": 8279.22,
+          "date": "2024-12-04",
+          "occurrences": 257,
+          "potential_overpayment": 2119480.32
+        },
+        {
+          "supplier": "PAYMENT TO AN INDIVIDUAL",
+          "amount": 8118.0,
+          "date": "2022-12-21",
+          "occurrences": 260,
+          "potential_overpayment": 2102562.0
+        },
+        {
+          "supplier": "PAYMENT TO AN INDIVIDUAL",
+          "amount": 9727.0,
+          "date": "2023-12-20",
+          "occurrences": 213,
+          "potential_overpayment": 2062124.0
+        },
+        {
+          "supplier": "BIFFA WEST SUSSEX RECYCLING LTD",
+          "amount": 2040307.8,
+          "date": "2024-01-23",
+          "occurrences": 2,
+          "potential_overpayment": 2040307.8
+        },
+        {
+          "supplier": "BIFFA WEST SUSSEX RECYCLING LTD",
+          "amount": 2026142.16,
+          "date": "2024-01-23",
+          "occurrences": 2,
+          "potential_overpayment": 2026142.16
+        },
+        {
+          "supplier": "BIFFA WEST SUSSEX LTD",
+          "amount": 2000000.0,
+          "date": "2024-01-09",
+          "occurrences": 2,
+          "potential_overpayment": 2000000.0
+        },
+        {
+          "supplier": "BUILDING DIGITAL UK",
+          "amount": 1981622.0,
+          "date": "2024-01-22",
+          "occurrences": 2,
+          "potential_overpayment": 1981622.0
+        },
+        {
+          "supplier": "PAYMENT TO AN INDIVIDUAL",
+          "amount": 9262.0,
+          "date": "2022-12-21",
+          "occurrences": 205,
+          "potential_overpayment": 1889448.0
+        },
+        {
+          "supplier": "ARUN DISTRICT COUNCIL",
+          "amount": 1801335.0,
+          "date": "2023-03-01",
+          "occurrences": 2,
+          "potential_overpayment": 1801335.0
+        },
+        {
+          "supplier": "SUSSEX COMMUNITY NHS TRUST",
+          "amount": 894007.83,
+          "date": "2024-07-24",
+          "occurrences": 3,
+          "potential_overpayment": 1788015.66
+        },
+        {
+          "supplier": "SHAW HEALTHCARE (WEST SUSSEX ) LTD",
+          "amount": 3802.63,
+          "date": "2024-01-19",
+          "occurrences": 416,
+          "potential_overpayment": 1578091.45
+        },
+        {
+          "supplier": "TREEHOUSE EDUCARE LTD",
+          "amount": 20915.33,
+          "date": "2025-12-09",
+          "occurrences": 71,
+          "potential_overpayment": 1464073.1
+        },
+        {
+          "supplier": "TAY VALLEY LIGHTING (WEST SUSSEX) L",
+          "amount": 1281791.56,
+          "date": "2024-01-30",
+          "occurrences": 2,
+          "potential_overpayment": 1281791.56
+        },
+        {
+          "supplier": "PAYMENT TO AN INDIVIDUAL",
+          "amount": 10745.7,
+          "date": "2024-12-04",
+          "occurrences": 120,
+          "potential_overpayment": 1278738.3
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 6358,
+      "total_value": 257079000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 326
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Education Services",
+      "spend": 961501886.49,
+      "count": 153334
+    },
+    {
+      "department": "Learning Disabilty - Adults",
+      "spend": 529157001.82,
+      "count": 104165
+    },
+    {
+      "department": "Physical Support Older People",
+      "spend": 527638750.63,
+      "count": 183041
+    },
+    {
+      "department": "Highways & Transport Services",
+      "spend": 491651567.12,
+      "count": 23733
+    },
+    {
+      "department": "Children Social Care",
+      "spend": 399644286.81,
+      "count": 106326
+    },
+    {
+      "department": "Waste Disposal",
+      "spend": 315056915.1,
+      "count": 1278
+    },
+    {
+      "department": "Support Service And Management Costs",
+      "spend": 237160149.04,
+      "count": 17804
+    },
+    {
+      "department": "Adult Social Care",
+      "spend": 210207776.81,
+      "count": 62029
+    },
+    {
+      "department": "Better Care Fund",
+      "spend": 208368927.98,
+      "count": 69
+    },
+    {
+      "department": "Support For Memory & Cognition Older People",
+      "spend": 195667818.23,
+      "count": 48455
+    },
+    {
+      "department": "Mental Health Support - Adults",
+      "spend": 167070244.6,
+      "count": 36800
+    },
+    {
+      "department": "Corporate & Democratic Core",
+      "spend": 133477095.43,
+      "count": 20514
+    },
+    {
+      "department": "Public Health",
+      "spend": 117021191.57,
+      "count": 5121
+    },
+    {
+      "department": "Other Children & Family Services",
+      "spend": 80176241.26,
+      "count": 33014
+    },
+    {
+      "department": "Fire & Rescue Services",
+      "spend": 68408798.98,
+      "count": 14433
+    },
+    {
+      "department": "Physical Support - Adults",
+      "spend": 61688334.47,
+      "count": 30082
+    },
+    {
+      "department": "Planning & Development Services",
+      "spend": 42464224.34,
+      "count": 9112
+    },
+    {
+      "department": "Learning Disabilty - Older People",
+      "spend": 35717783.92,
+      "count": 8039
+    },
+    {
+      "department": "Cultural & Related Services",
+      "spend": 18295339.47,
+      "count": 8418
+    },
+    {
+      "department": "Other Operating Expenditure",
+      "spend": 14855552.28,
+      "count": 112
+    },
+    {
+      "department": "Central Services To The Public",
+      "spend": 10763124.1,
+      "count": 1087
+    },
+    {
+      "department": "Housing Services",
+      "spend": 10315316.89,
+      "count": 2384
+    },
+    {
+      "department": "Additional Costs Arising From Covid 19",
+      "spend": 8533622.57,
+      "count": 2099
+    },
+    {
+      "department": "Environmental & Regulatory Services",
+      "spend": 6426914.13,
+      "count": 1145
+    },
+    {
+      "department": "Financing & Investment Income & Expend",
+      "spend": 2626668.53,
+      "count": 124
+    },
+    {
+      "department": "Fire Pensions Account",
+      "spend": 883638.72,
+      "count": 36
+    },
+    {
+      "department": "Interest Payable And Similar Charges",
+      "spend": 168689.22,
+      "count": 31
+    },
+    {
+      "department": "Mental Health Support - Older People",
+      "spend": 65721.64,
+      "count": 25
+    },
+    {
+      "department": "Planning And Development Services",
+      "spend": 26777.98,
+      "count": 7
+    },
+    {
+      "department": "#N/A",
+      "spend": 16364.33,
+      "count": 14
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2022/23": 1119277640.95,
+      "2023/24": 1304616529.18,
+      "2024/25": 1244084049.5,
+      "2025/26": 1187078504.83
+    },
+    "transactions_by_year": {
+      "2022/23": 208550,
+      "2023/24": 246277,
+      "2024/25": 222208,
+      "2025/26": 195796
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 872831
+  }
+}

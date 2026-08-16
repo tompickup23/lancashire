@@ -1,0 +1,36 @@
+{
+  "version": "1.0",
+  "council_id": "essex_cc",
+  "generated_at": "2026-05-04T11:57:38.820516Z",
+  "method": "Free proxy of CIPFA Financial Resilience Index using public MHCLG + cross_council + audit_research data",
+  "tier": "county",
+  "peer_set_size": 12,
+  "indicators": {
+    "reserves_total_m": 649.8,
+    "reserves_months_of_revenue": 7.0,
+    "reserves_to_nre_ratio": 0.586,
+    "reserves_direction": "stable",
+    "reserves_4yr_change_pct": 15.6,
+    "ct_dependency_pct": 76.4,
+    "external_audit_opinion": "DISCLAIMED",
+    "external_audit_opinion_score": 4,
+    "annual_nre_m": 1109.6
+  },
+  "peer_quartiles": {
+    "reserves_months": 1,
+    "reserves_to_nre_ratio": 1
+  },
+  "composite_quartile": 2.0,
+  "classification": "Moderate",
+  "caveats": [
+    "PROXY only \u2014 CIPFA's official Financial Resilience Index is paywalled",
+    "Indicators derived from public MHCLG Revenue Outturn + Statement of Accounts where available",
+    "Quartiles computed against cohort peers in this corpus, not the full English LA universe",
+    "Audit opinion score weighted equally with reserves indicators \u2014 adjust if needed"
+  ],
+  "evidence": [
+    "cross_council.json (reserves + cohort)",
+    "budgets_summary.json (NRE + CT requirement)",
+    "audit_research.external_audit (opinion)"
+  ]
+}

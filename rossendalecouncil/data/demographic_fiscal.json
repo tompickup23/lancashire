@@ -1,0 +1,174 @@
+{
+  "meta": {
+    "generated": "2026-03-03T11:51:30.427090",
+    "council_id": "rossendale",
+    "sources": [
+      "Census 2021",
+      "ONS SNPP 2022",
+      "IMD 2019",
+      "GOV.UK QRC4",
+      "DfE SEND Statistics 2023",
+      "Home Office Immigration Statistics 2025"
+    ]
+  },
+  "fiscal_resilience_score": 50,
+  "service_demand_pressure_score": 67,
+  "demographic_change_velocity": 5.0,
+  "ethnic_composition_acceleration": {},
+  "religion_composition_acceleration": {
+    "Christian": -10.9,
+    "No religion": 8.5,
+    "Not answered": -0.1,
+    "Muslim": 2.4,
+    "Hindu": 0.1
+  },
+  "diversity_index_2021": 0.1423,
+  "diversity_index_2032": 0.1434,
+  "diversity_change": 0.0011,
+  "composition_insights": [
+    {
+      "type": "religion_shift",
+      "group": "Muslim",
+      "change_pp": 2.4,
+      "desc": "Muslim projected to grow by 2.4pp by 2032"
+    },
+    {
+      "type": "religion_shift",
+      "group": "No religion",
+      "change_pp": 8.5,
+      "desc": "No religion projected to grow by 8.5pp by 2032"
+    },
+    {
+      "type": "most_diverse_ward",
+      "ward": "Worsley",
+      "diversity_index": 0.7036,
+      "desc": "Worsley projected as most ethnically diverse ward by 2032 (index: 0.704)"
+    }
+  ],
+  "risk_category": "At Risk",
+  "ethnic_composition_summary": {
+    "white_british_pct": 90.4,
+    "muslim_pct": 4.9,
+    "pakistani_bangladeshi_pct": 4.5,
+    "grt_count": 28,
+    "roma_count": 14,
+    "eu8_eu2_born_pct": 0.6,
+    "black_african_caribbean_pct": 0.2
+  },
+  "send_risk": {
+    "estimated_send_rate_pct": 15.0,
+    "vs_national_avg_pp": 0.1,
+    "estimated_send_pupils": 1465,
+    "eal_estimate_pct": 5.0,
+    "grt_send_contribution": "28 GRT pupils at 35% SEND rate = ~2 additional SEND cases"
+  },
+  "asylum_impact": {
+    "current_seekers": 252,
+    "per_1000_pop": 3.6,
+    "projected_2028": {
+      "low": 292,
+      "central": 354,
+      "high": 435
+    },
+    "projected_2032": {
+      "low": 329,
+      "central": 430,
+      "high": 637
+    },
+    "annual_cost_estimate": 5236560,
+    "trend": [
+      {
+        "date": "31 Mar 2022",
+        "people": 139
+      },
+      {
+        "date": "31 Mar 2023",
+        "people": 138
+      },
+      {
+        "date": "31 Mar 2024",
+        "people": 223
+      },
+      {
+        "date": "31 Mar 2025",
+        "people": 252
+      }
+    ]
+  },
+  "council_tax_risk": {
+    "collection_rate": 95.31,
+    "collection_trend": -1.01,
+    "arrears": 7411000.0
+  },
+  "pressure_zones": [
+    {
+      "ward": "Stacksteads",
+      "imd_decile": 1.7,
+      "imd_score": 40.46,
+      "national_percentile": 14.1,
+      "muslim_pct": 0.7,
+      "under_16_pct": 18.4,
+      "flag": "HIGH"
+    }
+  ],
+  "threats": [
+    {
+      "type": "fiscal",
+      "severity": "high",
+      "description": "Declining council tax collection \u2014 revenue base eroding",
+      "evidence": "5-year trend: -1.01% per year"
+    },
+    {
+      "type": "service",
+      "severity": "high",
+      "description": "Concentrated asylum dispersal (252 seekers) \u2014 growing pressure on housing, schools, health",
+      "evidence": "Growth from 139 to 252 in 4 years"
+    }
+  ],
+  "lgr_threats": [
+    {
+      "model": "two_unitary",
+      "authority": "South Lancashire",
+      "severity": "high",
+      "risk_category": "At Risk",
+      "fiscal_score": 37,
+      "demand_score": 74
+    },
+    {
+      "model": "three_unitary",
+      "authority": "Pennine Lancashire",
+      "severity": "critical",
+      "risk_category": "Structurally Deficit",
+      "fiscal_score": 38,
+      "demand_score": 78
+    },
+    {
+      "model": "four_unitary",
+      "authority": "Pennine Lancashire",
+      "severity": "critical",
+      "risk_category": "Structurally Deficit",
+      "fiscal_score": 34,
+      "demand_score": 81
+    },
+    {
+      "model": "four_unitary_alt",
+      "authority": "Eastern Lancashire",
+      "severity": "critical",
+      "risk_category": "Structurally Deficit",
+      "fiscal_score": 34,
+      "demand_score": 81
+    },
+    {
+      "model": "five_unitary",
+      "authority": "East Lancashire",
+      "severity": "critical",
+      "risk_category": "Structurally Deficit",
+      "fiscal_score": 35,
+      "demand_score": 78
+    }
+  ],
+  "risk_factors": [
+    "Declining collection rate (trend: -1.0%)",
+    "Significant asylum dispersal (252 seekers)"
+  ]
+}

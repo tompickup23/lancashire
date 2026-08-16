@@ -1,0 +1,236 @@
+{
+  "council": "Tameside",
+  "council_id": "E08000008",
+  "council_type": "metropolitan",
+  "spending_threshold": 500,
+  "total_records": 68981,
+  "financial_years": [
+    "2020/21",
+    "2021/22",
+    "2023/24",
+    "2024/25",
+    "2025/26"
+  ],
+  "data_types": [
+    "spend"
+  ],
+  "filters": {
+    "departments": [
+      {
+        "name": "Children's Services",
+        "spend": 205551821.95,
+        "count": 30548,
+        "suppliers": 967
+      },
+      {
+        "name": "Adults",
+        "spend": 126871818.25,
+        "count": 9277,
+        "suppliers": 557
+      },
+      {
+        "name": "Operations and Neighbourhoods",
+        "spend": 81205853.25,
+        "count": 5339,
+        "suppliers": 609
+      },
+      {
+        "name": "Place",
+        "spend": 72796114.08,
+        "count": 5352,
+        "suppliers": 614
+      },
+      {
+        "name": "",
+        "spend": 69047553.02,
+        "count": 6514,
+        "suppliers": 860
+      },
+      {
+        "name": "(blank)",
+        "spend": 58804118.9,
+        "count": 1951,
+        "suppliers": 233
+      },
+      {
+        "name": "Growth",
+        "spend": 58053992.78,
+        "count": 1792,
+        "suppliers": 170
+      },
+      {
+        "name": "Hosted Services",
+        "spend": 53837171.78,
+        "count": 512,
+        "suppliers": 119
+      },
+      {
+        "name": "Resources",
+        "spend": 51945638.72,
+        "count": 1017,
+        "suppliers": 137
+      },
+      {
+        "name": "Multiple Strategic Directorates",
+        "spend": 34228033.75,
+        "count": 471,
+        "suppliers": 26
+      },
+      {
+        "name": "Contingency",
+        "spend": 26187069.98,
+        "count": 993,
+        "suppliers": 181
+      },
+      {
+        "name": "Public Health",
+        "spend": 18100641.14,
+        "count": 490,
+        "suppliers": 112
+      },
+      {
+        "name": "Population Health",
+        "spend": 16743782.53,
+        "count": 481,
+        "suppliers": 90
+      },
+      {
+        "name": "Finance & IT",
+        "spend": 10605286.36,
+        "count": 765,
+        "suppliers": 115
+      },
+      {
+        "name": "Director of Place",
+        "spend": 9197206.56,
+        "count": 1540,
+        "suppliers": 131
+      },
+      {
+        "name": "Corporate Costs",
+        "spend": 4013737.34,
+        "count": 65,
+        "suppliers": 30
+      },
+      {
+        "name": "Community,Environmental,Adult and Health Services",
+        "spend": 3753032.12,
+        "count": 59,
+        "suppliers": 12
+      },
+      {
+        "name": "Governance",
+        "spend": 3574200.15,
+        "count": 801,
+        "suppliers": 145
+      },
+      {
+        "name": "Chief Executive's Office",
+        "spend": 2376387.23,
+        "count": 548,
+        "suppliers": 104
+      },
+      {
+        "name": "GMPF",
+        "spend": 1677441.95,
+        "count": 57,
+        "suppliers": 27
+      },
+      {
+        "name": "Corporate Services",
+        "spend": 1121840.35,
+        "count": 12,
+        "suppliers": 6
+      },
+      {
+        "name": "Strategic Growth",
+        "spend": 810875.04,
+        "count": 150,
+        "suppliers": 53
+      },
+      {
+        "name": "Housing, Environment & Estates",
+        "spend": 350811.62,
+        "count": 124,
+        "suppliers": 58
+      },
+      {
+        "name": "GMPF (FX)",
+        "spend": 332830.39,
+        "count": 94,
+        "suppliers": 35
+      },
+      {
+        "name": "Childrens Services",
+        "spend": 68976.18,
+        "count": 7,
+        "suppliers": 4
+      },
+      {
+        "name": "Quality and Safeguarding",
+        "spend": 30017.5,
+        "count": 20,
+        "suppliers": 11
+      },
+      {
+        "name": "Environment",
+        "spend": 9095.0,
+        "count": 2,
+        "suppliers": 2
+      }
+    ],
+    "department_raws": [
+      "(blank)",
+      "Adults",
+      "Chief Executive's Office",
+      "Children's Services",
+      "Childrens Services",
+      "Community,Environmental,Adult and Health Services",
+      "Contingency",
+      "Corporate Costs",
+      "Corporate Services",
+      "Director of Place",
+      "Environment",
+      "Finance & IT",
+      "GMPF",
+      "GMPF (FX)",
+      "Governance",
+      "Growth",
+      "Hosted Services",
+      "Housing, Environment & Estates",
+      "Multiple Strategic Directorates",
+      "Operations and Neighbourhoods",
+      "Place",
+      "Population Health",
+      "Public Health",
+      "Quality and Safeguarding",
+      "Resources",
+      "Strategic Growth"
+    ]
+  },
+  "total_spend": 911295347.92,
+  "total_spend_paid": 911295347.92,
+  "total_spend_committed": 0,
+  "total_spend_all_types_legacy": 911295347.92,
+  "record_count_paid": 68981,
+  "record_count_committed": 0,
+  "record_class_breakdown": {
+    "procurement_paid": {
+      "count": 68981,
+      "sum": 911295347.92
+    }
+  },
+  "spend_triangulation": {
+    "transparency_gross": 911295347.92,
+    "transparency_paid": 911295347.92,
+    "procurement_only": 911295347.92,
+    "non_procurement": 0.0
+  },
+  "dedup_rule": "total_spend = spend + purchase_cards; contracts excluded (77% pair with matching spend within 90d \u2014 see .claude/rules/lessons.md)",
+  "dedup_applied": "enforced at ETL (council_etl.py)",
+  "unique_suppliers": 3134,
+  "date_range": {
+    "min": "2020-07-01",
+    "max": "2026-03-31"
+  }
+}

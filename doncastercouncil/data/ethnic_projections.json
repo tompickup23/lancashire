@@ -1,0 +1,228 @@
+{
+  "domain": "ethnicity",
+  "source": "ONS Census 2011 & 2021 — TS021 change dataset",
+  "source_urls": [
+    "https://www.ons.gov.uk/visualisations/censusmapschangedata03/TS021_EG20B.xlsx",
+    "https://www.ons.gov.uk/peoplepopulationandcommunity/culturalidentity/ethnicity/bulletins/ethnicgroupenglandandwales/census2021"
+  ],
+  "methodology_note": "Linear extrapolation of 2011→2021 percentage-point change rates per ethnic group. Validated against Goodwin/CHSS (2025) cohort-component national trajectory (White British: 73% in 2025 → 57% in 2050 → minority by 2063). Projections assume continuation of 2011–2021 trends. Not a prediction.",
+  "validation_reference": {
+    "source": "Goodwin & Sherwood (2025), CHSS Report No. 3",
+    "url": "https://www.heterodoxcentre.com/wp-content/uploads/3-CHSS-Goodwin.pdf",
+    "method": "Cohort-component model constrained to ONS 2022-based NPP",
+    "national_wb_2050": 57.0,
+    "national_wb_minority_year": 2063
+  },
+  "last_updated": "2026-04-10",
+  "area_code": "E08000017",
+  "area_name": "Doncaster",
+  "council_level": {
+    "baseline": {
+      "year": 2011,
+      "total_population": 302402,
+      "groups": {
+        "white_british": 91.84,
+        "white_other": 3.41,
+        "asian": 2.52,
+        "black": 0.77,
+        "mixed": 1.1,
+        "other": 0.35
+      },
+      "groups_absolute": {
+        "white_british": 277740,
+        "white_other": 10326,
+        "asian": 7614,
+        "black": 2337,
+        "mixed": 3321,
+        "other": 1064
+      }
+    },
+    "current": {
+      "year": 2021,
+      "total_population": 308104,
+      "groups": {
+        "white_british": 86.62,
+        "white_other": 6.52,
+        "asian": 2.95,
+        "black": 1.21,
+        "mixed": 1.49,
+        "other": 1.21
+      },
+      "groups_absolute": {
+        "white_british": 266879,
+        "white_other": 20076,
+        "asian": 9086,
+        "black": 3742,
+        "mixed": 4603,
+        "other": 3718
+      }
+    },
+    "annual_change_pp": {
+      "white_british": -0.522,
+      "white_other": 0.311,
+      "asian": 0.043,
+      "black": 0.044,
+      "mixed": 0.039,
+      "other": 0.086
+    },
+    "decadal_change_pp": {
+      "white_british": -5.22,
+      "white_other": 3.11,
+      "asian": 0.43,
+      "black": 0.44,
+      "mixed": 0.39,
+      "other": 0.86
+    },
+    "projections": {
+      "2025": {
+        "white_british": 84.53,
+        "white_other": 7.76,
+        "asian": 3.12,
+        "black": 1.39,
+        "mixed": 1.65,
+        "other": 1.55
+      },
+      "2030": {
+        "white_british": 81.92,
+        "white_other": 9.32,
+        "asian": 3.34,
+        "black": 1.61,
+        "mixed": 1.84,
+        "other": 1.98
+      },
+      "2035": {
+        "white_british": 79.31,
+        "white_other": 10.87,
+        "asian": 3.55,
+        "black": 1.83,
+        "mixed": 2.04,
+        "other": 2.41
+      },
+      "2040": {
+        "white_british": 76.7,
+        "white_other": 12.43,
+        "asian": 3.77,
+        "black": 2.05,
+        "mixed": 2.23,
+        "other": 2.84
+      },
+      "2045": {
+        "white_british": 74.09,
+        "white_other": 13.98,
+        "asian": 3.98,
+        "black": 2.27,
+        "mixed": 2.43,
+        "other": 3.27
+      },
+      "2050": {
+        "white_british": 71.48,
+        "white_other": 15.54,
+        "asian": 4.2,
+        "black": 2.49,
+        "mixed": 2.62,
+        "other": 3.7
+      }
+    },
+    "confidence_bands": {
+      "2025": {
+        "white_british_low": 84.11,
+        "white_british_central": 84.53,
+        "white_british_high": 84.95
+      },
+      "2030": {
+        "white_british_low": 80.98,
+        "white_british_central": 81.92,
+        "white_british_high": 82.86
+      },
+      "2035": {
+        "white_british_low": 77.85,
+        "white_british_central": 79.31,
+        "white_british_high": 80.77
+      },
+      "2040": {
+        "white_british_low": 74.72,
+        "white_british_central": 76.7,
+        "white_british_high": 78.69
+      },
+      "2045": {
+        "white_british_low": 71.59,
+        "white_british_central": 74.09,
+        "white_british_high": 76.6
+      },
+      "2050": {
+        "white_british_low": 68.45,
+        "white_british_central": 71.48,
+        "white_british_high": 74.51
+      }
+    },
+    "thresholds": [
+      {
+        "label": "White British <50%",
+        "year": 2091,
+        "confidence": "low"
+      },
+      {
+        "label": "Total White <50%",
+        "year": 2225,
+        "confidence": "low"
+      }
+    ],
+    "headline_stat": {
+      "value": "86.6%",
+      "label": "White British (2021)",
+      "trend": "declining",
+      "annual_change_pp": -0.522
+    },
+    "detailed_breakdown": {
+      "census_2011": {
+        "bangladeshi": 0.039,
+        "chinese": 0.371,
+        "indian": 0.617,
+        "pakistani": 0.902,
+        "other_asian": 0.59,
+        "african": 0.433,
+        "caribbean": 0.257,
+        "other_black": 0.083,
+        "mixed_white_asian": 0.29,
+        "mixed_white_black_african": 0.146,
+        "mixed_white_black_caribbean": 0.467,
+        "mixed_other": 0.195,
+        "white_british": 91.845,
+        "white_irish": 0.391,
+        "white_gypsy_traveller": 0.194,
+        "white_other": 2.829,
+        "arab": 0.076,
+        "other_ethnic": 0.275
+      },
+      "census_2021": {
+        "bangladeshi": 0.062,
+        "chinese": 0.335,
+        "indian": 0.74,
+        "pakistani": 1.022,
+        "other_asian": 0.791,
+        "african": 0.82,
+        "caribbean": 0.218,
+        "other_black": 0.176,
+        "mixed_white_asian": 0.389,
+        "mixed_white_black_african": 0.232,
+        "mixed_white_black_caribbean": 0.586,
+        "mixed_other": 0.287,
+        "white_british": 86.62,
+        "white_irish": 0.324,
+        "white_gypsy_traveller": 0.278,
+        "white_roma": 0.223,
+        "white_other": 5.691,
+        "arab": 0.138,
+        "other_ethnic": 1.069
+      }
+    }
+  },
+  "group_labels": {
+    "white_british": "White British",
+    "white_other": "White Other",
+    "asian": "Asian / Asian British",
+    "black": "Black / Black British",
+    "mixed": "Mixed / Multiple",
+    "other": "Other"
+  }
+}

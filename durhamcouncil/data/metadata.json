@@ -1,0 +1,188 @@
+{
+  "council": "Durham",
+  "council_id": "E06000047",
+  "council_type": "unitary",
+  "spending_threshold": 250,
+  "total_records": 137324,
+  "financial_years": [
+    "2022/23",
+    "2023/24",
+    "2024/25",
+    "2025/26",
+    "2026/27"
+  ],
+  "data_types": [
+    "spend"
+  ],
+  "filters": {
+    "departments": [
+      {
+        "name": "Adult and Health Services",
+        "spend": 649559265.24,
+        "count": 24782,
+        "suppliers": 1125
+      },
+      {
+        "name": "Children and Young Peoples Services",
+        "spend": 336067339.0,
+        "count": 42833,
+        "suppliers": 1670
+      },
+      {
+        "name": "Regeneration Economy and Growth",
+        "spend": 195981288.1,
+        "count": 14417,
+        "suppliers": 2011
+      },
+      {
+        "name": "Dedicated Schools Grant BG0015",
+        "spend": 167774894.65,
+        "count": 19853,
+        "suppliers": 473
+      },
+      {
+        "name": "Neighbourhoods and Climate Change",
+        "spend": 112168952.7,
+        "count": 13991,
+        "suppliers": 1302
+      },
+      {
+        "name": "Neighbourhoods and Environment",
+        "spend": 105312600.56,
+        "count": 11394,
+        "suppliers": 941
+      },
+      {
+        "name": "Resources BK0010",
+        "spend": 74980095.85,
+        "count": 7335,
+        "suppliers": 698
+      },
+      {
+        "name": "Chief Executives Office",
+        "spend": 10204699.85,
+        "count": 2440,
+        "suppliers": 185
+      },
+      {
+        "name": "Resources - C A C",
+        "spend": 5998209.75,
+        "count": 216,
+        "suppliers": 79
+      },
+      {
+        "name": "Non-Service Specific",
+        "spend": 4188646.14,
+        "count": 63,
+        "suppliers": 20
+      }
+    ],
+    "department_raws": [
+      "Adult and Health Services",
+      "Chief Executives Office",
+      "Children and Young Peoples Services",
+      "Dedicated Schools Grant BG0015",
+      "Neighbourhoods and Climate Change",
+      "Neighbourhoods and Environment",
+      "Non-Service Specific",
+      "Regeneration Economy and Growth",
+      "Resources - C A C",
+      "Resources BK0010"
+    ]
+  },
+  "total_spend": 1662235991.84,
+  "total_spend_paid": 1662235991.84,
+  "total_spend_committed": 0,
+  "total_spend_all_types_legacy": 1662235991.84,
+  "record_count_paid": 137324,
+  "record_count_committed": 0,
+  "record_class_breakdown": {
+    "procurement_paid": {
+      "count": 137324,
+      "sum": 1662235991.84
+    }
+  },
+  "spend_triangulation": {
+    "transparency_gross": 1662235991.84,
+    "transparency_paid": 1662235991.84,
+    "procurement_only": 1662235991.84,
+    "non_procurement": 0.0
+  },
+  "dedup_rule": "total_spend = spend + purchase_cards; contracts excluded (77% pair with matching spend within 90d \u2014 see .claude/rules/lessons.md)",
+  "dedup_applied": "enforced at ETL (council_etl.py)",
+  "unique_suppliers": 5979,
+  "coverage": {
+    "months_present": [
+      "2022-09",
+      "2023-04",
+      "2023-05",
+      "2023-12",
+      "2024-01",
+      "2024-03",
+      "2024-04",
+      "2024-06",
+      "2024-09",
+      "2024-11",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06",
+      "2025-07",
+      "2025-09",
+      "2025-10",
+      "2025-11",
+      "2025-12",
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05"
+    ],
+    "month_count": 24,
+    "first_month": "2022-09",
+    "last_month": "2026-05",
+    "gap_months": [
+      "2022-10",
+      "2022-11",
+      "2022-12",
+      "2023-01",
+      "2023-02",
+      "2023-03",
+      "2023-06",
+      "2023-07",
+      "2023-08",
+      "2023-09",
+      "2023-10",
+      "2023-11",
+      "2024-02",
+      "2024-05",
+      "2024-07",
+      "2024-08",
+      "2024-10",
+      "2024-12",
+      "2025-01",
+      "2025-02",
+      "2025-08"
+    ],
+    "thin_months": [],
+    "months_per_financial_year": {
+      "2022/23": 1,
+      "2023/24": 5,
+      "2024/25": 5,
+      "2025/26": 11,
+      "2026/27": 2
+    },
+    "affected_financial_years": [
+      "2022/23",
+      "2023/24",
+      "2024/25",
+      "2025/26"
+    ],
+    "annual_totals_safe": false,
+    "caveat": "Coverage is incomplete: 21 month(s) missing from the published source data. Financial year totals for 2022/23, 2023/24, 2024/25, 2025/26 understate actual spending and are not comparable year-on-year."
+  },
+  "date_range": {
+    "min": "2022-09-01",
+    "max": "2026-05-29"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "council_id": "devon_cc",
+  "updated": "2026-05-17",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Devon County Council. Default is procurement_paid. Devon Pension Fund → internal_transfer. Care Act direct payments may use FAMILY COMPASS pattern (legitimate independent provider, NOT internal_transfer).",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions — direct payments to individuals."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^.*DEVON.*PENSION FUND.*$"
+      },
+      "reason": "Devon CC Pension Fund is the council's own pensions vehicle — internal transfer, not third-party procurement."
+    }
+  ],
+  "supplier_aliases": []
+}

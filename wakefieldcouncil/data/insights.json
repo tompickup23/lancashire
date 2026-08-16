@@ -1,0 +1,1212 @@
+{
+  "summary": {
+    "total_spend": 2171036372.43,
+    "transaction_count": 604113,
+    "unique_suppliers": 8093,
+    "avg_transaction": 3593.76,
+    "median_transaction": 251.0,
+    "date_range": {
+      "min": "2019-04-01",
+      "max": "2026-03-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "WAKEFIELD WASTE PFI LTD",
+        "total": 213931528.77,
+        "transactions": 95,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "AMEY HIGHWAYS LIGHTING (WAKEFIELD) LTD",
+        "total": 59832658.41,
+        "transactions": 240,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ENGIE SERVICES LTD",
+        "total": 44593057.77,
+        "transactions": 456,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "EQUANS SERVICES LTD",
+        "total": 42557706.82,
+        "transactions": 329,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NPOWER LTD",
+        "total": 41513235.81,
+        "transactions": 16555,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED",
+        "total": 40426710.05,
+        "transactions": 32270,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TURNING POINT SERVICES LTD",
+        "total": 35306983.46,
+        "transactions": 728,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ROBERTSON FACILITIES MANAGEMENT",
+        "total": 34636684.66,
+        "transactions": 1565,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WEST YORKSHIRE COMBINED AUTHORITY",
+        "total": 34617639.34,
+        "transactions": 652,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REED SPECIALIST RECRUITMENT LTD",
+        "total": 34102537.22,
+        "transactions": 17661,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HAPTON CARE HOMES LTD",
+        "total": 30944897.67,
+        "transactions": 5595,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CHOICE SUPPORT",
+        "total": 29088990.68,
+        "transactions": 275,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "HARROGATE AND DISTRICT NHS FOUNDATION TRUST",
+        "total": 28056555.88,
+        "transactions": 175,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WEST YORKSHIRE COMBINED AUTHORITY - WEST YORKSHIRE POLICE",
+        "total": 24735452.77,
+        "transactions": 73,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BRADFORD DISTRICT CARE NHS FOUNDATION TRUST",
+        "total": 24094815.23,
+        "transactions": 458,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WEST YORKSHIRE POLICE AUTHORITY",
+        "total": 21568959.0,
+        "transactions": 12,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FREETHS LLP",
+        "total": 21567520.25,
+        "transactions": 34,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WILLMOTT DIXON CONSTRUCTION LTD",
+        "total": 19068621.38,
+        "transactions": 47,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SPECTRUM COMMUNITY HEALTH CIC",
+        "total": 19020411.93,
+        "transactions": 1184,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LEEDS CITY COUNCIL",
+        "total": 18899672.29,
+        "transactions": 1232,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.377,
+    "total_unique_suppliers": 8093,
+    "single_transaction_suppliers": 2367
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 58564,
+      "potential_value": 164945614.98,
+      "items": [
+        {
+          "supplier": "WEST YORKSHIRE COMBINED AUTHORITY - WEST YORKSHIRE POLICE",
+          "amount": 1929415.95,
+          "date": "2022-04-04",
+          "occurrences": 11,
+          "potential_overpayment": 19294159.5
+        },
+        {
+          "supplier": "WEST YORKSHIRE POLICE AUTHORITY",
+          "amount": 1797413.0,
+          "date": "2021-03-31",
+          "occurrences": 9,
+          "potential_overpayment": 14379304.0
+        },
+        {
+          "supplier": "WEST YORKSHIRE FIRE & RESCUE AUTHORITY",
+          "amount": 629368.0,
+          "date": "2022-04-04",
+          "occurrences": 11,
+          "potential_overpayment": 6293680.0
+        },
+        {
+          "supplier": "WEST YORKSHIRE FIRE & RESCUE AUTHORITY",
+          "amount": 571523.0,
+          "date": "2021-03-31",
+          "occurrences": 11,
+          "potential_overpayment": 5715230.0
+        },
+        {
+          "supplier": "WEST YORKSHIRE POLICE AUTHORITY",
+          "amount": 1797414.0,
+          "date": "2021-03-31",
+          "occurrences": 3,
+          "potential_overpayment": 3594828.0
+        },
+        {
+          "supplier": "WAKEFIELD WASTE PFI LTD",
+          "amount": 1789897.18,
+          "date": "2021-11-22",
+          "occurrences": 2,
+          "potential_overpayment": 1789897.18
+        },
+        {
+          "supplier": "DENNIS EAGLE LTD",
+          "amount": 176631.0,
+          "date": "2021-10-28",
+          "occurrences": 8,
+          "potential_overpayment": 1236417.0
+        },
+        {
+          "supplier": "ROBERTSON FACILITIES MANAGEMENT",
+          "amount": 448626.3,
+          "date": "2024-08-21",
+          "occurrences": 2,
+          "potential_overpayment": 448626.3
+        },
+        {
+          "supplier": "ROBERTSON FACILITIES MANAGEMENT",
+          "amount": 448626.3,
+          "date": "2025-03-28",
+          "occurrences": 2,
+          "potential_overpayment": 448626.3
+        },
+        {
+          "supplier": "TREKA BUS LTD",
+          "amount": 70552.12,
+          "date": "2019-08-29",
+          "occurrences": 7,
+          "potential_overpayment": 423312.72
+        },
+        {
+          "supplier": "SOUTH KIRKBY & MOORTHORPE TOWN COUNCIL",
+          "amount": 401465.0,
+          "date": "2021-03-31",
+          "occurrences": 2,
+          "potential_overpayment": 401465.0
+        },
+        {
+          "supplier": "PELICAN ENGINEERING CO SALES LTD",
+          "amount": 43610.0,
+          "date": "2021-03-04",
+          "occurrences": 10,
+          "potential_overpayment": 392490.0
+        },
+        {
+          "supplier": "SOUTH KIRKBY & MOORTHORPE TOWN COUNCIL",
+          "amount": 391465.0,
+          "date": "2022-04-04",
+          "occurrences": 2,
+          "potential_overpayment": 391465.0
+        },
+        {
+          "supplier": "HEMSWORTH TOWN COUNCIL",
+          "amount": 384193.5,
+          "date": "2022-04-04",
+          "occurrences": 2,
+          "potential_overpayment": 384193.5
+        },
+        {
+          "supplier": "RUSSELLS KIRBYMOORSIDE LTD",
+          "amount": 37650.0,
+          "date": "2021-07-05",
+          "occurrences": 11,
+          "potential_overpayment": 376500.0
+        },
+        {
+          "supplier": "HEMSWORTH TOWN COUNCIL",
+          "amount": 374694.0,
+          "date": "2021-03-31",
+          "occurrences": 2,
+          "potential_overpayment": 374694.0
+        },
+        {
+          "supplier": "TURNING POINT SERVICES LTD",
+          "amount": 346479.42,
+          "date": "2025-12-09",
+          "occurrences": 2,
+          "potential_overpayment": 346479.42
+        },
+        {
+          "supplier": "TURNING POINT SERVICES LTD",
+          "amount": 346479.42,
+          "date": "2025-12-03",
+          "occurrences": 2,
+          "potential_overpayment": 346479.42
+        },
+        {
+          "supplier": "TURNING POINT SERVICES LTD",
+          "amount": 338523.26,
+          "date": "2025-06-09",
+          "occurrences": 2,
+          "potential_overpayment": 338523.26
+        },
+        {
+          "supplier": "DENNIS EAGLE LTD",
+          "amount": 163175.0,
+          "date": "2019-11-28",
+          "occurrences": 3,
+          "potential_overpayment": 326350.0
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 2598,
+      "total_value": 92047000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 1472
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Adult Services",
+      "spend": 317170824.84,
+      "count": 121338
+    },
+    {
+      "department": "Property & Regeneration",
+      "spend": 257453507.66,
+      "count": 44197
+    },
+    {
+      "department": "Children and Young People",
+      "spend": 197796652.17,
+      "count": 33593
+    },
+    {
+      "department": "Environment",
+      "spend": 165904086.73,
+      "count": 4627
+    },
+    {
+      "department": "Public Health",
+      "spend": 138285116.35,
+      "count": 24550
+    },
+    {
+      "department": "Professional Services",
+      "spend": 96648001.92,
+      "count": 41180
+    },
+    {
+      "department": "Business Services",
+      "spend": 89317902.78,
+      "count": 55935
+    },
+    {
+      "department": "Highways",
+      "spend": 82650548.12,
+      "count": 8181
+    },
+    {
+      "department": "n/a",
+      "spend": 66807161.78,
+      "count": 3898
+    },
+    {
+      "department": "Transport",
+      "spend": 64652959.69,
+      "count": 40660
+    },
+    {
+      "department": "Waste Disposal",
+      "spend": 59038136.85,
+      "count": 172
+    },
+    {
+      "department": "Nursing & Residential Care Homes",
+      "spend": 49292484.86,
+      "count": 8221
+    },
+    {
+      "department": "ICT",
+      "spend": 44887409.95,
+      "count": 10781
+    },
+    {
+      "department": "Specialist Homecare and Other Services",
+      "spend": 43511735.17,
+      "count": 5743
+    },
+    {
+      "department": "Legal Services",
+      "spend": 42740784.14,
+      "count": 2113
+    },
+    {
+      "department": "Property Management",
+      "spend": 33569450.3,
+      "count": 2030
+    },
+    {
+      "department": "",
+      "spend": 33530591.73,
+      "count": 1345
+    },
+    {
+      "department": "Construction",
+      "spend": 28761859.49,
+      "count": 586
+    },
+    {
+      "department": "Specialist Support Services",
+      "spend": 22664108.29,
+      "count": 1494
+    },
+    {
+      "department": "Health Authorities and Hospitals",
+      "spend": 21888699.2,
+      "count": 1158
+    },
+    {
+      "department": "Looked After Children - Residential",
+      "spend": 21459919.64,
+      "count": 2713
+    },
+    {
+      "department": "Agency",
+      "spend": 20186726.19,
+      "count": 18217
+    },
+    {
+      "department": "Childcare & Early Years 2,3,4 Years Old Offer",
+      "spend": 20129221.81,
+      "count": 4694
+    },
+    {
+      "department": "Culture & Sport",
+      "spend": 17452157.36,
+      "count": 9186
+    },
+    {
+      "department": "Looked After Children - Fostering & Adoption",
+      "spend": 13859334.08,
+      "count": 4401
+    },
+    {
+      "department": "Street Lighting",
+      "spend": 13782454.29,
+      "count": 76
+    },
+    {
+      "department": "Health & Wellbeing",
+      "spend": 11954773.48,
+      "count": 1250
+    },
+    {
+      "department": "Specialist Housing Provision and Services",
+      "spend": 11066527.39,
+      "count": 1550
+    },
+    {
+      "department": "Utilities - Electricity",
+      "spend": 10219969.05,
+      "count": 7237
+    },
+    {
+      "department": "Substance Misuse",
+      "spend": 9090065.33,
+      "count": 64
+    },
+    {
+      "department": "PFM - Non Contract - Miscellaneous",
+      "spend": 8560836.17,
+      "count": 4082
+    },
+    {
+      "department": "Government Agencies",
+      "spend": 8537999.27,
+      "count": 7220
+    },
+    {
+      "department": "Systems & Software",
+      "spend": 8199675.18,
+      "count": 1038
+    },
+    {
+      "department": "N/A",
+      "spend": 6822848.44,
+      "count": 135
+    },
+    {
+      "department": "Materials",
+      "spend": 6565344.3,
+      "count": 3243
+    },
+    {
+      "department": "Purchase of Fleet Replacements",
+      "spend": 6527911.3,
+      "count": 4379
+    },
+    {
+      "department": "Sexual Health",
+      "spend": 5936839.29,
+      "count": 181
+    },
+    {
+      "department": "Education & Careers",
+      "spend": 5560311.61,
+      "count": 4042
+    },
+    {
+      "department": "Specialist Medical Health Equipment and Services",
+      "spend": 5559166.71,
+      "count": 3253
+    },
+    {
+      "department": "SEND - Special Educational Needs",
+      "spend": 4985138.46,
+      "count": 619
+    },
+    {
+      "department": "Insurance",
+      "spend": 4884425.71,
+      "count": 195
+    },
+    {
+      "department": "Sub Category Not Applicable",
+      "spend": 4808251.02,
+      "count": 779
+    },
+    {
+      "department": "Energy",
+      "spend": 4747962.48,
+      "count": 7296
+    },
+    {
+      "department": "Surfacing",
+      "spend": 4306281.21,
+      "count": 61
+    },
+    {
+      "department": "Looked After Children",
+      "spend": 3898676.13,
+      "count": 677
+    },
+    {
+      "department": "YPO",
+      "spend": 3754344.8,
+      "count": 44069
+    },
+    {
+      "department": "Consultancy",
+      "spend": 3663699.08,
+      "count": 990
+    },
+    {
+      "department": "Highways Schemes",
+      "spend": 3359762.82,
+      "count": 123
+    },
+    {
+      "department": "Museums & Culture",
+      "spend": 3062231.51,
+      "count": 303
+    },
+    {
+      "department": "Passenger Transport",
+      "spend": 2859121.61,
+      "count": 5879
+    },
+    {
+      "department": "Liquid Fuel",
+      "spend": 2843927.83,
+      "count": 562
+    },
+    {
+      "department": "Travel & Hotels",
+      "spend": 2801302.65,
+      "count": 2317
+    },
+    {
+      "department": "Security",
+      "spend": 2694184.49,
+      "count": 1028
+    },
+    {
+      "department": "Sport",
+      "spend": 2574293.22,
+      "count": 1418
+    },
+    {
+      "department": "Vehicle and Plant Hire",
+      "spend": 2569174.78,
+      "count": 2613
+    },
+    {
+      "department": "Banking Services",
+      "spend": 2426105.85,
+      "count": 548
+    },
+    {
+      "department": "Other Professional Services",
+      "spend": 2299634.8,
+      "count": 277
+    },
+    {
+      "department": "Hardware (ICT)",
+      "spend": 1918384.91,
+      "count": 2071
+    },
+    {
+      "department": "Telecoms (Telephone)",
+      "spend": 1580446.29,
+      "count": 656
+    },
+    {
+      "department": "Telecoms (Network & Data)",
+      "spend": 1506656.07,
+      "count": 701
+    },
+    {
+      "department": "Urban Traffic Control",
+      "spend": 1401537.48,
+      "count": 434
+    },
+    {
+      "department": "Mobility Vehicles",
+      "spend": 1333101.9,
+      "count": 1021
+    },
+    {
+      "department": "Print",
+      "spend": 1313814.47,
+      "count": 375
+    },
+    {
+      "department": "Financial Advice",
+      "spend": 1246184.07,
+      "count": 162
+    },
+    {
+      "department": "Childcare & Early Years",
+      "spend": 1178027.0,
+      "count": 1337
+    },
+    {
+      "department": "Telecoms -(Mobile)",
+      "spend": 1155174.9,
+      "count": 754
+    },
+    {
+      "department": "Post",
+      "spend": 1116551.37,
+      "count": 1828
+    },
+    {
+      "department": "Specialised Health and Wellbeing Services",
+      "spend": 1110121.67,
+      "count": 500
+    },
+    {
+      "department": "Fleet Consumables",
+      "spend": 1060606.69,
+      "count": 3669
+    },
+    {
+      "department": "Drainage",
+      "spend": 1054593.0,
+      "count": 483
+    },
+    {
+      "department": "Training",
+      "spend": 1047719.62,
+      "count": 923
+    },
+    {
+      "department": "Playground Equipment",
+      "spend": 1000754.8,
+      "count": 112
+    },
+    {
+      "department": "Public Events",
+      "spend": 968827.66,
+      "count": 703
+    },
+    {
+      "department": "Property& Regeneration",
+      "spend": 822642.21,
+      "count": 9
+    },
+    {
+      "department": "Specialist Care Services",
+      "spend": 783248.3,
+      "count": 394
+    },
+    {
+      "department": "Services",
+      "spend": 774656.17,
+      "count": 183
+    },
+    {
+      "department": "Construction Professional Services",
+      "spend": 749932.17,
+      "count": 246
+    },
+    {
+      "department": "Libraries",
+      "spend": 726859.91,
+      "count": 3038
+    },
+    {
+      "department": "Looked After Children - General",
+      "spend": 699628.91,
+      "count": 105
+    },
+    {
+      "department": "Memberships & Subscriptions",
+      "spend": 679034.16,
+      "count": 443
+    },
+    {
+      "department": "Community Projects",
+      "spend": 673523.33,
+      "count": 203
+    },
+    {
+      "department": "Catering",
+      "spend": 660191.57,
+      "count": 3848
+    },
+    {
+      "department": "Advertising Services",
+      "spend": 659263.07,
+      "count": 1325
+    },
+    {
+      "department": "Building Services - Misc",
+      "spend": 601089.06,
+      "count": 163
+    },
+    {
+      "department": "Training - Universities",
+      "spend": 576707.63,
+      "count": 333
+    },
+    {
+      "department": "Miscellaneous",
+      "spend": 574134.35,
+      "count": 1514
+    },
+    {
+      "department": "Doctors",
+      "spend": 562488.43,
+      "count": 2471
+    },
+    {
+      "department": "Occupational Health - Counselling & Advice",
+      "spend": 562363.69,
+      "count": 274
+    },
+    {
+      "department": "Communications",
+      "spend": 522611.34,
+      "count": 138
+    },
+    {
+      "department": "Tyres",
+      "spend": 522229.91,
+      "count": 2389
+    },
+    {
+      "department": "Post - Equipment",
+      "spend": 476724.21,
+      "count": 66
+    },
+    {
+      "department": "Audio Visual",
+      "spend": 443218.14,
+      "count": 173
+    },
+    {
+      "department": "Youth Organisation & Centres",
+      "spend": 433718.25,
+      "count": 70
+    },
+    {
+      "department": "Events - Venue Hire",
+      "spend": 430334.13,
+      "count": 308
+    },
+    {
+      "department": "Road Marking",
+      "spend": 398165.2,
+      "count": 136
+    },
+    {
+      "department": "Occupational Health",
+      "spend": 345001.78,
+      "count": 131
+    },
+    {
+      "department": "Information Services",
+      "spend": 344906.43,
+      "count": 723
+    },
+    {
+      "department": "Community Networks",
+      "spend": 342906.37,
+      "count": 296
+    },
+    {
+      "department": "Cleaning",
+      "spend": 317191.82,
+      "count": 825
+    },
+    {
+      "department": "Waste - Plastic Products",
+      "spend": 310384.95,
+      "count": 60
+    },
+    {
+      "department": "Servicing Repair Services",
+      "spend": 304055.05,
+      "count": 970
+    },
+    {
+      "department": "Environmental Health - Air",
+      "spend": 292029.85,
+      "count": 741
+    },
+    {
+      "department": "Translation",
+      "spend": 277410.58,
+      "count": 1143
+    },
+    {
+      "department": "Retail",
+      "spend": 268334.74,
+      "count": 355
+    },
+    {
+      "department": "Specialist Community Services",
+      "spend": 259670.33,
+      "count": 211
+    },
+    {
+      "department": "Clothing & PPE",
+      "spend": 254813.57,
+      "count": 451
+    },
+    {
+      "department": "ICT Consultant",
+      "spend": 243503.69,
+      "count": 74
+    },
+    {
+      "department": "Architects",
+      "spend": 238822.5,
+      "count": 9
+    },
+    {
+      "department": "Parks and Public Spaces Contractors",
+      "spend": 236598.53,
+      "count": 91
+    },
+    {
+      "department": "Funeral & Crematoria Supplies / Equipment",
+      "spend": 236177.37,
+      "count": 90
+    },
+    {
+      "department": "Letting - Estate Agents",
+      "spend": 216357.36,
+      "count": 416
+    },
+    {
+      "department": "Furniture",
+      "spend": 202602.47,
+      "count": 267
+    },
+    {
+      "department": "Cash Collection",
+      "spend": 183704.52,
+      "count": 116
+    },
+    {
+      "department": "Parks and Public Spaces Supplies",
+      "spend": 174933.79,
+      "count": 130
+    },
+    {
+      "department": "Medical",
+      "spend": 153444.79,
+      "count": 364
+    },
+    {
+      "department": "Funeral Directors",
+      "spend": 129604.3,
+      "count": 316
+    },
+    {
+      "department": "Paper & Stationery",
+      "spend": 113462.98,
+      "count": 1155
+    },
+    {
+      "department": "Publications",
+      "spend": 111440.39,
+      "count": 92
+    },
+    {
+      "department": "Other Transport Services",
+      "spend": 107741.45,
+      "count": 297
+    },
+    {
+      "department": "Utilities - Sustainable Energy",
+      "spend": 92731.45,
+      "count": 86
+    },
+    {
+      "department": "Advertising - Radio & TV",
+      "spend": 89578.71,
+      "count": 28
+    },
+    {
+      "department": "HR Services",
+      "spend": 87848.5,
+      "count": 21
+    },
+    {
+      "department": "Regulation & Certification",
+      "spend": 87352.99,
+      "count": 55
+    },
+    {
+      "department": "Storage & Removals",
+      "spend": 86531.14,
+      "count": 74
+    },
+    {
+      "department": "Advertising - Outdoor",
+      "spend": 71738.39,
+      "count": 28
+    },
+    {
+      "department": "Parks and Public Spaces Machinery & Equipment",
+      "spend": 66316.32,
+      "count": 35
+    },
+    {
+      "department": "Catering - Equipment",
+      "spend": 61715.67,
+      "count": 65
+    },
+    {
+      "department": "Commercial - Repairs and Servicing",
+      "spend": 60125.22,
+      "count": 118
+    },
+    {
+      "department": "Hygiene",
+      "spend": 55259.46,
+      "count": 225
+    },
+    {
+      "department": "training - Exam fees",
+      "spend": 54207.13,
+      "count": 441
+    },
+    {
+      "department": "Parks and Public Spaces",
+      "spend": 48671.51,
+      "count": 95
+    },
+    {
+      "department": "Weather Services",
+      "spend": 40544.6,
+      "count": 5
+    },
+    {
+      "department": "Bereavement Services",
+      "spend": 40484.54,
+      "count": 164
+    },
+    {
+      "department": "Weight Management",
+      "spend": 39800.0,
+      "count": 1
+    },
+    {
+      "department": "Lubricants",
+      "spend": 38984.41,
+      "count": 62
+    },
+    {
+      "department": "Photocopiers",
+      "spend": 35275.41,
+      "count": 129
+    },
+    {
+      "department": "Animal Services",
+      "spend": 33921.32,
+      "count": 111
+    },
+    {
+      "department": "ICT Consumables",
+      "spend": 32573.26,
+      "count": 17
+    },
+    {
+      "department": "Pharmacies",
+      "spend": 29588.76,
+      "count": 6
+    },
+    {
+      "department": "Leasing",
+      "spend": 29328.87,
+      "count": 30
+    },
+    {
+      "department": "Occupational Health - Physiotherapists",
+      "spend": 26199.22,
+      "count": 22
+    },
+    {
+      "department": "Waste",
+      "spend": 25390.52,
+      "count": 338
+    },
+    {
+      "department": "Environmental Health - Pest Control",
+      "spend": 25324.68,
+      "count": 107
+    },
+    {
+      "department": "Consultancy Education",
+      "spend": 20644.28,
+      "count": 30
+    },
+    {
+      "department": "Disabled Facilities Grant",
+      "spend": 16640.0,
+      "count": 27
+    },
+    {
+      "department": "Publications - News",
+      "spend": 16445.44,
+      "count": 183
+    },
+    {
+      "department": "Category To Be Classified",
+      "spend": 15499.0,
+      "count": 8
+    },
+    {
+      "department": "Banking Services - Debt Collection",
+      "spend": 15117.96,
+      "count": 40
+    },
+    {
+      "department": "Plant & Equipment",
+      "spend": 13568.8,
+      "count": 5
+    },
+    {
+      "department": "Clothing & PPE - Overall Hire",
+      "spend": 12511.65,
+      "count": 24
+    },
+    {
+      "department": "Building Services - Plumbing",
+      "spend": 12169.68,
+      "count": 2
+    },
+    {
+      "department": "Building Services - Roofing",
+      "spend": 10014.24,
+      "count": 8
+    },
+    {
+      "department": "ICT - Hardware - Radio Equipment",
+      "spend": 10000.0,
+      "count": 1
+    },
+    {
+      "department": "Coach Hire",
+      "spend": 8779.88,
+      "count": 35
+    },
+    {
+      "department": "Auditors",
+      "spend": 8105.85,
+      "count": 1
+    },
+    {
+      "department": "Fire Systems / Services / Equipment",
+      "spend": 7611.73,
+      "count": 28
+    },
+    {
+      "department": "Valuers",
+      "spend": 6702.0,
+      "count": 1
+    },
+    {
+      "department": "Enforcement",
+      "spend": 5529.64,
+      "count": 9
+    },
+    {
+      "department": "Regulation & Certification - TV Licensing",
+      "spend": 5182.66,
+      "count": 12
+    },
+    {
+      "department": "Energy Efficient Services",
+      "spend": 4088.84,
+      "count": 6
+    },
+    {
+      "department": "Environmental Health - Water",
+      "spend": 4046.75,
+      "count": 4
+    },
+    {
+      "department": "Banking Services - Cash Registers",
+      "spend": 3052.8,
+      "count": 7
+    },
+    {
+      "department": "Travel Awareness",
+      "spend": 2248.5,
+      "count": 2
+    },
+    {
+      "department": "Markets",
+      "spend": 1625.0,
+      "count": 2
+    },
+    {
+      "department": "Careers & Education",
+      "spend": 1004.1,
+      "count": 4
+    },
+    {
+      "department": "Building Services - Painting",
+      "spend": 805.0,
+      "count": 1
+    },
+    {
+      "department": "Occupational Health - Opticians",
+      "spend": 790.47,
+      "count": 2
+    },
+    {
+      "department": "Commercial - Leisure",
+      "spend": 600.0,
+      "count": 1
+    },
+    {
+      "department": "First Aid",
+      "spend": 495.0,
+      "count": 1
+    },
+    {
+      "department": "Shredding",
+      "spend": 309.57,
+      "count": 6
+    },
+    {
+      "department": "Parking Services",
+      "spend": 280.0,
+      "count": 1
+    },
+    {
+      "department": "SPORT",
+      "spend": 24.5,
+      "count": 1
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2019/20": 305505519.92,
+      "2020/21": 315896798.84,
+      "2021/22": 229769063.69,
+      "2022/23": 344159913.32,
+      "2023/24": 329699992.67,
+      "2024/25": 308400051.0,
+      "2025/26": 337605032.99
+    },
+    "transactions_by_year": {
+      "2019/20": 92491,
+      "2020/21": 89719,
+      "2021/22": 130704,
+      "2022/23": 186503,
+      "2023/24": 32417,
+      "2024/25": 35029,
+      "2025/26": 37250
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 99.8,
+    "total_records": 604113
+  }
+}

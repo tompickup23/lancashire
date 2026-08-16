@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "council_id": "rochford",
+  "updated": "2026-07-06",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Rochford District Council is an Essex district (non-stock-holding; shared 'OneTeam' services with Brentwood BC). District feeds are procurement-dominant: no ASC/children's Care Act direct payments (county function), so no REDACTED bucket expected. Default: procurement_paid. REDACTED rule retained defensively — suffix-tolerant regex costs nothing if the bucket is empty.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD|PAYMENT TO AN INDIVIDUAL|PAYMENT TO INDIVIDUAL)$"
+      },
+      "reason": "Defensive: districts occasionally publish redacted rows (housing benefit / DHP recipients). Anchored regex avoids false positives on real suppliers."
+    },
+    {
+      "class": "settlement_noise",
+      "match": {
+        "supplier_regex": "^BARCLAY ?CARD$"
+      },
+      "reason": "Corporate card statement settlements (2,680 rows / £250K, avg £93) — the underlying merchants are not itemised, so 'BARCLAY CARD' is a settlement artefact, not a supplier. Excluded from supplier leagues / HHI / duplicate analyses; totals still count it."
+    },
+    {
+      "class": "procurement_paid",
+      "match": {},
+      "reason": "Default for Rochford. Single payments-over-£500 feed, no PO/invoice split. Rochford Norse Ltd (Norse JV) stays procurement_paid per the JV / minority-ownership rule."
+    }
+  ]
+}

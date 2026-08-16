@@ -1,0 +1,451 @@
+{
+  "summary": {
+    "total_spend": 3219261218.82,
+    "transaction_count": 682802,
+    "unique_suppliers": 7142,
+    "avg_transaction": 4714.78,
+    "median_transaction": 766.36,
+    "date_range": {
+      "min": "2022-09-01",
+      "max": "2026-02-27"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "CORSERV SOLUTIONS LTD T/A CORMAC SOLUTIONS",
+        "total": 238574832.8,
+        "transactions": 152711,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CORNWALL ENERGY RECOVERY LTD",
+        "total": 228636362.32,
+        "transactions": 172,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED - PERSONAL DATA",
+        "total": 151360748.35,
+        "transactions": 91668,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BIFFA ENVIRONMENTAL MUNICIPAL SERVICES LTD (CORY)",
+        "total": 116048705.02,
+        "transactions": 127,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "KIER CONSTRUCTION LTD",
+        "total": 96101959.13,
+        "transactions": 44,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LORNE STEWART PLC",
+        "total": 91037426.66,
+        "transactions": 382,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ENTERPRISE RENT-A-CAR UK LTD",
+        "total": 79301089.53,
+        "transactions": 29,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PLYMOUTH CITYBUS LTD",
+        "total": 51157448.12,
+        "transactions": 12037,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ALUN GRIFFITHS (CONTRACTORS) LTD",
+        "total": 47749022.19,
+        "transactions": 18,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NETWORK RAIL INFRASTRUCTURE LTD",
+        "total": 41515382.8,
+        "transactions": 117,
+        "company_number": "02904587",
+        "company_url": "https://find-and-update.company-information.service.gov.uk/company/02904587"
+      },
+      {
+        "supplier": "THE BRANDON TRUST",
+        "total": 41424444.06,
+        "transactions": 8140,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "COMENSURA LTD",
+        "total": 37900974.11,
+        "transactions": 444,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CORNWALL CARE LTD",
+        "total": 35676607.65,
+        "transactions": 7128,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ACORN CARE & EDUCATION LTD (SALES)",
+        "total": 31176975.45,
+        "transactions": 299,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "REDACTED - PERSONAL INFORMATION",
+        "total": 30589067.69,
+        "transactions": 21746,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MORGAN SINDALL CONSTRUCTION & INFRASTRUCTURE LTD",
+        "total": 29809968.67,
+        "transactions": 36,
+        "company_number": "04273754",
+        "company_url": "https://find-and-update.company-information.service.gov.uk/company/04273754"
+      },
+      {
+        "supplier": "NHS CORNWALL AND THE ISLES OF SCILLY ICB",
+        "total": 28383261.95,
+        "transactions": 2870,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ENERVEO LTD",
+        "total": 25763829.18,
+        "transactions": 3748,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CLARKE WILLMOTT",
+        "total": 24286524.96,
+        "transactions": 368,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CORSERV SOLUTIONS LTD T/A CORSERV CARE",
+        "total": 23769879.34,
+        "transactions": 1978,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.4505,
+    "total_unique_suppliers": 7142,
+    "single_transaction_suppliers": 1896
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 65865,
+      "potential_value": 336683817.39,
+      "items": [
+        {
+          "supplier": "BIFFA ENVIRONMENTAL MUNICIPAL SERVICES LTD (CORY)",
+          "amount": 3574884.45,
+          "date": "2025-07-08",
+          "occurrences": 3,
+          "potential_overpayment": 7149768.9
+        },
+        {
+          "supplier": "CORNWALL ENERGY RECOVERY LTD",
+          "amount": 6710229.76,
+          "date": "2025-01-03",
+          "occurrences": 2,
+          "potential_overpayment": 6710229.76
+        },
+        {
+          "supplier": "CORNWALL ENERGY RECOVERY LTD",
+          "amount": 3845263.77,
+          "date": "2025-01-28",
+          "occurrences": 2,
+          "potential_overpayment": 3845263.77
+        },
+        {
+          "supplier": "CORNWALL ENERGY RECOVERY LTD",
+          "amount": 3722722.78,
+          "date": "2025-12-24",
+          "occurrences": 2,
+          "potential_overpayment": 3722722.78
+        },
+        {
+          "supplier": "BIFFA ENVIRONMENTAL MUNICIPAL SERVICES LTD (CORY)",
+          "amount": 3600192.34,
+          "date": "2025-09-30",
+          "occurrences": 2,
+          "potential_overpayment": 3600192.34
+        },
+        {
+          "supplier": "BIFFA ENVIRONMENTAL MUNICIPAL SERVICES LTD (CORY)",
+          "amount": 3592318.13,
+          "date": "2025-10-30",
+          "occurrences": 2,
+          "potential_overpayment": 3592318.13
+        },
+        {
+          "supplier": "BIFFA ENVIRONMENTAL MUNICIPAL SERVICES LTD (CORY)",
+          "amount": 3566415.05,
+          "date": "2025-07-29",
+          "occurrences": 2,
+          "potential_overpayment": 3566415.05
+        },
+        {
+          "supplier": "BIFFA ENVIRONMENTAL MUNICIPAL SERVICES LTD (CORY)",
+          "amount": 3553267.18,
+          "date": "2025-12-29",
+          "occurrences": 2,
+          "potential_overpayment": 3553267.18
+        },
+        {
+          "supplier": "BAMFORD BUS COMPANY LTD T/A WRIGHTBUS",
+          "amount": 385054.0,
+          "date": "2026-01-20",
+          "occurrences": 9,
+          "potential_overpayment": 3080432.0
+        },
+        {
+          "supplier": "PYRAMID SCHOOLS (CORNWALL) LTD",
+          "amount": 1001491.92,
+          "date": "2025-08-26",
+          "occurrences": 3,
+          "potential_overpayment": 2002983.84
+        },
+        {
+          "supplier": "BAMFORD BUS COMPANY LTD T/A WRIGHTBUS",
+          "amount": 462064.8,
+          "date": "2026-01-20",
+          "occurrences": 5,
+          "potential_overpayment": 1848259.2
+        },
+        {
+          "supplier": "WE ARE WITH YOU",
+          "amount": 1836076.5,
+          "date": "2022-09-22",
+          "occurrences": 2,
+          "potential_overpayment": 1836076.5
+        },
+        {
+          "supplier": "MORGAN SINDALL CONSTRUCTION & INFRASTRUCTURE LTD",
+          "amount": 846848.9,
+          "date": "2025-08-07",
+          "occurrences": 3,
+          "potential_overpayment": 1693697.8
+        },
+        {
+          "supplier": "CLARKE WILLMOTT",
+          "amount": 830749.0,
+          "date": "2025-08-15",
+          "occurrences": 3,
+          "potential_overpayment": 1661498.0
+        },
+        {
+          "supplier": "POST OFFICE LTD",
+          "amount": 1600000.0,
+          "date": "2025-10-31",
+          "occurrences": 2,
+          "potential_overpayment": 1600000.0
+        },
+        {
+          "supplier": "LORNE STEWART PLC",
+          "amount": 676957.55,
+          "date": "2025-08-14",
+          "occurrences": 3,
+          "potential_overpayment": 1353915.1
+        },
+        {
+          "supplier": "LORNE STEWART PLC",
+          "amount": 661509.71,
+          "date": "2025-08-05",
+          "occurrences": 3,
+          "potential_overpayment": 1323019.42
+        },
+        {
+          "supplier": "ACORN CARE & EDUCATION LTD (SALES)",
+          "amount": 26745.43,
+          "date": "2025-03-13",
+          "occurrences": 49,
+          "potential_overpayment": 1283780.64
+        },
+        {
+          "supplier": "ARCADIS LLP",
+          "amount": 407080.8,
+          "date": "2024-08-27",
+          "occurrences": 4,
+          "potential_overpayment": 1221242.4
+        },
+        {
+          "supplier": "CORSERV SOLUTIONS LTD T/A CORMAC SOLUTIONS",
+          "amount": 1220796.08,
+          "date": "2025-06-17",
+          "occurrences": 2,
+          "potential_overpayment": 1220796.08
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 3745,
+      "total_value": 131385000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 817
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "Care and Wellbeing Directorate",
+      "spend": 578475820.78,
+      "count": 169755
+    },
+    {
+      "department": "Sustainable Growth & Development",
+      "spend": 470133863.57,
+      "count": 112260
+    },
+    {
+      "department": "Together for Families Directorate",
+      "spend": 467655376.34,
+      "count": 73569
+    },
+    {
+      "department": "Safe and Caring Communities Directorate",
+      "spend": 330276917.37,
+      "count": 111824
+    },
+    {
+      "department": "Sustainable Growth and Place Directorate",
+      "spend": 251501213.66,
+      "count": 55856
+    },
+    {
+      "department": "Neighbourhoods Directorate",
+      "spend": 245667443.56,
+      "count": 22121
+    },
+    {
+      "department": "Together for Families Directorate.",
+      "spend": 187743503.4,
+      "count": 45540
+    },
+    {
+      "department": "Customer and Corporate Services Directorate",
+      "spend": 183167809.21,
+      "count": 7682
+    },
+    {
+      "department": "Community Wellbeing Directorate",
+      "spend": 140551163.19,
+      "count": 20480
+    },
+    {
+      "department": "Customer and Support Services Directorate",
+      "spend": 139154117.48,
+      "count": 12071
+    },
+    {
+      "department": "Sustainable Growth & Development Directorate",
+      "spend": 82623729.9,
+      "count": 34052
+    },
+    {
+      "department": "Neighbourhoods Directorate.",
+      "spend": 66034997.66,
+      "count": 4508
+    },
+    {
+      "department": "Customer and Support Services Directorate.",
+      "spend": 40102843.45,
+      "count": 3339
+    },
+    {
+      "department": "Adult Social Care Directorate",
+      "spend": 13896105.21,
+      "count": 5457
+    },
+    {
+      "department": "Corporate Items Directorate",
+      "spend": 10810685.99,
+      "count": 907
+    },
+    {
+      "department": "Economic Growth and Development Directorate",
+      "spend": 9193067.59,
+      "count": 2795
+    },
+    {
+      "department": "Corporate Items",
+      "spend": 912957.62,
+      "count": 163
+    },
+    {
+      "department": "Corporate Items Directorate.",
+      "spend": 648026.92,
+      "count": 217
+    },
+    {
+      "department": "Capital Financing and Interest Receipts",
+      "spend": 583701.9,
+      "count": 194
+    },
+    {
+      "department": "Capital Financing and Interest Receipts (L1).",
+      "spend": 127849.02,
+      "count": 11
+    },
+    {
+      "department": "redac",
+      "spend": 25.0,
+      "count": 1
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2022/23": 70045725.63,
+      "2023/24": 458644086.15,
+      "2024/25": 1262201670.21,
+      "2025/26": 1428369736.83
+    },
+    "transactions_by_year": {
+      "2022/23": 13679,
+      "2023/24": 94089,
+      "2024/25": 273277,
+      "2025/26": 301757
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 682802
+  }
+}

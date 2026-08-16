@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "updated": "2026-04-18",
+  "description": "Canonical classification of records in UK local-authority transparency spend data. Used across all AI DOGE ETL + forensic passes to distinguish real third-party procurement from ledger artefacts, statutory pass-throughs, and lawful personal-data redactions.",
+  "classes": {
+    "procurement_paid": {
+      "label": "Procurement (paid)",
+      "definition": "Discretionary third-party supplier payments cleared by the authority. The default class for rows that do not match any more specific rule. These are the rows the Local Government Transparency Code 2015 is intended to surface.",
+      "forensic_default_include": true,
+      "basis": "LG Transparency Code 2015 s.5 (expenditure over \u00a3500)"
+    },
+    "procurement_committed": {
+      "label": "Procurement (committed, not yet paid)",
+      "definition": "Purchase-order / commitment records raised against a supplier but not yet matched to an invoice payment. Some councils (e.g. Burnley) publish a separate 'contracts' feed; others do not. Must NOT be summed with procurement_paid or the same money is double-counted.",
+      "forensic_default_include": true,
+      "basis": "LG Transparency Code 2015 s.6 (procurement information)"
+    },
+    "direct_payment_individual": {
+      "label": "Direct payment to individual",
+      "definition": "Transfer to a named individual (foster carer, SGO recipient, adult-social-care service-user direct-payment holder, Staying Put arrangement, CYP Direct Payment). The supplier name is lawfully redacted under Care Act 2014 + UK GDPR; in transparency feeds typically appears as REDACTED, REDACT, or the individual's reference code. Not procurement in any sense.",
+      "forensic_default_include": false,
+      "basis": "Care Act 2014 s.31\u201333 (direct payments); UK GDPR Art.6(1)(e) + DPA 2018 Sch.2 Part 2 (public-interest processing with no data subject consent to publish)"
+    },
+    "accrual_journal": {
+      "label": "Accrual journal (not a payment)",
+      "definition": "Month-end accrual booking the finance system posts to the supplier ledger in anticipation of an invoice. Reverses when the real invoice clears. Summing accrual journals with paid invoices double-counts the same economic flow. In Oracle Fusion-based ledgers typically surfaces as expenditure category 'R12 - AP Expense Accrual' or similar.",
+      "forensic_default_include": false,
+      "basis": "CIPFA Code of Practice on Local Authority Accounting \u2014 accruals concept"
+    },
+    "settlement_noise": {
+      "label": "Settlement / micro-journal noise",
+      "definition": "BACS transfer reversals, bank-settlement fees, clearing micro-adjustments that carry a 'supplier' name from the finance system's generic bank-clearing ledger (e.g. 'EFT SYSTEMS LTD', 'BACS CLEARING', 'SAGEPAY SETTLEMENT'). Individual amounts are trivial; aggregate pattern is many thousands of sub-\u00a350 rows from a single label. Not procurement.",
+      "forensic_default_include": false,
+      "basis": "Finance-system artefact; no statutory basis"
+    },
+    "statutory_pass_through": {
+      "label": "Statutory pass-through",
+      "definition": "Flows where the authority is legally required to hand the money on to a third party and cannot meaningfully procure: Dedicated Schools Grant (DSG) to individual schools, Better Care Fund pooled budget to ICBs, PFI unitary-charge payments, Disabled Facilities Grant to district councils, concessionary travel reimbursements to bus operators, Household Support Fund distributions. Inclusion inflates supplier-concentration metrics with flows the authority has no discretion over.",
+      "forensic_default_include": false,
+      "basis": "Various \u2014 School Standards and Framework Act 1998 (DSG); Care Act 2014 (BCF); Housing Grants, Construction and Regeneration Act 1996 (DFG); Transport Act 2000 (concessionary travel); etc."
+    },
+    "internal_transfer": {
+      "label": "Internal transfer / in-house provider",
+      "definition": "Money moving from one part of the authority (commissioner) to another part (in-house operating arm). Appears as a supplier payment in the ledger but is not a third-party transaction \u2014 excluded from supplier-concentration + procurement-intensity metrics. LCC's 'LCCG INTERNAL CARE SUPPLIER' is the archetypal example: payments to LCC's own directly-provided adult social care day centres + residential units (CQC provider 1-101642168).",
+      "forensic_default_include": false,
+      "basis": "Internal trading account; no statutory basis"
+    }
+  },
+  "precedence": [
+    "direct_payment_individual",
+    "settlement_noise",
+    "internal_transfer",
+    "accrual_journal",
+    "statutory_pass_through",
+    "procurement_committed",
+    "procurement_paid"
+  ]
+}

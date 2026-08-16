@@ -1,0 +1,819 @@
+{
+  "summary": {
+    "total_spend": 374584797.31,
+    "transaction_count": 27660,
+    "unique_suppliers": 1728,
+    "avg_transaction": 13542.47,
+    "median_transaction": 1213.8,
+    "date_range": {
+      "min": "2014-04-03",
+      "max": "2026-04-30"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "STOKE-ON-TRENT CITY COUNCIL",
+        "total": 107658004.2,
+        "transactions": 72,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "STAFFORDSHIRE COMMISIONER (FIRE AND RESCUE)",
+        "total": 29044200.8,
+        "transactions": 151,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "STAFFORDSHIRE COMMISSIONER (POLICE AND CRIME)",
+        "total": 25262552.33,
+        "transactions": 74,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "STAFFORDSHIRE COUNTY COUNCIL",
+        "total": 17145316.95,
+        "transactions": 390,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LOVELL PARTNERSHIPS LTD",
+        "total": 16687191.27,
+        "transactions": 213,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BIFFA MUNICIPAL LTD",
+        "total": 12909500.54,
+        "transactions": 169,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "STAFFORDSHIRE PENSION FUND",
+        "total": 12681154.68,
+        "transactions": 14,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NOVUS PROPERTY SOLUTIONS LTD",
+        "total": 11348590.36,
+        "transactions": 83,
+        "company_number": "02403551",
+        "company_url": "https://find-and-update.company-information.service.gov.uk/company/02403551"
+      },
+      {
+        "supplier": "HMRC ONLY 586PK00146077",
+        "total": 10902685.64,
+        "transactions": 113,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "INSPIRING HEALTHY LIFESTYLES",
+        "total": 8651192.48,
+        "transactions": 123,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DODD GROUP (MIDLANDS) LTD",
+        "total": 7176577.66,
+        "transactions": 292,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "DEPARTMENT FOR LEVELLING UP HOUSING & COMMUNITIES",
+        "total": 5004450.65,
+        "transactions": 8,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "WIGAN LEISURE & CULTURE TRUST",
+        "total": 4025114.9,
+        "transactions": 136,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "P H JONES LTD",
+        "total": 3691949.95,
+        "transactions": 66,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "BIRMINGHAM CITY COUNCIL",
+        "total": 3231613.68,
+        "transactions": 54,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SURE MAINTENANCE LTD",
+        "total": 2868427.49,
+        "transactions": 84,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CONNELL BROTHERS LTD",
+        "total": 2841750.09,
+        "transactions": 24,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ARTHUR J GALLAGHER INSURANCE BROKERS LTD",
+        "total": 2443618.76,
+        "transactions": 47,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "KEEPMOAT HOMES LTD",
+        "total": 2362934.0,
+        "transactions": 15,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "JESSUP BROTHERS LTD",
+        "total": 2037202.37,
+        "transactions": 14,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.7688,
+    "total_unique_suppliers": 1728,
+    "single_transaction_suppliers": 618
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 1624,
+      "potential_value": 5384465.8,
+      "items": [
+        {
+          "supplier": "WIGAN LEISURE & CULTURE TRUST",
+          "amount": 139528.83,
+          "date": "2014-07-14",
+          "occurrences": 3,
+          "potential_overpayment": 279057.66
+        },
+        {
+          "supplier": "SOUTH STAFFORDSHIRE COLLEGE",
+          "amount": 82907.0,
+          "date": "2023-09-21",
+          "occurrences": 4,
+          "potential_overpayment": 248721.0
+        },
+        {
+          "supplier": "KNOWLES ASSOCIATES TFM LTD",
+          "amount": 35505.0,
+          "date": "2026-01-15",
+          "occurrences": 6,
+          "potential_overpayment": 177525.0
+        },
+        {
+          "supplier": "WIGAN LEISURE & CULTURE TRUST",
+          "amount": 139528.83,
+          "date": "2015-05-26",
+          "occurrences": 2,
+          "potential_overpayment": 139528.83
+        },
+        {
+          "supplier": "BIFFA MUNICIPAL LTD",
+          "amount": 132980.08,
+          "date": "2025-05-29",
+          "occurrences": 2,
+          "potential_overpayment": 132980.08
+        },
+        {
+          "supplier": "BIFFA MUNICIPAL LTD",
+          "amount": 108801.87,
+          "date": "2025-05-29",
+          "occurrences": 2,
+          "potential_overpayment": 108801.87
+        },
+        {
+          "supplier": "KNOWLES ASSOCIATES TFM LTD",
+          "amount": 35505.0,
+          "date": "2026-02-05",
+          "occurrences": 4,
+          "potential_overpayment": 106515.0
+        },
+        {
+          "supplier": "INSPIRING HEALTHY LIFESTYLES",
+          "amount": 72820.0,
+          "date": "2024-01-25",
+          "occurrences": 2,
+          "potential_overpayment": 72820.0
+        },
+        {
+          "supplier": "INSPIRING HEALTHY LIFESTYLES",
+          "amount": 53095.0,
+          "date": "2024-01-25",
+          "occurrences": 2,
+          "potential_overpayment": 53095.0
+        },
+        {
+          "supplier": "NORTHGATE INFORMATION SOLUTIONS (UK) LTD",
+          "amount": 49301.0,
+          "date": "2014-06-16",
+          "occurrences": 2,
+          "potential_overpayment": 49301.0
+        },
+        {
+          "supplier": "FORD MOTOR COMPANY LTD T/A FORD BUSINESS CENTRE",
+          "amount": 22021.6,
+          "date": "2014-09-22",
+          "occurrences": 3,
+          "potential_overpayment": 44043.2
+        },
+        {
+          "supplier": "STAFFORDSHIRE UNIVERSITY",
+          "amount": 43396.75,
+          "date": "2025-03-20",
+          "occurrences": 2,
+          "potential_overpayment": 43396.75
+        },
+        {
+          "supplier": "E.ON UK ENERGY SOLUTIONS LTD T/A E.ON SUSTAINABLE ENERGY",
+          "amount": 43012.51,
+          "date": "2015-10-12",
+          "occurrences": 2,
+          "potential_overpayment": 43012.51
+        },
+        {
+          "supplier": "FORD MOTOR COMPANY LTD T/A FORD BUSINESS CENTRE",
+          "amount": 20902.6,
+          "date": "2014-09-22",
+          "occurrences": 3,
+          "potential_overpayment": 41805.2
+        },
+        {
+          "supplier": "E.ON UK ENERGY SOLUTIONS LTD T/A E.ON SUSTAINABLE ENERGY",
+          "amount": 41217.83,
+          "date": "2014-11-20",
+          "occurrences": 2,
+          "potential_overpayment": 41217.83
+        },
+        {
+          "supplier": "W R DAVIES (STAFFORD) LTD",
+          "amount": 9252.5,
+          "date": "2014-06-26",
+          "occurrences": 5,
+          "potential_overpayment": 37010.0
+        },
+        {
+          "supplier": "TETRA TECH LTD",
+          "amount": 35197.74,
+          "date": "2024-02-29",
+          "occurrences": 2,
+          "potential_overpayment": 35197.74
+        },
+        {
+          "supplier": "FORD MOTOR COMPANY LTD T/A FORD BUSINESS CENTRE",
+          "amount": 17009.15,
+          "date": "2015-06-29",
+          "occurrences": 3,
+          "potential_overpayment": 34018.3
+        },
+        {
+          "supplier": "STAFFORDSHIRE COUNTY COUNCIL",
+          "amount": 28442.89,
+          "date": "2015-10-12",
+          "occurrences": 2,
+          "potential_overpayment": 28442.89
+        },
+        {
+          "supplier": "STAFFORDSHIRE UNIVERSITY",
+          "amount": 26274.0,
+          "date": "2024-10-31",
+          "occurrences": 2,
+          "potential_overpayment": 26274.0
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 486,
+      "total_value": 17813000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under \u00a3500",
+      "count": 3
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "",
+      "spend": 342344566.18,
+      "count": 19813
+    },
+    {
+      "department": "Waste & Recycling",
+      "spend": 4053897.24,
+      "count": 634
+    },
+    {
+      "department": "Cross Service Invoice",
+      "spend": 3133427.41,
+      "count": 362
+    },
+    {
+      "department": "Culture & Sport Capital",
+      "spend": 2803898.94,
+      "count": 150
+    },
+    {
+      "department": "Leisure Management Contract",
+      "spend": 2150531.9,
+      "count": 117
+    },
+    {
+      "department": "Risk and Resilience",
+      "spend": 2018575.05,
+      "count": 58
+    },
+    {
+      "department": "2110 - Housing Repairs Account",
+      "spend": 1847359.88,
+      "count": 39
+    },
+    {
+      "department": "Local Taxation",
+      "spend": 1412361.44,
+      "count": 857
+    },
+    {
+      "department": "Housing General Fund Capital",
+      "spend": 1149153.13,
+      "count": 278
+    },
+    {
+      "department": "2111 - Housing Maint - Trading Account",
+      "spend": 869509.56,
+      "count": 664
+    },
+    {
+      "department": "Parks & Open Spaces",
+      "spend": 810469.34,
+      "count": 229
+    },
+    {
+      "department": "2122 - Stores Holding Account",
+      "spend": 751823.69,
+      "count": 475
+    },
+    {
+      "department": "Non-Distributed Costs",
+      "spend": 734770.9,
+      "count": 26
+    },
+    {
+      "department": "0128 - Performance and Quality",
+      "spend": 707734.66,
+      "count": 86
+    },
+    {
+      "department": "On Street Parking",
+      "spend": 684938.38,
+      "count": 50
+    },
+    {
+      "department": "Public Buildings",
+      "spend": 649262.74,
+      "count": 358
+    },
+    {
+      "department": "Town Centre Management",
+      "spend": 514429.05,
+      "count": 22
+    },
+    {
+      "department": "Grants & Contributions",
+      "spend": 399445.0,
+      "count": 14
+    },
+    {
+      "department": "Town Centre Regeneration Capital",
+      "spend": 382320.56,
+      "count": 67
+    },
+    {
+      "department": "Environment Capital",
+      "spend": 347041.96,
+      "count": 51
+    },
+    {
+      "department": "Partnerships",
+      "spend": 339432.83,
+      "count": 109
+    },
+    {
+      "department": "CP998",
+      "spend": 336284.26,
+      "count": 10
+    },
+    {
+      "department": "Multi Expense Type Invoice",
+      "spend": 275623.79,
+      "count": 51
+    },
+    {
+      "department": "2100 - Housing Maint - Mgt & Support A/c",
+      "spend": 270025.82,
+      "count": 139
+    },
+    {
+      "department": "Streetscene",
+      "spend": 266206.24,
+      "count": 201
+    },
+    {
+      "department": "Corporate Improvement Capital",
+      "spend": 262739.58,
+      "count": 79
+    },
+    {
+      "department": "CCTV",
+      "spend": 256185.55,
+      "count": 73
+    },
+    {
+      "department": "Regulatory Services",
+      "spend": 249729.76,
+      "count": 112
+    },
+    {
+      "department": "2119 - Tenancy Services",
+      "spend": 231069.43,
+      "count": 175
+    },
+    {
+      "department": "Development Control",
+      "spend": 222611.44,
+      "count": 128
+    },
+    {
+      "department": "Corporate Management",
+      "spend": 220194.0,
+      "count": 19
+    },
+    {
+      "department": "Elections",
+      "spend": 219981.65,
+      "count": 87
+    },
+    {
+      "department": "Off Street Parking",
+      "spend": 213989.96,
+      "count": 58
+    },
+    {
+      "department": "Corporate Services",
+      "spend": 198707.06,
+      "count": 160
+    },
+    {
+      "department": "Markets",
+      "spend": 194122.54,
+      "count": 175
+    },
+    {
+      "department": "Food Safety",
+      "spend": 185336.64,
+      "count": 85
+    },
+    {
+      "department": "Finance",
+      "spend": 185092.31,
+      "count": 84
+    },
+    {
+      "department": "Housing Services",
+      "spend": 179585.57,
+      "count": 144
+    },
+    {
+      "department": "Grounds Maintenance",
+      "spend": 164997.8,
+      "count": 106
+    },
+    {
+      "department": "Management & Support",
+      "spend": 164895.49,
+      "count": 40
+    },
+    {
+      "department": "Street Cleansing",
+      "spend": 162683.34,
+      "count": 96
+    },
+    {
+      "department": "Economic Development",
+      "spend": 157102.72,
+      "count": 38
+    },
+    {
+      "department": "2120 - Housing Maintenance Repairs",
+      "spend": 135553.85,
+      "count": 129
+    },
+    {
+      "department": "Hawks Green Depot",
+      "spend": 124341.33,
+      "count": 86
+    },
+    {
+      "department": "2124 - Stores Handling Account",
+      "spend": 118916.86,
+      "count": 94
+    },
+    {
+      "department": "2102 - Sheltered Schemes",
+      "spend": 94972.71,
+      "count": 74
+    },
+    {
+      "department": "Countryside Management",
+      "spend": 87101.52,
+      "count": 44
+    },
+    {
+      "department": "Social Alarms",
+      "spend": 85855.21,
+      "count": 31
+    },
+    {
+      "department": "Building Control",
+      "spend": 85768.68,
+      "count": 60
+    },
+    {
+      "department": "2117 - Social Alarms - HRA",
+      "spend": 81877.01,
+      "count": 30
+    },
+    {
+      "department": "Communications",
+      "spend": 71076.22,
+      "count": 54
+    },
+    {
+      "department": "Cemeteries",
+      "spend": 66630.48,
+      "count": 37
+    },
+    {
+      "department": "Christmas Illuminations",
+      "spend": 65819.04,
+      "count": 16
+    },
+    {
+      "department": "2104 - Housing Property Services",
+      "spend": 65408.81,
+      "count": 24
+    },
+    {
+      "department": "Vehicles",
+      "spend": 61484.09,
+      "count": 45
+    },
+    {
+      "department": "Governance",
+      "spend": 60000.0,
+      "count": 4
+    },
+    {
+      "department": "Executive Management & Support",
+      "spend": 56557.85,
+      "count": 28
+    },
+    {
+      "department": "2112 - Tenant Participation",
+      "spend": 56193.0,
+      "count": 23
+    },
+    {
+      "department": "Land Charges",
+      "spend": 51170.08,
+      "count": 26
+    },
+    {
+      "department": "2129 - Responsive Repairs",
+      "spend": 49327.54,
+      "count": 41
+    },
+    {
+      "department": "Mortuary",
+      "spend": 48577.79,
+      "count": 49
+    },
+    {
+      "department": "2109 - Supervision and Mgt Special",
+      "spend": 39429.43,
+      "count": 18
+    },
+    {
+      "department": "Executive Management",
+      "spend": 37634.18,
+      "count": 11
+    },
+    {
+      "department": "Audit",
+      "spend": 36793.0,
+      "count": 23
+    },
+    {
+      "department": "Licensing",
+      "spend": 32838.5,
+      "count": 30
+    },
+    {
+      "department": "Technology",
+      "spend": 32825.5,
+      "count": 9
+    },
+    {
+      "department": "Stadium",
+      "spend": 25803.81,
+      "count": 7
+    },
+    {
+      "department": "Contract Monitoring",
+      "spend": 20316.51,
+      "count": 17
+    },
+    {
+      "department": "Human Resources",
+      "spend": 19777.75,
+      "count": 4
+    },
+    {
+      "department": "Customer Services",
+      "spend": 16042.0,
+      "count": 4
+    },
+    {
+      "department": "Executive Support",
+      "spend": 15931.01,
+      "count": 12
+    },
+    {
+      "department": "2108 - Sale of Council Houses",
+      "spend": 15296.4,
+      "count": 16
+    },
+    {
+      "department": "2127 - Revenue Voids",
+      "spend": 15247.5,
+      "count": 16
+    },
+    {
+      "department": "Leisure, Planning & Marketing",
+      "spend": 11106.26,
+      "count": 6
+    },
+    {
+      "department": "Cleansing Services",
+      "spend": 9348.0,
+      "count": 9
+    },
+    {
+      "department": "Democratic Services",
+      "spend": 8662.4,
+      "count": 11
+    },
+    {
+      "department": "Management & Administration",
+      "spend": 8647.0,
+      "count": 13
+    },
+    {
+      "department": "Allotments",
+      "spend": 7103.0,
+      "count": 1
+    },
+    {
+      "department": "Drainage Services",
+      "spend": 6535.0,
+      "count": 5
+    },
+    {
+      "department": "Private Sector Housing",
+      "spend": 6082.22,
+      "count": 7
+    },
+    {
+      "department": "Conservation Areas",
+      "spend": 5715.29,
+      "count": 6
+    },
+    {
+      "department": "Miscellaneous Properties",
+      "spend": 3905.08,
+      "count": 1
+    },
+    {
+      "department": "Policy, Partnerships & Performance",
+      "spend": 3653.1,
+      "count": 4
+    },
+    {
+      "department": "Policy & Performance",
+      "spend": 3460.0,
+      "count": 4
+    },
+    {
+      "department": "Excluded Items",
+      "spend": 3035.99,
+      "count": 2
+    },
+    {
+      "department": "Public Clocks",
+      "spend": 2663.0,
+      "count": 2
+    },
+    {
+      "department": "Chairmans Ball",
+      "spend": 1800.0,
+      "count": 1
+    },
+    {
+      "department": "Bus Shelters",
+      "spend": 1430.0,
+      "count": 2
+    },
+    {
+      "department": "e-Government",
+      "spend": 1360.0,
+      "count": 1
+    },
+    {
+      "department": "Private Sector Housing (Enforcement)",
+      "spend": 1300.0,
+      "count": 1
+    },
+    {
+      "department": "2116 - Service Charges - Leasehold Flats",
+      "spend": 998.52,
+      "count": 1
+    },
+    {
+      "department": "2106 - Supervision and Mgt General",
+      "spend": 750.0,
+      "count": 1
+    },
+    {
+      "department": "2125 - Vunerable Decoration",
+      "spend": 560.0,
+      "count": 1
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2014/15": 21652896.93,
+      "2015/16": 29506927.98,
+      "2016/17": 7923999.4,
+      "2022/23": 19916948.29,
+      "2023/24": 95356017.34,
+      "2024/25": 82319639.52,
+      "2025/26": 107429172.71,
+      "2026/27": 10479195.14
+    },
+    "transactions_by_year": {
+      "2014/15": 3688,
+      "2015/16": 3791,
+      "2016/17": 1158,
+      "2022/23": 1363,
+      "2023/24": 5127,
+      "2024/25": 5303,
+      "2025/26": 6645,
+      "2026/27": 585
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 28.4,
+    "total_records": 27660
+  }
+}

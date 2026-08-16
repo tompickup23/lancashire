@@ -1,0 +1,131 @@
+{
+  "generated_at": "2026-05-16",
+  "audit_source": "scripts/update-meetings.js + live HEAD probes of each council's calendar URL",
+  "context": "8 councils had empty meetings.json after the 12 April 2026 cron run. Issue 3 (push race) prevented refresh for 4 subsequent weeks. This audit determines which of the 8 will refill once the cron is fixed vs which need additional scraper work.",
+  "councils": {
+    "durham": {
+      "platform_configured": "moderngov",
+      "url": "https://democracy.durham.gov.uk",
+      "calendar_probe": "HTTP 200, 0 'Meeting of' matches in May 2026 calendar",
+      "root_cause": "Possibly empty calendar window (Durham council in pre-election purdah May 1-7 2026), OR ModernGov calendar path differs. Probably self-resolves at next refresh, but verify.",
+      "action": "Re-probe after next successful cron run. If still 0, investigate Durham's actual calendar URL (try /mgCalendarMonthView.aspx)."
+    },
+    "north_northants": {
+      "platform_configured": "moderngov",
+      "url": "https://northnorthants.moderngov.co.uk",
+      "calendar_probe": "HTTP 200, 100 'Meeting of' matches in May 2026 calendar",
+      "root_cause": "Calendar is healthy. Empty meetings.json is the result of the 12 April cron + 4 subsequent push-race failures. Will self-heal once Issue 3 fix lands.",
+      "action": "No code change needed. Re-run cron."
+    },
+    "west_northants": {
+      "platform_configured": "moderngov",
+      "url": "https://westnorthants.moderngov.co.uk",
+      "calendar_probe": "HTTP 200, 100 'Meeting of' matches in May 2026 calendar",
+      "root_cause": "Same as N Northants \u2014 healthy upstream, cron-blocked.",
+      "action": "No code change needed."
+    },
+    "warwickshire_cc": {
+      "platform_configured": "moderngov",
+      "url": "https://democracy.warwickshire.gov.uk",
+      "calendar_probe": "HTTP 200, 93 'Meeting of' matches in May 2026 calendar",
+      "root_cause": "Same as N Northants.",
+      "action": "No code change needed."
+    },
+    "nottinghamshire_cc": {
+      "platform_configured": "moderngov",
+      "url": "https://www.nottinghamshire.gov.uk/dms",
+      "calendar_probe": "HTTP 404 on mgCalendarAgendaView.aspx \u2014 the URL is broken because Notts CC runs CMIS, NOT ModernGov",
+      "evidence": "https://www.nottinghamshire.gov.uk/dms/ exposes CMISHome.aspx, Meetings.aspx, Committees.aspx \u2014 classic CMIS endpoints",
+      "root_cause": "Wrong platform classification. update-meetings.js scrapeCouncil() can't handle CMIS \u2014 needs a new scraper or a switch to find a real ModernGov instance (none known).",
+      "action": "Add scrapeCMISCouncil() function. CMIS exposes Meetings.aspx?meet=N or a similar pattern; needs investigation. Or: try the third-party CMIS Public View if Notts uses one."
+    },
+    "derbyshire_cc": {
+      "platform_configured": "moderngov",
+      "url": "https://democracy.derbyshire.gov.uk",
+      "calendar_probe": "HTTP 200, 85 'Meeting of' matches in May 2026 calendar",
+      "root_cause": "Same as N Northants \u2014 healthy upstream, cron-blocked.",
+      "action": "No code change needed."
+    },
+    "staffordshire_cc": {
+      "platform_configured": "moderngov",
+      "url": "https://moderngov.staffordshire.gov.uk",
+      "calendar_probe": "302 redirect to https://staffordshire.moderngov.co.uk, then HTTP 200 with 101 'Meeting of' matches",
+      "root_cause": "Domain migration not reflected in scraper config. The configured URL works via redirect \u2014 but if Node fetch doesn't follow 302, scraper may bail.",
+      "action": "Update moderngov_url to 'https://staffordshire.moderngov.co.uk' in update-meetings.js (one-line fix). Verify fetch follows redirects."
+    },
+    "lancashire_pcc": {
+      "platform_configured": "(none \u2014 explicitly dropped)",
+      "url": "n/a",
+      "calendar_probe": "n/a \u2014 no structured meetings calendar",
+      "root_cause": "Per scraper comments at scripts/update-meetings.js:210-216: 'no structured meetings calendar; only topic-aggregator pages per scrutiny panel'.",
+      "action": "Either build a Playwright-based scraper for the OPCC topic pages, OR accept the empty meetings.json. Low priority \u2014 election not until May 2028."
+    }
+  },
+  "summary": {
+    "will_self_heal_after_cron_fix": [
+      "north_northants",
+      "west_northants",
+      "warwickshire_cc",
+      "derbyshire_cc"
+    ],
+    "needs_one_line_url_fix": [
+      "staffordshire_cc"
+    ],
+    "needs_investigation": [
+      "durham"
+    ],
+    "needs_new_scraper": [
+      "nottinghamshire_cc"
+    ],
+    "by_design": [
+      "lancashire_pcc"
+    ]
+  },
+  "immediate_next_actions": [
+    "Land Issue 3 (push-race fix) on main",
+    "Manually trigger update-meetings workflow",
+    "Patch Staffs URL to staffordshire.moderngov.co.uk in scripts/update-meetings.js",
+    "Re-probe Durham after cron run \u2014 if still 0, deeper investigation",
+    "Schedule CMIS scraper work for nottinghamshire_cc (1-2 day task)"
+  ],
+  "updated_at": "2026-05-16T21:20:00Z",
+  "cohort_extensions_added": {
+    "moderngov_added_to_scraper": [
+      "wakefield",
+      "thurrock",
+      "sandwell",
+      "gateshead",
+      "havering",
+      "calderdale",
+      "st_helens",
+      "newcastle_under_lyme",
+      "tower_hamlets"
+    ],
+    "cmis_pending_scraper_extension": [
+      "sunderland",
+      "barnsley",
+      "south_tyneside",
+      "walsall",
+      "essex_cc",
+      "suffolk_cc",
+      "norfolk_cc",
+      "ealing",
+      "nottinghamshire_cc"
+    ],
+    "cmis_note": "These 9 councils run CMIS (cmis.uk.com hosted or council-hosted) rather than ModernGov. Adding a scrapeCMISCouncil() function to scripts/update-meetings.js is the next maintenance task. CMIS exposes meeting listings via Meetings.aspx?meet=N + a JSON-style attendance feed (varies per council). Estimated 1 day of work to handle the 3-4 most common CMIS variants."
+  },
+  "runbook_for_wargame": [
+    "1. Land Issue 3 patch (workflow rebase guard) on main",
+    "2. gh workflow run update-meetings.yml --ref main",
+    "3. Wait ~15 min for scrape + commit",
+    "4. ssh vps-main; cd /root/aidoge/burnley-council",
+    "5. For each tier-A council with fresh meetings.json:",
+    "   python3 scripts/wargame_pipeline.py --council X (sleep 2 between)",
+    "6. Re-deploy: push to main triggers full rebuild",
+    "7. Cron takes over from next Sunday"
+  ],
+  "blocked_until_step": {
+    "cmis_councils_meeting_briefings": "CMIS scraper extension (Gap 4 follow-up)",
+    "moderngov_councils_meeting_briefings": "Step 5 of runbook (LLM-bound, vps-main only)"
+  }
+}

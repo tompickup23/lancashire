@@ -1,0 +1,517 @@
+{
+  "version": "2.0",
+  "council_id": "barnsley",
+  "council_name": "Barnsley Metropolitan Borough Council",
+  "generated_at": "2026-05-13T11:06:39.629225Z",
+  "data_sources": [
+    "spending.sqlite (council_etl.py + classify_council.py)",
+    "doge_findings.json (35-technique forensic)",
+    "cross_council.json (32-council peer benchmark)",
+    "budgets_summary.json (MHCLG Revenue Outturn)",
+    "revenue_trends.json (8-yr MHCLG time series)",
+    "source_audit.json (record_class breakdown)",
+    "supplier_donor_crossmatch.json (Electoral Commission CSV API)"
+  ],
+  "financial_summary": {
+    "annual_revenue_budget": 414094000,
+    "council_tax_requirement": 120133000,
+    "service_breakdown": {
+      "Highways and transport services": 6196000,
+      "Housing services (GFRA only)": 3894000,
+      "Cultural and related services": 9064000,
+      "Environmental and regulatory services": 26347000,
+      "Planning and development services": 4912000,
+      "Central services": 22843000
+    },
+    "procurement_footprint_total": 3424006146.19,
+    "procurement_footprint_annual": 570667691.03,
+    "transactions_total": 369423,
+    "transactions_annual": 61570,
+    "unique_suppliers": 10015,
+    "data_period": {
+      "min": "2020-07-01",
+      "max": "2026-03-31"
+    },
+    "financial_years_covered": 6,
+    "per_capita_spend": 2333.06,
+    "population": 244600,
+    "net_revenue_expenditure": 221435860,
+    "budget_year": "2024-25"
+  },
+  "reserves_position": {
+    "total": 217268000,
+    "months_of_revenue": 11.8,
+    "adequacy": "Adequate",
+    "direction": "stable",
+    "trajectory": [
+      {
+        "year": "2021-22",
+        "earmarked": 197127000,
+        "unallocated": 20000000,
+        "total": 217127000
+      },
+      {
+        "year": "2022-23",
+        "earmarked": 190730000,
+        "unallocated": 20000000,
+        "total": 210730000
+      },
+      {
+        "year": "2023-24",
+        "earmarked": 190287000,
+        "unallocated": 20000000,
+        "total": 210287000
+      },
+      {
+        "year": "2024-25",
+        "earmarked": 197268000,
+        "unallocated": 20000000,
+        "total": 217268000
+      }
+    ],
+    "projected": [
+      {
+        "year": "2025-26",
+        "total": 213848000,
+        "projected": true
+      },
+      {
+        "year": "2026-27",
+        "total": 213846000,
+        "projected": true
+      }
+    ]
+  },
+  "forensic_signals": {
+    "duplicate_value": 135300000,
+    "duplicate_count": 20899,
+    "split_payments_value": 244200000,
+    "weak_competition": null,
+    "anomaly_count": 9,
+    "total_flagged_value": 497755000,
+    "severity_breakdown": {
+      "high": 1,
+      "medium": 6,
+      "low": 2
+    },
+    "overall_hhi": 134.6,
+    "service_hhi_high": [],
+    "top10_supplier_pct": 0.4071,
+    "doge_key_findings": [
+      {
+        "title": "10 suppliers with clock-like payment regularity",
+        "severity": "info",
+        "confidence": "high"
+      },
+      {
+        "title": "REDACTED PERSONAL DATA: 107519 transactions totalling \u00a3222.1M",
+        "severity": "info",
+        "confidence": "high"
+      }
+    ]
+  },
+  "peer_benchmarks": {
+    "per_capita_spend": {
+      "metric": "per_capita_spend",
+      "this_value": 2333.06,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "top10_supplier_pct": {
+      "metric": "top10_supplier_pct",
+      "this_value": 0.4071,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "reserves_months": {
+      "metric": "reserves_months",
+      "this_value": 11.8,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "overall_hhi": {
+      "metric": "overall_hhi",
+      "this_value": 134.6,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "duplicate_value": {
+      "metric": "duplicate_value",
+      "this_value": 135300000,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    },
+    "split_payments_value": {
+      "metric": "split_payments_value",
+      "this_value": 244200000,
+      "peer_n": 0,
+      "peer_median": null,
+      "peer_min": null,
+      "peer_max": null,
+      "rank": {
+        "rank": 1,
+        "of": 1,
+        "percentile": 100.0
+      }
+    }
+  },
+  "audit_research": {
+    "version": "1.0",
+    "council_id": "barnsley",
+    "researched_at": "2026-05-13",
+    "method": "Web research via WebFetch + WebSearch (subagent), all citations primary",
+    "external_audit": {
+      "auditor": "Grant Thornton UK LLP",
+      "key_audit_partner": "Michael Green",
+      "year_ended": "2025-03-31",
+      "opinion": "UNQUALIFIED",
+      "opinion_severity": "low",
+      "opinion_detail": "Unmodified opinion on the financial statements for the year ended 31 March 2025. Audit completed under ISA (UK) 600 Revised group audit (parent + Berneslai Homes + Barnsley Community Build / Community Assets). Per Grant Thornton: backstop regulations not applicable to Barnsley Council as accounts have been audited and published without delays for the last seven years with unqualified audit opinions.",
+      "vfm_conclusion": "No significant weaknesses identified in arrangements for securing value for money during 2024/25.",
+      "key_concerns": [
+        "Note 19A Property Plant & Equipment Net Book Value at 1 April 2024 misstated (\u00a34,489k buildings, \u00a33,076k vehicles/plant/furniture/equipment) corrected during audit",
+        "Council holds significant levels of debt from new secondary school estate + Glassworks town centre development (s151 officer warning, paragraph 3.20 of MTFS); new debt in MTFS contingent on savings plan delivery"
+      ],
+      "report_date": "2025-11-12",
+      "presented_to": "Audit and Governance Committee, 12 November 2025",
+      "url": "https://www.barnsley.gov.uk/media/rwkefi4c/barnsley-mbc-audit-findings-report-updated-2024-25-final.pdf"
+    },
+    "internal_audit": {
+      "year": "2024/25",
+      "overall_opinion": "not located in audit findings report - held in Audit & Governance Committee internal audit annual report, not yet retrievable via search",
+      "follow_up_required": "Read Audit and Governance Committee internal audit annual report on barnsleymbc.moderngov.co.uk",
+      "source_url": "https://barnsleymbc.moderngov.co.uk/"
+    },
+    "mtfs_2026_31": {
+      "title": "MTFS / Budget Proposals 2026/29 (3-year horizon)",
+      "total_net_revenue_budget_2026_27_m": 322.953,
+      "total_gross_revenue_budget_2025_26_m": 639,
+      "savings_target_2026_27_m": 0,
+      "savings_strategy": "No savings proposed for 2026/27 - budget balanced via reserves draw of \u00a36.8M as temporary bridging strategy pending longer-term savings plan to be developed by summer 2026",
+      "cumulative_gap_27_28_to_28_29_m": 30,
+      "annual_gap_run_rate_note": "circa \u00a330M p.a. by end of planning cycle (28/29) per s151 officer paragraph 3.9",
+      "forecast_budget_gaps_m": {
+        "2025_26": 12.606,
+        "2026_27": 6.896,
+        "2027_28": 14.381,
+        "2028_29": 22.466
+      },
+      "additional_cost_pressures_to_2029_m": 68,
+      "additional_cost_pressures_2026_27_m": 23,
+      "savings_identified": 0,
+      "unidentified_gap_note": "Long-term savings plan to be developed and brought forward as part of 27/28 budget; 4-point savings plan agreed in principle but no specific proposals quantified for 2026/27",
+      "reserves_drawn_in_past_4_yr_m": 51,
+      "reserves_minimum_working_balance_m": 20,
+      "reserves_budget_resilience_m": 15,
+      "reserves_temporary_use_2026_27_m": 6.8,
+      "council_tax_increase_2026_27_pct": 3.4,
+      "fair_funding_2_0_impact": "Provisional Local Government Finance Settlement (3-year settlement) generates additional \u00a320.3M over period 2026/27-2028/29 (\u00a38.9M in 2026/27)",
+      "url": "https://barnsleymbc.moderngov.co.uk/documents/s132196/Medium%20Term%20Financial%20Strategy.pdf"
+    },
+    "strategic_risks": {
+      "register_status": "Strategic Risk Register reported to Audit and Governance Committee on regular basis; details not retrieved from web",
+      "inferred_top_risks": [
+        "Children\u2019s Social Care - \u00a312M overspend in 25/26 driven by Looked After Children placement costs + agency staffing",
+        "Adult Social Care - \u00a32.5M overspend pressure",
+        "Home to School Transport - \u00a31.4M pressure",
+        "Glassworks town centre debt service / capital affordability",
+        "SEND / High Needs Block deficit (\u00a317.8M cumulative, see DSG section)"
+      ],
+      "follow_up_required": "Read Audit and Governance Committee strategic risk register at moderngov"
+    },
+    "dsg_send": {
+      "cumulative_deficit_m": 17.8,
+      "in_year_25_26_deficit_pre_safety_valve_m": 6.6,
+      "safety_valve_status": "5-year Safety Valve Agreement signed with DfE - received \u00a39.16M additional DSG on 31 March 2023 plus \u00a31.75M in 2024/25",
+      "safety_valve_terms": "Commits Council to managing DSG into in-year balance + implementing DSG Management Plan",
+      "statutory_override_extended_to": "2028-03-31",
+      "dsg_unusable_reserve_b_fwd_2324_m": 17.946,
+      "dsg_deficit_adjustment_account_m": 17.946,
+      "schools_block_to_high_needs_transfer_pct": 0.8,
+      "schools_forum_approval_date": "2025-12-18",
+      "send_strategy": "1% transfer of schools block to high needs (DfE approval required for >0.5%); funding to commission new SEND places in local Barnsley schools to stem placements in costly independent settings",
+      "url": "https://www.barnsley.gov.uk/media/o0bidt0n/barnsley-mbc-statement-of-accounts-2024-25-signed.pdf"
+    },
+    "asc_market_sustainability": {
+      "plan_published": "not located via web search - may be available via council website / cabinet papers",
+      "asc_overspend_25_26_m": 2.5,
+      "asc_growth_2026_27_m": 10,
+      "asc_growth_driver": "Inflation + demographic growth (placement costs and contractual inflation)",
+      "follow_up_required": "Verify Market Sustainability Plan publication on barnsley.gov.uk"
+    },
+    "lgr": {
+      "status": "no LGR proposal",
+      "context": "Barnsley is a metropolitan borough within South Yorkshire Mayoral Combined Authority (SYMCA). No live LGR consultation. Council has \u00a3100M share of South Yorkshire Renewal Fund earmarked for Place Based Investment Plan",
+      "scope": "Not applicable",
+      "url": null
+    },
+    "property_strategy": {
+      "name": "Capital Investment Strategy (referenced in MTFS Section 6)",
+      "general_fund_capital_2026_27_m": 30.9,
+      "hra_decency_standard_capital_2026_27_m": 29,
+      "major_active_schemes": "Glassworks town centre development (capital cost increased to \u00a3210M, \u00a3139.3M borrowed); new secondary school estate (BSF era)",
+      "borrowing_concern": "Council may need to take out \u00a390m loan in next two years (s151 officer statement); future borrowing must be subject to strict diligence given current debt levels and severe budget pressures. New debt only progressed contingent on savings plan delivery (paragraph 3.21 MTFS).",
+      "url": "https://barnsleymbc.moderngov.co.uk/documents/s132196/Medium%20Term%20Financial%20Strategy.pdf"
+    },
+    "actionable_savings_levers_summary": [
+      "Unidentified savings runway: \u00a330M p.a. annual gap by 28/29 with zero savings yet identified for 26/27 - entire savings plan to be developed by summer 2026 (4-point plan agreed in principle)",
+      "Glassworks regeneration: \u00a3210M capital cost (double 2017 estimate), \u00a3139.3M borrowed - review revenue financing affordability and any future tranches",
+      "Children\u2019s Social Care \u00a312M overspend driver - placement costs / agency staffing in LAC; transformation savings potential vs current run-rate",
+      "DSG/SEND \u00a317.8M cumulative deficit - statutory override extended to 2028; Safety Valve programme in delivery (year 3 of 5)",
+      "Glassworks management contract - verify procurement basis and term following commissioning",
+      "Berneslai Homes ALMO - first ALMO to receive C1 RSH rating in 2024; opportunity to review management fee benchmarking",
+      "External Best Value review commissioned for 2026 covering all council services - will surface efficiency savings"
+    ],
+    "source_urls": [
+      "https://www.barnsley.gov.uk/media/rwkefi4c/barnsley-mbc-audit-findings-report-updated-2024-25-final.pdf",
+      "https://www.barnsley.gov.uk/media/o0bidt0n/barnsley-mbc-statement-of-accounts-2024-25-signed.pdf",
+      "https://barnsleymbc.moderngov.co.uk/documents/s132196/Medium%20Term%20Financial%20Strategy.pdf",
+      "https://www.barnsley.gov.uk/news/barnsley-council-proposes-balanced-budget-for-202627-while-continuing-to-invest-in-the-borough/",
+      "https://barnsleymbc.moderngov.co.uk/documents/s127760/barnsley-council-draft-soa-2425.pdf",
+      "https://www.barnsley.gov.uk/services/council-and-democracy/budgets-and-spending/annual-statement-of-accounts/",
+      "https://www.barnsleychronicle.com/article/24696/finance-bosses-warn-over-future-borrowing"
+    ],
+    "coverage_gaps": [
+      "Internal Audit Annual Report 2024/25 limited-assurance subject list (behind moderngov CMIS)",
+      "Strategic Risk Register full top-N list with net ratings (held in committee papers)",
+      "ASC Market Sustainability Plan publication URL",
+      "Specific 4-point savings plan content (to be developed by summer 2026)",
+      "Glassworks regeneration revenue affordability detail (annual debt servicing run rate)",
+      "Treasury Management Strategy 2026/27 (final MTFS February 2026 update pending at time of research)"
+    ]
+  },
+  "donor_links": null,
+  "strategic_themes": [
+    {
+      "id": "audit_opinion_qualification",
+      "title": "Lift qualified audit opinion (Grant Thornton UK LLP)",
+      "rationale": "External auditor issued a qualified opinion on 2024/25 statements. Direct: PSAA scale fee normalisation. Indirect: lifting governance flag reduces borrowing-cost premium. Manual read of audit report needed to itemise qualification reason \u2014 once known, target single-cycle remediation.",
+      "estimated_savings_low_m": 0.1,
+      "estimated_savings_high_m": 0.5,
+      "savings_type": "one-off + recurring",
+      "delivery_horizon": "12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Section 151 Officer",
+      "evidence": [
+        "https://www.barnsley.gov.uk/media/rwkefi4c/barnsley-mbc-audit-findings-report-updated-2024-25-final.pdf"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "hnsg_reform_plan_delivery",
+      "title": "HNSG Reform Plan submission \u2014 secures \u00a316.0M DSG write-off (90% of \u00a317.8M)",
+      "rationale": "DSG cumulative high-needs deficit \u00a317.8M. Under the new High Needs Stability Grant (HNSG) announced 9 Feb 2026, government will write off 90% (~\u00a316.0M) of every council's DSG deficit at 31 March 2026 via Section 31 grant paid Autumn 2026 \u2014 CONDITIONAL on the council submitting an approved Local SEND Reform Plan to DfE by 19 June 2026. The \u00a31.8M residual remains on council books. Safety Valve programme closed 1 April 2026 and is folded into HNSG. Statutory override extended to 31 March 2028; gov has committed to absorb all DSG deficits from 1 April 2028 onwards. The savings range below covers (a) plan-submission cost avoidance + (b) residual 10% in-year demand management.",
+      "estimated_savings_low_m": 0.2,
+      "estimated_savings_high_m": 0.9,
+      "savings_type": "cost-avoidance (residual 10% management) + plan-conditional write-off",
+      "delivery_horizon": "19 June 2026 plan submission deadline; Autumn 2026 grant payment",
+      "implementation_complexity": "medium \u2014 plan submission is procedural, not discretionary",
+      "decision_owner": "Director of Children's Services + S151 Officer + Cabinet Lead SEND",
+      "evidence": [
+        "GOV.UK Explanatory note on DSG deficits (9 Feb 2026)",
+        "Final Local Government Finance Settlement 2026/27 to 2028/29 (HCWS1315)",
+        "AI DOGE shared/dsg_status_2026_27.json"
+      ],
+      "severity": "critical"
+    },
+    {
+      "id": "workforce_agency_reduction",
+      "title": "Agency / locum staff demand reduction (\u00a349M concentrated)",
+      "rationale": "\u00a349M of agency-staff spend across 3 master vendors. Top: REED SPECIALIST RECRUITMENT LTD (\u00a345M), MATRIX SCM LTD (\u00a33M), DUTTON RECRUITMENT LTD (\u00a31M). Standard transformation: cap agency premium at 20% above substantive rate, workforce-plan permanent conversion (6-9 month payback), regional bank pool, open-book master-vendor margins. CIPFA experience: 8-15% reduction in 12-18 months.",
+      "estimated_savings_low_m": 3.9,
+      "estimated_savings_high_m": 7.3,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of HR + Director of Finance + S151 Officer",
+      "evidence": [
+        "spending corpus: top agency suppliers"
+      ],
+      "severity": "high"
+    },
+    {
+      "id": "energy_procurement_optimisation",
+      "title": "Energy procurement via CCS / LASER / NEPO frameworks (\u00a359M baseline)",
+      "rationale": "\u00a359M utility spend across 5 suppliers. Top: NPOWER LTD (\u00a324M), EDF ENERGY CUSTOMERS LTD (\u00a322M), CORONA ENERGY (\u00a37M), PANACEON HEALTHCARE LTD T/A (\u00a34M), TOTALENERGIES GAS & POWER LTD (\u00a31M). Crown Commercial RM6306 + LASER / NEPO consortium flex purchase typically saves 4-8% vs direct supplier contracts on a 3-yr horizon. Plus solar PV self-generation on council estate (7-9 yr payback) + DESNZ Public Sector Decarbonisation Scheme grants up to 100% capex on heat pump conversion.",
+      "estimated_savings_low_m": 2.9,
+      "estimated_savings_high_m": 7.0,
+      "savings_type": "recurring + capital grant",
+      "delivery_horizon": "12-36 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Property + Sustainability Lead + S151 Officer",
+      "evidence": [
+        "Crown Commercial RM6306",
+        "DESNZ PSDS scheme",
+        "LASER / NEPO frameworks"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "treasury_borrowing_optimisation",
+      "title": "Treasury management + borrowing cost optimisation (CFR proxy \u00a3331M)",
+      "rationale": "Annual revenue \u00a3414M implies indicative CFR c. \u00a3331M. Standard levers: internal borrowing from earmarked reserves, PWLB Certainty Rate trade, MMF counterparty restructuring, LGPS Property Investment Pool inclusion. 10-30bp saving on external debt typical from a fresh review.",
+      "estimated_savings_low_m": 0.33,
+      "estimated_savings_high_m": 0.99,
+      "savings_type": "recurring",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (subject to TM Strategy approval)",
+      "decision_owner": "S151 Officer + Treasurer",
+      "evidence": [
+        "CIPFA Prudential + Treasury Management Codes 2021",
+        "PWLB Certainty Rate"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "lgps_employer_contribution",
+      "title": "LGPS employer contribution opportunity (2025 triennial valuation cycle)",
+      "rationale": "Indicative pay bill \u00a3166M \u00d7 c. 22% employer contribution rate = \u00a336M annual employer contribution. Most LGPS funds materially over-funded post-2022 (returns 2022-25 averaged 7-10% pa vs 3-4% discount-rate assumption). 2025 triennial valuation typically yields 2-4pp employer-rate reduction over 2026-2029. Confirm with administering authority + actuary.",
+      "estimated_savings_low_m": 1.8,
+      "estimated_savings_high_m": 5.5,
+      "savings_type": "recurring (3-yr triennial)",
+      "delivery_horizon": "settled at 2025 valuation; recurring 2026-2029",
+      "implementation_complexity": "low (LGPS admin enacts new rate)",
+      "decision_owner": "S151 Officer + LGPS Pensions Committee",
+      "evidence": [
+        "LGPS Regulations 2013 + 2014",
+        "2025 triennial valuation reports"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "income_fees_charges_optimisation",
+      "title": "Fees, charges + traded-services income optimisation (\u00a341M base)",
+      "rationale": "Indicative fees & charges + traded-services income c. 10% of revenue = \u00a341M. Standard levers: annual CPI uplift discipline, full-cost-recovery audit on discretionary services (parking, planning, licensing, sports, adult learning, property hire), commercial pricing on traded services. LGA experience: 5-15% income uplift sustainable over 2-3 years.",
+      "estimated_savings_low_m": 2.1,
+      "estimated_savings_high_m": 6.2,
+      "savings_type": "recurring",
+      "delivery_horizon": "12-24 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Cabinet (each fee delegation)",
+      "evidence": [
+        "LGA fees and charges benchmarking",
+        "CIPFA Charging guidance"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "insurance_retention_review",
+      "title": "Insurance retention + premium review (\u00a30.4M premium estimate)",
+      "rationale": "Indicative insurance premium \u00a30.4M (10bp of revenue). Standard 3-5 yr renewal cycle. Levers: tender via IPG / RM Partners (10-25% premium reduction typical), retention review (increase excess + build risk-fund reserve). London-borough cohort average 12% premium reduction at last tender.",
+      "estimated_savings_low_m": 0.04,
+      "estimated_savings_high_m": 0.1,
+      "savings_type": "recurring",
+      "delivery_horizon": "9-18 months",
+      "implementation_complexity": "low",
+      "decision_owner": "S151 Officer + Risk Manager",
+      "evidence": [
+        "IPG framework",
+        "RM Partners broker market"
+      ],
+      "severity": "low"
+    },
+    {
+      "id": "procurement_data_review",
+      "title": "Contracts Finder portfolio review (108 notices; 2 contracts at \u00a310M+ ceiling)",
+      "rationale": "Contracts Finder data: 108 notices (66 awarded, \u00a374M aggregate ADVERTISED CEILING value, 0% SME). IMPORTANT: advertised contract value is a CEILING set to avoid retender risk under PCR 2015 Reg.72 / Procurement Act 2023 s.31 \u2014 actual spend through the awardee is typically 30-70% of ceiling, with some off-contract ledger spend permitted within the 50%/50% modification limits. 2 contracts at \u00a310M+ ceiling totalling \u00a341M (ceiling, NOT spend) \u2014 top 3: Provision of a Local Energy Supply Offer (ceiling \u00a322M); Integrated Sexual Health Service (ceiling \u00a319M). Matched against ledger: Property and Asset Management Services - Alhambra  \u2014 ceiling \u00a30.5M, actual ledger spend with awardee \u00a30.6M; Barnsley Metropolitan Borough  Council GC13 webCAP \u2014 ceiling \u00a30.4M, actual ledger spend with awardee \u00a30.2M; Gamma Business Communications Ltd \u2014 ceiling \u00a30.0M, actual ledger spend with awardee \u00a30.4M. Aggregate identified actual spend \u00a32244M. SME-awarded share 0% is below the Procurement Reform 2023 / PPN 03/24 ambition (33% SME share by value). Standard procurement-data savings levers (% of ACTUAL ledger spend, not ceiling): (a) modification-history scrutiny under PCR 2015 Reg.72, (b) Procurement Act 2023 s.31 contract change notice review, (c) re-tender benchmark vs CCS framework rates on next renewal. 2-8% on actual spend through major contracts is a defensible upper bound.",
+      "estimated_savings_low_m": 44.9,
+      "estimated_savings_high_m": 179.5,
+      "savings_type": "recurring (post next contract renewal)",
+      "delivery_horizon": "12-36 months (contract-renewal cycle)",
+      "implementation_complexity": "high",
+      "decision_owner": "Head of Procurement + Cabinet Member + Section 151 Officer",
+      "evidence": [
+        "procurement.json (Contracts Finder API): 108 notices",
+        "ledger-matched actual spend: \u00a32244.0M",
+        "PCR 2015 Reg.72; Procurement Act 2023 s.31"
+      ],
+      "savings_basis": "Ledger-matched actual spend through awardees",
+      "advertised_ceiling_total_m": 40.8,
+      "ledger_matched_actual_spend_m": 2244.0,
+      "severity": "medium"
+    },
+    {
+      "id": "companies_house_compliance",
+      "title": "Companies House compliance follow-up (\u00a3123M flagged \u2014 1 overdue, 2 dissolved, 0 insolvency-history)",
+      "rationale": "Companies House lookup on top-50 suppliers identified \u00a3123M of spend with statutory-compliance flags: \u00a311M to suppliers with overdue accounts (1), \u00a3112M to dissolved-status companies (2), \u00a30M to companies with insolvency history (0). NOTE: Some matches are CH fuzzy-search false positives (e.g. school, government-body name collisions) and need human verification. After verification, real flags = (a) credit-risk review on overdue accounts, (b) contract-cleanup on dissolved entities (records still on ledger but supplier extinct \u2014 risk of duplicate-payment leakage), (c) PCR 2015 Reg.57 discretionary exclusion review on insolvency-history suppliers in active contracts.",
+      "estimated_savings_low_m": 0.6,
+      "estimated_savings_high_m": 2.5,
+      "savings_type": "one-off cleanup + recurring risk reduction",
+      "delivery_horizon": "6-12 months",
+      "implementation_complexity": "low (CH already enriched)",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "companies_house_enrichment.json"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "duplicate_recovery",
+      "title": "Audit + recover \u00a3135M in flagged duplicate-payment patterns",
+      "rationale": "DOGE forensic flagged \u00a3135M across 20,899 groups of likely duplicates. Industry recovery norm 5-15% via duplicate-detection software (AP Forensics, FISCAL, Oracle Concur). Lloyds Bank Commercial Card analysis typical for spot-check sample of 100 highest-confidence matches.",
+      "estimated_savings_low_m": 6.8,
+      "estimated_savings_high_m": 20.3,
+      "delivery_horizon": "12-18 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Director of Finance + Internal Audit",
+      "evidence": [
+        "doge_findings.duplicate_count",
+        "doge_findings.duplicate_value"
+      ],
+      "severity": "medium"
+    },
+    {
+      "id": "split_payment_review",
+      "title": "Investigate \u00a3244M in flagged split-payment patterns",
+      "rationale": "DOGE flagged \u00a3244M across 0 split-payment instances. Split payments often indicate (a) below-procurement-threshold ledger fragmentation circumventing PCR 2015 Reg.4 contract-value-aggregation rule; or (b) legitimate sub-line invoice splits. Sample audit + reclassify; misuse triggers Reg. 99 challenge exposure.",
+      "estimated_savings_low_m": 4.9,
+      "estimated_savings_high_m": 19.5,
+      "delivery_horizon": "9-12 months",
+      "implementation_complexity": "medium",
+      "decision_owner": "Head of Procurement + Internal Audit",
+      "evidence": [
+        "doge_findings.split_payments_value",
+        "PCR 2015 Reg.4"
+      ],
+      "severity": "medium"
+    }
+  ],
+  "supplier_recommendations": [],
+  "supplier_summary_flags": {},
+  "recommendation_counts": {}
+}

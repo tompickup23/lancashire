@@ -1,0 +1,194 @@
+{
+  "council": "Thurrock",
+  "council_id": "E06000034",
+  "council_type": "unitary",
+  "spending_threshold": 500,
+  "total_records": 81718,
+  "financial_years": [
+    "2023/24",
+    "2024/25",
+    "2025/26"
+  ],
+  "data_types": [
+    "purchase_cards",
+    "spend"
+  ],
+  "filters": {
+    "departments": [
+      {
+        "name": "Balance Sheet",
+        "spend": 2565039960.68,
+        "count": 5415,
+        "suppliers": 174
+      },
+      {
+        "name": "Children's Services",
+        "spend": 247569789.72,
+        "count": 25732,
+        "suppliers": 1977
+      },
+      {
+        "name": "Collection Fund",
+        "spend": 233651357.0,
+        "count": 159,
+        "suppliers": 4
+      },
+      {
+        "name": "Adult Social Care & Health",
+        "spend": 134208245.71,
+        "count": 11217,
+        "suppliers": 655
+      },
+      {
+        "name": "Place",
+        "spend": 134206323.63,
+        "count": 11698,
+        "suppliers": 1166
+      },
+      {
+        "name": "Housing Revenue Account",
+        "spend": 129247242.33,
+        "count": 8139,
+        "suppliers": 477
+      },
+      {
+        "name": "Adults; Housing and Health",
+        "spend": 69620426.71,
+        "count": 5772,
+        "suppliers": 519
+      },
+      {
+        "name": "Treasury & Central Financing",
+        "spend": 43202278.29,
+        "count": 160,
+        "suppliers": 22
+      },
+      {
+        "name": "Public Realm",
+        "spend": 23209308.22,
+        "count": 2780,
+        "suppliers": 420
+      },
+      {
+        "name": "Corporate Costs",
+        "spend": 17920394.99,
+        "count": 1460,
+        "suppliers": 235
+      },
+      {
+        "name": "Assistant Chief Exec's Office",
+        "spend": 17355485.76,
+        "count": 1045,
+        "suppliers": 210
+      },
+      {
+        "name": "Finance",
+        "spend": 16289521.5,
+        "count": 1640,
+        "suppliers": 180
+      },
+      {
+        "name": "Corporate Services",
+        "spend": 15529859.89,
+        "count": 4245,
+        "suppliers": 531
+      },
+      {
+        "name": "HR; OD and Transformation",
+        "spend": 4864351.08,
+        "count": 528,
+        "suppliers": 118
+      },
+      {
+        "name": "Housing General Fund",
+        "spend": 4661407.3,
+        "count": 955,
+        "suppliers": 119
+      },
+      {
+        "name": "Assisant Chief Exec's Office",
+        "spend": 1940785.95,
+        "count": 101,
+        "suppliers": 50
+      },
+      {
+        "name": "Resources & Place Delivery",
+        "spend": 953752.93,
+        "count": 51,
+        "suppliers": 33
+      },
+      {
+        "name": "Legal & Governance",
+        "spend": 768090.01,
+        "count": 295,
+        "suppliers": 79
+      },
+      {
+        "name": "Chief of Staff",
+        "spend": 326129.97,
+        "count": 72,
+        "suppliers": 29
+      },
+      {
+        "name": "Strategy; Engagement & Growth",
+        "spend": 208648.05,
+        "count": 251,
+        "suppliers": 58
+      },
+      {
+        "name": "Adult Soclal Care & Health",
+        "spend": 40350.0,
+        "count": 5,
+        "suppliers": 2
+      }
+    ],
+    "department_raws": [
+      "Adult Social Care & Health",
+      "Adult Soclal Care & Health",
+      "Adults; Housing and Health",
+      "Assisant Chief Exec's Office",
+      "Assistant Chief Exec's Office",
+      "Balance Sheet",
+      "Chief of Staff",
+      "Children's Services",
+      "Collection Fund",
+      "Corporate Costs",
+      "Corporate Services",
+      "Finance",
+      "HR; OD and Transformation",
+      "Housing General Fund",
+      "Housing Revenue Account",
+      "Legal & Governance",
+      "Place",
+      "Public Realm",
+      "Resources & Place Delivery",
+      "Strategy; Engagement & Growth",
+      "Treasury & Central Financing"
+    ]
+  },
+  "total_spend": 3660811393.28,
+  "total_spend_paid": 3660813709.72,
+  "total_spend_committed": 0,
+  "total_spend_all_types_legacy": 3660813709.72,
+  "record_count_paid": 81720,
+  "record_count_committed": 0,
+  "record_class_breakdown": {
+    "procurement_paid": {
+      "count": 81720,
+      "sum": 3660813709.72
+    }
+  },
+  "spend_triangulation": {
+    "transparency_gross": 3660813709.72,
+    "transparency_paid": 3660813709.72,
+    "procurement_only": 3660813709.72,
+    "non_procurement": 0.0
+  },
+  "dedup_rule": "total_spend = spend + purchase_cards; contracts excluded (77% pair with matching spend within 90d \u2014 see .claude/rules/lessons.md)",
+  "dedup_applied": "enforced at ETL (council_etl.py)",
+  "unique_suppliers": 4790,
+  "date_range": {
+    "min": "2023-04-01",
+    "max": "2026-03-01"
+  }
+}

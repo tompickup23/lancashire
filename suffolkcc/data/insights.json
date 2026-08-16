@@ -1,0 +1,380 @@
+{
+  "summary": {
+    "total_spend": 1342484974.49,
+    "transaction_count": 300927,
+    "unique_suppliers": 4885,
+    "avg_transaction": 4461.16,
+    "median_transaction": 1125.0,
+    "date_range": {
+      "min": "2025-04-01",
+      "max": "2026-03-31"
+    }
+  },
+  "supplier_analysis": {
+    "top_20_suppliers": [
+      {
+        "supplier": "M GROUP HIGHWAYS LTD",
+        "total": 66628487.09,
+        "transactions": 18,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ACCESS UK LTD",
+        "total": 60983282.19,
+        "transactions": 54,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CARE UK",
+        "total": 28648642.02,
+        "transactions": 6692,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SUEZ",
+        "total": 20159910.31,
+        "transactions": 14,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ACORN CARE & EDUCATION LTD (SALES)",
+        "total": 16771086.16,
+        "transactions": 961,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NORF CO OF DIS PEOPLE SUFF CL/MONIE",
+        "total": 13045340.1,
+        "transactions": 7764,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "FCC ENVIRONMENT",
+        "total": 11804404.5,
+        "transactions": 310,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "MENCAP",
+        "total": 11373575.73,
+        "transactions": 6272,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "LEADING LIVES",
+        "total": 11091997.45,
+        "transactions": 7502,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "ORWELL HOUSING ASSOCIATION",
+        "total": 10126014.66,
+        "transactions": 8491,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CONCERTUS SUFFOLK",
+        "total": 9336400.67,
+        "transactions": 1004,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CONSORTIUM TRUST",
+        "total": 8842853.28,
+        "transactions": 201,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "TURNING POINT SERVICES LTD",
+        "total": 7874075.67,
+        "transactions": 21,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "OPUS PEOPLE SOLUTIONS GROUP LTD",
+        "total": 7342228.63,
+        "transactions": 52,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "SENDAT",
+        "total": 7105919.31,
+        "transactions": 68,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CATHENA HEALTHCARE",
+        "total": 6777112.39,
+        "transactions": 1225,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "PENTACO CONSTRUCTION LTD",
+        "total": 6686005.66,
+        "transactions": 10,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "THE PARTNERSHIP IN CARE LTD",
+        "total": 6675135.76,
+        "transactions": 1777,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "CONSENSUS COMMUNITY SUPPORT LTD",
+        "total": 6303436.05,
+        "transactions": 692,
+        "company_number": null,
+        "company_url": null
+      },
+      {
+        "supplier": "NHS SUFFOLK & NORTH EAST ESSEX ICB (QJG)",
+        "total": 6150601.97,
+        "transactions": 82,
+        "company_number": null,
+        "company_url": null
+      }
+    ],
+    "concentration_ratio": 0.2878,
+    "total_unique_suppliers": 4885,
+    "single_transaction_suppliers": 1632
+  },
+  "efficiency_flags": [
+    {
+      "type": "same_day_duplicates",
+      "severity": "high",
+      "description": "Identical payments to same supplier on same day",
+      "count": 31791,
+      "potential_value": 252851067.55,
+      "items": [
+        {
+          "supplier": "BROADLANDS HALL",
+          "amount": 28756.0,
+          "date": "2026-03-31",
+          "occurrences": 37,
+          "potential_overpayment": 1035216.0
+        },
+        {
+          "supplier": "AUTISM ANGLIA",
+          "amount": 31036.67,
+          "date": "2025-12-10",
+          "occurrences": 33,
+          "potential_overpayment": 993173.44
+        },
+        {
+          "supplier": "AUTISM ANGLIA",
+          "amount": 31036.67,
+          "date": "2025-08-11",
+          "occurrences": 32,
+          "potential_overpayment": 962136.77
+        },
+        {
+          "supplier": "BROADLANDS HALL",
+          "amount": 28756.0,
+          "date": "2025-12-15",
+          "occurrences": 26,
+          "potential_overpayment": 718900.0
+        },
+        {
+          "supplier": "CENTRE ACADEMY EAST ANGLIA",
+          "amount": 13166.67,
+          "date": "2026-01-08",
+          "occurrences": 54,
+          "potential_overpayment": 697833.51
+        },
+        {
+          "supplier": "CARE UK",
+          "amount": 4149.96,
+          "date": "2026-01-20",
+          "occurrences": 168,
+          "potential_overpayment": 693043.32
+        },
+        {
+          "supplier": "CARE UK",
+          "amount": 4149.96,
+          "date": "2025-09-03",
+          "occurrences": 164,
+          "potential_overpayment": 676443.48
+        },
+        {
+          "supplier": "CARE UK",
+          "amount": 4149.96,
+          "date": "2025-07-08",
+          "occurrences": 162,
+          "potential_overpayment": 668143.56
+        },
+        {
+          "supplier": "CARE UK",
+          "amount": 4149.96,
+          "date": "2025-09-30",
+          "occurrences": 161,
+          "potential_overpayment": 663993.6
+        },
+        {
+          "supplier": "CARE UK",
+          "amount": 4149.96,
+          "date": "2025-11-25",
+          "occurrences": 155,
+          "potential_overpayment": 639093.84
+        },
+        {
+          "supplier": "CARE UK",
+          "amount": 4149.96,
+          "date": "2025-10-28",
+          "occurrences": 150,
+          "potential_overpayment": 618344.04
+        },
+        {
+          "supplier": "CARE UK",
+          "amount": 4149.96,
+          "date": "2025-08-05",
+          "occurrences": 147,
+          "potential_overpayment": 605894.16
+        },
+        {
+          "supplier": "CARE UK",
+          "amount": 4149.96,
+          "date": "2025-04-15",
+          "occurrences": 146,
+          "potential_overpayment": 601744.2
+        },
+        {
+          "supplier": "CARE UK",
+          "amount": 4149.96,
+          "date": "2025-05-13",
+          "occurrences": 145,
+          "potential_overpayment": 597594.24
+        },
+        {
+          "supplier": "ACORN CARE & EDUCATION LTD (SALES)",
+          "amount": 28377.0,
+          "date": "2025-12-08",
+          "occurrences": 21,
+          "potential_overpayment": 567540.0
+        },
+        {
+          "supplier": "CARE UK",
+          "amount": 4149.96,
+          "date": "2025-12-23",
+          "occurrences": 135,
+          "potential_overpayment": 556094.64
+        },
+        {
+          "supplier": "CARE UK",
+          "amount": 4149.96,
+          "date": "2026-02-17",
+          "occurrences": 130,
+          "potential_overpayment": 535344.84
+        },
+        {
+          "supplier": "CARE UK",
+          "amount": 4149.96,
+          "date": "2025-06-10",
+          "occurrences": 127,
+          "potential_overpayment": 522894.96
+        },
+        {
+          "supplier": "BROADLANDS HALL",
+          "amount": 27386.67,
+          "date": "2025-04-10",
+          "occurrences": 20,
+          "potential_overpayment": 520346.73
+        },
+        {
+          "supplier": "ACORN CARE & EDUCATION LTD (SALES)",
+          "amount": 24226.67,
+          "date": "2025-12-08",
+          "occurrences": 22,
+          "potential_overpayment": 508760.07
+        }
+      ]
+    },
+    {
+      "type": "round_number_payments",
+      "severity": "low",
+      "description": "Large round-number payments (may indicate estimates)",
+      "count": 1960,
+      "total_value": 39449000.0
+    },
+    {
+      "type": "frequent_small_transactions",
+      "severity": "medium",
+      "description": "Suppliers with 10+ transactions under £500",
+      "count": 426
+    }
+  ],
+  "department_breakdown": [
+    {
+      "department": "ADULT SOCIAL CARE",
+      "spend": 396020871.16,
+      "count": 157657
+    },
+    {
+      "department": "CYP",
+      "spend": 362023521.47,
+      "count": 71921
+    },
+    {
+      "department": "GROWTH, HIGHWAYS AND INFRASTRUCTURE",
+      "spend": 211538495.5,
+      "count": 6579
+    },
+    {
+      "department": "CORPORATE SERVICES",
+      "spend": 200115229.08,
+      "count": 7784
+    },
+    {
+      "department": "ACS",
+      "spend": 114697138.34,
+      "count": 50904
+    },
+    {
+      "department": "PUBLIC HEALTH & COMMUNITIES",
+      "spend": 34118471.35,
+      "count": 3030
+    },
+    {
+      "department": "FIRE AND PUBLIC SAFETY",
+      "spend": 12099726.45,
+      "count": 2748
+    },
+    {
+      "department": "CENTRAL AND CORPORATE FINANCE",
+      "spend": 11871521.14,
+      "count": 304
+    }
+  ],
+  "yoy_analysis": {
+    "spend_by_year": {
+      "2025/26": 1342484974.49
+    },
+    "transactions_by_year": {
+      "2025/26": 300927
+    }
+  },
+  "transparency_metrics": {
+    "has_dates": 100.0,
+    "has_suppliers": 100.0,
+    "has_departments": 100.0,
+    "total_records": 300927
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "last_updated": "2026-06-24",
+  "council_id": "nottinghamshire_cc",
+  "council_type": "shire_county",
+  "_data_quality": "Roster is PRIMARY-source verified (live CMIS Cabinet/councillor pages). Budget headline figures are NEWS-SOURCED (Notts runs CMIS, no curl path for the primary report); confirm before chamber-grade use.",
+  "administration": {
+    "party": "Reform UK",
+    "control_status": "reform_majority",
+    "seats": 42,
+    "seats_at_election": 40,
+    "total": 66,
+    "majority_threshold": 34,
+    "control_since": "2025-05-22",
+    "previous_control": "Conservative majority",
+    "next_elections": "2029-05",
+    "leader": "Cllr Mick Barton",
+    "note": "Reform UK won the 1 May 2025 all-out election (40 of 66; 42 after the 12 June 2025 Mansfield North by-elections) and runs the Executive alone. Composition: Reform 42, Conservative 17, Labour 4, Ashfield Independents 1, Broxtowe Alliance 1, Broxtowe Independent Group 1. Leader of the Opposition: Cllr Sam Smith (Conservative, 17).",
+    "mtfs": {
+      "net_revenue_budget_2026_27": 880007000,
+      "band_d_county_element_2026_27": 1970.13,
+      "council_tax_increase_pct_2026_27": 3.99,
+      "savings_programme_by_2028_29_gbp": 44200000,
+      "intervention_status": "None (no S114, no Exceptional Financial Support, no Best Value Notice; balanced budget passed 40-20). DSG High Needs deficit ~GBP 30.3m with the DfE 90% write-off (residual ~GBP 17.8m by 2028).",
+      "dsg_high_needs_deficit_31mar2026_gbp": 30300000,
+      "_source": "NEWS-SOURCED (West Bridgford Wire / ITV Central). Notts uses CMIS; confirm against the primary report (Council 26 Feb 2026)."
+    }
+  },
+  "directorates": [
+    {"id": "asch", "title": "Adult Social Care and Health", "net_budget_estimate": null, "savings_target_by_28_29": 21300000, "cabinet_lead": "Cllr Barry Answer"},
+    {"id": "children_families", "title": "Children and Families", "net_budget_estimate": null, "savings_target_by_28_29": 17500000, "cabinet_lead": "Cllr Rory Green / Cllr Simon Wright"},
+    {"id": "place", "title": "Place", "net_budget_estimate": null, "savings_target_by_28_29": 2700000, "cabinet_lead": "Cllr Bert Bingham / Cllr James Walker-Gurley"},
+    {"id": "chief_executives", "title": "Chief Executive's", "net_budget_estimate": null, "savings_target_by_28_29": 2700000, "cabinet_lead": "Cllr Stuart Matthews"}
+  ],
+  "portfolios": [
+    {"id": "leader", "title": "Leader of the Council", "short_title": "Leader", "cabinet_member": "Cllr Mick Barton (Reform UK)", "lead_members": [], "champions": [], "_directorate": "chief_executives"},
+    {"id": "deputy-leader", "title": "Deputy Leader", "short_title": "Deputy Leader", "cabinet_member": "Cllr Dawn Justice (Reform UK)", "lead_members": [], "champions": [], "_directorate": "chief_executives"},
+    {"id": "adult-social-care", "title": "Adult Social Care", "short_title": "Adult Social Care", "cabinet_member": "Cllr Barry Answer (Reform UK)", "lead_members": [], "champions": [], "_directorate": "asch"},
+    {"id": "children-families", "title": "Children and Families", "short_title": "Children", "cabinet_member": "Cllr Rory Green (Reform UK)", "lead_members": [], "champions": [], "_directorate": "children_families"},
+    {"id": "education-send", "title": "Education and SEND", "short_title": "Education / SEND", "cabinet_member": "Cllr Simon Wright (Reform UK)", "lead_members": [], "champions": [], "_directorate": "children_families"},
+    {"id": "finance-resources", "title": "Finance and Resources", "short_title": "Finance", "cabinet_member": "Cllr Stuart Matthews (Reform UK)", "lead_members": [], "champions": [], "_directorate": "chief_executives"},
+    {"id": "transport-environment", "title": "Transport and Environment", "short_title": "Transport / Environment", "cabinet_member": "Cllr Bert Bingham (Reform UK)", "lead_members": [], "champions": [], "_directorate": "place"},
+    {"id": "communities-public-health", "title": "Communities and Public Health", "short_title": "Communities", "cabinet_member": "Cllr Jody Stoll (Reform UK)", "lead_members": [], "champions": [], "_directorate": "place"},
+    {"id": "economic-development-assets", "title": "Economic Development and Asset Management", "short_title": "Economic Development", "cabinet_member": "Cllr James Walker-Gurley (Reform UK)", "lead_members": [], "champions": [], "_directorate": "place"},
+    {"id": "business-management", "title": "Business Management", "short_title": "Business Management", "cabinet_member": "Cllr Martin Wright (Reform UK)", "lead_members": [], "champions": [], "_directorate": "chief_executives"}
+  ],
+  "senior_officers": {
+    "chief_executive": {"name": "Adrian Smith", "title": "Chief Executive and Head of Paid Service", "statutory": true},
+    "s151_officer": {"name": "Nigel Stevenson", "title": "Service Director, Finance, Infrastructure and Improvement (Section 151 Officer)", "statutory": true},
+    "monitoring_officer": {"name": "TBC", "title": "Monitoring Officer", "statutory": true},
+    "dass": {"name": "TBC", "title": "Corporate Director, Adult Social Care and Health", "statutory": true},
+    "dcs": {"name": "TBC", "title": "Corporate Director, Children and Families", "statutory": true},
+    "dph": {"name": "TBC", "title": "Director of Public Health", "statutory": true}
+  },
+  "governance": {
+    "political_arithmetic": {"party": "Reform UK", "reform_seats": 42, "total_seats": 66, "majority_threshold": 34, "control_status": "reform_majority", "note": "Reform UK holds a comfortable majority (42 of 66, 34 needed) and runs the Executive alone. Opposition led by the Conservatives (Cllr Sam Smith, 17 seats)."}
+  },
+  "_directorate_platform_link": {"platform": "AI DOGE Directorate Edition", "council_dir": "councils/nottinghamshire-cc/", "lever_count": 4, "data_quality": "roster primary-verified; budget news-sourced (CMIS, primary pull pending)", "investigation": "councils/nottinghamshire-cc/investigations/ (pending; the DSG override-cliff + the 90% write-off residual is the angle)"},
+  "_source_files_consulted": ["Nottinghamshire CC 2026/27 budget (NEWS-SOURCED: West Bridgford Wire, ITV Central; primary pull pending via CMIS)", "www.nottinghamshire.gov.uk live CMIS Cabinet + councillor pages (roster, primary)"],
+  "_roster_confirmed": "2026-06-24 (live CMIS Cabinet/councillor pages + primary-source verification)"
+}

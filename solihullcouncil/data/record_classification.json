@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "council_id": "solihull",
+  "updated": "2026-05-17",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Solihull MBC. Default is procurement_paid. West Midlands Pension Fund → internal_transfer. £250 threshold.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {"supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD)$"},
+      "reason": "Care Act 2014 + UK GDPR redactions."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {"supplier_regex": "^.*WEST MIDLANDS? PENSION FUND.*$"},
+      "reason": "Solihull LGPS contributions to West Midlands Pension Fund."
+    }
+  ],
+  "supplier_aliases": []
+}

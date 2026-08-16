@@ -1,0 +1,101 @@
+{
+  "version": 1,
+  "updated": "2026-04-19",
+  "description": "Catalogue of named UK government grant schemes distributed via local authorities. When DOGE forensic analysis sees a batch of opaque PO records (blank description/department, year-end date, consistent ~£100K cap), it should cross-reference this file BEFORE flagging the batch as suspicious procurement. Grants disbursed through councils are not council procurement decisions — the scheme rules determine who gets paid and how much. The ledger often strips the scheme context, making legitimate grant runs look like anomalous PO batches.\n\nUsage: doge_analysis.py can consume this file to suppress false-positive 'large undescribed payment' flags when the payment amount + date window + amount ceiling match a known scheme. Councils can reference this file from their record_classification.json via a `grant_schemes_file` pointer (future work).",
+  "schemes": [
+    {
+      "id": "crf_business_growth_innovation_2022",
+      "name": "UK Community Renewal Fund — Business Growth & Innovation Fund",
+      "admin_body": "Growth Lancashire Ltd (lead); Lancashire districts of Burnley, Pendle, Rossendale",
+      "funding_body": "DLUHC (now MHCLG)",
+      "scheme_size": "£994,000",
+      "recipient_cap": 99722.11,
+      "recipient_floor": 98497.96,
+      "typical_amount": 98498,
+      "date_window": ["2022-03-22", "2022-03-31"],
+      "financial_year": "2021/22",
+      "reference_pattern": "PORD085[0-9]{3}",
+      "description": "10 business growth grants disbursed in the final week before the 31 March 2022 CRF defrayment deadline. Burnley's 22 Mar 2022 batch (PORD085086–PORD085154) included Planet Pizza, Silver Cross Pubs, Kingfisher Direct, and 6 others. Reason for the near-identical £98K ceiling: CRF was a capped scheme with per-recipient ceilings.",
+      "source_documents": [
+        "Burnley moderngov s26826",
+        "Pendle moderngov (equivalent)"
+      ],
+      "dogeism_warnings": [
+        "Planet Pizza £98,498 from Burnley BC 22 Mar 2022 was flagged by DOGE as 'large undescribed payment' — it was a legitimate CRF grant, not a contract.",
+        "Suspicious appearance: blank description/CIPFA/service-area because grant schemes are not booked against a service area."
+      ]
+    },
+    {
+      "id": "hsf_household_support_fund",
+      "name": "Household Support Fund (HSF)",
+      "admin_body": "Upper-tier authorities (counties/unitaries) pass through to districts; districts distribute",
+      "funding_body": "DWP",
+      "scheme_size_note": "Multi-billion annual, phased HSF1/HSF2/HSF3/HSF4/HSF5 2021-2026",
+      "recipient_cap": null,
+      "recipient_floor": null,
+      "typical_amount": null,
+      "date_window": ["2021-10-06", null],
+      "financial_year_range": ["2021/22", "2025/26"],
+      "reference_pattern": null,
+      "description": "Cost-of-living support fund. Counties/unitaries receive allocation, pass to districts, districts to food banks + individuals + utility credits. Ledger sub-code '-HSF' (e.g. 'CALICO HOMES LIMITED-HSF') is common, but HSF flows can also appear with blank description if the finance system strips it.",
+      "source_documents": [
+        "DWP grant determination letters",
+        "LGA HSF guidance"
+      ],
+      "dogeism_warnings": [
+        "A council that suddenly has 200+ REDACTED small-value rows starting Oct 2021 is likely HSF individual payouts, not a scandal."
+      ]
+    },
+    {
+      "id": "restart_grant_2021",
+      "name": "Restart Grant (COVID reopening)",
+      "admin_body": "Districts",
+      "funding_body": "BEIS (DLUHC)",
+      "scheme_size_note": "£5B nationally (part of £100B+ business support during COVID)",
+      "recipient_cap": 18000,
+      "recipient_floor": 2667,
+      "typical_amount": null,
+      "date_window": ["2021-04-01", "2021-06-30"],
+      "financial_year": "2021/22",
+      "reference_pattern": null,
+      "description": "One-off grants to non-essential retail + hospitality reopening post-COVID. Strict caps based on rateable value band. Ledger sub-code '-COVID' or '-RESTART' is common but not universal.",
+      "source_documents": [
+        "gov.uk Restart Grant scheme guidance 2021"
+      ],
+      "dogeism_warnings": [
+        "COVID-suffix suppliers in 2020-21 ledgers are almost always grant administration, not a COVID-themed scandal."
+      ]
+    },
+    {
+      "id": "arg_additional_restrictions_grant",
+      "name": "Additional Restrictions Grant (ARG)",
+      "admin_body": "Districts",
+      "funding_body": "BEIS",
+      "scheme_size_note": "£2.2B",
+      "date_window": ["2020-11-05", "2022-03-31"],
+      "recipient_cap": 4000,
+      "recipient_floor": 0,
+      "reference_pattern": null,
+      "description": "Discretionary COVID support for businesses not eligible for mainstream grants. High volume, low individual amounts.",
+      "dogeism_warnings": [
+        "High-volume small-amount batches 2020-2022 to unnamed businesses are almost always ARG, not backhanders."
+      ]
+    },
+    {
+      "id": "energy_rebate_2022",
+      "name": "Energy Rebate / Council Tax Energy Rebate Scheme",
+      "admin_body": "Billing authorities (districts + unitaries)",
+      "funding_body": "BEIS",
+      "scheme_size": "£4.4B",
+      "recipient_cap": 150,
+      "recipient_floor": 150,
+      "typical_amount": 150,
+      "date_window": ["2022-04-01", "2022-09-30"],
+      "description": "£150 flat rebate to Band A-D council-tax payers. Distributed as either direct credit on council tax bill or BACS to residents. Residents named in internal records but 'REDACTED' or 'PAYEES' in transparency feed.",
+      "dogeism_warnings": [
+        "Late-2022 burst of small £150 REDACTED payments in a billing authority's feed is Energy Rebate, not payroll fraud."
+      ]
+    }
+  ],
+  "_future_work": "Expand with: DFG (Disabled Facilities Grant) distribution, UKSPF (UK Shared Prosperity Fund), Towns Fund / Levelling Up Fund capital grants, Section 31 grants, Troubled Families programme (now Supporting Families), BCF pooled budget to CCGs, DSG to schools via School Forum allocation."
+}

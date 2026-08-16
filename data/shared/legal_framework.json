@@ -1,0 +1,209 @@
+[
+  {
+    "law": "Local Government Transparency Code 2015",
+    "title": "Transparency Code",
+    "category": "transparency",
+    "summary": "Requires councils to publish spending over £500 quarterly, contracts over £5,000, and maintain a public contracts register. Failure to publish is an offence.",
+    "relevance": "Our entire analysis depends on this Code. Missing descriptions, incomplete data, or unpublished categories signal non-compliance.",
+    "signals": ["Missing transaction descriptions", "Incomplete quarterly publications", "No published contracts register"],
+    "url": "https://www.gov.uk/government/publications/local-government-transparency-code-2015"
+  },
+  {
+    "law": "Local Government Act 1999, s.3",
+    "title": "Best Value Duty",
+    "category": "governance",
+    "summary": "Councils must make arrangements to secure continuous improvement in how they exercise their functions, having regard to economy, efficiency, and effectiveness.",
+    "relevance": "Best Value underpins all our findings. Overpaying compared to neighbouring councils, duplicate payments, and unchallenged supplier concentration all indicate potential Best Value failure.",
+    "signals": ["Cross-council price gaps", "Supplier concentration", "No competitive tendering evidence"],
+    "url": "https://www.legislation.gov.uk/ukpga/1999/27/section/3"
+  },
+  {
+    "law": "Companies Act 2006, ss.154-156, 441-453, 790D",
+    "title": "Companies Act",
+    "category": "accountability",
+    "summary": "Companies must have active directors (s.154), file accounts (s.441), and register persons with significant control (s.790D). Payments to non-compliant companies indicate weak due diligence.",
+    "relevance": "Core to our CH compliance analysis. Companies with no directors, overdue accounts, or facing strike-off should not receive public money without enhanced checks.",
+    "signals": ["No active directors", "Accounts overdue", "Filed dormant but receiving payments", "No PSC registered"],
+    "url": "https://www.legislation.gov.uk/ukpga/2006/46/contents"
+  },
+  {
+    "law": "Public Contracts Regulations 2015 / Procurement Act 2023",
+    "title": "Procurement Rules",
+    "category": "procurement",
+    "summary": "UK procurement thresholds: £30,000 (low value), £138,760 (goods/services), £5,372,609 (works). Split payments to circumvent thresholds are illegal. Must publish on Contracts Finder above £30K.",
+    "relevance": "Our split payment detection specifically targets threshold avoidance. Councils must demonstrate competitive tendering above thresholds.",
+    "signals": ["Payments clustering below thresholds", "Sole-source contracts above threshold", "No Contracts Finder publication"],
+    "url": "https://www.legislation.gov.uk/uksi/2015/102/contents"
+  },
+  {
+    "law": "Local Audit and Accountability Act 2014",
+    "title": "Local Audit",
+    "category": "accountability",
+    "summary": "Councils must have annual accounts audited by registered auditor. Auditors can issue public interest reports, apply for court declarations, and refer matters to the Secretary of State.",
+    "relevance": "External audit findings are the ultimate validation of DOGE analysis. Qualified opinions, public interest reports, or s.24 recommendations all confirm governance failures.",
+    "signals": ["Qualified audit opinion", "Public interest report issued", "Adverse VFM conclusion"],
+    "url": "https://www.legislation.gov.uk/ukpga/2014/2/contents"
+  },
+  {
+    "law": "Local Government Act 1972, s.151",
+    "title": "Section 151 Officer Duty",
+    "category": "financial",
+    "summary": "Every council must appoint an officer responsible for proper financial administration. The s.151 officer must ensure lawful and prudent financial decisions.",
+    "relevance": "The existence of our findings implies the s.151 officer should be investigating the same issues. Payments to dissolved companies or companies in breach suggest inadequate financial controls.",
+    "signals": ["Payments to dissolved companies", "No pre-payment supplier checks", "Inadequate financial procedures"],
+    "url": "https://www.legislation.gov.uk/ukpga/1972/70/section/151"
+  },
+  {
+    "law": "Freedom of Information Act 2000",
+    "title": "FOI Act",
+    "category": "transparency",
+    "summary": "Public authorities must respond to FOI requests within 20 working days. Information can only be withheld under specific exemptions. Cost limit: £450 for non-central government.",
+    "relevance": "FOI requests can fill gaps in published data. Where our analysis identifies anomalies but lacks detail (missing descriptions, unclear contracts), FOI provides the investigative tool.",
+    "signals": ["FOI refusals citing s.43 (commercial interests)", "Excessive redactions", "Non-compliance with 20-day deadline"],
+    "url": "https://www.legislation.gov.uk/ukpga/2000/36/contents"
+  },
+  {
+    "law": "Fraud Act 2006, s.4",
+    "title": "Fraud by Abuse of Position",
+    "category": "accountability",
+    "summary": "Officers who abuse their position to cause financial gain or loss to another commit fraud. Applies to anyone expected to safeguard financial interests.",
+    "relevance": "Patterns suggesting officer-supplier conflicts of interest — sole source contracts, payments to connected parties, ghost suppliers — indicate potential fraud requiring investigation.",
+    "signals": ["Payments to suppliers sharing addresses with officers", "Sole-source contracts without justification", "Suppliers with no web presence receiving regular payments"],
+    "url": "https://www.legislation.gov.uk/ukpga/2006/35/section/4"
+  },
+  {
+    "law": "Localism Act 2011, ss.26-37",
+    "title": "Members' Interests",
+    "category": "governance",
+    "summary": "Councillors must declare disclosable pecuniary interests. Participating in decisions on matters where they have undeclared interests is a criminal offence (s.34).",
+    "relevance": "Cross-referencing councillor interest registers with supplier data can reveal undeclared conflicts. This is the foundation of relationship/network analysis.",
+    "signals": ["Councillors voting on contracts involving their declared interests", "Undeclared connections between members and suppliers"],
+    "url": "https://www.legislation.gov.uk/ukpga/2011/20/part/1/chapter/7"
+  },
+  {
+    "law": "Accounts and Audit Regulations 2015",
+    "title": "Accounts & Audit",
+    "category": "financial",
+    "summary": "Councils must prepare annual accounts by 31 May and publish audited accounts by 30 September. Public inspection period of 30 working days. Any person may inspect and question the auditor.",
+    "relevance": "Your right to inspect council accounts is statutory. During the inspection period, you can question the auditor directly about any item of expenditure — a powerful tool for following up DOGE findings.",
+    "signals": ["Accounts published late", "No public inspection notice", "Auditor qualified the accounts"],
+    "url": "https://www.legislation.gov.uk/uksi/2015/234/contents"
+  },
+  {
+    "law": "Subsidy Control Act 2022",
+    "title": "Subsidy Control",
+    "category": "procurement",
+    "summary": "Replaced EU State Aid rules. Public authorities giving subsidies (financial assistance that benefits specific enterprises) must comply with subsidy control principles. Subsidies over £500K must be entered on the subsidy database.",
+    "relevance": "Large grants to specific organisations, especially those with political connections, may constitute subsidies requiring compliance. COVID business grants had specific exemptions but normal grants do not.",
+    "signals": ["Large payments to specific enterprises without competitive process", "Grants not published on subsidy database", "Financial assistance to connected parties"],
+    "url": "https://www.legislation.gov.uk/ukpga/2022/23/contents"
+  },
+  {
+    "law": "Public Interest Disclosure Act 1998",
+    "title": "Whistleblower Protection",
+    "category": "accountability",
+    "summary": "Protects workers who disclose information about wrongdoing. Qualifying disclosures include criminal offences, breach of legal obligation, and deliberate concealment.",
+    "relevance": "If council whistleblowing policies are weak or whistleblowers face retaliation, waste and fraud can persist. DOGE analysis serves a similar public interest disclosure function.",
+    "signals": ["No published whistleblowing policy", "Employment tribunals citing whistleblower detriment", "No evidence of disclosures being acted upon"],
+    "url": "https://www.legislation.gov.uk/ukpga/1998/23/contents"
+  },
+  {
+    "law": "Bribery Act 2010, ss.1-6",
+    "title": "Bribery of Public Officials",
+    "category": "accountability",
+    "summary": "Criminalises offering or receiving bribes (ss.1-2), bribery of foreign public officials (s.6), and failure by organisations to prevent bribery (s.7). Maximum penalty: 10 years imprisonment and unlimited fine.",
+    "relevance": "Donation-to-contract correlations, gift/hospitality patterns, and financial links between councillors and suppliers may indicate bribery indicators requiring police referral. Section 7 corporate liability applies to councils themselves.",
+    "signals": ["Donations followed by contract awards within 12 months", "Gifts from suppliers to committee decision-makers", "Financial links between councillors and beneficiaries of their decisions"],
+    "url": "https://www.legislation.gov.uk/ukpga/2010/23/contents"
+  },
+  {
+    "law": "Proceeds of Crime Act 2002, ss.327-332",
+    "title": "Money Laundering",
+    "category": "accountability",
+    "summary": "Criminalises concealing (s.327), arranging (s.328), and acquiring (s.329) criminal property. Sections 330-332 require disclosure of knowledge or suspicion of money laundering. Failure to report is itself an offence.",
+    "relevance": "Shell company donor patterns, phantom companies receiving public funds, and complex ownership chains involving council suppliers may indicate money laundering. Dormant companies suddenly activated as suppliers is a classic layering technique.",
+    "signals": ["Shell company donors to political parties", "Dormant-to-active supplier activation patterns", "Complex ownership chains obscuring beneficial ownership", "Multiple companies at formation agent addresses"],
+    "url": "https://www.legislation.gov.uk/ukpga/2002/29/contents"
+  },
+  {
+    "law": "Local Government Finance Act 1992, ss.30-52, 106",
+    "title": "Council Tax & Precepts",
+    "category": "financial",
+    "summary": "Establishes council tax framework. Section 106 disqualifies any councillor with council tax arrears of 2+ months from voting on council tax, precepts, or any recommendation relating to the council's budget. Breach is a criminal offence.",
+    "relevance": "Section 106 disqualification is rarely enforced but detectable through cross-referencing council tax records with councillor registers. Councillors voting on budgets while holding undeclared financial interests in budget beneficiaries violates the spirit of the Act.",
+    "signals": ["Councillor council tax arrears exceeding 2 months", "Budget votes benefiting declared interests", "Precept decisions without public impact assessment"],
+    "url": "https://www.legislation.gov.uk/ukpga/1992/14/contents"
+  },
+  {
+    "law": "Town and Country Planning Act 1990",
+    "title": "Planning Decisions",
+    "category": "governance",
+    "summary": "Framework for planning permission decisions by local authorities. Councillors on planning committees must declare interests in applications and withdraw from decisions. Planning decisions can be challenged by judicial review if procedurally flawed.",
+    "relevance": "Councillors with declared land interests sitting on planning committees face the highest conflict-of-interest risk in local government. Cross-referencing land declarations against planning applications and committee memberships is a priority detection target.",
+    "signals": ["Planning committee member with land interest in application area", "Councillor voting on planning applications benefiting associates or employers", "Planning decisions favouring councillor-linked developers"],
+    "url": "https://www.legislation.gov.uk/ukpga/1990/8/contents"
+  },
+  {
+    "law": "Companies Act 2006, ss.170-177, 190-196, 382-384, 479",
+    "title": "Director Duties & Thresholds",
+    "category": "accountability",
+    "summary": "ss.170-177: General duties of directors including duty to promote success (s.172), avoid conflicts (s.175), not accept third-party benefits (s.176), and declare interests (s.177). ss.190-196: Substantial property transactions with directors require shareholder approval. ss.382-384: Small company accounting thresholds (turnover <£10.2M, assets <£5.1M, employees <50 — must meet 2 of 3). s.479: Audit exemption for subsidiary companies requires whole group to qualify as small.",
+    "relevance": "Councillor-directors have dual duties to their company and their public office. Section 175 duty to avoid conflicts directly applies when their company trades with the council. Section 190 substantial property transactions may reveal hidden dealings. Small company exemptions and total exemption full accounts are frequently exploited to avoid publishing turnover and profit data.",
+    "signals": ["Councillor-directors not declaring conflicts under s.175", "Substantial property transactions with councillor-linked companies", "Companies filing total exemption accounts despite exceeding thresholds", "Group companies claiming subsidiary audit exemption inappropriately"],
+    "url": "https://www.legislation.gov.uk/ukpga/2006/46/contents"
+  },
+  {
+    "law": "Housing Act 2004, Part 3",
+    "title": "Selective Licensing",
+    "category": "governance",
+    "summary": "Councils can designate areas requiring selective licensing for private rented housing. Landlords must apply for and hold a licence. Councils set licence conditions, fees, and enforcement policy. Failure to obtain a licence is a criminal offence with unlimited fines.",
+    "relevance": "Councillors who are private landlords in selective licensing areas face direct conflicts of interest. They vote on licensing policies and fee levels that directly affect their rental income and property values. East Lancashire councils (Burnley, Hyndburn, Pendle) all operate selective licensing schemes.",
+    "signals": ["Councillor-landlords in selective licensing areas", "Landlord councillors voting on licensing policy or fee levels", "Property-owning councillors on housing committees"],
+    "url": "https://www.legislation.gov.uk/ukpga/2004/34/part/3"
+  },
+  {
+    "law": "Environmental Protection Act 1990, Part II",
+    "title": "Waste Collection & Disposal",
+    "category": "procurement",
+    "summary": "Councils have a statutory duty to collect and dispose of household waste. Waste contracts are among the largest council procurement areas, frequently worth tens of millions over contract periods. Competitive tendering is required for waste services.",
+    "relevance": "Waste collection contracts are high-value, long-term, and frequently feature supplier concentration or monopoly. Burnley's URBASER contract (£19.5M tracked) is typical. Councillors with interests in waste management companies face direct procurement conflicts.",
+    "signals": ["Single-supplier waste contracts without competitive re-tender", "Councillor links to waste management companies", "Waste contract splitting below tender thresholds", "Contract extensions without market testing"],
+    "url": "https://www.legislation.gov.uk/ukpga/1990/43/part/II"
+  },
+  {
+    "law": "Seven Principles of Public Life (Nolan Principles)",
+    "title": "Standards of Conduct",
+    "category": "governance",
+    "summary": "Selflessness, Integrity, Objectivity, Accountability, Openness, Honesty, and Leadership. Established by the Committee on Standards in Public Life (1995). Not statute law but binding on councillors through local authority codes of conduct adopted under the Localism Act 2011.",
+    "relevance": "The Nolan Principles provide the ethical framework against which all integrity findings should be measured. Empty registers violate Openness. Undeclared directorships violate Honesty. Voting on personal interest items violates Objectivity. AI DOGE exists to uphold Accountability.",
+    "signals": ["Empty register of interests (violates Openness)", "Undeclared directorships (violates Honesty)", "Voting on personal interest items (violates Objectivity)", "No published code of conduct (violates Leadership)"],
+    "url": "https://www.gov.uk/government/publications/the-7-principles-of-public-life"
+  },
+  {
+    "law": "Data Protection Act 2018 / UK GDPR",
+    "title": "Data Protection",
+    "category": "transparency",
+    "summary": "Regulates processing of personal data. Lawful bases include public task (Article 6(1)(e)) and legitimate interests (Article 6(1)(f)). Processing of special category data (political opinions) requires additional safeguards under Article 9(2)(e) for data manifestly made public.",
+    "relevance": "AI DOGE processes publicly available data about elected officials under the legitimate interests basis. Councillors' public roles, declared interests, and company directorships are not private data. Analysis serves the substantial public interest in democratic accountability and transparency. All source data is either published by the council, filed at Companies House, or declared to the Electoral Commission.",
+    "signals": [],
+    "url": "https://www.legislation.gov.uk/ukpga/2018/12/contents"
+  },
+  {
+    "law": "Regulation of Investigatory Powers Act 2000",
+    "title": "Council Surveillance Powers",
+    "category": "governance",
+    "summary": "Councils can authorise directed surveillance and covert human intelligence sources (CHIS) for specific purposes. Since the Protection of Freedoms Act 2012, judicial approval is required for all council RIPA authorisations. Councils must publish annual RIPA usage statistics.",
+    "relevance": "Provides context for understanding council investigatory powers and their limits. Councils that misuse RIPA for trivial matters (school catchment surveillance, dog fouling) raise governance concerns. Also relevant if councils investigate their own members following integrity findings.",
+    "signals": ["Council RIPA authorisations for trivial or disproportionate matters", "No published RIPA policy or annual statistics", "No RIPA oversight committee or reports"],
+    "url": "https://www.legislation.gov.uk/ukpga/2000/23/contents"
+  },
+  {
+    "law": "Anti-social Behaviour, Crime and Policing Act 2014",
+    "title": "PSPOs & Discretionary Powers",
+    "category": "governance",
+    "summary": "Gives councils power to make Public Spaces Protection Orders (PSPOs), issue Community Protection Notices, and obtain closure orders. These are discretionary powers exercised by councillors and officers. PSPOs can restrict activities in public spaces for up to 3 years.",
+    "relevance": "Councillors using discretionary enforcement powers (PSPOs, licensing, planning conditions) in areas where they have property or business interests represents a direct conflict between public duty and private gain. Cross-referencing PSPO areas with councillor property declarations can reveal patterns.",
+    "signals": ["PSPOs covering areas near councillor property interests", "Selective enforcement patterns near councillor-linked businesses", "Licensing decisions favouring councillor-connected parties", "Enforcement action against competitors of councillor-linked businesses"],
+    "url": "https://www.legislation.gov.uk/ukpga/2014/12/contents"
+  }
+]

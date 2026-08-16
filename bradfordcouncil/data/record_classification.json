@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "council_id": "bradford",
+  "updated": "2026-05-18",
+  "taxonomy": "burnley-council/data/shared/record_taxonomy.json",
+  "description": "Declarative classification rules for City of Bradford MDC spending. Bradford is a metropolitan-borough unitary council covering all functions (Education, Adult Social Care, Children's, Highways, Housing, Waste). Default is procurement_paid. REDACTED variants bucket to direct_payment_individual. West Yorkshire Pension Fund pass-through. BACS / payroll aggregator entries handled.",
+  "rules": [
+    {
+      "class": "direct_payment_individual",
+      "match": {
+        "supplier_regex": "^(\\[REDACTED\\]|REDACT(ED)?([ \\-,].*)?|NAME WITHHELD|PAYMENT TO AN INDIVIDUAL|PAYMENT TO INDIVIDUAL|PRIVATE INDIVIDUAL|INDIVIDUAL)$"
+      },
+      "reason": "Care Act 2014 + UK GDPR redactions covering ASC direct payments, foster carer / SGO allowances, CYP direct payments. Lawfully unnamed — not third-party procurement."
+    },
+    {
+      "class": "internal_transfer",
+      "match": {
+        "supplier_regex": "^(WEST YORKSHIRE PENSION FUND|CITY OF BRADFORD.*PENSION FUND|BRADFORD CHILDREN AND FAMILIES.*|BRADFORD CHILDREN'?S TRUST.*|BRADFORD CHILDRENS TRUST.*)$"
+      },
+      "reason": "West Yorkshire Pension Fund is the LGPS scheme covering Bradford. Bradford Children and Families Trust (BCFT) is the council-owned not-for-profit children's social care trust established April 2023 in response to Ofsted intervention — money flowing to it is an inter-council transfer, not external procurement (per lessons.md: council wholly-owned subsidiaries with no public trading identity merit internal_transfer)."
+    },
+    {
+      "class": "statutory_pass_through",
+      "match": {
+        "supplier_regex": "^(BRADFORD DISTRICT NHS FOUNDATION TRUST|AIREDALE NHS FOUNDATION TRUST|BRADFORD TEACHING HOSPITALS NHS FOUNDATION TRUST|NHS WEST YORKSHIRE ICB.*|BRADFORD DISTRICT CARE NHS FOUNDATION TRUST)$"
+      },
+      "reason": "BCF s.75 pooled budget transfers to NHS commissioning bodies + trust reimbursements for jointly-commissioned services (Section 75 NHS Act 2006). Legally ring-fenced."
+    },
+    {
+      "class": "settlement_noise",
+      "match": {
+        "supplier_regex": "^(BACS|EFT SYSTEMS LTD|EFT SYSTEMS|SUSPENSE ACCOUNT|UNRECONCILED|VOID|CANCELLED)$"
+      },
+      "reason": "Bank-transfer aggregator or accounting suspense entries — not a third-party supplier."
+    }
+  ],
+  "supplier_aliases": []
+}
